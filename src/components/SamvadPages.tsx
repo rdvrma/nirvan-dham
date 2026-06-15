@@ -463,9 +463,35 @@ function ChoiceCard({ href, icon, number, title, desc, free, accent, glow }: {
   );
 }
 
+function VideoWithLoader({ src, caption, accent }: { src: string; caption: string; accent: string }) {
+  const [loaded, setLoaded] = useState(false);
+  return (
+    <div style={{
+      borderRadius: '12px', overflow: 'hidden',
+      border: `1px solid ${accent}25`,
+      background: 'rgba(13,31,16,0.72)', backdropFilter: 'blur(12px)',
+      boxShadow: `0 12px 40px rgba(0,0,0,0.3)`, position: 'relative'
+    }}>
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', background: '#000' }}>
+        {!loaded && (
+          <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '40px', height: '40px', border: `3px solid ${accent}40`, borderTopColor: accent, borderRadius: '50%', animation: 'videoSpin 1s linear infinite' }} />
+            <style>{`@keyframes videoSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
+          </div>
+        )}
+        <video controls playsInline preload="metadata" src={src} onCanPlay={() => setLoaded(true)}
+          style={{ width: '100%', height: '100%', display: 'block', opacity: loaded ? 1 : 0, transition: 'opacity 0.5s ease' }} />
+      </div>
+      <div style={{ padding: '0.9rem 1.1rem', borderTop: `1px solid ${accent}15` }}>
+        <p style={{ color: `${accent}80`, fontSize: '0.78rem', letterSpacing: '0.06em' }}>{caption}</p>
+      </div>
+    </div>
+  );
+}
+
 /* ══════════════════════════════════════════
    SAMVAD DETAIL PAGE — /samvad/online  &  /samvad/bodhgaya
-══════════════════════════════════════════ */
+   ══════════════════════════════════════════ */
 export function SamvadDetailPage({ mode }: { mode: SamvadMode }) {
   const { lang, selectLang } = useSamvadLanguage();
   const c = copy[lang];
@@ -582,18 +608,7 @@ export function SamvadDetailPage({ mode }: { mode: SamvadMode }) {
               { src: '/tatv/aadisatv_1.mp4', caption: page.videoOne },
               { src: '/tatv/aadisatv_2.mp4', caption: page.videoTwo },
             ].map(({ src, caption }) => (
-              <div key={src} style={{
-                borderRadius: '12px', overflow: 'hidden',
-                border: `1px solid ${accent}25`,
-                background: SURFACE, backdropFilter: 'blur(12px)',
-                boxShadow: `0 12px 40px rgba(0,0,0,0.3)`,
-              }}>
-                <video controls playsInline preload="metadata" src={src}
-                  style={{ width: '100%', aspectRatio: '16/9', display: 'block', background: '#000' }} />
-                <div style={{ padding: '0.9rem 1.1rem', borderTop: `1px solid ${accent}15` }}>
-                  <p style={{ color: `${accent}80`, fontSize: '0.78rem', letterSpacing: '0.06em' }}>{caption}</p>
-                </div>
-              </div>
+              <VideoWithLoader key={src} src={src} caption={caption} accent={accent} />
             ))}
           </div>
         </section>
