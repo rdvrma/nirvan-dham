@@ -510,11 +510,13 @@ export function SamvadDetailPage({ mode }: { mode: SamvadMode }) {
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
     setSubmitting(true);
     setError(false);
+    setSubmitted(false);
 
     // Collect form fields into a plain object
-    const fd = new FormData(event.currentTarget);
+    const fd = new FormData(form);
     const modeLabel = mode === 'online' ? 'Online Samvad' : 'Bodhgaya Samvad';
     const payload: Record<string, string> = {};
     fd.forEach((val, key) => { payload[key] = String(val); });
@@ -534,7 +536,7 @@ export function SamvadDetailPage({ mode }: { mode: SamvadMode }) {
       });
       if (!res.ok) throw new Error(`Formspree error: ${res.status}`);
       setSubmitted(true);
-      event.currentTarget.reset();
+      form.reset();
     } catch {
       setError(true);
     } finally {
