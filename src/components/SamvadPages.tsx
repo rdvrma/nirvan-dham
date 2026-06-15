@@ -84,18 +84,18 @@ const copy = {
       error: 'माफ़ करें, कोई समस्या हुई। कृपया पुनः प्रयास करें या सीधे लिखें: aadiguru@nirvandham.in',
     },
     dana: {
-      title: 'दान — Dana',
+      title: 'स्वैच्छिक सहयोग — Voluntary Support',
       eyebrow: 'सेवा और सहयोग',
-      intro: 'यह सेवा निःशुल्क है। यदि हृदय से उठे तो इस यात्रा में सहयोग करें।',
+      intro: 'यह सेवा निःशुल्क है। यदि हृदय से उठे तो इस यात्रा में स्वैच्छिक सहयोग करें।',
       pageEyebrow: 'सेवा और सहयोग',
-      pageTitle: 'दान',
-      pageLead: 'निर्वाण धाम की साधना, संवाद और डिजिटल सेवा को सहज बनाए रखने में आपका सहयोग मौन रूप से जुड़ता है।',
-      homeCta: 'दान विवरण देखें',
+      pageTitle: 'स्वैच्छिक सहयोग',
+      pageLead: 'निर्वाण धाम की साधना, संवाद और डिजिटल सेवा को सहज बनाए रखने में आपका स्वैच्छिक सहयोग मौन रूप से जुड़ता है।',
+      homeCta: 'सहयोग विवरण देखें',
       copied: '✓ कॉपी हो गया',
-      paypal: 'PayPal से दान करें →',
+      paypal: 'PayPal से सहयोग करें →',
       indiaTab: 'भारत',
       intlTab: 'International',
-      quote: 'दान वह है जो बिना अपेक्षा के दिया जाए — ठीक वैसे जैसे सूर्य प्रकाश देता है।',
+      quote: 'सहयोग वह है जो बिना अपेक्षा के दिया जाए — ठीक वैसे जैसे सूर्य प्रकाश देता है।',
     },
   },
   en: {
@@ -160,18 +160,18 @@ const copy = {
       error: 'Something went wrong. Please try again or write directly to aadiguru@nirvandham.in',
     },
     dana: {
-      title: 'Dana — Offering',
+      title: 'Voluntary Support',
       eyebrow: 'Seva & Support',
-      intro: 'This service is free. If your heart moves you, please support this journey.',
+      intro: 'This service is free. If your heart moves you, please offer your voluntary support.',
       pageEyebrow: 'Seva & Support',
-      pageTitle: 'Dana',
-      pageLead: 'Your support helps keep Nirvan Dham, Samvad, and the digital ashram available with care and steadiness.',
-      homeCta: 'View Donation Details',
+      pageTitle: 'Voluntary Support',
+      pageLead: 'Your voluntary support helps keep Nirvan Dham, Samvad, and the digital ashram available with care and steadiness.',
+      homeCta: 'View Support Details',
       copied: '✓ Copied',
-      paypal: 'Donate via PayPal →',
+      paypal: 'Support via PayPal →',
       indiaTab: 'India',
       intlTab: 'International',
-      quote: 'Dana is that which is given without expectation — just as the sun gives light.',
+      quote: 'Support is that which is given without expectation — just as the sun gives light.',
     },
   },
 } as const;
@@ -404,12 +404,12 @@ export function SamvadChoicePage() {
           gap: '1.5rem', marginBottom: '4rem',
         }}>
           <ChoiceCard
-            href="/samvad/online" icon="🖥" number={c.optionOne}
+            href="/online-samvad" icon="🖥" number={c.optionOne}
             title={c.onlineTitle} desc={c.onlineDesc} free={c.free}
             accent="rgba(103,232,249,0.7)" glow="rgba(103,232,249,0.08)"
           />
           <ChoiceCard
-            href="/samvad/bodhgaya" icon="🪷" number={c.optionTwo}
+            href="/bodhgaya-samvad" icon="🪷" number={c.optionTwo}
             title={c.bodhgayaTitle} desc={c.bodhgayaDesc} free={c.free}
             accent="rgba(134,239,172,0.7)" glow="rgba(134,239,172,0.08)"
           />

@@ -644,7 +644,7 @@ export default function IchchhaPoortiPage() {
                 ? 'यदि आप इस प्रक्रिया के बारे में अधिक जानना चाहते हैं या आदिसत्व से सीधे संवाद करना चाहते हैं:'
                 : 'If you would like to know more about this process or connect directly with Aadisatv:'}
             </p>
-            <Link href="/samvad/online" style={{
+            <Link href="/online-samvad" style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
               padding: '0.9rem 2rem', borderRadius: '8px',
               border: `1px solid ${GOLD}45`, background: `${GOLD}12`,

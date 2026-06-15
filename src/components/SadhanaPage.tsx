@@ -321,7 +321,7 @@ export default function SadhanaPage() {
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = `0 8px 32px rgba(212,168,67,0.3)`; }}>
                 ▶ {c.cta1}
               </button>
-              <Link href="/samvad/online" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.95rem 1.75rem', borderRadius: '6px', border: `1px solid ${GOLD}45`, background: `${GOLD}0d`, color: GOLD, fontWeight: 600, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em', transition: 'all 0.3s' }}
+              <Link href="/online-samvad" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.95rem 1.75rem', borderRadius: '6px', border: `1px solid ${GOLD}45`, background: `${GOLD}0d`, color: GOLD, fontWeight: 600, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em', transition: 'all 0.3s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = `${GOLD}18`; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = `${GOLD}0d`; }}>
                 🌐 {c.cta2}
@@ -440,8 +440,8 @@ export default function SadhanaPage() {
             {isHi ? 'ये सत्र आपके भीतर कुछ जगा रहे हैं? आदिसत्व से सीधे संवाद करें।' : 'Are these sessions awakening something within? Connect directly with Aadisatv.'}
           </p>
           <div style={{ display: 'flex', gap: '0.85rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/samvad/online" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: `1px solid ${GOLD}42`, background: `${GOLD}10`, color: GOLD, fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🌐 {isHi ? 'ऑनलाइन संवाद →' : 'Online Samvad →'}</Link>
-            <Link href="/samvad/bodhgaya" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: '1px solid rgba(134,239,172,0.28)', background: 'rgba(134,239,172,0.07)', color: '#86efac', fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🪷 {isHi ? 'बोधगया संवाद →' : 'Bodhgaya Samvad →'}</Link>
+            <Link href="/online-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: `1px solid ${GOLD}42`, background: `${GOLD}10`, color: GOLD, fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🌐 {isHi ? 'ऑनलाइन संवाद →' : 'Online Samvad →'}</Link>
+            <Link href="/bodhgaya-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: '1px solid rgba(134,239,172,0.28)', background: 'rgba(134,239,172,0.07)', color: '#86efac', fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🪷 {isHi ? 'बोधगया संवाद →' : 'Bodhgaya Samvad →'}</Link>
           </div>
         </div>
       </div>

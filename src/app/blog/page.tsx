@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import BlogIndexPage from '@/components/BlogIndexPage';
 
+import SchemaOrg from '@/components/SchemaOrg';
+
 export const metadata: Metadata = {
   title: 'Blogs & Contemplations | Nirvan Dham',
   description:
@@ -18,5 +20,18 @@ export const metadata: Metadata = {
 };
 
 export default function BlogRoutePage() {
-  return <BlogIndexPage />;
+  const blogSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Nirvan Dham Blog',
+    description: 'A premium bilingual collection of Nirvan Dham articles on Advaita and self-inquiry.',
+    url: 'https://nirvandham.in/blog',
+  };
+
+  return (
+    <>
+      <SchemaOrg schema={blogSchema} />
+      <BlogIndexPage />
+    </>
+  );
 }

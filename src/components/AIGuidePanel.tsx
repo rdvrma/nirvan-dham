@@ -68,62 +68,11 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
     setIsTyping(true);
 
     try {
-      const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || '';
-      if (!apiKey) {
-        setMessages((prev) => [
-          ...prev,
-          {
-            role: 'bot',
-            text: isHindi
-              ? 'यह जानकारी अभी Nirvan Dham की उपलब्ध knowledge base में नहीं है।'
-              : 'This information is not available in the current Nirvan Dham knowledge base.',
-          },
-        ]);
-        return;
-      }
-
-      const recentHistory = messages.slice(-8).map((m) => {
-        const role = m.role === 'bot' ? 'AI Guide' : 'Seeker';
-        return `${role}: ${m.text}`;
+      const res = await fetch('/api/ai-guide', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: question, history: messages, lang }),
       });
-
-      const prompt = [
-        recentHistory.length ? `Recent conversation:\n${recentHistory.join('\n')}` : '',
-        `Current seeker question:\n${question}`,
-      ].filter(Boolean).join('\n\n');
-
-      const SYSTEM_INSTRUCTION = `You are the AI Guide of Nirvan Dham, a sacred digital ashram created around Aadisatv's teachings on Advaita Vedanta, self-inquiry, witness awareness, meditation, and direct recognition.
-
-Identity:
-- You are an AI guide inspired by Nirvan Dham's teachings. You are not Aadisatv.
-- Speak with calmness, warmth, precision, and spiritual humility.
-- Keep answers concise unless the seeker asks for depth.
-- Never present guesses as teachings.
-
-Language:
-- If the user writes in Hindi or Hinglish, answer in natural Hindi/Hinglish.
-- If the user writes in English, answer in English.
-- Use Sanskrit terms only where they help: Maya, Atman, Brahman, Sakshi, Moksha, Nirvana, Ahankar.
-
-Safety:
-- Do not give medical, legal, financial, or emergency advice.`;
-
-      const res = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            system_instruction: { parts: [{ text: SYSTEM_INSTRUCTION }] },
-            contents: [{ role: 'user', parts: [{ text: prompt }] }],
-            generationConfig: {
-              temperature: 0.45,
-              topP: 0.9,
-              maxOutputTokens: 700,
-            },
-          }),
-        }
-      );
 
       if (res.status === 429) {
         startCooldown(45);
@@ -140,13 +89,12 @@ Safety:
       }
 
       const data = await res.json();
-      const answer = data?.candidates?.[0]?.content?.parts?.[0]?.text?.trim() || '';
-
+      
       setMessages((prev) => [
         ...prev,
         {
           role: 'bot',
-          text: answer || (isHindi
+          text: data.response || (isHindi
             ? 'यह जानकारी अभी Nirvan Dham की उपलब्ध knowledge base में नहीं है।'
             : 'This information is not available in the current Nirvan Dham knowledge base.'),
         },

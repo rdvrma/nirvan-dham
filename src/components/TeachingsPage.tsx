@@ -100,38 +100,12 @@ export default function TeachingsPage() {
     Promise.resolve()
       .then(() => {
         if (!cancelled) setLoading(true);
-        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_IDS[selected]}`;
-        const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
-        return fetch(proxyUrl);
+        return fetch(`/api/teachings?channel=${selected}`);
       })
       .then((res) => res.json())
-      .then((data: { contents?: string }) => {
+      .then((data) => {
         if (cancelled) return;
-        const xml = data.contents || '';
-        const entries = xml.split('<entry>').slice(1);
-        const channel = CHANNELS[selected];
-        const videos: TeachingVideo[] = entries.slice(0, 12).map((entry) => {
-          const extractTag = (tag: string) => {
-            const m = entry.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i'));
-            return m ? m[1].replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, '').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&amp;/g,'&').replace(/&quot;/g,'"').trim() : '';
-          };
-          const extractAttr = (tag: string, attr: string) => {
-            const m = entry.match(new RegExp(`<${tag}[^>]*${attr}="([^"]*)"`, 'i'));
-            return m ? m[1] : '';
-          };
-          const id = extractTag('yt:videoId');
-          return {
-            id,
-            title: extractTag('title'),
-            link: extractAttr('link', 'href') || `https://www.youtube.com/watch?v=${id}`,
-            published: extractTag('published').split('T')[0],
-            channel: channel.name,
-            handle: channel.handle,
-            thumbnail: extractAttr('media:thumbnail', 'url') || `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
-            description: extractTag('media:description').slice(0, 220),
-          };
-        }).filter((v) => v.id && v.title);
-        setVideos(videos);
+        setVideos(data.videos || []);
         setSelectedVideo(null);
       })
       .catch(() => {
@@ -181,6 +155,62 @@ export default function TeachingsPage() {
           <h1>{c.title}</h1>
           <span className="teachings-line" />
           <p className="teachings-lead">{c.lead}</p>
+        </section>
+
+        <section className="nirvan-sutra-pillar" style={{ marginBottom: '4rem', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+          <div className="teachings-card" style={{ padding: 'clamp(2rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            {lang === 'hi' ? (
+              <>
+                <h2 style={{ color: 'var(--c-ivory)', fontFamily: 'var(--font-cormorant)', fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>निर्वाण सूत्र क्या है?</h2>
+                <p style={{ color: 'var(--c-ivdim)', lineHeight: 1.8, fontSize: '1.05rem', fontFamily: 'var(--font-hindi)' }}>निर्वाण सूत्र, निर्वाण धाम की वह जीवंत अभिव्यक्ति है जो अद्वैत (Non-duality), आत्म-जिज्ञासा (Self-inquiry), और विशुद्ध जागरूकता (Pure awareness) के माध्यम से आपको स्वयं के सत्य तक ले जाती है। आदिसत्व के सान्निध्य में, यह कोई सिद्धांत नहीं, बल्कि सत्य को सीधे देखने का मार्ग है।</p>
+                
+                <h3 style={{ color: 'var(--c-gold)', fontSize: '1.2rem', marginTop: '1rem', fontWeight: 500 }}>गहराई में उतरें</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '0.5rem' }}>
+                  <a href="/about-aadisatv" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>आदिसत्व के बारे में</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>जानें कि आदिसत्व कौन हैं और उनका मार्गदर्शन कैसे काम करता है।</span>
+                  </a>
+                  <a href="/online-samvad" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>ऑनलाइन संवाद</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>विश्व में कहीं से भी आदिसत्व के साथ 1-on-1 संवाद करें।</span>
+                  </a>
+                  <a href="/bodhgaya-samvad" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>बोधगया संवाद</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>बोधगया की पावन भूमि पर व्यक्तिगत मार्गदर्शन प्राप्त करें।</span>
+                  </a>
+                  <a href="/guided-meditation" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>ध्यान मार्गदर्शन</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>भीतर की शांति का अनुभव करने के लिए गाइडेड मेडिटेशन।</span>
+                  </a>
+                </div>
+              </>
+            ) : (
+              <>
+                <h2 style={{ color: 'var(--c-ivory)', fontFamily: 'var(--font-cormorant)', fontSize: '2rem', fontWeight: 300, marginBottom: '0.5rem' }}>What is Nirvan Sutra?</h2>
+                <p style={{ color: 'var(--c-ivdim)', lineHeight: 1.8, fontSize: '1.05rem' }}>Nirvan Sutra is the living expression of Nirvan Dham. It guides seekers toward the ultimate truth of who they are through Advaita (Non-duality), Self-inquiry, and pure awareness. Under the guidance of Aadisatv, it is not a set of beliefs, but a direct pointing to reality.</p>
+                
+                <h3 style={{ color: 'var(--c-gold)', fontSize: '1.2rem', marginTop: '1rem', fontWeight: 500 }}>Explore the Path</h3>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem', marginTop: '0.5rem' }}>
+                  <a href="/about-aadisatv" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>About Aadisatv</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>Learn about the pure awareness at the heart of Nirvan Dham.</span>
+                  </a>
+                  <a href="/online-samvad" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>Online Samvad</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>Connect 1-on-1 with Aadisatv from anywhere in the world.</span>
+                  </a>
+                  <a href="/bodhgaya-samvad" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>Bodhgaya Samvad</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>Receive direct guidance in the sacred land of Bodhgaya.</span>
+                  </a>
+                  <a href="/guided-meditation" style={{ border: '1px solid rgba(212,168,67,0.3)', padding: '1rem', borderRadius: '8px', color: 'var(--c-ivory)', textDecoration: 'none', background: 'rgba(212,168,67,0.05)' }}>
+                    <strong style={{ display: 'block', color: 'var(--c-gold)', marginBottom: '0.25rem' }}>Guided Meditation</strong>
+                    <span style={{ fontSize: '0.85rem', color: 'var(--c-ivdim)' }}>Audio sadhanas to help you rest in your true nature.</span>
+                  </a>
+                </div>
+              </>
+            )}
+          </div>
         </section>
 
         <section className="teachings-card">

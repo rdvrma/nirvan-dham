@@ -224,7 +224,7 @@ export default function PathSection({ lang }: PathSectionProps) {
                     {/* CTA */}
                     {card.available && (
                       <Link
-                        href="/sadhana"
+                        href="/guided-meditation"
                         className={`mt-6 block transition-premium w-full text-center ${isHindi ? 'font-hindi' : ''}`}
                         style={{
                           padding: '0.75rem 1.5rem',

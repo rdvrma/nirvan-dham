@@ -93,7 +93,7 @@ export default function YouTubeSection({ lang }: YouTubeSectionProps) {
             {t.desc}
           </p>
           <Link
-            href="/teachings"
+            href="/nirvan-sutra"
             className={isHindi ? 'font-hindi' : ''}
             style={{
               display: 'inline-flex',
