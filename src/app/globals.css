@@ -527,8 +527,8 @@ body {
 
         .post-hero h1 {
           color: var(--c-ivory);
-          font-size: ;
-          font-weight: ;
+          font-size: ${isHindi ? 'clamp(2.6rem, 7vw, 5.9rem)' : 'clamp(3rem, 7vw, 6.2rem)'};
+          font-weight: ${isHindi ? 600 : 300};
           line-height: 1;
           max-width: 980px;
           text-wrap: balance;
@@ -557,8 +557,8 @@ body {
 
         .post-content :global(h2) {
           color: var(--c-gold);
-          font-size: ;
-          font-weight: ;
+          font-size: ${isHindi ? 'clamp(1.35rem, 3vw, 2rem)' : 'clamp(1.6rem, 3vw, 2.25rem)'};
+          font-weight: ${isHindi ? 600 : 400};
           line-height: 1.25;
           margin: 2.2rem 0 .8rem;
         }
@@ -569,8 +569,8 @@ body {
 
         .post-content :global(p) {
           color: var(--c-text);
-          font-size: ;
-          line-height: ;
+          font-size: ${isHindi ? '1.08rem' : '1.04rem'};
+          line-height: ${isHindi ? 2 : 1.9};
           margin: 0 0 1.15rem;
         }
 
@@ -583,7 +583,7 @@ body {
         .related > h2 {
           color: var(--c-ivory);
           font-size: clamp(2rem, 4vw, 3.4rem);
-          font-weight: ;
+          font-weight: ${isHindi ? 600 : 300};
           margin-bottom: 1.4rem;
         }
 
@@ -657,9 +657,9 @@ body {
 
         .related-card strong {
           color: var(--c-ivory);
-          font-size: ;
+          font-size: ${isHindi ? '1.25rem' : '1.45rem'};
           line-height: 1.2;
-          font-weight: ;
+          font-weight: ${isHindi ? 600 : 400};
         }
 
         @media (max-width: 860px) {
