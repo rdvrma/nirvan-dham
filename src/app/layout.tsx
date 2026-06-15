@@ -51,6 +51,8 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 };
 
+import StyledJsxRegistry from "./registry";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,8 +76,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ScrollReset />
-        {children}
+        <StyledJsxRegistry>
+          <ScrollReset />
+          {children}
+        </StyledJsxRegistry>
       </body>
     </html>
   );
