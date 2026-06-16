@@ -1,4 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <rect width="100" height="100" rx="18" fill="#080f0a"/>
-  <text y="78" x="50" text-anchor="middle" font-size="72" font-family="serif" fill="#d4a843">ॐ</text>
+  <!-- Outer ring -->
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#d4a843" stroke-width="1" opacity="0.4"/>
+  <!-- Lotus petals — simplified sacred geometry -->
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.75" transform="rotate(0,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(45,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(90,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(135,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(180,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(225,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(270,50,50)"/>
+  <ellipse cx="50" cy="30" rx="8" ry="16" fill="#d4a843" opacity="0.55" transform="rotate(315,50,50)"/>
+  <!-- Center dot -->
+  <circle cx="50" cy="50" r="5" fill="#d4a843" opacity="0.9"/>
+  <circle cx="50" cy="50" r="8" fill="none" stroke="#d4a843" stroke-width="0.8" opacity="0.5"/>
 </svg>

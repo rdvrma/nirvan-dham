@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import TeachingsPage from '@/components/TeachingsPage';
+import NirvanSutraPage from '@/components/NirvanSutraPage';
 import SchemaOrg from '@/components/SchemaOrg';
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function NirvanSutraRoute() {
   return (
     <>
       <SchemaOrg schema={collectionSchema} />
-      <TeachingsPage />
+      <NirvanSutraPage />
     </>
   );
 }
