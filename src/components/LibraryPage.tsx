@@ -2,16 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import type { Language } from '@/lib/i18n';
 import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 import { EBOOKS, AUDIOBOOKS, MAGAZINES } from '@/lib/library-data';
-import type { EBook } from '@/lib/library-data';
-
-const EbookReader = dynamic(() => import('@/components/EbookReader'), { ssr: false });
+import type { EBook, Magazine } from '@/lib/library-data';
 
 // ── Countdown ────────────────────────────────────────────
 function useCountdown(targetDate: string) {
@@ -49,7 +46,7 @@ function Waveform() {
 }
 
 // ── Book Card ────────────────────────────────────────────
-function BookCard({ book, hi, onRead }: { book: EBook; hi: boolean; onRead: (b: EBook) => void }) {
+function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
   const [hovered, setHovered] = useState(false);
   const title = hi && book.titleHindi ? book.titleHindi : book.titleEnglish;
   const subtitle = hi && book.subtitleHindi ? book.subtitleHindi : book.subtitle;
@@ -132,8 +129,8 @@ function BookCard({ book, hi, onRead }: { book: EBook; hi: boolean; onRead: (b: 
         <div style={{ display: 'flex', gap: '0.45rem', marginTop: 'auto', paddingTop: '0.85rem' }}>
           {!book.isPlaceholder ? (
             <>
-              <button
-                onClick={() => onRead(book)}
+              <Link
+                href={`/library/${book.slug}`}
                 style={{
                   flex: 1, padding: '0.5rem 0',
                   background: hovered ? 'rgba(212,168,67,0.22)' : 'rgba(212,168,67,0.12)',
@@ -141,10 +138,11 @@ function BookCard({ book, hi, onRead }: { book: EBook; hi: boolean; onRead: (b: 
                   color: '#d4a843', fontSize: '0.73rem', fontWeight: 700, cursor: 'pointer',
                   transition: 'background 0.2s', letterSpacing: '0.02em',
                   fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                  textDecoration: 'none', textAlign: 'center',
                 }}
               >
                 {hi ? '📖 पढ़ें' : '📖 Read'}
-              </button>
+              </Link>
               <a
                 href={book.pdf} download
                 style={{
@@ -178,7 +176,15 @@ function BookCard({ book, hi, onRead }: { book: EBook; hi: boolean; onRead: (b: 
 }
 
 // ── Magazine Banner ───────────────────────────────────────
-function MuktibodBanner({ hi, countdown }: { hi: boolean; countdown: ReturnType<typeof useCountdown> }) {
+function MuktibodBanner({
+  hi,
+  magazine,
+  countdown,
+}: {
+  hi: boolean;
+  magazine: Magazine;
+  countdown: ReturnType<typeof useCountdown>;
+}) {
   return (
     <section style={{
       position: 'relative', overflow: 'hidden',
@@ -236,47 +242,75 @@ function MuktibodBanner({ hi, countdown }: { hi: boolean; countdown: ReturnType<
                 : 'A monthly journal of consciousness, non-duality and the living teachings of Nirvan Dham — featuring Aadisatv\'s conversations, meditation guidance, and seeker experiences.'}
             </p>
 
-            {/* Countdown or Available */}
-            {!countdown.launched ? (
-              <div>
-                <p style={{ fontSize: '0.62rem', letterSpacing: '0.2em', color: 'rgba(212,168,67,0.45)', textTransform: 'uppercase', marginBottom: '0.85rem' }}>
-                  {hi ? '21 जून 2026 को लॉन्च होगी' : 'Launching 21 June 2026'}
-                </p>
-                <div style={{ display: 'flex', gap: 'clamp(0.75rem,2.5vw,1.75rem)', flexWrap: 'wrap' }}>
-                  {[
-                    { v: countdown.days, l: hi ? 'दिन' : 'Days' },
-                    { v: countdown.hrs, l: hi ? 'घंटे' : 'Hrs' },
-                    { v: countdown.mins, l: hi ? 'मिनट' : 'Min' },
-                    { v: countdown.secs, l: hi ? 'सेकंड' : 'Sec' },
-                  ].map(({ v, l }) => (
-                    <div key={l} style={{ textAlign: 'center' }}>
-                      <div style={{
-                        fontSize: 'clamp(2rem,5vw,3.2rem)', fontWeight: 700,
-                        color: '#d4a843', fontFamily: 'var(--font-cormorant)',
-                        fontVariantNumeric: 'tabular-nums',
-                        textShadow: '0 0 24px rgba(212,168,67,0.3)',
-                        minWidth: '56px', display: 'block',
-                      }}>
-                        {String(v).padStart(2, '0')}
-                      </div>
-                      <div style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.28)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>{l}</div>
-                    </div>
-                  ))}
-                </div>
+            {/* Live issue + next edition countdown */}
+            <div>
+              <p style={{ fontSize: '0.62rem', letterSpacing: '0.2em', color: 'rgba(212,168,67,0.5)', textTransform: 'uppercase', marginBottom: '0.85rem' }}>
+                {hi ? 'अंक 01 उपलब्ध है · अगला अंक 21 जुलाई 2026' : 'Issue 01 is live · Next issue 21 July 2026'}
+              </p>
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginBottom: '1.65rem' }}>
+                <Link
+                  href={`/library/magazine/${magazine.slug}/read`}
+                  style={{
+                    padding: '0.85rem 1.35rem',
+                    background: 'rgba(212,168,67,0.16)',
+                    border: '1px solid rgba(212,168,67,0.42)',
+                    borderRadius: '8px',
+                    color: '#d4a843',
+                    fontSize: '0.82rem',
+                    fontWeight: 800,
+                    letterSpacing: '0.04em',
+                    fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                    textDecoration: 'none',
+                  }}
+                >
+                  {hi ? 'पढ़ें अंक 01' : 'Read Issue 01'}
+                </Link>
+                {magazine.pdf && (
+                  <a
+                    href={magazine.pdf}
+                    download
+                    style={{
+                      padding: '0.85rem 1.15rem',
+                      background: 'rgba(255,255,255,0.045)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      borderRadius: '8px',
+                      color: 'rgba(255,255,255,0.68)',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      letterSpacing: '0.03em',
+                      fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    {hi ? 'PDF डाउनलोड' : 'Download PDF'}
+                  </a>
+                )}
               </div>
-            ) : (
-              <button style={{
-                padding: '0.85rem 2.5rem',
-                background: 'rgba(212,168,67,0.15)',
-                border: '1px solid rgba(212,168,67,0.4)',
-                borderRadius: '6px', color: '#d4a843',
-                fontSize: '0.85rem', fontWeight: 700, cursor: 'pointer',
-                letterSpacing: '0.06em',
-                fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-              }}>
-                {hi ? '📖 अभी पढ़ें' : '📖 Read Now'}
-              </button>
-            )}
+              <p style={{ fontSize: '0.62rem', letterSpacing: '0.2em', color: 'rgba(212,168,67,0.42)', textTransform: 'uppercase', marginBottom: '0.85rem' }}>
+                {hi ? 'अगले अंक की उलटी गिनती' : 'Countdown to next issue'}
+              </p>
+              <div style={{ display: 'flex', gap: 'clamp(0.75rem,2.5vw,1.75rem)', flexWrap: 'wrap' }}>
+                {[
+                  { v: countdown.days, l: hi ? 'दिन' : 'Days' },
+                  { v: countdown.hrs, l: hi ? 'घंटे' : 'Hrs' },
+                  { v: countdown.mins, l: hi ? 'मिनट' : 'Min' },
+                  { v: countdown.secs, l: hi ? 'सेकंड' : 'Sec' },
+                ].map(({ v, l }) => (
+                  <div key={l} style={{ textAlign: 'center' }}>
+                    <div style={{
+                      fontSize: 'clamp(2rem,5vw,3.2rem)', fontWeight: 700,
+                      color: '#d4a843', fontFamily: 'var(--font-cormorant)',
+                      fontVariantNumeric: 'tabular-nums',
+                      textShadow: '0 0 24px rgba(212,168,67,0.3)',
+                      minWidth: '56px', display: 'block',
+                    }}>
+                      {String(v).padStart(2, '0')}
+                    </div>
+                    <div style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.28)', letterSpacing: '0.12em', textTransform: 'uppercase' }}>{l}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Magazine cover placeholder */}
@@ -389,10 +423,9 @@ export default function LibraryPage() {
   const [mounted, setMounted] = useState(false);
   const [ebookTab, setEbookTab] = useState<'hi' | 'en'>('hi');
   const [section, setSection] = useState<'ebooks' | 'audio'>('ebooks');
-  const [openBook, setOpenBook] = useState<EBook | null>(null);
 
   const mag = MAGAZINES[0];
-  const countdown = useCountdown(mag.launchDate);
+  const countdown = useCountdown(mag.nextIssueDate);
 
   useEffect(() => { setLang(getSavedLanguage()); setMounted(true); }, []);
   const hi = mounted ? lang === 'hi' : true;
@@ -403,16 +436,6 @@ export default function LibraryPage() {
 
   return (
     <>
-      {openBook && (
-        <EbookReader
-          pdfUrl={openBook.pdf}
-          title={hi && openBook.titleHindi ? openBook.titleHindi : openBook.titleEnglish}
-          author={openBook.author}
-          downloadUrl={openBook.pdf}
-          onClose={() => setOpenBook(null)}
-        />
-      )}
-
       <div style={{ minHeight: '100vh', background: 'var(--c-bg)' }}>
         <Header lang={lang} onLangChange={(l) => { setLang(l); saveLanguage(l); }} />
 
@@ -486,7 +509,7 @@ export default function LibraryPage() {
         </section>
 
         {/* ── Muktibodh Banner ── */}
-        <MuktibodBanner hi={hi} countdown={countdown} />
+        <MuktibodBanner hi={hi} magazine={mag} countdown={countdown} />
 
         {/* ── eBooks ── */}
         {section === 'ebooks' && (
@@ -514,7 +537,7 @@ export default function LibraryPage() {
               gap: '1.25rem',
             }}>
               {filteredBooks.map(book => (
-                <BookCard key={book.slug} book={book} hi={hi} onRead={setOpenBook} />
+                <BookCard key={book.slug} book={book} hi={hi} />
               ))}
             </div>
           </section>

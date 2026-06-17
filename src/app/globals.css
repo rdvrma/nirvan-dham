@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&family=Hind:wght@300;400;500;600;700&display=swap');
-
 @import "tailwindcss";
 
 /* ─── Design Tokens ─── */
 :root {
-  --font-inter:      'Inter', system-ui, sans-serif;
-  --font-cormorant:  'Cormorant Garamond', Georgia, serif;
-  --font-hind:       'Hind', 'Noto Sans Devanagari', sans-serif;
-
   --c-bg:        #080f0a;
   --c-surface:   #0d1f10;
   --c-mist:      #0e1f12;

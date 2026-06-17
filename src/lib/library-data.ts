@@ -12,6 +12,8 @@ export interface EBook {
   lang: 'hi' | 'en';
   cover: string;       // path in /public/library/covers/
   pdf: string;         // path in /public/library/ebooks/
+  pageImages?: string[];
+  libraryHref?: string;
   pages?: number;
   isPlaceholder?: boolean;
   description?: string;
@@ -34,7 +36,10 @@ export interface Magazine {
   nameHindi: string;
   issue: string;
   launchDate: string;  // ISO date
+  nextIssueDate: string; // ISO date
   cover?: string;
+  pdf?: string;
+  pageImages?: string[];
   isPlaceholder: boolean;
   description: string;
   descriptionHindi: string;
@@ -192,14 +197,21 @@ export const MAGAZINES: Magazine[] = [
     slug: 'muktibodh-june-2026',
     name: 'Muktibodh',
     nameHindi: 'मुक्तिबोध',
-    issue: 'June 2026 — Issue 01',
+    issue: 'June 2026 - Issue 01',
     launchDate: '2026-06-21',
-    isPlaceholder: true,
-    description: 'A monthly journal of consciousness, non-duality and the living teachings of Nirvan Dham. Launching June 21, 2026.',
-    descriptionHindi: 'चेतना, अद्वैत और निर्वाण धाम की जीवंत शिक्षाओं की मासिक पत्रिका। 21 जून 2026 को प्रकाशित।',
+    nextIssueDate: '2026-07-21',
+    pdf: '/library/magazines/muktibodh-june-2026.pdf',
+    pageImages: Array.from({ length: 35 }, (_, index) => `/library/magazines/muktibodh-june-2026/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
+    isPlaceholder: false,
+    description: 'Issue 01 of Muktibodh is available now. The next monthly edition continues the journal of consciousness, non-duality and the living teachings of Nirvan Dham.',
+    descriptionHindi: 'मुक्तिबोध का प्रथम अंक अब उपलब्ध है। अगला मासिक अंक चेतना, अद्वैत और निर्वाण धाम की जीवंत शिक्षाओं की यात्रा को आगे बढ़ाएगा।',
   },
 ];
 
 export function getEBookBySlug(slug: string) {
   return EBOOKS.find((b) => b.slug === slug);
+}
+
+export function getMagazineBySlug(slug: string) {
+  return MAGAZINES.find((m) => m.slug === slug);
 }
