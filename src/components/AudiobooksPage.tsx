@@ -37,8 +37,12 @@ export default function AudiobooksPage() {
   }, []);
 
   useEffect(() => {
-    if (!channelTouched) setChannel(lang);
-  }, [channelTouched, lang]);
+    const queryLang = new URLSearchParams(window.location.search).get('lang');
+    if (queryLang !== 'hi' && queryLang !== 'en') return;
+    setLang(queryLang);
+    saveLanguage(queryLang);
+    if (!channelTouched) setChannel(queryLang);
+  }, [channelTouched]);
 
   const hi = lang === 'hi';
   const audioHi = channel === 'hi';
@@ -129,7 +133,7 @@ export default function AudiobooksPage() {
 
   return (
     <main className="audio-page" style={{ opacity: mounted ? 1 : 0 }}>
-      <Header lang={lang} onLangChange={(next) => { setLang(next); saveLanguage(next); }} />
+      <Header lang={lang} onLangChange={(next) => { setLang(next); saveLanguage(next); if (!channelTouched) setChannel(next); }} />
 
       <section className="audio-hero">
         <video
