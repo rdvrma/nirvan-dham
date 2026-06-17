@@ -10,6 +10,15 @@ import ContactSection from '@/components/ContactSection';
 import { EBOOKS, AUDIOBOOKS, MAGAZINES } from '@/lib/library-data';
 import type { EBook } from '@/lib/library-data';
 
+const SACRED_SPOKES = [
+  { a: 0, x1: 96, y1: 80, x2: 150, y2: 80 },
+  { a: 60, x1: 88, y1: 93.856, x2: 115, y2: 140.622 },
+  { a: 120, x1: 72, y1: 93.856, x2: 45, y2: 140.622 },
+  { a: 180, x1: 64, y1: 80, x2: 10, y2: 80 },
+  { a: 240, x1: 72, y1: 66.144, x2: 45, y2: 19.378 },
+  { a: 300, x1: 88, y1: 66.144, x2: 115, y2: 19.378 },
+];
+
 // ── FOUC-safe countdown (always starts from 0, updates after mount) ──
 function useCountdown(targetDate: string) {
   const [diff, setDiff] = useState<number | null>(null);
@@ -268,9 +277,10 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
   hi: boolean; launchDate: string; nextIssueDate: string; pdf?: string; slug: string;
 }) {
   // Count DOWN to launchDate if not launched, else count to nextIssueDate
-  const now = Date.now();
-  const launchTime = new Date(launchDate).getTime();
-  const hasLaunched = now >= launchTime;
+  const [hasLaunched, setHasLaunched] = useState(false);
+  useEffect(() => {
+    setHasLaunched(Date.now() >= new Date(launchDate).getTime());
+  }, [launchDate]);
   const countdown = useCountdown(hasLaunched ? nextIssueDate : launchDate);
 
   return (
@@ -455,10 +465,9 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
                 <svg width="160" height="160" viewBox="0 0 160 160" fill="none"
                   style={{ opacity: 0.05, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}>
                   {[70, 52, 34, 16].map(r => <circle key={r} cx="80" cy="80" r={r} stroke="#d4a843" strokeWidth="0.5" />)}
-                  {[0, 60, 120, 180, 240, 300].map(a => {
-                    const rad = a * Math.PI / 180;
-                    return <line key={a} x1={80 + 16 * Math.cos(rad)} y1={80 + 16 * Math.sin(rad)} x2={80 + 70 * Math.cos(rad)} y2={80 + 70 * Math.sin(rad)} stroke="#d4a843" strokeWidth="0.4" />;
-                  })}
+                  {SACRED_SPOKES.map((spoke) => (
+                    <line key={spoke.a} x1={spoke.x1} y1={spoke.y1} x2={spoke.x2} y2={spoke.y2} stroke="#d4a843" strokeWidth="0.4" />
+                  ))}
                 </svg>
 
                 {/* Top label */}
@@ -613,8 +622,8 @@ export default function LibraryPage() {
             fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
           }}>
             {hi
-              ? 'आदिसत्व की शिक्षाएँ — ईबुक, ऑडियोबुक और मासिक पत्रिका मुक्तिबोध'
-              : 'Teachings of Aadisatv — eBooks, Audiobooks & the monthly Muktibodh Magazine'}
+              ? 'निर्वाण धाम की शिक्षाएँ — ईबुक, ऑडियोबुक और मासिक पत्रिका मुक्तिबोध'
+              : 'Teachings of Nirvan Dham — eBooks, Audiobooks & the monthly Muktibodh Magazine'}
           </p>
 
           {/* Section tabs */}
@@ -622,8 +631,8 @@ export default function LibraryPage() {
             {[
               { key: 'ebooks' as const, hi: 'ईबुक', en: 'eBooks', icon: '📚' },
               { key: 'audio' as const, hi: 'ऑडियोबुक', en: 'Audiobooks', icon: '🎧' },
-            ].map(tab => (
-              <button key={tab.key} onClick={() => setSection(tab.key)} style={{
+            ].map(tab => {
+              const tabStyle = {
                 padding: '0.65rem 1.6rem',
                 background: section === tab.key
                   ? 'rgba(212,168,67,0.18)'
@@ -636,10 +645,19 @@ export default function LibraryPage() {
                 fontWeight: section === tab.key ? 700 : 400,
                 transition: 'all 0.3s',
                 fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-              }}>
-                {tab.icon} {hi ? tab.hi : tab.en}
-              </button>
-            ))}
+                textDecoration: 'none',
+              };
+
+              return tab.key === 'audio' ? (
+                <Link key={tab.key} href="/library/audiobooks" style={tabStyle}>
+                  {tab.icon} {hi ? tab.hi : tab.en}
+                </Link>
+              ) : (
+                <button key={tab.key} onClick={() => setSection(tab.key)} style={tabStyle}>
+                  {tab.icon} {hi ? tab.hi : tab.en}
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>

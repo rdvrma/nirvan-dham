@@ -194,12 +194,12 @@ export const TATV_MEMBERS: TatvMember[] = [
     quoteHindi: 'मानव हृदय में बोया गया सत्य का हर बीज अपने समय पर खिलता है।',
     bio: [
       'Ajay carries the Prithvi Tatv — the earth element. Grounded, stable, and endlessly giving, the earth asks for nothing in return. This is the spirit with which Ajay moves through the world — in service, in community, in the quiet dignity of karma yoga.',
-      'The bridge between Nirvan Dham and the wider world, Ajay coordinates community outreach programs, mindfulness workshops, and the dissemination of Aadisatv\'s teachings in rural and urban communities across Bihar and beyond. His work is not separate from his practice — it is his practice.',
+      'The bridge between Nirvan Dham and the wider world, Ajay coordinates community outreach programs, mindfulness workshops, and the dissemination of Nirvan Dham\'s teachings in rural and urban communities across Bihar and beyond. His work is not separate from his practice — it is his practice.',
       'For Ajay, every human encounter is a sacred field. Every village visit, every workshop circle, every conversation is an opportunity to water the seeds of awakening. In him, the teaching walks, breathes, and serves.',
     ],
     bioHindi: [
       'अजय पृथ्वी तत्व को धारण करते हैं। स्थिर, दृढ़ और अंतहीन रूप से देने वाले, पृथ्वी बदले में कुछ नहीं मांगती। यही वह भावना है जिसके साथ अजय दुनिया में विचरते हैं — सेवा में, समुदाय में, कर्म योग की शांत गरिमा में।',
-      'निर्वाण धाम और व्यापक विश्व के बीच सेतु, अजय सामुदायिक आउटरीच कार्यक्रम, माइंडफुलनेस कार्यशालाएं और बिहार व उससे परे ग्रामीण व शहरी समुदायों में आदिसत्व की शिक्षाओं के प्रसार का समन्वय करते हैं। उनका कार्य उनकी साधना से अलग नहीं — वही उनकी साधना है।',
+      'निर्वाण धाम और व्यापक विश्व के बीच सेतु, अजय सामुदायिक आउटरीच कार्यक्रम, माइंडफुलनेस कार्यशालाएं और बिहार व उससे परे ग्रामीण व शहरी समुदायों में निर्वाण धाम की शिक्षाओं के प्रसार का समन्वय करते हैं। उनका कार्य उनकी साधना से अलग नहीं — वही उनकी साधना है।',
       'अजय के लिए, हर मानवीय मुलाकात एक पवित्र क्षेत्र है। हर गाँव का दौरा, हर कार्यशाला मंडल, हर संवाद — जागृति के बीज बोने का अवसर है। उनमें शिक्षा चलती है, साँस लेती है और सेवा करती है।',
     ],
     phone: '+91 93343 25562',

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import HTMLFlipBook from 'react-pageflip';
 import Link from 'next/link';
-import type { CSSProperties } from 'react';
+import type { CSSProperties, MouseEvent, PointerEvent, TouchEvent, WheelEvent } from 'react';
 import type { EBook } from '@/lib/library-data';
 import { getBookManuscript } from '@/lib/book-manuscripts';
 import type { BookManuscript, ManuscriptBlock } from '@/lib/book-manuscripts';
@@ -67,6 +67,23 @@ interface FlipBookApi {
 interface FlipEvent {
   data: number;
 }
+
+type ScrollGestureEvent =
+  | WheelEvent<HTMLElement>
+  | PointerEvent<HTMLElement>
+  | MouseEvent<HTMLElement>
+  | TouchEvent<HTMLElement>;
+
+function stopFlipGesture(event: ScrollGestureEvent) {
+  event.stopPropagation();
+}
+
+const scrollGestureGuards = {
+  onWheelCapture: stopFlipGesture,
+  onPointerDownCapture: stopFlipGesture,
+  onMouseDownCapture: stopFlipGesture,
+  onTouchStartCapture: stopFlipGesture,
+};
 
 export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBookReaderProps) {
   const flipRef = useRef<FlipBookApi | null>(null);
@@ -227,14 +244,16 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
       if (view !== 'flip') return;
-      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') goNext();
-      if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') goPrev();
+      if (event.key === 'ArrowRight') goNext();
+      if (event.key === 'ArrowLeft') goPrev();
+      if (mode === 'manuscript' && event.key === 'ArrowDown') goNext();
+      if (mode === 'manuscript' && event.key === 'ArrowUp') goPrev();
       if (event.key.toLowerCase() === 'g') setView((value) => value === 'grid' ? 'flip' : 'grid');
     }
 
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [goNext, goPrev, view]);
+  }, [goNext, goPrev, mode, view]);
 
   function onFlip(event: FlipEvent) {
     syncPage(event.data + 1);
@@ -374,10 +393,10 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                 showCover
                 mobileScrollSupport
                 clickEventForward={false}
-                useMouseEvents={mode !== 'pdf'}
-                swipeDistance={mode === 'pdf' ? 9999 : 22}
-                showPageCorners={mode !== 'pdf'}
-                disableFlipByClick={mode === 'pdf'}
+                useMouseEvents={mode === 'manuscript'}
+                swipeDistance={mode === 'manuscript' ? 22 : 9999}
+                showPageCorners={mode === 'manuscript'}
+                disableFlipByClick={mode !== 'manuscript'}
                 onFlip={onFlip}
               >
                 {mode === 'manuscript' ? manuscriptPages.map((page, index) => (
@@ -392,7 +411,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                     />
                   </div>
                 )) : mode === 'image' ? book.pageImages?.map((src, index) => (
-                  <div className="flip-page image-flip-page" key={src}>
+                  <div className="flip-page image-flip-page" key={src} {...scrollGestureGuards}>
                     <ImagePageView
                       src={src}
                       pageNumber={index + 1}
@@ -404,7 +423,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                   const pageNumber = index + 1;
                   const shouldRender = pdfDoc && Math.abs(pageNumber - currentPage) <= 5;
                   return (
-                    <div className="flip-page pdf-flip-page" key={pageNumber}>
+                    <div className="flip-page pdf-flip-page" key={pageNumber} {...scrollGestureGuards}>
                       {shouldRender ? (
                         <PdfPageCanvas pdfDoc={pdfDoc} pageNumber={pageNumber} targetWidth={pageSize.width * fontScale} />
                       ) : (
@@ -838,7 +857,7 @@ function ImagePageView({
   zoom: number;
 }) {
   return (
-    <div className={`image-page-frame ${zoom > 1.01 ? 'is-zoomed' : ''}`}>
+    <div className={`image-page-frame ${zoom > 1.01 ? 'is-zoomed' : ''}`} {...scrollGestureGuards}>
       <img
         src={src}
         alt={`${title} page ${pageNumber}`}
