@@ -44,9 +44,11 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
     };
   }, []);
 
+
   const navLinks = [
     { href: '/', label: lang === 'hi' ? 'मुख्य पृष्ठ' : 'Home' },
     { href: '/nirvan-sutra', label: lang === 'hi' ? 'निर्वाण सूत्र' : 'Nirvan Sutra' },
+    { href: '/library', label: lang === 'hi' ? 'पुस्तकालय' : 'Library' },
     { href: '/guided-meditation', label: lang === 'hi' ? 'ध्यान मार्गदर्शन' : 'Guided Meditation' },
     { href: '/bodhgaya-samvad', label: lang === 'hi' ? 'बोधगया संवाद' : 'Bodhgaya Samvad' },
     { href: '/online-samvad', label: lang === 'hi' ? 'ऑनलाइन संवाद' : 'Online Samvad' },
@@ -54,6 +56,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
     { href: '/donation', label: lang === 'hi' ? 'सहयोग' : 'Donation' },
     { href: '#contact', label: lang === 'hi' ? 'संपर्क' : 'Contact' },
   ];
+
 
   const navLinkStyle = {
     fontSize: lang === 'hi' ? '0.95rem' : '0.875rem',
