@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { CSSProperties } from 'react';
@@ -16,23 +16,19 @@ interface BookDetailPageProps {
 
 export default function BookDetailPage({ book }: BookDetailPageProps) {
   const [lang, setLang] = useState<Language>('hi');
+  const [mounted, setMounted] = useState(false);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     setLang(getSavedLanguage());
+    setMounted(true);
   }, []);
 
   const hi = lang === 'hi';
   const title = hi && book.titleHindi ? book.titleHindi : book.titleEnglish;
   const subtitle = hi && book.subtitleHindi ? book.subtitleHindi : book.subtitle;
-  const shareText = copied ? (hi ? 'Link copied' : 'Link copied') : (hi ? 'Share Book' : 'Share Book');
-  const stats = useMemo(() => {
-    return [
-      { label: hi ? 'Format' : 'Format', value: 'Premium Web Book' },
-      { label: hi ? 'Reader' : 'Reader', value: hi ? 'Flip + Grid' : 'Flip + Grid' },
-      { label: hi ? 'Theme' : 'Theme', value: hi ? 'Dark / Light' : 'Dark / Light' },
-    ];
-  }, [hi]);
+  const description = hi && book.descriptionHindi ? book.descriptionHindi : book.description;
+  const shareText = copied ? '✓ Link Copied' : (hi ? 'साझा करें' : 'Share');
 
   async function shareBook() {
     const url = window.location.href;
@@ -52,116 +48,153 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--c-bg)', color: 'var(--c-text)' }}>
+    <div
+      style={{
+        minHeight: '100vh',
+        background: 'var(--c-bg)',
+        color: 'var(--c-text)',
+        // FOUC fix — fade in after mount
+        opacity: mounted ? 1 : 0,
+        transition: 'opacity 0.25s ease',
+      }}
+    >
       <Header lang={lang} onLangChange={(l) => { setLang(l); saveLanguage(l); }} />
 
       <main>
+        {/* ── Hero ── */}
         <section style={{
           position: 'relative',
           overflow: 'hidden',
           padding: 'clamp(7rem,12vw,9rem) clamp(1.25rem,5vw,5rem) clamp(3rem,6vw,5rem)',
           background: 'linear-gradient(180deg,#050906 0%,#0c1a0f 56%,#08110a 100%)',
         }}>
-          <div className="sacred-grid-bg" style={{ position: 'absolute', inset: 0, opacity: 0.28 }} />
+          {/* Background decorative circle */}
           <div style={{
-            position: 'absolute',
-            inset: '10% 12% auto auto',
-            width: 'min(42vw,480px)',
-            aspectRatio: '1',
+            position: 'absolute', inset: '8% 10% auto auto',
+            width: 'min(44vw,500px)', aspectRatio: '1',
             borderRadius: '50%',
-            border: '1px solid rgba(212,168,67,0.07)',
-            opacity: 0.8,
+            border: '1px solid rgba(212,168,67,0.06)',
+            pointerEvents: 'none',
+          }} />
+          <div style={{
+            position: 'absolute', top: '15%', right: '8%',
+            width: 'min(28vw,320px)', aspectRatio: '1',
+            borderRadius: '50%',
+            border: '1px solid rgba(212,168,67,0.04)',
             pointerEvents: 'none',
           }} />
 
           <div style={{
-            position: 'relative',
-            zIndex: 2,
-            maxWidth: '1180px',
-            margin: '0 auto',
+            position: 'relative', zIndex: 2,
+            maxWidth: '1180px', margin: '0 auto',
             display: 'grid',
-            gridTemplateColumns: 'minmax(220px,340px) minmax(0,1fr)',
-            gap: 'clamp(2rem,6vw,5rem)',
-            alignItems: 'center',
+            gridTemplateColumns: 'minmax(200px, 320px) minmax(0, 1fr)',
+            gap: 'clamp(2rem, 6vw, 5rem)',
+            alignItems: 'start',
           }} className="book-detail-hero">
+
+            {/* Book Cover */}
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{
                 position: 'relative',
-                width: 'min(76vw,330px)',
+                width: 'min(76vw, 300px)',
                 aspectRatio: '2/3',
-                borderRadius: '8px 18px 18px 8px',
+                borderRadius: '6px 16px 16px 6px',
                 overflow: 'hidden',
                 background: 'linear-gradient(145deg,#132216,#071009)',
-                border: '1px solid rgba(212,168,67,0.22)',
-                boxShadow: '24px 28px 80px rgba(0,0,0,0.64), inset 10px 0 20px rgba(0,0,0,0.28)',
+                border: '1px solid rgba(212,168,67,0.2)',
+                boxShadow: '20px 24px 72px rgba(0,0,0,0.65), -3px 0 12px rgba(0,0,0,0.4), inset 8px 0 16px rgba(0,0,0,0.25)',
               }}>
                 {book.cover ? (
-                  <Image src={book.cover} alt={title} fill priority sizes="(max-width: 700px) 76vw, 330px" style={{ objectFit: 'cover' }} />
+                  <Image
+                    src={book.cover} alt={title}
+                    fill priority
+                    sizes="(max-width: 700px) 76vw, 300px"
+                    style={{ objectFit: 'cover' }}
+                  />
                 ) : (
-                  <div style={{ position: 'absolute', inset: 0, display: 'grid', placeItems: 'center', padding: '2rem', textAlign: 'center', color: '#d4a843' }}>
-                    {title}
+                  <div style={{
+                    position: 'absolute', inset: 0,
+                    display: 'flex', flexDirection: 'column',
+                    alignItems: 'center', justifyContent: 'center',
+                    padding: '2rem', textAlign: 'center', gap: '1rem',
+                  }}>
+                    <div style={{ fontSize: '2.5rem', opacity: 0.2 }}>📖</div>
+                    <p style={{
+                      fontFamily: hi && book.titleHindi ? 'var(--font-hind)' : 'var(--font-cormorant)',
+                      color: '#d4a843', fontSize: '1rem', lineHeight: 1.4,
+                    }}>{title}</p>
                   </div>
                 )}
+                {/* Spine */}
+                <div style={{
+                  position: 'absolute', left: 0, top: 0, bottom: 0, width: '6px',
+                  background: 'linear-gradient(to right, rgba(212,168,67,0.18), rgba(212,168,67,0.06))',
+                }} />
               </div>
             </div>
 
+            {/* Book Info */}
             <div>
+              {/* Back link */}
               <Link href="/library" style={{
-                display: 'inline-flex',
-                color: 'rgba(212,168,67,0.72)',
-                textDecoration: 'none',
-                fontSize: '0.75rem',
-                letterSpacing: '0.12em',
-                textTransform: 'uppercase',
-                marginBottom: '1.25rem',
+                display: 'inline-flex', alignItems: 'center', gap: '0.35rem',
+                color: 'rgba(212,168,67,0.65)', textDecoration: 'none',
+                fontSize: '0.73rem', letterSpacing: '0.1em', textTransform: 'uppercase',
+                marginBottom: '1.5rem',
+                fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
               }}>
-                Back to Library
+                ← {hi ? 'पुस्तकालय' : 'Library'}
               </Link>
 
+              {/* Tag */}
               <p style={{
-                color: '#d4a843',
-                fontSize: '0.7rem',
-                letterSpacing: '0.24em',
-                textTransform: 'uppercase',
-                marginBottom: '0.9rem',
+                color: '#d4a843', fontSize: '0.64rem',
+                letterSpacing: '0.26em', textTransform: 'uppercase',
+                marginBottom: '0.9rem', opacity: 0.75,
               }}>
-                Nirvan Dham Digital Granth
+                {hi ? 'निर्वाण धाम · डिजिटल ग्रंथ' : 'Nirvan Dham · Digital Granth'}
               </p>
 
+              {/* Title */}
               <h1 style={{
                 fontFamily: hi && book.titleHindi ? 'var(--font-hind)' : 'var(--font-cormorant)',
-                fontSize: 'clamp(2.5rem,7vw,5.4rem)',
+                fontSize: 'clamp(2.2rem, 6vw, 4.5rem)',
                 fontWeight: hi && book.titleHindi ? 600 : 300,
-                lineHeight: 0.98,
+                lineHeight: hi && book.titleHindi ? 1.2 : 1.05,
+                paddingBottom: hi && book.titleHindi ? '0.1em' : '0',
                 color: 'var(--c-ivory)',
-                maxWidth: '760px',
+                marginBottom: '0',
               }}>
                 {title}
               </h1>
 
+              {/* Subtitle */}
               {subtitle && (
                 <p style={{
-                  marginTop: '1.25rem',
-                  maxWidth: '620px',
-                  color: 'rgba(245,237,216,0.58)',
-                  fontSize: hi && book.subtitleHindi ? '1rem' : '1.1rem',
-                  lineHeight: 1.8,
+                  marginTop: '1rem',
+                  color: 'rgba(245,237,216,0.52)',
+                  fontSize: hi && book.subtitleHindi ? '1rem' : '1.05rem',
+                  lineHeight: 1.75,
                   fontFamily: hi && book.subtitleHindi ? 'var(--font-hind)' : 'var(--font-inter)',
+                  maxWidth: '560px',
                 }}>
                   {subtitle}
                 </p>
               )}
 
-              <p style={{ marginTop: '1rem', color: '#d4a843', opacity: 0.72, fontSize: '0.9rem' }}>
-                by {book.author}
+              {/* Author */}
+              <p style={{ marginTop: '0.85rem', color: '#d4a843', opacity: 0.7, fontSize: '0.88rem' }}>
+                — {book.author}
               </p>
 
-              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '2rem' }}>
+              {/* CTA Buttons */}
+              <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', marginTop: '2.25rem' }}>
                 <Link href={`/library/${book.slug}/read`} style={primaryAction}>
-                  Enter Premium Reader
+                  {hi ? '📖 पुस्तक पढ़ें' : '📖 Read Book'}
                 </Link>
                 <a href={book.pdf} download style={secondaryAction}>
-                  Download PDF
+                  {hi ? '↓ PDF डाउनलोड' : '↓ Download PDF'}
                 </a>
                 <button type="button" onClick={shareBook} style={secondaryButton}>
                   {shareText}
@@ -171,58 +204,68 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
           </div>
         </section>
 
-        <section style={{ padding: 'clamp(3rem,6vw,5rem) clamp(1.25rem,5vw,5rem)' }}>
-          <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,minmax(0,1fr))', gap: '1rem' }} className="book-detail-stats">
-              {stats.map((item) => (
-                <div key={item.label} style={{
-                  border: '1px solid rgba(212,168,67,0.12)',
-                  background: 'rgba(13,31,16,0.44)',
-                  borderRadius: '8px',
-                  padding: '1.25rem',
-                }}>
-                  <p style={{ color: 'rgba(212,168,67,0.56)', fontSize: '0.68rem', letterSpacing: '0.18em', textTransform: 'uppercase', marginBottom: '0.5rem' }}>
-                    {item.label}
-                  </p>
-                  <p style={{ color: 'var(--c-ivory)', fontSize: '1.05rem' }}>{item.value}</p>
-                </div>
-              ))}
-            </div>
-
-            <div style={{
-              marginTop: '1.25rem',
-              border: '1px solid rgba(212,168,67,0.12)',
-              background: 'linear-gradient(135deg,rgba(13,31,16,0.7),rgba(7,13,8,0.8))',
-              borderRadius: '8px',
-              padding: 'clamp(1.4rem,4vw,2rem)',
-            }}>
-              <h2 style={{ fontFamily: 'var(--font-cormorant)', fontSize: 'clamp(1.8rem,4vw,2.8rem)', fontWeight: 300, color: 'var(--c-ivory)', marginBottom: '0.75rem' }}>
-                A reading experience, not just a file
-              </h2>
-              <p style={{ color: 'rgba(245,237,216,0.54)', lineHeight: 1.9, maxWidth: '780px' }}>
-                This book opens inside a native Nirvan Dham reader with page flip, grid overview, theme control, font sizing, current-page sharing, and direct PDF download. The first version reads the PDF text into a premium web-book surface; later, each page can be enhanced with designed sections, imagery, audio, or video.
+        {/* ── Book Summary ── */}
+        {(description || subtitle) && (
+          <section style={{ padding: 'clamp(3rem,6vw,5rem) clamp(1.25rem,5vw,5rem)' }}>
+            <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+              <p style={{
+                fontSize: '0.64rem', letterSpacing: '0.24em', color: '#d4a843',
+                textTransform: 'uppercase', fontWeight: 700, opacity: 0.75, marginBottom: '1.25rem',
+              }}>
+                {hi ? 'पुस्तक के बारे में' : 'About This Book'}
               </p>
+
+              <div style={{
+                border: '1px solid rgba(212,168,67,0.1)',
+                background: 'linear-gradient(135deg, rgba(13,31,16,0.65), rgba(7,13,8,0.75))',
+                borderRadius: '12px',
+                padding: 'clamp(1.5rem, 4vw, 2.5rem)',
+              }}>
+                {description ? (
+                  <p style={{
+                    color: 'rgba(245,237,216,0.62)',
+                    lineHeight: 1.95,
+                    fontSize: hi ? '1rem' : '0.95rem',
+                    fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                  }}>
+                    {description}
+                  </p>
+                ) : (
+                  <p style={{
+                    color: 'rgba(245,237,216,0.5)',
+                    lineHeight: 1.95,
+                    fontSize: hi ? '1rem' : '0.95rem',
+                    fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                  }}>
+                    {subtitle}
+                  </p>
+                )}
+
+                {/* Read CTA inside summary */}
+                <div style={{ marginTop: '2rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(212,168,67,0.08)', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+                  <Link href={`/library/${book.slug}/read`} style={primaryAction}>
+                    {hi ? '📖 अभी पढ़ें' : '📖 Read Now'}
+                  </Link>
+                  <a href={book.pdf} download style={secondaryAction}>
+                    {hi ? '↓ PDF' : '↓ PDF'}
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
       </main>
 
       <ContactSection lang={lang} />
 
       <style jsx>{`
-        @media (max-width: 840px) {
+        @media (max-width: 860px) {
           .book-detail-hero {
             grid-template-columns: 1fr !important;
             text-align: center;
           }
-
-          .book-detail-hero a,
-          .book-detail-hero button {
+          .book-detail-hero > div:first-child {
             justify-content: center;
-          }
-
-          .book-detail-stats {
-            grid-template-columns: 1fr !important;
           }
         }
       `}</style>
@@ -234,26 +277,36 @@ const primaryAction: CSSProperties = {
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  minHeight: '44px',
-  padding: '0.78rem 1.25rem',
+  minHeight: '46px',
+  padding: '0.8rem 1.5rem',
   borderRadius: '8px',
-  border: '1px solid rgba(212,168,67,0.42)',
-  background: 'linear-gradient(135deg,rgba(212,168,67,0.24),rgba(212,168,67,0.1))',
+  border: '1px solid rgba(212,168,67,0.45)',
+  background: 'rgba(212,168,67,0.15)',
   color: '#f7dfa0',
   textDecoration: 'none',
   fontWeight: 700,
-  fontSize: '0.86rem',
+  fontSize: '0.88rem',
+  cursor: 'pointer',
+  transition: 'background 0.2s',
 };
 
 const secondaryAction: CSSProperties = {
-  ...primaryAction,
+  display: 'inline-flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  minHeight: '46px',
+  padding: '0.8rem 1.25rem',
+  borderRadius: '8px',
   background: 'rgba(255,255,255,0.04)',
-  border: '1px solid rgba(255,255,255,0.12)',
-  color: 'rgba(245,237,216,0.72)',
+  border: '1px solid rgba(255,255,255,0.1)',
+  color: 'rgba(245,237,216,0.65)',
+  textDecoration: 'none',
+  fontWeight: 600,
+  fontSize: '0.85rem',
+  cursor: 'pointer',
 };
 
 const secondaryButton: CSSProperties = {
   ...secondaryAction,
-  cursor: 'pointer',
-  fontFamily: 'var(--font-inter)',
+  fontFamily: 'inherit',
 };

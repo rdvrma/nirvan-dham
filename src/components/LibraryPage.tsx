@@ -318,14 +318,14 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
             <h2 style={{
               fontFamily: 'var(--font-hind)',
               fontSize: 'clamp(3.5rem,8vw,6.5rem)',
-              fontWeight: 800, lineHeight: 0.9,
-              color: 'transparent',
-              backgroundImage: 'linear-gradient(135deg, #f0d080 0%, #c8983a 40%, #e8c060 70%, #b87830 100%)',
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text',
-              textShadow: 'none',
+              fontWeight: 800,
+              lineHeight: 1.1,
+              paddingBottom: '0.08em',
+              color: '#d4a843',
+              textShadow: '0 0 60px rgba(212,168,67,0.35), 0 0 120px rgba(212,168,67,0.15)',
               marginBottom: '0.3rem',
               letterSpacing: '-0.01em',
+              display: 'block',
             }}>
               मुक्तिबोध
             </h2>
@@ -372,9 +372,8 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
                         fontSize: 'clamp(1.8rem,4.5vw,3rem)',
                         fontWeight: 700, fontFamily: 'var(--font-cormorant)',
                         fontVariantNumeric: 'tabular-nums',
-                        background: 'linear-gradient(135deg, #f0d080, #c8983a)',
-                        WebkitBackgroundClip: 'text', backgroundClip: 'text',
-                        color: 'transparent',
+                        color: '#d4a843',
+                        textShadow: '0 0 20px rgba(212,168,67,0.4)',
                       }}>
                         {String(v).padStart(2, '0')}
                       </div>
@@ -393,38 +392,37 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
               )}
             </div>
 
-            {/* CTA Buttons */}
-            {hasLaunched && (
-              <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
-                <Link href={`/library/magazine/${slug}/read`} style={{
-                  padding: '0.9rem 1.75rem',
-                  background: 'rgba(212,168,67,0.14)',
-                  border: '1px solid rgba(212,168,67,0.45)',
-                  borderRadius: '8px', color: '#d4a843',
-                  fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.04em',
+            {/* CTA Buttons — always visible */}
+            <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
+              <Link href={`/library/magazine/${slug}/read`} style={{
+                padding: '0.9rem 1.75rem',
+                background: 'rgba(212,168,67,0.14)',
+                border: '1px solid rgba(212,168,67,0.45)',
+                borderRadius: '8px', color: '#d4a843',
+                fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.04em',
+                fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                textDecoration: 'none', transition: 'all 0.2s',
+              }}
+                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.24)')}
+                onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.14)')}
+              >
+                {hi ? '📖 पढ़ें — अंक 01' : '📖 Read Issue 01'}
+              </Link>
+              {pdf && (
+                <a href={pdf} download style={{
+                  padding: '0.9rem 1.35rem',
+                  background: 'rgba(255,255,255,0.04)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  borderRadius: '8px', color: 'rgba(255,255,255,0.6)',
+                  fontSize: '0.85rem', fontWeight: 600,
                   fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-                  textDecoration: 'none', transition: 'all 0.2s',
-                }}
-                  onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.24)')}
-                  onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.14)')}
-                >
-                  {hi ? '📖 पढ़ें — अंक 01' : '📖 Read Issue 01'}
-                </Link>
-                {pdf && (
-                  <a href={pdf} download style={{
-                    padding: '0.9rem 1.35rem',
-                    background: 'rgba(255,255,255,0.04)',
-                    border: '1px solid rgba(255,255,255,0.1)',
-                    borderRadius: '8px', color: 'rgba(255,255,255,0.6)',
-                    fontSize: '0.85rem', fontWeight: 600,
-                    fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-                    textDecoration: 'none',
-                  }}>
-                    ↓ {hi ? 'PDF डाउनलोड' : 'Download PDF'}
-                  </a>
-                )}
-              </div>
-            )}
+                  textDecoration: 'none',
+                }}>
+                  ↓ {hi ? 'PDF डाउनलोड' : 'Download PDF'}
+                </a>
+              )}
+            </div>
+
           </div>
 
           {/* Right — Stylized magazine cover */}
@@ -472,10 +470,10 @@ function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
                 {/* Main title */}
                 <p style={{
                   fontFamily: 'var(--font-hind)', fontSize: '1.85rem', fontWeight: 800,
-                  color: 'transparent',
-                  backgroundImage: 'linear-gradient(135deg, #e8c860 0%, #c8983a 50%, #d4a843 100%)',
-                  WebkitBackgroundClip: 'text', backgroundClip: 'text',
-                  textAlign: 'center', lineHeight: 1.1, position: 'relative',
+                  color: '#d4a843',
+                  textShadow: '0 0 20px rgba(212,168,67,0.4)',
+                  textAlign: 'center', lineHeight: 1.2, position: 'relative',
+                  paddingBottom: '0.05em',
                 }}>मुक्तिबोध</p>
                 <p style={{
                   fontFamily: 'var(--font-cormorant)', fontStyle: 'italic',
@@ -600,10 +598,11 @@ export default function LibraryPage() {
             fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
             fontSize: 'clamp(3rem,8vw,6rem)',
             fontWeight: hi ? 600 : 300,
-            lineHeight: 1.0,
+            lineHeight: hi ? 1.15 : 1.05,
             marginBottom: '1.1rem',
-            background: 'linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.7) 100%)',
-            WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent',
+            paddingBottom: hi ? '0.12em' : '0',
+            color: '#f5f0e8',
+            textShadow: '0 2px 40px rgba(255,255,255,0.08)',
           }}>
             {hi ? 'डिजिटल पुस्तकालय' : 'Digital Library'}
           </h1>

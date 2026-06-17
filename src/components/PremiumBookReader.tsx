@@ -83,6 +83,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
   const [fontScale, setFontScale] = useState(1);
   const [copied, setCopied] = useState(false);
   const [pageSize, setPageSize] = useState({ width: 430, height: 608, portrait: false });
+  const [mounted, setMounted] = useState(false);
 
   const title = manuscript?.title || book.titleHindi || book.titleEnglish;
   const subtitle = manuscript?.subtitle || book.subtitleHindi || book.subtitle;
@@ -115,6 +116,9 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
     window.addEventListener('resize', measure);
     return () => window.removeEventListener('resize', measure);
   }, [mode]);
+
+  // FOUC fix — mark mounted after first paint
+  useEffect(() => { setMounted(true); }, []);
 
   useEffect(() => {
     const storedPage = Number(window.localStorage.getItem(storageKey));
@@ -249,7 +253,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: palette.app, color: palette.ink }}>
+    <div style={{ minHeight: '100vh', background: palette.app, color: palette.ink, opacity: mounted ? 1 : 0, transition: 'opacity 0.2s ease' }}>
       <header style={{
         position: 'sticky',
         top: 0,
@@ -370,10 +374,10 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                 showCover
                 mobileScrollSupport
                 clickEventForward={false}
-                useMouseEvents={mode === 'manuscript' && fontScale <= 1.02}
-                swipeDistance={mode === 'manuscript' ? 28 : 9999}
-                showPageCorners={mode === 'manuscript' && fontScale <= 1.02}
-                disableFlipByClick
+                useMouseEvents={mode !== 'pdf'}
+                swipeDistance={mode === 'pdf' ? 9999 : 22}
+                showPageCorners={mode !== 'pdf'}
+                disableFlipByClick={mode === 'pdf'}
                 onFlip={onFlip}
               >
                 {mode === 'manuscript' ? manuscriptPages.map((page, index) => (

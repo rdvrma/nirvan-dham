@@ -58,6 +58,8 @@ export const EBOOKS: EBook[] = [
     lang: 'hi',
     cover: '/library/covers/main-kaun-hoon.png',
     pdf: '/library/ebooks/main-kaun-hoon.pdf',
+    descriptionHindi: 'यह पुस्तक उस एकमात्र प्रश्न की सरल और गहरी खोज है जो सभी प्रश्नों का उत्तर देता है — "मैं कौन हूँ?" आदिसत्व के साथ इस यात्रा में आप पाएँगे कि जो खोज रहा है वही उत्तर है। विचारों से परे, मन की सीमाओं से परे — वहाँ जो है, वह आप ही हैं।',
+    description: 'A direct and gentle inquiry into the only question that dissolves all questions — "Who am I?" In this journey with Aadisatv, you will discover that the one who seeks is the answer itself. Beyond thought, beyond the boundaries of mind — what remains is what you truly are.',
   },
   {
     slug: 'maya-aur-man',
@@ -69,6 +71,8 @@ export const EBOOKS: EBook[] = [
     lang: 'hi',
     cover: '/library/covers/maya-aur-man.png',
     pdf: '/library/ebooks/maya-aur-man.pdf',
+    descriptionHindi: 'माया सिर्फ एक दार्शनिक विचार नहीं — यह वह पर्दा है जो हम अपने ही स्वरूप पर डाले हुए हैं। इस पुस्तक में आदिसत्व विचार की प्रकृति, मन के भ्रम और उस जागृति को उजागर करते हैं जो हमेशा से यहाँ है। माया को समझना ही मुक्ति की पहली किरण है।',
+    description: 'Maya is not just a philosophical concept — it is the veil we have drawn over our own nature. In this book, Aadisatv illuminates the nature of thought, the illusions of the mind, and the awakening that has always been present. Understanding Maya is the first ray of liberation.',
   },
   {
     slug: 'atma-ka-sangeet-hi',
@@ -113,6 +117,7 @@ export const EBOOKS: EBook[] = [
     lang: 'en',
     cover: '/library/covers/the-seeker-is-the-illusion.png',
     pdf: '/library/ebooks/the-seeker-is-the-illusion.pdf',
+    description: 'What if the one searching for enlightenment is itself the obstacle? This book is a direct pointing — not toward a distant goal, but toward what is already and always present. Aadisatv dissolves the seeker and the sought in one clear recognition: there is only awareness, looking at itself.',
   },
   {
     slug: 'maya-and-mind',
@@ -122,6 +127,7 @@ export const EBOOKS: EBook[] = [
     lang: 'en',
     cover: '/library/covers/maya-and-mind.png',
     pdf: '/library/ebooks/maya-and-mind.pdf',
+    description: 'Maya is not something outside of us — it is the movement of the mind mistaking itself for the world. In this luminous work, Aadisatv traces the mechanics of thought, the architecture of illusion, and the moment of recognition where mind sees through itself into pure awareness.',
   },
   {
     slug: 'the-silence-between',
