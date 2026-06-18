@@ -85,6 +85,9 @@ const scrollGestureGuards = {
   onTouchStartCapture: stopFlipGesture,
 };
 
+const IMAGE_MIN_ZOOM = 0.7;
+const IMAGE_ZOOM_STEP = 0.15;
+
 export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBookReaderProps) {
   const flipRef = useRef<FlipBookApi | null>(null);
   const manuscript = useMemo(() => getBookManuscript(book.slug), [book.slug]);
@@ -315,10 +318,17 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           <button type="button" onClick={() => setTheme(nextTheme(theme))} style={readerButton(palette)}>
             {theme}
           </button>
-          <button type="button" onClick={() => setFontScale((value) => Math.max(0.88, parseFloat((value - 0.06).toFixed(2))))} style={readerButton(palette)}>
+          <button type="button" onClick={() => setFontScale((value) => {
+            const minZoom = mode === 'image' ? IMAGE_MIN_ZOOM : 0.88;
+            const step = mode === 'image' ? IMAGE_ZOOM_STEP : 0.06;
+            return Math.max(minZoom, parseFloat((value - step).toFixed(2)));
+          })} style={readerButton(palette)}>
             {mode === 'manuscript' ? 'A-' : 'Zoom -'}
           </button>
-          <button type="button" onClick={() => setFontScale((value) => Math.min(1.24, parseFloat((value + 0.06).toFixed(2))))} style={readerButton(palette)}>
+          <button type="button" onClick={() => setFontScale((value) => {
+            if (mode !== 'image') return Math.min(1.24, parseFloat((value + 0.06).toFixed(2)));
+            return parseFloat((value + IMAGE_ZOOM_STEP).toFixed(2));
+          })} style={readerButton(palette)}>
             {mode === 'manuscript' ? 'A+' : 'Zoom +'}
           </button>
           <button type="button" onClick={shareCurrentPage} style={readerButton(palette)}>
@@ -417,6 +427,9 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                       pageNumber={index + 1}
                       title={title}
                       zoom={fontScale}
+                      onZoomChange={setFontScale}
+                      onSwipeNext={goNext}
+                      onSwipePrev={goPrev}
                     />
                   </div>
                 )) : Array.from({ length: totalPages }, (_, index) => {
@@ -717,6 +730,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         .pdf-flip-page {
           overflow: auto;
           overscroll-behavior: contain;
+          touch-action: pan-x pan-y;
           scrollbar-width: thin;
           scrollbar-color: color-mix(in srgb, var(--gold) 42%, transparent) transparent;
         }
@@ -730,6 +744,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           align-items: flex-start;
           justify-content: center;
           overscroll-behavior: contain;
+          touch-action: pan-x pan-y pinch-zoom;
           scrollbar-width: thin;
           scrollbar-color: rgba(126,91,31,0.55) transparent;
         }
@@ -737,6 +752,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         .image-page-frame.is-zoomed {
           justify-content: flex-start;
           cursor: grab;
+          touch-action: pan-x pan-y pinch-zoom;
         }
 
         .image-page-frame img {
@@ -856,14 +872,93 @@ function ImagePageView({
   pageNumber,
   title,
   zoom,
+  onZoomChange,
+  onSwipeNext,
+  onSwipePrev,
 }: {
   src: string;
   pageNumber: number;
   title: string;
   zoom: number;
+  onZoomChange: (update: (value: number) => number) => void;
+  onSwipeNext: () => void;
+  onSwipePrev: () => void;
 }) {
+  const frameRef = useRef<HTMLDivElement>(null);
+  const pinchRef = useRef<{ distance: number; zoom: number } | null>(null);
+  const touchRef = useRef<{ x: number; y: number; time: number } | null>(null);
+
+  function getTouchDistance(touches: { length: number; item(index: number): { clientX: number; clientY: number } | null }) {
+    if (touches.length < 2) return 0;
+    const first = touches.item(0);
+    const second = touches.item(1);
+    if (!first || !second) return 0;
+    return Math.hypot(first.clientX - second.clientX, first.clientY - second.clientY);
+  }
+
+  function onImageTouchStart(event: TouchEvent<HTMLDivElement>) {
+    event.stopPropagation();
+    if (event.touches.length >= 2) {
+      pinchRef.current = { distance: getTouchDistance(event.touches), zoom };
+      touchRef.current = null;
+      return;
+    }
+
+    const touch = event.touches.item(0);
+    if (!touch) return;
+    pinchRef.current = null;
+    touchRef.current = { x: touch.clientX, y: touch.clientY, time: Date.now() };
+  }
+
+  function onImageTouchMove(event: TouchEvent<HTMLDivElement>) {
+    event.stopPropagation();
+    if (event.touches.length >= 2 && pinchRef.current) {
+      event.preventDefault();
+      const nextDistance = getTouchDistance(event.touches);
+      if (!nextDistance || !pinchRef.current.distance) return;
+      const ratio = nextDistance / pinchRef.current.distance;
+      const nextZoom = Math.max(IMAGE_MIN_ZOOM, parseFloat((pinchRef.current.zoom * ratio).toFixed(2)));
+      onZoomChange(() => nextZoom);
+    }
+  }
+
+  function onImageTouchEnd(event: TouchEvent<HTMLDivElement>) {
+    event.stopPropagation();
+    if (pinchRef.current || event.touches.length > 0) {
+      if (event.touches.length === 0) pinchRef.current = null;
+      return;
+    }
+
+    const start = touchRef.current;
+    const touch = event.changedTouches.item(0);
+    touchRef.current = null;
+    if (!start || !touch) return;
+
+    const dx = touch.clientX - start.x;
+    const dy = touch.clientY - start.y;
+    const elapsed = Date.now() - start.time;
+    const isPageSwipe = zoom <= 1.01 && Math.abs(dx) > 62 && Math.abs(dx) > Math.abs(dy) * 1.35 && elapsed < 800;
+    if (!isPageSwipe) return;
+
+    if (dx < 0) onSwipeNext();
+    else onSwipePrev();
+  }
+
   return (
-    <div className={`image-page-frame ${zoom > 1.01 ? 'is-zoomed' : ''}`} {...scrollGestureGuards}>
+    <div
+      ref={frameRef}
+      className={`image-page-frame ${zoom > 1.01 ? 'is-zoomed' : ''}`}
+      {...scrollGestureGuards}
+      onTouchStart={onImageTouchStart}
+      onTouchMove={onImageTouchMove}
+      onTouchEnd={onImageTouchEnd}
+      onTouchCancel={(event) => {
+        event.stopPropagation();
+        pinchRef.current = null;
+        touchRef.current = null;
+      }}
+      style={{ touchAction: 'pan-x pan-y pinch-zoom' }}
+    >
       <img
         src={src}
         alt={`${title} page ${pageNumber}`}

@@ -7,38 +7,9 @@ import type { Language } from '@/lib/i18n';
 import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
+import MuktibodhMagazineSection from '@/components/MuktibodhMagazineSection';
 import { EBOOKS, AUDIOBOOKS, MAGAZINES } from '@/lib/library-data';
 import type { EBook } from '@/lib/library-data';
-
-const SACRED_SPOKES = [
-  { a: 0, x1: 96, y1: 80, x2: 150, y2: 80 },
-  { a: 60, x1: 88, y1: 93.856, x2: 115, y2: 140.622 },
-  { a: 120, x1: 72, y1: 93.856, x2: 45, y2: 140.622 },
-  { a: 180, x1: 64, y1: 80, x2: 10, y2: 80 },
-  { a: 240, x1: 72, y1: 66.144, x2: 45, y2: 19.378 },
-  { a: 300, x1: 88, y1: 66.144, x2: 115, y2: 19.378 },
-];
-
-// ── FOUC-safe countdown (always starts from 0, updates after mount) ──
-function useCountdown(targetDate: string) {
-  const [diff, setDiff] = useState<number | null>(null);
-  useEffect(() => {
-    const end = new Date(targetDate).getTime();
-    const tick = () => setDiff(Math.max(0, end - Date.now()));
-    tick();
-    const id = setInterval(tick, 1000);
-    return () => clearInterval(id);
-  }, [targetDate]);
-  if (diff === null) return { days: 0, hrs: 0, mins: 0, secs: 0, launched: false, ready: false };
-  return {
-    days: Math.floor(diff / 86400000),
-    hrs: Math.floor((diff % 86400000) / 3600000),
-    mins: Math.floor((diff % 3600000) / 60000),
-    secs: Math.floor((diff % 60000) / 1000),
-    launched: diff === 0,
-    ready: true,
-  };
-}
 
 // ── Waveform bars ────────────────────────────────────────
 function Waveform() {
@@ -272,254 +243,6 @@ function AudioCard({ book, hi }: { book: typeof AUDIOBOOKS[0]; hi: boolean }) {
   );
 }
 
-// ── Muktibodh Banner ──────────────────────────────────────
-function MuktibodBanner({ hi, launchDate, nextIssueDate, pdf, slug }: {
-  hi: boolean; launchDate: string; nextIssueDate: string; pdf?: string; slug: string;
-}) {
-  // Count DOWN to launchDate if not launched, else count to nextIssueDate
-  const [hasLaunched, setHasLaunched] = useState(false);
-  useEffect(() => {
-    setHasLaunched(Date.now() >= new Date(launchDate).getTime());
-  }, [launchDate]);
-  const countdown = useCountdown(hasLaunched ? nextIssueDate : launchDate);
-
-  return (
-    <section style={{
-      position: 'relative', overflow: 'hidden',
-      background: 'linear-gradient(145deg, #060e08 0%, #0d2014 35%, #071009 100%)',
-      borderTop: '1px solid rgba(212,168,67,0.15)',
-      borderBottom: '1px solid rgba(212,168,67,0.1)',
-    }}>
-      {/* Animated gold shimmer lines */}
-      {[15, 40, 65, 88].map((pct, i) => (
-        <div key={pct} style={{
-          position: 'absolute', top: 0, bottom: 0, left: `${pct}%`, width: '1px',
-          background: `linear-gradient(to bottom, transparent 0%, rgba(212,168,67,${0.04 + i * 0.02}) 50%, transparent 100%)`,
-          animation: `shimmerLine ${3 + i * 0.8}s ease-in-out infinite alternate`,
-          animationDelay: `${i * 0.4}s`,
-        }} />
-      ))}
-      <style>{`@keyframes shimmerLine { from { opacity: 0.4; } to { opacity: 1; } }`}</style>
-
-      {/* Radial glow center */}
-      <div style={{
-        position: 'absolute', top: '50%', left: '35%', transform: 'translate(-50%,-50%)',
-        width: '600px', height: '400px',
-        background: 'radial-gradient(ellipse, rgba(212,168,67,0.06) 0%, transparent 70%)',
-        pointerEvents: 'none',
-      }} />
-
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: 'clamp(4rem,8vw,7rem) clamp(1.5rem,5vw,5rem)' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'clamp(3rem,6vw,6rem)', alignItems: 'center' }}>
-
-          {/* Left — Text */}
-          <div>
-            <p style={{
-              fontSize: '0.62rem', letterSpacing: '0.32em', color: '#d4a843',
-              fontWeight: 700, textTransform: 'uppercase', marginBottom: '1rem',
-              fontFamily: 'var(--font-inter)', opacity: 0.75,
-            }}>
-              {hi
-                ? (hasLaunched ? 'मासिक पत्रिका · प्रथम अंक उपलब्ध' : 'मासिक पत्रिका · प्रथम अंक')
-                : (hasLaunched ? 'Monthly Magazine · Issue 01 Available' : 'Monthly Magazine · Issue 01')}
-            </p>
-
-            {/* Big name */}
-            <h2 style={{
-              fontFamily: 'var(--font-hind)',
-              fontSize: 'clamp(3.5rem,8vw,6.5rem)',
-              fontWeight: 800,
-              lineHeight: 1.1,
-              paddingBottom: '0.08em',
-              color: '#d4a843',
-              textShadow: '0 0 60px rgba(212,168,67,0.35), 0 0 120px rgba(212,168,67,0.15)',
-              marginBottom: '0.3rem',
-              letterSpacing: '-0.01em',
-              display: 'block',
-            }}>
-              मुक्तिबोध
-            </h2>
-            <p style={{
-              fontFamily: 'var(--font-cormorant)', fontStyle: 'italic',
-              color: 'rgba(212,168,67,0.38)', fontSize: '1.3rem',
-              marginBottom: '1.75rem', letterSpacing: '0.04em',
-            }}>
-              Muktibodh
-            </p>
-
-            <p style={{
-              fontSize: hi ? '0.95rem' : '0.9rem',
-              color: 'rgba(255,255,255,0.42)', lineHeight: 1.9,
-              maxWidth: '400px', marginBottom: '2.25rem',
-              fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-            }}>
-              {hi
-                ? 'चेतना, अद्वैत और निर्वाण धाम की जीवंत शिक्षाओं की मासिक पत्रिका। हर अंक में — आदिसत्व के संवाद, ध्यान-विधि, और साधक-अनुभव।'
-                : "A monthly journal of consciousness, non-duality and the living teachings of Nirvan Dham — featuring Aadisatv's conversations, meditation guidance, and seeker experiences."}
-            </p>
-
-            {/* Countdown block */}
-            <div style={{ marginBottom: '2rem' }}>
-              <p style={{
-                fontSize: '0.6rem', letterSpacing: '0.22em', textTransform: 'uppercase',
-                color: 'rgba(212,168,67,0.45)', marginBottom: '1rem',
-              }}>
-                {hasLaunched
-                  ? (hi ? 'अगला अंक आने में' : 'Next issue in')
-                  : (hi ? '21 जून 2026 को लॉन्च · उलटी गिनती' : 'Launching 21 June 2026 · Countdown')}
-              </p>
-
-              {countdown.ready ? (
-                <div style={{ display: 'flex', gap: 'clamp(0.6rem,2vw,1.5rem)' }}>
-                  {[
-                    { v: countdown.days, l: hi ? 'दिन' : 'Days' },
-                    { v: countdown.hrs, l: hi ? 'घंटे' : 'Hrs' },
-                    { v: countdown.mins, l: hi ? 'मिनट' : 'Min' },
-                    { v: countdown.secs, l: hi ? 'सेकंड' : 'Sec' },
-                  ].map(({ v, l }) => (
-                    <div key={l} style={{ textAlign: 'center', minWidth: '52px' }}>
-                      <div style={{
-                        fontSize: 'clamp(1.8rem,4.5vw,3rem)',
-                        fontWeight: 700, fontFamily: 'var(--font-cormorant)',
-                        fontVariantNumeric: 'tabular-nums',
-                        color: '#d4a843',
-                        textShadow: '0 0 20px rgba(212,168,67,0.4)',
-                      }}>
-                        {String(v).padStart(2, '0')}
-                      </div>
-                      <div style={{ fontSize: '0.55rem', color: 'rgba(255,255,255,0.25)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.2rem' }}>{l}</div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div style={{ display: 'flex', gap: '1.5rem' }}>
-                  {['--', '--', '--', '--'].map((v, i) => (
-                    <div key={i} style={{ textAlign: 'center', minWidth: '52px' }}>
-                      <div style={{ fontSize: '2.5rem', fontWeight: 700, color: 'rgba(212,168,67,0.2)', fontFamily: 'var(--font-cormorant)' }}>{v}</div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* CTA Buttons — always visible */}
-            <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>
-              <Link href={`/library/magazine/${slug}/read`} style={{
-                padding: '0.9rem 1.75rem',
-                background: 'rgba(212,168,67,0.14)',
-                border: '1px solid rgba(212,168,67,0.45)',
-                borderRadius: '8px', color: '#d4a843',
-                fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.04em',
-                fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-                textDecoration: 'none', transition: 'all 0.2s',
-              }}
-                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.24)')}
-                onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.14)')}
-              >
-                {hi ? '📖 पढ़ें — अंक 01' : '📖 Read Issue 01'}
-              </Link>
-              {pdf && (
-                <a href={pdf} download style={{
-                  padding: '0.9rem 1.35rem',
-                  background: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.1)',
-                  borderRadius: '8px', color: 'rgba(255,255,255,0.6)',
-                  fontSize: '0.85rem', fontWeight: 600,
-                  fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-                  textDecoration: 'none',
-                }}>
-                  ↓ {hi ? 'PDF डाउनलोड' : 'Download PDF'}
-                </a>
-              )}
-            </div>
-
-          </div>
-
-          {/* Right — Stylized magazine cover */}
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ position: 'relative' }}>
-              {/* Glow halo */}
-              <div style={{
-                position: 'absolute', inset: '-30px',
-                background: 'radial-gradient(ellipse, rgba(212,168,67,0.12), transparent 65%)',
-                filter: 'blur(24px)', pointerEvents: 'none', borderRadius: '50%',
-              }} />
-
-              {/* Cover card */}
-              <div style={{
-                width: 'clamp(220px,26vw,295px)',
-                aspectRatio: '3/4',
-                background: 'linear-gradient(150deg, #0a1e0d 0%, #163220 45%, #091508 100%)',
-                border: '1px solid rgba(212,168,67,0.22)',
-                borderRadius: '4px 14px 14px 4px',
-                boxShadow: '12px 16px 56px rgba(0,0,0,0.7), -2px 0 10px rgba(0,0,0,0.5), inset 0 0 60px rgba(212,168,67,0.03)',
-                display: 'flex', flexDirection: 'column',
-                alignItems: 'center', justifyContent: 'center',
-                padding: '2rem 1.5rem',
-                position: 'relative', overflow: 'hidden',
-              }}>
-                {/* Inner fine border */}
-                <div style={{ position: 'absolute', inset: '10px', border: '1px solid rgba(212,168,67,0.1)', borderRadius: '2px 12px 12px 2px', pointerEvents: 'none' }} />
-
-                {/* Sacred geometry watermark */}
-                <svg width="160" height="160" viewBox="0 0 160 160" fill="none"
-                  style={{ opacity: 0.05, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)' }}>
-                  {[70, 52, 34, 16].map(r => <circle key={r} cx="80" cy="80" r={r} stroke="#d4a843" strokeWidth="0.5" />)}
-                  {SACRED_SPOKES.map((spoke) => (
-                    <line key={spoke.a} x1={spoke.x1} y1={spoke.y1} x2={spoke.x2} y2={spoke.y2} stroke="#d4a843" strokeWidth="0.4" />
-                  ))}
-                </svg>
-
-                {/* Top label */}
-                <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.52rem', letterSpacing: '0.3em', color: 'rgba(212,168,67,0.4)', textTransform: 'uppercase', marginBottom: '0.6rem', position: 'relative' }}>
-                  NIRVAN DHAM
-                </p>
-                <div style={{ width: '28px', height: '1px', background: 'rgba(212,168,67,0.25)', marginBottom: '1.1rem', position: 'relative' }} />
-
-                {/* Main title */}
-                <p style={{
-                  fontFamily: 'var(--font-hind)', fontSize: '1.85rem', fontWeight: 800,
-                  color: '#d4a843',
-                  textShadow: '0 0 20px rgba(212,168,67,0.4)',
-                  textAlign: 'center', lineHeight: 1.2, position: 'relative',
-                  paddingBottom: '0.05em',
-                }}>मुक्तिबोध</p>
-                <p style={{
-                  fontFamily: 'var(--font-cormorant)', fontStyle: 'italic',
-                  color: 'rgba(212,168,67,0.35)', fontSize: '0.8rem', marginTop: '0.25rem', position: 'relative',
-                }}>Muktibodh</p>
-
-                <div style={{ width: '28px', height: '1px', background: 'rgba(212,168,67,0.18)', margin: '1rem 0', position: 'relative' }} />
-
-                <p style={{ fontSize: '0.56rem', color: 'rgba(212,168,67,0.32)', letterSpacing: '0.14em', textAlign: 'center', position: 'relative' }}>
-                  Issue 01 · June 2026
-                </p>
-                <p style={{ fontSize: '0.5rem', color: 'rgba(255,255,255,0.15)', marginTop: '1.5rem', letterSpacing: '0.1em', position: 'relative' }}>
-                  Aadisatv
-                </p>
-
-                {/* Spine */}
-                <div style={{
-                  position: 'absolute', left: 0, top: 0, bottom: 0, width: '7px',
-                  background: 'linear-gradient(to right, rgba(212,168,67,0.22), rgba(212,168,67,0.06))',
-                  borderRadius: '4px 0 0 4px',
-                }} />
-              </div>
-
-              {/* Page stack shadow */}
-              <div style={{
-                position: 'absolute', top: '4px', right: '-6px', bottom: '-4px',
-                width: 'clamp(220px,26vw,295px)', borderRadius: '0 14px 14px 0',
-                background: 'rgba(0,0,0,0.3)', zIndex: -1,
-              }} />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ── Main Page ─────────────────────────────────────────────
 export default function LibraryPage() {
   // FOUC fix: start with 'hi' (matches server), update after mount
@@ -528,8 +251,6 @@ export default function LibraryPage() {
   const [ebookTab, setEbookTab] = useState<'hi' | 'en'>('hi');
   const [section, setSection] = useState<'ebooks' | 'audio'>('ebooks');
   const videoRef = useRef<HTMLVideoElement>(null);
-
-  const mag = MAGAZINES[0];
 
   useEffect(() => {
     const saved = getSavedLanguage();
@@ -663,13 +384,7 @@ export default function LibraryPage() {
       </section>
 
       {/* ══ MUKTIBODH BANNER ══ */}
-      <MuktibodBanner
-        hi={hi}
-        launchDate={mag.launchDate}
-        nextIssueDate={mag.nextIssueDate}
-        pdf={mag.pdf}
-        slug={mag.slug}
-      />
+      <MuktibodhMagazineSection hi={hi} issues={MAGAZINES} />
 
       {/* ══ EBOOKS ══ */}
       {section === 'ebooks' && (

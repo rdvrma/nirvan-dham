@@ -35,11 +35,19 @@ export interface Magazine {
   name: string;
   nameHindi: string;
   issue: string;
+  issueNumber: number;
+  monthLabel: string;
   launchDate: string;  // ISO date
+  releaseDate: string; // ISO date
   nextIssueDate: string; // ISO date
+  status: 'upcoming' | 'current' | 'archive';
   cover?: string;
   pdf?: string;
   pageImages?: string[];
+  highlights?: string[];
+  highlightsHindi?: string[];
+  teaser?: string;
+  teaserHindi?: string;
   isPlaceholder: boolean;
   description: string;
   descriptionHindi: string;
@@ -139,6 +147,19 @@ export const EBOOKS: EBook[] = [
     descriptionHindi: 'तंत्र को संकीर्ण रहस्यवाद से मुक्त कर आगम, निगम, कुलमार्ग और अद्वैत की जीवित धारा के रूप में देखने वाली पुस्तक। यह साधक को मार्गों के भेद से आगे उनके एक ही सत्य-स्रोत की ओर ले जाती है।',
     description: 'A Hindi contemplative book on Tantra as a confluence of paths, moving from Agama toward Advaita.',
   },
+  {
+    slug: 'maya-ke-maze',
+    titleHindi: 'माया के मज़े',
+    titleEnglish: 'Maya Ke Maze',
+    subtitleHindi: 'हँसी से मौन तक एक अद्वैत यात्रा',
+    subtitle: 'A Non-Dual Journey from Laughter to Silence',
+    author: 'Aadisatv',
+    lang: 'hi',
+    cover: '/library/covers/maya-ke-maze.png',
+    pdf: '/library/ebooks/maya-ke-maze.pdf',
+    descriptionHindi: 'माया को बोझ नहीं, मुस्कुराते हुए देखने की अद्वैत यात्रा। यह पुस्तक हँसी, हल्केपन और मौन के माध्यम से दिखाती है कि जो खेल दिख रहा है, वही जागरण का द्वार भी बन सकता है।',
+    description: 'A Hindi contemplative journey that looks at Maya through laughter, lightness and silence.',
+  },
 
   // ── English ──
   {
@@ -211,6 +232,16 @@ export const EBOOKS: EBook[] = [
     pdf: '/library/ebooks/tantra-confluence-of-paths.pdf',
     description: 'A contemplative English transcreation on Tantra as the meeting point of Agama, living practice, devotion, energy, and non-dual recognition.',
   },
+  {
+    slug: 'the-joys-of-maya',
+    titleEnglish: 'The Joys of Maya',
+    subtitle: 'A Non-Dual Journey from Laughter to Silence',
+    author: 'Aadisatv',
+    lang: 'en',
+    cover: '/library/covers/the-joys-of-maya.png',
+    pdf: '/library/ebooks/the-joys-of-maya.pdf',
+    description: 'A playful English transcreation on Maya as a doorway into lightness, laughter, and non-dual recognition.',
+  },
 ];
 
 // ── AudioBooks ───────────────────────────────────────────
@@ -256,13 +287,44 @@ export const MAGAZINES: Magazine[] = [
     name: 'Muktibodh',
     nameHindi: 'मुक्तिबोध',
     issue: 'June 2026 - Issue 01',
+    issueNumber: 1,
+    monthLabel: 'June 2026',
     launchDate: '2026-06-21',
-    nextIssueDate: '2026-07-21',
+    releaseDate: '2026-06-21',
+    nextIssueDate: '2026-06-21',
+    status: 'current',
     pdf: '/library/magazines/muktibodh-june-2026.pdf',
     pageImages: Array.from({ length: 35 }, (_, index) => `/library/magazines/muktibodh-june-2026/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
+    highlights: [
+      'Consciousness and non-duality reflections',
+      'Meditation guidance from Nirvan Dham',
+      'Seeker experiences and monthly contemplations',
+    ],
+    highlightsHindi: [
+      'चेतना और अद्वैत पर चिंतन',
+      'निरवाण धाम से ध्यान मार्गदर्शन',
+      'साधक अनुभव और मासिक मनन',
+    ],
     isPlaceholder: false,
     description: 'Issue 01 of Muktibodh is available now. The next monthly edition continues the journal of consciousness, non-duality and the living teachings of Nirvan Dham.',
     descriptionHindi: 'मुक्तिबोध का प्रथम अंक अब उपलब्ध है। अगला मासिक अंक चेतना, अद्वैत और निर्वाण धाम की जीवंत शिक्षाओं की यात्रा को आगे बढ़ाएगा।',
+  },
+  {
+    slug: 'muktibodh-june-2026-issue-02',
+    name: 'Muktibodh',
+    nameHindi: 'मुक्तिबोध',
+    issue: 'June 2026 - Issue 02',
+    issueNumber: 2,
+    monthLabel: 'June 2026',
+    launchDate: '2026-06-21',
+    releaseDate: '2026-06-21',
+    nextIssueDate: '2026-07-21',
+    status: 'upcoming',
+    teaser: 'The next Muktibodh issue continues the monthly journal of consciousness, direct inquiry and living sadhana.',
+    teaserHindi: 'मुक्तिबोध का अगला अंक चेतना, प्रत्यक्ष आत्म-विचार और जीवंत साधना की मासिक यात्रा को आगे बढ़ाएगा।',
+    isPlaceholder: false,
+    description: 'Issue 02 of Muktibodh is scheduled for 21 June 2026. Read and download actions will appear when the issue is released.',
+    descriptionHindi: 'मुक्तिबोध का दूसरा अंक 21 जून 2026 के लिए निर्धारित है। अंक प्रकाशित होने पर पढ़ने और डाउनलोड करने के विकल्प उपलब्ध होंगे।',
   },
 ];
 
