@@ -639,6 +639,9 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           font-weight: 300;
           line-height: 1.02;
           margin-bottom: 0.72rem;
+          max-width: 100%;
+          overflow-wrap: break-word;
+          text-wrap: balance;
         }
 
         .manuscript-title.hi {
@@ -655,6 +658,9 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           font-size: calc(0.95rem * var(--font-scale));
           line-height: 1.55;
           margin-bottom: 1rem;
+          max-width: 100%;
+          overflow-wrap: break-word;
+          text-wrap: balance;
         }
 
         .manuscript-body {
