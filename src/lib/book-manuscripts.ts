@@ -6,8 +6,12 @@ import mayaAurMan from '@/content/books/maya-aur-man.json';
 import realizationOfAdvaita from '@/content/books/realization-of-advaita.json';
 import shivaAndShakti from '@/content/books/shiva-and-shakti.json';
 import shivAurShakti from '@/content/books/shiv-aur-shakti.json';
+import tantraConfluenceOfPaths from '@/content/books/tantra-confluence-of-paths.json';
+import tantraMargonKaSangam from '@/content/books/tantra-margon-ka-sangam.json';
 import theSeekerIsTheIllusion from '@/content/books/the-seeker-is-the-illusion.json';
 import whoIsGod from '@/content/books/who-is-god.json';
+import yogSwayamKiOr from '@/content/books/yog-swayam-ki-or.json';
+import yogaTowardTheSelf from '@/content/books/yoga-toward-the-self.json';
 
 export type ManuscriptLanguage = 'hi' | 'en';
 
@@ -55,6 +59,10 @@ const manuscripts: Record<string, BookManuscript> = {
   'who-is-god': asBookManuscript(whoIsGod),
   'realization-of-advaita': asBookManuscript(realizationOfAdvaita),
   'shiva-and-shakti': asBookManuscript(shivaAndShakti),
+  'yog-swayam-ki-or': asBookManuscript(yogSwayamKiOr),
+  'yoga-toward-the-self': asBookManuscript(yogaTowardTheSelf),
+  'tantra-margon-ka-sangam': asBookManuscript(tantraMargonKaSangam),
+  'tantra-confluence-of-paths': asBookManuscript(tantraConfluenceOfPaths),
 };
 
 export function getBookManuscript(slug: string): BookManuscript | null {
