@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Hind, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import ScrollReset from "@/components/ScrollReset";
 
@@ -94,6 +95,18 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
       </head>
       <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-JYM8LF1BPN"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-JYM8LF1BPN');
+          `}
+        </Script>
         <StyledJsxRegistry>
           <ScrollReset />
           {children}

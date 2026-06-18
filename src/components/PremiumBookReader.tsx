@@ -85,6 +85,12 @@ const scrollGestureGuards = {
   onTouchStartCapture: stopFlipGesture,
 };
 
+const imageScrollGestureGuards = {
+  onWheelCapture: stopFlipGesture,
+  onPointerDownCapture: stopFlipGesture,
+  onMouseDownCapture: stopFlipGesture,
+};
+
 const IMAGE_MIN_ZOOM = 0.7;
 const IMAGE_ZOOM_STEP = 0.15;
 
@@ -340,7 +346,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         </div>
       </header>
 
-      <main style={{ position: 'relative', overflow: 'hidden' }}>
+      <main style={{ position: 'relative', overflowX: 'hidden', overflowY: 'visible' }}>
         <div className="reader-bg-ring" style={{ borderColor: palette.border }} />
 
         {loading && (
@@ -374,10 +380,12 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         )}
 
         {!loading && !error && totalPages > 0 && view === 'flip' && (
-          <section style={{
+          <section className="reader-flip-section" style={{
             minHeight: 'calc(100vh - 72px)',
-            display: 'grid',
-            placeItems: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
             padding: 'clamp(1rem,3vw,2rem)',
           }}>
             <div className="book-shell" style={{ '--gold': palette.gold, '--border': palette.border } as CSSProperties}>
@@ -401,7 +409,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                 autoSize
                 maxShadowOpacity={0.58}
                 showCover
-                mobileScrollSupport
+                mobileScrollSupport={mode !== 'image'}
                 clickEventForward={false}
                 useMouseEvents={mode === 'manuscript'}
                 swipeDistance={mode === 'manuscript' ? 22 : 9999}
@@ -421,7 +429,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                     />
                   </div>
                 )) : mode === 'image' ? book.pageImages?.map((src, index) => (
-                  <div className="flip-page image-flip-page" key={src} {...scrollGestureGuards}>
+                  <div className="flip-page image-flip-page" key={src} {...imageScrollGestureGuards}>
                     <ImagePageView
                       src={src}
                       pageNumber={index + 1}
@@ -448,7 +456,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
               </HTMLFlipBook>
             </div>
 
-            <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
+            <nav className="reader-page-nav" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
               <button type="button" disabled={currentPage <= 1} onClick={goPrev} style={readerNavButton(palette, currentPage <= 1)}>
                 Previous
               </button>
@@ -730,9 +738,16 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         .pdf-flip-page {
           overflow: auto;
           overscroll-behavior: contain;
-          touch-action: pan-x pan-y;
           scrollbar-width: thin;
           scrollbar-color: color-mix(in srgb, var(--gold) 42%, transparent) transparent;
+        }
+
+        .image-flip-page {
+          touch-action: pan-x pan-y pinch-zoom;
+        }
+
+        .pdf-flip-page {
+          touch-action: pan-x pan-y;
         }
 
         .image-page-frame {
@@ -776,6 +791,31 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         @media (max-width: 700px) {
           .reader-toolbar {
             width: 100%;
+          }
+
+          .reader-flip-section {
+            min-height: calc(100dvh - 132px) !important;
+            justify-content: flex-start !important;
+            padding: 0.9rem 0.35rem calc(5.8rem + env(safe-area-inset-bottom)) !important;
+          }
+
+          .reader-page-nav {
+            position: fixed;
+            left: 0.75rem;
+            right: 0.75rem;
+            bottom: calc(0.75rem + env(safe-area-inset-bottom));
+            z-index: 80;
+            margin-top: 0 !important;
+            padding: 0.55rem;
+            border: 1px solid rgba(212,168,67,0.16);
+            border-radius: 12px;
+            background: rgba(5,10,6,0.9);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 14px 32px rgba(0,0,0,0.34);
+          }
+
+          .reader-page-nav input {
+            min-height: 42px;
           }
         }
       `}</style>
@@ -948,7 +988,7 @@ function ImagePageView({
     <div
       ref={frameRef}
       className={`image-page-frame ${zoom > 1.01 ? 'is-zoomed' : ''}`}
-      {...scrollGestureGuards}
+      {...imageScrollGestureGuards}
       onTouchStart={onImageTouchStart}
       onTouchMove={onImageTouchMove}
       onTouchEnd={onImageTouchEnd}
