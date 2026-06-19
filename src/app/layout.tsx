@@ -118,6 +118,34 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "x9g2cjoeoa");
           `}
         </Script>
+
+        {/* Clarity ↔ Google Analytics 4 linking */}
+        <Script id="clarity-ga-link" strategy="afterInteractive">
+          {`
+            (function linkClarityGA() {
+              function tryLink(attempt) {
+                if (attempt > 20) return; // max 10 sec wait
+                if (typeof clarity !== 'function' || typeof gtag !== 'function') {
+                  setTimeout(function() { tryLink(attempt + 1); }, 500);
+                  return;
+                }
+                // Pass GA4 client_id → Clarity (links sessions across platforms)
+                gtag('get', 'G-JYM8LF1BPN', 'client_id', function(clientId) {
+                  if (clientId) clarity('set', 'ga_client_id', clientId);
+                });
+                // Pass GA4 session_id → Clarity
+                gtag('get', 'G-JYM8LF1BPN', 'session_id', function(sessionId) {
+                  if (sessionId) clarity('set', 'ga_session_id', sessionId);
+                });
+              }
+              if (document.readyState === 'complete') {
+                tryLink(0);
+              } else {
+                window.addEventListener('load', function() { tryLink(0); });
+              }
+            })();
+          `}
+        </Script>
         <StyledJsxRegistry>
           <ScrollReset />
           {children}
