@@ -320,6 +320,8 @@ export const MAGAZINES: Magazine[] = [
     releaseDate: '2026-06-21',
     nextIssueDate: '2026-07-21',
     status: 'upcoming',
+    pdf: '/library/magazines/muktibodh-june-2026-issue-02.pdf',
+    pageImages: Array.from({ length: 69 }, (_, index) => `/library/magazines/muktibodh-june-2026-issue-02/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
     teaser: 'The next Muktibodh issue continues the monthly journal of consciousness, direct inquiry and living sadhana.',
     teaserHindi: 'मुक्तिबोध का अगला अंक चेतना, प्रत्यक्ष आत्म-विचार और जीवंत साधना की मासिक यात्रा को आगे बढ़ाएगा।',
     isPlaceholder: false,
@@ -334,4 +336,16 @@ export function getEBookBySlug(slug: string) {
 
 export function getMagazineBySlug(slug: string) {
   return MAGAZINES.find((m) => m.slug === slug);
+}
+
+export function hasMagazineAssets(magazine: Magazine) {
+  return Boolean(magazine.pdf && magazine.pageImages?.length);
+}
+
+export function isMagazineReleased(magazine: Magazine, now: Date = new Date()) {
+  return magazine.status !== 'upcoming' || now.getTime() >= new Date(magazine.releaseDate).getTime();
+}
+
+export function isMagazineReadable(magazine: Magazine, now: Date = new Date()) {
+  return !magazine.isPlaceholder && hasMagazineAssets(magazine) && isMagazineReleased(magazine, now);
 }

@@ -90,8 +90,10 @@ export default function HeroSection({ lang }: HeroSectionProps) {
           style={{
             fontSize: isHindi ? 'clamp(3.5rem, 12vw, 8rem)' : 'clamp(3rem, 10vw, 7.5rem)',
             fontWeight: isHindi ? 700 : 300,
-            lineHeight: 1.05,
+            lineHeight: isHindi ? 1.16 : 1.05,
             marginBottom: '1.75rem',
+            paddingTop: isHindi ? '0.12em' : 0,
+            paddingBottom: isHindi ? '0.04em' : 0,
             animation: 'fadeInUp 1s ease forwards',
             animationDelay: '0.2s',
             opacity: 0,
@@ -154,7 +156,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
           </a>
 
           {/* Secondary */}
-          <a href="#ai-guide"
+          <a href="/library"
             className={`transition-premium ${isHindi ? 'font-hindi' : ''}`}
             style={{
               position: 'relative', overflow: 'hidden',
@@ -170,7 +172,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
             onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = 'rgba(212,168,67,0.06)'; }}
           >
             <span style={{ color: 'var(--c-gold)', fontSize: '1.1em' }}>✦</span>
-            <span>{t.cta2}</span>
+            <span>{isHindi ? 'पुस्तकालय' : 'Library'}</span>
           </a>
 
           {/* Tertiary */}

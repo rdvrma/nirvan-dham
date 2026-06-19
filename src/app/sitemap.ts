@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { EBOOKS, MAGAZINES } from '@/lib/library-data';
+import { EBOOKS, MAGAZINES, isMagazineReadable } from '@/lib/library-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://nirvandham.in';
@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]);
 
   const magazineRoutes = MAGAZINES
-    .filter((magazine) => !magazine.isPlaceholder && magazine.pdf)
+    .filter((magazine) => isMagazineReadable(magazine))
     .map((magazine) => ({
       url: `${baseUrl}/library/magazine/${magazine.slug}/read`,
       lastModified: new Date(),

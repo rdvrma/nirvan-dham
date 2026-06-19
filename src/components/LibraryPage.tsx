@@ -69,15 +69,15 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         display: 'flex', flexDirection: 'column',
-        background: 'rgba(10,24,12,0.7)',
-        backdropFilter: 'blur(16px)',
-        border: `1px solid ${hovered ? 'rgba(212,168,67,0.4)' : 'rgba(212,168,67,0.08)'}`,
+        background: hovered ? 'rgba(12,28,15,0.95)' : 'rgba(10,22,12,0.7)',
+        backdropFilter: 'blur(20px)',
+        border: `1px solid ${hovered ? 'rgba(212,168,67,0.45)' : 'rgba(212,168,67,0.1)'}`,
         borderRadius: '18px', overflow: 'hidden',
         transition: 'all 0.4s cubic-bezier(0.34,1.56,0.64,1)',
-        transform: hovered ? 'translateY(-10px) scale(1.02)' : 'translateY(0) scale(1)',
+        transform: hovered ? 'translateY(-12px) scale(1.02)' : 'translateY(0) scale(1)',
         boxShadow: hovered
-          ? '0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(212,168,67,0.12), 0 0 40px rgba(212,168,67,0.06)'
-          : '0 4px 24px rgba(0,0,0,0.35)',
+          ? '0 36px 90px rgba(0,0,0,0.65), 0 0 0 1px rgba(212,168,67,0.14), 0 0 50px rgba(212,168,67,0.07)'
+          : '0 6px 28px rgba(0,0,0,0.4)',
       }}
     >
       {/* Cover */}
@@ -92,7 +92,7 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
             {/* Overlay shine on hover */}
             <div style={{
               position: 'absolute', inset: 0,
-              background: 'linear-gradient(135deg, rgba(212,168,67,0.12) 0%, transparent 60%)',
+              background: 'linear-gradient(135deg, rgba(212,168,67,0.14) 0%, transparent 60%)',
               opacity: hovered ? 1 : 0,
               transition: 'opacity 0.4s',
             }} />
@@ -124,28 +124,28 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
         {/* Language badge */}
         <div style={{
           position: 'absolute', top: '0.6rem', right: '0.6rem',
-          background: 'rgba(5,8,6,0.85)', backdropFilter: 'blur(10px)',
-          border: '1px solid rgba(212,168,67,0.25)', borderRadius: '999px',
-          padding: '0.2rem 0.6rem', fontSize: '0.55rem',
+          background: 'rgba(5,8,6,0.88)', backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(212,168,67,0.28)', borderRadius: '999px',
+          padding: '0.22rem 0.65rem', fontSize: '0.55rem',
           letterSpacing: '0.1em', color: '#d4a843', fontWeight: 700,
         }}>{book.lang === 'hi' ? 'हिंदी' : 'EN'}</div>
 
         {/* Bottom gradient for text readability */}
         <div style={{
-          position: 'absolute', bottom: 0, left: 0, right: 0, height: '40%',
-          background: 'linear-gradient(to top, rgba(7,12,9,0.7), transparent)',
+          position: 'absolute', bottom: 0, left: 0, right: 0, height: '50%',
+          background: 'linear-gradient(to top, rgba(7,12,9,0.85), transparent)',
           pointerEvents: 'none',
         }} />
       </div>
 
       {/* Info */}
-      <div style={{ padding: '1rem 1.1rem 1.1rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+      <div style={{ padding: '1rem 1.15rem 1.15rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
         <h3 style={{
           fontFamily: hi && book.titleHindi ? 'var(--font-hind)' : 'var(--font-cormorant)',
           fontStyle: hi && book.titleHindi ? 'normal' : 'italic',
-          fontSize: hi && book.titleHindi ? '0.95rem' : '1.05rem',
+          fontSize: hi && book.titleHindi ? '0.95rem' : '1.08rem',
           fontWeight: hi && book.titleHindi ? 600 : 400,
-          color: 'var(--c-ivory)', lineHeight: 1.25, margin: 0, marginBottom: '0.3rem',
+          color: 'var(--c-ivory)', lineHeight: 1.3, margin: 0, marginBottom: '0.3rem',
         }}>{title}</h3>
         {subtitle && (
           <p style={{
@@ -153,7 +153,7 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
             fontFamily: hi && book.subtitleHindi ? 'var(--font-hind)' : 'var(--font-inter)',
           }}>{subtitle}</p>
         )}
-        <p style={{ fontSize: '0.6rem', color: '#d4a843', opacity: 0.58, margin: 0 }}>— {book.author}</p>
+        <p style={{ fontSize: '0.6rem', color: '#d4a843', opacity: 0.6, margin: 0 }}>— {book.author}</p>
 
         {/* CTA buttons */}
         <div style={{ display: 'flex', gap: '0.45rem', marginTop: 'auto', paddingTop: '0.9rem' }}>
@@ -162,9 +162,9 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
               <Link
                 href={`/library/${book.slug}`}
                 style={{
-                  flex: 1, padding: '0.55rem 0', textAlign: 'center',
-                  background: hovered ? 'rgba(212,168,67,0.24)' : 'rgba(212,168,67,0.12)',
-                  border: '1px solid rgba(212,168,67,0.35)', borderRadius: '10px',
+                  flex: 1, padding: '0.58rem 0', textAlign: 'center',
+                  background: hovered ? 'rgba(212,168,67,0.26)' : 'rgba(212,168,67,0.13)',
+                  border: '1px solid rgba(212,168,67,0.38)', borderRadius: '10px',
                   color: '#d4a843', fontSize: '0.73rem', fontWeight: 700,
                   letterSpacing: '0.02em', textDecoration: 'none', transition: 'background 0.2s',
                   fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
@@ -175,7 +175,7 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
               <a
                 href={book.pdf} download
                 style={{
-                  flex: 1, padding: '0.55rem 0', textAlign: 'center',
+                  flex: 1, padding: '0.58rem 0', textAlign: 'center',
                   background: 'rgba(255,255,255,0.04)',
                   border: '1px solid rgba(255,255,255,0.08)', borderRadius: '10px',
                   color: 'rgba(255,255,255,0.42)', fontSize: '0.73rem', fontWeight: 600,
@@ -190,7 +190,7 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
             </>
           ) : (
             <div style={{
-              flex: 1, padding: '0.55rem 0', textAlign: 'center',
+              flex: 1, padding: '0.58rem 0', textAlign: 'center',
               border: '1px dashed rgba(212,168,67,0.1)', borderRadius: '10px',
               color: 'rgba(212,168,67,0.25)', fontSize: '0.7rem',
               fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
@@ -390,26 +390,41 @@ export default function LibraryPage() {
       {section === 'ebooks' && (
         <section style={{ padding: 'clamp(3rem,6vw,5rem) clamp(1.5rem,5vw,5rem)', maxWidth: '1320px', margin: '0 auto' }}>
           {/* Lang tabs */}
-          <div style={{ display: 'flex', marginBottom: '2.5rem', borderBottom: '1px solid rgba(212,168,67,0.1)' }}>
-            {(['hi', 'en'] as const).map((k) => (
-              <button key={k} onClick={() => setEbookTab(k)} style={{
-                padding: '0.65rem 1.75rem 0.85rem',
-                background: 'none', border: 'none',
-                borderBottom: `2px solid ${ebookTab === k ? '#d4a843' : 'transparent'}`,
-                color: ebookTab === k ? '#d4a843' : 'rgba(255,255,255,0.3)',
-                fontSize: '0.85rem', fontWeight: ebookTab === k ? 700 : 400,
-                cursor: 'pointer', transition: 'all 0.2s',
-                fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-              }}>
-                {k === 'hi' ? '🇮🇳 हिंदी' : '🌐 English'}
-              </button>
-            ))}
+          <div style={{ display: 'flex', marginBottom: '2.5rem', borderBottom: '1px solid rgba(212,168,67,0.1)', gap: '0.25rem' }}>
+            {(['hi', 'en'] as const).map((k) => {
+              const count = EBOOKS.filter(b => b.lang === k && !b.isPlaceholder).length;
+              return (
+                <button key={k} onClick={() => setEbookTab(k)} style={{
+                  position: 'relative',
+                  padding: '0.65rem 1.75rem 0.85rem',
+                  background: 'none', border: 'none',
+                  borderBottom: `2px solid ${ebookTab === k ? '#d4a843' : 'transparent'}`,
+                  color: ebookTab === k ? '#d4a843' : 'rgba(255,255,255,0.3)',
+                  fontSize: '0.88rem', fontWeight: ebookTab === k ? 700 : 400,
+                  cursor: 'pointer', transition: 'all 0.25s',
+                  fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+                  display: 'flex', alignItems: 'center', gap: '0.5rem',
+                }}>
+                  {k === 'hi' ? '🇮🇳 हिंदी' : '🌐 English'}
+                  <span style={{
+                    background: ebookTab === k ? 'rgba(212,168,67,0.2)' : 'rgba(255,255,255,0.06)',
+                    border: `1px solid ${ebookTab === k ? 'rgba(212,168,67,0.4)' : 'rgba(255,255,255,0.1)'}`,
+                    borderRadius: '999px',
+                    padding: '0.05rem 0.5rem',
+                    fontSize: '0.65rem',
+                    fontWeight: 700,
+                    color: ebookTab === k ? '#d4a843' : 'rgba(255,255,255,0.25)',
+                    transition: 'all 0.25s',
+                  }}>{count}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(175px, 1fr))',
-            gap: '1.4rem',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+            gap: '1.6rem',
           }}>
             {filteredBooks.map(book => (
               <BookCard key={book.slug} book={book} hi={hi} />

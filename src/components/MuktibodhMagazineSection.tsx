@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import type { Magazine } from '@/lib/library-data';
+import { hasMagazineAssets, isMagazineReleased, type Magazine } from '@/lib/library-data';
 
 function useCountdown(targetDate: string) {
   const [diff, setDiff] = useState<number | null>(null);
@@ -28,7 +28,21 @@ function useCountdown(targetDate: string) {
 }
 
 function isIssueReadable(issue: Magazine) {
-  return Boolean(issue.pdf && issue.pageImages?.length);
+  return hasMagazineAssets(issue);
+}
+
+function useIssueAvailability(issue: Magazine) {
+  const [released, setReleased] = useState(issue.status !== 'upcoming');
+
+  useEffect(() => {
+    const tick = () => setReleased(isMagazineReleased(issue));
+    tick();
+    if (issue.status !== 'upcoming') return;
+    const id = window.setInterval(tick, 1000);
+    return () => window.clearInterval(id);
+  }, [issue]);
+
+  return hasMagazineAssets(issue) && released;
 }
 
 function formatIssue(issue: Magazine, hi: boolean) {
@@ -73,8 +87,88 @@ function CountdownStrip({ targetDate, hi, compact = false }: { targetDate: strin
   );
 }
 
+function LaunchCelebration({ issue, hi }: { issue: Magazine; hi: boolean }) {
+  return (
+    <div style={{
+      position: 'relative',
+      overflow: 'hidden',
+      maxWidth: '470px',
+      border: '1px solid rgba(212,168,67,0.24)',
+      borderRadius: '16px',
+      padding: '1.1rem 1.2rem',
+      background: 'linear-gradient(135deg, rgba(212,168,67,0.16), rgba(12,38,20,0.74) 58%, rgba(212,168,67,0.08))',
+      boxShadow: '0 0 54px rgba(212,168,67,0.13), inset 0 0 0 1px rgba(255,255,255,0.035)',
+    }}>
+      <div style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'linear-gradient(115deg, transparent 0%, rgba(255,232,164,0.12) 38%, transparent 70%)',
+        animation: 'muktibodhLaunchSweep 3.8s ease-in-out infinite',
+        pointerEvents: 'none',
+      }} />
+      <div style={{
+        position: 'absolute',
+        right: '1rem',
+        top: '1rem',
+        width: '8px',
+        height: '8px',
+        borderRadius: '999px',
+        background: '#d4a843',
+        boxShadow: '0 0 18px #d4a843',
+        animation: 'muktibodhLaunchPulse 1.8s ease-in-out infinite',
+      }} />
+      <p style={{
+        position: 'relative',
+        margin: '0 0 0.55rem',
+        color: '#d4a843',
+        fontSize: '0.6rem',
+        letterSpacing: '0.24em',
+        textTransform: 'uppercase',
+        fontWeight: 850,
+      }}>
+        {hi ? 'नया अंक प्रकाशित' : 'New issue live'}
+      </p>
+      <h3 style={{
+        position: 'relative',
+        margin: '0 0 0.45rem',
+        color: 'var(--c-ivory)',
+        fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
+        fontSize: hi ? 'clamp(1.25rem,2.6vw,1.8rem)' : 'clamp(1.35rem,2.6vw,2rem)',
+        lineHeight: 1.25,
+        fontWeight: hi ? 750 : 500,
+      }}>
+        {hi ? `मुक्तिबोध ${formatIssue(issue, hi)} अब उपलब्ध है` : `Muktibodh ${formatIssue(issue, hi)} is now available`}
+      </h3>
+      <p style={{
+        position: 'relative',
+        margin: 0,
+        color: 'rgba(255,255,255,0.56)',
+        fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
+        fontSize: hi ? '0.86rem' : '0.8rem',
+        lineHeight: 1.75,
+      }}>
+        {hi
+          ? 'नए अंक के पाठन, PDF और शेयर विकल्प अब खुले हैं।'
+          : 'Reading, PDF and sharing are now open for the new issue.'}
+      </p>
+      <style>{`
+        @keyframes muktibodhLaunchSweep {
+          0% { transform: translateX(-115%); opacity: 0; }
+          22% { opacity: 1; }
+          52% { transform: translateX(115%); opacity: 0.75; }
+          100% { transform: translateX(115%); opacity: 0; }
+        }
+        @keyframes muktibodhLaunchPulse {
+          0%, 100% { opacity: 0.45; transform: scale(1); }
+          50% { opacity: 1; transform: scale(1.45); }
+        }
+      `}</style>
+    </div>
+  );
+}
+
 function IssueActions({ issue, hi, prominent = false }: { issue: Magazine; hi: boolean; prominent?: boolean }) {
-  const readable = isIssueReadable(issue);
+  const readable = useIssueAvailability(issue);
   const [copied, setCopied] = useState(false);
   const readHref = `/library/magazine/${issue.slug}/read`;
 
@@ -255,7 +349,7 @@ function MagazineVideoMedallion({ hi }: { hi: boolean }) {
 }
 
 function MagazineArchiveCard({ issue, hi }: { issue: Magazine; hi: boolean }) {
-  const readable = isIssueReadable(issue);
+  const readable = useIssueAvailability(issue);
   const countdownTarget = issue.status === 'upcoming' ? issue.releaseDate : issue.nextIssueDate;
   const highlights = hi ? issue.highlightsHindi : issue.highlights;
   const body = hi ? (issue.teaserHindi || issue.descriptionHindi) : (issue.teaser || issue.description);
@@ -264,6 +358,9 @@ function MagazineArchiveCard({ issue, hi }: { issue: Magazine; hi: boolean }) {
     : issue.status === 'archive'
       ? (hi ? 'संग्रह' : 'Archive')
       : (hi ? 'उपलब्ध' : 'Available');
+  const displayStatusLabel = readable && issue.status === 'upcoming'
+    ? (hi ? 'नया अंक' : 'New')
+    : statusLabel;
 
   return (
     <article style={{
@@ -300,7 +397,7 @@ function MagazineArchiveCard({ issue, hi }: { issue: Magazine; hi: boolean }) {
           fontWeight: 800,
           whiteSpace: 'nowrap',
         }}>
-          {statusLabel}
+          {displayStatusLabel}
         </span>
       </div>
 
@@ -314,7 +411,7 @@ function MagazineArchiveCard({ issue, hi }: { issue: Magazine; hi: boolean }) {
         {body}
       </p>
 
-      {issue.status === 'upcoming' && (
+      {issue.status === 'upcoming' && !readable && (
         <div style={{ margin: '0.2rem 0 1.15rem' }}>
           <p style={{ margin: '0 0 0.65rem', color: 'rgba(212,168,67,0.45)', fontSize: '0.55rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>
             {hi ? 'प्रकाशन की उलटी गिनती' : 'Release countdown'}
@@ -353,19 +450,40 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
   const heroIssue = sortedIssues.find((issue) => issue.status === 'current') || sortedIssues.find(isIssueReadable) || sortedIssues[0];
   const upcomingIssue = sortedIssues.find((issue) => issue.status === 'upcoming');
   const [hasHeroIssueLaunched, setHasHeroIssueLaunched] = useState(false);
+  const [releasedUpcomingIssueSlug, setReleasedUpcomingIssueSlug] = useState<string | null>(null);
 
   useEffect(() => {
     if (!heroIssue) return;
     setHasHeroIssueLaunched(Date.now() >= new Date(heroIssue.launchDate).getTime());
   }, [heroIssue]);
 
+  useEffect(() => {
+    if (!upcomingIssue) {
+      setReleasedUpcomingIssueSlug(null);
+      return;
+    }
+
+    const tick = () => {
+      setReleasedUpcomingIssueSlug(isMagazineReleased(upcomingIssue) && hasMagazineAssets(upcomingIssue) ? upcomingIssue.slug : null);
+    };
+    tick();
+    const id = window.setInterval(tick, 1000);
+    return () => window.clearInterval(id);
+  }, [upcomingIssue]);
+
   if (!heroIssue) return null;
 
-  const countdownIssue = upcomingIssue || heroIssue;
+  const launchedIssue = upcomingIssue && releasedUpcomingIssueSlug === upcomingIssue.slug ? upcomingIssue : null;
+  const featuredIssue = launchedIssue || heroIssue;
+  const countdownIssue = launchedIssue || upcomingIssue || heroIssue;
   const countdownTarget = upcomingIssue
     ? upcomingIssue.releaseDate
     : (isIssueReadable(heroIssue) || hasHeroIssueLaunched ? heroIssue.nextIssueDate : heroIssue.launchDate);
-  const heroDescription = hi ? heroIssue.descriptionHindi : heroIssue.description;
+  const heroDescription = launchedIssue
+    ? (hi
+      ? 'मुक्तिबोध का नया अंक प्रकाशित हो चुका है। नए चिंतन, साधना और प्रत्यक्ष आत्म-विचार की यह यात्रा अब पढ़ने के लिए उपलब्ध है।'
+      : 'The new Muktibodh issue is live now, opening fresh reflections on inquiry, sadhana and direct seeing.')
+    : (hi ? heroIssue.descriptionHindi : heroIssue.description);
 
   return (
     <section style={{
@@ -413,9 +531,11 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
               fontFamily: 'var(--font-inter)',
               opacity: 0.75,
             }}>
-              {hi
-                ? (isIssueReadable(heroIssue) ? `मासिक पत्रिका · ${formatIssue(heroIssue, hi)} उपलब्ध` : `मासिक पत्रिका · ${formatIssue(heroIssue, hi)}`)
-                : (isIssueReadable(heroIssue) ? `Monthly Magazine · ${formatIssue(heroIssue, hi)} Available` : `Monthly Magazine · ${formatIssue(heroIssue, hi)}`)}
+              {launchedIssue
+                ? (hi ? `मासिक पत्रिका · ${formatIssue(launchedIssue, hi)} प्रकाशित` : `Monthly Magazine · ${formatIssue(launchedIssue, hi)} Live`)
+                : hi
+                  ? (isIssueReadable(heroIssue) ? `मासिक पत्रिका · ${formatIssue(heroIssue, hi)} उपलब्ध` : `मासिक पत्रिका · ${formatIssue(heroIssue, hi)}`)
+                  : (isIssueReadable(heroIssue) ? `Monthly Magazine · ${formatIssue(heroIssue, hi)} Available` : `Monthly Magazine · ${formatIssue(heroIssue, hi)}`)}
             </p>
 
             <h2 style={{
@@ -430,7 +550,7 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
               letterSpacing: '-0.01em',
               display: 'block',
             }}>
-              {heroIssue.nameHindi}
+              {featuredIssue.nameHindi}
             </h2>
             <p style={{
               fontFamily: 'var(--font-cormorant)',
@@ -440,7 +560,7 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
               marginBottom: '1.75rem',
               letterSpacing: '0.04em',
             }}>
-              {heroIssue.name}
+              {featuredIssue.name}
             </p>
 
             <p style={{
@@ -455,21 +575,27 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
             </p>
 
             <div style={{ marginBottom: '2rem' }}>
-              <p style={{
-                fontSize: '0.6rem',
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                color: 'rgba(212,168,67,0.45)',
-                marginBottom: '1rem',
-              }}>
-                {upcomingIssue
-                  ? (hi ? `${formatIssue(countdownIssue, hi)} आने में` : `${formatIssue(countdownIssue, hi)} launches in`)
-                  : (hi ? 'अगला अंक आने में' : 'Next issue in')}
-              </p>
-              <CountdownStrip targetDate={countdownTarget} hi={hi} />
+              {launchedIssue ? (
+                <LaunchCelebration issue={launchedIssue} hi={hi} />
+              ) : (
+                <>
+                  <p style={{
+                    fontSize: '0.6rem',
+                    letterSpacing: '0.22em',
+                    textTransform: 'uppercase',
+                    color: 'rgba(212,168,67,0.45)',
+                    marginBottom: '1rem',
+                  }}>
+                    {upcomingIssue
+                      ? (hi ? `${formatIssue(countdownIssue, hi)} आने में` : `${formatIssue(countdownIssue, hi)} launches in`)
+                      : (hi ? 'अगला अंक आने में' : 'Next issue in')}
+                  </p>
+                  <CountdownStrip targetDate={countdownTarget} hi={hi} />
+                </>
+              )}
             </div>
 
-            <IssueActions issue={heroIssue} hi={hi} prominent />
+            <IssueActions issue={featuredIssue} hi={hi} prominent />
           </div>
 
           <MagazineVideoMedallion hi={hi} />

@@ -128,7 +128,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
       const sideReserve = portrait ? 28 : 150;
       const verticalReserve = portrait ? 178 : 214;
       const widthByViewport = Math.max(300, (window.innerWidth - sideReserve) / pageCount);
-      const widthByHeight = Math.max(300, (window.innerHeight - verticalReserve) / pageAspect);
+      const widthByHeight = portrait ? Number.POSITIVE_INFINITY : Math.max(300, (window.innerHeight - verticalReserve) / pageAspect);
       const maxWidth = mode === 'image' ? 540 : 560;
       const nextWidth = Math.round(Math.min(maxWidth, widthByViewport, widthByHeight));
       setPageSize({
@@ -223,7 +223,10 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
 
   const syncPage = useCallback((page: number) => {
     const safePage = clampPage(page, totalPages);
-    setCurrentPage(safePage);
+    setCurrentPage((previousPage) => {
+      if (previousPage !== safePage) setFontScale(1);
+      return safePage;
+    });
     window.localStorage.setItem(storageKey, String(safePage));
     const url = new URL(window.location.href);
     url.searchParams.set('page', String(safePage));
@@ -380,7 +383,8 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         )}
 
         {!loading && !error && totalPages > 0 && view === 'flip' && (
-          <section className="reader-flip-section" style={{
+          <section className={`reader-flip-section ${pageSize.portrait ? 'mobile-focus-reader' : ''}`} style={{
+            position: 'relative',
             minHeight: 'calc(100vh - 72px)',
             display: 'flex',
             flexDirection: 'column',
@@ -455,6 +459,25 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
                 })}
               </HTMLFlipBook>
             </div>
+
+            {pageSize.portrait && (
+              <div className="mobile-reader-tap-zones">
+                <button
+                  type="button"
+                  aria-label="Previous page"
+                  disabled={currentPage <= 1}
+                  onClick={goPrev}
+                  className="mobile-reader-tap-zone mobile-reader-tap-zone-prev"
+                />
+                <button
+                  type="button"
+                  aria-label="Next page"
+                  disabled={currentPage >= totalPages}
+                  onClick={goNext}
+                  className="mobile-reader-tap-zone mobile-reader-tap-zone-next"
+                />
+              </div>
+            )}
 
             <nav className="reader-page-nav" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem', marginTop: '1.25rem', flexWrap: 'wrap' }}>
               <button type="button" disabled={currentPage <= 1} onClick={goPrev} style={readerNavButton(palette, currentPage <= 1)}>
@@ -788,6 +811,10 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           padding: 2rem;
         }
 
+        .mobile-reader-tap-zones {
+          display: none;
+        }
+
         @media (max-width: 700px) {
           .reader-toolbar {
             width: 100%;
@@ -796,26 +823,91 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           .reader-flip-section {
             min-height: calc(100dvh - 132px) !important;
             justify-content: flex-start !important;
-            padding: 0.9rem 0.35rem calc(5.8rem + env(safe-area-inset-bottom)) !important;
+            padding: 0.75rem 0.35rem calc(6.25rem + env(safe-area-inset-bottom)) !important;
+          }
+
+          .mobile-focus-reader .book-shell {
+            width: 100%;
+            max-width: calc(100vw - 0.7rem);
+            display: flex;
+            justify-content: center;
+            filter: drop-shadow(0 22px 46px rgba(0,0,0,0.38));
+          }
+
+          .mobile-focus-reader .book-shell::before {
+            inset: -6px;
+            border-radius: 10px;
+          }
+
+          .mobile-focus-reader .book-shell::after {
+            bottom: -20px;
+            height: 22px;
+          }
+
+          .mobile-reader-tap-zones {
+            display: block;
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            z-index: 35;
+          }
+
+          .mobile-reader-tap-zone {
+            position: absolute;
+            top: 0.75rem;
+            bottom: calc(6.25rem + env(safe-area-inset-bottom));
+            width: min(18vw, 82px);
+            border: 0;
+            padding: 0;
+            background: transparent;
+            opacity: 0;
+            pointer-events: auto;
+            touch-action: manipulation;
+          }
+
+          .mobile-reader-tap-zone:disabled {
+            pointer-events: none;
+          }
+
+          .mobile-reader-tap-zone-prev {
+            left: 0;
+          }
+
+          .mobile-reader-tap-zone-next {
+            right: 0;
           }
 
           .reader-page-nav {
             position: fixed;
-            left: 0.75rem;
-            right: 0.75rem;
+            left: 50%;
+            right: auto;
             bottom: calc(0.75rem + env(safe-area-inset-bottom));
+            transform: translateX(-50%);
+            width: min(92vw, 430px);
             z-index: 80;
             margin-top: 0 !important;
-            padding: 0.55rem;
-            border: 1px solid rgba(212,168,67,0.16);
-            border-radius: 12px;
-            background: rgba(5,10,6,0.9);
+            padding: 0.55rem 0.65rem;
+            border: 1px solid rgba(212,168,67,0.22);
+            border-radius: 999px;
+            background: rgba(5,10,6,0.92);
             backdrop-filter: blur(16px);
-            box-shadow: 0 14px 32px rgba(0,0,0,0.34);
+            box-shadow: 0 14px 34px rgba(0,0,0,0.42), 0 0 34px rgba(212,168,67,0.08);
+            gap: 0.45rem !important;
+            flex-wrap: nowrap !important;
           }
 
           .reader-page-nav input {
             min-height: 42px;
+            width: 64px !important;
+            border-radius: 999px !important;
+            font-weight: 800;
+          }
+
+          .reader-page-nav button {
+            min-height: 42px;
+            border-radius: 999px !important;
+            padding: 0.65rem 0.85rem !important;
+            flex: 1 1 0;
           }
         }
       `}</style>

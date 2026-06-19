@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import PremiumBookReader from '@/components/PremiumBookReader';
-import { MAGAZINES, getMagazineBySlug } from '@/lib/library-data';
+import { MAGAZINES, getMagazineBySlug, isMagazineReadable } from '@/lib/library-data';
 import type { EBook } from '@/lib/library-data';
 
 interface MagazineReaderRouteProps {
@@ -15,7 +15,7 @@ interface MagazineReaderRouteProps {
 
 export function generateStaticParams() {
   return MAGAZINES
-    .filter((magazine) => !magazine.isPlaceholder && magazine.pdf)
+    .filter((magazine) => isMagazineReadable(magazine))
     .map((magazine) => ({
       slug: magazine.slug,
     }));
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: MagazineReaderRouteProps): Pr
   const { slug } = await params;
   const magazine = getMagazineBySlug(slug);
 
-  if (!magazine || magazine.isPlaceholder || !magazine.pdf) {
+  if (!magazine || !isMagazineReadable(magazine)) {
     return { title: 'Magazine Not Found | Nirvan Dham' };
   }
 
@@ -57,7 +57,7 @@ export default async function MagazineReaderRoutePage({ params, searchParams }: 
   const { page } = await searchParams;
   const magazine = getMagazineBySlug(slug);
 
-  if (!magazine || magazine.isPlaceholder || !magazine.pdf) notFound();
+  if (!magazine || !isMagazineReadable(magazine)) notFound();
 
   const readerBook: EBook = {
     slug: magazine.slug,
@@ -68,7 +68,7 @@ export default async function MagazineReaderRoutePage({ params, searchParams }: 
     author: 'Aadisatv',
     lang: 'hi',
     cover: magazine.cover || '',
-    pdf: magazine.pdf,
+    pdf: magazine.pdf!,
     pageImages: magazine.pageImages,
     libraryHref: '/library',
     description: magazine.description,
