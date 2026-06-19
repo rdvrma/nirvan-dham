@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import PremiumBookReader from '@/components/PremiumBookReader';
+import BlogStyleReader from '@/components/BlogStyleReader';
 import { EBOOKS, getEBookBySlug } from '@/lib/library-data';
+import { hasBookManuscript } from '@/lib/book-manuscripts';
 
 interface BookReaderRouteProps {
   params: Promise<{
@@ -9,6 +11,7 @@ interface BookReaderRouteProps {
   }>;
   searchParams: Promise<{
     page?: string;
+    mode?: string;
   }>;
 }
 
@@ -55,10 +58,16 @@ export async function generateMetadata({ params }: BookReaderRouteProps): Promis
 
 export default async function BookReaderRoutePage({ params, searchParams }: BookReaderRouteProps) {
   const { slug } = await params;
-  const { page } = await searchParams;
+  const { page, mode } = await searchParams;
   const book = getEBookBySlug(slug);
 
   if (!book || book.isPlaceholder || !book.pdf) notFound();
 
+  // Blog style mode — uses structured manuscript JSON
+  if (mode === 'blog' && hasBookManuscript(slug)) {
+    return <BlogStyleReader book={book} />;
+  }
+
+  // Default: premium flip-book reader
   return <PremiumBookReader book={book} initialPage={Number(page) || 1} />;
 }
