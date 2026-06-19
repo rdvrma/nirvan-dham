@@ -51,7 +51,7 @@ Identity:
 
     // 5. Call Gemini API
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-pro',
+      model: process.env.GEMINI_MODEL || 'gemini-1.5-pro',
       contents: [
         ...formattedHistory,
         { role: 'user', parts: [{ text: message }] }
@@ -67,8 +67,19 @@ Identity:
     });
 
     return NextResponse.json({ response: response.text });
-  } catch (error) {
+  } catch (error: any) {
     console.error('AI Guide Error:', error);
+    
+    // Check if it's a 429 from Gemini (Quota Exceeded / Resource Exhausted)
+    const isRateLimit = error?.status === 429 || 
+                        error?.message?.includes('429') || 
+                        error?.message?.includes('Quota exceeded') ||
+                        error?.message?.includes('RESOURCE_EXHAUSTED');
+                        
+    if (isRateLimit) {
+      return NextResponse.json({ error: 'AI limit reached. Please try again later.' }, { status: 429 });
+    }
+
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

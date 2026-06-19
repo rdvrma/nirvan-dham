@@ -88,6 +88,10 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
         return;
       }
 
+      if (!res.ok) {
+        throw new Error('API request failed');
+      }
+
       const data = await res.json();
       
       setMessages((prev) => [
