@@ -258,7 +258,7 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
 
       <ContactSection lang={lang} />
 
-      <style jsx>{`
+      <style>{`
         @media (max-width: 860px) {
           .book-detail-hero {
             grid-template-columns: 1fr !important;
