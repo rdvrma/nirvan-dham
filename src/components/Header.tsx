@@ -47,6 +47,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
 
   const navLinks = [
     { href: '/', label: lang === 'hi' ? 'मुख्य पृष्ठ' : 'Home' },
+    { href: '/course', label: lang === 'hi' ? 'पाठ्यक्रम' : 'Course' },
     { href: '/nirvan-sutra', label: lang === 'hi' ? 'निर्वाण सूत्र' : 'Nirvan Sutra' },
     { href: '/library', label: lang === 'hi' ? 'पुस्तकालय' : 'Library' },
     { href: '/guided-meditation', label: lang === 'hi' ? 'ध्यान मार्गदर्शन' : 'Guided Meditation' },
