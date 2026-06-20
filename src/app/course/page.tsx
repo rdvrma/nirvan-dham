@@ -264,6 +264,177 @@ export default function CourseLandingPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════════ */}
+      {/* MOOL GYAAN — Core Teaching & Methodology                 */}
+      {/* ══════════════════════════════════════════════════════════ */}
+      <section style={{ position: 'relative', zIndex: 1, padding: 'clamp(4rem,8vw,6rem) clamp(1.5rem,5vw,3rem)', borderTop: '1px solid rgba(212,168,67,0.06)' }}>
+        <div style={{ maxWidth: '820px', margin: '0 auto' }}>
+
+          {/* Label */}
+          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+            <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.58rem', letterSpacing: '0.3em', color: GOLD, textTransform: 'uppercase', fontWeight: 700, marginBottom: '0.75rem' }}>
+              Mool Gyaan · मूल ज्ञान
+            </p>
+          </div>
+
+          {/* Central teaching — the big quote */}
+          <div style={{
+            textAlign: 'center', marginBottom: '3.5rem',
+            padding: 'clamp(2rem,4vw,3.5rem) clamp(1.5rem,5vw,3rem)',
+            border: `1px solid ${BORDER}`,
+            borderRadius: '24px',
+            background: 'linear-gradient(135deg, rgba(12,24,14,0.95), rgba(20,40,22,0.6))',
+            boxShadow: '0 0 80px rgba(212,168,67,0.05), inset 0 1px 0 rgba(212,168,67,0.08)',
+            position: 'relative', overflow: 'hidden',
+          }}>
+            {/* Decorative glow */}
+            <div style={{ position: 'absolute', top: '-40px', left: '50%', transform: 'translateX(-50%)', width: '200px', height: '80px', background: 'radial-gradient(ellipse, rgba(212,168,67,0.12), transparent)', pointerEvents: 'none' }} />
+
+            <div style={{ fontSize: '1.8rem', marginBottom: '1.5rem', opacity: 0.6 }}>🕉</div>
+
+            <blockquote style={{
+              fontFamily: 'var(--font-hind)',
+              fontSize: 'clamp(1.1rem,2.8vw,1.4rem)',
+              fontWeight: 600, lineHeight: 1.9,
+              color: 'rgba(245,237,216,0.92)', margin: '0 0 1rem',
+            }}>
+              स्वप्न ही स्वप्न द्रष्टा है।
+            </blockquote>
+            <blockquote style={{
+              fontFamily: 'var(--font-hind)',
+              fontSize: 'clamp(1rem,2.2vw,1.2rem)',
+              fontWeight: 400, lineHeight: 1.9,
+              color: 'rgba(245,237,216,0.75)', margin: '0 0 1.75rem',
+            }}>
+              अस्तित्व ही अपने अनंत मिथ्या रूपों में प्रकट है।
+            </blockquote>
+
+            <div style={{ display: 'inline-block', padding: '0.3rem 1.2rem', borderRadius: '100px', border: '1px solid rgba(212,168,67,0.25)', background: 'rgba(212,168,67,0.06)' }}>
+              <span style={{ fontFamily: 'var(--font-cormorant)', fontStyle: 'italic', fontSize: '0.95rem', color: GOLD }}>
+                — यही मूल ज्ञान है
+              </span>
+            </div>
+          </div>
+
+          {/* Two Kasauti cards */}
+          <div style={{ marginBottom: '2rem' }}>
+            <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.78rem', color: 'rgba(245,237,216,0.4)', textAlign: 'center', letterSpacing: '0.1em', marginBottom: '1.25rem' }}>
+              ── इस पाठ्यक्रम में बताई हर बात को दो कसौटियों पर जाँचें ──
+            </p>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px,1fr))', gap: '1rem', marginBottom: '1.5rem' }}>
+
+              {/* Kasauti 1 */}
+              <div style={{
+                padding: '1.75rem', borderRadius: '18px',
+                border: '1px solid rgba(212,168,67,0.15)',
+                background: 'rgba(12,24,14,0.8)',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                  <div style={{
+                    width: '38px', height: '38px', borderRadius: '50%',
+                    border: '1px solid rgba(212,168,67,0.3)',
+                    background: 'rgba(212,168,67,0.08)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontFamily: 'var(--font-cormorant)', fontSize: '1rem', color: GOLD, fontStyle: 'italic', flexShrink: 0,
+                  }}>
+                    १
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: 'var(--font-hind)', fontSize: '1rem', fontWeight: 700, color: GOLD, lineHeight: 1.2 }}>अपरोक्ष अनुभव</div>
+                    <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.6rem', color: 'rgba(212,168,67,0.5)', letterSpacing: '0.1em' }}>Aparoksh Anubhav</div>
+                  </div>
+                </div>
+                <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.9rem', lineHeight: 1.85, color: MUTED, margin: 0 }}>
+                  आपका स्वयं का प्रत्यक्ष अनुभव। जो आपने स्वयं अनुभव किया हो, जिसे आप प्रत्यक्ष रूप से जानते हों — वही आपकी पहली कसौटी है।
+                </p>
+              </div>
+
+              {/* Kasauti 2 */}
+              <div style={{
+                padding: '1.75rem', borderRadius: '18px',
+                border: '1px solid rgba(212,168,67,0.15)',
+                background: 'rgba(12,24,14,0.8)',
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+                  <div style={{
+                    width: '38px', height: '38px', borderRadius: '50%',
+                    border: '1px solid rgba(212,168,67,0.3)',
+                    background: 'rgba(212,168,67,0.08)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    fontFamily: 'var(--font-cormorant)', fontSize: '1rem', color: GOLD, fontStyle: 'italic', flexShrink: 0,
+                  }}>
+                    २
+                  </div>
+                  <div>
+                    <div style={{ fontFamily: 'var(--font-hind)', fontSize: '1rem', fontWeight: 700, color: GOLD, lineHeight: 1.2 }}>तर्क की कसौटी</div>
+                    <div style={{ fontFamily: 'var(--font-inter)', fontSize: '0.6rem', color: 'rgba(212,168,67,0.5)', letterSpacing: '0.1em' }}>Tarka · Inquiry</div>
+                  </div>
+                </div>
+                <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.9rem', lineHeight: 1.85, color: MUTED, margin: 0 }}>
+                  गहरे तर्क और विचार की कसौटी। जो बात तर्क की कड़ी परीक्षा में खरी उतरे — वही आपकी दूसरी कसौटी है।
+                </p>
+              </div>
+            </div>
+
+            {/* Result box */}
+            <div style={{
+              padding: '1.25rem 1.75rem',
+              borderRadius: '14px',
+              border: '1px solid rgba(212,168,67,0.2)',
+              background: 'rgba(212,168,67,0.05)',
+              display: 'flex', alignItems: 'flex-start', gap: '1rem',
+            }}>
+              <span style={{ fontSize: '1.2rem', flexShrink: 0, marginTop: '0.1rem' }}>✦</span>
+              <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.92rem', lineHeight: 1.85, color: 'rgba(245,237,216,0.75)', margin: 0 }}>
+                यदि कोई बात इन दोनों कसौटियों पर सत्य सिद्ध हो — <strong style={{ color: GOLD }}>तभी वह आपका ज्ञान है।</strong>{' '}
+                अन्यथा वह केवल सुनी-सुनाई बात है, ज्ञान नहीं।
+              </p>
+            </div>
+          </div>
+
+          {/* Satya Sutra */}
+          <div style={{
+            textAlign: 'center', padding: '1.5rem 2rem',
+            borderRadius: '14px',
+            border: '1px solid rgba(212,168,67,0.1)',
+            background: 'rgba(8,18,9,0.5)',
+            marginBottom: '2rem',
+          }}>
+            <p style={{
+              fontFamily: 'var(--font-hind)',
+              fontSize: 'clamp(0.95rem,2vw,1.1rem)',
+              fontWeight: 600, color: 'rgba(245,237,216,0.7)',
+              margin: 0, lineHeight: 1.8,
+            }}>
+              <span style={{ color: GOLD }}>सत्य कभी नहीं बदलता</span>{' '}—{' '}
+              जो बदल जाये वो सत्य नहीं।
+            </p>
+          </div>
+
+          {/* Exam note */}
+          <div style={{
+            display: 'flex', alignItems: 'flex-start', gap: '1rem',
+            padding: '1.25rem 1.75rem',
+            borderRadius: '14px',
+            border: '1px solid rgba(212,168,67,0.12)',
+            background: 'rgba(12,24,14,0.6)',
+          }}>
+            <span style={{ fontSize: '1.25rem', flexShrink: 0 }}>📝</span>
+            <div>
+              <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.88rem', fontWeight: 700, color: 'rgba(245,237,216,0.85)', margin: '0 0 0.3rem' }}>
+                हर अध्याय के अंत में एक छोटी-सी परीक्षा
+              </p>
+              <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.84rem', lineHeight: 1.8, color: MUTED, margin: 0 }}>
+                इसमें <strong style={{ color: GOLD }}>शामिल होना मात्र पर्याप्त है।</strong> कोई उत्तीर्ण-अनुत्तीर्ण नहीं, कोई नकारात्मक अंकन नहीं।
+                परीक्षा का उद्देश्य केवल इतना है कि सत्य की खोज में आप स्वयं को जाँचते रहें — पढ़कर भूलें नहीं।
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════ */}
       {/* THREE STAGES DEEP DIVE                                    */}
       {/* ══════════════════════════════════════════════════════════ */}
       <section style={{ position: 'relative', zIndex: 1, padding: 'clamp(4rem,8vw,7rem) clamp(1.5rem,5vw,3rem)', maxWidth: '1100px', margin: '0 auto' }}>
