@@ -13,7 +13,7 @@ interface HindiChapter { title?: string; subtitle?: string; author?: string; kha
 
 // English JSON has SAME structure as Hinglish: { metadata, sections: [{section_title, elements}] }
 interface ElementNode { type: string; text?: string; content?: string }
-interface HinglishSection { section_title?: string; heading?: string; title?: string; content?: string; elements?: ElementNode[] }
+interface HinglishSection { section_title?: string; heading?: string; title?: string; content?: string; elements?: ElementNode[]; blocks?: string[] }
 interface HinglishChapter { metadata?: { chapter_title?: string; subtitle?: string; title?: string }; sections?: HinglishSection[] }
 
 // ── Constants ─────────────────────────────────────────────────────────────────
@@ -58,7 +58,7 @@ function loadChapter(lang: string, num: number): { title: string; subtitle: stri
       };
     }
 
-    // English & Hinglish & some Hindi chapters: { metadata, sections: [{section_title/heading/title, elements/content}] }
+    // English & Hinglish & some Hindi chapters: { metadata, sections: [{section_title/heading/title, elements/content/blocks}] }
     const d = raw as HinglishChapter;
     const fallbackTitle = lang === 'en'
       ? `Chapter ${num}`
@@ -68,14 +68,16 @@ function loadChapter(lang: string, num: number): { title: string; subtitle: stri
       subtitle: d.metadata?.subtitle ?? raw.subtitle ?? '',
       sections: (d.sections ?? []).map(s => ({
         heading: s.section_title ?? s.heading ?? s.title ?? null,
-        paragraphs: s.elements 
-          ? s.elements
-              .filter(el => ['paragraph', 'text', 'p', 'body'].includes(el.type))
-              .map(el => (el.text ?? el.content ?? '').trim())
-              .filter(Boolean)
-          : s.content
-              ? s.content.split('\n\n').map(p => p.trim()).filter(Boolean)
-              : [],
+        paragraphs: s.blocks
+          ? s.blocks
+          : s.elements 
+            ? s.elements
+                .filter(el => ['paragraph', 'text', 'p', 'body'].includes(el.type))
+                .map(el => (el.text ?? el.content ?? '').trim())
+                .filter(Boolean)
+            : s.content
+                ? s.content.split('\n\n').map(p => p.trim()).filter(Boolean)
+                : [],
       })),
     };
   } catch {

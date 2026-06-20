@@ -294,7 +294,7 @@ export const MAGAZINES: Magazine[] = [
     nextIssueDate: '2026-06-21',
     status: 'current',
     pdf: '/library/magazines/muktibodh-june-2026.pdf',
-    pageImages: Array.from({ length: 35 }, (_, index) => `/library/magazines/muktibodh-june-2026/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
+    pageImages: Array.from({ length: 44 }, (_, index) => `/library/magazines/muktibodh-june-2026/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
     highlights: [
       'Consciousness and non-duality reflections',
       'Meditation guidance from Nirvan Dham',
