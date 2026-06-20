@@ -5,7 +5,15 @@ const { GoogleGenAI } = require('@google/genai');
 
 const COURSE_SOURCE_ROOT = 'D:/Nirvana sutra course/Ebooks';
 const OUTPUT_ROOT = path.join(process.cwd(), 'src', 'content', 'course-mcq');
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL_CANDIDATES = (process.env.MCQ_GENERATOR_MODELS
+  ? process.env.MCQ_GENERATOR_MODELS.split(',')
+  : [
+      process.env.MCQ_GEMINI_MODEL,
+      'gemini-2.5-flash-lite',
+      'gemini-2.0-flash',
+      'gemini-2.5-flash',
+    ]
+).map((model) => model.trim()).filter(Boolean);
 
 const LANGUAGES = {
   hi: { folder: 'Hindi', name: 'Hindi written in Devanagari', label: 'Hindi' },
@@ -56,11 +64,14 @@ function parseArguments() {
   return { languages: lang ? [lang] : Object.keys(LANGUAGES), chapters, overwrite, dryRun };
 }
 
-function promptFor({ language, chapter, sourceJson }) {
+function promptFor({ language, chapter, sourceJson, batchNumber }) {
   const source = JSON.stringify(sourceJson);
-  return `You are authoring a rigorous practice bank for Nirvan Sutra, chapter ${chapter}.
+  const focus = batchNumber === 1
+    ? 'the chapter foundations, distinctions, definitions, and illustrative examples'
+    : 'daily-life application, practices, implications, and common misunderstandings';
+  return `You are authoring batch ${batchNumber} of 2 for a rigorous Nirvan Sutra practice bank, chapter ${chapter}.
 
-Write exactly 50 unique multiple-choice questions in ${language.name}. Work only from the supplied chapter manuscript. Do not invent doctrines, scripture references, claims, terminology, examples, or practices that are absent from it. This is a contemplative course: questions must test careful understanding, not rote word matching alone.
+Write exactly 25 unique multiple-choice questions in ${language.name}. Focus on ${focus}. Work only from the supplied chapter manuscript. Do not invent doctrines, scripture references, claims, terminology, examples, or practices that are absent from it. This is a contemplative course: questions must test careful understanding, not rote word matching alone.
 
 Coverage requirements:
 - spread questions across the chapter's central distinctions, examples, practices, and common misunderstandings;
@@ -83,7 +94,7 @@ Return only a valid JSON array. Each item must use exactly this schema:
   "explanation": "2-5 sentences explaining why the correct choice follows from the chapter, and gently clarifying the key misconception."
 }
 
-Use sequential numeric ids ${chapter}01 through ${chapter}50. Balance correct answers exactly: A = 13, B = 13, C = 12, D = 12. Do not add markdown, commentary, source text, or fields outside this schema.
+Use any unique numeric ids. Do not add markdown, commentary, source text, or fields outside this schema. The array must contain 25 items, not more and not fewer.
 
 Chapter manuscript:
 ${source}`;
@@ -131,19 +142,82 @@ function validateQuestions(value, chapter) {
   }
 }
 
-async function generateQuestions(ai, input) {
-  const response = await ai.models.generateContent({
-    model: MODEL,
-    contents: promptFor(input),
-    config: {
-      responseMimeType: 'application/json',
-      temperature: 0.35,
-    },
-  });
+function parseQuestionJson(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    fs.mkdirSync(path.join(process.cwd(), '.tmp'), { recursive: true });
+    fs.writeFileSync(path.join(process.cwd(), '.tmp', 'last-invalid-mcq-response.txt'), text, 'utf8');
+    const first = text.indexOf('[');
+    const last = text.lastIndexOf(']');
+    if (first >= 0 && last > first) return JSON.parse(text.slice(first, last + 1));
+    throw new SyntaxError('The model response did not contain a JSON array.');
+  }
+}
 
-  const text = response.text?.trim();
-  if (!text) throw new Error('The model returned an empty response.');
-  return JSON.parse(text);
+function normalizeQuestionSet(value, chapter) {
+  if (!Array.isArray(value) || value.length < 50) {
+    throw new Error(`Expected at least 50 generated questions, received ${Array.isArray(value) ? value.length : 'non-array'}.`);
+  }
+
+  const selected = value.slice(0, 50);
+  const desiredCorrectKeys = [
+    ...Array(13).fill('A'),
+    ...Array(13).fill('B'),
+    ...Array(12).fill('C'),
+    ...Array(12).fill('D'),
+  ];
+  const optionKeys = ['A', 'B', 'C', 'D'];
+
+  return selected.map((question, index) => {
+    const correctOption = question.options?.find((option) => option?.key === question.correct);
+    const wrongOptions = question.options?.filter((option) => option?.key !== question.correct) ?? [];
+    const correct = desiredCorrectKeys[index];
+    const remainingKeys = optionKeys.filter((key) => key !== correct);
+    const options = [
+      { key: correct, text: correctOption?.text },
+      ...wrongOptions.map((option, wrongIndex) => ({ key: remainingKeys[wrongIndex], text: option?.text })),
+    ].sort((a, b) => optionKeys.indexOf(a.key) - optionKeys.indexOf(b.key));
+
+    return {
+      ...question,
+      id: chapter * 100 + index + 1,
+      correct,
+      options,
+    };
+  });
+}
+
+async function generateQuestions(ai, input) {
+  let lastError;
+
+  for (const model of MODEL_CANDIDATES) {
+    for (let attempt = 1; attempt <= 2; attempt += 1) {
+      try {
+        console.log(`  Using ${model} (attempt ${attempt})...`);
+        const response = await ai.models.generateContent({
+          model,
+          contents: promptFor(input),
+        config: {
+          responseMimeType: 'application/json',
+          temperature: 0.35,
+        },
+        });
+
+        const text = response.text?.trim();
+        if (!text) throw new Error('The model returned an empty response.');
+        return parseQuestionJson(text);
+      } catch (error) {
+        lastError = error;
+        const status = error?.status ?? error?.error?.code;
+        const retryable = status === 429 || status === 503 || error instanceof SyntaxError;
+        if (!retryable) throw error;
+        console.log(`  ${model} did not return valid JSON; retrying.`);
+      }
+    }
+  }
+
+  throw lastError ?? new Error('No Gemini model was available.');
 }
 
 async function main() {
@@ -166,7 +240,15 @@ async function main() {
       const sourcePath = path.join(COURSE_SOURCE_ROOT, language.folder, `${chapter}.json`);
       const sourceJson = JSON.parse(fs.readFileSync(sourcePath, 'utf8'));
       console.log(`Generate ${language.label} chapter ${chapter}...`);
-      const questions = await generateQuestions(ai, { language, chapter, sourceJson });
+      const generated = [];
+      for (const batchNumber of [1, 2]) {
+        const batch = await generateQuestions(ai, { language, chapter, sourceJson, batchNumber });
+        if (!Array.isArray(batch) || batch.length < 25) {
+          throw new Error(`Batch ${batchNumber} returned fewer than 25 questions.`);
+        }
+        generated.push(...batch.slice(0, 25));
+      }
+      const questions = normalizeQuestionSet(generated, chapter);
       validateQuestions(questions, chapter);
 
       if (!dryRun) {

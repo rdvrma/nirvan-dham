@@ -1,0 +1,193 @@
+{
+  "series": "Nirvan Sutra",
+  "document_type": "Fixed Terminology Lexicon",
+  "title": "Fixed Terminology Lexicon - Hinglish",
+  "purpose": "Yeh reference document Nirvan Sutra ke sabhi adhyayon mein use hone wale main shabdon ka stable meaning deta hai. Iska purpose hai ki sadhak Saakshi, Anubhavkarta, Atma, Brahm, Maya, Avidya aur Nirvan jaise words ko har jagah ek hi clear meaning mein samjhein.",
+  "author": "Aadisatv",
+  "language": "hi-Latn",
+  "version": "1.0",
+  "terms": [
+    {
+      "id": 1,
+      "term": "Saakshi",
+      "sanskrit_hindi": "साक्षी",
+      "meaning_in_course": "Saakshi woh shaant jaanne wali upasthiti hai jo sharir, mann, vichar, bhav, sukh, dukh, anubhav aur avasthaon ko jaanti hai, par khud unse badalti nahi. Saakshi kuchh karta nahi, keval jaanta hai.",
+      "scriptural_note": "Yogasutra mein “Drashta” aur Sankhya mein “Purusha” isi disha ki taraf sanket karte hain. Nirvan Sutra mein Saakshi ka arth hamesha shaant jaanne wali upasthiti rahega.",
+      "relationship": "Saakshi Anubhavkarta se bhinn hai; Anubhavkarta experience se judta hai, Saakshi keval experience ko jaanta hai."
+    },
+    {
+      "id": 2,
+      "term": "Atma",
+      "sanskrit_hindi": "आत्मा",
+      "meaning_in_course": "Atma sadhak ka sachcha swaroop hai - jo sharir, mann, role, kahani aur experiences se limited nahi hai. Jab sadhak andar mudkar apne real “main” ko pehchanta hai, tab woh Atma ki disha mein aata hai.",
+      "scriptural_note": "Upanishadon mein Atma ko real nature ke roop mein kaha gaya hai. Nirvan Sutra mein Atma ka use “andar pehchaane gaye satya” ke liye hoga.",
+      "relationship": "Atma aur Brahm Advaita mein ek hain; Atma andar ka satya hai, Brahm wahi satya unlimited aur universal context mein hai."
+    },
+    {
+      "id": 3,
+      "term": "Brahm",
+      "sanskrit_hindi": "ब्रह्म",
+      "meaning_in_course": "Brahm woh aseem, sarvavyapi, antim satya hai jo sabka aadhaar hai. Woh kisi ek body, form, name, devata, thought ya experience mein limited nahi hai.",
+      "scriptural_note": "Vedanta mein Brahm ko jagat ka ultimate ground kaha gaya hai. Nirvan Sutra mein Brahm ko kisi personal devata ki tarah nahi, balki Param Satya ke roop mein samjhaaya jayega.",
+      "relationship": "Atma aur Brahm alag nahi hain; Atma wahi satya andar pehchaana gaya hai, Brahm wahi satya poore existence ke context mein hai."
+    },
+    {
+      "id": 4,
+      "term": "Maya",
+      "sanskrit_hindi": "माया",
+      "meaning_in_course": "Maya woh shakti hai jiske kaaran ek Advaita satya anek naam, roop, bhed aur experiences mein dikhai deta hai. Maya jhooth nahi hai jaise kuchh hai hi nahi; par woh final truth bhi nahi hai.",
+      "scriptural_note": "Vedanta mein Maya ko naam-roop ki prakat vyavastha kaha gaya hai. Nirvan Sutra mein Maya ko jagat-level arrangement ke roop mein samjhaaya jayega.",
+      "relationship": "Maya jagat-level par bhed aur anekta ki vyavastha hai; Avidya individual-level par usi bhram ki personal pakad hai.",
+      "practical_distinction": "Sadhak ke liye Maya ka matlab hai - sansar jaisa dikh raha hai, waisa final truth nahi hai. Avidya ka matlab hai - “main sharir-mann hoon” ki personal bhool. Maya bahar ki vyavastha hai; Avidya andar ki galat pehchaan hai."
+    },
+    {
+      "id": 5,
+      "term": "Avidya",
+      "sanskrit_hindi": "अविद्या",
+      "meaning_in_course": "Avidya apne real swaroop ko na jaanna hai. Jab sadhak sharir, mann, role, kahani ya Anubhavkarta ko hi final “main” maan leta hai, wahi Avidya hai.",
+      "scriptural_note": "Vedanta mein Avidya ko bondage ka root cause kaha gaya hai. Nirvan Sutra mein Avidya ko individual-level galat identity ke roop mein rakha jayega.",
+      "relationship": "Avidya individual-level ka bhram hai; Maya jagat-level par naam-roop aur bhed ki vyavastha hai.",
+      "practical_distinction": "Maya kehti hai - ek satya anek jaisa dikh raha hai. Avidya kehti hai - main is sharir-mann ko hi apna final swaroop maan raha hoon."
+    },
+    {
+      "id": 6,
+      "term": "Ahankar",
+      "sanskrit_hindi": "अहंकार",
+      "meaning_in_course": "Ahankar woh kathor “main” hai jo sharir, mann, role, image, kahani, experience, gyaan ya sadhana se identity bana leta hai. Ahankar sirf ghamand nahi hai; “main dukhi hoon”, “main special hoon”, “main jaanta hoon” bhi Ahankar ki layers ho sakti hain.",
+      "scriptural_note": "Shastron mein Ahankar ko “I-sense” ya doership se joda gaya hai. Nirvan Sutra mein ise identity ki hardness ke roop mein samjhaaya jayega.",
+      "relationship": "Ahankar Anubhavkarta par pakad banata hai. Anubhavkarta experience ka center hai; Ahankar us experience se bani hard identity hai."
+    },
+    {
+      "id": 7,
+      "term": "Chetana",
+      "sanskrit_hindi": "चेतना",
+      "meaning_in_course": "Chetana woh jaanne ka prakash hai jiske kaaran sharir, mann, vichar, bhav, sansar, jagrat, swapna aur sushupti ke experiences jaane jaate hain. Chetana thought nahi hai; thought Chetana mein jaana jaata hai.",
+      "scriptural_note": "Upanishadon mein Chetana ko Param Satya ki disha mein dekha gaya hai. “Prajnanam Brahma” isi taraf sanket karta hai.",
+      "relationship": "Saakshi sadhak ke experience mein Chetana ki shaant jaanne wali disha hai. Brahm Chetana ka aseem aadhaar hai."
+    },
+    {
+      "id": 8,
+      "term": "Anubhavkarta",
+      "sanskrit_hindi": "अनुभवकर्ता",
+      "meaning_in_course": "Anubhavkarta woh experience-level ka “main” hai jo kehta hai - “mujhe dukh hua”, “mujhe anand mila”, “mujhe experience hua”, “maine yeh kiya.” Anubhavkarta practical life mein useful hai, par jab woh experiences se hard identity bana leta hai, tab Ahankar judta hai.",
+      "scriptural_note": "Kai paramparaon mein Anubhavkarta ko Jeev, Karta ya Bhokta ke roop mein dekha jaata hai. Nirvan Sutra mein Anubhavkarta ko experience ke center ke roop mein rakha jayega, Ahankar ke samaan nahi.",
+      "relationship": "Anubhavkarta experience se judta hai; Saakshi experience ko jaanta hai. Ahankar Anubhavkarta ke experience se identity bana leta hai."
+    },
+    {
+      "id": 9,
+      "term": "Drashta",
+      "sanskrit_hindi": "द्रष्टा",
+      "meaning_in_course": "Drashta woh dekhne wali Chetana hai jo sharir, mann aur experiences ko dekhti hai. Nirvan Sutra mein Drashta ko Saakshi ke near meaning mein samjha jayega, par main term Saakshi rahega.",
+      "scriptural_note": "Patanjali Yogasutra mein “Drashta” Purusha ki taraf sanket karta hai. Nirvan Sutra mein Drashta aaye to use Saakshi ki disha mein samajhna hai, alag system ke roop mein nahi.",
+      "relationship": "Drashta aur Saakshi same direction ke words hain; Drashta seeing par zor deta hai, Saakshi quiet knowing presence par."
+    },
+    {
+      "id": 10,
+      "term": "Mann",
+      "sanskrit_hindi": "मन",
+      "meaning_in_course": "Mann vichar, bhavna, smriti, kalpana, ichchha aur darr ka badalta hua flow hai. Mann useful instrument hai, par final “main” nahi hai.",
+      "scriptural_note": "Shastron mein mann, buddhi, chitta aur Ahankar ko alag-alag bhi samjhaaya jaata hai. Nirvan Sutra mein beginner sadhak ke liye Mann ko simple inner changing flow ke roop mein rakha jayega.",
+      "relationship": "Mann experiences ka field hai; Saakshi Mann ko jaanta hai. Avidya mein sadhak Mann ko hi “main” maan leta hai."
+    },
+    {
+      "id": 11,
+      "term": "Jeev",
+      "sanskrit_hindi": "जीव",
+      "meaning_in_course": "Jeev woh individual-person ka bhaav hai jisme Chetana sharir-mann, Anubhavkarta aur Ahankar se judi hui prateet hoti hai. Jeev khud ko limited person maanta hai.",
+      "scriptural_note": "Vedanta mein Jeev ko Avidya se limited Atma ka experience kaha jaata hai. Nirvan Sutra mein Jeev ko “limited individual feeling” ke roop mein samjhaaya jayega.",
+      "relationship": "Jeev Avidya ke kaaran khud ko sharir-mann maanta hai. Gyaan mein wahi Jeev apne Saakshi-swaroop aur Atma ki disha pehchanta hai."
+    },
+    {
+      "id": 12,
+      "term": "Turiya",
+      "sanskrit_hindi": "तुरीय",
+      "meaning_in_course": "Turiya jagrat, swapna aur sushupti - in teenon avasthaon ka achal aadhaar hai. Yeh koi fourth coming-going state nahi, balki woh awareness hai jisme sabhi states jaani jaati hain.",
+      "scriptural_note": "Mandukya Upanishad mein Turiya ki gehri charcha milti hai. Nirvan Sutra mein Turiya ko sadhak ke experience mein avasthaon se pare achal jaanne ki disha ke roop mein samjhaaya jayega.",
+      "relationship": "Turiya Saakshi ki stateless depth hai. Chetana aur Saakshi ki samajh mature hokar Turiya ki taraf sanket karti hai."
+    },
+    {
+      "id": 13,
+      "term": "Moksha",
+      "sanskrit_hindi": "मोक्ष",
+      "meaning_in_course": "Moksha ka arth hai galat pehchaan se freedom. Jab sharir-mann, Ahankar, role, kahani aur experiences se final “main” ki pakad dheeli hoti hai, tab Moksha ki disha khulti hai.",
+      "scriptural_note": "Vedanta mein Moksha ko bondage aur janm-maran se freedom ke roop mein kaha gaya hai. Nirvan Sutra mein sadhak ke liye iska practical meaning hoga - Avidya se freedom aur Saakshi-swaroop mein clarity.",
+      "relationship": "Moksha Gyaan se juda hai; Avidya bondage hai, Gyaan freedom ki disha hai.",
+      "note": "Final chapter mein “Moksha” ki jagah “Nirvan Ki Jhalak” phrase ko zyada suitable rakha gaya hai, kyunki yeh Nirvan Sutra ki language aur bhaav se naturally match karta hai."
+    },
+    {
+      "id": 14,
+      "term": "Nirvan",
+      "sanskrit_hindi": "निर्वाण",
+      "meaning_in_course": "Nirvan ka arth hai galat pehchaan ki aag ka shaant hona. Yeh koi door ki achievement ya special experience nahi, balki pakad ke halke hone ki living glimpse hai.",
+      "scriptural_note": "Buddhist tradition mein Nirvana ko craving aur grasping ke quieting se joda gaya hai. Nirvan Sutra mein ise Advaita ki drishti se galat identity, Ahankar aur experiences ki pakad ke shaant hone ke roop mein samjhaaya jayega.",
+      "relationship": "Nirvan Gyaan, Saakshi-bhav, Neti-Neti, Turiya aur Ahankar ki pakad ke dheele hone se juda hai."
+    },
+    {
+      "id": 15,
+      "term": "Gyaan",
+      "sanskrit_hindi": "ज्ञान",
+      "meaning_in_course": "Gyaan sirf information nahi hai. Gyaan apne real swaroop ki clear recognition hai - yeh dekhna ki main keval sharir, mann, Anubhavkarta ya Ahankar nahi hoon.",
+      "scriptural_note": "Vedanta mein Gyaan ko mukti ka direct means kaha gaya hai. Nirvan Sutra mein Gyaan ka arth hoga - experience mein satya ko pehchanna, keval words yaad karna nahi.",
+      "relationship": "Gyaan Avidya ko door karta hai. Mahavakya Gyaan ki disha dete hain, Nididhyasan use stable karta hai."
+    },
+    {
+      "id": 16,
+      "term": "Nididhyasan",
+      "sanskrit_hindi": "निदिध्यासन",
+      "meaning_in_course": "Nididhyasan sune aur samjhe hue satya ko baar-baar apne experience mein clear karna hai. Yeh sirf meditation mein baithna nahi, balki life ke beech Saakshi-bhav mein lautna hai.",
+      "scriptural_note": "Vedanta mein Shravan, Manan aur Nididhyasan ki parampara hai. Nirvan Sutra mein Nididhyasan ko simple language mein “baar-baar satya mein lautna” kaha jayega.",
+      "relationship": "Nididhyasan Gyaan ko stable karta hai. Yeh Saakshi-bhav, Neti-Neti aur Mahavakya ko life mein utaarta hai."
+    },
+    {
+      "id": 17,
+      "term": "Neti-Neti",
+      "sanskrit_hindi": "नेति-नेति",
+      "meaning_in_course": "Neti-Neti ka arth hai - “yeh nahi, yeh nahi.” Jo badalta hai, jo jaana jaata hai, jo experience mein aata-jaata hai, woh mera final swaroop nahi ho sakta. Yeh negation nahi, identity ki safai hai.",
+      "scriptural_note": "Brihadaranyaka Upanishad mein Neti-Neti ka use satya ki taraf sanket karne ke liye aata hai. Nirvan Sutra mein ise sadhak ke liye practical self-inquiry ke roop mein rakha jayega.",
+      "relationship": "Neti-Neti sharir, mann, bhavna, role, kahani, experience aur spiritual identity se pakad dheeli karti hai. Isse Saakshi ki disha clear hoti hai."
+    },
+    {
+      "id": 18,
+      "term": "Mahavakya",
+      "sanskrit_hindi": "महावाक्य",
+      "meaning_in_course": "Mahavakya woh great statements hain jo sadhak ko uske real swaroop ki taraf direct sanket dete hain. Yeh yaad karne ke liye nahi, andar pehchanne ke liye hain. Main Mahavakya hain - Tat Tvam Asi, Aham Brahmasmi, Ayam Atma Brahma, Prajnanam Brahma.",
+      "scriptural_note": "Yeh Upanishads ke key statements hain. Nirvan Sutra mein inhe heavy shastriya debate ki tarah nahi, balki sadhak ke experience ki direction mein samjhaaya jayega.",
+      "relationship": "Mahavakya Atma, Brahm, Chetana aur Saakshi ki ekta ki taraf sanket karte hain."
+    },
+    {
+      "id": 19,
+      "term": "Agneya / Ajneya",
+      "sanskrit_hindi": "अज्ञेय",
+      "meaning_in_course": "Agneya woh hai jise Mann object ki tarah nahi jaan sakta, kyunki wahi sab jaanne ka aadhaar hai. Saakshi, Atma, Chetana aur Turiya ko Mann saamne rakhkar object ki tarah nahi pakad sakta.",
+      "scriptural_note": "Upanishadon mein satya ko indriyon aur Mann ki pakad se pare kaha gaya hai. Nirvan Sutra mein Agneya ko simple bhasha mein samjhaaya gaya hai - object ki tarah unknown, par apne swaroop ke roop mein self-evident.",
+      "relationship": "Agneya Turiya, Chetana, Atma aur Brahm ki samajh ko safe rakhta hai, taaki sadhak unhe experience ki object na bana le."
+    }
+  ],
+  "important_distinctions": [
+    {
+      "title": "Saakshi aur Anubhavkarta",
+      "body": "Anubhavkarta kehta hai - “mujhe dukh hua”, “mujhe shanti mili”, “mujhe experience hua.” Saakshi jaanta hai - “dukh jaana ja raha hai”, “shanti jaani ja rahi hai”, “experience jaana ja raha hai.” Anubhavkarta practical life mein useful hai; Saakshi final identity ki disha hai. Ahankar tab judta hai jab Anubhavkarta experience ko hard “main” bana leta hai."
+    },
+    {
+      "title": "Anubhavkarta aur Ahankar",
+      "body": "Anubhavkarta experience ka center hai. Ahankar us experience se bani identity hai. “Mujhe dukh hua” Anubhavkarta hai; “meri dukh-bhari kahani hi main hoon” Ahankar hai. “Mujhe shanti ka experience hua” Anubhavkarta hai; “main bahut ucha sadhak hoon” Ahankar hai."
+    },
+    {
+      "title": "Atma aur Brahm",
+      "body": "Atma andar pehchaana gaya satya hai. Brahm wahi satya aseem aur universal context mein hai. Advaita mein Atma aur Brahm alag nahi hain, par Nirvan Sutra mein clarity ke liye dono words alag context mein use honge."
+    },
+    {
+      "title": "Maya aur Avidya",
+      "body": "Maya jagat-level par ek satya ka anek naam-roop mein dikhna hai. Avidya individual-level par apne swaroop ko na jaanna aur sharir-mann ko “main” maan lena hai. Sansar bahut solid aur final truth jaisa dikhe to Maya ko samjho; “main yeh sharir-mann hoon” ki pakad bane to Avidya ko dekho."
+    },
+    {
+      "title": "Gyaan aur Information",
+      "body": "Information mein words yaad ho jaate hain. Gyaan mein experience mein satya clear hota hai. Sadhak ko words ka samman karna hai, par words ko final truth nahi maan lena hai."
+    },
+    {
+      "title": "Nirvan aur Experience",
+      "body": "Nirvan koi experience nahi hai. Nirvan experiences ki pakad ka shaant hona hai. Shanti, anand ya silence aaye to woh experience hai; Nirvan uski pakad ke halke hone ki direction hai."
+    }
+  ],
+  "final_reminder": "In words ko pakadna nahi hai, samajhna hai. Words path ke pointers hain, destination nahi. “Saakshi” word Saakshi nahi hai. “Atma” word Atma nahi hai. “Brahm” word Brahm nahi hai. “Nirvan” word Nirvan nahi hai. Words ka kaam hai - sadhak ko andar modna. Jab direction clear hone lage, words ka samman rakho, par unse identity mat banao."
+}

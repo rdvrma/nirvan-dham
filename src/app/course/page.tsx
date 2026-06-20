@@ -1,10 +1,11 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-// ── Constants ─────────────────────────────────────────────────────────────────
+// ── Constants (dark theme — landing is always dark/cinematic) ─────────────────
 const GOLD = '#d4a843';
+const GOLD_LIGHT = '#c49832';
 const BG = '#050e07';
 const SURFACE = 'rgba(12,24,14,0.9)';
 const BORDER = 'rgba(212,168,67,0.15)';
@@ -99,10 +100,11 @@ export default function CourseLandingPage() {
     setSavedLang(localStorage.getItem('course-lang'));
   }, []);
 
+  // Route to Lexicon first, then chapters
   function handleStart(code: string) {
     setSelecting(code);
     localStorage.setItem('course-lang', code);
-    setTimeout(() => router.push(`/course/${code}/1`), 280);
+    setTimeout(() => router.push(`/course/${code}/lexicon`), 280);
   }
 
   return (
@@ -111,41 +113,45 @@ export default function CourseLandingPage() {
       opacity: mounted ? 1 : 0, transition: 'opacity 0.5s ease',
     }}>
 
-      {/* ── Ambient radial glows ─────────────────────────────────── */}
-      <div aria-hidden style={{
-        position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 0,
-        background: `
-          radial-gradient(ellipse 90% 55% at 50% -5%, rgba(212,168,67,0.09) 0%, transparent 65%),
-          radial-gradient(ellipse 50% 40% at 15% 80%, rgba(212,168,67,0.04) 0%, transparent 60%),
-          radial-gradient(ellipse 50% 40% at 85% 85%, rgba(212,168,67,0.04) 0%, transparent 60%)
-        `,
-      }} />
-
-      {/* ── Background mandala ───────────────────────────────────── */}
+      {/* ── Background mandala ─────────────────────────────────── */}
       <div aria-hidden style={{
         position: 'fixed', top: '50%', left: '50%',
         transform: 'translate(-50%, -50%)',
         pointerEvents: 'none', zIndex: 0,
         animation: 'slowSpin 120s linear infinite',
       }}>
-        <Mandala size={700} opacity={0.045} />
+        <Mandala size={700} opacity={0.03} />
       </div>
 
       {/* ══════════════════════════════════════════════════════════ */}
-      {/* HERO SECTION                                              */}
+      {/* CINEMATIC HERO                                            */}
       {/* ══════════════════════════════════════════════════════════ */}
       <section style={{
         position: 'relative', zIndex: 1,
         minHeight: '100vh', display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center',
         padding: 'clamp(6rem,10vw,9rem) clamp(1.5rem,5vw,3rem) clamp(4rem,7vw,6rem)',
-        textAlign: 'center',
+        textAlign: 'center', overflow: 'hidden',
       }}>
+        {/* Cinematic background video */}
+        <video
+          autoPlay muted loop playsInline
+          style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.45, zIndex: 0 }}
+          src="/course-videos/hero.mp4"
+        />
+        {/* Dark gradient overlays */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to bottom, rgba(5,14,7,0.5) 0%, rgba(5,14,7,0.2) 40%, rgba(5,14,7,0.7) 80%, rgba(5,14,7,1) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'radial-gradient(ellipse 80% 50% at 50% 50%, transparent 40%, rgba(5,14,7,0.6) 100%)' }} />
+
+
+        {/* All hero content above the video overlays */}
+        <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
         {/* Small mandala above title */}
         <div style={{ marginBottom: '1.5rem', animation: 'slowSpin 60s linear infinite' }}>
           <Mandala size={80} opacity={0.5} />
         </div>
+
 
         {/* Badge */}
         <div style={{ marginBottom: '1.75rem' }}>
@@ -247,8 +253,10 @@ export default function CourseLandingPage() {
           </div>
         </div>
 
+        </div> {/* end zIndex:2 content wrapper */}
+
         {/* Scroll indicator */}
-        <div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', opacity: 0.3, animation: 'bobFloat 3s ease-in-out infinite' }}>
+        <div style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', opacity: 0.3, animation: 'bobFloat 3s ease-in-out infinite', zIndex: 3 }}>
           <div style={{ width: '22px', height: '36px', border: '1px solid rgba(212,168,67,0.5)', borderRadius: '11px', display: 'flex', justifyContent: 'center', paddingTop: '5px' }}>
             <div style={{ width: '3px', height: '7px', background: GOLD, borderRadius: '2px', animation: 'scrollDot 3s ease-in-out infinite' }} />
           </div>

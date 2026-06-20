@@ -146,15 +146,26 @@ export default async function ChapterPage({ params }: PageProps) {
         </div>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexShrink: 0 }}>
-          {/* PDF download */}
-          <a href={pdfPath} download style={{
-            padding: '0.2rem 0.55rem', border: '1px solid rgba(212,168,67,0.18)', borderRadius: '6px',
-            color: 'rgba(212,168,67,0.7)', fontFamily: 'var(--font-inter)', fontSize: '0.65rem',
-            textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.3rem',
+          {/* Lexicon quick link */}
+          <a href={`/course/${lang}/lexicon`} style={{
+            padding: '0.3rem 0.7rem', border: '1px solid rgba(212,168,67,0.2)', borderRadius: '7px',
+            color: 'rgba(212,168,67,0.6)', fontFamily: 'var(--font-inter)', fontSize: '0.62rem',
+            textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.25rem',
+            whiteSpace: 'nowrap',
           }}>
-            ↓ PDF
+            📖 {isHindi ? 'शब्दकोश' : isHinglish ? 'Lexicon' : 'Lexicon'}
           </a>
-          <div style={{ padding: '0.2rem 0.6rem', border: '1px solid rgba(212,168,67,0.15)', borderRadius: '6px', color: '#d4a843', fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700 }}>
+          {/* PDF download — prominent */}
+          <a href={pdfPath} download style={{
+            padding: '0.42rem 1rem', borderRadius: '8px',
+            background: '#d4a843', color: '#050e07',
+            fontFamily: 'var(--font-inter)', fontSize: '0.75rem', fontWeight: 700,
+            textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.35rem',
+            boxShadow: '0 2px 10px rgba(212,168,67,0.3)', whiteSpace: 'nowrap',
+          }}>
+            ⬇ PDF
+          </a>
+          <div style={{ padding: '0.28rem 0.65rem', border: '1px solid rgba(212,168,67,0.2)', borderRadius: '7px', color: '#d4a843', fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700 }}>
             {langLabel}
           </div>
         </div>

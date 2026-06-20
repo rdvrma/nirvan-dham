@@ -1,0 +1,193 @@
+{
+  "series": "Nirvan Sutra",
+  "document_type": "Fixed Terminology Lexicon",
+  "title": "Fixed Terminology Lexicon",
+  "purpose": "This reference document gives stable meanings for the main terms used throughout Nirvan Sutra. Its purpose is to help seekers understand words such as Witness, Experiencer, Atma, Brahman, Maya, Avidya and Nirvan in one consistent way across all chapters.",
+  "author": "Aadisatv",
+  "language": "en",
+  "version": "1.0",
+  "terms": [
+    {
+      "id": 1,
+      "term": "Witness",
+      "sanskrit_hindi": "साक्षी / Saakshi",
+      "meaning_in_course": "The Witness is the quiet knowing presence that knows the body, mind, thoughts, emotions, pleasure, pain, experiences and states, yet is not changed by them. The Witness does not do anything; it simply knows.",
+      "scriptural_note": "In the Yoga Sutras, the word Seer points in this direction, and in Sankhya the word Purusha is used in a related way. In Nirvan Sutra, Witness will consistently mean this quiet knowing presence.",
+      "relationship": "The Witness is different from the Experiencer; the Experiencer relates to experience, while the Witness simply knows it."
+    },
+    {
+      "id": 2,
+      "term": "Atma",
+      "sanskrit_hindi": "आत्मा / Atma",
+      "meaning_in_course": "Atma means the seeker's true nature - that which is not limited by body, mind, role, story or experience. When the seeker turns inward and begins to recognize the real “I,” the inquiry moves toward Atma.",
+      "scriptural_note": "The Upanishads speak of Atma as the true Self. In Nirvan Sutra, Atma will mean the truth recognized inwardly.",
+      "relationship": "In Advaita, Atma and Brahman are not two. Atma is the truth recognized within; Brahman is the same truth in its boundless, universal context."
+    },
+    {
+      "id": 3,
+      "term": "Brahman",
+      "sanskrit_hindi": "ब्रह्म / Brahm",
+      "meaning_in_course": "Brahman is the infinite, all-pervading, final reality that is the ground of everything. It is not limited to one body, form, name, deity, thought or experience.",
+      "scriptural_note": "Vedanta presents Brahman as the ultimate ground of the world. In Nirvan Sutra, Brahman is not taught as a personal deity, but as the final reality.",
+      "relationship": "Atma and Brahman are not separate. Atma is that truth recognized inwardly; Brahman is that same truth in the context of total existence."
+    },
+    {
+      "id": 4,
+      "term": "Maya",
+      "sanskrit_hindi": "माया / Maya",
+      "meaning_in_course": "Maya is the power through which one non-dual truth appears as many names, forms, differences and experiences. Maya is not false as if it does not exist at all; but it is not the final truth either.",
+      "scriptural_note": "Vedanta describes Maya as the manifest arrangement of name and form. In Nirvan Sutra, Maya will be taught as the world-level arrangement of appearance.",
+      "relationship": "Maya is the world-level appearance of multiplicity; Avidya is the individual-level grasping of that confusion.",
+      "practical_distinction": "For a seeker, Maya means the world is not ultimately exactly as it appears. Avidya means the personal error “I am this body-mind.” Maya is the outer arrangement; Avidya is the inner mistaken identity."
+    },
+    {
+      "id": 5,
+      "term": "Avidya",
+      "sanskrit_hindi": "अविद्या / Avidya",
+      "meaning_in_course": "Avidya means not knowing one's true nature. When the seeker takes the body, mind, role, story or Experiencer to be the final “I,” that is Avidya.",
+      "scriptural_note": "In Vedanta, Avidya is called the root cause of bondage. In Nirvan Sutra, it will mean individual-level mistaken identity.",
+      "relationship": "Avidya is confusion at the individual level; Maya is the world-level arrangement of name, form and difference.",
+      "practical_distinction": "Maya says: one truth is appearing as many. Avidya says: I am taking this body-mind to be my final nature."
+    },
+    {
+      "id": 6,
+      "term": "Ego",
+      "sanskrit_hindi": "अहंकार / Ahankar",
+      "meaning_in_course": "Ego is the hardened “I” that builds identity from body, mind, role, image, story, experience, knowledge or spiritual practice. Ego is not only pride; “I am wounded,” “I am special,” and “I know” can also be layers of ego.",
+      "scriptural_note": "Classical texts often connect Ahankar with the I-sense and doership. In Nirvan Sutra, it will be explained as hardened identity.",
+      "relationship": "Ego grips the Experiencer. The Experiencer is the center of experience; ego is the hardened identity formed from that experience."
+    },
+    {
+      "id": 7,
+      "term": "Consciousness",
+      "sanskrit_hindi": "चेतना / Chetana",
+      "meaning_in_course": "Consciousness is the light of knowing by which the body, mind, thoughts, emotions, world, waking, dream and deep sleep are known. Consciousness is not a thought; thoughts are known in consciousness.",
+      "scriptural_note": "The Upanishads point to consciousness as the direction of ultimate truth. The mahavakya “Prajnanam Brahma” points here.",
+      "relationship": "The Witness is the quiet knowing direction of consciousness in the seeker's experience. Brahman is consciousness in its boundless ground."
+    },
+    {
+      "id": 8,
+      "term": "Experiencer",
+      "sanskrit_hindi": "अनुभवकर्ता / Anubhavkarta",
+      "meaning_in_course": "The Experiencer is the experience-level “I” that says, “I felt pain,” “I felt joy,” “I had an experience,” or “I did this.” The Experiencer is useful in practical life; ego joins when it creates hardened identity from experience.",
+      "scriptural_note": "Different traditions may speak of the experiencer as jiva, doer or enjoyer. In Nirvan Sutra, the Experiencer will be kept as the center of experience, not as the same thing as ego.",
+      "relationship": "The Experiencer relates to experience; the Witness knows experience. Ego builds identity from the Experiencer's experience."
+    },
+    {
+      "id": 9,
+      "term": "Seer",
+      "sanskrit_hindi": "द्रष्टा / Drashta",
+      "meaning_in_course": "The Seer is the seeing consciousness that sees the body, mind and experiences. In Nirvan Sutra, Seer will be understood close to Witness, while Witness remains the main term.",
+      "scriptural_note": "In Patanjali's Yoga Sutra, Drashta points toward Purusha. In Nirvan Sutra, if the word Seer appears, it should be understood in the direction of Witness, not as a separate system.",
+      "relationship": "Seer and Witness point in the same direction; Seer emphasizes seeing, Witness emphasizes quiet knowing presence."
+    },
+    {
+      "id": 10,
+      "term": "Mind",
+      "sanskrit_hindi": "मन / Man",
+      "meaning_in_course": "Mind is the changing flow of thought, emotion, memory, imagination, desire and fear. The mind is a useful instrument, but it is not the final “I.”",
+      "scriptural_note": "Classical teachings may distinguish mind, intellect, memory and ego separately. In Nirvan Sutra, for the beginner, mind will be used simply as the inner changing flow.",
+      "relationship": "Mind is the field of experiences; the Witness knows the mind. In Avidya, the seeker mistakes the mind for “I.”"
+    },
+    {
+      "id": 11,
+      "term": "Jiva",
+      "sanskrit_hindi": "जीव / Jeev",
+      "meaning_in_course": "Jiva is the sense of being an individual person, where consciousness appears connected with body-mind, Experiencer and ego. The jiva takes itself to be a limited person.",
+      "scriptural_note": "Vedanta often describes jiva as the Self appearing limited by Avidya. In Nirvan Sutra, jiva will mean the felt sense of limited individuality.",
+      "relationship": "Because of Avidya, the jiva takes itself to be body-mind. Through knowledge, the same jiva recognizes the direction of Witness and Atma."
+    },
+    {
+      "id": 12,
+      "term": "Turiya",
+      "sanskrit_hindi": "तुरीय / Turiya",
+      "meaning_in_course": "Turiya is the unmoving ground of waking, dream and deep sleep. It is not a fourth state that comes and goes, but the awareness in which all states are known.",
+      "scriptural_note": "The Mandukya Upanishad gives a profound teaching on Turiya. In Nirvan Sutra, Turiya will be taught as the direction of unchanging knowing beyond the three states.",
+      "relationship": "Turiya is the stateless depth of the Witness. The understanding of consciousness and Witness matures toward Turiya."
+    },
+    {
+      "id": 13,
+      "term": "Moksha",
+      "sanskrit_hindi": "मोक्ष / Moksha",
+      "meaning_in_course": "Moksha means freedom from mistaken identity. When the final grip of “I” on body-mind, ego, role, story and experience becomes loose, the direction of Moksha opens.",
+      "scriptural_note": "Vedanta speaks of Moksha as freedom from bondage and birth-death. In Nirvan Sutra, the practical meaning for seekers is freedom from Avidya and clarity in the Witness-nature.",
+      "relationship": "Moksha is connected with knowledge; Avidya is bondage, and knowledge opens the direction of freedom.",
+      "note": "In the final chapter, the phrase “A Glimpse of Nirvan” is preferred over Moksha, because it fits the language and feeling of Nirvan Sutra more naturally."
+    },
+    {
+      "id": 14,
+      "term": "Nirvan",
+      "sanskrit_hindi": "निर्वाण / Nirvan",
+      "meaning_in_course": "Nirvan means the quieting of the fire of mistaken identity. It is not a distant achievement or a special experience, but a living glimpse of grasping becoming lighter.",
+      "scriptural_note": "In the Buddhist tradition, Nirvana is linked with the quieting of craving and grasping. In Nirvan Sutra, it is understood through Advaita as the quieting of mistaken identity, egoic grip and attachment to experiences.",
+      "relationship": "Nirvan is connected with knowledge, Witness-consciousness, Neti-Neti, Turiya and the loosening of egoic grasping."
+    },
+    {
+      "id": 15,
+      "term": "Knowledge",
+      "sanskrit_hindi": "ज्ञान / Gyaan / Jnana",
+      "meaning_in_course": "Knowledge is not mere information. Knowledge is clear recognition of one's true nature - seeing that I am not merely body, mind, Experiencer or ego.",
+      "scriptural_note": "Vedanta teaches knowledge as the direct means to liberation. In Nirvan Sutra, knowledge means recognizing truth in experience, not merely remembering words.",
+      "relationship": "Knowledge removes Avidya. Mahavakyas point toward knowledge; Nididhyasan stabilizes it."
+    },
+    {
+      "id": 16,
+      "term": "Nididhyasan",
+      "sanskrit_hindi": "निदिध्यासन / Nididhyasan",
+      "meaning_in_course": "Nididhyasan means repeatedly clarifying in experience the truth that has been heard and understood. It is not only sitting in meditation; it is returning to Witness-consciousness in the middle of life.",
+      "scriptural_note": "Vedanta speaks of shravan, manan and nididhyasan. In Nirvan Sutra, Nididhyasan will be explained simply as returning again and again to truth.",
+      "relationship": "Nididhyasan stabilizes knowledge. It brings Witness-consciousness, Neti-Neti and the mahavakyas into life."
+    },
+    {
+      "id": 17,
+      "term": "Neti-Neti",
+      "sanskrit_hindi": "नेति-नेति / Neti-Neti",
+      "meaning_in_course": "Neti-Neti means “not this, not this.” Whatever changes, whatever is known, whatever comes and goes in experience cannot be my final nature. It is not life-denial; it is the cleaning of identity.",
+      "scriptural_note": "The Brihadaranyaka Upanishad uses Neti-Neti to point toward truth. In Nirvan Sutra, it will be used as practical self-inquiry for seekers.",
+      "relationship": "Neti-Neti loosens the grip on body, mind, emotion, role, story, experience and spiritual identity. It makes the direction of the Witness clearer."
+    },
+    {
+      "id": 18,
+      "term": "Mahavakyas",
+      "sanskrit_hindi": "महावाक्य / Mahavakya",
+      "meaning_in_course": "Mahavakyas are the great statements that directly point the seeker toward true nature. They are not meant merely for memorization; they are meant for inner recognition. The key mahavakyas are: Tat Tvam Asi, Aham Brahmasmi, Ayam Atma Brahma, Prajnanam Brahma.",
+      "scriptural_note": "These are major Upanishadic declarations. In Nirvan Sutra, they are not treated as heavy scholastic debate, but as experiential pointers for the seeker.",
+      "relationship": "Mahavakyas point toward the unity of Atma, Brahman, consciousness and the Witness."
+    },
+    {
+      "id": 19,
+      "term": "Unobjectifiable / Agneya",
+      "sanskrit_hindi": "अज्ञेय / Agneya / Ajneya",
+      "meaning_in_course": "Agneya means that which the mind cannot know as an object, because it is the very ground of all knowing. The Witness, Atma, consciousness and Turiya cannot be placed in front of the mind and grasped as objects.",
+      "scriptural_note": "The Upanishads describe truth as beyond the grasp of senses and mind. In Nirvan Sutra, Agneya is explained simply: unknowable as an object, self-evident as one's own nature.",
+      "relationship": "Agneya protects the understanding of Turiya, consciousness, Atma and Brahman, so the seeker does not turn them into objects of experience."
+    }
+  ],
+  "important_distinctions": [
+    {
+      "title": "Witness and Experiencer",
+      "body": "The Experiencer says, “I felt pain,” “I felt peace,” “I had an experience.” The Witness knows, “Pain is being known,” “Peace is being known,” “Experience is being known.” The Experiencer is useful in practical life; the Witness points to final identity. Ego joins when the Experiencer turns experience into a hardened “I.”"
+    },
+    {
+      "title": "Experiencer and Ego",
+      "body": "The Experiencer is the center of experience. Ego is the identity formed from that experience. “I felt pain” is the Experiencer. “My painful story is what I am” is ego. “I had peace in meditation” is the Experiencer. “I am a very advanced seeker” is ego."
+    },
+    {
+      "title": "Atma and Brahman",
+      "body": "Atma is truth recognized inwardly. Brahman is the same truth in its infinite and universal context. In Advaita they are not separate, yet Nirvan Sutra uses the two words in different contexts for clarity."
+    },
+    {
+      "title": "Maya and Avidya",
+      "body": "Maya is one truth appearing as many names and forms at the level of the world. Avidya is the individual-level mistake of not knowing one's true nature and taking the body-mind to be “I.” When the world feels absolutely solid and final, understand Maya. When the grip “I am this body-mind” appears, see Avidya."
+    },
+    {
+      "title": "Knowledge and Information",
+      "body": "Information means words are remembered. Knowledge means truth becomes clear in experience. The seeker should respect words, but not mistake words for the final truth."
+    },
+    {
+      "title": "Nirvan and Experience",
+      "body": "Nirvan is not an experience. Nirvan is the quieting of grasping around experiences. Peace, joy or silence may come as experiences; Nirvan is the direction in which the grip around them becomes lighter."
+    }
+  ],
+  "final_reminder": "These words are not meant to be clung to; they are meant to be understood. Words are pointers on the path, not the destination. The word “Witness” is not the Witness. The word “Atma” is not Atma. The word “Brahman” is not Brahman. The word “Nirvan” is not Nirvan. The work of words is to turn the seeker inward. Once the direction becomes clear, respect the words, but do not build identity from them."
+}
