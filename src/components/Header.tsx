@@ -48,12 +48,19 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
   }, []);
 
   useEffect(() => {
-    const supabase = createClient();
-    void supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null));
-    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-    });
-    return () => listener.subscription.unsubscribe();
+    try {
+      const supabase = createClient();
+      void supabase.auth.getUser().then(({ data }) => setUser(data?.user ?? null)).catch(() => setUser(null));
+      const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+        setUser(session?.user ?? null);
+      });
+      return () => {
+        listener?.subscription?.unsubscribe();
+      };
+    } catch (err) {
+      console.warn('Supabase client failed to initialize. Check NEXT_PUBLIC_SUPABASE_URL.', err);
+      setUser(null);
+    }
   }, []);
 
   const displayName = user?.user_metadata.full_name || user?.user_metadata.name || user?.email?.split('@')[0] || '';

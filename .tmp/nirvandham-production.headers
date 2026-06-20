@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Age: 0
+Cache-Control: private, no-cache, no-store, max-age=0, must-revalidate
+Content-Type: text/html; charset=utf-8
+Date: Sat, 20 Jun 2026 16:35:51 GMT
+Link: </_next/static/media/01e4147cff8141ee-s.p.3huc2loe0ie8a.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/0e63149d5897f52c-s.p.19jsrx7exjbdt.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/211e29c1c16163dc-s.p.2p9qfnu2qh4q6.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/4ecb3f5dfe34ba3a-s.p.1d0gcmnl_dzdu.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/5246515474daf346-s.p.14m725e1f886h.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/615b8c4b816233f9-s.p.3hfkl415jjze8.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/664dfdf7f50671c9-s.p.0h9kjuqj3fmop.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/69b20fb17ced72ac-s.p.3qm25gvw3lgup.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/8bd76523131fa0fc-s.p.1pvupmngxrt5z.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/91ac69127e8041e8-s.p.083560ve--_qs.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/b0d3db5ad10a75a6-s.p.2c9agv86na00f.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/media/b95053aa4d33fc1f-s.p.3gcgz_mtvoehf.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </tatv/aadisatv.jpg>; rel=preload; as="image", </tatv/krishnpriya.jpg>; rel=preload; as="image", </tatv/ashok.jpg>; rel=preload; as="image", </tatv/aatm-prakash.jpg>; rel=preload; as="image", </tatv/ajay.jpg>; rel=preload; as="image"
+Server: Vercel
+Strict-Transport-Security: max-age=63072000
+Vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+X-Matched-Path: /
+X-Powered-By: Next.js
+X-Vercel-Cache: MISS
+X-Vercel-Id: bom1::iad1::ljwtz-1781973351712-fdc4dc3556b9
+Transfer-Encoding: chunked
+
