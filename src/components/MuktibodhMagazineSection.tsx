@@ -92,65 +92,84 @@ function LaunchCelebration({ issue, hi }: { issue: Magazine; hi: boolean }) {
     <div style={{
       position: 'relative',
       overflow: 'hidden',
-      maxWidth: '470px',
-      border: '1px solid rgba(212,168,67,0.24)',
-      borderRadius: '16px',
-      padding: '1.1rem 1.2rem',
-      background: 'linear-gradient(135deg, rgba(212,168,67,0.16), rgba(12,38,20,0.74) 58%, rgba(212,168,67,0.08))',
-      boxShadow: '0 0 54px rgba(212,168,67,0.13), inset 0 0 0 1px rgba(255,255,255,0.035)',
+      maxWidth: '500px',
+      border: '1px solid rgba(212,168,67,0.32)',
+      borderRadius: '18px',
+      padding: '1.6rem 1.4rem',
+      background: 'linear-gradient(135deg, rgba(212,168,67,0.14) 0%, rgba(12,38,20,0.82) 50%, rgba(212,168,67,0.06) 100%)',
+      boxShadow: '0 0 80px rgba(212,168,67,0.16), 0 0 0 1px rgba(255,255,255,0.04), inset 0 0 40px rgba(212,168,67,0.04)',
     }}>
+      {/* Gold shimmer sweep */}
       <div style={{
-        position: 'absolute',
-        inset: 0,
-        background: 'linear-gradient(115deg, transparent 0%, rgba(255,232,164,0.12) 38%, transparent 70%)',
-        animation: 'muktibodhLaunchSweep 3.8s ease-in-out infinite',
+        position: 'absolute', inset: 0,
+        background: 'linear-gradient(115deg, transparent 0%, rgba(255,232,164,0.14) 40%, transparent 72%)',
+        animation: 'muktibodhLaunchSweep 3.4s ease-in-out infinite',
         pointerEvents: 'none',
       }} />
-      <div style={{
-        position: 'absolute',
-        right: '1rem',
-        top: '1rem',
-        width: '8px',
-        height: '8px',
-        borderRadius: '999px',
-        background: '#d4a843',
-        boxShadow: '0 0 18px #d4a843',
-        animation: 'muktibodhLaunchPulse 1.8s ease-in-out infinite',
-      }} />
-      <p style={{
-        position: 'relative',
-        margin: '0 0 0.55rem',
-        color: '#d4a843',
-        fontSize: '0.6rem',
-        letterSpacing: '0.24em',
-        textTransform: 'uppercase',
-        fontWeight: 850,
-      }}>
-        {hi ? 'नया अंक प्रकाशित' : 'New issue live'}
-      </p>
+
+      {/* Sparkle top-right */}
+      <div style={{ position: 'absolute', top: '0.9rem', right: '1.2rem', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+        <span style={{ fontSize: '0.75rem', animation: 'muktiStar1 2.2s ease-in-out infinite', display: 'inline-block' }}>✦</span>
+        <span style={{ fontSize: '0.5rem', color: 'rgba(212,168,67,0.5)', animation: 'muktiStar2 1.8s ease-in-out infinite 0.4s', display: 'inline-block' }}>✦</span>
+        <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#d4a843', boxShadow: '0 0 18px #d4a843', animation: 'muktibodhLaunchPulse 1.8s ease-in-out infinite' }} />
+      </div>
+
+      {/* LIVE badge */}
+      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem', padding: '0.28rem 0.8rem', borderRadius: '999px', border: '1px solid rgba(212,168,67,0.4)', background: 'rgba(212,168,67,0.1)', marginBottom: '1rem' }}>
+        <div style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#86efac', boxShadow: '0 0 8px #86efac', animation: 'muktibodhLaunchPulse 1.5s ease-in-out infinite' }} />
+        <span style={{ fontSize: '0.54rem', color: '#d4a843', letterSpacing: '0.3em', textTransform: 'uppercase', fontWeight: 800, fontFamily: 'var(--font-inter)' }}>
+          {hi ? 'नया अंक — अभी उपलब्ध' : 'New Issue — Live Now'}
+        </span>
+      </div>
+
+      {/* Main headline */}
       <h3 style={{
         position: 'relative',
-        margin: '0 0 0.45rem',
+        margin: '0 0 0.5rem',
         color: 'var(--c-ivory)',
         fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
-        fontSize: hi ? 'clamp(1.25rem,2.6vw,1.8rem)' : 'clamp(1.35rem,2.6vw,2rem)',
-        lineHeight: 1.25,
+        fontSize: hi ? 'clamp(1.3rem,2.8vw,1.9rem)' : 'clamp(1.4rem,2.8vw,2.1rem)',
+        lineHeight: 1.2,
         fontWeight: hi ? 750 : 500,
       }}>
-        {hi ? `मुक्तिबोध ${formatIssue(issue, hi)} अब उपलब्ध है` : `Muktibodh ${formatIssue(issue, hi)} is now available`}
+        {hi
+          ? `मुक्तिबोध ${formatIssue(issue, hi)} प्रकाशित हो गया`
+          : `Muktibodh ${formatIssue(issue, hi)} is Now Live`}
       </h3>
+
+      {/* Page count badge */}
+      <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+        <span style={{ padding: '0.2rem 0.65rem', borderRadius: '999px', background: 'rgba(212,168,67,0.12)', border: '1px solid rgba(212,168,67,0.3)', fontSize: '0.6rem', color: '#d4a843', fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'var(--font-inter)' }}>
+          69 {hi ? 'पृष्ठ' : 'PAGES'}
+        </span>
+        <span style={{ fontSize: '0.58rem', color: 'rgba(255,255,255,0.35)', fontFamily: 'var(--font-inter)' }}>
+          {hi ? '· जून 2026' : '· June 2026'}
+        </span>
+      </div>
+
+      {/* Badhai / Congratulations message */}
       <p style={{
         position: 'relative',
-        margin: 0,
-        color: 'rgba(255,255,255,0.56)',
+        margin: '0 0 1.1rem',
+        color: 'rgba(255,255,255,0.62)',
         fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
-        fontSize: hi ? '0.86rem' : '0.8rem',
-        lineHeight: 1.75,
+        fontSize: hi ? '0.88rem' : '0.82rem',
+        lineHeight: 1.85,
+        borderLeft: '2px solid rgba(212,168,67,0.3)',
+        paddingLeft: '0.85rem',
       }}>
         {hi
-          ? 'नए अंक के पाठन, PDF और शेयर विकल्प अब खुले हैं।'
-          : 'Reading, PDF and sharing are now open for the new issue.'}
+          ? 'निर्वाण धाम परिवार की ओर से इस नए अंक के प्रकाशन पर हार्दिक बधाई! 🙏 यह अंक अद्वैत, साधना और प्रत्यक्ष आत्म-विचार की गहरी यात्रा लेकर आया है।'
+          : 'Heartfelt congratulations from the Nirvan Dham family on this new edition! 🙏 This issue carries deep explorations of Advaita, living sadhana and direct self-inquiry.'}
       </p>
+
+      {/* Divider */}
+      <div style={{ height: '1px', background: 'linear-gradient(90deg, rgba(212,168,67,0.3), transparent)', marginBottom: '1rem' }} />
+
+      <p style={{ margin: 0, color: 'rgba(212,168,67,0.7)', fontSize: '0.72rem', fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)', letterSpacing: '0.04em' }}>
+        {hi ? '✨ पढ़ें, डाउनलोड करें और साझा करें' : '✨ Read, download and share below'}
+      </p>
+
       <style>{`
         @keyframes muktibodhLaunchSweep {
           0% { transform: translateX(-115%); opacity: 0; }
@@ -162,10 +181,19 @@ function LaunchCelebration({ issue, hi }: { issue: Magazine; hi: boolean }) {
           0%, 100% { opacity: 0.45; transform: scale(1); }
           50% { opacity: 1; transform: scale(1.45); }
         }
+        @keyframes muktiStar1 {
+          0%, 100% { opacity: 0.3; transform: scale(0.85) rotate(0deg); color: #d4a843; }
+          50% { opacity: 1; transform: scale(1.2) rotate(20deg); color: #ffe89a; }
+        }
+        @keyframes muktiStar2 {
+          0%, 100% { opacity: 0.2; transform: scale(1); }
+          50% { opacity: 0.8; transform: scale(1.3); }
+        }
       `}</style>
     </div>
   );
 }
+
 
 function IssueActions({ issue, hi, prominent = false }: { issue: Magazine; hi: boolean; prominent?: boolean }) {
   const readable = useIssueAvailability(issue);
@@ -577,6 +605,8 @@ export default function MuktibodhMagazineSection({ hi, issues }: { hi: boolean; 
             <div style={{ marginBottom: '2rem' }}>
               {launchedIssue ? (
                 <LaunchCelebration issue={launchedIssue} hi={hi} />
+              ) : !upcomingIssue && heroIssue.status === 'current' ? (
+                <LaunchCelebration issue={heroIssue} hi={hi} />
               ) : (
                 <>
                   <p style={{

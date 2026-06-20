@@ -312,10 +312,10 @@ export const MAGAZINES: Magazine[] = [
     issue: 'June 2026 - Issue 01',
     issueNumber: 1,
     monthLabel: 'June 2026',
-    launchDate: '2026-06-21',
-    releaseDate: '2026-06-21',
-    nextIssueDate: '2026-06-21',
-    status: 'current',
+    launchDate: '2026-06-01',
+    releaseDate: '2026-06-01',
+    nextIssueDate: '2026-06-20',
+    status: 'archive',
     pdf: '/library/magazines/muktibodh-june-2026.pdf',
     pageImages: Array.from({ length: 44 }, (_, index) => `/library/magazines/muktibodh-june-2026/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
     highlights: [
@@ -342,7 +342,7 @@ export const MAGAZINES: Magazine[] = [
     launchDate: '2026-06-21',
     releaseDate: '2026-06-21',
     nextIssueDate: '2026-07-21',
-    status: 'upcoming',
+    status: 'current',
     pdf: '/library/magazines/muktibodh-june-2026-issue-02.pdf',
     pageImages: Array.from({ length: 69 }, (_, index) => `/library/magazines/muktibodh-june-2026-issue-02/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
     teaser: 'The next Muktibodh issue continues the monthly journal of consciousness, direct inquiry and living sadhana.',
@@ -372,3 +372,4 @@ export function isMagazineReleased(magazine: Magazine, now: Date = new Date()) {
 export function isMagazineReadable(magazine: Magazine, now: Date = new Date()) {
   return !magazine.isPlaceholder && hasMagazineAssets(magazine) && isMagazineReleased(magazine, now);
 }
+
