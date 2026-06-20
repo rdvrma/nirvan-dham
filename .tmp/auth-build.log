@@ -1,0 +1,73 @@
+
+> nirvan-sutra@0.1.0 build
+> next build
+
+▲ Next.js 16.2.9 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 15.0s
+  Running TypeScript ...
+  Finished TypeScript in 12.2s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/101) ...
+  Generating static pages using 3 workers (25/101) 
+  Generating static pages using 3 workers (50/101) 
+  Generating static pages using 3 workers (75/101) 
+✓ Generating static pages using 3 workers (101/101) in 1776ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about-aadisatv
+├ ƒ /api/ai-guide
+├ ƒ /api/course/progress
+├ ƒ /api/course/questions
+├ ƒ /api/course/submit
+├ ƒ /api/guide
+├ ƒ /api/language
+├ ƒ /api/teachings
+├ ƒ /auth/callback
+├ ○ /blog
+├ ● /blog/[slug]
+│ ├ /blog/01-the-illusion-of-maya-five-deep-truths-that-can-change-the-way-you-see-the-world
+│ ├ /blog/02-the-compassion-of-the-guru-selfless-love-or-a-beautiful-bondage
+│ ├ /blog/03-atman-jiva-or-both-what-is-our-real-identity
+│ └ [+36 more paths]
+├ ○ /bodhgaya-samvad
+├ ○ /course
+├ ƒ /course/[lang]/[chapter]
+├ ƒ /course/[lang]/[chapter]/practice
+├ ƒ /course/[lang]/final-test
+├ ƒ /course/[lang]/lexicon
+├ ○ /donation
+├ ○ /faq
+├ ○ /guided-meditation
+├ ○ /ichchha-poorti
+├ ○ /library
+├ ● /library/[slug]
+│ ├ /library/main-kaun-hoon
+│ ├ /library/maya-aur-man
+│ ├ /library/ishwar-kaun-hai
+│ └ [+13 more paths]
+├ ƒ /library/[slug]/read
+├ ○ /library/audiobooks
+├ ƒ /library/magazine/[slug]/read
+├ ƒ /library/read/[slug]
+├ ○ /login
+├ ○ /nirvan-sutra
+├ ○ /online-samvad
+├ ○ /robots.txt
+├ ○ /signup
+├ ○ /sitemap.xml
+├ ○ /spiritual-guidance
+└ ƒ /tatv/[slug]
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

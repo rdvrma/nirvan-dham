@@ -634,6 +634,57 @@ export default function NirvanSutraPage() {
         </div>
       </section>
 
+      <section style={{
+        position: 'relative', overflow: 'hidden',
+        padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,5rem)',
+        borderTop: '1px solid rgba(212,168,67,0.12)',
+        borderBottom: '1px solid rgba(212,168,67,0.12)',
+        background: 'var(--c-bg)',
+      }}>
+        <video autoPlay muted loop playsInline src="/course-videos/hero.mp4" style={{
+          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.18,
+        }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(6,16,8,0.97), rgba(6,16,8,0.7), rgba(6,16,8,0.96))' }} />
+        <div style={{ position: 'relative', zIndex: 1, maxWidth: '1120px', margin: '0 auto' }}>
+          <div style={{ maxWidth: '700px' }}>
+            <p className={hi ? 'font-hindi' : ''} style={{ margin: '0 0 0.8rem', color: 'var(--c-gold)', fontFamily: 'var(--font-inter)', fontSize: '0.66rem', letterSpacing: '0.24em', fontWeight: 700, textTransform: 'uppercase' }}>
+              Nirvan Sutra Course · Shravana
+            </p>
+            <h2 className={hi ? 'font-hindi' : 'font-serif'} style={{
+              margin: '0 0 1.1rem', fontSize: 'clamp(2.2rem,5vw,4rem)', lineHeight: 1.1,
+              fontWeight: hi ? 600 : 300, fontStyle: hi ? 'normal' : 'italic', color: 'var(--c-ivory)',
+            }}>
+              {hi ? 'ज्ञान को अपनी यात्रा बनाइए' : 'Let knowledge become your journey'}
+            </h2>
+            <p className={hi ? 'font-hindi' : ''} style={{ maxWidth: '620px', margin: '0 0 2.4rem', color: 'var(--c-ivdim)', fontSize: '1rem', lineHeight: hi ? 1.95 : 1.8 }}>
+              {hi
+                ? 'निर्वाण सूत्र पाठ्यक्रम में आठ अध्याय, सजग अभ्यास और आपकी अपनी लिखित समझ के माध्यम से श्रवण की यात्रा पूरी होती है।'
+                : 'The Nirvan Sutra Course completes the Shravana journey through eight chapters, conscious practice, and your own written understanding.'}
+            </p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(190px, 1fr))', borderTop: '1px solid rgba(212,168,67,0.22)', borderBottom: '1px solid rgba(212,168,67,0.22)', marginBottom: '2.25rem' }}>
+            {[
+              { number: '01', title: hi ? 'श्रवण' : 'Shravana', text: hi ? '8 अध्याय और 40% अभ्यास-मानदंड' : '8 chapters with a 40% practice threshold' },
+              { number: '02', title: hi ? 'मनन' : 'Manana', text: hi ? 'पूर्ण श्रवण के बाद गुरु के निर्देश' : 'Guru instructions after Shravana completion' },
+              { number: '03', title: hi ? 'निदिध्यासन' : 'Nididhyasana', text: hi ? 'निजी मार्गदर्शन की अगली संभावना' : 'The next possibility of private guidance' },
+            ].map((stage, index) => (
+              <div key={stage.number} style={{ padding: '1.25rem 1.1rem', borderRight: index < 2 ? '1px solid rgba(212,168,67,0.14)' : 'none' }}>
+                <span style={{ display: 'block', marginBottom: '0.55rem', color: 'rgba(212,168,67,0.55)', fontFamily: 'var(--font-inter)', fontSize: '0.62rem', letterSpacing: '0.15em' }}>{stage.number}</span>
+                <h3 className={hi ? 'font-hindi' : 'font-serif'} style={{ color: 'var(--c-ivory)', fontSize: '1.18rem', margin: '0 0 0.4rem', fontWeight: hi ? 600 : 400 }}>{stage.title}</h3>
+                <p className={hi ? 'font-hindi' : ''} style={{ color: 'var(--c-ivdim)', fontSize: '0.82rem', lineHeight: 1.7, margin: 0 }}>{stage.text}</p>
+              </div>
+            ))}
+          </div>
+          <Link href="/course" style={{
+            display: 'inline-flex', alignItems: 'center', padding: '0.95rem 1.7rem', borderRadius: '5px',
+            background: 'var(--c-gold)', color: '#061008', textDecoration: 'none', fontWeight: 700,
+            fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.92rem',
+          }}>
+            {hi ? 'निर्वाण सूत्र पाठ्यक्रम में प्रवेश करें' : 'Enter the Nirvan Sutra Course'}
+          </Link>
+        </div>
+      </section>
+
       {/* ════════════════════════════════════════
           FINAL QUOTE — Full-bleed with image
       ════════════════════════════════════════ */}

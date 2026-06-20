@@ -1,75 +1,63 @@
-// src/app/api/course/submit/route.ts
-// POST /api/course/submit
-// Handles final test submissions.
-// Saves to course-submissions.json in the project root.
-// Sends email notification via Nodemailer (if SMTP env vars are set).
-
 import { NextRequest, NextResponse } from 'next/server';
-import { writeFileSync, readFileSync, existsSync } from 'fs';
-import { join } from 'path';
 import nodemailer from 'nodemailer';
+import {
+  FINAL_TEST_QUESTION_COUNT,
+  FINAL_TEST_BANKS,
+  isFinalTestLanguage,
+  type FinalTestLanguage,
+} from '@/lib/final-test-data';
+import { createClient } from '@/utils/supabase/server';
 
-const SUBMISSIONS_FILE = join(process.cwd(), 'course-submissions.json');
+export const runtime = 'nodejs';
 
-// ─── Types ─────────────────────────────────────────────────────────────────────
-
-interface AnswerEntry {
-  question: string;
-  answer: string;
+interface SubmittedAnswer {
+  id?: string;
+  answer?: string;
 }
 
 interface SubmitPayload {
+  language?: string;
+  phone?: string;
+  answers?: SubmittedAnswer[];
+}
+
+interface StoredAnswer {
+  id: string;
+  prompt: string;
+  answer: string;
+}
+
+function displayLanguage(language: FinalTestLanguage) {
+  return language === 'hi' ? 'Hindi' : language === 'hl' ? 'Hinglish' : 'English';
+}
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+async function notifyAdmin({
+  name,
+  email,
+  phone,
+  language,
+  answers,
+}: {
   name: string;
   email: string;
   phone: string;
-  language: string;
-  answers: AnswerEntry[];
-}
-
-interface Submission extends SubmitPayload {
-  submittedAt: string;
-}
-
-// ─── File helpers ──────────────────────────────────────────────────────────────
-
-function readSubmissions(): Submission[] {
-  if (!existsSync(SUBMISSIONS_FILE)) return [];
-  try {
-    const raw = readFileSync(SUBMISSIONS_FILE, 'utf-8');
-    return JSON.parse(raw) as Submission[];
-  } catch {
-    return [];
-  }
-}
-
-function saveSubmission(submission: Submission): void {
-  const all = readSubmissions();
-  all.push(submission);
-  writeFileSync(SUBMISSIONS_FILE, JSON.stringify(all, null, 2), 'utf-8');
-}
-
-// ─── Email helper ──────────────────────────────────────────────────────────────
-
-async function sendEmailNotification(submission: Submission): Promise<void> {
+  language: FinalTestLanguage;
+  answers: StoredAnswer[];
+}): Promise<{ status: 'sent' | 'failed' | 'not_configured'; error?: string }> {
   const smtpUser = process.env.SMTP_USER;
-  const smtpPass = process.env.SMTP_PASS;
+  const smtpPass = process.env.SMTP_APP_PASSWORD ?? process.env.SMTP_PASS;
   const adminEmail = process.env.ADMIN_EMAIL ?? smtpUser;
 
   if (!smtpUser || !smtpPass || !adminEmail) {
-    // No SMTP configured — log to console instead
-    console.log('─── [Course Submit] New Submission ───────────────────────────');
-    console.log(`Name     : ${submission.name}`);
-    console.log(`Email    : ${submission.email}`);
-    console.log(`Phone    : ${submission.phone}`);
-    console.log(`Language : ${submission.language}`);
-    console.log(`Time     : ${submission.submittedAt}`);
-    console.log(`Answers  : ${submission.answers.length} responses`);
-    submission.answers.forEach((a, i) => {
-      console.log(`  Q${i + 1}: ${a.question}`);
-      console.log(`  A${i + 1}: ${a.answer}`);
-    });
-    console.log('──────────────────────────────────────────────────────────────');
-    return;
+    return { status: 'not_configured', error: 'SMTP notification variables are not configured.' };
   }
 
   try {
@@ -78,94 +66,150 @@ async function sendEmailNotification(submission: Submission): Promise<void> {
       auth: { user: smtpUser, pass: smtpPass },
     });
 
-    const answersHtml = submission.answers
-      .map(
-        (a, i) =>
-          `<tr>
-            <td style="padding:6px;border:1px solid #ddd;vertical-align:top;font-weight:bold;">Q${i + 1}: ${escapeHtml(a.question)}</td>
-            <td style="padding:6px;border:1px solid #ddd;">${escapeHtml(a.answer)}</td>
-          </tr>`,
-      )
+    const answerRows = answers
+      .map((item, index) => `
+        <tr>
+          <td style="padding:10px;border:1px solid #e5d7b1;vertical-align:top;font-weight:700;width:34%;">
+            ${index + 1}. ${escapeHtml(item.prompt)}
+          </td>
+          <td style="padding:10px;border:1px solid #e5d7b1;white-space:pre-wrap;">${escapeHtml(item.answer)}</td>
+        </tr>`)
       .join('');
 
     await transporter.sendMail({
       from: `"Nirvan Sutra Course" <${smtpUser}>`,
       to: adminEmail,
-      subject: `[Nirvan Sutra] New Final Test Submission — ${submission.name}`,
+      subject: `[Nirvan Sutra] Final Test Submitted - ${name}`,
       html: `
-        <h2 style="color:#6b4c2a;">Nirvan Sutra Course — Final Test Submission</h2>
-        <p><strong>Name:</strong> ${escapeHtml(submission.name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(submission.email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(submission.phone)}</p>
-        <p><strong>Language:</strong> ${escapeHtml(submission.language)}</p>
-        <p><strong>Submitted At:</strong> ${submission.submittedAt}</p>
-        <h3>Answers</h3>
-        <table style="border-collapse:collapse;width:100%;">${answersHtml}</table>
-      `,
+        <div style="font-family:Arial,sans-serif;color:#1b271d;max-width:900px;margin:auto;">
+          <h2 style="color:#8a651c;">Nirvan Sutra - Final Test Submission</h2>
+          <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+          <p><strong>Email:</strong> ${escapeHtml(email)}</p>
+          <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+          <p><strong>Language:</strong> ${displayLanguage(language)}</p>
+          <h3 style="color:#8a651c;">15 Submitted Answers</h3>
+          <table style="border-collapse:collapse;width:100%;">${answerRows}</table>
+        </div>`,
     });
 
-    console.log(`[Course Submit] Email sent to admin for: ${submission.email}`);
-  } catch (err) {
-    // Email failure must not break the API response
-    console.error('[Course Submit] Email send failed:', err);
+    return { status: 'sent' };
+  } catch (error) {
+    console.error('[course/submit] Gmail notification failed', error);
+    return { status: 'failed', error: 'Gmail notification could not be delivered.' };
   }
 }
 
-function escapeHtml(str: string): string {
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
+export async function GET() {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Authentication required.' }, { status: 401 });
+
+  const { data: progress, error } = await supabase
+    .from('user_progress')
+    .select('name, email, phone, highest_chapter_unlocked, final_test_submitted_at')
+    .eq('user_id', user.id)
+    .maybeSingle();
+
+  if (error || !progress) {
+    return NextResponse.json({ error: 'Progress profile is unavailable. Run the Supabase SQL setup first.' }, { status: 500 });
+  }
+
+  return NextResponse.json({
+    name: progress.name || user.user_metadata.name || '',
+    email: progress.email || user.email || '',
+    phone: progress.phone || '',
+    highestChapterUnlocked: progress.highest_chapter_unlocked,
+    submittedAt: progress.final_test_submitted_at,
+  });
 }
 
-// ─── Route handler ─────────────────────────────────────────────────────────────
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => null) as SubmitPayload | null;
+  const language = body?.language;
+  const phone = body?.phone?.trim();
 
-export async function POST(request: NextRequest): Promise<NextResponse> {
-  try {
-    const body = await request.json() as Partial<SubmitPayload>;
+  if (!language || !isFinalTestLanguage(language)) {
+    return NextResponse.json({ error: 'Invalid course language.' }, { status: 400 });
+  }
+  if (!phone) {
+    return NextResponse.json({ error: 'Phone number is required before submitting the final test.' }, { status: 400 });
+  }
+  if (!Array.isArray(body?.answers) || body.answers.length !== FINAL_TEST_QUESTION_COUNT) {
+    return NextResponse.json({ error: `All ${FINAL_TEST_QUESTION_COUNT} answers are required.` }, { status: 400 });
+  }
 
-    // ── Validation ─────────────────────────────────────────────────────────────
-    if (!body.name || !body.email || !body.phone) {
-      return NextResponse.json(
-        { error: 'Missing required fields: name, email, phone' },
-        { status: 400 },
-      );
+  const ids = new Set<string>();
+  const bankById = new Map(FINAL_TEST_BANKS[language].map((question) => [question.id, question]));
+  const answers: StoredAnswer[] = [];
+  for (const entry of body.answers) {
+    const id = entry.id?.trim();
+    const answer = entry.answer?.trim();
+    const question = id ? bankById.get(id) : undefined;
+    if (!id || !answer || !question || ids.has(id)) {
+      return NextResponse.json({ error: 'Every answer must belong to a valid, unique final-test question.' }, { status: 400 });
     }
-    if (!Array.isArray(body.answers) || body.answers.length === 0) {
-      return NextResponse.json(
-        { error: 'answers must be a non-empty array of { question, answer } objects' },
-        { status: 400 },
-      );
-    }
+    ids.add(id);
+    answers.push({ id, prompt: question.prompt, answer });
+  }
 
-    const submission: Submission = {
-      name: body.name,
-      email: body.email,
-      phone: body.phone,
-      language: body.language ?? 'unknown',
-      answers: body.answers,
-      submittedAt: new Date().toISOString(),
-    };
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Authentication required.' }, { status: 401 });
 
-    // ── Persist ────────────────────────────────────────────────────────────────
-    saveSubmission(submission);
+  const { data: progress, error: progressError } = await supabase
+    .from('user_progress')
+    .select('name, email, highest_chapter_unlocked, final_test_submitted_at')
+    .eq('user_id', user.id)
+    .maybeSingle();
+  if (progressError || !progress) {
+    return NextResponse.json({ error: 'Progress profile is unavailable. Run the Supabase SQL setup first.' }, { status: 500 });
+  }
+  if (progress.highest_chapter_unlocked < 9) {
+    return NextResponse.json({ error: 'Complete and pass all eight chapter practices before taking the final test.' }, { status: 403 });
+  }
+  if (progress.final_test_submitted_at) {
+    return NextResponse.json({ error: 'Your final test has already been submitted.' }, { status: 409 });
+  }
 
-    // ── Notify (fire-and-forget) ───────────────────────────────────────────────
-    sendEmailNotification(submission).catch((err) =>
-      console.error('[Course Submit] Notification error:', err),
-    );
+  const name = progress.name || user.user_metadata.name || 'Nirvan Sutra Seeker';
+  const email = progress.email || user.email || '';
+  if (!email) return NextResponse.json({ error: 'A verified email address is required.' }, { status: 400 });
 
+  const { data: submission, error: insertError } = await supabase
+    .from('course_final_submissions')
+    .insert({ user_id: user.id, language, name, email, phone, answers })
+    .select('id, submitted_at')
+    .single();
+  if (insertError || !submission) {
+    const alreadySubmitted = insertError?.code === '23505';
     return NextResponse.json(
-      {
-        success: true,
-        message: 'Your journey continues...',
-        submittedAt: submission.submittedAt,
-      },
-      { status: 200 },
+      { error: alreadySubmitted ? 'Your final test has already been submitted.' : 'Your final test could not be saved.' },
+      { status: alreadySubmitted ? 409 : 500 },
     );
-  } catch (err) {
-    console.error('[POST /api/course/submit] Error:', err);
-    return NextResponse.json({ error: 'Failed to process submission' }, { status: 500 });
   }
+
+  const { error: updateProgressError } = await supabase
+    .from('user_progress')
+    .update({
+      phone,
+      final_test_submitted_at: submission.submitted_at,
+      shravana_completed_at: submission.submitted_at,
+    })
+    .eq('user_id', user.id);
+  if (updateProgressError) {
+    console.error('[course/submit] Progress completion update failed', updateProgressError);
+  }
+
+  const notification = await notifyAdmin({ name, email, phone, language, answers });
+  await supabase.rpc('update_final_submission_delivery_status', {
+    target_submission_id: submission.id,
+    target_status: notification.status,
+    target_error: notification.error ?? null,
+  });
+
+  return NextResponse.json({
+    success: true,
+    submittedAt: submission.submitted_at,
+    emailStatus: notification.status,
+  });
 }

@@ -233,6 +233,9 @@ export default function PracticePage() {
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [explanationVisible, setExplanationVisible] = useState(false);
+  const [passed, setPassed] = useState(false);
+  const [savingProgress, setSavingProgress] = useState(false);
+  const [progressError, setProgressError] = useState('');
 
   useEffect(() => {
     setMounted(true);
@@ -281,14 +284,32 @@ export default function PracticePage() {
     }
   }
 
-  function handleNext() {
+  async function handleNext() {
     if (currentIdx + 1 >= questions.length) {
-      // Mark chapter complete
-      if (typeof window !== 'undefined') {
-        localStorage.setItem(
-          `course-chapter-${lang}-${chapterNum}`,
-          'complete'
-        );
+      const percentage = (score / questions.length) * 100;
+      const didPass = percentage >= 40;
+      setProgressError('');
+      setSavingProgress(didPass);
+
+      if (didPass) {
+        try {
+          const response = await fetch('/api/course/progress', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ chapterNum, score, total: questions.length }),
+          });
+          const result = await response.json();
+          if (!response.ok || !result.passed) {
+            setProgressError(result.error ?? 'Progress could not be saved. Please retry the practice.');
+          } else {
+            setPassed(true);
+            if (typeof window !== 'undefined') localStorage.setItem(`course-chapter-${lang}-${chapterNum}`, 'complete');
+          }
+        } catch {
+          setProgressError('Network problem. Please retry before moving forward.');
+        } finally {
+          setSavingProgress(false);
+        }
       }
       setShowScore(true);
     } else {
@@ -297,6 +318,18 @@ export default function PracticePage() {
       setAnswerState('idle');
       setExplanationVisible(false);
     }
+  }
+
+  function retryPractice() {
+    setCurrentIdx(0);
+    setSelectedKey(null);
+    setAnswerState('idle');
+    setScore(0);
+    setShowScore(false);
+    setExplanationVisible(false);
+    setPassed(false);
+    setProgressError('');
+    fetchQuestions();
   }
 
   // ── Loading state ─────────────────────────────────────────
@@ -434,6 +467,24 @@ export default function PracticePage() {
   }
 
   // ── Score screen ──────────────────────────────────────────
+  if (showScore && !passed) {
+    const percentage = Math.round((score / questions.length) * 100);
+    return (
+      <div style={{ minHeight: '100vh', background: BG, color: IVORY, display: 'grid', placeItems: 'center', padding: '2rem', textAlign: 'center' }}>
+        <div style={{ width: '100%', maxWidth: '520px', padding: 'clamp(2rem,6vw,3.5rem)', border: `1px solid ${BORDER}`, borderRadius: '16px', background: SURFACE }}>
+          <p style={{ color: GOLD, fontFamily: 'var(--font-inter)', fontSize: '0.68rem', letterSpacing: '0.16em', textTransform: 'uppercase' }}>Practice Result</p>
+          <h1 style={{ fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-cormorant)', fontSize: 'clamp(2rem,6vw,3rem)', fontWeight: 400, margin: '0.8rem 0' }}>{percentage}%</h1>
+          <p style={{ color: MUTED, fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', lineHeight: 1.75, margin: '0 0 1.8rem' }}>
+            {progressError || (isHindi ? '\u0905\u0917\u0932\u093e \u0905\u0927\u094d\u092f\u093e\u092f \u0916\u094b\u0932\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f 40% \u0938\u094d\u0915\u094b\u0930 \u0906\u0935\u0936\u094d\u092f\u0915 \u0939\u0948\u0964 \u0925\u094b\u0921\u093c\u093e \u092a\u0941\u0928\u0903 \u092a\u0922\u093c\u0947\u0902 \u0914\u0930 \u0905\u092d\u094d\u092f\u093e\u0938 \u0926\u094b\u092c\u093e\u0930\u093e \u0915\u0930\u0947\u0902\u0964' : 'A 40% score is needed to unlock the next chapter. Revisit the teaching and try the practice again.')}
+          </p>
+          <button type="button" onClick={retryPractice} disabled={savingProgress} style={{ width: '100%', padding: '1rem', border: 0, borderRadius: '10px', background: GOLD, color: '#061008', fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', fontWeight: 800, cursor: savingProgress ? 'wait' : 'pointer' }}>
+            {savingProgress ? 'Saving...' : isHindi ? '\u0905\u092d\u094d\u092f\u093e\u0938 \u092b\u093f\u0930 \u0938\u0947 \u0915\u0930\u0947\u0902 \u2192' : 'Retry Practice →'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   if (showScore) {
     return (
       <div

@@ -160,6 +160,19 @@ export const EBOOKS: EBook[] = [
     descriptionHindi: 'माया को बोझ नहीं, मुस्कुराते हुए देखने की अद्वैत यात्रा। यह पुस्तक हँसी, हल्केपन और मौन के माध्यम से दिखाती है कि जो खेल दिख रहा है, वही जागरण का द्वार भी बन सकता है।',
     description: 'A Hindi contemplative journey that looks at Maya through laughter, lightness and silence.',
   },
+  {
+    slug: 'sukshm-sansar',
+    titleHindi: 'सूक्ष्म संसार',
+    titleEnglish: 'Sukshm Sansar',
+    subtitleHindi: 'दृश्य के पार, द्रष्टा की ओर',
+    subtitle: 'Beyond the Visible, Toward the Witness',
+    author: 'Nirvan Dham',
+    lang: 'hi',
+    cover: '/library/covers/sukshm-sansar.png',
+    pdf: '/library/ebooks/sukshm-sansar.pdf',
+    descriptionHindi: 'स्थूल, सूक्ष्म और कारण शरीर, लोक, मृत्यु तथा साक्षी पर एक विवेकपूर्ण यात्रा। यह ग्रंथ अदृश्य के प्रति श्रद्धा रखते हुए भी साधक को कल्पना और सत्य के बीच सजग विवेक में स्थिर करता है।',
+    description: 'A discerning Hindi inquiry into the gross, subtle and causal bodies, worlds, death and the witnessing Self.',
+  },
 
   // ── English ──
   {
@@ -241,6 +254,16 @@ export const EBOOKS: EBook[] = [
     cover: '/library/covers/the-joys-of-maya.png',
     pdf: '/library/ebooks/the-joys-of-maya.pdf',
     description: 'A playful English transcreation on Maya as a doorway into lightness, laughter, and non-dual recognition.',
+  },
+  {
+    slug: 'the-subtle-worlds',
+    titleEnglish: 'The Subtle Worlds',
+    subtitle: 'Beyond the Visible, Toward the Witness',
+    author: 'Nirvan Dham',
+    lang: 'en',
+    cover: '/library/covers/the-subtle-worlds.png',
+    pdf: '/library/ebooks/the-subtle-worlds.pdf',
+    description: 'A discerning contemplative text on the gross, subtle and causal bodies, worlds, death and the witnessing Self. It honours the invisible without abandoning clear discernment.',
   },
 ];
 

@@ -4,6 +4,8 @@
 import fs from 'fs';
 import path from 'path';
 import Link from 'next/link';
+import { redirect } from 'next/navigation';
+import { createClient } from '@/utils/supabase/server';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 interface Section { heading: string | null; paragraphs: string[] }
@@ -98,6 +100,23 @@ export default async function ChapterPage({ params }: PageProps) {
   const { lang, chapter } = await params;
   const chapterNum = parseInt(chapter, 10);
 
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect(`/login?next=${encodeURIComponent(`/course/${lang}/${chapter}`)}`);
+
+  const { data: userProgress } = await supabase
+    .from('user_progress')
+    .select('highest_chapter_unlocked')
+    .eq('user_id', user.id)
+    .maybeSingle();
+  const highestUnlocked = userProgress?.highest_chapter_unlocked ?? 1;
+  if (!Number.isInteger(chapterNum) || chapterNum < 1 || chapterNum > TOTAL_CHAPTERS) {
+    redirect(`/course/${lang}/${Math.min(Math.max(highestUnlocked, 1), TOTAL_CHAPTERS)}`);
+  }
+  if (chapterNum > highestUnlocked) {
+    redirect(`/course/${lang}/${Math.min(highestUnlocked, TOTAL_CHAPTERS)}`);
+  }
+
   const isHindi = lang === 'hi';
   const isHinglish = lang === 'hl';
   const langLabel = lang === 'hi' ? 'हिंदी' : lang === 'en' ? 'English' : 'Hinglish';
@@ -171,8 +190,25 @@ export default async function ChapterPage({ params }: PageProps) {
           }}>
             ⬇ PDF
           </a>
-          <div style={{ padding: '0.28rem 0.65rem', border: '1px solid rgba(212,168,67,0.2)', borderRadius: '7px', color: '#d4a843', fontFamily: 'var(--font-inter)', fontSize: '0.65rem', fontWeight: 700 }}>
-            {langLabel}
+          {/* Language Switcher */}
+          <div style={{ display: 'flex', gap: '0.2rem', background: 'rgba(212,168,67,0.06)', borderRadius: '7px', padding: '0.15rem', border: '1px solid rgba(212,168,67,0.12)' }}>
+            {[{ code: 'hi', label: 'हिं' }, { code: 'en', label: 'En' }, { code: 'hl', label: 'Hl' }].map(l => (
+              <Link
+                key={l.code}
+                href={`/course/${l.code}/${chapterNum}`}
+                style={{
+                  padding: '0.22rem 0.5rem',
+                  borderRadius: '5px',
+                  fontFamily: 'var(--font-inter)',
+                  fontSize: '0.63rem',
+                  fontWeight: 700,
+                  textDecoration: 'none',
+                  background: lang === l.code ? 'rgba(212,168,67,0.18)' : 'transparent',
+                  color: lang === l.code ? '#d4a843' : 'rgba(245,237,216,0.35)',
+                  border: lang === l.code ? '1px solid rgba(212,168,67,0.3)' : '1px solid transparent',
+                }}
+              >{l.label}</Link>
+            ))}
           </div>
         </div>
       </nav>

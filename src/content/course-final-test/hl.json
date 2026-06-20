@@ -1,0 +1,244 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "Adhyatma ki yatra aam taur par kis tarah ki andar ki bechaini ya khoj se shuru hoti hai? Apne shabdon mein samjhaiye."
+    },
+    {
+      "id": "q2",
+      "prompt": "‘Main kaun hoon?’ prashn ko sirf philosophical question na maan kar life ka practical question kyon kaha gaya hai?"
+    },
+    {
+      "id": "q3",
+      "prompt": "Naam, profession, relationships aur achievements vyavaharik jeevan mein useful hote hue bhi final ‘main’ kyon nahi ho sakte?"
+    },
+    {
+      "id": "q4",
+      "prompt": "Bachpan ke sharir aur vartaman sharir ke example se yeh kaise samajh aata hai ki sharir final ‘main’ nahi hai?"
+    },
+    {
+      "id": "q5",
+      "prompt": "‘Mera sharir’ aur ‘main sharir hoon’ — in dono sentences mein spiritual drishti se kya antar hai?"
+    },
+    {
+      "id": "q6",
+      "prompt": "Mann ko thoughts, emotions, memories, imagination, desires aur fears ka flow kyon kaha gaya hai?"
+    },
+    {
+      "id": "q7",
+      "prompt": "Agar mann ek hi din mein kai baar badalta hai, to mann ko final ‘main’ maanne mein kya difficulty hai?"
+    },
+    {
+      "id": "q8",
+      "prompt": "Thoughts ko aate-jaate dekhne ka practice sadhak ko kis direction mein le jata hai?"
+    },
+    {
+      "id": "q9",
+      "prompt": "Emotions ko suppress kiye bina aur unse poori identity banaye bina unhe kaise jaana ja sakta hai?"
+    },
+    {
+      "id": "q10",
+      "prompt": "Saakshi aur anubhavkarta ka antar apne shabdon mein clearly samjhaiye."
+    },
+    {
+      "id": "q11",
+      "prompt": "Anubhavkarta ko ahankar ke same maanna galat kyon hai?"
+    },
+    {
+      "id": "q12",
+      "prompt": "Anubhavkarta kab ahankar ki rigid identity mein badalne lagta hai?"
+    },
+    {
+      "id": "q13",
+      "prompt": "Saakshi kuch karta nahi, sirf jaanta hai — is statement ko example ke saath samjhaiye."
+    },
+    {
+      "id": "q14",
+      "prompt": "Daily life mein saakshi-bhav ki ek chhoti si jhalak kaisi dikh sakti hai?"
+    },
+    {
+      "id": "q15",
+      "prompt": "Purani aadaton ke karan saakshi-bhav bhool jaana failure kyon nahi hai?"
+    },
+    {
+      "id": "q16",
+      "prompt": "Maya ko jagat-level ki vyavastha kyon kaha gaya hai?"
+    },
+    {
+      "id": "q17",
+      "prompt": "Maya aur avidya mein main difference kya hai?"
+    },
+    {
+      "id": "q18",
+      "prompt": "Sansar ko ‘jhooth’ keh dena aur sansar ko ‘anitya’ samajhna — in dono mein kya antar hai?"
+    },
+    {
+      "id": "q19",
+      "prompt": "Indriyon aur mann ke madhyam se sansar ko jaanne ka kya arth hai?"
+    },
+    {
+      "id": "q20",
+      "prompt": "Sapne ke example se jagat aur experience ke baare mein kaunsi careful understanding milti hai?"
+    },
+    {
+      "id": "q21",
+      "prompt": "Sona aur aabhushan ke example se maya ko kaise samjhaya ja sakta hai?"
+    },
+    {
+      "id": "q22",
+      "prompt": "‘Vyavahar mein bhed, samajh mein ekta’ — is sentence ka meaning clear kijiye."
+    },
+    {
+      "id": "q23",
+      "prompt": "Maya ki samajh udaseenta nahi, karuna kaise badhati hai?"
+    },
+    {
+      "id": "q24",
+      "prompt": "Relationships mein saakshi-bhav sabse zyada challenging kyon ho sakta hai?"
+    },
+    {
+      "id": "q25",
+      "prompt": "Kisi teekhi baatcheet mein reaction aur conscious response ke beech kya difference hai?"
+    },
+    {
+      "id": "q26",
+      "prompt": "Relationships mein prem aur pakad ke beech antar kaise pehchana ja sakta hai?"
+    },
+    {
+      "id": "q27",
+      "prompt": "Kaam, effort, success aur failure ke field mein anubhavkarta kaise active hota hai?"
+    },
+    {
+      "id": "q28",
+      "prompt": "Saakshi-bhav aalasya nahi, balki clarity ke saath karm karna kaise sikhata hai?"
+    },
+    {
+      "id": "q29",
+      "prompt": "Comparison ka thought anubhavkarta aur ahankar ko kaise strong banata hai?"
+    },
+    {
+      "id": "q30",
+      "prompt": "Failure ko saakshi-bhav se dekhne ka kya meaning hai?"
+    },
+    {
+      "id": "q31",
+      "prompt": "Success ke time bhi awareness kyon zaruri hai?"
+    },
+    {
+      "id": "q32",
+      "prompt": "Ahankar ko sirf pride maanna incomplete understanding kyon hai?"
+    },
+    {
+      "id": "q33",
+      "prompt": "Ahankar sharir, mann, role, story aur spiritual experience se identity kaise banata hai?"
+    },
+    {
+      "id": "q34",
+      "prompt": "Spiritual ahankar kya hai? Sadhak ise apne andar kaise pehchan sakta hai?"
+    },
+    {
+      "id": "q35",
+      "prompt": "Ahankar se fight karne ke bajay use dekhna zyada useful kyon hai?"
+    },
+    {
+      "id": "q36",
+      "prompt": "Neti-neti denial ya life-negation nahi, identity ki safai kyon hai?"
+    },
+    {
+      "id": "q37",
+      "prompt": "Sharir, mann, emotion aur role par neti-neti kaise apply ki ja sakti hai?"
+    },
+    {
+      "id": "q38",
+      "prompt": "Neti-neti ke baad emptiness nahi, saakshi ki direction kaise clear hoti hai?"
+    },
+    {
+      "id": "q39",
+      "prompt": "Spiritual experience par bhi neti-neti apply karne ki zarurat kyon padti hai?"
+    },
+    {
+      "id": "q40",
+      "prompt": "Mahavakya neti-neti ke baad kyon aate hain?"
+    },
+    {
+      "id": "q41",
+      "prompt": "‘Tat Tvam Asi — Tum wahi ho’ ka correct meaning kya hai? Ise body-mind ya ahankar par apply karna galat kyon hai?"
+    },
+    {
+      "id": "q42",
+      "prompt": "‘Aham Brahmasmi’ mein ‘main’ ka meaning ego wala ‘main’ kyon nahi hai?"
+    },
+    {
+      "id": "q43",
+      "prompt": "‘Ayam Atma Brahma’ atma aur brahm ke relationship ko kaise clear karta hai?"
+    },
+    {
+      "id": "q44",
+      "prompt": "‘Prajnanam Brahma’ ke according chetana ko brahm ki direction mein kaise samjha jata hai?"
+    },
+    {
+      "id": "q45",
+      "prompt": "Mahavakyon ko ahankar ka claim banne se kaise bachaya ja sakta hai?"
+    },
+    {
+      "id": "q46",
+      "prompt": "Nididhyasan ka simple meaning kya hai, aur yeh gyaan ko life mein kaise stable karta hai?"
+    },
+    {
+      "id": "q47",
+      "prompt": "Jagrut, swapn aur sushupti — in teen avasthaon ki inquiry sadhak ko kis direction mein le jaati hai?"
+    },
+    {
+      "id": "q48",
+      "prompt": "Turiya ko chauthi aane-jaane wali state maanna misunderstanding kyon hai?"
+    },
+    {
+      "id": "q49",
+      "prompt": "Turiya ko teenon avasthaon ka ground kehne ka kya meaning hai?"
+    },
+    {
+      "id": "q50",
+      "prompt": "Agyaeya ka arth kya hai? Mann saakshi, atma, chetana ya turiya ko object ki tarah kyon nahi jaan sakta?"
+    },
+    {
+      "id": "q51",
+      "prompt": "Ek simple example se samjhaiye: ‘Jo sabko jaan raha hai, use object ki tarah nahi jaana ja sakta.’"
+    },
+    {
+      "id": "q52",
+      "prompt": "Nirvan ko kisi special experience ya achievement ki tarah pakadna galat direction kyon hai?"
+    },
+    {
+      "id": "q53",
+      "prompt": "Nirvan ki jhalak ko galat pehchaan ki aag ka shaant hona kyon kaha gaya hai?"
+    },
+    {
+      "id": "q54",
+      "prompt": "Nirvan Sutra ki teachings khud bhi sadhak ke liye ek subtle new identity kaise ban sakti hain?"
+    },
+    {
+      "id": "q55",
+      "prompt": "‘Saakshi shabd saakshi nahi hai, Nirvan shabd Nirvan nahi hai’ — is understanding ka sadhak ke liye kya importance hai?"
+    },
+    {
+      "id": "q56",
+      "prompt": "Daily life ke kin chhote signs mein Nirvan ki jhalak dikh sakti hai?"
+    },
+    {
+      "id": "q57",
+      "prompt": "Sansar mein rehte hue freedom ka meaning sansar chhodna nahi, balki pakad ka halka hona kaise hai?"
+    },
+    {
+      "id": "q58",
+      "prompt": "Gyaan aur karuna ko saath rakhna kyon zaruri hai?"
+    },
+    {
+      "id": "q59",
+      "prompt": "Poore Nirvan Sutra ki journey ko apne shabdon mein brief mein likhiye — swayam ki khoj se Nirvan ki jhalak tak."
+    },
+    {
+      "id": "q60",
+      "prompt": "Is poore study ke baad aapke life mein kaunsi ek identity ya pakad sabse clearly dikh rahi hai, aur aap use saakshi-bhav se kaise dekhenge?"
+    }
+  ]
+}

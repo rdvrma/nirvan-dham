@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { createClient } from '@/utils/supabase/client';
 
 // ── Constants (dark theme — landing is always dark/cinematic) ─────────────────
 const GOLD = '#d4a843';
@@ -29,7 +30,7 @@ const STEPS = [
   { num: '01', icon: '🌐', hi: 'भाषा चुनें', en: 'Choose your language' },
   { num: '02', icon: '📖', hi: '8 अध्याय पढ़ें', en: 'Read all 8 chapters' },
   { num: '03', icon: '✍️', hi: 'अभ्यास प्रश्न करें', en: '50 MCQ per chapter' },
-  { num: '04', icon: '🎓', hi: 'अंतिम परीक्षा', en: '21-question final test' },
+  { num: '04', icon: '🎓', hi: 'अंतिम परीक्षा', en: '15-question final reflection' },
   { num: '05', icon: '🕉', hi: 'मनन में प्रवेश', en: 'Enter Manana stage' },
 ];
 
@@ -101,10 +102,16 @@ export default function CourseLandingPage() {
   }, []);
 
   // Route to Lexicon first, then chapters
-  function handleStart(code: string) {
+  async function handleStart(code: string) {
     setSelecting(code);
+    const { data: { user } } = await createClient().auth.getUser();
+    const destination = `/course/${code}/lexicon`;
+    if (!user) {
+      router.push(`/login?next=${encodeURIComponent(destination)}`);
+      return;
+    }
     localStorage.setItem('course-lang', code);
-    setTimeout(() => router.push(`/course/${code}/lexicon`), 280);
+    setTimeout(() => router.push(destination), 280);
   }
 
   return (
@@ -131,7 +138,7 @@ export default function CourseLandingPage() {
         minHeight: '100vh', display: 'flex', flexDirection: 'column',
         alignItems: 'center', justifyContent: 'center',
         padding: 'clamp(6rem,10vw,9rem) clamp(1.5rem,5vw,3rem) clamp(4rem,7vw,6rem)',
-        textAlign: 'center', overflow: 'hidden',
+        textAlign: 'center', overflow: 'visible',
       }}>
         {/* Cinematic background video */}
         <video
@@ -166,7 +173,7 @@ export default function CourseLandingPage() {
           </span>
         </div>
 
-        {/* Main title — FIXED: enough top space so it doesn't clip */}
+        {/* Main title */}
         <h1 style={{
           fontFamily: 'var(--font-cormorant)',
           fontSize: 'clamp(4rem,13vw,9rem)',
@@ -174,10 +181,11 @@ export default function CourseLandingPage() {
           background: `linear-gradient(150deg, #c49a32 0%, #ffe89a 40%, #d4a843 70%, #b8852a 100%)`,
           WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
-          lineHeight: 1.05,
+          lineHeight: 1.15,
           marginBottom: '1.25rem',
           letterSpacing: '-0.01em',
-          padding: '0.1em 0.05em', // prevents clipping
+          padding: '0.2em 0.15em',
+          display: 'block',
         }}>
           निर्वाण सूत्र
         </h1>
@@ -411,26 +419,6 @@ export default function CourseLandingPage() {
             </p>
           </div>
 
-          {/* Exam note */}
-          <div style={{
-            display: 'flex', alignItems: 'flex-start', gap: '1rem',
-            padding: '1.25rem 1.75rem',
-            borderRadius: '14px',
-            border: '1px solid rgba(212,168,67,0.12)',
-            background: 'rgba(12,24,14,0.6)',
-          }}>
-            <span style={{ fontSize: '1.25rem', flexShrink: 0 }}>📝</span>
-            <div>
-              <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.88rem', fontWeight: 700, color: 'rgba(245,237,216,0.85)', margin: '0 0 0.3rem' }}>
-                हर अध्याय के अंत में एक छोटी-सी परीक्षा
-              </p>
-              <p style={{ fontFamily: 'var(--font-hind)', fontSize: '0.84rem', lineHeight: 1.8, color: MUTED, margin: 0 }}>
-                इसमें <strong style={{ color: GOLD }}>शामिल होना मात्र पर्याप्त है।</strong> कोई उत्तीर्ण-अनुत्तीर्ण नहीं, कोई नकारात्मक अंकन नहीं।
-                परीक्षा का उद्देश्य केवल इतना है कि सत्य की खोज में आप स्वयं को जाँचते रहें — पढ़कर भूलें नहीं।
-              </p>
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -456,8 +444,8 @@ export default function CourseLandingPage() {
             {
               num: '01', icon: '📖', title: 'श्रवण', sub: 'Shravana — Listening',
               open: true,
-              body: '8 गहरे अध्यायों के माध्यम से आत्म-जिज्ञासा की यात्रा। प्रत्येक अध्याय के बाद 50 अभ्यास प्रश्न और अंत में 21 प्रश्नों की लिखित परीक्षा।',
-              bullets: ['8 अध्याय · 3 भाषाएं', '50 MCQ प्रति अध्याय', 'अंतिम लिखित परीक्षा', 'PDF डाउनलोड'],
+              body: '8 गहरे अध्यायों के माध्यम से आत्म-जिज्ञासा की यात्रा। प्रत्येक अध्याय में 40% अभ्यास-मानदंड और अंत में 60 प्रश्नों में से चुनी गई 15 प्रश्नों की लिखित परीक्षा।',
+              bullets: ['8 अध्याय · 3 भाषाएं', '40% अभ्यास-मानदंड', '15 प्रश्नों की अंतिम परीक्षा', 'PDF डाउनलोड'],
             },
             {
               num: '02', icon: '🧘', title: 'मनन', sub: 'Manana — Contemplation',

@@ -72,7 +72,28 @@ export default async function LexiconPage({ params }: PageProps) {
             <span className="pdf-icon">⬇</span>
             <span>{isHindi ? 'PDF डाउनलोड' : isHinglish ? 'PDF Download' : 'Download PDF'}</span>
           </a>
-          <div className="lang-pill">{langLabel}</div>
+          {/* Language Switcher */}
+          <div style={{ display: 'flex', gap: '0.25rem', background: 'rgba(212,168,67,0.06)', borderRadius: '8px', padding: '0.2rem', border: '1px solid rgba(212,168,67,0.12)' }}>
+            {[{ code: 'hi', label: 'हिं' }, { code: 'en', label: 'En' }, { code: 'hl', label: 'Hl' }].map(l => (
+              <Link
+                key={l.code}
+                href={`/course/${l.code}/lexicon`}
+                style={{
+                  padding: '0.25rem 0.55rem',
+                  borderRadius: '6px',
+                  fontFamily: 'var(--font-inter)',
+                  fontSize: '0.65rem',
+                  fontWeight: 700,
+                  letterSpacing: '0.03em',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s',
+                  background: lang === l.code ? 'rgba(212,168,67,0.18)' : 'transparent',
+                  color: lang === l.code ? '#d4a843' : 'rgba(245,237,216,0.35)',
+                  border: lang === l.code ? '1px solid rgba(212,168,67,0.3)' : '1px solid transparent',
+                }}
+              >{l.label}</Link>
+            ))}
+          </div>
         </div>
       </nav>
 

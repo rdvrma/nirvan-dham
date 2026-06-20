@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 import HomePageClient from '@/components/HomePageClient';
 import SchemaOrg from '@/components/SchemaOrg';
 
@@ -18,7 +19,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function HomePage() {
+interface HomePageProps {
+  searchParams: Promise<{ code?: string; next?: string }>;
+}
+
+export default async function HomePage({ searchParams }: HomePageProps) {
+  const { code, next } = await searchParams;
+  if (code) {
+    const callbackParams = new URLSearchParams({ code });
+    if (next?.startsWith('/') && !next.startsWith('//')) callbackParams.set('next', next);
+    redirect(`/auth/callback?${callbackParams.toString()}`);
+  }
+
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',

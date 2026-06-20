@@ -4,8 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import type { User } from '@supabase/supabase-js';
 import type { Language } from '@/lib/i18n';
 import { content, saveLanguage } from '@/lib/i18n';
+import { createClient } from '@/utils/supabase/client';
 
 interface HeaderProps {
   lang: Language;
@@ -17,6 +19,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
   const currentPath = pathname || '/';
 
   function selectLanguage(nextLang: Language) {
@@ -43,6 +46,19 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
       window.removeEventListener('scroll', onScroll);
     };
   }, []);
+
+  useEffect(() => {
+    const supabase = createClient();
+    void supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null));
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  const displayName = user?.user_metadata.full_name || user?.user_metadata.name || user?.email?.split('@')[0] || '';
+  const avatarUrl = user?.user_metadata.avatar_url || user?.user_metadata.picture || '';
+  const initial = displayName.slice(0, 1).toUpperCase() || 'N';
 
 
   const navLinks = [
@@ -165,6 +181,29 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-3">
+          {user && (
+            <div
+              title={user.email ?? displayName}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.55rem',
+                minWidth: 0, padding: '0.25rem 0.45rem 0.25rem 0.3rem',
+                border: '1px solid rgba(212,168,67,0.2)', borderRadius: '999px',
+                background: 'rgba(8,15,10,0.64)', color: 'var(--c-ivory)',
+              }}
+            >
+              <span style={{
+                width: 28, height: 28, flexShrink: 0, overflow: 'hidden', borderRadius: '50%',
+                display: 'grid', placeItems: 'center', background: 'rgba(212,168,67,0.16)',
+                border: '1px solid rgba(212,168,67,0.42)', color: 'var(--c-gold)',
+                fontFamily: 'var(--font-inter)', fontSize: '0.7rem', fontWeight: 700,
+              }}>
+                {avatarUrl ? <img src={avatarUrl} alt="" referrerPolicy="no-referrer" style={{ width: '100%', height: '100%', objectFit: 'cover' }} /> : initial}
+              </span>
+              <span className="hidden lg:block" style={{ maxWidth: '110px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', fontFamily: 'var(--font-inter)', fontSize: '0.72rem', color: 'var(--c-ivdim)' }}>
+                {displayName}
+              </span>
+            </div>
+          )}
           <div
             className="flex items-center rounded-full overflow-hidden"
             style={{

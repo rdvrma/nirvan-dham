@@ -1,75 +1,50 @@
-// src/app/api/course/progress/route.ts
-// POST /api/course/progress
-// Saves chapter completion progress to a log file in the project root.
-// Replace with a database write when Supabase is integrated.
-
 import { NextRequest, NextResponse } from 'next/server';
-import { writeFileSync, readFileSync, existsSync } from 'fs';
-import { join } from 'path';
+import { createClient } from '@/utils/supabase/server';
 
-const LOG_FILE = join(process.cwd(), 'course-progress-log.json');
+export async function POST(request: NextRequest) {
+  const body = await request.json().catch(() => null) as { chapterNum?: number; score?: number; total?: number } | null;
+  const chapterNum = body?.chapterNum;
+  const score = body?.score;
+  const total = body?.total;
 
-interface ProgressEntry {
-  sessionId: string;
-  lang: string;
-  chapterCompleted: number;
-  mcqScore?: number;
-  savedAt: string;
-}
-
-function readLog(): ProgressEntry[] {
-  if (!existsSync(LOG_FILE)) return [];
-  try {
-    const raw = readFileSync(LOG_FILE, 'utf-8');
-    return JSON.parse(raw) as ProgressEntry[];
-  } catch {
-    return [];
+  if (
+    typeof chapterNum !== 'number' ||
+    !Number.isInteger(chapterNum) ||
+    typeof score !== 'number' ||
+    !Number.isFinite(score) ||
+    typeof total !== 'number' ||
+    !Number.isFinite(total) ||
+    total <= 0 ||
+    chapterNum < 1 ||
+    chapterNum > 8
+  ) {
+    return NextResponse.json({ error: 'Invalid practice progress payload.' }, { status: 400 });
   }
-}
 
-function writeLog(entries: ProgressEntry[]): void {
-  writeFileSync(LOG_FILE, JSON.stringify(entries, null, 2), 'utf-8');
-}
-
-export async function POST(request: NextRequest): Promise<NextResponse> {
-  try {
-    const body = await request.json();
-
-    const { sessionId, lang, chapterCompleted, mcqScore } = body as {
-      sessionId?: string;
-      lang?: string;
-      chapterCompleted?: number;
-      mcqScore?: number;
-    };
-
-    // ── Basic validation ───────────────────────────────────────────────────────
-    if (!lang || typeof chapterCompleted !== 'number') {
-      return NextResponse.json(
-        { error: "Missing required fields: 'lang' and 'chapterCompleted' are required." },
-        { status: 400 },
-      );
-    }
-
-    const entry: ProgressEntry = {
-      sessionId: sessionId ?? 'anonymous',
-      lang,
-      chapterCompleted,
-      mcqScore,
-      savedAt: new Date().toISOString(),
-    };
-
-    // ── Append to log ──────────────────────────────────────────────────────────
-    const log = readLog();
-    log.push(entry);
-    writeLog(log);
-
-    console.log(
-      `[Course Progress] session=${entry.sessionId} lang=${lang} chapter=${chapterCompleted} score=${mcqScore ?? 'N/A'}`,
-    );
-
-    return NextResponse.json({ success: true, savedAt: entry.savedAt }, { status: 200 });
-  } catch (err) {
-    console.error('[POST /api/course/progress] Error:', err);
-    return NextResponse.json({ error: 'Failed to save progress' }, { status: 500 });
+  const percentage = (score / total) * 100;
+  if (percentage < 40) {
+    return NextResponse.json({ passed: false, percentage }, { status: 200 });
   }
+
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return NextResponse.json({ error: 'Authentication required.' }, { status: 401 });
+
+  const { data: current, error: readError } = await supabase
+    .from('user_progress')
+    .select('highest_chapter_unlocked')
+    .eq('user_id', user.id)
+    .single();
+  if (readError || !current) {
+    return NextResponse.json({ error: 'Progress profile is unavailable. Run the Supabase SQL setup first.' }, { status: 500 });
+  }
+
+  const highestChapterUnlocked = Math.max(current.highest_chapter_unlocked, Math.min(chapterNum + 1, 9));
+  const { error: updateError } = await supabase
+    .from('user_progress')
+    .update({ highest_chapter_unlocked: highestChapterUnlocked })
+    .eq('user_id', user.id);
+  if (updateError) return NextResponse.json({ error: 'Could not save course progress.' }, { status: 500 });
+
+  return NextResponse.json({ passed: true, percentage, highestChapterUnlocked });
 }
