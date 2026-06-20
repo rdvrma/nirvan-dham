@@ -1,1202 +1,1202 @@
 [
   {
-    "id": 101,
-    "question": "What is the typical starting point of a spiritual journey, according to the text?",
+    "id": 1,
+    "question": "According to Chapter 1, what does the spiritual journey often begin with?",
     "options": [
       {
         "key": "A",
-        "text": "An ordinary restlessness or feeling of something missing."
+        "text": "Only by going to a temple or ashram"
       },
       {
         "key": "B",
-        "text": "A temple, ashram, or sacred book."
+        "text": "By gaining some outer achievement"
       },
       {
         "key": "C",
-        "text": "A profound personal loss or crisis."
+        "text": "With an ordinary inner restlessness and search"
       },
       {
         "key": "D",
-        "text": "A desire for enlightenment or spiritual powers."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text states that the spiritual journey often begins not in traditional spiritual settings, but with a 'very ordinary restlessness' and a feeling that 'something is still missing' despite outward life appearing fine. This indicates that an inner sense of incompleteness is a common catalyst."
-  },
-  {
-    "id": 102,
-    "question": "When does the question 'Who am I?' become deeply practical, rather than philosophical?",
-    "options": [
-      {
-        "key": "A",
-        "text": "When life brings sorrow, dissatisfaction, or fear."
-      },
-      {
-        "key": "B",
-        "text": "When it is studied in ancient scriptures."
-      },
-      {
-        "key": "C",
-        "text": "When it is discussed with spiritual teachers."
-      },
-      {
-        "key": "D",
-        "text": "When one achieves a high level of worldly success."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The manuscript explains that the question 'Who am I?' moves from philosophy to practicality when life presents challenges like sorrow, dissatisfaction, fear, or loneliness. These experiences prompt a deeper, personal inquiry into the nature of the self."
-  },
-  {
-    "id": 103,
-    "question": "According to the text, much of our suffering is created by what?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The identity we have accepted as 'I'."
-      },
-      {
-        "key": "B",
-        "text": "External events and circumstances."
-      },
-      {
-        "key": "C",
-        "text": "A lack of spiritual practice."
-      },
-      {
-        "key": "D",
-        "text": "The opinions of other people."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text explicitly states, 'Much of our suffering is created by the identity we have accepted as “I.”' It elaborates that if we identify solely with our name, position, or body, changes in these areas will cause suffering."
-  },
-  {
-    "id": 104,
-    "question": "Why is a name not considered the final truth of who one is?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The inner sense of 'I' remains even if the name changes."
-      },
-      {
-        "key": "B",
-        "text": "Names are given by others and can be changed."
-      },
-      {
-        "key": "C",
-        "text": "Names are superficial and have no spiritual significance."
-      },
-      {
-        "key": "D",
-        "text": "Most people dislike their given names."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The manuscript explains that a name is given after birth and can be changed, yet the inner sense of 'I' persists. Therefore, while a name is a useful introduction, it is not the complete reality of one's being."
-  },
-  {
-    "id": 105,
-    "question": "What analogy does the text use to explain that name, profession, and relationships are like 'clothes of life'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A person and their clothing."
-      },
-      {
-        "key": "B",
-        "text": "A house and its furniture."
-      },
-      {
-        "key": "C",
-        "text": "A vehicle and its driver."
-      },
-      {
-        "key": "D",
-        "text": "A mirror and the reflection."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text uses the analogy of clothes: 'A person wears different clothes... Clothes change, but the one wearing them remains. In the same way, name, profession, relationships and achievements are like clothes of life.' This highlights that these are external and changeable, not the core self."
-  },
-  {
-    "id": 106,
-    "question": "When the text says, 'My body is tired,' what does the word 'my' indicate?",
-    "options": [
-      {
-        "key": "A",
-        "text": "That the body is an object belonging to the self."
-      },
-      {
-        "key": "B",
-        "text": "That the body is the true self."
-      },
-      {
-        "key": "C",
-        "text": "That the self is also tired."
-      },
-      {
-        "key": "D",
-        "text": "That the body is a temporary illusion."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The manuscript points out that the sentence 'My body is tired' itself implies possession: 'the body is 'mine'.' Just as a house or clothes are owned but are not the owner, the body is something belonging to 'I', indicating it is not the self."
-  },
-  {
-    "id": 107,
-    "question": "What is the primary purpose of the 'small dream example' in the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To illustrate that experiences can feel real but are open to inquiry."
-      },
-      {
-        "key": "B",
-        "text": "To prove that waking life is also a dream."
-      },
-      {
-        "key": "C",
-        "text": "To show that the body is not real."
-      },
-      {
-        "key": "D",
-        "text": "To suggest that spiritual practice is like dreaming."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text uses the dream example not to equate waking life with a dream, but to demonstrate that 'an experience may feel very real and still be open to inquiry.' It emphasizes looking deeply rather than believing blindly."
-  },
-  {
-    "id": 108,
-    "question": "The text defines the mind as:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The inner flow of thoughts, emotions, memories, and desires."
-      },
-      {
-        "key": "B",
-        "text": "The physical brain and its functions."
-      },
-      {
-        "key": "C",
-        "text": "A stable, unchanging core of consciousness."
-      },
-      {
-        "key": "D",
-        "text": "The sum total of one's life experiences."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The manuscript provides a clear definition: 'In Nirvan Sutra, the mind means the inner flow of thoughts, emotions, memories, imagination, desires and fears.' This encompasses the dynamic, internal processes."
-  },
-  {
-    "id": 109,
-    "question": "When observing the mind's changes throughout an ordinary day, what is the key insight gained?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Something else knows these changes, and that knower is not the mind itself."
-      },
-      {
-        "key": "B",
-        "text": "The mind is inherently unstable and unreliable."
-      },
-      {
-        "key": "C",
-        "text": "The mind's changes are too rapid to track."
-      },
-      {
-        "key": "D",
-        "text": "One must learn to control the mind's fluctuations."
-      }
-    ],
-    "correct": "A",
-    "explanation": "By observing the mind's rapid changes in a single day, the text prompts the question: 'No. Something knows all these changes.' This highlights that the entity experiencing these changes is distinct from the changing mind itself."
-  },
-  {
-    "id": 110,
-    "question": "What is the role of the 'witness' as introduced in the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To simply know the changing flow of experiences without changing."
-      },
-      {
-        "key": "B",
-        "text": "To actively change or suppress thoughts and emotions."
-      },
-      {
-        "key": "C",
-        "text": "To become silent and detached from life."
-      },
-      {
-        "key": "D",
-        "text": "To create a new, higher identity."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text defines the witness as 'the quiet knowing presence that sees.' It clarifies that the witness 'simply knows' and 'does not change with them' (thoughts, emotions, body), distinguishing it from active intervention or detachment."
-  },
-  {
-    "id": 111,
-    "question": "The analogy of a film playing on a screen is used to illustrate:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The impermanence of thoughts and the unchanging nature of the screen (witness)."
-      },
-      {
-        "key": "B",
-        "text": "How the mind creates illusions."
-      },
-      {
-        "key": "C",
-        "text": "The importance of engaging with every thought."
-      },
-      {
-        "key": "D",
-        "text": "How to stop the mind's activity."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The analogy explains that 'Scenes keep changing, but the screen remains in its place. Scenes appear on the screen; the screen does not become the scenes.' This illustrates how thoughts (scenes) arise and pass, while the underlying awareness (screen) remains constant."
-  },
-  {
-    "id": 112,
-    "question": "What is the primary goal of the 'Simple Exercise: Watching One Thought'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To develop the ability to see thoughts arise and pass without identification."
-      },
-      {
-        "key": "B",
-        "text": "To achieve a state of complete mental silence."
-      },
-      {
-        "key": "C",
-        "text": "To analyze the content of one's thoughts."
-      },
-      {
-        "key": "D",
-        "text": "To eliminate all negative thoughts."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The exercise aims not to stop thoughts, but to 'notice inwardly: A thought has appeared' and 'The thought has passed.' This practice helps one 'see that thoughts come by themselves and go by themselves. They can be known,' fostering a sense of distance and clarity."
-  },
-  {
-    "id": 113,
-    "question": "When examining emotions, the text suggests:",
-    "options": [
-      {
-        "key": "A",
-        "text": "Seeing that emotions arise and pass, and are not one's permanent identity."
-      },
-      {
-        "key": "B",
-        "text": "Suppressing strong emotions to maintain inner peace."
-      },
-      {
-        "key": "C",
-        "text": "Denying the reality of emotions to avoid suffering."
-      },
-      {
-        "key": "D",
-        "text": "Believing that one is identical to every emotion felt."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text advises to 'look patiently' at emotions, acknowledging they are real but not permanent. It highlights seeing that 'an emotion came; it is not permanent' and that the one who knows the emotion 'remained' even after it passed."
-  },
-  {
-    "id": 114,
-    "question": "What is the main problem with the mind, according to the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The mind is inherently bad and must be destroyed."
-      },
-      {
-        "key": "B",
-        "text": "Mistaking the mind for the 'I' or the true self."
-      },
-      {
-        "key": "C",
-        "text": "The mind is too complex for ordinary people to understand."
-      },
-      {
-        "key": "D",
-        "text": "The mind's inability to learn or plan."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The manuscript states, 'The problem is not the mind. The problem is mistaking the mind for “I.”' It emphasizes that the mind is a useful instrument, but identification with its changing flow leads to confusion."
-  },
-  {
-    "id": 115,
-    "question": "The distinction between the witness and the experiencer is crucial because:",
-    "options": [
-      {
-        "key": "A",
-        "text": "It helps identify the true source of suffering."
-      },
-      {
-        "key": "B",
-        "text": "It reveals the direction of practice and opens inner freedom."
-      },
-      {
-        "key": "C",
-        "text": "It clarifies that the witness is the ego."
-      },
-      {
-        "key": "D",
-        "text": "It shows that the experiencer is always wrong."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explains that understanding this difference 'is subtle, but it is also very practical. When this becomes clear, the direction of practice changes.' It leads to inner freedom by seeing experiences as separate from the self."
-  },
-  {
-    "id": 116,
-    "question": "What is the role of the 'experiencer' in practical life?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To create a hard, unchanging identity."
-      },
-      {
-        "key": "B",
-        "text": "To be the center of personal experience and communication."
-      },
-      {
-        "key": "C",
-        "text": "To judge and suppress all arising thoughts."
-      },
-      {
-        "key": "D",
-        "text": "To run away from difficult situations."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The manuscript states, 'The experiencer is the personal center that arises at the level of experience... The experiencer is useful in ordinary life. Communication, healing, learning, relationships, and practice all use the language of the experiencer.'"
-  },
-  {
-    "id": 117,
-    "question": "The text defines 'ego' as:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The quiet knowing presence."
-      },
-      {
-        "key": "B",
-        "text": "The idea of 'I' that takes body, mind, name, story, and role to be its real self."
-      },
-      {
-        "key": "C",
-        "text": "The ability to experience emotions."
-      },
-      {
-        "key": "D",
-        "text": "The process of thinking and planning."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The manuscript offers a definition: 'ego means the idea of “I” that takes body, mind, name, story, and role to be its real self.' It is the hardened identity formed around experiences."
-  },
-  {
-    "id": 118,
-    "question": "In the 'Pond and Ripples' example, what does the 'depth of the water' represent?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The transient nature of emotions."
-      },
-      {
-        "key": "B",
-        "text": "The quiet knowing presence or witness."
-      },
-      {
-        "key": "C",
-        "text": "The experiencer's reaction to events."
-      },
-      {
-        "key": "D",
-        "text": "The external event that causes the ripples."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The analogy states, 'A ripple rises in the pond, but the depth of the water is not destroyed.' This represents how the quiet knowing presence (witness) remains unaffected and undestroyed by the arising and passing emotions or thoughts (ripples)."
-  },
-  {
-    "id": 119,
-    "question": "The 'Letter and the Reader' example illustrates how:",
-    "options": [
-      {
-        "key": "A",
-        "text": "Letters are more powerful than emotions."
-      },
-      {
-        "key": "B",
-        "text": "The experiencer gets entangled in the content of experiences, while the witness knows the experience and the reaction."
-      },
-      {
-        "key": "C",
-        "text": "The reader is the same as the writer of the letter."
-      },
-      {
-        "key": "D",
-        "text": "Witnessing requires reading many letters."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The example shows that while letters (experiences) change and cause reactions in the mind, the reader (witness) knows the reading and the reaction. The experiencer becomes entangled, while the witness maintains clarity about the process."
-  },
-  {
-    "id": 120,
-    "question": "What is the key shift in perspective when naming an emotion, as suggested in the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To identify completely with the emotion."
-      },
-      {
-        "key": "B",
-        "text": "To see the emotion as an experience rather than one's identity."
-      },
-      {
-        "key": "C",
-        "text": "To deny the emotion's existence."
-      },
-      {
-        "key": "D",
-        "text": "To immediately try to change the emotion."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text contrasts 'I am sad' (strengthening identity) with 'Sadness is being experienced' (opening space for seeing). Naming the emotion as an experience ('Anger is arising') shifts identification away from being the emotion itself."
-  },
-  {
-    "id": 121,
-    "question": "What is the core message of the 'Summary of the Whole Journey' in Chapter 1?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The body and mind are the ultimate reality."
-      },
-      {
-        "key": "B",
-        "text": "The search for the Self involves recognizing the changing nature of body and mind, and turning to the knowing presence (witness)."
-      },
-      {
-        "key": "C",
-        "text": "The experiencer is the true Self."
-      },
-      {
-        "key": "D",
-        "text": "Special spiritual experiences are the goal."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The summary states: 'The body changes. The mind changes. The experiencer attaches itself to experiences. The witness knows.' It concludes that 'The search for the Self begins by returning to this witnessing.'"
-  },
-  {
-    "id": 122,
-    "question": "Why is it important to 'Pause a few times in the day' as a practice?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To schedule important tasks."
-      },
-      {
-        "key": "B",
-        "text": "To check for entanglement as the experiencer and return to witnessing."
-      },
-      {
-        "key": "C",
-        "text": "To create a rigid spiritual discipline."
-      },
-      {
-        "key": "D",
-        "text": "To avoid any further reactions."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text suggests pausing to ask, 'Am I entangled as the experiencer right now, or am I seeing like the witness?' This pause serves as a reminder and an opportunity to return to the witnessing perspective, even if entanglement is observed."
-  },
-  {
-    "id": 123,
-    "question": "What does the text mean by 'Old habit is strong - This Is Normal' in the context of practice?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It is normal to be permanently entangled in the experiencer."
-      },
-      {
-        "key": "B",
-        "text": "Forgetting and becoming entangled again is expected, and requires gentle, repeated reminders."
-      },
-      {
-        "key": "C",
-        "text": "Spiritual practice is inherently difficult and should be abandoned."
-      },
-      {
-        "key": "D",
-        "text": "The old habit of witnessing is very strong."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The manuscript explains that forgetting and getting entangled is 'only the return of an old habit.' It advises against self-blame, emphasizing that practice needs 'love, patience and honesty' to gently remind oneself, like correcting a bent posture."
-  },
-  {
-    "id": 124,
-    "question": "What is the purpose of the 'Two minutes at the end of the day' practice?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To analyze all mistakes made during the day."
-      },
-      {
-        "key": "B",
-        "text": "To gently strengthen the power of seeing by recalling moments of entanglement and glimpses of witnessing."
-      },
-      {
-        "key": "C",
-        "text": "To judge oneself for getting entangled."
-      },
-      {
-        "key": "D",
-        "text": "To plan for the next day's spiritual practice."
-      }
-    ],
-    "correct": "B",
-    "explanation": "This practice is described as not for blaming oneself, but 'to gently strengthen the power of seeing.' It involves remembering 'where did I become completely entangled' and 'where did I get a glimpse of witnessing,' reinforcing the awareness of the practice."
-  },
-  {
-    "id": 125,
-    "question": "The text mentions that the Nirvan Sutra has eight chapters. What is the purpose of the online examination after completing them?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To test rote memorization of the teachings."
-      },
-      {
-        "key": "B",
-        "text": "To see if the teachings have been applied in personal experience, not just read."
-      },
-      {
-        "key": "C",
-        "text": "To prove superiority over other seekers."
-      },
-      {
-        "key": "D",
-        "text": "To determine who is worthy of spiritual advancement."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The examination is described as 'not a school-like pressure' but a way 'to see whether the seeker has only read the teachings, or has begun to look at them in their own experience.' It serves as a doorway to assess practical integration."
-  },
-  {
-    "id": 126,
-    "question": "What is the main caution given regarding 'witnessing'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It must be practiced in complete silence."
-      },
-      {
-        "key": "B",
-        "text": "It should not be turned into a special, desirable experience."
-      },
-      {
-        "key": "C",
-        "text": "It requires intense effort and concentration."
-      },
-      {
-        "key": "D",
-        "text": "It means abandoning all worldly responsibilities."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text warns, 'Do not bind the witness to any special experience.' It clarifies that whatever arises and passes, including peace or joy, is an experience, and the witness is that which knows even that experience, not a specific type of experience itself."
-  },
-  {
-    "id": 127,
-    "question": "The phrase 'Walk Slowly, Walk Truly' suggests:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The need for physical slowness in daily life."
-      },
-      {
-        "key": "B",
-        "text": "That spiritual progress is achieved through haste and quick results."
-      },
-      {
-        "key": "C",
-        "text": "That patience, steady observation, and bringing understanding into life are key."
-      },
-      {
-        "key": "D",
-        "text": "That the path is only for those who are naturally slow."
+        "text": "Only by memorizing scriptures"
       }
     ],
     "correct": "C",
-    "explanation": "The text advises against hurry, stating 'hurry often keeps us on the surface.' It encourages seeing 'one thing at a time,' returning to the 'quiet knowing presence,' and bringing 'what you have read into life,' emphasizing a steady, honest approach."
+    "explanation": "The chapter says that even when everything looks fine outside, an emptiness can remain within. That restlessness and deeper curiosity turn the seeker toward self-inquiry."
   },
   {
-    "id": 128,
-    "question": "What is the ultimate goal of the first chapter of Nirvan Sutra?",
+    "id": 2,
+    "question": "Why does this chapter not treat the question “Who am I?” as merely philosophical?",
     "options": [
       {
         "key": "A",
-        "text": "To achieve enlightenment immediately."
+        "text": "Because it is connected to daily suffering, identity, relationships and fear"
       },
       {
         "key": "B",
-        "text": "To understand the nature of Maya."
+        "text": "Because it is only for scholars"
       },
       {
         "key": "C",
-        "text": "To turn the seeker from outer identity toward inner inquiry and the witnessing presence."
+        "text": "Because it teaches immediate abandonment of the body"
       },
       {
         "key": "D",
-        "text": "To master complex meditation techniques."
+        "text": "Because its answer is found word-for-word in a book"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The question is linked with our daily reactions, suffering, need for respect, attachment in relationships and insecurity. So it becomes a practical inquiry into life, not just a thought."
+  },
+  {
+    "id": 3,
+    "question": "Why are name, profession and relationships not considered the final “I” in this chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because all of them are spiritually useless"
+      },
+      {
+        "key": "B",
+        "text": "Because they are only social imagination and not useful even in practical life"
+      },
+      {
+        "key": "C",
+        "text": "Because remembering them obstructs practice"
+      },
+      {
+        "key": "D",
+        "text": "Because they can change, while the basic sense “I am” remains"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The name was given after birth, profession can change, and roles depend on circumstances. They are useful in practical life, but changing things cannot be the final self."
+  },
+  {
+    "id": 4,
+    "question": "In Chapter 1, which example is used to explain the body as part of the life-journey?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A river"
+      },
+      {
+        "key": "B",
+        "text": "A vehicle or car"
+      },
+      {
+        "key": "C",
+        "text": "A marketplace"
+      },
+      {
+        "key": "D",
+        "text": "A lamp"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The body is compared to a vehicle of the life-journey. Just as we care for a car but are not the car, we respect the body without mistaking it for the final “I.”"
+  },
+  {
+    "id": 5,
+    "question": "What does the example of a childhood photograph clarify?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The body has changed, yet a deeper sense of “I am” has remained"
+      },
+      {
+        "key": "B",
+        "text": "The childhood body itself is the real Self"
+      },
+      {
+        "key": "C",
+        "text": "Memory alone is the final truth"
+      },
+      {
+        "key": "D",
+        "text": "Aging is a spiritual obstacle"
+      }
+    ],
+    "correct": "A",
+    "explanation": "From childhood until now, the body, face, voice and thoughts have changed, yet one still says, “This is me.” This shows that the body changes while the sense “I am” remains."
+  },
+  {
+    "id": 6,
+    "question": "According to the chapter, what does the phrase “my body” indicate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The body itself is the Self"
+      },
+      {
+        "key": "B",
+        "text": "The body should be abandoned"
+      },
+      {
+        "key": "C",
+        "text": "What is called “mine” can be seen as different from the knower"
+      },
+      {
+        "key": "D",
+        "text": "The body has no importance"
       }
     ],
     "correct": "C",
-    "explanation": "The text states the chapter's work is 'to turn the seeker from outer identity toward inner inquiry.' It emphasizes seeing that 'body and mind can be known, and that the direction of witnessing is possible,' laying the foundation for further exploration."
+    "explanation": "When we say “my body,” the body is being seen as something known in experience. This points to a difference between the knower and what is known."
   },
   {
-    "id": 129,
-    "question": "According to the text, what is the difference between 'I am sad' and 'Sadness is being experienced'?",
+    "id": 7,
+    "question": "What is the main purpose of the small dream example?",
     "options": [
       {
         "key": "A",
-        "text": "There is no significant difference; both indicate the same state."
+        "text": "To prove that waking life is completely meaningless"
       },
       {
         "key": "B",
-        "text": "The first is a denial, the second is an acceptance."
+        "text": "To show that an experience may feel very real and still be examined"
       },
       {
         "key": "C",
-        "text": "The first statement strengthens identity, while the second opens a space for seeing."
+        "text": "To say dreams are the final truth"
       },
       {
         "key": "D",
-        "text": "The first is about the mind, the second is about the body."
+        "text": "To teach that the body should not be cared for"
+      }
+    ],
+    "correct": "B",
+    "explanation": "A dream feels real while it is happening, but its status changes after waking. The seeker learns that even a very real-feeling experience can be examined deeply."
+  },
+  {
+    "id": 8,
+    "question": "What is the simple definition of the mind in this chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only the reasoning power of the intellect"
+      },
+      {
+        "key": "B",
+        "text": "Only a storehouse of memory"
+      },
+      {
+        "key": "C",
+        "text": "Only another name for emotions"
+      },
+      {
+        "key": "D",
+        "text": "The inner flow of thoughts, emotions, memories, imagination, desire and fear"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter does not define the mind through heavy psychology. It explains it as the inner flow of thoughts, emotions, memories, imaginations, desires and fears."
+  },
+  {
+    "id": 9,
+    "question": "Why is the mind compared to a river?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it flows and its contents keep changing"
+      },
+      {
+        "key": "B",
+        "text": "Because it is always visible outside"
+      },
+      {
+        "key": "C",
+        "text": "Because it never changes"
+      },
+      {
+        "key": "D",
+        "text": "Because stopping it is the whole practice"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The water of a river keeps changing, yet we call it one river. Similarly, thoughts, emotions and desires keep changing, yet we call it “my mind.”"
+  },
+  {
+    "id": 10,
+    "question": "What does the example of the mind changing many times in one day show?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The mind is the permanent Self"
+      },
+      {
+        "key": "B",
+        "text": "The mind is active only in the morning"
+      },
+      {
+        "key": "C",
+        "text": "The mind is changing, so it cannot be the final “I”"
+      },
+      {
+        "key": "D",
+        "text": "The mind must be destroyed"
       }
     ],
     "correct": "C",
-    "explanation": "The manuscript explicitly contrasts these: 'In the first, identity becomes tight. In the second, a space of seeing opens.' This highlights how phrasing impacts our identification with emotions."
+    "explanation": "Enthusiasm, worry, irritation, happiness, sadness and hope may all arise in one day. This shows that the mind keeps changing, and what changes cannot be the final knower."
   },
   {
-    "id": 130,
-    "question": "What is the significance of the phrase 'my body' or 'my mind'?",
+    "id": 11,
+    "question": "What inquiry opens from the sentence “There is fear in my mind”?",
     "options": [
       {
         "key": "A",
-        "text": "It proves that the body and mind are the true self."
+        "text": "Fear is my final nature"
       },
       {
         "key": "B",
-        "text": "It suggests that the body and mind are illusions."
+        "text": "The one who knows fear can be seen as different from fear"
       },
       {
         "key": "C",
-        "text": "It indicates that the body and mind are separate entities from the 'I'."
+        "text": "Having fear in the mind is spiritual failure"
       },
       {
         "key": "D",
-        "text": "It means the body and mind are owned by the ego."
+        "text": "Fear must be immediately suppressed"
+      }
+    ],
+    "correct": "B",
+    "explanation": "If fear is known, the knower cannot be only fear. This sentence helps the seeker see a distinction between emotion and the knowing presence."
+  },
+  {
+    "id": 12,
+    "question": "What is meant by comparing thoughts to vehicles moving on a road?",
+    "options": [
+      {
+        "key": "A",
+        "text": "One should immediately sit in every thought"
+      },
+      {
+        "key": "B",
+        "text": "One should fight with thoughts"
+      },
+      {
+        "key": "C",
+        "text": "Thoughts can be watched as they come and go; one need not flow with them"
+      },
+      {
+        "key": "D",
+        "text": "Thoughts never change"
       }
     ],
     "correct": "C",
-    "explanation": "The text uses phrases like 'my body' and 'my mind' as hints that these are possessions, not the possessor. Just as 'my house' implies the house is separate from 'I', 'my body' suggests the body is also separate from the 'I' that owns it."
+    "explanation": "Just as vehicles pass on a road and we need not enter every one, thoughts also come and go. The seeker can watch them without being carried away by each thought."
   },
   {
-    "id": 131,
-    "question": "When the text says, 'The witness knows,' what does it imply about the witness's nature?",
+    "id": 13,
+    "question": "What is the first simple meaning of witness?",
     "options": [
       {
         "key": "A",
-        "text": "It actively intervenes in experiences."
+        "text": "The quiet knowing presence that knows experiences"
       },
       {
         "key": "B",
-        "text": "It is the source of all experiences."
+        "text": "The mind that thinks the most"
       },
       {
         "key": "C",
-        "text": "It is a passive, unchanging presence."
+        "text": "The role given by society"
       },
       {
         "key": "D",
-        "text": "It judges the quality of experiences."
+        "text": "The strongest emotion"
+      }
+    ],
+    "correct": "A",
+    "explanation": "In this chapter, the witness is described as the quiet presence that knows body, mind, thoughts, pleasure, pain and emotions. It knows experiences but does not change with them."
+  },
+  {
+    "id": 14,
+    "question": "Which statement about witness-consciousness is correct?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It means escaping from life"
+      },
+      {
+        "key": "B",
+        "text": "It means forcefully stopping thoughts and emotions"
+      },
+      {
+        "key": "C",
+        "text": "It means considering the world destroyed"
+      },
+      {
+        "key": "D",
+        "text": "It means knowing experiences without getting completely lost in them"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Witness-consciousness is not suppression of thoughts or emotions. It is the direction of knowing experiences in the middle of life without making them the final identity."
+  },
+  {
+    "id": 15,
+    "question": "How is the experiencer explained in the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The center at the level of experience that says, “I am experiencing this”"
+      },
+      {
+        "key": "B",
+        "text": "Something always bad and to be rejected"
+      },
+      {
+        "key": "C",
+        "text": "Another name for Brahman"
+      },
+      {
+        "key": "D",
+        "text": "Only a disease of the body"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The experiencer is the center of language such as “I felt sorrow” or “I experienced peace.” It may be useful in practical life; the problem begins when it becomes a rigid identity."
+  },
+  {
+    "id": 16,
+    "question": "What is the main difference between witness and experiencer?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness owns the experience, while the experiencer only watches"
+      },
+      {
+        "key": "B",
+        "text": "They are exactly the same in every way"
+      },
+      {
+        "key": "C",
+        "text": "The witness knows; the experiencer relates to experience and says, “this happened to me”"
+      },
+      {
+        "key": "D",
+        "text": "The experiencer is the body and the witness is the mind"
       }
     ],
     "correct": "C",
-    "explanation": "The manuscript states, 'The witness does not do anything. It simply knows.' It also emphasizes that 'the witness itself does not change with them' (experiences), indicating its nature is a passive, unchanging knowing presence."
+    "explanation": "The witness quietly knows experience. The experiencer speaks at the level of “it happened to me,” and when grasping increases, identity starts forming from the experience."
   },
   {
-    "id": 132,
-    "question": "What is the relationship between the experiencer and ego, as described in the text?",
+    "id": 17,
+    "question": "When does ego become connected with the experiencer?",
     "options": [
       {
         "key": "A",
-        "text": "They are identical; the experiencer is the ego."
+        "text": "When the experiencer does not experience anything"
       },
       {
         "key": "B",
-        "text": "Ego is the witness, and the experiencer is the mind."
+        "text": "When the experiencer forms a final and rigid identity from experiences"
       },
       {
         "key": "C",
-        "text": "The experiencer is a useful center, while ego is the hardened identity built around it."
+        "text": "When the body is resting"
       },
       {
         "key": "D",
-        "text": "The experiencer is the cause of ego, but ego is always negative."
+        "text": "When the seeker stops practice"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The experiencer is the center of experience. Ego becomes strong when “I felt sorrow” turns into “I am sorrow itself,” or “I am special.”"
+  },
+  {
+    "id": 18,
+    "question": "What does the example of a pond and waves explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Experiences arise, but the peace that knows them can be seen as distinct from them"
+      },
+      {
+        "key": "B",
+        "text": "Stopping every wave is the whole practice"
+      },
+      {
+        "key": "C",
+        "text": "Water never moves"
+      },
+      {
+        "key": "D",
+        "text": "Emotions are false, so they should not be respected"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When a stone falls into a pond, waves arise, just as emotions arise in the mind after an event. In witness-consciousness, the seeker knows the waves without becoming completely identified with them."
+  },
+  {
+    "id": 19,
+    "question": "What does the example of a film and screen show?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The screen becomes the story of the film"
+      },
+      {
+        "key": "B",
+        "text": "Scenes change, but the base that displays them remains steady"
+      },
+      {
+        "key": "C",
+        "text": "Watching films is against practice"
+      },
+      {
+        "key": "D",
+        "text": "Every scene should be grasped"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Scenes change in a film, but the screen remains. Similarly, the film of thoughts and emotions goes on, while the knowing presence does not change with them."
+  },
+  {
+    "id": 20,
+    "question": "What is the first practical sign of applying witness-consciousness in life?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suppressing every emotion"
+      },
+      {
+        "key": "B",
+        "text": "Believing every thought as true"
+      },
+      {
+        "key": "C",
+        "text": "Knowing an experience as it arises and pausing to see it"
+      },
+      {
+        "key": "D",
+        "text": "Leaving all relationships"
       }
     ],
     "correct": "C",
-    "explanation": "The text clarifies: 'The experiencer is a useful center in practical life... Ego is the hardened identity formed around that center.' The experiencer is the 'I' of experience, while ego is the solidified sense of self built from those experiences."
+    "explanation": "The chapter teaches that when a thought, emotion or reaction arises, the seeker should see it instead of immediately grasping it. This small pause is the beginning of witness-consciousness."
   },
   {
-    "id": 133,
-    "question": "The practice of 'One breath before a sharp reaction' is intended to:",
+    "id": 21,
+    "question": "Why does the chapter teach not to treat the mind as an enemy?",
     "options": [
       {
         "key": "A",
-        "text": "Immediately stop the reaction."
+        "text": "Because the mind is a useful instrument for practical life, learning, language, relationship and decision"
       },
       {
         "key": "B",
-        "text": "Intensify the emotional response."
+        "text": "Because the mind is the final Self"
       },
       {
         "key": "C",
-        "text": "Create a small pause to notice the arising tendency to react, allowing for more clarity."
+        "text": "Because the mind never creates confusion"
       },
       {
         "key": "D",
-        "text": "Replace the reaction with a spiritual statement."
+        "text": "Because the mind cannot be known"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The mind is a useful instrument; the problem is not the mind itself but mistaking it for the final “I.” Work, learning and relationship function through the mind, so one need not fight it."
+  },
+  {
+    "id": 22,
+    "question": "What is the right view toward emotions in the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suppress emotions by calling them false"
+      },
+      {
+        "key": "B",
+        "text": "Know emotions respectfully, but do not form final identity from them"
+      },
+      {
+        "key": "C",
+        "text": "Turn every emotion immediately into action"
+      },
+      {
+        "key": "D",
+        "text": "Treat emotions as spiritual failure"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sorrow, fear or anger need not be denied. They should be honestly known, while loosening the identity that says “I am only this emotion.”"
+  },
+  {
+    "id": 23,
+    "question": "What is the main difference between “I am sad” and “sadness is being experienced”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The first sentence has more Sanskrit"
+      },
+      {
+        "key": "B",
+        "text": "Both mean exactly the same thing"
+      },
+      {
+        "key": "C",
+        "text": "The second sentence opens a space to see sadness"
+      },
+      {
+        "key": "D",
+        "text": "The second sentence calls sadness false"
       }
     ],
     "correct": "C",
-    "explanation": "This practice aims to create 'that small pause' where one 'may notice: “The mind wants to react.”' This pause allows for speaking 'from even a little clarity' rather than 'blind reaction,' facilitating a more conscious response."
+    "explanation": "“I am sad” easily joins identity to sadness. “Sadness is being experienced” respects the sadness, but also opens a space for seeing it."
   },
   {
-    "id": 134,
-    "question": "What does the text mean when it says, 'The witness is not recognized only in difficulty. It is also recognized in happiness.'?",
+    "id": 24,
+    "question": "What should a seeker understand when old habits return?",
     "options": [
       {
         "key": "A",
-        "text": "Witnessing is only possible during pleasant experiences."
+        "text": "This is complete failure"
       },
       {
         "key": "B",
-        "text": "Happiness makes witnessing easier than difficulty."
+        "text": "Practice should be abandoned"
       },
       {
         "key": "C",
-        "text": "The witness is equally present and knowable during both positive and negative experiences."
+        "text": "Witness-consciousness is no longer possible"
       },
       {
         "key": "D",
-        "text": "Difficulty obscures the witness, while happiness reveals it."
+        "text": "Getting caught in the experiencer is an old habit; it should be seen, not blamed"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The tone of the chapter is patient. Old identities and reactions may return; instead of seeing them as failure, one should recognize them gently and return."
+  },
+  {
+    "id": 25,
+    "question": "Which question is useful to remember witness-consciousness several times a day?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Am I caught in the experiencer right now, or am I seeing like the witness?"
+      },
+      {
+        "key": "B",
+        "text": "How far ahead am I of others?"
+      },
+      {
+        "key": "C",
+        "text": "What special experience did I receive today?"
+      },
+      {
+        "key": "D",
+        "text": "Who is praising me?"
+      }
+    ],
+    "correct": "A",
+    "explanation": "This question helps the seeker notice the present inner position. Whether one is entangled in experience or knowing it is the direction of practice."
+  },
+  {
+    "id": 26,
+    "question": "Why is a single breath of pause before a sharp reaction useful?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it always changes the other person"
+      },
+      {
+        "key": "B",
+        "text": "Because it creates space between reaction and response"
+      },
+      {
+        "key": "C",
+        "text": "Because it ends emotion completely"
+      },
+      {
+        "key": "D",
+        "text": "Because then no thinking is needed"
+      }
+    ],
+    "correct": "B",
+    "explanation": "A breath of pause gives a chance to see the experiencer’s immediate reaction. In that space, the response can be more conscious and less blind."
+  },
+  {
+    "id": 27,
+    "question": "What is the purpose of a two-minute review at the end of the day?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To harshly blame oneself for mistakes"
+      },
+      {
+        "key": "B",
+        "text": "To count others’ faults"
+      },
+      {
+        "key": "C",
+        "text": "To see when witness-consciousness appeared and when identity became entangled"
+      },
+      {
+        "key": "D",
+        "text": "To remember only achievements"
       }
     ],
     "correct": "C",
-    "explanation": "The text implies that the witness is the constant background awareness. It is present whether one feels 'tiredness' or 'ease,' 'happiness' or 'sorrow.' Recognizing it in both pleasant and unpleasant situations is part of stabilizing the understanding."
+    "explanation": "The small end-of-day practice helps the seeker look at the day without pressure. It reveals glimpses and keeps the practice light."
   },
   {
-    "id": 135,
-    "question": "What is the primary message of the 'Final Blessing'?",
+    "id": 28,
+    "question": "According to the chapter, why is witness-consciousness not a rigid rule?",
     "options": [
       {
         "key": "A",
-        "text": "That the journey is complete after the first chapter."
+        "text": "Because it is to be lived as a gentle return, not as a burden"
       },
       {
         "key": "B",
-        "text": "To emphasize that spiritual achievements are the goal."
+        "text": "Because it has no meaning"
       },
       {
         "key": "C",
-        "text": "To encourage the seeker to carry the question 'Who am I?' into all aspects of life."
+        "text": "Because it is only for scholars"
       },
       {
         "key": "D",
-        "text": "To warn against further study of Nirvan Sutra."
+        "text": "Because it is only for examination"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Witness-consciousness is not presented as a heavy discipline. It is the art of gently returning again and again, so the seeker learns to see instead of blaming themselves."
+  },
+  {
+    "id": 29,
+    "question": "What is the sequence of the whole chapter’s journey?",
+    "options": [
+      {
+        "key": "A",
+        "text": "First Brahman, then Maya, then ritual worship"
+      },
+      {
+        "key": "B",
+        "text": "First leave the world, then leave the body"
+      },
+      {
+        "key": "C",
+        "text": "First memorize scripture, then debate"
+      },
+      {
+        "key": "D",
+        "text": "Inquiry into body, inquiry into mind, then the difference between witness and experiencer"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter moves simply: the body changes, the mind changes, and then the seeker sees the difference between the knowing presence and the experiencer."
+  },
+  {
+    "id": 30,
+    "question": "What does saying “the body and mind are being known” point toward?",
+    "options": [
+      {
+        "key": "A",
+        "text": "That body and mind have no practical importance"
+      },
+      {
+        "key": "B",
+        "text": "That the knower can see the experiences of body and mind"
+      },
+      {
+        "key": "C",
+        "text": "That the seeker must stop thinking"
+      },
+      {
+        "key": "D",
+        "text": "That life is only a dream"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When body and mind are known, a direction opens toward the knower distinct from them. This is the beginning of witness-consciousness, not an insult to body or mind."
+  },
+  {
+    "id": 31,
+    "question": "What does it mean to give the experiencer its proper place?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To treat it as an enemy and destroy it"
+      },
+      {
+        "key": "B",
+        "text": "To accept the language of experience in practical life, but not form rigid identity from it"
+      },
+      {
+        "key": "C",
+        "text": "To take every experience as final truth"
+      },
+      {
+        "key": "D",
+        "text": "To call experiences false"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The experiencer gives the practical language of “I experienced this.” The problem begins when that experience becomes a fixed “I,” so it must become transparent."
+  },
+  {
+    "id": 32,
+    "question": "What is explained in the light introduction to ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego means only pride"
+      },
+      {
+        "key": "B",
+        "text": "Increasing ego is knowledge"
+      },
+      {
+        "key": "C",
+        "text": "When a rigid “I” is formed from experiences and body-mind, ego becomes strong"
+      },
+      {
+        "key": "D",
+        "text": "Ego is a disease of the body"
       }
     ],
     "correct": "C",
-    "explanation": "The blessing encourages the seeker to 'Keep this question close' and 'Carry it into your day, into your relationships, into your reactions, into your silence, into your tiredness and into your joy.' It frames the practice as a return to oneself, not a race."
+    "explanation": "The chapter does not develop ego in full detail, but it indicates that forming a rigid “I” from experiences, roles and body-mind is the direction of ego."
   },
   {
-    "id": 136,
-    "question": "The text states, 'What can change cannot be your complete reality.' This principle is applied to which of the following in Chapter 1?",
+    "id": 33,
+    "question": "How can witness-consciousness appear in daily life?",
     "options": [
       {
         "key": "A",
-        "text": "Only the body."
+        "text": "Pausing for a moment instead of reacting immediately to someone’s words"
       },
       {
         "key": "B",
-        "text": "Only the mind."
+        "text": "Stopping all conversations"
       },
       {
         "key": "C",
-        "text": "Name, profession, relationships, achievements, and the body."
+        "text": "Preventing any emotion from arising"
       },
       {
         "key": "D",
-        "text": "Only the experiencer."
+        "text": "Searching for special experiences all the time"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Witness-consciousness is not a mysterious event. Not being carried away immediately and seeing for a moment is already a glimpse of it in life."
+  },
+  {
+    "id": 34,
+    "question": "Why is witness-consciousness not called a mysterious or extraordinary experience?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because the direction of knowing is already available in everyone’s life"
+      },
+      {
+        "key": "B",
+        "text": "Because it is only imagination"
+      },
+      {
+        "key": "C",
+        "text": "Because only a guru can do it"
+      },
+      {
+        "key": "D",
+        "text": "Because it happens only in sleep"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter presents witness-consciousness as available in ordinary moments of life. It is not a new object, but the recognition of the already present capacity to know experiences."
+  },
+  {
+    "id": 35,
+    "question": "According to the chapter, why are understanding something and remembering it different?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because once understanding comes, no practice is needed"
+      },
+      {
+        "key": "B",
+        "text": "Because the old habit of identity is strong, and one must return again and again"
+      },
+      {
+        "key": "C",
+        "text": "Because understanding has no relation to life"
+      },
+      {
+        "key": "D",
+        "text": "Because remembering is only for exams"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The seeker is reassured that getting caught in the experiencer is not failure, but an old habit. Gentle remembrance is needed to stabilize understanding in life."
+  },
+  {
+    "id": 36,
+    "question": "What does the example of an old habit of sitting bent forward explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Inner habits also need time and patience to change"
+      },
+      {
+        "key": "B",
+        "text": "The body itself is the Self"
+      },
+      {
+        "key": "C",
+        "text": "Practice is only physical exercise"
+      },
+      {
+        "key": "D",
+        "text": "Old habits can never change"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Just as a physical habit takes time to change, inner habits of identity and reaction also change slowly. So the seeker needs patience."
+  },
+  {
+    "id": 37,
+    "question": "What is the main purpose of the “practice for today” sections?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To make the seeker memorize difficult theories"
+      },
+      {
+        "key": "B",
+        "text": "To teach the seeker to see in direct experience"
+      },
+      {
+        "key": "C",
+        "text": "To make the seeker evaluate others"
+      },
+      {
+        "key": "D",
+        "text": "To make the seeker hate the body"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Each practice is meant to develop the habit of directly seeing body, mind, thought, emotion and identity in experience. It is not merely intellectual knowledge."
+  },
+  {
+    "id": 38,
+    "question": "How is care for the body viewed in the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The body should be neglected"
+      },
+      {
+        "key": "B",
+        "text": "The body should be taken as the final truth"
+      },
+      {
+        "key": "C",
+        "text": "The body is an instrument of life, so it should be respected and cared for"
+      },
+      {
+        "key": "D",
+        "text": "The body has no use"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter systematically examines name, profession, relationships, achievements, and the body, showing how each changes over time. The principle 'What can change cannot be your complete reality' is used to demonstrate that none of these can be the final truth of the self."
+    "explanation": "The body is not rejected. It is seen as a sacred instrument of the life-journey, while mistaking the instrument for the final owner is called confusion."
   },
   {
-    "id": 137,
-    "question": "When the text says, 'This seeing is the beginning of the search,' what 'seeing' is it referring to?",
+    "id": 39,
+    "question": "How is spirituality presented in this chapter?",
     "options": [
       {
         "key": "A",
-        "text": "Seeing the external world clearly."
+        "text": "As a process of escaping from the world"
       },
       {
         "key": "B",
-        "text": "Seeing the mind as an enemy."
+        "text": "As a journey of meeting oneself and examining identity"
       },
       {
         "key": "C",
-        "text": "Seeing that the body changes while the sense of 'I am' remains."
+        "text": "Only as ritual practice"
       },
       {
         "key": "D",
-        "text": "Seeing special spiritual phenomena."
+        "text": "Only as scriptural debate"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter clearly says this is not a journey of escaping the world, but of meeting oneself. Identity must be examined in experience."
+  },
+  {
+    "id": 40,
+    "question": "How does the tone of the chapter lead the seeker forward?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Through fear and pressure"
+      },
+      {
+        "key": "B",
+        "text": "By giving quick conclusions"
+      },
+      {
+        "key": "C",
+        "text": "With patience, warmth and simple inquiry"
+      },
+      {
+        "key": "D",
+        "text": "Only through harsh instructions"
       }
     ],
     "correct": "C",
-    "explanation": "In the context of the 'First Section - The First Knock of “Who Am I?”', the 'seeing' refers to the observation that 'the body changes, and I know the change,' and that 'the sense “I am” remains present.' This observation is presented as the initial step in the inquiry."
+    "explanation": "Throughout the chapter, the seeker is asked not to rush toward answers and to see slowly. The language is warm, patient and experience-centered."
   },
   {
-    "id": 138,
-    "question": "What is the danger of identifying too strongly with experiences, according to the text?",
+    "id": 41,
+    "question": "What does “do not hurry to find the answer” mean?",
     "options": [
       {
         "key": "A",
-        "text": "It leads to enlightenment too quickly."
+        "text": "The question should be abandoned"
       },
       {
         "key": "B",
-        "text": "It makes one insensitive to others."
+        "text": "The seeker should first see in experience, not create a conclusion only through thought"
       },
       {
         "key": "C",
-        "text": "It creates a hard identity and contributes to ego."
+        "text": "Knowledge is impossible"
       },
       {
         "key": "D",
-        "text": "It causes the mind to stop functioning."
+        "text": "Only the guru can answer; the seeker cannot see"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter values inquiry in experience rather than immediate intellectual conclusion. The answer to “Who am I?” requires seeing, not only thinking."
+  },
+  {
+    "id": 42,
+    "question": "In which situation is the language of the experiencer useful in practical life?",
+    "options": [
+      {
+        "key": "A",
+        "text": "When there is pain in the body and one needs to say, “I have pain,” for treatment"
+      },
+      {
+        "key": "B",
+        "text": "When the seeker wants to prove others small"
+      },
+      {
+        "key": "C",
+        "text": "When every experience is to be made final truth"
+      },
+      {
+        "key": "D",
+        "text": "When the witness is to be denied"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The language of the experiencer is useful in life, such as expressing pain, sorrow or understanding. The problem is not the language, but the rigid identity formed from it."
+  },
+  {
+    "id": 43,
+    "question": "What is the witness’s relationship with experiences?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It suppresses them"
+      },
+      {
+        "key": "B",
+        "text": "It denies them"
+      },
+      {
+        "key": "C",
+        "text": "It knows them, but does not change with them"
+      },
+      {
+        "key": "D",
+        "text": "It turns every experience into its own story"
       }
     ],
     "correct": "C",
-    "explanation": "The text explains that the problem begins 'when the experiencer creates a hard identity out of an experience.' It states, 'This is where the layer of ego joins,' indicating that strong identification with experiences solidifies the ego."
+    "explanation": "The witness knows body, mind, thoughts and emotions. Experiences keep changing, but the knowing presence of the witness does not change with them."
   },
   {
-    "id": 139,
-    "question": "The practice of naming emotions ('Anger is arising') rather than identifying with them ('I am angry') is described as:",
+    "id": 44,
+    "question": "What happens when the seeker says, “This thought is arising”?",
     "options": [
       {
         "key": "A",
-        "text": "A linguistic trick with no real effect."
+        "text": "The seeker becomes completely one with the thought"
       },
       {
         "key": "B",
-        "text": "A way to strengthen the experiencer's identity."
+        "text": "The seeker moves toward seeing the thought"
       },
       {
         "key": "C",
-        "text": "A method to eliminate all emotions."
+        "text": "The seeker loses the ability to think"
       },
       {
         "key": "D",
-        "text": "A useful shift that changes the direction of identification and opens space for seeing."
+        "text": "The thought is stopped forever"
       }
     ],
-    "correct": "D",
-    "explanation": "The text calls this a 'small shift' that is 'useful.' It explains that 'This is not merely a play of language. It changes the direction of identification. Slowly the mind begins to understand that every emotion is not the final truth.'"
+    "correct": "B",
+    "explanation": "Naming and seeing a thought gives a little distance from it. The seeker knows the thought and is not forced to flow with every thought."
   },
   {
-    "id": 140,
-    "question": "What is the role of the 'Guru' mentioned in the context of the examination?",
+    "id": 45,
+    "question": "What does “stabilizing the understanding in life” mean in the chapter?",
     "options": [
       {
         "key": "A",
-        "text": "To administer a strict test of knowledge."
+        "text": "Reading the chapter and leaving it there"
       },
       {
         "key": "B",
-        "text": "To decide who is worthy of entering Nirvan Dham."
+        "text": "Remembering the understanding in daily experiences, reactions and practices"
       },
       {
         "key": "C",
-        "text": "To provide answers to the examination questions."
+        "text": "Breaking all relationships"
       },
       {
         "key": "D",
-        "text": "To review the seeker's progress and help them move in the right direction."
+        "text": "Giving no importance to the body"
       }
     ],
-    "correct": "D",
-    "explanation": "The text states the review 'will be done by the Guru himself. This review is not to stop the seeker, but to help them move in the right direction.' This indicates a supportive role focused on guidance rather than judgment."
+    "correct": "B",
+    "explanation": "Understanding is not only for reading. It must be brought into life by pausing during the day, stopping before reaction and reviewing gently at day’s end."
   },
   {
-    "id": 141,
-    "question": "The text uses the phrase 'return to yourself' in the context of the spiritual journey. What does this imply?",
+    "id": 46,
+    "question": "What kind of attitude toward oneself does the chapter recommend?",
     "options": [
       {
         "key": "A",
-        "text": "To go back to childhood memories."
+        "text": "Harsh blame and despair"
       },
       {
         "key": "B",
-        "text": "To isolate oneself from the world."
+        "text": "Pressure and comparison"
       },
       {
         "key": "C",
-        "text": "To achieve worldly success."
+        "text": "Neglect"
       },
       {
         "key": "D",
-        "text": "To reconnect with one's true nature, beyond external identities."
+        "text": "Gentleness, patience and honest seeing"
       }
     ],
     "correct": "D",
-    "explanation": "The manuscript contrasts the spiritual journey with an escape from the world, stating 'It is a return to oneself.' This implies turning inward to discover the true self, which is beyond the changing identities of body, mind, and roles."
+    "explanation": "When old habits return, the seeker should not blame themselves. They should see gently, understand, and return to witness-consciousness."
   },
   {
-    "id": 142,
-    "question": "What is the significance of the statement, 'The witness is already knowing even this desire' (for special experiences)?",
+    "id": 47,
+    "question": "Toward what direction does the final essence of Chapter 1 lead?",
     "options": [
       {
         "key": "A",
-        "text": "It means the desire for special experiences is the ultimate reality."
+        "text": "From identification with body and mind toward the knowing presence"
       },
       {
         "key": "B",
-        "text": "It shows that the witness is limited by desires."
+        "text": "Only toward outer success"
       },
       {
         "key": "C",
-        "text": "It suggests that the witness must fulfill desires."
+        "text": "Toward completely leaving the world"
       },
       {
         "key": "D",
-        "text": "It highlights that the witness is the background awareness that knows all states, including the desire itself."
+        "text": "Toward destroying emotions"
       }
     ],
-    "correct": "D",
-    "explanation": "This statement emphasizes the all-encompassing nature of the witness. It knows not only thoughts and emotions but also the mind's 'desire' for special experiences, indicating the witness is the constant knowing presence behind all phenomena."
+    "correct": "A",
+    "explanation": "The whole movement of the chapter is to see body and mind as changing and to return toward the knowing presence. This becomes the foundation of further practice."
   },
   {
-    "id": 143,
-    "question": "The practice for 'This Week' involves pausing and asking: 'What am I identifying with right now...?' What is the purpose of this question?",
+    "id": 48,
+    "question": "Which option is closest to the teaching of Chapter 1?",
     "options": [
       {
         "key": "A",
-        "text": "To find definitive answers about the self."
+        "text": "I am only my name and profession"
       },
       {
         "key": "B",
-        "text": "To judge oneself based on the identification."
+        "text": "Body, mind and emotions appear in experience; the knowing direction must be examined"
       },
       {
         "key": "C",
-        "text": "To prove one's spiritual progress."
+        "text": "Destroying the mind completely is the first goal"
       },
       {
         "key": "D",
-        "text": "To reinforce the habit of identification with body, mind, or experiencer, or to notice the witness."
+        "text": "When sorrow comes, it should be called false"
       }
     ],
-    "correct": "D",
-    "explanation": "The question serves as a gentle invitation to self-observation. It prompts the seeker to notice their current state of identification – whether entangled as the experiencer or observing as the witness – thereby reinforcing the practice of awareness."
+    "correct": "B",
+    "explanation": "The chapter does not reject body, mind or emotions. It asks the seeker to see them as known in experience, which begins the search for the knowing presence."
   },
   {
-    "id": 144,
-    "question": "What is the core distinction made in Chapter 1 regarding the 'self'?",
+    "id": 49,
+    "question": "How should the practice of returning to witness-consciousness be done?",
     "options": [
       {
         "key": "A",
-        "text": "The self is the body, and the mind is an illusion."
+        "text": "With burden and harshness"
       },
       {
         "key": "B",
-        "text": "The self is the mind, and the body is a tool."
+        "text": "By comparing oneself with others"
       },
       {
         "key": "C",
-        "text": "The self is the experiencer, and the witness is the ego."
+        "text": "Again and again, as light and honest remembrance"
       },
       {
         "key": "D",
-        "text": "The self is not the changing body or mind, but the knowing presence (witness)."
+        "text": "Only in a special meditation-state"
       }
     ],
-    "correct": "D",
-    "explanation": "Throughout the chapter, the text systematically dismantles the identification with the body and mind due to their changing nature. It points towards the 'quiet knowing presence' (witness) as the constant factor that knows these changes, suggesting it is closer to the true self."
+    "correct": "C",
+    "explanation": "The chapter presents witness-consciousness as a natural return. It should be remembered repeatedly in small moments of life, not made into a heavy achievement."
   },
   {
-    "id": 145,
-    "question": "The text mentions that the spiritual journey is 'a return to oneself.' What does this imply about the nature of the self?",
+    "id": 50,
+    "question": "In this chapter, where does “the search for the Self” begin?",
     "options": [
       {
         "key": "A",
-        "text": "The self is something external to be found."
+        "text": "By seeing in one’s own experience that what one called “I” is made of changing things"
       },
       {
         "key": "B",
-        "text": "The self must be created through intense effort."
+        "text": "By proving others wrong"
       },
       {
         "key": "C",
-        "text": "The self is defined by one's social roles."
+        "text": "By declaring a special experience"
       },
       {
         "key": "D",
-        "text": "The self is already present within, but has been obscured by external identifications."
+        "text": "By hating the body and mind"
       }
     ],
-    "correct": "D",
-    "explanation": "The analogy of living in a house without knowing a quiet room inside illustrates this. The self is not something to be found externally, but rather a deeper reality within that is obscured by our focus on body, mind, and roles. The journey is about uncovering what is already there."
-  },
-  {
-    "id": 146,
-    "question": "What is the primary reason given for not hurrying to answer the question 'Who am I?'",
-    "options": [
-      {
-        "key": "A",
-        "text": "The answer is too complex for beginners."
-      },
-      {
-        "key": "B",
-        "text": "The answer changes constantly."
-      },
-      {
-        "key": "C",
-        "text": "It is better to focus on worldly achievements first."
-      },
-      {
-        "key": "D",
-        "text": "Hurry keeps one on the surface and prevents deep inquiry."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The text explicitly states, 'in the search for the Self, hurry often keeps us on the surface.' It advocates for walking slowly and seeing one thing at a time to allow for deeper understanding and integration."
-  },
-  {
-    "id": 147,
-    "question": "The statement 'The witness does not do anything. It simply knows' is a key point to understand about:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The active role of the ego."
-      },
-      {
-        "key": "B",
-        "text": "The process of creating new identities."
-      },
-      {
-        "key": "C",
-        "text": "The function of the mind in problem-solving."
-      },
-      {
-        "key": "D",
-        "text": "The nature of the witness as a passive, unchanging awareness."
-      }
-    ],
-    "correct": "D",
-    "explanation": "This statement directly defines the witness's nature as non-intervening and constant. It knows experiences without acting upon them or changing with them, distinguishing it from the active, changing nature of the mind or experiencer."
-  },
-  {
-    "id": 148,
-    "question": "What is the practical implication of seeing an experience 'as an experience, and not as my final self'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It leads to detachment and apathy."
-      },
-      {
-        "key": "B",
-        "text": "It means the experience is no longer real."
-      },
-      {
-        "key": "C",
-        "text": "It proves that one has attained the final truth."
-      },
-      {
-        "key": "D",
-        "text": "It begins to loosen the grip of identification and fosters inner freedom."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The text explains, 'The moment an experience is seen as an experience, the grip formed by it begins to loosen.' This shift in perception is what leads to inner freedom and a less reactive way of engaging with life."
-  },
-  {
-    "id": 149,
-    "question": "The text uses the analogy of a car being a 'vehicle' for the body. What does this analogy primarily illustrate?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The body is disposable and can be easily replaced."
-      },
-      {
-        "key": "B",
-        "text": "The body is a complex machine that requires constant repair."
-      },
-      {
-        "key": "C",
-        "text": "The body is the only means of transportation in life."
-      },
-      {
-        "key": "D",
-        "text": "The body is a useful instrument for life's journey, but not the owner (the self)."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The analogy highlights that while the car (body) is necessary for travel (life's journey) and needs care, 'are you the car? No. The car is your vehicle.' This emphasizes that the body is a tool or instrument, not the fundamental self."
-  },
-  {
-    "id": 150,
-    "question": "What is the overall tone and approach of Chapter 1 towards the seeker's journey?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Authoritative and demanding, requiring strict adherence."
-      },
-      {
-        "key": "B",
-        "text": "Dismissive of worldly life and relationships."
-      },
-      {
-        "key": "C",
-        "text": "Philosophical and abstract, focusing on intellectual concepts."
-      },
-      {
-        "key": "D",
-        "text": "Gentle, patient, and encouraging, emphasizing honest observation and gradual understanding."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Phrases like 'Let this understanding remain gentle. Do not force it,' 'understand this with love: you will forget again and again,' and 'Practice does not need harshness. It needs love, patience and honesty' indicate a gentle, supportive approach. The emphasis is on honest seeing and gradual progress."
+    "correct": "A",
+    "explanation": "The search begins with examining name, role, body, mind and emotions. The seeker sees that these are changing and known, so they cannot be the final “I.”"
   }
 ]

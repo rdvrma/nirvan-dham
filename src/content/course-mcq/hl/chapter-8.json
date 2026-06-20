@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 8 ka title “Nirvan Ki Jhalak” rakhne ka mukhya karan kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh mrityu ke baad milne wale moksh ki baat karta hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yahan baat kisi door ki achievement nahi, balki pakad ke shaant hone ki jhalak ki hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh sirf shastriya shabdon ki vyakhya hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh sirf dhyan mein dikhne wali roshni ka varnan hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay Nirvan ko koi door ki vastu ya experience nahi maanta. Isse galat pehchaan aur pakad ki aag ke shaant hone ki jhalak ke roop mein samjhaya gaya hai."
+  },
+  {
+    "id": 2,
+    "question": "Is adhyay mein Nirvan ka saral arth kya bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Galat pehchaan ki aag ka shaant hona"
+      },
+      {
+        "key": "B",
+        "text": "Sansar ko poori tarah chhod dena"
+      },
+      {
+        "key": "C",
+        "text": "Sharir aur mann ka nasht ho jana"
+      },
+      {
+        "key": "D",
+        "text": "Har samay anand ka experience bana rehna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan ka arth life ya experiences ka end nahi hai. Yeh sharir-mann, ahankar aur dharnaon se bani galat pakad ke shaant hone ki disha hai."
+  },
+  {
+    "id": 3,
+    "question": "Nirvan ko experience kyun nahi maana gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki har experience bura hota hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki experience sirf sapne mein aata hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki jo experience aayega, woh jaana jayega aur badal bhi sakta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki anubhavkarta ka koi sthan nahi hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay mein clear hai ki shanti, anand, maun ya khaali-pan bhi experiences hain. Jo aata-jata hai aur jaana jata hai, woh Nirvan swayam nahi ho sakta."
+  },
+  {
+    "id": 4,
+    "question": "Anubhavkarta aur Ahankar ke beech sahi antar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono hamesha ek hi hain"
+      },
+      {
+        "key": "B",
+        "text": "Anubhavkarta sharir hai aur Ahankar mann hai"
+      },
+      {
+        "key": "C",
+        "text": "Anubhavkarta ko mitana hai, Ahankar ko badhana hai"
+      },
+      {
+        "key": "D",
+        "text": "Anubhavkarta experience ka center hai; Ahankar us experience se bani hard identity hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Anubhavkarta practical life mein kehta hai, “mujhe yeh experience hua.” Ahankar tab judta hai jab experience fixed, hard aur special identity ban jata hai."
+  },
+  {
+    "id": 5,
+    "question": "“Mujhe dukh hua” aur “main dukh hi hoon” mein kya antar hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pehla anubhavkarta ki bhasha hai, doosra experience se bani hard identity hai"
+      },
+      {
+        "key": "B",
+        "text": "Dono mein koi antar nahi"
+      },
+      {
+        "key": "C",
+        "text": "Pehla ahankar hai aur doosra saakshi hai"
+      },
+      {
+        "key": "D",
+        "text": "Dono Brahma ke naam hain"
+      }
+    ],
+    "correct": "A",
+    "explanation": "“Mujhe dukh hua” ek experience ko express karta hai. “Main dukh hi hoon” mein experience final identity ban jata hai, aur yahi ahankar ki pakad ki disha hai."
+  },
+  {
+    "id": 6,
+    "question": "Nirvan Sutra ko bhi pakad na banane ki baat kyun kahi gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki shabdon ka koi use nahi"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sadhak ko study nahi karni chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki path ke words aur adhyay pointers hain, final identity nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sab adhyay galat hain"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay kehta hai ki Saakshi, Atma, Turiya aur Nirvan jaise words path ke deepak hain. Yeh satya ki taraf sanket karte hain, par swayam satya nahi hain."
+  },
+  {
+    "id": 7,
+    "question": "“Saakshi shabd Saakshi nahi hai” se kya samajhna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi ki baat karni hi nahi chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Shabd pointer hai, par real pehchaan jeevit dekhne mein khulti hai"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi sirf imagination hai"
+      },
+      {
+        "key": "D",
+        "text": "Saakshi Ahankar ka doosra naam hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Words direction dete hain, lekin word ko hi truth maan lena nayi pakad ban sakta hai. Saakshi ki pehchaan living seeing mein hai, sirf terminology mein nahi."
+  },
+  {
+    "id": 8,
+    "question": "Sadhana ki subtle pakad kis roop mein aa sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bhojan aur rest mein"
+      },
+      {
+        "key": "B",
+        "text": "“Main regular practice karta hoon, isliye special hoon” jaisi identity mein"
+      },
+      {
+        "key": "C",
+        "text": "Sharir ki normal dekhbhaal mein"
+      },
+      {
+        "key": "D",
+        "text": "Dusron ki baat dhyan se sunne mein"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sadhana bhi ego identity ban sakti hai. Jab practice se specialness, comparison ya spiritual image banti hai, tab sadhana bhi pakad ban jati hai."
+  },
+  {
+    "id": 9,
+    "question": "“Haath mein phool rakho, mutthi mat banao” ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Life ko chhod dena chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Phool spiritual nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Rishte, sadhana aur gyaan ka samman karo, par unse pakad mat banao"
+      },
+      {
+        "key": "D",
+        "text": "Sadhak ko sirf prakriti mein hi rehna chahiye"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Yeh example batata hai ki life, relationships, practice aur knowledge ka samman karna hai, par unhe hard identity ya possession ki mutthi nahi banana hai."
+  },
+  {
+    "id": 10,
+    "question": "Nirvan ki pehli jhalak kis tarah ke pal mein aa sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf kisi bade miracle mein"
+      },
+      {
+        "key": "B",
+        "text": "Sirf gehri samadhi mein"
+      },
+      {
+        "key": "C",
+        "text": "Sirf sharir chhodne par"
+      },
+      {
+        "key": "D",
+        "text": "Reaction ke beech ek chhoti aware space banne par"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay jhalak ko ordinary moments mein rakhta hai — jaise criticism par turant reaction na banna aur andar uthti chot ko dekh pana."
+  },
+  {
+    "id": 11,
+    "question": "Reaction aur response mein mukhya antar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Reaction turant aur andhi pakad se aata hai; response dekhne ki jagah se aata hai"
+      },
+      {
+        "key": "B",
+        "text": "Response ka matlab hamesha chup rehna hai"
+      },
+      {
+        "key": "C",
+        "text": "Reaction hi saakshi-bhav hai"
+      },
+      {
+        "key": "D",
+        "text": "Dono mein koi antar nahi"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Reaction anubhavkarta aur ahankar ki turant gati ho sakti hai. Response tab aata hai jab ek chhota pause banta hai aur experience jaana jata hai."
+  },
+  {
+    "id": 12,
+    "question": "Dukh ke prati adhyay ki sahi drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dukh ko jhooth kehkar hata dena"
+      },
+      {
+        "key": "B",
+        "text": "Dukh ko spiritual weakness maana"
+      },
+      {
+        "key": "C",
+        "text": "Dukh ko imaandari se jaana, par usse final identity na banana"
+      },
+      {
+        "key": "D",
+        "text": "Dukh aane par sadhana chhod dena"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay dukh ko suppress karne ya jhooth kehne ko nahi kehta. Dukh ko space dena hai, par “main sirf yahi dukh hoon” wali identity ko halka karna hai."
+  },
+  {
+    "id": 13,
+    "question": "Sukh mein bhi pakad kyun dekhni hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki sukh hamesha paap hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sukh aate hi mann use permanent banana aur identity banana chahta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sukh experience nahi hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sukh mein chetana nahi rehti"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sukh sundar hai, par use pakadne par bandhan banta hai. Nirvan ki jhalak sukh ko aane-jaane dene mein hai, usse nayi identity banane mein nahi."
+  },
+  {
+    "id": 14,
+    "question": "Relationships mein Nirvan ki jhalak kaise dikhti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Prem mein pakad aur control badhne se"
+      },
+      {
+        "key": "B",
+        "text": "Rishton se poori tarah bhaagne se"
+      },
+      {
+        "key": "C",
+        "text": "Samne wale ko badalne ki zid se"
+      },
+      {
+        "key": "D",
+        "text": "Prem rahe, par pakad aur control halke ho jayein"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Nirvan relationships ko cold nahi karta. Woh love ko pakad, control aur expectation se thoda saaf karta hai, jisse respect aur openness aati hai."
+  },
+  {
+    "id": 15,
+    "question": "Kaam aur karma mein Nirvan ki jhalak ka sahi roop kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kaam poori imaandari se ho, par result se final identity na bane"
+      },
+      {
+        "key": "B",
+        "text": "Karma karna band ho jaye"
+      },
+      {
+        "key": "C",
+        "text": "Success ko apna final swaroop maan lena"
+      },
+      {
+        "key": "D",
+        "text": "Failure aane par khud ko reject kar dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay karma se bhaagne ki shiksha nahi deta. Effort, planning aur responsibility rehti hai, par self-worth result ke around hard nahi hoti."
+  },
+  {
+    "id": 16,
+    "question": "Spiritual practice mein Nirvan ki jhalak kab hoti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab har din special experience mile"
+      },
+      {
+        "key": "B",
+        "text": "Jab sadhana experiences collect karne ki bhookh na rehkar identity halka karne ka marg ban jaye"
+      },
+      {
+        "key": "C",
+        "text": "Jab sadhak dusron se superior feel kare"
+      },
+      {
+        "key": "D",
+        "text": "Jab thoughts ko forcefully roka jaye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Shanti aur restlessness dono jaane ja sakte hain. Jhalak tab hai jab sadhak experiences ki hunger se halka ho kar Saakshi mein lautna seekhta hai."
+  },
+  {
+    "id": 17,
+    "question": "Nirvan ki jhalak sadhak ko kis taraf lautati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadharanata, saralta aur vinamrata ki taraf"
+      },
+      {
+        "key": "B",
+        "text": "Spiritual display ki taraf"
+      },
+      {
+        "key": "C",
+        "text": "Special banne ki race mein"
+      },
+      {
+        "key": "D",
+        "text": "Sabhi relationships se cut off hone mein"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay kehta hai ki jhalak sadhak ko extraordinary image nahi deti. Woh ordinary life mein truth, simplicity aur silence ki taraf lautati hai."
+  },
+  {
+    "id": 18,
+    "question": "Agar kisi ki spiritual understanding use dusron ke dukh se indifferent bana de, to kya samajhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh complete knowledge ka sign hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh compassion se pare hona hai"
+      },
+      {
+        "key": "C",
+        "text": "Kuchh adhura hai, kyunki sahi samajh compassion ko gehra karti hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh Nirvan ki final state hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sahi samajh indifference nahi laati. Jab sadhak apni aur dusron ki pakad ko samajhta hai, to compassion gehri hoti hai, kathorta nahi."
+  },
+  {
+    "id": 19,
+    "question": "Nirvan ki jhalak ka shaant sanket “halka-pan” kis cheez ka hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ke weight ka"
+      },
+      {
+        "key": "B",
+        "text": "Outer life ke end ka"
+      },
+      {
+        "key": "C",
+        "text": "Language band ho jaane ka"
+      },
+      {
+        "key": "D",
+        "text": "Identity aur pakad ke halke hone ka"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Halka-pan physical nahi hai. Jo baat pehle sadhak ko gehra baandh deti thi, ab utna nahi baandhti — yahi jhalak ka simple sign hai."
+  },
+  {
+    "id": 20,
+    "question": "Sansar mein rehte hue freedom ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bahar life chalti rahe, andar pakad dheeli ho"
+      },
+      {
+        "key": "B",
+        "text": "Ghar-parivar chhod dena"
+      },
+      {
+        "key": "C",
+        "text": "Work aur relationships ko reject karna"
+      },
+      {
+        "key": "D",
+        "text": "Har experience ko rok dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Freedom outward escape mein nahi hai. Sadhak relationships, action aur life ke beech rehte hue mistaken identity aur grasping ko halka karna seekhta hai."
+  },
+  {
+    "id": 21,
+    "question": "Anubhavkarta ka “transparent” hone lagna kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Anubhavkarta enemy ban gaya"
+      },
+      {
+        "key": "B",
+        "text": "Experiences hote hain, par unse turant hard identity nahi banti"
+      },
+      {
+        "key": "C",
+        "text": "Experiences band ho jate hain"
+      },
+      {
+        "key": "D",
+        "text": "Saakshi experiences ko reject karta hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Anubhavkarta practical life mein rehta hai, par dukh, success ya shanti ko jaldi permanent “main” mein convert karne ki pakad kam hoti hai."
+  },
+  {
+    "id": 22,
+    "question": "Adhyay ke according karma aur kartapan mein kya antar hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Karma bandhan hai, kartapan freedom hai"
+      },
+      {
+        "key": "B",
+        "text": "Dono bilkul same hain"
+      },
+      {
+        "key": "C",
+        "text": "Karma karna hai; kartapan result se “main” ki hard identity banata hai"
+      },
+      {
+        "key": "D",
+        "text": "Kartapan hi Saakshi hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Karma life ki responsibility ka hissa hai. Kartapan woh pakad hai jo kehti hai, “main hi kar raha hoon” aur “result meri identity hai.”"
+  },
+  {
+    "id": 23,
+    "question": "Relationships mein freedom ka matlab kya nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Prem mein space aana"
+      },
+      {
+        "key": "B",
+        "text": "Prem karna band kar dena aur heart ko dry bana dena"
+      },
+      {
+        "key": "C",
+        "text": "Boundary rakhte hue compassion rakhna"
+      },
+      {
+        "key": "D",
+        "text": "Control kam hona"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Freedom ka matlab relationship mein cold ho jana nahi hai. Iska arth love ke andar pakad, control aur expectation ko pehchan kar halka karna hai."
+  },
+  {
+    "id": 24,
+    "question": "Dukh ke saath maturity ka sahi roop kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dukh ko suppress kar dena"
+      },
+      {
+        "key": "B",
+        "text": "Dukh ko permanent identity bana lena"
+      },
+      {
+        "key": "C",
+        "text": "Dukh ko jaana, space dena, seekhna, aur phir bhi final identity na banana"
+      },
+      {
+        "key": "D",
+        "text": "Dukh ko dekhkar dusron ko blame karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay dukh se bhaagne aur dukh ko story bana lene dono se bachata hai. Compassion ke saath dukh ko jaana aur Saakshi ki taraf lautna maturity hai."
+  },
+  {
+    "id": 25,
+    "question": "Sukh ke saath maturity ka sahi roop kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sukh aaye to use cleanly experience karna, par pakad na banana"
+      },
+      {
+        "key": "B",
+        "text": "Sukh ko turant reject kar dena"
+      },
+      {
+        "key": "C",
+        "text": "Sukh se darna"
+      },
+      {
+        "key": "D",
+        "text": "Sukh ko final Nirvan declare kar dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Sukh welcome hai, par use permanent state ya identity bana lena bondage hai. Pakad kam hone par sukh zyada clean aur fear-free hota hai."
+  },
+  {
+    "id": 26,
+    "question": "Mature sadhana dheere-dheere kaisi ho jaati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hard rules ka burden"
+      },
+      {
+        "key": "B",
+        "text": "Daily life mein natural seeing, returning aur lightness"
+      },
+      {
+        "key": "C",
+        "text": "Sirf experiences count karna"
+      },
+      {
+        "key": "D",
+        "text": "Dusron ko wrong prove karna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maturity mein sadhana special time tak limited nahi rehti. Chalna, bolna, sunna, dukh aur sukh ko jaana — sab living practice ban jaate hain."
+  },
+  {
+    "id": 27,
+    "question": "Freedom mein vinamrata kyun aati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki sadhak khud ko chhota prove karta hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sadhak dusron ko agyaani kehta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki samajh ko ego ki wall banne nahi diya jata"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sadhak life se darta hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "True glimpse sadhak ko special nahi banati. Woh dekhta hai ki bhool phir uth sakti hai, isliye samajh vinamr aur compassionate hoti hai."
+  },
+  {
+    "id": 28,
+    "question": "Compassion aur clarity ka balance kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Compassion ka matlab sab kuchh sahi maan lena"
+      },
+      {
+        "key": "B",
+        "text": "Clarity ka matlab harsh ho jana"
+      },
+      {
+        "key": "C",
+        "text": "Dono ka koi relation nahi"
+      },
+      {
+        "key": "D",
+        "text": "Vyakti ki uljhan samajhte hue bhi truth se na hatna"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay kehta hai compassion blind agreement nahi hai. Sahi direction mein compassion aur clarity saath chalte hain — heart soft rehta hai aur seeing clear rehti hai."
+  },
+  {
+    "id": 29,
+    "question": "Ordinary life Nirvan ki jhalak ka field kaise ban jati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf bade experiences ka wait karne se"
+      },
+      {
+        "key": "B",
+        "text": "Small actions mein awareness, honesty aur pakad ki jaanch se"
+      },
+      {
+        "key": "C",
+        "text": "Sab work band karne se"
+      },
+      {
+        "key": "D",
+        "text": "Sirf ashram mein rehne se"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Cooking, listening, work, forgiveness, boundary aur rest bhi practice ban sakte hain jab identity light ho aur awareness present ho."
+  },
+  {
+    "id": 30,
+    "question": "Nirvan Sutra complete karna end kyun nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki reading unnecessary thi"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki real entry life mein ise dekhna aur jeena hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki ab koi practice nahi chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki chapters ka koi connection nahi hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay clear karta hai ki reading aur understanding beginning hain. Real work hai ki yeh samajh criticism, sorrow, success, practice aur relationships mein live ho."
+  },
+  {
+    "id": 31,
+    "question": "Aath adhyayon ki dhara ka sahi saar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir se ghrina, sansar se bhaagna, experiences ka suppression"
+      },
+      {
+        "key": "B",
+        "text": "Swayam ki khoj se Maya, Saakshi, Ahankar, Neti-Neti, Mahavakya, Turiya aur Nirvan ki jhalak tak identity ki safai"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastriya debate"
+      },
+      {
+        "key": "D",
+        "text": "Sirf meditation mein baithne ki method"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Final section poori journey ko sequence mein gather karta hai. Har adhyay sadhak ko false identity se halka kar Saakshi aur Nirvan ki jhalak ki taraf le jata hai."
+  },
+  {
+    "id": 32,
+    "question": "“Mujhe mukta hona hai” bhi kab pakad ban sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab woh inquiry ki sacred beginning ho"
+      },
+      {
+        "key": "B",
+        "text": "Jab anubhavkarta ya ahankar ise great achievement aur future identity bana le"
+      },
+      {
+        "key": "C",
+        "text": "Jab sadhak honestly question pooche"
+      },
+      {
+        "key": "D",
+        "text": "Jab sadhak life mein compassion rakhe"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Freedom ki longing pehle help kar sakti hai, par agar woh special experience, proof ya spiritual identity ki craving ban jaye, to woh bhi grasping hai."
+  },
+  {
+    "id": 33,
+    "question": "“Jo yeh sab jaan raha hai, wahi doorway hai” ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Answer bahar kisi object mein hai"
+      },
+      {
+        "key": "B",
+        "text": "Sab questions chhod dene chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Freedom, experience aur proof ki desire bhi jaani ja rahi hai; knowing ki direction hi entrance hai"
+      },
+      {
+        "key": "D",
+        "text": "Mann hi final truth hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jab sadhak “mujhe Nirvan chahiye” wali desire ko bhi jaan leta hai, to attention known objects se hatkar knowing presence ki taraf mudta hai."
+  },
+  {
+    "id": 34,
+    "question": "Exam ko adhyay mein kis roop mein dekhne ko kaha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Punishment ke roop mein"
+      },
+      {
+        "key": "B",
+        "text": "Fear aur pressure ke roop mein"
+      },
+      {
+        "key": "C",
+        "text": "Sirf memory competition ke roop mein"
+      },
+      {
+        "key": "D",
+        "text": "Mirror aur next doorway ke roop mein"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Exam ka uddeshya sadhak ko darana nahi hai. Yeh understanding ki clarity dikhata hai, aur jo unclear hai woh further practice ka material ban jata hai."
+  },
+  {
+    "id": 35,
+    "question": "Private group mein entry ka sahi meaning kya bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego ka prize"
+      },
+      {
+        "key": "B",
+        "text": "Dusron se superiority"
+      },
+      {
+        "key": "C",
+        "text": "Sangati aur deeper practice ka opportunity"
+      },
+      {
+        "key": "D",
+        "text": "Path ka end"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Group ko sangati kaha gaya hai, special identity nahi. Iska purpose dialogue, practice aur awareness ko deepen karna hai, superiority banana nahi."
+  },
+  {
+    "id": 36,
+    "question": "Group ke around kaunsi nayi pakad ban sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Main andar hoon, baaki bahar hain” wali feeling"
+      },
+      {
+        "key": "B",
+        "text": "Sathiyon se seekhna"
+      },
+      {
+        "key": "C",
+        "text": "Questions poochhna"
+      },
+      {
+        "key": "D",
+        "text": "Humble dialogue"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Agar group entry se sadhak special ya superior feel kare, to ego ne naya vastra pehan liya. Group ka right use sangati hai, identity nahi."
+  },
+  {
+    "id": 37,
+    "question": "Aage ki sadhana ka simple formula kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Baar-baar dekhna, baar-baar lautna, baar-baar halka hona"
+      },
+      {
+        "key": "B",
+        "text": "Sab practice chhod dena"
+      },
+      {
+        "key": "C",
+        "text": "Sirf words memorize karna"
+      },
+      {
+        "key": "D",
+        "text": "Dusron ko sikhana hi practice hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay future practice ko simple rakhta hai: daily experience mein identity, pakad, kartapan, story aur Saakshi ko baar-baar dekhna."
+  },
+  {
+    "id": 38,
+    "question": "Gyaan ko prem se jodna kyun zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Taaki gyaan dry intellectuality na ban jaye"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki prem gyaan ka opposite hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki compassion practice ko block karta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki clarity ka matlab harshness hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay kehta hai agar understanding heart ko soft nahi karti, to kuchh adhura hai. True direction mein clarity aur compassion saath aate hain."
+  },
+  {
+    "id": 39,
+    "question": "Agar saakshi-bhav sadhak ko insensitive bana raha hai, to kya karna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use final knowledge maan lena"
+      },
+      {
+        "key": "B",
+        "text": "Rukkar dekhna chahiye ki kahin yeh emotional defense to nahi"
+      },
+      {
+        "key": "C",
+        "text": "Relationships chhod dene chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Dusron ko blame karna chahiye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "True saakshi-bhav indifference nahi hai. Agar woh heart ko hard bana raha hai, to sadhak ko apni understanding ki direction dobara dekhni chahiye."
+  },
+  {
+    "id": 40,
+    "question": "Kaunsa statement Nirvan Sutra ke final essence ke sabse kareeb hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Life se bhaago aur experiences suppress karo"
+      },
+      {
+        "key": "B",
+        "text": "Words ko final truth maano"
+      },
+      {
+        "key": "C",
+        "text": "Jo jaana ja raha hai usse identity halki karo, aur life ko prem se jiyo"
+      },
+      {
+        "key": "D",
+        "text": "Sirf special experiences dhundo"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Final essence hai body, mind, experience, ego aur concepts se identity ko light karna, aur love, truth aur compassion ke saath jeena."
+  },
+  {
+    "id": 41,
+    "question": "“Tum sharir nahi, par sharir ka samman karo” ka balance kya batata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ko reject nahi karna, par final “main” bhi nahi maanna"
+      },
+      {
+        "key": "B",
+        "text": "Sharir hi Brahma hai"
+      },
+      {
+        "key": "C",
+        "text": "Sharir ka koi use nahi"
+      },
+      {
+        "key": "D",
+        "text": "Sharir se ghrina karni hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan Sutra life-negation nahi hai. Sharir ek instrument hai jiska respect karna hai, par use final identity nahi banana hai."
+  },
+  {
+    "id": 42,
+    "question": "“Turiya ko pehchano, par use experience ki vastu mat banao” ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya useful concept nahi hai"
+      },
+      {
+        "key": "B",
+        "text": "Turiya ko future special state ki tarah dhundhna bhram hai"
+      },
+      {
+        "key": "C",
+        "text": "Turiya sirf sleep hai"
+      },
+      {
+        "key": "D",
+        "text": "Turiya sirf imagination hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Turiya states ka basis hai, coming-going experience nahi. Use graspable object banate hi sadhak phir anubhavkarta ki craving mein laut jata hai."
+  },
+  {
+    "id": 43,
+    "question": "Antim aashirvachan sadhak ko kya yaad dilata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bhool aur reaction bhi jaane ja rahe hain, isliye despair nahi, return karna hai"
+      },
+      {
+        "key": "B",
+        "text": "Ab kabhi mistake nahi hogi"
+      },
+      {
+        "key": "C",
+        "text": "Practice sirf perfect logon ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Confusion aaye to path chhod dena chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Sadhak ko yaad dilaya gaya hai ki bhool, reaction, ego aur confusion bhi jaane ja rahe hain. Baar-baar dekhna aur lautna hi journey hai."
+  },
+  {
+    "id": 44,
+    "question": "Nirvan ko “door khada reward” kyun nahi kaha gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh kisi outer proof par depend nahi karta"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki reward sadhana ka goal hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh sirf death ke baad milega"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh sirf Guru ke paas hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan present life mein grasping ke quiet hone ki jhalak hai. Ise future object, reward ya achievement banana phir pakad bana deta hai."
+  },
+  {
+    "id": 45,
+    "question": "“Deepak jal chuka hai” se kya sanket hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhak ke andar dekhne ki direction jag chuki hai"
+      },
+      {
+        "key": "B",
+        "text": "Ab koi practice nahi chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Sadhak ko sab prove ho gaya"
+      },
+      {
+        "key": "D",
+        "text": "Yeh outer ritual ka rule hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Iska arth hai ki sadhak ke andar seeing ki light jagi hai. Use claim nahi banana, balki us light mein life jeena seekhna hai."
+  },
+  {
+    "id": 46,
+    "question": "Antim weekly practice ka main question kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aaj kisne meri tareef ki?"
+      },
+      {
+        "key": "B",
+        "text": "Aaj maine kis cheez se identity banayi?"
+      },
+      {
+        "key": "C",
+        "text": "Aaj maine kitni debates jeeti?"
+      },
+      {
+        "key": "D",
+        "text": "Aaj mujhe kaunsa miracle mila?"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Practice sadhak ko dekhne ko kehti hai ki identity body, mind, emotion, role, story, ego, spiritual understanding ya Nirvan ki idea se kahan bani."
+  },
+  {
+    "id": 47,
+    "question": "“Aaj kahan thoda halka-pan aaya?” poochhne ka uddeshya kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Small moments of inner freedom ko pehchanna"
+      },
+      {
+        "key": "B",
+        "text": "Body weight measure karna"
+      },
+      {
+        "key": "C",
+        "text": "Dusron ki galti measure karna"
+      },
+      {
+        "key": "D",
+        "text": "Badi achievement prove karna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan ki jhalak aksar small moments mein aati hai — less reaction, compassion, pause, ya pakad ka halka hona. Yeh question unhe notice karna sikhata hai."
+  },
+  {
+    "id": 48,
+    "question": "“Jo jaan raha hai, use pakadna nahi” ka kya arth hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Knowing presence ko object ya achievement banane ki koshish mat karo"
+      },
+      {
+        "key": "B",
+        "text": "Gyaan ko reject karo"
+      },
+      {
+        "key": "C",
+        "text": "Sochna band karo"
+      },
+      {
+        "key": "D",
+        "text": "Experiences ko jhooth maano"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jo jaan raha hai, wahi Saakshi ki direction hai. Mann use object ki tarah pakadna chahega, par woh phir anubhavkarta ki movement ban jayegi."
+  },
+  {
+    "id": 49,
+    "question": "Adhyay 8 ka center kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nirvan ko nayi spiritual identity banana"
+      },
+      {
+        "key": "B",
+        "text": "Sab words, concepts aur experiences se right relationship rakhte hue pakad ko halka karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf exam pass karna"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ko reject karna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay ka center hai ki Nirvan, sadhana, gyaan aur Nirvan Sutra tak ko pakad na banne diya jaye. Unka samman ho, par final identity na bane."
+  },
+  {
+    "id": 50,
+    "question": "Nirvan Sutra ki completion kis roop mein batayi gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Final declaration ke roop mein"
+      },
+      {
+        "key": "B",
+        "text": "Outer life chhodne ke roop mein"
+      },
+      {
+        "key": "C",
+        "text": "Life ko prem se jeena aur pakad ko halka hone dena"
+      },
+      {
+        "key": "D",
+        "text": "Sab questions suppress karne ke roop mein"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Final practice aur aashirvachan ka saar hai: jo jaana ja raha hai usse identity halki karo, knowing direction ko pakad mat banao, aur life ko prem se jiyo."
+  }
+]

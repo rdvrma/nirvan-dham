@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 3 ka main vishay kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi-bhav ko rozmarra ki chalti-phirti zindagi mein jeevit rakhna"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay 3 saakshi-bhav ko sirf meditation tak limited nahi rakhta. Yeh dikhata hai ki chalte, bolte, kaam karte aur emotions ke beech bhi saakshi-bhav yaad rakha ja sakta hai."
+  },
+  {
+    "id": 2,
+    "question": "Adhyay 3 pichhle adhyayon se kaise judta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Andar saakshi ki pehchaan aur bahar maya ki samajh ko life mein apply karta hai"
+      },
+      {
+        "key": "C",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Pichhle adhyayon mein sadhak ne saakshi aur maya ki direction samjhi. Adhyay 3 usi samajh ko daily life ke har field mein utarta hai."
+  },
+  {
+    "id": 3,
+    "question": "Saakshi-bhav ke baare mein kaunsa common confusion Adhyay 3 mein sudhara gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi-bhav sirf shaant room mein aankh band karke baithne se aata hai — yeh adhoori samajh hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay clear karta hai ki saakshi-bhav sirf meditation room mein nahi hai. Woh conversation, work, relationships aur emotions ke beech bhi available hai."
+  },
+  {
+    "id": 4,
+    "question": "Saakshi-bhav aur concentration mein main difference kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Saakshi-bhav effortless knowing hai, har waqt zor laga kar alert rehna nahi"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi-bhav tense vigilance nahi hai. Yeh natural presence hai, jaise aankh dekhne ke liye extra effort nahi karti."
+  },
+  {
+    "id": 5,
+    "question": "Aankh ke example se saakshi-bhav ke baare mein kya samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jaise aankh naturally dekhti hai, waise hi saakshi naturally jaanta hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Aankh ko dekhne ke liye tension nahi karna padta. Isi tarah saakshi-bhav artificial effort nahi, natural knowing hai."
+  },
+  {
+    "id": 6,
+    "question": "Adhyay 3 ke according saakshi-bhav sabse zyada kahan bhoolta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Relationships, kaam-success-failure, aur deep emotions mein"
+      },
+      {
+        "key": "C",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay teen main fields identify karta hai: close relationships, result-oriented work, aur fear-sorrow-anger jaise deep emotions."
+  },
+  {
+    "id": 7,
+    "question": "Saakshi-bhav ko “wapasi” kehna kyon useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki saakshi-bhav pehle se present hai, bas dhyan usse hat jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav koi nayi cheez banana nahi hai. Yeh already-present knowing presence mein baar-baar lautna hai."
+  },
+  {
+    "id": 8,
+    "question": "Daily activity mein saakshi-bhav ka simple practice kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Chai peete ya chalte hue mehsoos karna ki koi is activity ko jaan raha hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay ordinary activities ko practice field banata hai. Chai peena, chalna ya baat karna—sab mein knowing presence dekhi ja sakti hai."
+  },
+  {
+    "id": 9,
+    "question": "Relationships mein mann itni jaldi react kyon karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki close relationships mein expectation, memory aur identity deeply judi hoti hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Apne logon se judi expectations aur old memories deep hoti hain. Isliye chhoti baat bhi anubhavkarta ko strongly activate kar sakti hai."
+  },
+  {
+    "id": 10,
+    "question": "Ajnabi aur apne vyakti ki same baat alag chot kyon de sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Apne vyakti se expectation aur emotional connection zyada hota hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Close person ki baat identity, expectation aur old memories ko touch karti hai. Isliye wahi words apne vyakti se zyada deep lag sakte hain."
+  },
+  {
+    "id": 11,
+    "question": "Listening mein saakshi-bhav ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "C",
+        "text": "Pehle poori tarah sunna aur phir aware hoke jawab dena"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Usually hum sunte hue reply banane lagte hain. Saakshi-bhav se sunna pehle poore experience ko jaan-na aur phir clear response dena hai."
+  },
+  {
+    "id": 12,
+    "question": "Sharp conversation mein chhota pause kya kar sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Conversation ko blind reaction se conscious response ki taraf mod sakta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Harsh baat sun kar reaction turant uthti hai. Ek chhota pause andar ki chot aur reaction ko dekhne ka mauka deta hai."
+  },
+  {
+    "id": 13,
+    "question": "“Abhi woh main uth raha hai jise respect chahiye” kehna kis practice ka part hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Anubhavkarta ki chot ko pehchanne ka"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh sentence sadhak ko reaction ke peeche ki identity aur need dekhne mein help karta hai. Anubhavkarta ki chot clear hoti hai."
+  },
+  {
+    "id": 14,
+    "question": "Saakshi-bhav relationships mein kya nahi lata?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Indifference aur coldness"
+      },
+      {
+        "key": "C",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay clear karta hai ki saakshi-bhav relationships se distance ya coldness nahi lata. Yeh love ko need aur pakad se clear karta hai."
+  },
+  {
+    "id": 15,
+    "question": "Prem aur pakad mein main difference kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "C",
+        "text": "Prem freedom deta hai, pakad dusre ko apni need se baandhna chahti hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav dikhata hai ki prem control aur fear ki hard pakad ke bina deep ho sakta hai. Pakad mein ownership aur insecurity jud jaati hai."
+  },
+  {
+    "id": 16,
+    "question": "Kaam aur achievement ke field mein anubhavkarta kaise active hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh success-failure ko apne swaroop se jodne lagta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Result aate hi anubhavkarta jaldi kehta hai “main successful hoon” ya “main fail hoon.” Yahi external results se identity judne ki problem hai."
+  },
+  {
+    "id": 17,
+    "question": "Saakshi-bhav effort aur result ke baare mein kya sikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mehnat imaandari se karo, par result ko final identity ka proof mat banao"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav laziness nahi sikhata. Woh effort ko clear rakhta hai aur result ko self-worth ka final proof nahi banne deta."
+  },
+  {
+    "id": 18,
+    "question": "Kaam mein comparison ka trap kaise kaam karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Dusron se comparison anubhavkarta ki kami aur insecurity ko badhata hai"
+      },
+      {
+        "key": "C",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "“Woh mujhse aage hai” jaise thoughts anubhavkarta ko strong banate hain. Saakshi-bhav inhe thought ke roop mein pehchanta hai."
+  },
+  {
+    "id": 19,
+    "question": "Failure ke baad saakshi-bhav ka sahi use kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "C",
+        "text": "Dukh aur learning ko dekhna, par failure ko final identity na banana"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav failure ke pain ko deny nahi karta. Woh disappointment ko jaanta hai, seekhta hai, par “main fail hoon” ki hard identity nahi banata."
+  },
+  {
+    "id": 20,
+    "question": "Success ke samay saakshi-bhav kyon zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki success ka joy ahankar ki identity mein badal sakta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Success mein joy natural hai, par usse “main bahut bada hoon” wali identity ban sakti hai. Saakshi-bhav joy ko ego banne se bachata hai."
+  },
+  {
+    "id": 21,
+    "question": "Deep emotions ke samay saakshi-bhav ki pariksha kyon hoti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki fear, sorrow aur anger sadhak ko jaldi baha le jaate hain"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Deep emotions body aur mind ko strongly affect karte hain. Aise samay sadhak jaldi anubhavkarta mein kho sakta hai."
+  },
+  {
+    "id": 22,
+    "question": "Fear ko saakshi-bhav se dekhne ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Fear ki bodily aur mental presence ko jaan-na, bina turant identity banaye"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Fear aane par body mein tightness aur mind mein imagination uth sakti hai. Saakshi-bhav inhe jaanta hai, par “main fear hoon” nahi banata."
+  },
+  {
+    "id": 23,
+    "question": "Anger ke saath saakshi-bhav ka sahi relation kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "C",
+        "text": "Anger ki energy ko jaan-na aur phir clarity se respond karna"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav anger ko deny nahi karta. Woh anger ko body aur mind mein uthte hue jaanta hai, jisse blind reaction kam hoti hai."
+  },
+  {
+    "id": 24,
+    "question": "Dukh ke samay saakshi-bhav kya nahi karta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Dukh ko spiritual phrases se cover karke deny nahi karta"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Dukh ko “yeh to kuchh nahi” kehkar cover karna saakshi-bhav nahi hai. Saakshi dukh ko jaanta hai aur usse final identity nahi banata."
+  },
+  {
+    "id": 25,
+    "question": "Deep emotions ke samay body ko dekhna kyon useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki emotion body sensations ke roop mein bhi dikhai deti hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Fear, sorrow ya anger body mein tightness, heat, heaviness ya heartbeat ke roop mein dikh sakte hain. Inhe dekhna emotion ko jaanne mein help karta hai."
+  },
+  {
+    "id": 26,
+    "question": "Emotion ko naam dena, jaise “anger uth raha hai”, kyon helpful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isse sadhak emotion ko jaanta hai aur usse thodi space banti hai"
+      },
+      {
+        "key": "C",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab sadhak emotion ko naam deta hai, to usse poori identity thodi soft hoti hai. Naming seeing ki space kholti hai."
+  },
+  {
+    "id": 27,
+    "question": "Saakshi-bhav emotions ko suppress kyon nahi karta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki suppress karne se emotion samjhi nahi jaati aur andar chhip sakti hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Suppression se emotion hide ho sakti hai par clear nahi hoti. Saakshi-bhav emotion ko respect se jaanta hai, taaki woh experience rahe, identity na bane."
+  },
+  {
+    "id": 28,
+    "question": "“Mujhe shaant hona chahiye” wali expectation kab obstacle ban sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Jab yeh present experience se fight bana deti hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Agar sadhak har emotional moment par calmness thopta hai, to woh actual experience se ladne lagta hai. Pehle experience ko jaan-na zaruri hai."
+  },
+  {
+    "id": 29,
+    "question": "Saakshi-bhav aur indifference mein difference kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi-bhav experience ko jaanta hai; indifference experience se cut kar sakti hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav sensitive awareness hai. Indifference kabhi-kabhi emotion se bachne ya cut hone ka form ho sakti hai."
+  },
+  {
+    "id": 30,
+    "question": "Adhyay 3 mein saakshi-bhav ka final purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ko life ke beech zyada clear, compassionate aur balanced banana"
+      },
+      {
+        "key": "C",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Saakshi-bhav life-virodhi nahi hai. Yeh experiences ke beech clarity, pause, compassion aur steadiness ko life mein lata hai."
+  },
+  {
+    "id": 31,
+    "question": "Relationships mein saakshi-bhav ka ek practical result kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "C",
+        "text": "Listening capacity aur dialogue mein clarity badhna"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Reaction se pehle seeing ki space aaye to sadhak better sunta hai aur response clear hota hai. Isse compassion aur truth badhte hain."
+  },
+  {
+    "id": 32,
+    "question": "Kaam mein saakshi-bhav ka ek practical result kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Mehnat clarity se karna aur result se identity kam banana"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi-bhav work ko weak nahi karta. Woh effort ko honest banata hai aur result ko self-worth ka final proof nahi banne deta."
+  },
+  {
+    "id": 33,
+    "question": "Deep emotions mein saakshi-bhav ka ek practical result kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emotion ko jaan-na aur behne se pehle thoda space banna"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Fear, sorrow ya anger uthte hi saakshi-bhav unhe experience ke roop mein jaanta hai. Isse sadhak emotion mein kho jaane ke bajay use dekh sakta hai."
+  },
+  {
+    "id": 34,
+    "question": "Saakshi-bhav mein “wapasi” ka bhav sadhak ko kaisa banata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Light, patient aur baar-baar lautne ke liye ready"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab saakshi-bhav ko wapasi ki tarah dekha jata hai, to bhool failure nahi lagti. Sadhak patience se phir knowing mein laut ta hai."
+  },
+  {
+    "id": 35,
+    "question": "Adhyay 3 mein saakshi-bhav ke baare mein kaunsi baat galat hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation mein available hai, life mein nahi"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay ka main correction yahi hai ki saakshi-bhav meditation tak limited nahi hai. Yeh life ke har field mein available hai."
+  },
+  {
+    "id": 36,
+    "question": "Kaunsa sentence saakshi-bhav ki sahi direction dikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Anger uth raha hai aur yeh jaana ja raha hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Is sentence mein emotion deny nahi hai aur usse final identity bhi nahi banayi gayi. Yahi saakshi-bhav ki language hai."
+  },
+  {
+    "id": 37,
+    "question": "“Saakshi-bhav life se alag nahi” ka kya meaning hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har ordinary event saakshi mein lautne ka opportunity ho sakta hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Conversation, work, emotion, success, failure ya chai peena—ye sab practice ke fields ban sakte hain."
+  },
+  {
+    "id": 38,
+    "question": "Success mein sajagta ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Success ka joy lena, par usse “main bada hoon” ki identity na banana"
+      },
+      {
+        "key": "C",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay success ke joy ko galat nahi kehta. Care sirf itni hai ki joy ego aur superiority mein na badle."
+  },
+  {
+    "id": 39,
+    "question": "Failure mein sajagta ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "C",
+        "text": "Failure se seekhna aur dukh ko jaan-na, par khud ko failure na maan lena"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav failure ko learning ke roop mein dekh sakta hai. Pain aata hai, par “main incapable hoon” ki hard identity nahi banti."
+  },
+  {
+    "id": 40,
+    "question": "Relationships mein prem ko pakad se alag samajhna kyon zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki pakad prem ko need, fear aur control mein badal deti hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Jab love mein control aur loss ka fear mix ho jata hai, woh pakad ban sakta hai. Saakshi-bhav love ko zyada clear aur free banata hai."
+  },
+  {
+    "id": 41,
+    "question": "Adhyay 3 ka practice kis type ka hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Life ke chhote moments mein dekhne aur lautne ka practice"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay daily activities, relationships, work aur emotions mein saakshi-bhav ko pehchanne ki teaching deta hai."
+  },
+  {
+    "id": 42,
+    "question": "Kis situation mein sadhak saakshi-bhav se sun raha hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh baat, apni reaction aur andar ki chot—teeno ko jaan raha hai"
+      },
+      {
+        "key": "C",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Saakshi-bhav se listening sirf words sunna nahi hai. Sadhak outer speech aur inner reaction dono ko jaanta hai."
+  },
+  {
+    "id": 43,
+    "question": "“Comparison ka thought uth raha hai” kehna kis tarah help karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "C",
+        "text": "Comparison ko thought ke roop mein pehchanne se usse thodi distance banti hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Comparison ko turant sach maan lene ke bajay use thought ke roop mein pehchanna saakshi-bhav hai. Isse anubhavkarta ki insecurity dikhती hai."
+  },
+  {
+    "id": 44,
+    "question": "Agar meditation mein peace na mile to Adhyay 3 ki drishti kya hogi?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Peace na hona bhi ek jaana ja raha experience hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi-bhav kisi special peaceful state par depend nahi karta. Ashanti ya peace ka absence bhi jaana ja sakta hai."
+  },
+  {
+    "id": 45,
+    "question": "Adhyay 3 mein saakshi-bhav ka compassion se relation kaise hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh reaction ko halka karta hai aur listening, understanding aur compassion se response ki possibility badhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav indifference nahi hai. Yeh experiences ko clear karta hai, jisse relationships aur emotions zyada sensitivity se dekhe jaate hain."
+  },
+  {
+    "id": 46,
+    "question": "“Life ke beech lautna” kis taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      },
+      {
+        "key": "B",
+        "text": "Experiences ke beech knowing presence ko phir se pehchanna"
+      },
+      {
+        "key": "C",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Lautna kisi outer place par jana nahi hai. Yeh experience ke beech us knowing presence ko pehchanna hai jo already hai."
+  },
+  {
+    "id": 47,
+    "question": "Adhyay 3 mein sadhak ko kis baat se careful kiya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sadhak ko dusron se superior banane ke liye hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi-bhav ko tense alertness ya special achievement bana lene se"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi-bhav effortless presence hai. Agar use strain ya spiritual achievement bana diya jaye, to anubhavkarta phir pakad sakta hai."
+  },
+  {
+    "id": 48,
+    "question": "Adhyay 3 ka samapan aage kis direction ki preparation karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh sirf meditation room mein baithne tak limited hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Ahankar ki layers ko aur clearly dekhne ki"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi-bhav ko life mein dekhne ke baad next step hai ahankar ki subtle layers ko pehchanna. Agla adhyay isi direction mein jaata hai."
+  },
+  {
+    "id": 49,
+    "question": "Kaunsa option Adhyay 3 ki teaching ko sabse sahi summarize karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi-bhav life ke har field mein available effortless return hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab emotions ko suppress kar dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "D",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay ka main saar hai ki saakshi-bhav koi separate spiritual event nahi, balki har moment mein available knowing presence mein return hai."
+  },
+  {
+    "id": 50,
+    "question": "Adhyay 3 ke according real progress ka simple sign kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh experiences se hard identity banana sikhata hai"
+      },
+      {
+        "key": "B",
+        "text": "Reaction, pakad aur identity mein thodi-thodi space banna"
+      },
+      {
+        "key": "C",
+        "text": "Isme sansar aur relationships se bhaagna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sirf shastra yaad karne ka practice hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Progress chhote moments mein dikhti hai—reaction se pehle pause, emotion ko jaan-na, aur result se identity kam banana. Yahi saakshi-bhav ka life mein utarna hai."
+  }
+]

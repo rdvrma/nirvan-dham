@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Why is Chapter 8 titled “A Glimpse of Nirvan”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it speaks of liberation only after death"
+      },
+      {
+        "key": "B",
+        "text": "Because it is about a glimpse of the quieting of grasping, not a distant achievement"
+      },
+      {
+        "key": "C",
+        "text": "Because it only explains scriptural terms"
+      },
+      {
+        "key": "D",
+        "text": "Because it describes only a light seen in meditation"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter does not present Nirvan as a distant object or experience. It explains it as the quieting of the fire of mistaken identity and grasping."
+  },
+  {
+    "id": 2,
+    "question": "What simple meaning of Nirvan is given in this chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The quieting of the fire of mistaken identity"
+      },
+      {
+        "key": "B",
+        "text": "Completely leaving the world"
+      },
+      {
+        "key": "C",
+        "text": "The destruction of body and mind"
+      },
+      {
+        "key": "D",
+        "text": "A permanent experience of bliss"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan is not the end of life or experiences. It is the quieting of the false grip created by body-mind, ego and concepts."
+  },
+  {
+    "id": 3,
+    "question": "Why is Nirvan not treated as an experience?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because every experience is bad"
+      },
+      {
+        "key": "B",
+        "text": "Because experience happens only in dreams"
+      },
+      {
+        "key": "C",
+        "text": "Because whatever appears as an experience is known and can change"
+      },
+      {
+        "key": "D",
+        "text": "Because the experiencer has no place at all"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter says that peace, joy, silence and emptiness are also experiences. Whatever comes, goes and is known cannot be Nirvan itself."
+  },
+  {
+    "id": 4,
+    "question": "What is the correct distinction between the experiencer and ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "They are always exactly the same"
+      },
+      {
+        "key": "B",
+        "text": "The experiencer is the body and ego is the mind"
+      },
+      {
+        "key": "C",
+        "text": "The experiencer must be destroyed and ego must be strengthened"
+      },
+      {
+        "key": "D",
+        "text": "The experiencer is the center of experience; ego is the hard identity formed from that experience"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The experiencer says, “I had this experience” in practical life. Ego joins when an experience becomes a fixed, hard and special identity."
+  },
+  {
+    "id": 5,
+    "question": "What is the difference between “I felt sorrow” and “I am sorrow itself”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The first is the language of the experiencer; the second is a hard identity formed from experience"
+      },
+      {
+        "key": "B",
+        "text": "There is no difference at all"
+      },
+      {
+        "key": "C",
+        "text": "The first is ego and the second is witness"
+      },
+      {
+        "key": "D",
+        "text": "Both are names of Brahman"
+      }
+    ],
+    "correct": "A",
+    "explanation": "“I felt sorrow” expresses an experience. “I am sorrow itself” turns that experience into final identity, which is the direction of egoic grasping."
+  },
+  {
+    "id": 6,
+    "question": "Why does the chapter warn against making Nirvan Sutra itself into a grip?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because words have no use"
+      },
+      {
+        "key": "B",
+        "text": "Because a seeker should not study"
+      },
+      {
+        "key": "C",
+        "text": "Because the words and chapters of the path are pointers, not final identity"
+      },
+      {
+        "key": "D",
+        "text": "Because all chapters are wrong"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter says that words like witness, Atma, Turiya and Nirvan are lamps on the path. They point to truth, but they are not truth itself."
+  },
+  {
+    "id": 7,
+    "question": "What does “the word witness is not the witness” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "One should never speak about the witness"
+      },
+      {
+        "key": "B",
+        "text": "The word is a pointer; the living recognition opens in direct seeing"
+      },
+      {
+        "key": "C",
+        "text": "Witness is only imagination"
+      },
+      {
+        "key": "D",
+        "text": "Witness is another name for ego"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Words give direction, but turning the word itself into truth becomes another grip. Witness is recognized in living seeing, not merely in terminology."
+  },
+  {
+    "id": 8,
+    "question": "In what form can subtle attachment to practice arise?",
+    "options": [
+      {
+        "key": "A",
+        "text": "In food and rest"
+      },
+      {
+        "key": "B",
+        "text": "In the identity, “I practice regularly, therefore I am special”"
+      },
+      {
+        "key": "C",
+        "text": "In ordinary care of the body"
+      },
+      {
+        "key": "D",
+        "text": "In listening carefully to others"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Even practice can become egoic identity. When practice creates specialness, comparison or a spiritual image, it becomes another form of grasping."
+  },
+  {
+    "id": 9,
+    "question": "What does “hold the flower in the hand, do not make a fist” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Life should be abandoned"
+      },
+      {
+        "key": "B",
+        "text": "Flowers are not spiritual"
+      },
+      {
+        "key": "C",
+        "text": "Respect relationships, practice and knowledge, but do not turn them into grasping"
+      },
+      {
+        "key": "D",
+        "text": "A seeker should live only in nature"
+      }
+    ],
+    "correct": "C",
+    "explanation": "This image teaches that life, relationships, practice and knowledge are to be respected, but not held as hard identity or possession."
+  },
+  {
+    "id": 10,
+    "question": "In what kind of moment can the first glimpse of Nirvan appear?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only in a great miracle"
+      },
+      {
+        "key": "B",
+        "text": "Only in deep samadhi"
+      },
+      {
+        "key": "C",
+        "text": "Only after leaving the body"
+      },
+      {
+        "key": "D",
+        "text": "When a small aware space opens in the middle of reaction"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter places the glimpse in ordinary moments, such as not becoming an immediate reaction when criticized and being able to see the hurt within."
+  },
+  {
+    "id": 11,
+    "question": "What is the main difference between reaction and response?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Reaction comes immediately from blind grasping; response comes from a space of seeing"
+      },
+      {
+        "key": "B",
+        "text": "Response always means staying silent"
+      },
+      {
+        "key": "C",
+        "text": "Reaction itself is witness-consciousness"
+      },
+      {
+        "key": "D",
+        "text": "There is no difference between them"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Reaction may be the immediate movement of the experiencer and ego. Response arises when a small pause appears and the experience is known."
+  },
+  {
+    "id": 12,
+    "question": "What is the chapter’s correct attitude toward sorrow?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Call sorrow false and remove it"
+      },
+      {
+        "key": "B",
+        "text": "Treat sorrow as spiritual weakness"
+      },
+      {
+        "key": "C",
+        "text": "Know sorrow honestly, but do not make it final identity"
+      },
+      {
+        "key": "D",
+        "text": "Leave practice whenever sorrow appears"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter does not ask the seeker to suppress sorrow or call it false. Sorrow is to be given space, while the identity “I am only this sorrow” is loosened."
+  },
+  {
+    "id": 13,
+    "question": "Why must grasping be seen even in happiness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because happiness is always sinful"
+      },
+      {
+        "key": "B",
+        "text": "Because as soon as happiness comes, the mind wants to make it permanent and turn it into identity"
+      },
+      {
+        "key": "C",
+        "text": "Because happiness is not an experience"
+      },
+      {
+        "key": "D",
+        "text": "Because consciousness disappears in happiness"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Happiness is beautiful, but when it is grasped, it becomes bondage. The glimpse of Nirvan is in allowing happiness to come and go without making it a new identity."
+  },
+  {
+    "id": 14,
+    "question": "How does the glimpse of Nirvan appear in relationships?",
+    "options": [
+      {
+        "key": "A",
+        "text": "By increasing grasping and control in love"
+      },
+      {
+        "key": "B",
+        "text": "By running away from all relationships"
+      },
+      {
+        "key": "C",
+        "text": "By insisting that the other person must change"
+      },
+      {
+        "key": "D",
+        "text": "Love remains, but grasping and control become lighter"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Nirvan does not make relationships cold. It cleans love a little from grasping, control and expectation, allowing respect and openness."
+  },
+  {
+    "id": 15,
+    "question": "What is the correct form of a glimpse of Nirvan in work and action?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Work is done with full honesty, but the result does not become final identity"
+      },
+      {
+        "key": "B",
+        "text": "All action stops"
+      },
+      {
+        "key": "C",
+        "text": "Success is taken as one’s final nature"
+      },
+      {
+        "key": "D",
+        "text": "Failure leads to self-rejection"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter does not teach escape from action. Effort, planning and responsibility remain, but self-worth is not hardened around results."
+  },
+  {
+    "id": 16,
+    "question": "When does a glimpse of Nirvan appear in spiritual practice?",
+    "options": [
+      {
+        "key": "A",
+        "text": "When a special experience comes every day"
+      },
+      {
+        "key": "B",
+        "text": "When practice stops being a hunger for experiences and becomes a way of lightening identity"
+      },
+      {
+        "key": "C",
+        "text": "When the seeker feels superior to others"
+      },
+      {
+        "key": "D",
+        "text": "When thoughts are forcefully stopped"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Peace and restlessness can both be known. The glimpse appears when the seeker becomes lighter from the hunger for experiences and learns to return to the witness."
+  },
+  {
+    "id": 17,
+    "question": "Toward what does the glimpse of Nirvan return the seeker?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ordinariness, simplicity and humility"
+      },
+      {
+        "key": "B",
+        "text": "Spiritual display"
+      },
+      {
+        "key": "C",
+        "text": "The race to become special"
+      },
+      {
+        "key": "D",
+        "text": "Cutting off all relationships"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter says the glimpse does not create an extraordinary image. It returns the seeker to truth, simplicity and silence in ordinary life."
+  },
+  {
+    "id": 18,
+    "question": "If someone’s spiritual understanding makes them indifferent to others’ suffering, what should be understood?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is a sign of complete knowledge"
+      },
+      {
+        "key": "B",
+        "text": "It means they have gone beyond compassion"
+      },
+      {
+        "key": "C",
+        "text": "Something is incomplete, because true understanding deepens compassion"
+      },
+      {
+        "key": "D",
+        "text": "It is the final state of Nirvan"
+      }
+    ],
+    "correct": "C",
+    "explanation": "True understanding does not create indifference. When the seeker understands grasping in self and others, compassion becomes deeper, not harder."
+  },
+  {
+    "id": 19,
+    "question": "What kind of “lightness” is a quiet sign of the glimpse of Nirvan?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The weight of the body"
+      },
+      {
+        "key": "B",
+        "text": "The end of outer life"
+      },
+      {
+        "key": "C",
+        "text": "The stopping of language"
+      },
+      {
+        "key": "D",
+        "text": "Lightness of identity and grasping"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The lightness is not physical. Something that once bound the seeker deeply no longer binds in the same way; this is a simple sign of the glimpse."
+  },
+  {
+    "id": 20,
+    "question": "What does freedom while living in the world mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Outer life continues, while inner grasping loosens"
+      },
+      {
+        "key": "B",
+        "text": "Leaving home and family"
+      },
+      {
+        "key": "C",
+        "text": "Rejecting work and relationships"
+      },
+      {
+        "key": "D",
+        "text": "Stopping all experiences"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Freedom is not in outward escape. The seeker lives amid relationships, action and life while learning to lighten mistaken identity and grasping."
+  },
+  {
+    "id": 21,
+    "question": "What does it mean for the experiencer to become “transparent”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The experiencer becomes an enemy"
+      },
+      {
+        "key": "B",
+        "text": "Experiences happen, but hard identity does not form immediately from them"
+      },
+      {
+        "key": "C",
+        "text": "Experiences stop"
+      },
+      {
+        "key": "D",
+        "text": "The witness rejects experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The experiencer remains in practical life, but sorrow, success or peace are not quickly converted into a permanent “I.”"
+  },
+  {
+    "id": 22,
+    "question": "According to the chapter, what is the difference between action and doership?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Action is bondage and doership is freedom"
+      },
+      {
+        "key": "B",
+        "text": "They are exactly the same"
+      },
+      {
+        "key": "C",
+        "text": "Action is to be done; doership hardens the “I” around results"
+      },
+      {
+        "key": "D",
+        "text": "Doership itself is witness"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Action is part of responsibility in life. Doership is the grip that says, “I alone am doing” and “the result is my identity.”"
+  },
+  {
+    "id": 23,
+    "question": "What does freedom in relationships not mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Space in love"
+      },
+      {
+        "key": "B",
+        "text": "Stopping love and making the heart dry"
+      },
+      {
+        "key": "C",
+        "text": "Keeping boundaries with compassion"
+      },
+      {
+        "key": "D",
+        "text": "Less control"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Freedom does not mean becoming cold in relationships. It means recognizing and lightening grasping, control and expectation within love."
+  },
+  {
+    "id": 24,
+    "question": "What is the mature way to be with sorrow?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suppress sorrow"
+      },
+      {
+        "key": "B",
+        "text": "Turn sorrow into permanent identity"
+      },
+      {
+        "key": "C",
+        "text": "Know sorrow, give it space, learn from it, and still not make it final identity"
+      },
+      {
+        "key": "D",
+        "text": "Blame others whenever sorrow appears"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter avoids both escape from sorrow and turning sorrow into a story. Knowing sorrow with compassion and returning to the witness is maturity."
+  },
+  {
+    "id": 25,
+    "question": "What is maturity with happiness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Let happiness be experienced cleanly, but do not grasp it"
+      },
+      {
+        "key": "B",
+        "text": "Reject happiness immediately"
+      },
+      {
+        "key": "C",
+        "text": "Be afraid of happiness"
+      },
+      {
+        "key": "D",
+        "text": "Declare happiness to be final Nirvan"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Happiness is welcome, but making it a permanent state or identity becomes bondage. With less grasping, happiness becomes cleaner and less fearful."
+  },
+  {
+    "id": 26,
+    "question": "What does mature practice gradually become?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A burden of hard rules"
+      },
+      {
+        "key": "B",
+        "text": "Natural seeing, returning and becoming lighter in daily life"
+      },
+      {
+        "key": "C",
+        "text": "Counting experiences only"
+      },
+      {
+        "key": "D",
+        "text": "Proving others wrong"
+      }
+    ],
+    "correct": "B",
+    "explanation": "In maturity, practice is not limited to a special time. Walking, speaking, listening, and knowing sorrow and happiness become part of living practice."
+  },
+  {
+    "id": 27,
+    "question": "Why does humility arise in freedom?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because the seeker proves himself small"
+      },
+      {
+        "key": "B",
+        "text": "Because the seeker calls others ignorant"
+      },
+      {
+        "key": "C",
+        "text": "Because understanding is not allowed to become a wall of ego"
+      },
+      {
+        "key": "D",
+        "text": "Because the seeker is afraid of life"
+      }
+    ],
+    "correct": "C",
+    "explanation": "A true glimpse does not make the seeker special. It shows that forgetfulness can still arise, so understanding becomes humble and compassionate."
+  },
+  {
+    "id": 28,
+    "question": "What is the balance of compassion and clarity?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Compassion means accepting everything as right"
+      },
+      {
+        "key": "B",
+        "text": "Clarity means becoming harsh"
+      },
+      {
+        "key": "C",
+        "text": "They have no relation"
+      },
+      {
+        "key": "D",
+        "text": "Understand the person’s confusion while not moving away from truth"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter says compassion is not blind agreement. In the right direction, compassion and clarity walk together: the heart stays soft and the seeing remains clear."
+  },
+  {
+    "id": 29,
+    "question": "How does ordinary life become the field of a glimpse of Nirvan?",
+    "options": [
+      {
+        "key": "A",
+        "text": "By waiting only for great experiences"
+      },
+      {
+        "key": "B",
+        "text": "By bringing awareness, honesty and inquiry into small actions"
+      },
+      {
+        "key": "C",
+        "text": "By stopping all work"
+      },
+      {
+        "key": "D",
+        "text": "By living only in an ashram"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Cooking, listening, work, forgiveness, boundaries and rest can become practice when identity is light and awareness is present."
+  },
+  {
+    "id": 30,
+    "question": "Why is completing Nirvan Sutra not the end?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because reading was unnecessary"
+      },
+      {
+        "key": "B",
+        "text": "Because the real entry is to see and live it in life"
+      },
+      {
+        "key": "C",
+        "text": "Because now no practice is needed"
+      },
+      {
+        "key": "D",
+        "text": "Because the chapters have no connection"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter makes clear that reading and understanding are beginnings. The real work is to let this understanding live in criticism, sorrow, success, practice and relationships."
+  },
+  {
+    "id": 31,
+    "question": "What is the right summary of the flow of the eight chapters?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hatred of the body, escape from the world, suppression of experiences"
+      },
+      {
+        "key": "B",
+        "text": "A cleansing of identity from self-inquiry through Maya, witness, ego, neti-neti, Mahavakyas, Turiya and the glimpse of Nirvan"
+      },
+      {
+        "key": "C",
+        "text": "Only scriptural debate"
+      },
+      {
+        "key": "D",
+        "text": "Only a method of sitting in meditation"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The final section gathers the whole journey in sequence. Each chapter helps the seeker become lighter from false identity and move toward witness and the glimpse of Nirvan."
+  },
+  {
+    "id": 32,
+    "question": "When can “I want to be free” also become a grip?",
+    "options": [
+      {
+        "key": "A",
+        "text": "When it is a sacred beginning of inquiry"
+      },
+      {
+        "key": "B",
+        "text": "When the experiencer or ego turns it into a great achievement and future identity"
+      },
+      {
+        "key": "C",
+        "text": "When the seeker asks honestly"
+      },
+      {
+        "key": "D",
+        "text": "When the seeker lives with compassion"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The longing for freedom can help at first, but if it becomes a craving for a special experience, proof or spiritual identity, it too becomes grasping."
+  },
+  {
+    "id": 33,
+    "question": "What does “the one who knows all this is the doorway” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The answer lies in an outer object"
+      },
+      {
+        "key": "B",
+        "text": "All questions should be abandoned"
+      },
+      {
+        "key": "C",
+        "text": "The desire for freedom, experience and proof is also known; the direction of knowing is the entrance"
+      },
+      {
+        "key": "D",
+        "text": "The mind is the final truth"
+      }
+    ],
+    "correct": "C",
+    "explanation": "When the seeker knows even the desire “I want Nirvan,” attention turns from known objects toward the knowing presence."
+  },
+  {
+    "id": 34,
+    "question": "How does the chapter ask the seeker to see the examination?",
+    "options": [
+      {
+        "key": "A",
+        "text": "As punishment"
+      },
+      {
+        "key": "B",
+        "text": "As fear and pressure"
+      },
+      {
+        "key": "C",
+        "text": "Only as a memory competition"
+      },
+      {
+        "key": "D",
+        "text": "As a mirror and the next doorway"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The examination is not meant to frighten the seeker. It reflects the clarity of understanding, and what is unclear becomes material for further practice."
+  },
+  {
+    "id": 35,
+    "question": "What is the right meaning of entering the private group?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A prize for ego"
+      },
+      {
+        "key": "B",
+        "text": "Superiority over others"
+      },
+      {
+        "key": "C",
+        "text": "An opportunity for fellowship and deeper practice"
+      },
+      {
+        "key": "D",
+        "text": "The end of the path"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The group is described as sangati, not special identity. Its purpose is dialogue, practice and deepening awareness, not superiority."
+  },
+  {
+    "id": 36,
+    "question": "What new grip can form around the group?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The feeling, “I am inside and others are outside”"
+      },
+      {
+        "key": "B",
+        "text": "Learning from companions"
+      },
+      {
+        "key": "C",
+        "text": "Asking questions"
+      },
+      {
+        "key": "D",
+        "text": "Humble dialogue"
+      }
+    ],
+    "correct": "A",
+    "explanation": "If entry into the group makes the seeker feel special or superior, ego has put on a new garment. The right use of the group is fellowship, not identity."
+  },
+  {
+    "id": 37,
+    "question": "What is the simple formula for further practice?",
+    "options": [
+      {
+        "key": "A",
+        "text": "See again, return again, become lighter again"
+      },
+      {
+        "key": "B",
+        "text": "Drop all practice"
+      },
+      {
+        "key": "C",
+        "text": "Only memorize words"
+      },
+      {
+        "key": "D",
+        "text": "Teaching others is the only practice"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter keeps future practice simple: keep seeing identity, grasping, doership, story and witness in daily experience."
+  },
+  {
+    "id": 38,
+    "question": "Why must knowledge be joined with love?",
+    "options": [
+      {
+        "key": "A",
+        "text": "So knowledge does not become dry intellectuality"
+      },
+      {
+        "key": "B",
+        "text": "Because love opposes knowledge"
+      },
+      {
+        "key": "C",
+        "text": "Because compassion blocks practice"
+      },
+      {
+        "key": "D",
+        "text": "Because clarity means harshness"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter says if understanding does not soften the heart, something remains incomplete. In the true direction, clarity and compassion come together."
+  },
+  {
+    "id": 39,
+    "question": "If witness-consciousness is making a seeker insensitive, what should be done?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Treat it as final knowledge"
+      },
+      {
+        "key": "B",
+        "text": "Pause and see whether it is emotional defense"
+      },
+      {
+        "key": "C",
+        "text": "Leave all relationships"
+      },
+      {
+        "key": "D",
+        "text": "Blame others"
+      }
+    ],
+    "correct": "B",
+    "explanation": "True witness-consciousness is not indifference. If it makes the heart hard, the seeker needs to re-examine the direction of understanding."
+  },
+  {
+    "id": 40,
+    "question": "Which statement is closest to the final essence of Nirvan Sutra?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Escape life and suppress experiences"
+      },
+      {
+        "key": "B",
+        "text": "Treat words as the final truth"
+      },
+      {
+        "key": "C",
+        "text": "Lighten identity from what is known, and live life with love"
+      },
+      {
+        "key": "D",
+        "text": "Seek only special experiences"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The final essence is to lighten identity from body, mind, experience, ego and concepts, while living with love, truth and compassion."
+  },
+  {
+    "id": 41,
+    "question": "What balance is shown in “You are not the body, but respect the body”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Do not reject the body, but do not take it as the final “I”"
+      },
+      {
+        "key": "B",
+        "text": "The body alone is Brahman"
+      },
+      {
+        "key": "C",
+        "text": "The body has no use"
+      },
+      {
+        "key": "D",
+        "text": "The body should be hated"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan Sutra is not life-negation. The body is an instrument to be respected, but it must not become final identity."
+  },
+  {
+    "id": 42,
+    "question": "What does “recognize Turiya, but do not make it an object of experience” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya is not a useful concept"
+      },
+      {
+        "key": "B",
+        "text": "Searching for Turiya as a future special state is confusion"
+      },
+      {
+        "key": "C",
+        "text": "Turiya is only sleep"
+      },
+      {
+        "key": "D",
+        "text": "Turiya is only imagination"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Turiya is the basis of states, not a coming-and-going experience. Making it an object to grasp returns the seeker to the craving of the experiencer."
+  },
+  {
+    "id": 43,
+    "question": "What does the final blessing remind the seeker?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Forgetfulness and reaction are also known, so do not despair; return"
+      },
+      {
+        "key": "B",
+        "text": "There will never be any mistake now"
+      },
+      {
+        "key": "C",
+        "text": "Practice is only for perfect people"
+      },
+      {
+        "key": "D",
+        "text": "Leave the path when confusion comes"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The seeker is reminded that forgetfulness, reaction, ego and confusion are also known. Seeing and returning again is the journey."
+  },
+  {
+    "id": 44,
+    "question": "Why is Nirvan not called a distant reward?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it does not depend on an outer proof"
+      },
+      {
+        "key": "B",
+        "text": "Because reward is the goal of practice"
+      },
+      {
+        "key": "C",
+        "text": "Because it will come only after death"
+      },
+      {
+        "key": "D",
+        "text": "Because only the guru has it"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nirvan is a glimpse of quieting grasping in present life. Turning it into a future object, reward or achievement becomes another grip."
+  },
+  {
+    "id": 45,
+    "question": "What is suggested by “the lamp has been lit”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The direction of seeing has awakened within the seeker"
+      },
+      {
+        "key": "B",
+        "text": "No practice is needed now"
+      },
+      {
+        "key": "C",
+        "text": "Everything has been proven to the seeker"
+      },
+      {
+        "key": "D",
+        "text": "It is a rule of outer ritual"
+      }
+    ],
+    "correct": "A",
+    "explanation": "It means the light of seeing has awakened within. It should not become a claim; the seeker must learn to live in that light."
+  },
+  {
+    "id": 46,
+    "question": "What is the main question in the final weekly practice?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Who praised me today?"
+      },
+      {
+        "key": "B",
+        "text": "What did I identify with today?"
+      },
+      {
+        "key": "C",
+        "text": "How many arguments did I win today?"
+      },
+      {
+        "key": "D",
+        "text": "What miracle did I receive today?"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The practice asks the seeker to see where identity formed — with body, mind, emotion, role, story, ego, spiritual understanding or the idea of Nirvan."
+  },
+  {
+    "id": 47,
+    "question": "What is the purpose of asking, “Where did a little lightness appear today?”",
+    "options": [
+      {
+        "key": "A",
+        "text": "To recognize small moments of inner freedom"
+      },
+      {
+        "key": "B",
+        "text": "To measure body weight"
+      },
+      {
+        "key": "C",
+        "text": "To measure others’ faults"
+      },
+      {
+        "key": "D",
+        "text": "To prove a great achievement"
+      }
+    ],
+    "correct": "A",
+    "explanation": "A glimpse of Nirvan often appears in small moments — less reaction, compassion, a pause, or a loosening of grip. This question helps the seeker notice them."
+  },
+  {
+    "id": 48,
+    "question": "What does “do not grasp the one who knows” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Do not try to make the knowing presence into an object or achievement"
+      },
+      {
+        "key": "B",
+        "text": "Reject knowledge"
+      },
+      {
+        "key": "C",
+        "text": "Stop thinking"
+      },
+      {
+        "key": "D",
+        "text": "Call all experiences false"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The one who knows is the direction of the witness. The mind may try to grasp it as an object, but that would again become the movement of the experiencer."
+  },
+  {
+    "id": 49,
+    "question": "What is the central focus of Chapter 8?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Making Nirvan a new spiritual identity"
+      },
+      {
+        "key": "B",
+        "text": "Relating rightly to all words, concepts and experiences while letting grasping become lighter"
+      },
+      {
+        "key": "C",
+        "text": "Only passing the examination"
+      },
+      {
+        "key": "D",
+        "text": "Rejecting the world"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter centers on not turning even Nirvan, practice, knowledge or Nirvan Sutra into a grip. They are respected, but they are not final identity."
+  },
+  {
+    "id": 50,
+    "question": "How is the completion of Nirvan Sutra described?",
+    "options": [
+      {
+        "key": "A",
+        "text": "As a final declaration"
+      },
+      {
+        "key": "B",
+        "text": "As leaving outer life"
+      },
+      {
+        "key": "C",
+        "text": "As living life with love and allowing grasping to become lighter"
+      },
+      {
+        "key": "D",
+        "text": "As suppressing all questions"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The final practice and blessing say: lighten identity from what is known, do not turn the knowing direction into a grip, and live life with love."
+  }
+]

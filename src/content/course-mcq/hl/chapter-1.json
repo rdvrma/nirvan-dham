@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 1 ke anusaar adhyatma ki yatra aksar kis se shuru hoti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf kisi mandir ya ashram jaane se"
+      },
+      {
+        "key": "B",
+        "text": "Kisi bahari achievement ko paane se"
+      },
+      {
+        "key": "C",
+        "text": "Andar uthne wali sadharan si bechaini aur khoj se"
+      },
+      {
+        "key": "D",
+        "text": "Sirf shastron ko yaad karne se"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay batata hai ki bahar sab theek dikhne par bhi andar khaali-pan reh sakta hai. Wahi bechaini aur gehri jigyasa sadhak ko swayam ki khoj ki taraf modti hai."
+  },
+  {
+    "id": 2,
+    "question": "“Main kaun hoon?” prashn ko is adhyay me sirf philosophical prashn kyun nahi maana gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh roz ke dukh, pehchaan, rishton aur darr se juda hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yeh sirf scholars ke liye hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh sharir ko turant tyagne ki shiksha deta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki iska answer kisi kitab me word-to-word mil jata hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh prashn hamari daily reactions, dukh, samman ki chah, rishton ki pakad aur insecurity se juda hai. Isliye yeh sirf sochne ka vishay nahi, jeevan ki practical jaanch ban jata hai."
+  },
+  {
+    "id": 3,
+    "question": "Naam, pesha aur rishton ko adhyay me antim “main” kyun nahi maana gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh sab spiritually bekaar hain"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yeh sirf samaj ki imagination hain aur vyavahar me bhi useful nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki inhe yaad rakhna sadhana me badha hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh badal sakte hain, jabki “main hoon” ka mool bhaav bana rehta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Naam janm ke baad mila, pesha badal sakta hai aur roles situation par depend karte hain. Yeh practical life me useful hain, par badalne wali cheezein antim swaroop nahi ho sakti."
+  },
+  {
+    "id": 4,
+    "question": "Adhyay 1 me sharir ko jeevan-yatra ke kis example se samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ek nadi ke roop me"
+      },
+      {
+        "key": "B",
+        "text": "Ek vehicle ya car ke roop me"
+      },
+      {
+        "key": "C",
+        "text": "Ek bazaar ke roop me"
+      },
+      {
+        "key": "D",
+        "text": "Ek deepak ke roop me"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sharir ko life-journey ka vehicle kaha gaya hai. Jaise car ki dekhbhaal zaruri hai, par hum car nahi hain, waise hi sharir ka samman karna hai par use antim “main” nahi maan lena hai."
+  },
+  {
+    "id": 5,
+    "question": "Bachpan ki photo ka example kis baat ko clear karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir badla hai, phir bhi “main hoon” ka ek gehra bhaav bana raha"
+      },
+      {
+        "key": "B",
+        "text": "Bachpan ka sharir hi real Atma hai"
+      },
+      {
+        "key": "C",
+        "text": "Smriti hi antim satya hai"
+      },
+      {
+        "key": "D",
+        "text": "Umar badhna spiritual obstacle hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Bachpan se ab tak sharir, chehra, awaaz aur vichar badal gaye, phir bhi vyakti kehta hai “yeh main hoon.” Isse dikhta hai ki sharir badalta hai, par “main hoon” ka bhaav bana rehta hai."
+  },
+  {
+    "id": 6,
+    "question": "“Mera sharir” vaakya adhyay ke anusaar kya sanket deta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir hi Atma hai"
+      },
+      {
+        "key": "B",
+        "text": "Sharir ko chhod dena chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Jo “mera” kaha ja raha hai, use jaanne wale se alag dekha ja sakta hai"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ka koi mahatva nahi hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jab hum kehte hain “mera sharir”, tab sharir experience ki object ke roop me dekha ja raha hai. Yeh sanket deta hai ki jaanne wala aur jaana jaane wala ek hi level par nahi hain."
+  },
+  {
+    "id": 7,
+    "question": "Sapne ke chhote example ka main uddeshya kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh prove karna ki din ka jeevan bilkul meaningless hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh dikhana ki koi experience bahut real lage, phir bhi uski jaanch ho sakti hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh batana ki sapne hi antim satya hain"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sikhana ki sharir ki dekhbhaal nahi karni chahiye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sapna apne samay me real lagta hai, par jagne par uski sthiti badal jaati hai. Isse sadhak seekhta hai ki experience kitna bhi real lage, uski gehri jaanch possible hai."
+  },
+  {
+    "id": 8,
+    "question": "Mann ki simple definition is adhyay me kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf buddhi ki tark-shakti"
+      },
+      {
+        "key": "B",
+        "text": "Sirf smriti ka collection"
+      },
+      {
+        "key": "C",
+        "text": "Sirf emotions ka naam"
+      },
+      {
+        "key": "D",
+        "text": "Vichar, bhavna, smriti, kalpana, ichchha aur darr ka andar chalne wala pravah"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay me mann ko heavy psychology se nahi, balki andar uthne wale vichar, bhavna, smriti, imagination, desire aur fear ke flow ke roop me samjhaya gaya hai."
+  },
+  {
+    "id": 9,
+    "question": "Mann ko nadi jaisa kyun kaha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki usme pravah hai aur uski content lagatar badalti rehti hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki woh hamesha bahar dikhai deta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki woh kabhi badalta nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki use rokna hi sadhana hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Nadi ka paani har pal badalta hai, phir bhi use ek nadi kaha jata hai. Waise hi mann me vichar, bhavna aur ichchhaen badalti rehti hain, phir bhi hum use “mera mann” kehte hain."
+  },
+  {
+    "id": 10,
+    "question": "Ek hi din me mann ke badalne ka example kya dikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mann permanent Atma hai"
+      },
+      {
+        "key": "B",
+        "text": "Mann sirf subah active hota hai"
+      },
+      {
+        "key": "C",
+        "text": "Mann badalne wali cheez hai, isliye woh antim “main” nahi ho sakta"
+      },
+      {
+        "key": "D",
+        "text": "Mann ko destroy kar dena chahiye"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Subah utsah, phir chinta, irritation, khushi, udasi aur aasha jaise badlav dikhate hain ki mann lagatar badalta hai. Jo badalta hai, woh antim jaanne wala nahi ho sakta."
+  },
+  {
+    "id": 11,
+    "question": "“Mere mann me darr hai” vaakya se kaunsi jaanch khulti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Darr hi mera antim swaroop hai"
+      },
+      {
+        "key": "B",
+        "text": "Darr ko jaanne wala darr se alag dekha ja sakta hai"
+      },
+      {
+        "key": "C",
+        "text": "Mann me darr hona spiritual failure hai"
+      },
+      {
+        "key": "D",
+        "text": "Darr ko turant daba dena chahiye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Agar darr jaana ja raha hai, to jaanne wala sirf darr nahi ho sakta. Yeh vaakya sadhak ko emotion aur jaanne wali presence me antar dekhne me madad karta hai."
+  },
+  {
+    "id": 12,
+    "question": "Vicharon ko road par aate-jaate vehicles jaisa batane ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har vichar me turant baith jaana chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Vicharon se yuddh karna chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Vicharon ko aate-jaate dekha ja sakta hai; unme behna zaruri nahi"
+      },
+      {
+        "key": "D",
+        "text": "Vichar kabhi badalte nahi"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jaise road par vehicles aate-jaate hain aur har vehicle me baithna zaruri nahi, waise hi vichar aate-jaate hain. Sadhak unhe dekh sakta hai bina har vichar ke saath behne ke."
+  },
+  {
+    "id": 13,
+    "question": "Saakshi ka pehla simple meaning kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh shaant jaanne wali presence jo experiences ko jaanti hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh mann jo sabse zyada sochta hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh role jo samaj deta hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh emotion jo sabse strong hota hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Is adhyay me saakshi ko sharir, mann, vichar, sukh-dukh aur bhavnaon ko jaanne wali shaant presence kaha gaya hai. Woh experiences ko jaanta hai, par unse badalta nahi."
+  },
+  {
+    "id": 14,
+    "question": "Saakshi-bhav ke baare me kaunsi baat sahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Iska matlab life se bhaag jaana hai"
+      },
+      {
+        "key": "B",
+        "text": "Iska matlab thoughts aur emotions ko zabardasti rok dena hai"
+      },
+      {
+        "key": "C",
+        "text": "Iska matlab sansar ko nashṭ maan lena hai"
+      },
+      {
+        "key": "D",
+        "text": "Iska matlab experiences ko jaana, bina unme poori tarah khoe"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi-bhav vicharon ya bhavnaon ko dabane ka naam nahi hai. Yeh jeevan ke beech experiences ko jaanne aur unse final identity na banane ki direction hai."
+  },
+  {
+    "id": 15,
+    "question": "Anubhavkarta ko adhyay me kaise samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh experience ke level par uthne wala center hai jo kehta hai “mujhe experience ho raha hai”"
+      },
+      {
+        "key": "B",
+        "text": "Woh hamesha bura aur tyag dene layak hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh Brahma ka dusra naam hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh sirf sharir ki beemari hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Anubhavkarta experiences ke level par “mujhe dukh hua”, “mujhe shanti mili” jaisi language ka center hai. Woh vyavahar me useful ho sakta hai; problem tab hoti hai jab usse hard identity ban jati hai."
+  },
+  {
+    "id": 16,
+    "question": "Saakshi aur anubhavkarta me main antar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi experience ko apna bana leta hai, anubhavkarta sirf dekhta hai"
+      },
+      {
+        "key": "B",
+        "text": "Dono poori tarah ek hi baat hain"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi jaanta hai; anubhavkarta experience se judkar “mere saath” ki language banata hai"
+      },
+      {
+        "key": "D",
+        "text": "Anubhavkarta sharir hai aur saakshi mann hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi experience ko shaant roop se jaanta hai. Anubhavkarta experience ke level par “mujhe hua” kehta hai, aur jab pakad badhti hai to experience se identity banne lagti hai."
+  },
+  {
+    "id": 17,
+    "question": "Ahankar anubhavkarta se kab judta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab anubhavkarta koi bhi experience nahi karta"
+      },
+      {
+        "key": "B",
+        "text": "Jab anubhavkarta experiences se final aur hard identity bana leta hai"
+      },
+      {
+        "key": "C",
+        "text": "Jab sharir rest me hota hai"
+      },
+      {
+        "key": "D",
+        "text": "Jab sadhak practice chhod deta hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Anubhavkarta khud experience ka center hai. Ahankar tab strong hota hai jab “mujhe dukh hua” jaise baat “main dukh hi hoon” ya “main special hoon” jaisi hard identity ban jati hai."
+  },
+  {
+    "id": 18,
+    "question": "Talaab aur lehron ka example kis baat ko samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Experiences uthte hain, par unhe jaanne wali shanti unse alag dekhi ja sakti hai"
+      },
+      {
+        "key": "B",
+        "text": "Har lehar ko rokna hi sadhana hai"
+      },
+      {
+        "key": "C",
+        "text": "Jal kabhi hilta nahi"
+      },
+      {
+        "key": "D",
+        "text": "Bhavnaen jhoothi hain, isliye unka samman nahi karna chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Patthar girne par talaab me lehrain uthti hain, jaise ghatna se mann me bhav uthte hain. Saakshi-bhav me sadhak lehron ko jaanta hai, unse poori identity nahi banata."
+  },
+  {
+    "id": 19,
+    "question": "Film aur screen ka example kya batata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Screen hi film ki kahani ban jati hai"
+      },
+      {
+        "key": "B",
+        "text": "Scenes badalte hain, par unhe dikhane wala base stable rehta hai"
+      },
+      {
+        "key": "C",
+        "text": "Film dekhna sadhana ke against hai"
+      },
+      {
+        "key": "D",
+        "text": "Har scene ko pakadna chahiye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Film me scenes badalte hain, par screen bani rehti hai. Isi tarah thoughts aur emotions ki film chalti rehti hai, par unhe jaanne wali presence unse badalti nahi."
+  },
+  {
+    "id": 20,
+    "question": "Saakshi-bhav ko life me apply karne ka pehla practical sanket kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har emotion ko dabana"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko sach maanna"
+      },
+      {
+        "key": "C",
+        "text": "Kisi experience ke uthte hi use jaana aur rukkar dekhna"
+      },
+      {
+        "key": "D",
+        "text": "Saare relationships chhod dena"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay sikhata hai ki thought, emotion ya reaction uthe to use turant pakadne ke bajay dekha jaye. Yeh dekhne ka chhota pause saakshi-bhav ki shuruaat hai."
+  },
+  {
+    "id": 21,
+    "question": "Mann ko enemy na maan-ne ki shiksha kyun di gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki mann practical life, learning, language, relationships aur decisions me useful sadhan hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki mann hi antim Atma hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki mann kabhi bhram nahi karta"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki mann ko jaana impossible hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mann useful sadhan hai; problem mann me nahi, balki mann ko final “main” maan lene me hai. Mann se kaam, learning aur relationships chalte hain, isliye usse yuddh nahi karna."
+  },
+  {
+    "id": 22,
+    "question": "Bhavnaon ke prati adhyay ki sahi drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bhavnaon ko jhooth maan kar daba dena"
+      },
+      {
+        "key": "B",
+        "text": "Bhavnaon ko samman se jaana, par unse final identity na banana"
+      },
+      {
+        "key": "C",
+        "text": "Har bhavna ko turant action me badal dena"
+      },
+      {
+        "key": "D",
+        "text": "Bhavnaon ko spiritual failure maanna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Dukh, darr ya krodh ko nakarna nahi hai. Unhe imaandari se jaana hai, lekin “main sirf yahi bhavna hoon” jaisi identity ko halka karna hai."
+  },
+  {
+    "id": 23,
+    "question": "“Main dukhi hoon” aur “dukh ka experience ho raha hai” me main antar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pehle sentence me zyada Sanskrit hai"
+      },
+      {
+        "key": "B",
+        "text": "Dono ka meaning bilkul same hai"
+      },
+      {
+        "key": "C",
+        "text": "Doosre sentence me dukh ko dekhne ki jagah khulti hai"
+      },
+      {
+        "key": "D",
+        "text": "Doosra sentence dukh ko jhooth kehta hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "“Main dukhi hoon” me identity jud jati hai. “Dukh ka experience ho raha hai” me dukh ka samman rehta hai, par dekhne ki jagah bhi khulti hai."
+  },
+  {
+    "id": 24,
+    "question": "Purani aadaton ke lautne par sadhak ko kya samajhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh complete failure hai"
+      },
+      {
+        "key": "B",
+        "text": "Sadhana chhod deni chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi-bhav ka practice phir kabhi possible nahi"
+      },
+      {
+        "key": "D",
+        "text": "Anubhavkarta me ulajhna purani aadat hai; ise blame nahi, dekhna hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay ka tone patient hai. Purani identities aur reactions laut sakti hain; unhe failure maan-ne ke bajay komalta se pehchanna aur lautna hai."
+  },
+  {
+    "id": 25,
+    "question": "Saakshi-bhav ko yaad rakhne ke liye din me kuch baar kaunsa question useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Abhi main anubhavkarta ki pakad me hoon ya saakshi ki tarah dekh raha hoon?"
+      },
+      {
+        "key": "B",
+        "text": "Main dusron se kitna aage hoon?"
+      },
+      {
+        "key": "C",
+        "text": "Mujhe aaj kaunsa special experience mila?"
+      },
+      {
+        "key": "D",
+        "text": "Kaun meri tareef kar raha hai?"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh question sadhak ko apni present inner position dekhne me help karta hai. Woh experience me uljha hai ya use jaan raha hai, wahi practice ki direction hai."
+  },
+  {
+    "id": 26,
+    "question": "Teekhi reaction se pehle ek saans ka pause kyun useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki isse hamesha saamne wala badal jata hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki isse reaction aur response ke beech dekhne ki jagah banti hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki isse emotion khatam ho jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki isse sochne ki zarurat nahi rehti"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ek saans ka pause anubhavkarta ki instant reaction ko dekhne ka mauka deta hai. Is space me response zyada aware aur kam andha ho sakta hai."
+  },
+  {
+    "id": 27,
+    "question": "Din ke end me do minute ki review ka purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apni mistakes par harsh blame karna"
+      },
+      {
+        "key": "B",
+        "text": "Dusron ki kami ginana"
+      },
+      {
+        "key": "C",
+        "text": "Dekhna ki kab saakshi-bhav ki jhalak mili aur kab identity me uljhan hui"
+      },
+      {
+        "key": "D",
+        "text": "Sirf achievements yaad karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Din ke end ka chhota practice sadhak ko bina pressure apna din dekhne me help karta hai. Isse jhalkein pehchan me aati hain aur practice halka rehta hai."
+  },
+  {
+    "id": 28,
+    "question": "Adhyay ke anusaar saakshi-bhav koi hard rule kyun nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki ise bojh nahi, komal wapsi ki tarah jeena hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki iska koi meaning nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh sirf scholars ke liye hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki ise sirf exam ke liye padhna hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav ko heavy discipline nahi banaya gaya. Yeh baar-baar komalta se lautne ki kala hai, taki sadhak khud ko blame karne ke bajay dekhna seekhe."
+  },
+  {
+    "id": 29,
+    "question": "Poore adhyay ki yatra ka sequence kaunsa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pehle Brahma, phir Maya, phir pooja"
+      },
+      {
+        "key": "B",
+        "text": "Pehle sansar chhodna, phir sharir chhodna"
+      },
+      {
+        "key": "C",
+        "text": "Pehle shastra yaad karna, phir debate karna"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ki jaanch, mann ki jaanch, phir saakshi aur anubhavkarta ka antar"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay sadhak ko simple sequence me le jata hai: sharir badalta hai, mann badalta hai, phir woh jaanne wali presence aur anubhavkarta ke antar ko dekhta hai."
+  },
+  {
+    "id": 30,
+    "question": "Sharir aur mann ko “jaana ja raha hai” kehna kis taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ki sharir aur mann ka koi practical mahatva nahi"
+      },
+      {
+        "key": "B",
+        "text": "Ki jaanne wala sharir aur mann ke experiences ko dekh sakta hai"
+      },
+      {
+        "key": "C",
+        "text": "Ki sadhak ko sochna band kar dena chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Ki jeevan sirf sapna hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab sharir aur mann jaane ja rahe hain, to unse alag jaanne ki direction khulti hai. Yeh saakshi-bhav ki shuruaat hai, sharir-mann ka apmaan nahi."
+  },
+  {
+    "id": 31,
+    "question": "Anubhavkarta ko sahi sthaan dene ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use enemy maan kar mita dena"
+      },
+      {
+        "key": "B",
+        "text": "Vyavahar me experience ki language ko maanna, par usse hard identity na banana"
+      },
+      {
+        "key": "C",
+        "text": "Har experience ko final truth maan lena"
+      },
+      {
+        "key": "D",
+        "text": "Experiences ko jhooth keh dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Anubhavkarta life me “mujhe experience hua” jaisi practical language deta hai. Problem tab hai jab wahi experience permanent “main” ban jata hai; isliye use transparent banana hai."
+  },
+  {
+    "id": 32,
+    "question": "Ahankar ke light introduction me kaunsi baat samjhayi gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar sirf ghamand ka naam hai"
+      },
+      {
+        "key": "B",
+        "text": "Ahankar ko badhana hi gyaan hai"
+      },
+      {
+        "key": "C",
+        "text": "Jab experiences aur sharir-mann se “main” ki hard identity banti hai, ahankar strong hota hai"
+      },
+      {
+        "key": "D",
+        "text": "Ahankar sharir ki disease hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay me ahankar ko detail me nahi khola gaya, par sanket diya gaya ki experiences, roles aur sharir-mann se hard “main” banana ahankar ki direction hai."
+  },
+  {
+    "id": 33,
+    "question": "Roz ki life me saakshi-bhav kaisa dikh sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kisi ki baat sunkar turant react karne ke bajay ek pal rukna"
+      },
+      {
+        "key": "B",
+        "text": "Sabhi se baat-cheet band kar dena"
+      },
+      {
+        "key": "C",
+        "text": "Kisi bhi emotion ko na aane dena"
+      },
+      {
+        "key": "D",
+        "text": "Har time special experience dhundhte rehna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav koi mysterious event nahi hai. Kisi baat par turant behne ke bajay ek moment dekhna bhi life me saakshi-bhav ki jhalak hai."
+  },
+  {
+    "id": 34,
+    "question": "Saakshi-bhav ko mysterious ya extraordinary experience kyun nahi kaha gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh har kisi ke jeevan me pehle se available jaanne ki direction hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yeh sirf imagination hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki ise sirf guru hi kar sakte hain"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh sirf neend me hota hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay me saakshi-bhav ko life ke ordinary moments me available bataya gaya hai. Yeh koi nayi object nahi, balki experiences ko jaanne ki pehle se maujood capacity ki pehchaan hai."
+  },
+  {
+    "id": 35,
+    "question": "Adhyay ke anusaar samajh aana aur use yaad rakhna alag kyun hain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki samajh aa jaane ke baad life me koi practice nahi chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki purani identity ki aadat strong hoti hai aur baar-baar lautna padta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki samajh ka life se koi relation nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yaad rakhna sirf exam ke liye hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sadhak ko assure kiya gaya hai ki anubhavkarta me ulajh jana failure nahi, purani aadat hai. Samajh ko life me stable karne ke liye komal yaad rakhna zaruri hai."
+  },
+  {
+    "id": 36,
+    "question": "Jhukar baithne ki purani aadat jaisa example kis baat ko samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Andar ki aadat badalne me bhi time aur patience lagta hai"
+      },
+      {
+        "key": "B",
+        "text": "Sharir hi Atma hai"
+      },
+      {
+        "key": "C",
+        "text": "Sadhana sirf physical exercise hai"
+      },
+      {
+        "key": "D",
+        "text": "Purani aadat kabhi badal nahi sakti"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jaise physical habit badalne me time lagta hai, waise hi identity aur reaction ki inner habits bhi dheere-dheere badalti hain. Isliye sadhak ko patience rakhna hai."
+  },
+  {
+    "id": 37,
+    "question": "“Aaj ke liye abhyas” ka main purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhak ko difficult theory yaad karana"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ko apne experience me dekhna sikhana"
+      },
+      {
+        "key": "C",
+        "text": "Sadhak ko dusron ka evaluation karana"
+      },
+      {
+        "key": "D",
+        "text": "Sadhak ko sharir se nafrat karana"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Har abhyas ka purpose sadhak ko apne sharir, mann, vichar, bhavna aur pehchaan ko direct experience me dekhne ki aadat dena hai. Yeh sirf intellectual knowledge nahi hai."
+  },
+  {
+    "id": 38,
+    "question": "Adhyay me sharir ki dekhbhaal ko kaise dekha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ki upeksha karni chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Sharir ko final truth maan lena chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Sharir jeevan ka sadhan hai, isliye uska samman aur dhyan rakhna chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ka koi use nahi"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sharir ko reject nahi kiya gaya hai. Use life-journey ka pavitra sadhan maana gaya hai, par sadhan ko final swami maan lena bhram kaha gaya hai."
+  },
+  {
+    "id": 39,
+    "question": "Is adhyay me adhyatma ko kis tarah present kiya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar se bhaagne ki process ke roop me"
+      },
+      {
+        "key": "B",
+        "text": "Swayam se milne aur pehchaan ki jaanch ki yatra ke roop me"
+      },
+      {
+        "key": "C",
+        "text": "Sirf ritual ke roop me"
+      },
+      {
+        "key": "D",
+        "text": "Sirf shastriya debate ke roop me"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay me clearly kaha gaya hai ki yeh yatra sansar se bhaagne ki nahi, swayam se milne ki yatra hai. Isme identity ko experience me check karna hai."
+  },
+  {
+    "id": 40,
+    "question": "Adhyay ka tone sadhak ko kis tarah aage badhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Darr aur pressure dekar"
+      },
+      {
+        "key": "B",
+        "text": "Jaldi conclusions dekar"
+      },
+      {
+        "key": "C",
+        "text": "Dhairya, sneha aur simple jaanch ke saath"
+      },
+      {
+        "key": "D",
+        "text": "Sirf hard orders se"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Poore adhyay me sadhak ko jaldi answer dene se roka gaya hai aur dheere-dheere dekhne ko kaha gaya hai. Language warm, patient aur experience-centered hai."
+  },
+  {
+    "id": 41,
+    "question": "“Uttar jaldi paane ki koshish mat karo” ka kya matlab hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Prashn ko chhod dena chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ko pehle experience me dekhna chahiye, sirf thought se conclusion nahi banana chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Gyaan impossible hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf guru answer de sakta hai, sadhak nahi dekh sakta"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Yeh adhyay intellect se turant conclusion banane ke bajay experience me inquiry ko importance deta hai. “Main kaun hoon?” ka answer sirf thinking nahi, seeing chahta hai."
+  },
+  {
+    "id": 42,
+    "question": "Kis situation me anubhavkarta ki language practical life me useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab sharir me pain ho aur treatment ke liye kehna ho “mujhe dard hai”"
+      },
+      {
+        "key": "B",
+        "text": "Jab sadhak dusron ko chhota prove karna chahta ho"
+      },
+      {
+        "key": "C",
+        "text": "Jab har experience ko final truth banana ho"
+      },
+      {
+        "key": "D",
+        "text": "Jab saakshi ko reject karna ho"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Anubhavkarta ki language practical life me useful hai, jaise pain, dukh ya samajh ko express karna. Problem language me nahi, usse banne wali hard identity me hai."
+  },
+  {
+    "id": 43,
+    "question": "Saakshi experiences se kya sambandh rakhta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh unhe dabata hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh unhe reject karta hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh unhe jaanta hai, par unse badalta nahi"
+      },
+      {
+        "key": "D",
+        "text": "Woh har experience ko apni kahani bana leta hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Saakshi sharir, mann, vichar aur bhavnaon ko jaanta hai. Experiences badalte rehte hain, lekin saakshi ki jaanne wali presence khud unse nahi badalti."
+  },
+  {
+    "id": 44,
+    "question": "Jab sadhak kehta hai “yeh vichar uth raha hai”, to kya hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh vichar ke saath poori tarah ek ho jata hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh vichar ko dekhne ki direction me aata hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh sochne ki ability kho deta hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh vichar ko hamesha ke liye rok deta hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Vichar ko naam dekar dekhna usse thodi distance deta hai. Sadhak vichar ko jaanta hai, isliye woh har vichar ke saath behne ke liye majboor nahi rehta."
+  },
+  {
+    "id": 45,
+    "question": "Adhyay me “samajh ko jeevan me sthir karna” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf chapter padhkar chhod dena"
+      },
+      {
+        "key": "B",
+        "text": "Samajh ko daily experiences, reactions aur practices me yaad rakhna"
+      },
+      {
+        "key": "C",
+        "text": "Saare relationships tod dena"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ko mahatva na dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Samajh sirf padhne ki cheez nahi hai. Use din me rukkar, reaction se pehle pause karke aur din ke end me dekhkar life me utarna hai."
+  },
+  {
+    "id": 46,
+    "question": "Is adhyay me sadhak ko apne prati kaisa vyavahar rakhne ko kaha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Harsh blame aur nirasha"
+      },
+      {
+        "key": "B",
+        "text": "Pressure aur comparison"
+      },
+      {
+        "key": "C",
+        "text": "Upeksha"
+      },
+      {
+        "key": "D",
+        "text": "Komalta, patience aur imaandar dekhna"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Purani aadatein lautne par sadhak ko khud ko blame nahi karna hai. Use komalta se dekhna, samajhna aur phir saakshi-bhav me lautna hai."
+  },
+  {
+    "id": 47,
+    "question": "Adhyay 1 ka final saar kis direction me le jata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir aur mann ki identity se hatkar jaanne wali presence ki taraf"
+      },
+      {
+        "key": "B",
+        "text": "Sirf outer success ki taraf"
+      },
+      {
+        "key": "C",
+        "text": "Sansar ko poori tarah chhodne ki taraf"
+      },
+      {
+        "key": "D",
+        "text": "Bhavnaon ko destroy karne ki taraf"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay ki poori dhara sharir aur mann ko badalne wali cheezon ke roop me dekhne aur us jaanne wali presence ki taraf lautne ki hai. Yahi aage ki sadhana ki foundation hai."
+  },
+  {
+    "id": 48,
+    "question": "Kaunsa option Adhyay 1 ki teaching ke sabse kareeb hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Main sirf mera naam aur pesha hoon"
+      },
+      {
+        "key": "B",
+        "text": "Sharir, mann aur bhavnaen experience me aate hain; unhe jaanne wali direction ki jaanch karni hai"
+      },
+      {
+        "key": "C",
+        "text": "Mann ko poori tarah destroy karna hi pehla goal hai"
+      },
+      {
+        "key": "D",
+        "text": "Dukh aane par use jhooth keh dena chahiye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay sharir, mann aur bhavnaon ko reject nahi karta. Yeh kehta hai ki inhe experience me jaane jaane wali cheezon ke roop me dekho. Yahin se jaanne wali presence ki khoj shuru hoti hai."
+  },
+  {
+    "id": 49,
+    "question": "Saakshi-bhav me lautne ka practice kis tarah kiya jaana chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bojh aur harshness ke saath"
+      },
+      {
+        "key": "B",
+        "text": "Dusron se comparison karke"
+      },
+      {
+        "key": "C",
+        "text": "Baar-baar, halki aur imaandar remembrance ke roop me"
+      },
+      {
+        "key": "D",
+        "text": "Sirf special meditation-state me"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay me saakshi-bhav ko natural return ki tarah rakha gaya hai. Ise life ke chhote moments me baar-baar yaad karna hai, heavy achievement nahi banana hai."
+  },
+  {
+    "id": 50,
+    "question": "Is adhyay me “swayam ki khoj” ki shuruaat kis se hoti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Apne experience me yeh dekhna ki jinhe “main” maanta tha, woh badalne wali cheezein hain"
+      },
+      {
+        "key": "B",
+        "text": "Dusron ko galat prove karne se"
+      },
+      {
+        "key": "C",
+        "text": "Kisi special experience ki declaration se"
+      },
+      {
+        "key": "D",
+        "text": "Sharir aur mann se nafrat karne se"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Khoj ki shuruaat naam, role, sharir, mann aur bhavnaon ki jaanch se hoti hai. Sadhak dekhta hai ki yeh sab badalte hain aur jaane jaate hain, isliye antim “main” nahi ho sakte."
+  }
+]

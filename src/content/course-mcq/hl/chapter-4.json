@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 4 mein ahankar ko sirf ghamand kyun nahi kaha gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki ahankar woh identity-mechanism hai jo sharir, mann, role, kahani aur experiences se “main” banata hai."
+      },
+      {
+        "key": "B",
+        "text": "Kyunki ahankar sirf paise se juda hota hai."
+      },
+      {
+        "key": "C",
+        "text": "Kyunki ahankar sadhana mein kabhi nahi aata."
+      },
+      {
+        "key": "D",
+        "text": "Kyunki ahankar sirf dusron ki problem hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay ahankar ko sirf “main bada hoon” tak limited nahi rakhta. Ahankar woh subtle pakad hai jo badalne wali cheezon ko personal identity bana deta hai."
+  },
+  {
+    "id": 2,
+    "question": "Ahankar ki sabse basic chaal kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har samay maun rehna."
+      },
+      {
+        "key": "B",
+        "text": "Jo cheez jaani ja rahi hai, usi ko final “main” maan lena."
+      },
+      {
+        "key": "C",
+        "text": "Sharir ki dekhbhaal karna."
+      },
+      {
+        "key": "D",
+        "text": "Dusron ki madad karna."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ahankar sharir, mann, bhavna, role ya kahani jaise jaane jaane wali cheezon ko final self bana deta hai. Yahi uski root confusion hai."
+  },
+  {
+    "id": 3,
+    "question": "Adhyay 4 ke anusaar ahankar se ladna sahi raasta kyun nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki ahankar hamesha sahi hota hai."
+      },
+      {
+        "key": "B",
+        "text": "Kyunki ahankar ko badhana chahiye."
+      },
+      {
+        "key": "C",
+        "text": "Kyunki ladai bhi ek naya “main” bana sakti hai; ahankar ko shaant hokar dekhna hai."
+      },
+      {
+        "key": "D",
+        "text": "Kyunki ahankar sirf sharir mein hota hai."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ahankar se fight karne par “main ahankar se lad raha hoon” wali nayi identity ban sakti hai. Raasta hai—use pehchanna, dekhna, aur saakshi-bhav mein lautna."
+  },
+  {
+    "id": 4,
+    "question": "Sharir se juda ahankar kis roop mein dikh sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf khana khane mein."
+      },
+      {
+        "key": "B",
+        "text": "Sirf sone mein."
+      },
+      {
+        "key": "C",
+        "text": "Sirf chalne-phirne mein."
+      },
+      {
+        "key": "D",
+        "text": "Sundarta, shakti, health, age ya appearance se “main” ki pehchaan banane mein."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Sharir sadhan hai, par ahankar use identity bana deta hai. Roop, age ya health se garv ya heenata uthna isi layer ka sanket hai."
+  },
+  {
+    "id": 5,
+    "question": "Mann se juda ahankar kya karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vicharon, opinions aur samajh ko “meri final sachchai” bana deta hai."
+      },
+      {
+        "key": "B",
+        "text": "Mann ko poori tarah band kar deta hai."
+      },
+      {
+        "key": "C",
+        "text": "Har vichar ko turant khatm kar deta hai."
+      },
+      {
+        "key": "D",
+        "text": "Smriti ko sharir bana deta hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Is layer mein ahankar apne thoughts, views aur understanding se identity banata hai. Tab vyakti apni rai ko satya se bhi zyada importance dene lagta hai."
+  },
+  {
+    "id": 6,
+    "question": "Role-based ahankar ka sahi example kaunsa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Mujhe paani peena hai.”"
+      },
+      {
+        "key": "B",
+        "text": "“Main guru/parent/sevak hoon, isliye meri baat hamesha maani jaye.”"
+      },
+      {
+        "key": "C",
+        "text": "“Mujhe aaram chahiye.”"
+      },
+      {
+        "key": "D",
+        "text": "“Aaj mausam achchha hai.”"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Role vyavahar mein useful hai, lekin jab role se authority, superiority ya rigid identity ban jaye, wahan role-based ahankar active hai."
+  },
+  {
+    "id": 7,
+    "question": "Image-based ahankar sabse zyada kis baat se darta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mujhe bhojan mil jayega."
+      },
+      {
+        "key": "B",
+        "text": "Mujhe rest mil jayega."
+      },
+      {
+        "key": "C",
+        "text": "Log mujhe galat, chhota ya kam spiritual samjhenge."
+      },
+      {
+        "key": "D",
+        "text": "Mera sharir healthy rahega."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Image ka ahankar dusron ke mann mein bani tasveer ko bachana chahta hai. Woh criticism, misunderstanding aur image tootne se darta hai."
+  },
+  {
+    "id": 8,
+    "question": "Kahani se juda ahankar kaise kaam karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har memory ko turant mita deta hai."
+      },
+      {
+        "key": "B",
+        "text": "Rishton ko impossible bana deta hai."
+      },
+      {
+        "key": "C",
+        "text": "Language seekhne se rokta hai."
+      },
+      {
+        "key": "D",
+        "text": "Purani ghatnaon ko fixed “meri kahani” bana kar identity strong karta hai."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Events sach mein hui hongi, par ahankar unhe fixed identity bana deta hai—“mere saath hamesha aisa hua” ya “main aisa hi hoon.”"
+  },
+  {
+    "id": 9,
+    "question": "Peedit-bhav ka ahankar kis tarah ki identity banata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Mere saath hamesha anyay hua, isliye yahi meri identity hai.”"
+      },
+      {
+        "key": "B",
+        "text": "“Main experiences ko dekh raha hoon.”"
+      },
+      {
+        "key": "C",
+        "text": "“Sharir ko rest chahiye.”"
+      },
+      {
+        "key": "D",
+        "text": "“Vichar uth raha hai.”"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Pain real ho sakta hai, par jab woh permanent “main” ban jata hai, tab peedit-bhav ka ahankar strong hota hai. Adhyay ise karuna se dekhne ko kehta hai."
+  },
+  {
+    "id": 10,
+    "question": "Special hone ki chah kis ahankar-layer ko dikhati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ki normal thakaan ko."
+      },
+      {
+        "key": "B",
+        "text": "“Main alag, gehra, special ya dusron se aage hoon” wali identity ko."
+      },
+      {
+        "key": "C",
+        "text": "Neend ki zarurat ko."
+      },
+      {
+        "key": "D",
+        "text": "Sadharan bhookh ko."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ahankar sirf chhotapan hi nahi, specialness ki kahani bhi bana sakta hai. Sadhak apni peeda, experience ya sadhana ko “special” bana kar pakad sakta hai."
+  },
+  {
+    "id": 11,
+    "question": "Spiritual ahankar sabse subtle kyun kaha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki woh sirf paisa kamane se juda hai."
+      },
+      {
+        "key": "B",
+        "text": "Kyunki woh dikhai nahi deta isliye hota hi nahi."
+      },
+      {
+        "key": "C",
+        "text": "Kyunki woh sadhana, gyaan, seva, vinamrata aur experience tak ko identity bana sakta hai."
+      },
+      {
+        "key": "D",
+        "text": "Kyunki woh sadhak mein kabhi uthta hi nahi."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Spiritual path par ahankar sacred language pehen sakta hai—“mujhe gyaan hua”, “main saakshi mein hoon”, “main seva karta hoon.” Isliye yeh layer bahut subtle hai."
+  },
+  {
+    "id": 12,
+    "question": "“Main jaanta hoon” ki pakad kis taraf sanket karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gyaan ke complete absence ki taraf."
+      },
+      {
+        "key": "B",
+        "text": "Sharir ki bimari ki taraf."
+      },
+      {
+        "key": "C",
+        "text": "Khana khane ki ichchha ki taraf."
+      },
+      {
+        "key": "D",
+        "text": "Gyaan ko living clarity ke bajay ego-identity bana lene ki taraf."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay batata hai ki “main jaanta hoon” bhi subtle spiritual claim ban sakta hai. Sahi gyaan vinamrata laata hai, superiority nahi."
+  },
+  {
+    "id": 13,
+    "question": "Seva mein ahankar kaise enter kar sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab seva se “main kitna achchha ya mahaan hoon” ki identity banne lage."
+      },
+      {
+        "key": "B",
+        "text": "Jab seva prem se ho."
+      },
+      {
+        "key": "C",
+        "text": "Jab seva mein karuna ho."
+      },
+      {
+        "key": "D",
+        "text": "Jab help chupchaap ki jaaye."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Seva sundar hai, par ahankar seva ko bhi apni image bana sakta hai. Tab seva ke peeche recognition, superiority ya praise ki chah chhup sakti hai."
+  },
+  {
+    "id": 14,
+    "question": "Vinamrata bhi ahankar ka vastra kab ban sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab vyakti sach mein shaant rahe."
+      },
+      {
+        "key": "B",
+        "text": "Jab andar ichchha ho ki log meri vinamrata ko dekhen aur sarahen."
+      },
+      {
+        "key": "C",
+        "text": "Jab vyakti galti accept kare."
+      },
+      {
+        "key": "D",
+        "text": "Jab vyakti kisi ko dhyan se sune."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Banayi hui vinamrata bhi image ban sakti hai. Agar “dekho, main kitna vinamra hoon” ki subtle chah hai, to ahankar ne vinamrata ka vastra pehen liya."
+  },
+  {
+    "id": 15,
+    "question": "Ahankar ko pehchanne ka ek simple sanket kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jahan sharir saans le raha ho."
+      },
+      {
+        "key": "B",
+        "text": "Jahan pakshi bol rahe hon."
+      },
+      {
+        "key": "C",
+        "text": "Jahan “mera samman, meri image, meri kahani” ki pakad bahut strong ho jaye."
+      },
+      {
+        "key": "D",
+        "text": "Jahan paani beh raha ho."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ahankar aksar pakad aur defense mein dikhta hai. Jab “mera” bahut heavy ho jaye, sadhak ko rukkar dekhna chahiye."
+  },
+  {
+    "id": 16,
+    "question": "Adhyay 4 mein ahankar ke prati sahi drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar ko nourish karna."
+      },
+      {
+        "key": "B",
+        "text": "Ahankar ko apna guru banana."
+      },
+      {
+        "key": "C",
+        "text": "Ahankar ko bilkul na dekhna."
+      },
+      {
+        "key": "D",
+        "text": "Na war, na ninda; sirf aware recognition aur saakshi-bhav mein dekhna."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay ahankar ko enemy bana kar ladne ko nahi kehta. Woh kehta hai—ahankar ki layers ko pehchano, bina blame aur bina pakad ke."
+  },
+  {
+    "id": 17,
+    "question": "Rishton mein ahankar kis roop mein jaldi active hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Expectation, control, respect ki demand aur hurt ki story ke roop mein."
+      },
+      {
+        "key": "B",
+        "text": "Sirf mausam dekhne mein."
+      },
+      {
+        "key": "C",
+        "text": "Sirf chalne mein."
+      },
+      {
+        "key": "D",
+        "text": "Sirf kitab rakhne mein."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Close relationships mein “mujhe samjho”, “meri baat maano”, “mujhe importance do” jaisi pakad jaldi uthti hai. Yahi relationships mein ahankar ki layer hai."
+  },
+  {
+    "id": 18,
+    "question": "Kaam aur achievement ke field mein ahankar kaise dikhta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kaam ko imaandari se karne mein."
+      },
+      {
+        "key": "B",
+        "text": "Success ya failure ko apni poori identity bana lene mein."
+      },
+      {
+        "key": "C",
+        "text": "Seekhne ki ichchha rakhne mein."
+      },
+      {
+        "key": "D",
+        "text": "Galti sudharne mein."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Kaam karna problem nahi hai. Problem tab hai jab result se “main successful hoon” ya “main failure hoon” wali final identity ban jaati hai."
+  },
+  {
+    "id": 19,
+    "question": "Comparison ka jaal ahankar ko kaise strong karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Comparison hamesha karuna badhata hai."
+      },
+      {
+        "key": "B",
+        "text": "Comparison mann ko permanent stable kar deta hai."
+      },
+      {
+        "key": "C",
+        "text": "Dusron se aage-peeche dekhkar “main kam hoon” ya “main bada hoon” ki identity banata hai."
+      },
+      {
+        "key": "D",
+        "text": "Comparison se sharir amar ho jata hai."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Comparison mein experiencer apni value ko dusron ki achievement se naapta hai. Isse ahankar chhotapan ya superiority, dono roop mein strong ho sakta hai."
+  },
+  {
+    "id": 20,
+    "question": "Ahankar ki layer dikhne par sadhak ko sabse pehle kya karna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turant khud ko blame karna."
+      },
+      {
+        "key": "B",
+        "text": "Samne wale ko blame karna."
+      },
+      {
+        "key": "C",
+        "text": "Sadhana chhod dena."
+      },
+      {
+        "key": "D",
+        "text": "Rukkar dekhna ki abhi kaunsi identity uth rahi hai."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Pehli zarurat awareness hai. “Abhi image ki chinta uth rahi hai”, “abhi samman ki chah hai”—aise dekhna hi layer ko loose karne ki shuruaat hai."
+  },
+  {
+    "id": 21,
+    "question": "“Ahankar bura hai” wali rigid dharna se kya danger hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhak “main ahankar-rahit hoon” ki nayi identity bana sakta hai."
+      },
+      {
+        "key": "B",
+        "text": "Sadhak turant free ho jata hai."
+      },
+      {
+        "key": "C",
+        "text": "Mann hamesha shaant ho jata hai."
+      },
+      {
+        "key": "D",
+        "text": "Sansar samaapt ho jata hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Ahankar ko bura kehkar dabane se bhi subtle ego ban sakta hai. “Main dusron se zyada ego-less hoon” bhi ek identity hai."
+  },
+  {
+    "id": 22,
+    "question": "Spiritual experience ko ahankar kab bana leta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab experience ko shaant hokar jaana jaye."
+      },
+      {
+        "key": "B",
+        "text": "Jab experience ko “meri achievement” aur “meri specialness” bana liya jaye."
+      },
+      {
+        "key": "C",
+        "text": "Jab experience aaye aur chala jaye."
+      },
+      {
+        "key": "D",
+        "text": "Jab experience se vinamrata badhe."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Experience aana problem nahi hai. Problem tab hai jab sadhak kahe—“mera experience bada hai, isliye main special hoon.” Tab experience identity ban jata hai."
+  },
+  {
+    "id": 23,
+    "question": "Adhyay 4 mein “spiritual image” ka kya arth hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ki normal shadow."
+      },
+      {
+        "key": "B",
+        "text": "Dhyan ke liye baithne ki jagah."
+      },
+      {
+        "key": "C",
+        "text": "Dusron ki nazar mein gehra, aware, gyani ya pavitra dikhne ki chah."
+      },
+      {
+        "key": "D",
+        "text": "Kisi book ka cover."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sadhak kabhi-kabhi sach dekhne ke bajay spiritual dikhne mein ulajh jata hai. Yahi spiritual image ki layer hai."
+  },
+  {
+    "id": 24,
+    "question": "“Mujhe gyaan hua” vaakya kab savdhani chahta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jab isse vinamrata aaye."
+      },
+      {
+        "key": "B",
+        "text": "Jab isse karuna badhe."
+      },
+      {
+        "key": "C",
+        "text": "Jab isse pakad ghate."
+      },
+      {
+        "key": "D",
+        "text": "Jab yeh living understanding ke bajay experiencer ki achievement aur claim ban jaye."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Gyaan ki glimpse useful hai, par “mujhe gyaan hua” ko fixed identity banana ahankar ki subtle chaal hai. Adhyay ise dekhne ko kehta hai."
+  },
+  {
+    "id": 25,
+    "question": "Ahankar ki layers ko dekhne se kya phal ho sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pakad dheeli hoti hai aur sadhak zyada simple aur honest hota hai."
+      },
+      {
+        "key": "B",
+        "text": "Sadhak dusron se war karne lagta hai."
+      },
+      {
+        "key": "C",
+        "text": "Sadhak sharir se hate karne lagta hai."
+      },
+      {
+        "key": "D",
+        "text": "Sadhak har experience kho deta hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Ahankar ko pehchanna self-blame nahi hai. Yeh pakad ko halka karta hai aur sadhak mein simplicity, humility aur clarity laata hai."
+  },
+  {
+    "id": 26,
+    "question": "“Meri kahani” se free hone ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Past ko jhooth declare karna."
+      },
+      {
+        "key": "B",
+        "text": "Events ka samman rakhte hue unhe final identity na banana."
+      },
+      {
+        "key": "C",
+        "text": "Memory ko zabardasti mita dena."
+      },
+      {
+        "key": "D",
+        "text": "Dukhi vyakti ko ignore karna."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Life events hui hongi aur unka impact bhi hoga. Lekin unhe permanent “main” bana lena bondage hai; unhe dekhna aur halka karna freedom ki direction hai."
+  },
+  {
+    "id": 27,
+    "question": "Ahankar ki layer pehchanne mein sharir ki reaction kaise help kar sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir hamesha jhooth bolta hai."
+      },
+      {
+        "key": "B",
+        "text": "Sharir mein koi signal nahi aata."
+      },
+      {
+        "key": "C",
+        "text": "Kasav, bechaini, defense ya contraction dikha sakte hain ki koi identity threat feel kar rahi hai."
+      },
+      {
+        "key": "D",
+        "text": "Sharir sirf khane ke liye hai."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jab image ya respect par chot lagti hai, sharir mein kasav ya heat aa sakti hai. Yeh signal ho sakta hai ki ego-layer active hai."
+  },
+  {
+    "id": 28,
+    "question": "Sadhak ko apni bhool dikhne par kya bhav rakhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Harsh self-hatred."
+      },
+      {
+        "key": "B",
+        "text": "Dusron par blame."
+      },
+      {
+        "key": "C",
+        "text": "Turant spiritual declaration."
+      },
+      {
+        "key": "D",
+        "text": "Komal imaandari—na blame, na defense."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay ka bhav punishment wala nahi hai. Bhool dikhna kripa hai; use honesty aur compassion se dekhna hai."
+  },
+  {
+    "id": 29,
+    "question": "Ahankar ki layers ko dekhne mein saakshi-bhav ki role kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi layers ko jaanta hai, unse ladta ya unse identity nahi banata."
+      },
+      {
+        "key": "B",
+        "text": "Saakshi ahankar ko badhata hai."
+      },
+      {
+        "key": "C",
+        "text": "Saakshi har role destroy kar deta hai."
+      },
+      {
+        "key": "D",
+        "text": "Saakshi sirf ek thought hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi-bhav mein sadhak dekhta hai ki ahankar ki layer uth rahi hai. Yeh dekhna layer se distance aur clarity deta hai."
+  },
+  {
+    "id": 30,
+    "question": "Role nibhana aur role ban jana mein kya antar hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono bilkul same hain."
+      },
+      {
+        "key": "B",
+        "text": "Role nibhana vyavahar hai; role ban jana ego-identity hai."
+      },
+      {
+        "key": "C",
+        "text": "Role nibhana hamesha galat hai."
+      },
+      {
+        "key": "D",
+        "text": "Role ban jana hi mukti hai."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Mata, pita, teacher ya sadhak jaise roles vyavahar mein zaruri hain. Par jab wahi final “main” ban jayein, ahankar ki pakad ban jaati hai."
+  },
+  {
+    "id": 31,
+    "question": "Adhyay 4 ke anusaar criticism sadhak ke liye kya opportunity ban sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turant badla lene ka opportunity."
+      },
+      {
+        "key": "B",
+        "text": "Apni superiority prove karne ka opportunity."
+      },
+      {
+        "key": "C",
+        "text": "Image, respect aur defense ki layers ko dekhne ka opportunity."
+      },
+      {
+        "key": "D",
+        "text": "Sadhana chhodne ka opportunity."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Criticism chot de sakta hai, par aware sadhak dekh sakta hai ki kaunsi identity defense mein uth rahi hai. Isse ego-layers clear hoti hain."
+  },
+  {
+    "id": 32,
+    "question": "Praise ke time bhi ahankar kyun dekha jana chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki praise hamesha jhooth hoti hai."
+      },
+      {
+        "key": "B",
+        "text": "Kyunki khushi lena galat hai."
+      },
+      {
+        "key": "C",
+        "text": "Kyunki logon se milna galat hai."
+      },
+      {
+        "key": "D",
+        "text": "Kyunki praise se “main special hoon” ki identity strong ho sakti hai."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Praise sundar ho sakti hai, par agar usse garv aur specialness ki pakad banti hai, to ahankar active hai. Anand ho, par identity na bane."
+  },
+  {
+    "id": 33,
+    "question": "Adhyay 4 mein spiritual path ki ek badi savdhani kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana, gyaan aur experience ko nayi identity na bana lena."
+      },
+      {
+        "key": "B",
+        "text": "Kabhi practice na karna."
+      },
+      {
+        "key": "C",
+        "text": "Shabdon ko poori tarah chhod dena."
+      },
+      {
+        "key": "D",
+        "text": "Sharir ko punish karna."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay batata hai ki spiritual path par bhi ahankar subtle roop se laut sakta hai. Isliye sadhana karni hai, par sadhak ki image mein kaid nahi hona hai."
+  },
+  {
+    "id": 34,
+    "question": "“Main dusron se zyada aware hoon” kis layer ka sanket ho sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ki bhookh ka."
+      },
+      {
+        "key": "B",
+        "text": "Spiritual ego aur comparison ki layer ka."
+      },
+      {
+        "key": "C",
+        "text": "Normal neend ka."
+      },
+      {
+        "key": "D",
+        "text": "Thoughts ke absence ka."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Awareness ki samajh agar superiority ban jaye, to woh spiritual ego hai. Sachi awareness vinamrata laati hai, comparison nahi."
+  },
+  {
+    "id": 35,
+    "question": "Ahankar ko dekhne ka practice kis tarah karna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hate aur fear se."
+      },
+      {
+        "key": "B",
+        "text": "Display aur announcement se."
+      },
+      {
+        "key": "C",
+        "text": "Halka, imaandar aur observation ke roop mein."
+      },
+      {
+        "key": "D",
+        "text": "Dusron ko blame karke."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ahankar ki layers ko dekhna self-punishment nahi hai. Ise simple, gentle aur honest observation ki tarah karna hai."
+  },
+  {
+    "id": 36,
+    "question": "Kisi intense event ke baad kaunsa prashn useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Main dusron ko kaise haraun?"
+      },
+      {
+        "key": "B",
+        "text": "Kise blame doon?"
+      },
+      {
+        "key": "C",
+        "text": "Main apni image kaise sajaun?"
+      },
+      {
+        "key": "D",
+        "text": "Abhi kaunsa “main” hurt ya defense mein hai?"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Yeh prashn dhyan ko event se identity-layer ki taraf le jata hai. Kaunsa “main” active hai, yahi inquiry ka center hai."
+  },
+  {
+    "id": 37,
+    "question": "Adhyay 4 mein “layers” shabd ka sanket kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar ek hi form mein nahi, kai subtle identities mein appear hota hai."
+      },
+      {
+        "key": "B",
+        "text": "Ahankar sirf skin ki layer hai."
+      },
+      {
+        "key": "C",
+        "text": "Sadhana sirf kapdon se judi hai."
+      },
+      {
+        "key": "D",
+        "text": "Jeevan mein koi identity nahi hoti."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Ahankar sharir, mann, role, image, kahani, victimhood, specialness aur spirituality tak mein layers ki tarah appear ho sakta hai."
+  },
+  {
+    "id": 38,
+    "question": "Ahankar dekhkar “main bahut bura hoon” kehna kis baat ka sanket ho sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Perfect saakshi-bhav aa gaya."
+      },
+      {
+        "key": "B",
+        "text": "Guilt ki nayi identity ban rahi hai."
+      },
+      {
+        "key": "C",
+        "text": "Ahankar samaapt ho gaya."
+      },
+      {
+        "key": "D",
+        "text": "Sharir amar ho gaya."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ahankar dikhne par self-blame bhi nayi story ban sakta hai. Sadhak ko guilt mein nahi, clarity mein rehna hai."
+  },
+  {
+    "id": 39,
+    "question": "Sahi gyaan ka natural fruit kya bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Superiority aur hardness."
+      },
+      {
+        "key": "B",
+        "text": "Dusron ki ninda."
+      },
+      {
+        "key": "C",
+        "text": "Simplicity, humility, compassion aur pakad ka halka hona."
+      },
+      {
+        "key": "D",
+        "text": "Apni image ka expansion."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Agar samajh gehri ho rahi hai to ahankar halka hona chahiye. Sacha gyaan life mein simplicity aur compassion ke roop mein dikhta hai."
+  },
+  {
+    "id": 40,
+    "question": "Ahankar ki layers ko dekhne mein neti-neti ki role kya ho sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har experience ko pakadna."
+      },
+      {
+        "key": "B",
+        "text": "Sharir ko destroy karna."
+      },
+      {
+        "key": "C",
+        "text": "Dusron se door bhaagna."
+      },
+      {
+        "key": "D",
+        "text": "Jo identity jaani ja rahi hai, use final “main” na maan-ne mein help karna."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Neti-neti kehta hai—ye role, kahani, image ya experience jaani ja rahi hai; isliye yeh final main nahi. Isse ego ki pakad dheeli hoti hai."
+  },
+  {
+    "id": 41,
+    "question": "Kis sentence mein ahankar ki subtle pakad sabse clear hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Meri sadhana sabse gehri hai, log ise samajh nahi sakte.”"
+      },
+      {
+        "key": "B",
+        "text": "“Aaj mann mein dukh uth raha hai.”"
+      },
+      {
+        "key": "C",
+        "text": "“Sharir ko rest chahiye.”"
+      },
+      {
+        "key": "D",
+        "text": "“Vichar aa raha hai aur ja raha hai.”"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Is sentence mein sadhana ko specialness aur separation ki identity bana diya gaya hai. Yeh spiritual ego ki clear layer hai."
+  },
+  {
+    "id": 42,
+    "question": "Adhyay 4 sadhak ko ahankar ke baare mein kya main reminder deta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar ko chhupana hai."
+      },
+      {
+        "key": "B",
+        "text": "Ahankar ko pehchanna hai, usse nayi identity nahi banani hai."
+      },
+      {
+        "key": "C",
+        "text": "Ahankar ko sajana hai."
+      },
+      {
+        "key": "D",
+        "text": "Ahankar ko society mein prove karna hai."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ahankar dikhna sadhana ka part hai. Lekin “main ahankar pehchanta hoon” ko bhi garv na banne dena hi is adhyay ki gehri savdhani hai."
+  },
+  {
+    "id": 43,
+    "question": "Agar koi sadhak kahe “mera ahankar ab samaapt ho gaya”, to kaunsi savdhani chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh hamesha final truth hai."
+      },
+      {
+        "key": "B",
+        "text": "Yeh sharir ki zarurat hai."
+      },
+      {
+        "key": "C",
+        "text": "Yeh claim khud ek subtle ahankar ho sakta hai."
+      },
+      {
+        "key": "D",
+        "text": "Yeh sadhana chhodne ka sanket hai."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ahankar apne khatm hone ka claim bhi kar sakta hai. Isliye adhyay claims ke bajay saakshi-bhav aur vinamrata ki direction deta hai."
+  },
+  {
+    "id": 44,
+    "question": "Dusron ke ahankar ko dekhne se pehle sadhak ko kya dekhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ki sabhi galtiyan."
+      },
+      {
+        "key": "B",
+        "text": "Kaun zyada agyani hai."
+      },
+      {
+        "key": "C",
+        "text": "Kise sudharna hai."
+      },
+      {
+        "key": "D",
+        "text": "Apne andar uthti identity, reaction aur defense ki layers."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Yeh adhyay self-observation par centered hai. Dusron ki layers mein ulajhne se pehle sadhak ko apne andar uthti pakad ko dekhna hai."
+  },
+  {
+    "id": 45,
+    "question": "Ahankar ki layers ki pehchan relationships ko kaise badal sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pakad, control aur blame kam hokar dialogue aur karuna badh sakte hain."
+      },
+      {
+        "key": "B",
+        "text": "Relationships hamesha end ho jaate hain."
+      },
+      {
+        "key": "C",
+        "text": "Prem impossible ho jata hai."
+      },
+      {
+        "key": "D",
+        "text": "Har vyakti enemy dikhne lagta hai."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab sadhak apni expectation, hurt aur control ko dekhta hai, to relationships mein zyada honesty aur compassion aati hai. Saakshi-bhav distance nahi, clarity deta hai."
+  },
+  {
+    "id": 46,
+    "question": "Adhyay 4 ki teaching work mein kaise useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhak ko kaam chhodna chahiye."
+      },
+      {
+        "key": "B",
+        "text": "Sadhak result se identity banaye bina imaandari se karma kar sakta hai."
+      },
+      {
+        "key": "C",
+        "text": "Result ko hi atma maan-na chahiye."
+      },
+      {
+        "key": "D",
+        "text": "Comparison ko badhana chahiye."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ahankar kaam ke result ko “main” bana deta hai. Par layer dikhne par sadhak mehnat karta hai, seekhta hai, par success-failure se final identity nahi banata."
+  },
+  {
+    "id": 47,
+    "question": "Kis option mein ahankar ki layer nahi balki saakshi-bhav zyada dikh raha hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Mujhe hi hamesha sahi maana jaye.”"
+      },
+      {
+        "key": "B",
+        "text": "“Meri image kisi bhi tarah bachni chahiye.”"
+      },
+      {
+        "key": "C",
+        "text": "“Mere andar samman ki chah uth rahi hai, ise dekha ja raha hai.”"
+      },
+      {
+        "key": "D",
+        "text": "“Main sabse zyada spiritual hoon.”"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Is sentence mein sadhak apni chah ko jaan raha hai. Woh use daba ya pakad nahi raha; yeh saakshi-bhav ki direction hai."
+  },
+  {
+    "id": 48,
+    "question": "Adhyay 4 ka main practice kis par centered hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kisi mantra ko mechanical repeat karna."
+      },
+      {
+        "key": "B",
+        "text": "Dusron ko sudharna."
+      },
+      {
+        "key": "C",
+        "text": "Sansar ko blame karna."
+      },
+      {
+        "key": "D",
+        "text": "Kisi event mein uthi identity ko dekhna—kaunsa “main” active hua?"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay sadhak ko apne andar uthe ego-mechanism ko dekhne ki teaching deta hai. Event ke peeche active identity ko dekhna hi practice ka center hai."
+  },
+  {
+    "id": 49,
+    "question": "Ahankar ki layer dekhne ke baad sadhak ko kis direction mein lautna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi ki shaant jaanne wali upasthiti mein."
+      },
+      {
+        "key": "B",
+        "text": "Nayi kahani banane mein."
+      },
+      {
+        "key": "C",
+        "text": "Khud ko blame karne mein."
+      },
+      {
+        "key": "D",
+        "text": "Dusron se comparison karne mein."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Layer dikhne ke baad aim usmein ulajhna nahi hai. Sadhak identity ko dekhkar saakshi-bhav mein lautta hai, jahan pakad halki hoti hai."
+  },
+  {
+    "id": 50,
+    "question": "Adhyay 4 ka final saar kis sentence mein sabse theek aata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar sirf ghamand hai aur dusron mein hota hai."
+      },
+      {
+        "key": "B",
+        "text": "Ahankar kai layers mein uthta hai; use loving clarity se dekhkar pakad halki karni hai."
+      },
+      {
+        "key": "C",
+        "text": "Ahankar se war karke turant jeetna hai."
+      },
+      {
+        "key": "D",
+        "text": "Ahankar ko spiritual image mein badal dena hai."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay ka saar hai ki ahankar bahut subtle aur multi-layered hai. Usse war nahi, balki aware seeing aur saakshi-bhav mein lautna hi raasta hai."
+  }
+]

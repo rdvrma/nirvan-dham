@@ -1,1202 +1,1202 @@
 [
   {
-    "id": 501,
-    "question": "What is the primary meaning of Neti-Neti as presented in the chapter?",
+    "id": 1,
+    "question": "What is the core meaning of “Neti-Neti” in Chapter 5?",
     "options": [
       {
         "key": "A",
-        "text": "The process of recognizing what one is not, to clarify what one is."
+        "text": "Not this, not this — what changes and is known is not the final “I”"
       },
       {
         "key": "B",
-        "text": "A complete rejection of all worldly experiences and attachments."
+        "text": "To treat every thought as final truth"
       },
       {
         "key": "C",
-        "text": "A method to suppress emotions and desires forcefully."
+        "text": "To run away from responsibility"
       },
       {
         "key": "D",
-        "text": "An intellectual understanding of the illusory nature of reality."
+        "text": "To suppress emotions"
       }
     ],
     "correct": "A",
-    "explanation": "The chapter states, 'Neti-Neti means clearly recognizing what I am not, so that what I am becomes clear by itself.' This highlights that Neti-Neti is a process of discernment, not rejection or suppression, aimed at revealing one's true nature."
+    "explanation": "Neti-Neti is not harsh rejection. It is the art of not taking changing and known identities as the final self."
   },
   {
-    "id": 502,
-    "question": "According to the text, how should ego be addressed in the spiritual journey?",
+    "id": 2,
+    "question": "What is the purpose of Neti-Neti?",
     "options": [
       {
         "key": "A",
-        "text": "It is to be seen in witness-consciousness and gently understood."
+        "text": "To prove others wrong"
       },
       {
         "key": "B",
-        "text": "It must be attacked and destroyed through rigorous discipline."
+        "text": "To loosen mistaken identity and return toward the witness"
       },
       {
         "key": "C",
-        "text": "It should be ignored and left to fade away on its own."
+        "text": "To announce one’s spiritual experience"
       },
       {
         "key": "D",
-        "text": "It should be identified with to understand its full power."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter explicitly states, 'We also saw that ego is not to be attacked. It is not to be killed by force. It is to be seen in witness-consciousness.' This emphasizes a gentle, observational approach rather than aggressive confrontation."
-  },
-  {
-    "id": 503,
-    "question": "When a seeker says, 'I am not the body,' what does the chapter clarify about the body's role?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The body is an instrument of life that needs care and respect."
-      },
-      {
-        "key": "B",
-        "text": "The body becomes irrelevant and can be neglected."
-      },
-      {
-        "key": "C",
-        "text": "The body is an illusion that must be transcended immediately."
-      },
-      {
-        "key": "D",
-        "text": "The body's experiences are entirely separate from the seeker's reality."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text clarifies, 'The body is an instrument of life. It needs food, rest, care, and treatment. This path too is being walked through the body.' This shows that acknowledging 'I am not the body' does not negate the body's importance as a vehicle for the spiritual journey."
-  },
-  {
-    "id": 504,
-    "question": "What is a common misunderstanding of Neti-Neti mentioned in the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "That it requires the complete suppression of all thoughts and emotions."
-      },
-      {
-        "key": "B",
-        "text": "That it encourages embracing all experiences with equal intensity."
-      },
-      {
-        "key": "C",
-        "text": "That it leads to a deeper understanding of one's roles in life."
-      },
-      {
-        "key": "D",
-        "text": "That it is a method for achieving spiritual enlightenment quickly."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter warns against this misunderstanding: 'Many seekers misunderstand Neti-Neti as harsh denial. They think everything must be rejected, the body must be ignored, the mind must be stopped, emotions must be avoided...' This highlights that Neti-Neti is not about forceful suppression."
-  },
-  {
-    "id": 505,
-    "question": "The chapter uses the analogy of cleaning a cupboard to illustrate Neti-Neti. What does this analogy emphasize?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Placing each object in its right place without attachment or struggle."
-      },
-      {
-        "key": "B",
-        "text": "The need to discard all old possessions without exception."
-      },
-      {
-        "key": "C",
-        "text": "The process of fighting against unwanted items in the cupboard."
-      },
-      {
-        "key": "D",
-        "text": "The importance of keeping the cupboard perfectly organized at all times."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The analogy explains, 'You look at each object... You do not fight the objects. You simply know what belongs where. In the same way, place the body as body, the mind as mind...' This emphasizes discerning placement rather than fighting or discarding."
-  },
-  {
-    "id": 506,
-    "question": "What is presented as a simple test to discern one's final nature?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Whatever changes cannot be the final nature."
-      },
-      {
-        "key": "B",
-        "text": "Whatever can be controlled is the final nature."
-      },
-      {
-        "key": "C",
-        "text": "Whatever is unique and special is the final nature."
-      },
-      {
-        "key": "D",
-        "text": "Whatever brings pleasure is the final nature."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text provides this test: 'A simple test of Neti-Neti is this: whatever changes cannot be my final nature. The body changes, mind changes, emotions change...' This is a core principle for distinguishing the impermanent from the permanent."
-  },
-  {
-    "id": 507,
-    "question": "The heart of Neti-Neti practice is described as the seeker asking:",
-    "options": [
-      {
-        "key": "A",
-        "text": "“Am I what is known, or am I that which knows it?”"
-      },
-      {
-        "key": "B",
-        "text": "“Am I the one who is changing, or the one who is unchanging?”"
-      },
-      {
-        "key": "C",
-        "text": "“Am I the body, or the mind?”"
-      },
-      {
-        "key": "D",
-        "text": "“Am I the experience, or the one who is experiencing?”"
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter states, 'The seeker slowly asks: am I what is known, or am I that which knows it? This question is the heart of Neti-Neti.' This points to the distinction between the object of knowledge and the subject of knowing."
-  },
-  {
-    "id": 508,
-    "question": "In the clothes analogy, what does mistaking clothes for the self lead to?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Changing one's identity with each new outfit worn."
-      },
-      {
-        "key": "B",
-        "text": "A stable sense of identity regardless of outward appearance."
-      },
-      {
-        "key": "C",
-        "text": "The realization that clothes are merely external coverings."
-      },
-      {
-        "key": "D",
-        "text": "A deeper appreciation for fashion and style."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The analogy explains, 'If a person mistakes clothes for self, he changes with each outfit. Good clothes - “I am good.” Old clothes - “I am less.”' This illustrates how identifying with changing external factors leads to a fluctuating sense of self."
-  },
-  {
-    "id": 509,
-    "question": "The river analogy, with floating objects, is used to represent:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The constant flow of thoughts and emotions."
-      },
-      {
-        "key": "B",
-        "text": "The permanence of life's challenges."
-      },
-      {
-        "key": "C",
-        "text": "The stability of the inner self amidst external changes."
-      },
-      {
-        "key": "D",
-        "text": "The importance of grasping opportunities as they arise."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text states, 'Thoughts and emotions flow like that river. One thought comes... Another comes...' The analogy shows how grasping these fleeting mental phenomena leads to restlessness, mirroring the Neti-Neti approach of not identifying with them."
-  },
-  {
-    "id": 510,
-    "question": "What is the recommended tone when applying Neti-Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Tender and loving, acknowledging the role of each aspect of experience."
-      },
-      {
-        "key": "B",
-        "text": "Harsh and critical, to break down false identities quickly."
-      },
-      {
-        "key": "C",
-        "text": "Indifferent and detached, as if the experiences are unreal."
-      },
-      {
-        "key": "D",
-        "text": "Analytical and intellectual, focusing on logical distinctions."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter emphasizes, 'Neti-Neti must be tender. When you say, “I am not the body,” do not be angry with the body... When you say, “I am not the mind,” do not blame the mind.' This highlights a compassionate approach."
-  },
-  {
-    "id": 511,
-    "question": "How are Neti-Neti and witness-consciousness related according to the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "They are not separate paths; Neti-Neti deepens the seeing of witness-consciousness."
-      },
-      {
-        "key": "B",
-        "text": "They are separate paths that eventually converge."
-      },
-      {
-        "key": "C",
-        "text": "Witness-consciousness is a prerequisite for Neti-Neti."
-      },
-      {
-        "key": "D",
-        "text": "Neti-Neti replaces witness-consciousness once understood."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text states, 'Neti-Neti and witness-consciousness are not separate paths. Witness-consciousness says: see what is arising. Neti-Neti says: whatever is seen is not the final “I.”' This shows they are complementary aspects of the same practice."
-  },
-  {
-    "id": 512,
-    "question": "During the practice of Neti-Neti, if pain arises in the body, what is the recommended approach?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To acknowledge the pain, see it as a body state, and state 'Neti'."
-      },
-      {
-        "key": "B",
-        "text": "To immediately suppress the pain as an illusion."
-      },
-      {
-        "key": "C",
-        "text": "To call the pain false and ignore its sensations."
-      },
-      {
-        "key": "D",
-        "text": "To seek spiritual words to cover up the physical discomfort."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter advises, 'Pain is there, and it must be known. See: “Pain is in this part of the body... All this is being known.” Then say gently: “This is a state of the body. This is not my final nature. Neti.”' This advocates for acknowledging and discerning, not denying."
-  },
-  {
-    "id": 513,
-    "question": "What is the core issue when applying Neti to the mind, according to the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The problem is identity with thought, not the thought itself."
-      },
-      {
-        "key": "B",
-        "text": "The sheer volume of thoughts that arise."
-      },
-      {
-        "key": "C",
-        "text": "The mind's tendency to create new spiritual identities."
-      },
-      {
-        "key": "D",
-        "text": "The need to stop all mental activity completely."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text explains, 'The problem is not thought. The problem is identity with thought. A thought arises, “I am afraid.” Identity says, “I am fear.” Neti sees the thought and makes identity light.' This points to the identification as the key issue."
-  },
-  {
-    "id": 514,
-    "question": "When applying Neti to emotions, what is the advice regarding their intensity?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Emotions should be immediately suppressed to maintain clarity."
-      },
-      {
-        "key": "B",
-        "text": "Emotions should be given space, named, and seen as experiences that come and go."
-      },
-      {
-        "key": "C",
-        "text": "Emotions should be denied as they are not part of the true self."
-      },
-      {
-        "key": "D",
-        "text": "Emotions should be grasped and held onto as they arise."
+        "text": "To abandon all roles forever"
       }
     ],
     "correct": "B",
-    "explanation": "The chapter advises, 'Do not deny emotion. If sorrow is arising, it is there... Respect it; do not suppress it. But see it. Emotion comes, remains, changes form, decreases, and leaves. Whatever comes and goes cannot be the final “I.”' This encourages observation and acceptance."
+    "explanation": "The chapter presents Neti-Neti as a cleansing of identity. It does not reject life; it loosens grasping."
   },
   {
-    "id": 515,
-    "question": "Why is it important to apply Neti not only to pain but also to pleasure?",
+    "id": 3,
+    "question": "What does it mean to apply Neti-Neti to the body?",
     "options": [
       {
         "key": "A",
-        "text": "To ensure that pleasure is never experienced."
+        "text": "To turn practice into a burden"
       },
       {
         "key": "B",
-        "text": "To loosen grasping and attachment, just as Neti with pain loosens identification."
+        "text": "To call life meaningless"
       },
       {
         "key": "C",
-        "text": "To avoid the spiritual ego that can arise from positive experiences."
+        "text": "To care for the body while not taking it as the final “I”"
       },
       {
         "key": "D",
-        "text": "Because pleasure is a more potent form of illusion than pain."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text states, 'The seeker often applies Neti to pain but forgets to apply it to pleasure... Joy comes and he grasps it: “This is me.” This too is identity. ... Neti with pain loosens identification. Neti with pleasure loosens grasping.' This highlights the dual role of Neti in reducing both identification and grasping."
-  },
-  {
-    "id": 516,
-    "question": "What is the consequence of applying Neti without compassion?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It leads to immediate spiritual realization."
-      },
-      {
-        "key": "B",
-        "text": "It becomes a dry and ineffective practice."
-      },
-      {
-        "key": "C",
-        "text": "It strengthens the ego's defenses."
-      },
-      {
-        "key": "D",
-        "text": "It causes the seeker to withdraw from the world."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter notes, 'Without compassion, Neti becomes dry. With compassion, Neti becomes healing.' This indicates that compassion is essential for Neti to be a transformative and gentle practice."
-  },
-  {
-    "id": 517,
-    "question": "When applying Neti to roles, what is the danger to be aware of?",
-    "options": [
-      {
-        "key": "A",
-        "text": "That roles are too insignificant to identify with."
-      },
-      {
-        "key": "B",
-        "text": "That the role can become a final identity, leading to ego's grip."
-      },
-      {
-        "key": "C",
-        "text": "That roles will be completely erased from one's life."
-      },
-      {
-        "key": "D",
-        "text": "That playing roles prevents spiritual growth."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explains, 'But when any of these becomes the final “I,” the grip of ego returns.' It further elaborates that 'If the father-role is present, play it with love and clarity. But if hardness arises... role is becoming identity.' This shows the danger of mistaking the role for the true self."
-  },
-  {
-    "id": 518,
-    "question": "What is the nature of 'image' as discussed in the context of Neti-Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It is the true essence of the self, perceived by others."
-      },
-      {
-        "key": "B",
-        "text": "It is how one appears in the eyes of others, subject to change."
-      },
-      {
-        "key": "C",
-        "text": "It is a stable and unchanging perception of oneself."
-      },
-      {
-        "key": "D",
-        "text": "It is an internal construct that has no external impact."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter defines image as 'how I appear in the eyes of others... Image is a perception in other minds. It changes.' It warns against taking this changing perception as one's final identity."
-  },
-  {
-    "id": 519,
-    "question": "How does Neti-Neti relate to a person's life story?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It requires the seeker to forget their entire past."
-      },
-      {
-        "key": "B",
-        "text": "It encourages seeing the story as an experience, not the final nature of the self."
-      },
-      {
-        "key": "C",
-        "text": "It asks the seeker to identify completely with their story to understand it."
-      },
-      {
-        "key": "D",
-        "text": "It dismisses the life story as irrelevant to spiritual growth."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text states, 'Neti does not call the story false. It only asks: are you the story?... Then gently: “Neti. This story is not my final nature.”' This shows that the story is acknowledged but not identified with as the ultimate self."
-  },
-  {
-    "id": 520,
-    "question": "What is the 'special-story' that Neti-Neti addresses?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A story about overcoming immense hardship."
-      },
-      {
-        "key": "B",
-        "text": "A narrative of being unique, different, or having great spiritual experiences."
-      },
-      {
-        "key": "C",
-        "text": "A fabricated tale designed to impress others."
-      },
-      {
-        "key": "D",
-        "text": "The story of one's own spiritual awakening process."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter describes the 'special-story' as '“I am different,” “My practice is unique,” “My experience is great.” This may give pleasure, but also creates separation.' Neti-Neti helps to lighten this desire for specialness."
-  },
-  {
-    "id": 521,
-    "question": "The subtlest field where ego can grasp identity is:",
-    "options": [
-      {
-        "key": "A",
-        "text": "Physical sensations and bodily needs."
-      },
-      {
-        "key": "B",
-        "text": "Spiritual identity, including practice and experience."
-      },
-      {
-        "key": "C",
-        "text": "Emotional attachments and reactions."
-      },
-      {
-        "key": "D",
-        "text": "Social roles and relationships."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text identifies 'spiritual identity' as the 'subtlest field,' noting that 'Sadhana, knowledge, experience, service, humility, and awareness can all be grasped by ego.' It then advises applying Neti even to statements like 'I am the witness.'"
-  },
-  {
-    "id": 522,
-    "question": "What is the significance of 'I am the witness' in the context of Neti-Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It is the ultimate realization and the final identity."
-      },
-      {
-        "key": "B",
-        "text": "It is a pointer, not a final object, and can become a spiritual ego."
-      },
-      {
-        "key": "C",
-        "text": "It is a new role that the ego can easily grasp."
-      },
-      {
-        "key": "D",
-        "text": "It is a concept that Neti-Neti aims to dissolve completely."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter states, 'Even “I am the witness” is a pointer, not a final object. If the mind turns it into a new spiritual ego, that thought too must be seen.' This highlights that even this statement needs to be viewed with discernment."
-  },
-  {
-    "id": 523,
-    "question": "What natural quality arises when Neti deepens into subtler identities like role, image, and story?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Increased pride in one's spiritual progress."
-      },
-      {
-        "key": "B",
-        "text": "Natural humility and a greater capacity to listen and learn."
-      },
-      {
-        "key": "C",
-        "text": "A tendency to judge others more harshly."
-      },
-      {
-        "key": "D",
-        "text": "A desire to escape from worldly responsibilities."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explains that 'When Neti deepens into role, image, story, and spiritual identity, natural humility arises. The seeker sees how many layers were being called “I.” The grip loosens.' This leads to greater openness and less judgment."
-  },
-  {
-    "id": 524,
-    "question": "When a seeker questions, 'If I am not body, mind, emotion, role, story, image, or spiritual identity, then what am I?', what is the chapter's response?",
-    "options": [
-      {
-        "key": "A",
-        "text": "That the seeker will disappear into nothingness."
-      },
-      {
-        "key": "B",
-        "text": "That this question creates fear because the 'I' seems to be made of these things."
-      },
-      {
-        "key": "C",
-        "text": "That the answer is a new, more profound spiritual identity."
-      },
-      {
-        "key": "D",
-        "text": "That the seeker must immediately find a new object of identification."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter addresses this directly: 'This question may create fear. Until now, the “I” seemed to be made of these things. One by one they are being seen. So the mind asks, “What remains?”' This acknowledges the fear that arises from letting go of known identities."
-  },
-  {
-    "id": 525,
-    "question": "What does Neti-Neti aim to reveal, rather than erase?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A new, more complex spiritual ego."
-      },
-      {
-        "key": "B",
-        "text": "What was always present but obscured by false identity."
-      },
-      {
-        "key": "C",
-        "text": "The absolute emptiness of existence."
-      },
-      {
-        "key": "D",
-        "text": "The ultimate truth of a specific spiritual doctrine."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text states, 'Neti is not meant to empty you into nothingness. It is not meant to erase you. It removes false identity so that what was always present may become clear.' This clarifies that Neti's purpose is revelation, not annihilation."
-  },
-  {
-    "id": 526,
-    "question": "What remains after false identity is loosened through Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A state of blankness or nothingness."
-      },
-      {
-        "key": "B",
-        "text": "The quiet knowing presence, referred to as the witness."
-      },
-      {
-        "key": "C",
-        "text": "A new, more refined ego structure."
-      },
-      {
-        "key": "D",
-        "text": "The complete absence of any experience."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter explains, 'What falls away is false identity. What remains is the quiet knowing presence. In this course, we call it the witness.' This identifies the witness as what remains after the discernment of Neti-Neti."
-  },
-  {
-    "id": 527,
-    "question": "Why can't peace, silence, or bliss be the final 'I'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Because they are too profound for the human mind to grasp."
-      },
-      {
-        "key": "B",
-        "text": "Because they are considered illusions by spiritual traditions."
-      },
-      {
-        "key": "C",
-        "text": "Because they are fleeting experiences that come and go."
-      },
-      {
-        "key": "D",
-        "text": "Because they are often manufactured through specific practices."
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The text states, 'But whatever remains as an experience is also known. Deep peace came - it was known. Joy came - it was known. ... What is known cannot be the final knower.' This highlights that any experienced state, however pleasant, is still an object of knowing."
+    "explanation": "The body is an instrument and must be respected. But it changes and is known, so it is not the final “I.”"
   },
   {
-    "id": 528,
-    "question": "What kind of silence may open through Neti?",
+    "id": 4,
+    "question": "What does Neti-Neti mean in relation to the mind?",
     "options": [
       {
         "key": "A",
-        "text": "The silence of external sounds being completely absent."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "A silence that is achieved through forceful mental suppression."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "The silence of loosened grasping, where identification slows down."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "A permanent state of blissful unconsciousness."
+        "text": "To know thoughts and emotions without making them final identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The mind is a changing flow. Neti-Neti does not suppress it, but does not take it as final nature."
+  },
+  {
+    "id": 5,
+    "question": "What is Neti-Neti’s view toward emotions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To give emotions space, know them, but not form complete identity from them"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Sorrow, fear, or anger are not denied. They are known, but not turned into “I am only this.”"
+  },
+  {
+    "id": 6,
+    "question": "What does Neti-Neti teach about roles?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "The role is to be played, not become the self"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Roles are necessary in practical life. But father, teacher, or seeker is not the final identity."
+  },
+  {
+    "id": 7,
+    "question": "What is the main use of Neti-Neti with self-image?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "To know the concern for others’ opinions without making it final identity"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter describes this as 'the silence of loosened grasping. Earlier the mind immediately said, “I,” “mine,”... Now this grip slows down.' This silence is characterized by a reduced reactivity and identification with experiences."
+    "explanation": "Self-image changes in other people’s minds. Therefore it cannot be the seeker’s final nature."
   },
   {
-    "id": 529,
-    "question": "Neti-Neti does not teach escape from the world. What does it mean for life's aspects like body, mind, and roles?",
+    "id": 8,
+    "question": "What does Neti-Neti mean with one’s story?",
     "options": [
       {
         "key": "A",
-        "text": "They should be completely abandoned once Neti is understood."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "They are inherently false and should be ignored."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "They should be given their proper place, but not mistaken for final identity."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "They are distractions that hinder spiritual progress."
+        "text": "To respect the story, but not be imprisoned by it"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Life events may be real, but the story arises and changes in the mind. It is not the final “I.”"
+  },
+  {
+    "id": 9,
+    "question": "Why is Neti-Neti needed for the victim-story?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because turning pain into permanent identity is bondage"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter does not deny pain. It says: see the wound, but do not become the wound."
+  },
+  {
+    "id": 10,
+    "question": "What does Neti-Neti do with the story of being special?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "It recognizes and lightens the desire to appear special"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Identities such as “I am different” or “My experience is great” can create separation. Neti sees this."
+  },
+  {
+    "id": 11,
+    "question": "Why is Neti-Neti necessary for spiritual identity?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "Because ego can grasp practice, knowledge, and experience too"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The text clarifies, 'Neti does not teach escape from the world... Neti gives life its proper place. The body is cared for, work is done, relationships are lived... but final identity is not made from any of these.' This emphasizes integration, not abandonment."
+    "explanation": "Ego can form subtle identities such as “I am a seeker” or “I had realization.” Neti is needed here."
   },
   {
-    "id": 530,
-    "question": "How does the fruit of Neti appear in life, for example, when facing criticism?",
+    "id": 12,
+    "question": "Why is caution needed even with “I am the witness”?",
     "options": [
       {
         "key": "A",
-        "text": "The seeker becomes immune to criticism and feels no hurt."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "The seeker dismisses the criticism as irrelevant noise."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "The seeker recognizes that 'Image has been touched - Neti.'"
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "The seeker becomes angry and retaliates against the critic."
+        "text": "Because even this sentence can become a new spiritual identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The witness is a direction, not a title. If “I am the witness” becomes a claim, it too can be known."
+  },
+  {
+    "id": 13,
+    "question": "What is the relation between Neti-Neti and humility?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Natural humility comes when grasping loosens"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When role, story, and spiritual image lighten, claims become weaker. This opens the direction of humility."
+  },
+  {
+    "id": 14,
+    "question": "What remains after Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "The direction of quiet knowing presence becomes clear"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "After Neti, unconsciousness does not remain. False identity drops and knowing presence becomes clearer."
+  },
+  {
+    "id": 15,
+    "question": "How does Neti-Neti view emptiness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "If emptiness is an experience, it too is being known"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter provides an example: 'Criticism may hurt, but the seeker can see, “Image has been touched - Neti.”' This shows how Neti allows for a discerning awareness of reactions without identifying with them."
+    "explanation": "Emptiness, peace, or silence may appear as experiences. Whatever comes and goes should not be grasped as final truth."
   },
   {
-    "id": 531,
-    "question": "How long is Neti considered useful in the spiritual path?",
+    "id": 16,
+    "question": "Why does Neti-Neti not stop at any special experience?",
     "options": [
       {
         "key": "A",
-        "text": "Only during the initial stages of spiritual practice."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "Until a specific spiritual experience is attained."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "As long as identity attaches to changing things."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "For a fixed period of seven days, as suggested in the practice."
+        "text": "What came and went as experience cannot be the final knower"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Peace, joy, or light, if known, is an experience. The witness knows experiences; it does not become an experience."
+  },
+  {
+    "id": 17,
+    "question": "Why does Neti-Neti not take one away from life?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it gives life its right place instead of denying it"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Body, relationships, work, and practice continue. Neti only lightens the final identity formed around them."
+  },
+  {
+    "id": 18,
+    "question": "What does the room-clearing example show?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "When unnecessary identities are removed, inner space and lightness appear"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "As a room opens when unnecessary things are removed, Neti opens inner spaciousness."
+  },
+  {
+    "id": 19,
+    "question": "How can Neti-Neti be used during criticism?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "To see that the self-image is hurt and this is being known"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The text states, 'How long must Neti continue? As long as identity attaches to changing things, Neti is useful.' This indicates that Neti is a tool for discernment that remains relevant as long as false identification persists."
+    "explanation": "Criticism may trigger hurt in the experiencer and image. Neti recognizes it without making it the final “I.”"
   },
   {
-    "id": 532,
-    "question": "What is the essence of Neti-Neti as summarized at the end of the chapter?",
+    "id": 20,
+    "question": "What does Neti-Neti teach during praise?",
     "options": [
       {
         "key": "A",
-        "text": "It is a method to reject life and withdraw from the world."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "It is the harsh denial of all sensory experiences."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "It is the gentle art of loosening false identity and returning to the witness."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "It is a technique to manufacture a new, permanent self."
+        "text": "Let praise be enjoyed, but not turned into heavy ego"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The pleasure of praise may be beautiful, but turning it into fixed identity is grasping."
+  },
+  {
+    "id": 21,
+    "question": "What is the mature form of Neti-Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The very seeing becomes Neti"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Gradually, words are no longer always needed. The seeker recognizes the changing and returns to the witness."
+  },
+  {
+    "id": 22,
+    "question": "How long is Neti-Neti useful?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "As long as “I” grasps changing things"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When identity forms around body, mind, role, story, or experience, Neti gives direction."
+  },
+  {
+    "id": 23,
+    "question": "What does it mean not to make Neti harsh?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "To bring it as loving clarity"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter concludes, 'This chapter’s essence is simple. Neti-Neti does not reject life. It loosens false identity. It is the gentle art of returning to the witness.' This encapsulates the core purpose and method of Neti-Neti."
+    "explanation": "Neti is not war, pressure, or self-condemnation. It must become gentle and honest seeing."
   },
   {
-    "id": 533,
-    "question": "The chapter advises keeping Neti-Neti gentle. What is the implication of making it harsh?",
+    "id": 24,
+    "question": "What does Neti-Neti say about spiritual experiences?",
     "options": [
       {
         "key": "A",
-        "text": "It leads to faster spiritual progress."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "It strengthens the ego's resistance."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "It can be used to escape life rather than understand it."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "It makes the practice more effective."
+        "text": "Respect experiences, but do not make them final identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Peace, a glimpse of knowledge, or service may be sacred, but if it becomes “I am special,” Neti is needed."
+  },
+  {
+    "id": 25,
+    "question": "What does “the witness is not an achievement” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness should not be turned into a spiritual title or claim"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The witness is a direction of knowing, not a personal trophy. If it becomes a claim, ego may enter."
+  },
+  {
+    "id": 26,
+    "question": "Why does Neti-Neti bring the seeker toward ordinariness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "Because the grip of appearing special loosens"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When the seeker no longer needs to prove depth, simplicity becomes natural. This is ordinariness."
+  },
+  {
+    "id": 27,
+    "question": "Why does the story keep changing in the mind?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "Because mind and memory give events different meanings"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The text warns, 'Dear seeker, keep Neti-Neti gentle. Do not make it harsh. Do not use it to escape life.' This suggests that harshness can pervert the practice into a form of avoidance rather than genuine discernment."
+    "explanation": "The same event can become sorrow, pride, or learning over time. Therefore the story is not the final “I.”"
   },
   {
-    "id": 534,
-    "question": "What does the chapter mean by 'What you are does not need to be manufactured'?",
+    "id": 28,
+    "question": "What does “See the wound, do not become the wound” teach?",
     "options": [
       {
         "key": "A",
-        "text": "The true self is something that must be created through effort."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "The true self is an abstract concept with no practical application."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "The true self is already present and becomes clear when false identities are removed."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "The true self is a state that can only be achieved after death."
+        "text": "Respect pain, but do not turn it into permanent identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "This sentence does not minimize pain. It prevents the seeker from being trapped in the victim-story."
+  },
+  {
+    "id": 29,
+    "question": "Roles change; what remains?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The basic sense “I am”"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Roles change throughout the day, but the basic sense of being remains. Neti helps to see this."
+  },
+  {
+    "id": 30,
+    "question": "Which is the right Neti statement for concern about image?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "What will people think — this thought is arising. Neti."
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "This sentence does not suppress the concern; it recognizes it. Recognition can lighten the grip."
+  },
+  {
+    "id": 31,
+    "question": "What is the balance between behavior and understanding in Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility remains in behavior; grasping lightens in understanding"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter uses the analogy of the sun: 'The sun does not practice becoming light. When clouds part, light is seen. Neti recognizes the clouds; it does not create the sun.' This implies that the true nature is inherent and revealed, not constructed."
+    "explanation": "Neti does not end relationships or action. It lightens the final identity formed around them."
   },
   {
-    "id": 535,
-    "question": "What is the purpose of the practice suggested for the week?",
+    "id": 32,
+    "question": "What is the relation between Neti-Neti and the witness?",
     "options": [
       {
         "key": "A",
-        "text": "To achieve a state of permanent bliss."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "To analyze all past experiences in detail."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "To consistently apply Neti-Neti to arising identities and remain quiet."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "To develop a new spiritual ego based on the witness."
+        "text": "Neti lightens the known layers and points toward the witness"
+      }
+    ],
+    "correct": "D",
+    "explanation": "When body, mind, emotion, and identity are not taken as final, attention returns to the knowing presence."
+  },
+  {
+    "id": 33,
+    "question": "What kind of art is Neti-Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The art of cleansing identity and loosening grasping"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "It is not merely repeating words. It sees changing identities and gives them their right place."
+  },
+  {
+    "id": 34,
+    "question": "What does “What you are does not need to be created” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "Truth is already present; false layers of identity must be seen"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The sun does not need to become light. When clouds move, light is seen; truth is recognized."
+  },
+  {
+    "id": 35,
+    "question": "What is the sun-and-clouds example for?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "When covering layers move away, light is naturally visible"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The practice involves 'Whenever a strong identity arises, ask... Then say: “This is being known. This is changing. This is not my final nature. Neti.” Then remain quiet for a few moments.' The focus is on consistent application and quiet observation, not on achieving a specific state."
+    "explanation": "Neti does not create truth. It reveals the covering identities so the light becomes clear."
   },
   {
-    "id": 536,
-    "question": "Which of the following is NOT explicitly mentioned as a layer of ego identity in Chapter 5?",
+    "id": 36,
+    "question": "What is the right meaning of silence in this chapter?",
     "options": [
       {
         "key": "A",
-        "text": "Pride"
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "Physical appearance"
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "Financial status"
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "Spiritual knowledge"
+        "text": "The space that opens when inner grasping loosens"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Silence is not merely absence of sound. When the grip of “I” slows, inner quiet opens."
+  },
+  {
+    "id": 37,
+    "question": "What should be done if peace appears in meditation?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Know it, respect it, but do not make it final identity"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Peace is a beautiful experience, but if it comes and goes, it is known. It should not be grasped."
+  },
+  {
+    "id": 38,
+    "question": "Which identity should be observed in the weekly practice?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "Identity formed from body, mind, emotion, role, image, or spiritual experience"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The purpose is not to hold strong identity, but to see it. Seeing itself lightens it."
+  },
+  {
+    "id": 39,
+    "question": "Why do Mahavakyas come after Neti-Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "Because Neti clears mistaken identity and Mahavakyas point toward truth"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter lists 'body, mind, name, role, image, story, experience, and even spiritual identity' as potential sources of ego identity. While financial status can contribute to ego, it is not explicitly listed in this chapter's enumeration of ego layers."
+    "explanation": "Neti says “not this.” After that, Mahavakyas point toward the direction of truth."
   },
   {
-    "id": 537,
-    "question": "What does the chapter suggest about the relationship between Neti-Neti and the body's needs?",
+    "id": 40,
+    "question": "How does Neti see the hunger for experience?",
     "options": [
       {
         "key": "A",
-        "text": "Neti-Neti implies that bodily needs are illusions and can be ignored."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "Once Neti is understood, the body's needs cease to exist."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "The body is an instrument of life and requires care, even while practicing Neti."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "Bodily needs are the primary focus of Neti-Neti practice."
+        "text": "It too is a desire being known"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The desire to gain special experience can be a movement of the experiencer. Neti sees even that."
+  },
+  {
+    "id": 41,
+    "question": "In Neti-Neti, what should one not fight with?",
+    "options": [
+      {
+        "key": "A",
+        "text": "With body, mind, emotion, role, or experience"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Neti is clarity, not war. It gives experiences their right place and removes final identity from them."
+  },
+  {
+    "id": 42,
+    "question": "What is an example of spiritual pride?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "“My practice is special; I am ahead of others”"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "This is a layer of ego in the language of practice. Neti recognizes and lightens it."
+  },
+  {
+    "id": 43,
+    "question": "How does Neti view the desire to appear aware?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "It too is a known mental layer"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The text states, 'The body is an instrument of life. It needs food, rest, care, and treatment.' It also says, 'This path too is being walked through the body.' This shows that Neti-Neti does not negate the body's functional importance."
+    "explanation": "If awareness becomes an image, it too is an object of mind. Neti does not take it as final truth."
   },
   {
-    "id": 538,
-    "question": "When the mind generates thoughts like 'I am a failure,' what is the Neti-Neti approach?",
+    "id": 44,
+    "question": "What is the most important caution in Neti-Neti?",
     "options": [
       {
         "key": "A",
-        "text": "To immediately believe the thought and feel defeated."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "To forcefully suppress the thought and replace it with a positive one."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "To recognize it as a thought, being known, and not the final nature."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "To analyze the reasons behind the failure in great detail."
+        "text": "Do not turn it into escape from life or self-condemnation"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Neti is gentle clarity. If it becomes harsh rejection, its spirit is lost."
+  },
+  {
+    "id": 45,
+    "question": "If the thought “I am the witness” arises, what should be seen?",
+    "options": [
+      {
+        "key": "A",
+        "text": "This thought too is being known"
+      },
+      {
+        "key": "B",
+        "text": "To treat every thought as final truth"
+      },
+      {
+        "key": "C",
+        "text": "To run away from responsibility"
+      },
+      {
+        "key": "D",
+        "text": "To suppress emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The witness is not a thought. If the thought of witness arises, it too is a known layer."
+  },
+  {
+    "id": 46,
+    "question": "What is the practical fruit of Neti-Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To prove others wrong"
+      },
+      {
+        "key": "B",
+        "text": "The grip lightens in criticism, praise, tiredness, and worry"
+      },
+      {
+        "key": "C",
+        "text": "To announce one’s spiritual experience"
+      },
+      {
+        "key": "D",
+        "text": "To abandon all roles forever"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Life continues, but the rigid identity formed around experiences becomes weaker. This is the practical fruit."
+  },
+  {
+    "id": 47,
+    "question": "What is the essence of Chapter 5?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To turn practice into a burden"
+      },
+      {
+        "key": "B",
+        "text": "To call life meaningless"
+      },
+      {
+        "key": "C",
+        "text": "Neti-Neti is the art of loosening false identity and returning toward the witness"
+      },
+      {
+        "key": "D",
+        "text": "To only debate intellectually"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter advises, 'If the mind says, “I am a failure,” see: this is a thought. ... Gently say: “Not this too. Neti.”' This means acknowledging the thought without identifying with it as the self."
+    "explanation": "It does not deny life. It gives changing things their right place and returns attention to knowing presence."
   },
   {
-    "id": 539,
-    "question": "What is the danger of identifying with a spiritual experience, according to the text?",
+    "id": 48,
+    "question": "What should not be done in the final practice of Neti-Neti?",
     "options": [
       {
         "key": "A",
-        "text": "It leads to a permanent state of bliss."
+        "text": "To stop all experiences"
       },
       {
         "key": "B",
-        "text": "It makes the seeker indifferent to worldly matters."
+        "text": "To hate the body and the world"
       },
       {
         "key": "C",
-        "text": "It causes the seeker to lose all sense of self."
+        "text": "To merely memorize scriptures"
       },
       {
         "key": "D",
-        "text": "It can be grasped by ego, creating a spiritual identity."
+        "text": "Waiting for a special experience or light"
       }
     ],
     "correct": "D",
-    "explanation": "The chapter warns, 'Sadhana, knowledge, experience, service, humility, and awareness can all be grasped by ego. So Neti must be applied here too: “I am a seeker” - Neti. “I had an experience” - Neti.' This highlights that even positive spiritual states can become objects of egoic identification."
+    "explanation": "The practice is to see experiences come and go. Waiting for a special state may become a new grasping."
   },
   {
-    "id": 540,
-    "question": "The chapter uses the example of 'I am tired' or 'I am ill' to illustrate:",
+    "id": 49,
+    "question": "What does “this too is a known idea” mean in Neti-Neti?",
     "options": [
       {
         "key": "A",
-        "text": "The inherent weakness of the human body."
+        "text": "Even a spiritual idea, if seen, should not become final identity"
       },
       {
         "key": "B",
-        "text": "The importance of rest and medical treatment."
+        "text": "To treat every thought as final truth"
       },
       {
         "key": "C",
-        "text": "The mind's tendency to exaggerate physical sensations."
+        "text": "To run away from responsibility"
       },
       {
         "key": "D",
-        "text": "A strong body-identity that needs to be seen through Neti."
+        "text": "To suppress emotions"
       }
     ],
-    "correct": "D",
-    "explanation": "The text lists these as examples of 'body-identity' that can arise strongly. The practice then suggests pausing and saying, 'This is an experience. This is being known. This is not my final nature. Neti.' This shows how Neti is applied to such strong bodily identifications."
+    "correct": "A",
+    "explanation": "Neti-Neti does not stop at worldly identities. It also sees spiritual ideas and claims."
   },
   {
-    "id": 541,
-    "question": "What does the chapter imply about the nature of spiritual pride?",
+    "id": 50,
+    "question": "What is the final spirit of Neti-Neti?",
     "options": [
       {
         "key": "A",
-        "text": "It is an unavoidable consequence of deep spiritual practice."
+        "text": "To prove others wrong"
       },
       {
         "key": "B",
-        "text": "It is a sign of genuine spiritual attainment."
+        "text": "To let go of what you are not, and not try to grasp what you are"
       },
       {
         "key": "C",
-        "text": "It is a delusion that must be eradicated forcefully."
+        "text": "To announce one’s spiritual experience"
       },
       {
         "key": "D",
-        "text": "It is a subtle layer that can be identified with and seen through Neti."
+        "text": "To abandon all roles forever"
       }
     ],
-    "correct": "D",
-    "explanation": "The chapter mentions spiritual pride as something that can arise and suggests applying Neti: 'Spiritual pride may arise, and the seeker can smile: “This too is a layer - Neti.”' This indicates it's a subtle egoic formation to be observed."
-  },
-  {
-    "id": 542,
-    "question": "The phrase 'What remains after Neti?' is posed to address:",
-    "options": [
-      {
-        "key": "A",
-        "text": "The desire for a new, more powerful spiritual ego."
-      },
-      {
-        "key": "B",
-        "text": "The intellectual curiosity about the ultimate reality."
-      },
-      {
-        "key": "C",
-        "text": "The need to find a new object of meditation."
-      },
-      {
-        "key": "D",
-        "text": "The fear of emptiness and the search for a solid identity."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter states, 'This question may create fear. Until now, the “I” seemed to be made of these things... So the mind asks, “What remains?”' This fear stems from the potential dissolution of the known self and the uncertainty of what is left."
-  },
-  {
-    "id": 543,
-    "question": "What is the role of 'Mahavakya' in relation to Neti-Neti, as suggested by the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Mahavakya are practices that replace Neti-Neti."
-      },
-      {
-        "key": "B",
-        "text": "Mahavakya are complex philosophical arguments that support Neti-Neti."
-      },
-      {
-        "key": "C",
-        "text": "Mahavakya are ancient mantras that must be chanted after Neti."
-      },
-      {
-        "key": "D",
-        "text": "Mahavakya are direct pointers that follow Neti's 'not this' with 'then what?'"
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter states, 'The next chapter will move toward Mahavakya - the great statements that directly point toward the truth. Neti said, “not this.” Mahavakya will ask: then what?' This positions Mahavakya as a subsequent step that points to what remains."
-  },
-  {
-    "id": 544,
-    "question": "The chapter uses the sun and clouds analogy to explain that Neti-Neti:",
-    "options": [
-      {
-        "key": "A",
-        "text": "Creates light by dispelling darkness."
-      },
-      {
-        "key": "B",
-        "text": "Is a process of generating inner light."
-      },
-      {
-        "key": "C",
-        "text": "Requires the complete removal of all clouds."
-      },
-      {
-        "key": "D",
-        "text": "Recognizes the obscuring clouds (false identities) but does not create the sun (true nature)."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The analogy states, 'The sun does not practice becoming light. When clouds part, light is seen. Neti recognizes the clouds; it does not create the sun.' This means Neti's function is to clear away what is not the truth, allowing the inherent truth to be seen."
-  },
-  {
-    "id": 545,
-    "question": "What is the primary goal of applying Neti-Neti to the mind?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To achieve a state of perpetual mental silence."
-      },
-      {
-        "key": "B",
-        "text": "To stop all thoughts from arising."
-      },
-      {
-        "key": "C",
-        "text": "To gain complete control over the mind's content."
-      },
-      {
-        "key": "D",
-        "text": "To loosen identification with thoughts and mental movements."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The text explains that Neti applied to the mind 'does not mean forcefully stopping thoughts. Thoughts are the nature of mind. The problem is not thought. The problem is identity with thought.' The goal is to lighten this identification."
-  },
-  {
-    "id": 546,
-    "question": "When a seeker says, 'I am not the body,' what is the correct understanding according to the text?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The body is an illusion and has no practical use."
-      },
-      {
-        "key": "B",
-        "text": "The body's experiences are separate from the seeker's consciousness."
-      },
-      {
-        "key": "C",
-        "text": "The seeker should aim to transcend the body immediately."
-      },
-      {
-        "key": "D",
-        "text": "The body is an instrument for life and sadhana, but not the final self."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter clarifies, 'The body is an instrument of life. It needs food, rest, care, and treatment. This path too is being walked through the body.' Thus, acknowledging 'I am not the body' does not negate its functional role."
-  },
-  {
-    "id": 547,
-    "question": "What is the potential pitfall of identifying with a role, such as 'father' or 'teacher'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It leads to humility and greater responsibility."
-      },
-      {
-        "key": "B",
-        "text": "It prevents the role from becoming a source of ego."
-      },
-      {
-        "key": "C",
-        "text": "It ensures that the role is played perfectly."
-      },
-      {
-        "key": "D",
-        "text": "The role can become the final identity, strengthening the ego."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The text warns, 'But when any of these becomes the final “I,” the grip of ego returns.' It further states, 'If the father-role is present, play it with love and clarity. But if hardness arises... role is becoming identity.' This shows how a role can become an egoic trap."
-  },
-  {
-    "id": 548,
-    "question": "The practice of Neti-Neti is described as:",
-    "options": [
-      {
-        "key": "A",
-        "text": "A forceful method of self-denial."
-      },
-      {
-        "key": "B",
-        "text": "An intellectual exercise in distinguishing truths."
-      },
-      {
-        "key": "C",
-        "text": "A technique to achieve ecstatic states."
-      },
-      {
-        "key": "D",
-        "text": "A loving inquiry into identity."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter states, 'Neti-Neti is a loving inquiry into identity.' It also emphasizes tenderness and compassion, contrasting with harsh denial or forceful suppression."
-  },
-  {
-    "id": 549,
-    "question": "What is the relationship between 'knowing' and 'being known' in the context of Neti-Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The knower is always the same as what is known."
-      },
-      {
-        "key": "B",
-        "text": "What is known is the true self, and the knower is the ego."
-      },
-      {
-        "key": "C",
-        "text": "Knowing and being known are irrelevant to the Neti-Neti process."
-      },
-      {
-        "key": "D",
-        "text": "The seeker asks if they are what is known (changing) or that which knows (unchanging)."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter highlights this core question: 'The seeker slowly asks: am I what is known, or am I that which knows it?' This distinction is central to Neti-Neti, differentiating the transient objects of experience from the enduring awareness."
-  },
-  {
-    "id": 550,
-    "question": "What is the ultimate outcome of consistently applying Neti-Neti?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The complete eradication of all experiences."
-      },
-      {
-        "key": "B",
-        "text": "The attainment of a permanent spiritual ego."
-      },
-      {
-        "key": "C",
-        "text": "A state of blissful ignorance."
-      },
-      {
-        "key": "D",
-        "text": "The loosening of false identity and a clearer knowing presence."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter explains that Neti 'removes false identity so that what was always present may become clear.' It leads to 'Knowing becomes clearer. What falls away is false identity. What remains is the quiet knowing presence.' This is the intended fruit of the practice."
+    "correct": "B",
+    "explanation": "The final spirit is to loosen false identity. Truth is not to be grasped as an object; one lives in its light."
   }
 ]

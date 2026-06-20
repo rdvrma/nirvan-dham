@@ -1,1202 +1,1202 @@
 [
   {
-    "id": 601,
-    "question": "According to the chapter, what is the primary role of Mahavakyas in Advaita?",
+    "id": 1,
+    "question": "Why are the Mahavakyas introduced after Neti-Neti in Chapter 6?",
     "options": [
       {
         "key": "A",
-        "text": "To offer direct pointers to one's real nature."
+        "text": "Because Neti-Neti clears mistaken identity and the Mahavakyas point toward truth"
       },
       {
         "key": "B",
-        "text": "To provide complex philosophical arguments for intellectual debate."
+        "text": "Because the Mahavakyas are only for memorizing difficult Sanskrit words"
       },
       {
         "key": "C",
-        "text": "To create new spiritual experiences for the seeker."
+        "text": "Because after Neti-Neti the body must be abandoned"
       },
       {
         "key": "D",
-        "text": "To encourage the ego to develop a more refined identity."
+        "text": "Because the Mahavakyas prove that the world is completely false"
       }
     ],
     "correct": "A",
-    "explanation": "The chapter states that Mahavakyas are great because they point directly to your real nature. They are not meant to be complicated or to create new experiences, nor are they for the ego to enlarge itself. Their purpose is to guide attention to what is always present."
+    "explanation": "Neti-Neti helps the seeker become lighter from changing identities. After that, the Mahavakyas point the seeker positively toward the true Self."
   },
   {
-    "id": 602,
-    "question": "How do Neti-Neti and Mahavakyas complement each other, as described in the text?",
+    "id": 2,
+    "question": "How are the Mahavakyas primarily understood in this chapter?",
     "options": [
       {
         "key": "A",
-        "text": "Neti-Neti clears false identity, and Mahavakyas point toward the truth that remains."
+        "text": "As social rules"
       },
       {
         "key": "B",
-        "text": "Neti-Neti negates all spiritual experiences, while Mahavakyas confirm them."
+        "text": "As rituals"
       },
       {
         "key": "C",
-        "text": "Mahavakyas provide new spiritual experiences that Neti-Neti then negates."
+        "text": "As great statements that directly point toward one's real nature"
       },
       {
         "key": "D",
-        "text": "They are independent practices with no direct relationship."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text explains that Neti-Neti clears away false identifications (body, mind, roles, etc.), and the Mahavakyas then point to the 'knowing presence that remains clear through all of this.' This shows their complementary function in Advaita practice."
-  },
-  {
-    "id": 603,
-    "question": "What is the danger of the ego grasping Mahavakyas, according to the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The ego might claim specialness or superiority."
-      },
-      {
-        "key": "B",
-        "text": "The ego might become indifferent to spiritual matters."
-      },
-      {
-        "key": "C",
-        "text": "The ego might reject all spiritual teachings."
-      },
-      {
-        "key": "D",
-        "text": "The ego might seek more complex philosophical concepts."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter warns that if the ego grasps Mahavakyas, it may say, 'I am Brahman, so I am special.' This is described as ego wearing sacred language, not true understanding, and is meant to enlarge the ego, not loosen its identity."
-  },
-  {
-    "id": 604,
-    "question": "When hearing a Mahavakya properly, what is the recommended first step after clearing false identity?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To look at what knows the body, mind, emotions, and stories."
-      },
-      {
-        "key": "B",
-        "text": "To immediately repeat the Mahavakya loudly."
-      },
-      {
-        "key": "C",
-        "text": "To analyze the philosophical meaning of the words."
-      },
-      {
-        "key": "D",
-        "text": "To seek a guru to explain the statement."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text advises that to hear a Mahavakya properly, one should first acknowledge that the body, mind, emotions, roles, stories, and ego are all known. Then, one should ask, 'what is it that knows all this?' This directs attention to the witness before engaging with the statement."
-  },
-  {
-    "id": 605,
-    "question": "In the context of 'Tat Tvam Asi,' who is the 'you' that the statement points to?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The knowing presence that is aware of all experiences."
-      },
-      {
-        "key": "B",
-        "text": "The physical body, with its limitations."
-      },
-      {
-        "key": "C",
-        "text": "The ego, with its desires and fears."
-      },
-      {
-        "key": "D",
-        "text": "The experiencer, who has specific thoughts and emotions."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter clarifies that 'you' in 'Tat Tvam Asi' does not refer to the body, mind, or ego. Instead, it points to the 'knowing presence that knows the body, the mind, thoughts, emotions... and even the ego's movements.'"
-  },
-  {
-    "id": 606,
-    "question": "What does 'That' refer to in the Mahavakya 'Tat Tvam Asi'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The ground of all existence, Brahman, in its limitless sense."
-      },
-      {
-        "key": "B",
-        "text": "A specific enlightened being or deity."
-      },
-      {
-        "key": "C",
-        "text": "A temporary spiritual experience of bliss."
-      },
-      {
-        "key": "D",
-        "text": "The individual's personal spiritual journey."
-      }
-    ],
-    "correct": "A",
-    "explanation": "'That' in 'Tat Tvam Asi' points to Brahman, described as 'the limitless truth, the ground of all existence, not a person, not an object, not a separate deity, not a location.' It signifies the ultimate reality."
-  },
-  {
-    "id": 607,
-    "question": "How does the analogy of gold illustrate 'Tat Tvam Asi'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Different forms of gold (ring, necklace) are like different experiences, but the underlying substance (gold) is the same as the underlying reality (Brahman)."
-      },
-      {
-        "key": "B",
-        "text": "Gold is limited in form, like the individual, but its essence is Brahman."
-      },
-      {
-        "key": "C",
-        "text": "Gold can be melted down and reshaped, like the ego can be transformed."
-      },
-      {
-        "key": "D",
-        "text": "The value of gold is constant, just like the unchanging nature of the Self."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The analogy explains that just as gold appears in various forms like a ring or necklace, but its substance remains gold, similarly, body-minds and experiences appear as many, but their deepest ground is one, which is Brahman. This illustrates that the apparent diversity does not negate the underlying unity."
-  },
-  {
-    "id": 608,
-    "question": "What is the proper outcome of understanding 'Tat Tvam Asi'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Humility and softened separation."
-      },
-      {
-        "key": "B",
-        "text": "Arrogance and a sense of superiority."
-      },
-      {
-        "key": "C",
-        "text": "A desire for more complex spiritual knowledge."
-      },
-      {
-        "key": "D",
-        "text": "Indifference to worldly affairs."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter states that properly understood, 'Tat Tvam Asi' brings humility, not arrogance. If it creates pride, the ego has misunderstood it. If it softens separation and deepens compassion, it is being heard rightly."
-  },
-  {
-    "id": 609,
-    "question": "When experiencing criticism and feeling 'small,' what does the practice of 'Tat Tvam Asi' suggest?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To recognize that smallness is a mental feeling being known, and the knowing presence remains."
-      },
-      {
-        "key": "B",
-        "text": "To accept the criticism as a reflection of one's true nature."
-      },
-      {
-        "key": "C",
-        "text": "To assert one's greatness to overcome the feeling of smallness."
-      },
-      {
-        "key": "D",
-        "text": "To withdraw from the situation and avoid further interaction."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The practice suggests looking at the feeling of smallness as something known in the mind, while the 'knowing presence' remains unaffected. It directs attention to the witness, reminding the seeker 'You are That,' not the fleeting feeling."
-  },
-  {
-    "id": 610,
-    "question": "In 'Aham Brahmasmi,' what does the 'I' refer to?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The witness-nature, the Atma, the silent knowing presence."
-      },
-      {
-        "key": "B",
-        "text": "The personal ego, with its history and identity."
-      },
-      {
-        "key": "C",
-        "text": "The physical body and its sensations."
-      },
-      {
-        "key": "D",
-        "text": "The sum total of all experiences, both positive and negative."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter clarifies that the 'I' in 'Aham Brahmasmi' is not the ego, body, or experiencer. It points to the 'witness-nature, the Atma, the silent knowing presence that knows body and mind but is not limited by them.'"
-  },
-  {
-    "id": 611,
-    "question": "What is the difference between the ego saying 'I am Brahman' and true recognition of 'Aham Brahmasmi'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Ego's statement is associated with heaviness and superiority, while recognition brings silence, simplicity, and humility."
-      },
-      {
-        "key": "B",
-        "text": "Ego's statement brings lightness, while recognition brings heaviness."
-      },
-      {
-        "key": "C",
-        "text": "Ego's statement leads to humility, while recognition leads to arrogance."
-      },
-      {
-        "key": "D",
-        "text": "Ego's statement is a conceptual understanding, while recognition is an emotional outburst."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text contrasts the ego's potential claim of 'I am Brahman' with true recognition. The former is described as bringing 'heaviness and superiority,' whereas recognition opens into 'silence, simplicity, and humility.'"
-  },
-  {
-    "id": 612,
-    "question": "How does 'Aham Brahmasmi' affect one's outer life and practical responsibilities?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It does not destroy practical life but clarifies identity within it."
-      },
-      {
-        "key": "B",
-        "text": "It leads to renunciation of all worldly duties."
-      },
-      {
-        "key": "C",
-        "text": "It makes practical life irrelevant and unimportant."
-      },
-      {
-        "key": "D",
-        "text": "It requires one to constantly announce their realization."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter states that 'Aham Brahmasmi does not destroy practical life. It clarifies identity within practical life.' Outer life continues with responsibilities like eating, working, and caring for the body, but the inner identification shifts."
-  },
-  {
-    "id": 613,
-    "question": "What is the purpose of the Mahavakya 'Ayam Atma Brahma'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To protect against misusing 'I am Brahman' by ego."
-      },
-      {
-        "key": "B",
-        "text": "To introduce a new concept of a personal soul."
-      },
-      {
-        "key": "C",
-        "text": "To emphasize the separation between inner and outer reality."
-      },
-      {
-        "key": "D",
-        "text": "To encourage the pursuit of unique spiritual experiences."
-      }
-    ],
-    "correct": "A",
-    "explanation": "'Ayam Atma Brahma' is presented as a statement that 'protects the seeker from misusing 'I am Brahman.'' It clarifies that the Atma recognized inwardly is not separate from Brahman, reinforcing the non-dual understanding."
-  },
-  {
-    "id": 614,
-    "question": "How does the analogy of space and pots illustrate 'Ayam Atma Brahma'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Different pots represent different spiritual paths, all leading to the same space."
-      },
-      {
-        "key": "B",
-        "text": "The apparent boundary created by the pot does not truly divide space, just as body-mind does not truly confine consciousness."
-      },
-      {
-        "key": "C",
-        "text": "Space is limited by the pot, just as Atma is limited by the body-mind."
-      },
-      {
-        "key": "D",
-        "text": "When a pot breaks, space is destroyed, similar to how ego dissolution leads to nothingness."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The analogy explains that while many pots seem to contain different spaces, space itself is not divided. Similarly, body-mind creates an apparent boundary for individual consciousness, but consciousness in its truth is not confined by it, illustrating that Atma is Brahman."
-  },
-  {
-    "id": 615,
-    "question": "If true understanding of 'Aham Brahmasmi' and 'Ayam Atma Brahma' is present, how will it manifest?",
-    "options": [
-      {
-        "key": "A",
-        "text": "As a display of spiritual knowledge and claims."
-      },
-      {
-        "key": "B",
-        "text": "As humility, compassion, responsibility, and less reactivity."
-      },
-      {
-        "key": "C",
-        "text": "As increased reactivity to external events."
-      },
-      {
-        "key": "D",
-        "text": "As a desire to isolate oneself from society."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter states that if the understanding is true, 'it will show as humility, compassion, responsibility, and less reactivity - not as a spiritual claim.' It is meant to soften the ego, not inflate it."
-  },
-  {
-    "id": 616,
-    "question": "In 'Prajnanam Brahma,' what does 'consciousness' specifically refer to?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The act of thinking or mental activity."
-      },
-      {
-        "key": "B",
-        "text": "The light of knowing that makes all experiences possible."
-      },
-      {
-        "key": "C",
-        "text": "A specific emotional state like bliss or peace."
-      },
-      {
-        "key": "D",
-        "text": "The individual's personal awareness of their body."
-      }
-    ],
-    "correct": "B",
-    "explanation": "'Prajnanam Brahma' defines consciousness not as thinking or a mental state, but as 'the light of knowing because of which thoughts are known, emotions are known, the body is known, and the world is known.' It is the fundamental awareness."
-  },
-  {
-    "id": 617,
-    "question": "How is the 'witness' related to 'consciousness' in the context of the Mahavakyas?",
-    "options": [
-      {
-        "key": "A",
-        "text": "They are entirely separate concepts, with no overlap."
-      },
-      {
-        "key": "B",
-        "text": "The witness is the doorway to experience, and consciousness is the depth of that doorway."
-      },
-      {
-        "key": "C",
-        "text": "The witness is the light, and consciousness is the field of experience."
-      },
-      {
-        "key": "D",
-        "text": "Consciousness is the changing content, and the witness is the unchanging background."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explains that the witness is the 'still knowing presence that observes... without changing,' while consciousness is 'the light of knowing that makes the entire field of experience possible.' The witness is the doorway, and consciousness is the depth."
-  },
-  {
-    "id": 618,
-    "question": "What is the misconception to avoid regarding 'Prajnanam Brahma'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Thinking that consciousness is limited to intellectual understanding."
-      },
-      {
-        "key": "B",
-        "text": "Believing that consciousness must be experienced as a special state like light or bliss."
-      },
-      {
-        "key": "C",
-        "text": "Assuming that consciousness is the same as the physical body."
-      },
-      {
-        "key": "D",
-        "text": "Concluding that consciousness is a product of the mind."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter warns against turning consciousness into a special experience, such as light or bliss. It clarifies that whatever comes as an experience is known *in* consciousness, and consciousness itself is not what comes and goes."
-  },
-  {
-    "id": 619,
-    "question": "How should the understanding of 'Prajnanam Brahma' influence one's response to suffering?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It should lead to indifference, as suffering is just an experience."
-      },
-      {
-        "key": "B",
-        "text": "It should deepen compassion and motivate helpful action."
-      },
-      {
-        "key": "C",
-        "text": "It should encourage detachment from those who are suffering."
-      },
-      {
-        "key": "D",
-        "text": "It should be used to justify inaction or lack of empathy."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explicitly states that this understanding should deepen compassion, not indifference. It warns against saying 'It is all consciousness, so it does not matter,' and emphasizes that in practical life, suffering must be addressed with compassion."
-  },
-  {
-    "id": 620,
-    "question": "What is Nididhyasan, as described in the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The initial intellectual study of the Mahavakyas."
-      },
-      {
-        "key": "B",
-        "text": "Returning again and again to the truth that has been heard and understood, in the midst of living."
-      },
-      {
-        "key": "C",
-        "text": "A practice of seeking new spiritual experiences."
-      },
-      {
-        "key": "D",
-        "text": "A formal ritualistic chanting of the Mahavakyas."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Nididhyasan is defined as 'returning again and again to the truth that has been heard and understood.' It is described as remembering the truth 'in the middle of living,' not just during formal meditation."
-  },
-  {
-    "id": 621,
-    "question": "Which of the following best summarizes the relationship between the four Mahavakyas discussed?",
-    "options": [
-      {
-        "key": "A",
-        "text": "They represent four distinct and unrelated spiritual truths."
-      },
-      {
-        "key": "B",
-        "text": "They point from different directions to one truth: the non-separateness of the witness, Atma, consciousness, and Brahman."
-      },
-      {
-        "key": "C",
-        "text": "They are sequential steps, where one must be fully realized before moving to the next."
-      },
-      {
-        "key": "D",
-        "text": "They are primarily concerned with negating the ego's claims."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter concludes by stating that the four Mahavakyas 'point from different directions to one truth: the witness, Atma, consciousness, and Brahman are not separate realities.' This highlights their unified message of non-duality."
-  },
-  {
-    "id": 622,
-    "question": "What is the purpose of the weekly practice suggested at the end of the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To achieve a specific meditative state."
-      },
-      {
-        "key": "B",
-        "text": "To allow the Mahavakyas to turn one from body-mind identification toward the knowing presence, without seeking special experiences."
-      },
-      {
-        "key": "C",
-        "text": "To intellectually memorize the meanings of the Mahavakyas."
-      },
-      {
-        "key": "D",
-        "text": "To analyze the differences between the four Mahavakyas."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The practice is described as noticing known elements (body, mind, etc.) and then quietly listening to the Mahavakyas, with the instruction 'Do not seek a special experience. Let the statements turn you from body-mind toward the silent knowing presence.'"
-  },
-  {
-    "id": 623,
-    "question": "The chapter begins by referencing the previous chapter's discussion of 'neti-neti.' What is the core idea of 'neti-neti' as presented?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Affirming all known experiences as the true Self."
-      },
-      {
-        "key": "B",
-        "text": "Negating that which is known, changing, or comes and goes as the final Self."
-      },
-      {
-        "key": "C",
-        "text": "Identifying the Self with the changing aspects of existence, like body and mind."
-      },
-      {
-        "key": "D",
-        "text": "Seeking new spiritual experiences through negation."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter states that 'neti-neti - not this, not this' helps understand that 'Whatever changes, whatever is known, whatever comes and goes, cannot be the final Self.' It is a process of negation to clear false identities."
-  },
-  {
-    "id": 624,
-    "question": "Why are Mahavakyas called 'great statements'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Because they are linguistically complex and difficult to translate."
-      },
-      {
-        "key": "B",
-        "text": "Because they point directly to one's real nature."
-      },
-      {
-        "key": "C",
-        "text": "Because they are ancient pronouncements from a specific deity."
-      },
-      {
-        "key": "D",
-        "text": "Because they guarantee a blissful spiritual experience."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text explains that Mahavakyas are 'great because they point directly to your real nature.' Their greatness lies in their directness and their ability to indicate the truth of the aware one."
-  },
-  {
-    "id": 625,
-    "question": "When the chapter says Mahavakyas 'gently turn attention back toward what has always been present,' what does 'what has always been present' refer to?",
-    "options": [
-      {
-        "key": "A",
-        "text": "A future enlightened state."
-      },
-      {
-        "key": "B",
-        "text": "The real nature or the knowing presence."
-      },
-      {
-        "key": "C",
-        "text": "The ego's desire for spiritual attainment."
-      },
-      {
-        "key": "D",
-        "text": "A specific set of religious rituals."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Mahavakyas are described as pointing to 'your real nature' and 'the knowing presence that remains clear through all of this.' This refers to the unchanging awareness that is always present, underlying all experiences."
-  },
-  {
-    "id": 626,
-    "question": "What is the meaning of 'Atma' and 'Brahman' as used in this course?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Atma is the individual soul, and Brahman is the creator God."
-      },
-      {
-        "key": "B",
-        "text": "Atma is the truth recognized inwardly, and Brahman is the same truth in its limitless, universal sense."
-      },
-      {
-        "key": "C",
-        "text": "Atma is a specific spiritual experience, and Brahman is the universe."
-      },
-      {
-        "key": "D",
-        "text": "Atma refers to the ego, and Brahman refers to the physical world."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter defines Atma as 'the truth recognized inwardly as your real nature' and Brahman as 'the same truth in its limitless, universal, final sense.' The Mahavakyas reveal these are not separate."
-  },
-  {
-    "id": 627,
-    "question": "The statement 'Tat Tvam Asi' is not addressed to the body, mind, or ego because:",
-    "options": [
-      {
-        "key": "A",
-        "text": "These are considered inherently corrupt and beyond salvation."
-      },
-      {
-        "key": "B",
-        "text": "The statement is only meant for advanced yogis."
-      },
-      {
-        "key": "C",
-        "text": "They are limited and changing, and the statement points to the unchanging reality."
-      },
-      {
-        "key": "D",
-        "text": "These are illusions that do not exist."
+        "text": "As statements meant only to increase debate and scholarship"
       }
     ],
     "correct": "C",
-    "explanation": "The text explains that the body is limited and changing, the mind thinks and changes, and the ego can claim specialness. 'Tat Tvam Asi' points to the true nature, the 'knowing presence,' which is not limited or changing like these aspects."
+    "explanation": "The Mahavakyas do not give a new object to the seeker. They turn identity away from body-mind toward Atma, consciousness, and Brahman."
   },
   {
-    "id": 628,
-    "question": "When success comes and the ego says, 'I am great,' what does the practice related to 'Tat Tvam Asi' suggest?",
+    "id": 3,
+    "question": "Why should a Mahavakya not be turned into blind belief?",
     "options": [
       {
         "key": "A",
-        "text": "To embrace the feeling of greatness as the true Self."
+        "text": "Because belief is never useful"
       },
       {
         "key": "B",
-        "text": "To immediately negate the ego's claim and feel insignificant."
+        "text": "Because Mahavakyas are not merely to be believed, but to be seen and recognized within"
       },
       {
         "key": "C",
-        "text": "To recognize greatness as a feeling being known, and that 'You are That,' not the success."
+        "text": "Because Mahavakyas have no spiritual importance"
       },
       {
         "key": "D",
-        "text": "To share the success with others to prove one's greatness."
+        "text": "Because chanting alone is enough"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter says that a Mahavakya asks the seeker to look. Merely believing may remain in the mind; recognition must become clear in direct seeing."
+  },
+  {
+    "id": 4,
+    "question": "What is the simple meaning of the Mahavakya 'Tat Tvam Asi'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Consciousness is Brahman"
+      },
+      {
+        "key": "B",
+        "text": "I am Brahman"
+      },
+      {
+        "key": "C",
+        "text": "This Atma is Brahman"
+      },
+      {
+        "key": "D",
+        "text": "You are That"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Tat Tvam Asi means 'You are That.' It is not addressed to the body-mind, but points toward the true nature of the seeker."
+  },
+  {
+    "id": 5,
+    "question": "In 'Tat Tvam Asi', what does 'you' point toward?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The body, name, and social identity"
+      },
+      {
+        "key": "B",
+        "text": "The knowing presence that knows the body and mind"
+      },
+      {
+        "key": "C",
+        "text": "Only the imagination of the mind"
+      },
+      {
+        "key": "D",
+        "text": "Only a special experience"
+      }
+    ],
+    "correct": "B",
+    "explanation": "In the Mahavakya, 'you' does not mean body, mind, or ego. It points toward the witness-nature that knows experiences."
+  },
+  {
+    "id": 6,
+    "question": "In 'Tat Tvam Asi', what does 'That' point toward?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brahman, the infinite truth that is the basis of all"
+      },
+      {
+        "key": "B",
+        "text": "The seeker's profession"
+      },
+      {
+        "key": "C",
+        "text": "The mind's favorite emotion"
+      },
+      {
+        "key": "D",
+        "text": "The body's calmest condition"
+      }
+    ],
+    "correct": "A",
+    "explanation": "'That' points to Brahman—the infinite and ultimate truth that is the basis of all. The Mahavakya reveals the non-separation of the inner truth and that basis."
+  },
+  {
+    "id": 7,
+    "question": "Why is it wrong to apply 'You are That' directly to the body-mind?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because the body-mind changes; the Mahavakya points toward the witness-nature"
+      },
+      {
+        "key": "B",
+        "text": "Because the body-mind never appears in experience"
+      },
+      {
+        "key": "C",
+        "text": "Because the body itself is the final form of Brahman"
+      },
+      {
+        "key": "D",
+        "text": "Because the mind cannot be known"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The body and mind are limited and changing. The Mahavakya does not enlarge the ego or body-mind; it points toward the witness that knows them."
+  },
+  {
+    "id": 8,
+    "question": "What does the example of wave and ocean explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A wave has no importance"
+      },
+      {
+        "key": "B",
+        "text": "A wave should fight the ocean"
+      },
+      {
+        "key": "C",
+        "text": "Forms may appear different, but in essence the water is one"
+      },
+      {
+        "key": "D",
+        "text": "The ocean is only imagination"
       }
     ],
     "correct": "C",
-    "explanation": "The practice suggests looking at greatness as a feeling that is being known. It reminds the seeker, 'You are That,' implying that the true nature is the witness of the feeling, not the feeling of greatness itself."
+    "explanation": "A wave appears limited in form, but in essence it is water. Similarly, the seeker appears limited as body-mind, but in true nature is not separate from Brahman."
   },
   {
-    "id": 629,
-    "question": "What is the potential distortion if the 'I' in 'Aham Brahmasmi' is misunderstood?",
+    "id": 9,
+    "question": "What does the example of clay and pots clarify about the Mahavakya?",
     "options": [
       {
         "key": "A",
-        "text": "It might lead to excessive humility and self-deprecation."
+        "text": "Names and forms may differ, but the basis can be one"
       },
       {
         "key": "B",
-        "text": "It might cause one to reject all spiritual teachings."
+        "text": "All pots must be broken for knowledge"
       },
       {
         "key": "C",
-        "text": "It could be interpreted as the ego claiming specialness or superiority."
+        "text": "Clay has no relation to pots"
       },
       {
         "key": "D",
-        "text": "It could lead to an obsession with philosophical concepts."
+        "text": "Form alone is the final truth"
+      }
+    ],
+    "correct": "A",
+    "explanation": "A pot, lamp, and statue differ in name and form, but their substance is clay. The example shows how many forms can appear on one basis."
+  },
+  {
+    "id": 10,
+    "question": "When 'Tat Tvam Asi' is understood correctly, what grows in the seeker?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spiritual pride"
+      },
+      {
+        "key": "B",
+        "text": "The feeling that others are inferior"
+      },
+      {
+        "key": "C",
+        "text": "Humility, compassion, and a softening of hard separation"
+      },
+      {
+        "key": "D",
+        "text": "Hatred toward the world"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter explicitly warns that if the 'I' is misunderstood as the ego, the statement 'Aham Brahmasmi' becomes a distortion, potentially leading the ego to say, 'I am special.'"
+    "explanation": "When the seeker sees that the truth within is not separate from the basis of all, pride does not grow. Humility, compassion, and a glimpse of unity deepen."
   },
   {
-    "id": 630,
-    "question": "The statement 'Ayam Atma Brahma' protects against misusing 'I am Brahman' by:",
+    "id": 11,
+    "question": "What is the simple meaning of 'Aham Brahmasmi'?",
     "options": [
       {
         "key": "A",
-        "text": "Asserting that Atma is a separate, personal entity."
+        "text": "I am Brahman"
       },
       {
         "key": "B",
-        "text": "Suggesting that Brahman is only a concept, not a reality."
+        "text": "You are That"
       },
       {
         "key": "C",
-        "text": "Clarifying that the inwardly recognized Atma is not separate from Brahman."
+        "text": "Consciousness is Brahman"
       },
       {
         "key": "D",
-        "text": "Emphasizing that Atma is limited to the individual body."
+        "text": "This world is the final truth"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Aham Brahmasmi means 'I am Brahman.' But here 'I' does not mean ego; it points toward the witness-nature, Atma."
+  },
+  {
+    "id": 12,
+    "question": "In 'Aham Brahmasmi', what does 'I' not mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness-nature, Atma"
+      },
+      {
+        "key": "B",
+        "text": "The quiet knowing presence"
+      },
+      {
+        "key": "C",
+        "text": "The body-mind ego that claims to be special"
+      },
+      {
+        "key": "D",
+        "text": "The basis that knows the body-mind"
       }
     ],
     "correct": "C",
-    "explanation": "This statement clarifies that 'the Atma being recognized inwardly is Brahman.' It reinforces the non-dual nature, stating that Atma and Brahman are not two, thus preventing a dualistic misunderstanding of 'I am Brahman.'"
+    "explanation": "This Mahavakya is not an egoic claim. If the limited ego says 'I am Brahman' and becomes inflated, the understanding has gone in the wrong direction."
   },
   {
-    "id": 631,
-    "question": "What does the chapter mean when it says consciousness 'is not what comes and goes' in the context of 'Prajnanam Brahma'?",
+    "id": 13,
+    "question": "What is the danger if the ego grasps 'I am Brahman'?",
     "options": [
       {
         "key": "A",
-        "text": "Consciousness is a permanent state of bliss."
+        "text": "It will become more humble"
       },
       {
         "key": "B",
-        "text": "Consciousness ceases to exist when one is asleep."
+        "text": "It may turn the statement into an identity of superiority and specialness"
       },
       {
         "key": "C",
-        "text": "Consciousness is the unchanging light of knowing, in which experiences like thoughts and emotions arise and pass."
+        "text": "It will instantly become free from the body"
       },
       {
         "key": "D",
-        "text": "Consciousness is identical to the physical brain activity."
+        "text": "It will stop all experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter warns that ego can use even a Mahavakya as a new spiritual claim. Correct understanding makes ego lighter, not heavier."
+  },
+  {
+    "id": 14,
+    "question": "What should be the right fruit of 'Aham Brahmasmi'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Superiority and announcement"
+      },
+      {
+        "key": "B",
+        "text": "Escaping responsibility"
+      },
+      {
+        "key": "C",
+        "text": "Compassion, simplicity, and loosening of limited identity"
+      },
+      {
+        "key": "D",
+        "text": "Declaring the world destroyed"
       }
     ],
     "correct": "C",
-    "explanation": "The text explains that consciousness is the 'light of knowing' in which everything is known. It is not the content of experience (thoughts, emotions, sensations) which come and go, but the very awareness that makes knowing possible."
+    "explanation": "In right understanding, the 'I' does not become heavy. Limited identity relaxes, compassion grows, and the seeker becomes simpler and more responsible."
   },
   {
-    "id": 632,
-    "question": "Which Mahavakya is associated with the idea that 'the witness is the doorway; consciousness is the depth of that doorway'?",
+    "id": 15,
+    "question": "What is the simple meaning of 'Ayam Atma Brahma'?",
     "options": [
       {
         "key": "A",
-        "text": "Tat Tvam Asi"
+        "text": "You are That"
       },
       {
         "key": "B",
-        "text": "Aham Brahmasmi"
+        "text": "This Atma is Brahman"
       },
       {
         "key": "C",
-        "text": "Prajnanam Brahma"
+        "text": "I am the body"
       },
       {
         "key": "D",
-        "text": "Ayam Atma Brahma"
+        "text": "The world itself is Atma"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Ayam Atma Brahma shows that the Atma recognized within and the all-pervading Brahman are not two separate truths."
+  },
+  {
+    "id": 16,
+    "question": "How does this course clarify the relationship between Atma and Brahman?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Atma is the truth recognized within; Brahman is that same truth in its infinite context"
+      },
+      {
+        "key": "B",
+        "text": "Atma and Brahman are two opposing powers"
+      },
+      {
+        "key": "C",
+        "text": "Atma is only the body and Brahman is only a thought"
+      },
+      {
+        "key": "D",
+        "text": "Atma has no relation to Brahman"
+      }
+    ],
+    "correct": "A",
+    "explanation": "For clarity, the course uses Atma for the true nature recognized within and Brahman for the same truth in its infinite, all-pervading context."
+  },
+  {
+    "id": 17,
+    "question": "What does the example of space inside pots explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Each pot truly has a separate space"
+      },
+      {
+        "key": "B",
+        "text": "When the pot breaks, space also breaks"
+      },
+      {
+        "key": "C",
+        "text": "Body-mind appears to create boundaries, but the basis of consciousness is not a private limited object"
+      },
+      {
+        "key": "D",
+        "text": "Space has no existence"
       }
     ],
     "correct": "C",
-    "explanation": "This description directly follows the explanation of 'Prajnanam Brahma,' where the relationship between the witness (still knowing presence) and consciousness (light of knowing) is elaborated, likening the witness to a doorway and consciousness to its depth."
+    "explanation": "Space may appear divided by pots, but space itself is not actually divided. Similarly, bodies and minds differ, but Atma in truth is not separate from Brahman."
   },
   {
-    "id": 633,
-    "question": "The practice of 'neti-neti' is primarily about:",
+    "id": 18,
+    "question": "What does it mean to bring Mahavakyas into life?",
     "options": [
       {
         "key": "A",
-        "text": "Affirming one's spiritual identity."
+        "text": "To memorize and repeat them to others only"
       },
       {
         "key": "B",
-        "text": "Identifying with the changing phenomena of existence."
+        "text": "To return, within every experience, from body-mind identification to the knowing presence"
       },
       {
         "key": "C",
-        "text": "Negating that which is known, changing, or impermanent as the final Self."
+        "text": "To abandon all actions in life"
       },
       {
         "key": "D",
-        "text": "Seeking external validation for one's spiritual progress."
+        "text": "To suppress every experience by calling it Brahman"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The Mahavakyas enter life when, amid joy, sorrow, criticism, success, or practice, the seeker returns toward the witness and Atma."
+  },
+  {
+    "id": 19,
+    "question": "What is the simple meaning of 'Prajnanam Brahma'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Consciousness is Brahman"
+      },
+      {
+        "key": "B",
+        "text": "I am Brahman"
+      },
+      {
+        "key": "C",
+        "text": "You are That"
+      },
+      {
+        "key": "D",
+        "text": "This body is Brahman"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Prajnanam Brahma points out that consciousness is the basis of every experience. It is not merely mental awareness, but the ground that makes experience possible."
+  },
+  {
+    "id": 20,
+    "question": "How is consciousness explained in Chapter 6?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only as the capacity to think"
+      },
+      {
+        "key": "B",
+        "text": "Only as the activity of the waking mind"
+      },
+      {
+        "key": "C",
+        "text": "As the light of knowing by which body, mind, thoughts, and world are known"
+      },
+      {
+        "key": "D",
+        "text": "As a changing emotion"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter states that 'neti-neti - not this, not this' is used to understand that 'Whatever changes, whatever is known, whatever comes and goes, cannot be the final Self.' It's a process of elimination of false identities."
+    "explanation": "Consciousness is the basis in which thought, emotion, body, world, and even silence are known. It is not a thought or emotion, but the light of knowing."
   },
   {
-    "id": 634,
-    "question": "What is the key characteristic that makes Mahavakyas 'great'?",
+    "id": 21,
+    "question": "Why can consciousness not be made into an object of experience?",
     "options": [
       {
         "key": "A",
-        "text": "Their intricate grammatical structure."
+        "text": "Because experience is known in consciousness; consciousness is not an object of experience"
       },
       {
         "key": "B",
-        "text": "Their ability to evoke strong emotional responses."
+        "text": "Because consciousness is never present"
       },
       {
         "key": "C",
-        "text": "Their direct pointing to one's true nature."
+        "text": "Because consciousness exists only in sleep"
       },
       {
         "key": "D",
-        "text": "Their historical significance in ancient texts."
+        "text": "Because consciousness is only a body part"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Whatever experience appears is known in consciousness. Therefore consciousness cannot be grasped as one object among experiences; it is the basis of experiences."
+  },
+  {
+    "id": 22,
+    "question": "How is the relationship between witness and consciousness presented?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Witness is mind and consciousness is body"
+      },
+      {
+        "key": "B",
+        "text": "Witness is the direction of seeing experiences; consciousness is the light of knowing in which the whole field of experience appears"
+      },
+      {
+        "key": "C",
+        "text": "They have no relation"
+      },
+      {
+        "key": "D",
+        "text": "Witness exists only in dream and consciousness only in waking"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Witness points the seeker toward seeing experiences. Consciousness is the wider knowing in which the entire field of experience appears."
+  },
+  {
+    "id": 23,
+    "question": "If light or bliss appears in meditation, how should it be seen according to the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It should immediately be taken as the final Brahman"
+      },
+      {
+        "key": "B",
+        "text": "It should be grasped and made permanent"
+      },
+      {
+        "key": "C",
+        "text": "It should be known as an experience, because it too appears and can pass"
+      },
+      {
+        "key": "D",
+        "text": "It should be declared wrong and suppressed"
       }
     ],
     "correct": "C",
-    "explanation": "The text explicitly states, 'They are great because they point directly to your real nature.' Their power lies in their directness as pointers to truth."
+    "explanation": "Experiences like light, bliss, peace, or emptiness may be beautiful, but they are experiences. What appears and passes cannot be consciousness itself."
   },
   {
-    "id": 635,
-    "question": "If a seeker only practices 'neti-neti' without the Mahavakyas, what might be the result?",
+    "id": 24,
+    "question": "How does 'Prajnanam Brahma' become alive in life?",
     "options": [
       {
         "key": "A",
-        "text": "Complete realization of the Self."
+        "text": "By seeing every experience as appearing in consciousness"
       },
       {
         "key": "B",
-        "text": "An enlarged ego that feels superior."
+        "text": "By stopping every emotion"
       },
       {
         "key": "C",
-        "text": "A sense of spiritual emptiness or confusion about 'what then?'"
+        "text": "By only reading scripture"
       },
       {
         "key": "D",
-        "text": "A new, positive spiritual experience."
+        "text": "By leaving worldly responsibilities"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When praise, criticism, joy, sorrow, fear, and peace are all seen as experiences known in consciousness, the Mahavakya begins to enter life."
+  },
+  {
+    "id": 25,
+    "question": "Why does the understanding of consciousness deepen compassion?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it calls the suffering of others false"
+      },
+      {
+        "key": "B",
+        "text": "Because the hardness of separation softens and all experiences are seen in one basis"
+      },
+      {
+        "key": "C",
+        "text": "Because the seeker cuts off from the world"
+      },
+      {
+        "key": "D",
+        "text": "Because compassion is an obstacle to practice"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Seeing consciousness as the basis does not make the seeker dismiss suffering. Separation softens, so sensitivity and compassion deepen."
+  },
+  {
+    "id": 26,
+    "question": "What are Mahavakyas not meant to give to the ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A new spiritual declaration and superiority"
+      },
+      {
+        "key": "B",
+        "text": "Humility"
+      },
+      {
+        "key": "C",
+        "text": "The direction of the witness"
+      },
+      {
+        "key": "D",
+        "text": "Clarity of identity"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakyas are not meant to inflate the ego. Their purpose is to loosen limited identity and turn the seeker toward Atma-Brahman."
+  },
+  {
+    "id": 27,
+    "question": "What does Nididhyasan mean in this course?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only memorizing the statements"
+      },
+      {
+        "key": "B",
+        "text": "Clarifying the heard and understood truth again and again in one's own experience"
+      },
+      {
+        "key": "C",
+        "text": "Renouncing the world"
+      },
+      {
+        "key": "D",
+        "text": "Forcefully holding one thought"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Nididhyasan is not only sitting in meditation. It is repeatedly returning to the understood truth within life so that it becomes steady."
+  },
+  {
+    "id": 28,
+    "question": "Why is it not enough to keep Mahavakyas only in the intellect?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because they must be brought into lived experience"
+      },
+      {
+        "key": "B",
+        "text": "Because the intellect is completely useless"
+      },
+      {
+        "key": "C",
+        "text": "Because no one can understand the Mahavakyas"
+      },
+      {
+        "key": "D",
+        "text": "Because chanting is their only purpose"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The Mahavakyas may first be understood intellectually, but the journey does not end there. They must become a living direction in sorrow, joy, action, and practice."
+  },
+  {
+    "id": 29,
+    "question": "According to the chapter, how should 'I am Brahman' be held?",
+    "options": [
+      {
+        "key": "A",
+        "text": "As something to prove to others"
+      },
+      {
+        "key": "B",
+        "text": "As a spiritual image"
+      },
+      {
+        "key": "C",
+        "text": "As a quiet inner recognition, not a claim"
+      },
+      {
+        "key": "D",
+        "text": "As a social title"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter explains that if a seeker only hears 'not this, not this,' the mind 'naturally asks, 'Then what?'' This indicates that negation alone can leave a void without a positive pointer."
+    "explanation": "The statement is not for outward announcement. In right understanding, it brings silence, humility, and a softening of limited identity."
   },
   {
-    "id": 636,
-    "question": "In 'Tat Tvam Asi,' the analogy of the wave and the ocean illustrates that:",
+    "id": 30,
+    "question": "What confusion does 'Ayam Atma Brahma' remove?",
     "options": [
       {
         "key": "A",
-        "text": "The wave is ultimately separate from the ocean."
+        "text": "That Atma is only a small private object"
       },
       {
         "key": "B",
-        "text": "The ocean is a metaphor for the ego."
+        "text": "That the body changes"
       },
       {
         "key": "C",
-        "text": "The wave's limited form does not negate its essential nature as water, just as the individual's apparent form does not negate their essential nature as Brahman."
+        "text": "That thoughts arise in the mind"
       },
       {
         "key": "D",
-        "text": "The wave's desire to disappear is a spiritual goal."
+        "text": "That action must be done"
+      }
+    ],
+    "correct": "A",
+    "explanation": "This Mahavakya shows that Atma is not a small individual object. The truth recognized within is not separate from Brahman."
+  },
+  {
+    "id": 31,
+    "question": "What preparation helps before listening to Mahavakyas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Seeing body-mind, emotions, roles, and ego as known objects"
+      },
+      {
+        "key": "B",
+        "text": "Only learning Sanskrit grammar"
+      },
+      {
+        "key": "C",
+        "text": "Debating with others"
+      },
+      {
+        "key": "D",
+        "text": "Declaring the world destroyed"
+      }
+    ],
+    "correct": "A",
+    "explanation": "If mistaken identities have not been seen, Mahavakyas may become egoic language. The cleansing of Neti-Neti prepares the ground for hearing them."
+  },
+  {
+    "id": 32,
+    "question": "What is the correct relationship between Mahavakyas and Neti-Neti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "They oppose each other"
+      },
+      {
+        "key": "B",
+        "text": "Neti-Neti clears identity; Mahavakyas point toward truth"
+      },
+      {
+        "key": "C",
+        "text": "Mahavakyas make Neti-Neti meaningless"
+      },
+      {
+        "key": "D",
+        "text": "Neti-Neti is only for the body and Mahavakyas only for action"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Neti-Neti says, 'not this, not this.' After that clearing, Mahavakyas reveal the direction of the true nature."
+  },
+  {
+    "id": 33,
+    "question": "Which is a wrong use of a Mahavakya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Listening to it in witness-awareness"
+      },
+      {
+        "key": "B",
+        "text": "Bringing it into life with compassion"
+      },
+      {
+        "key": "C",
+        "text": "Turning it into an egoic declaration: I am above everyone"
+      },
+      {
+        "key": "D",
+        "text": "Using it as a direction away from body-mind identity"
       }
     ],
     "correct": "C",
-    "explanation": "The analogy shows that while a wave appears limited, its essence is water, the same as the ocean. This mirrors how the seeker, appearing limited as body-mind, is in true nature not separate from Brahman."
+    "explanation": "If a Mahavakya creates superiority, freedom from responsibility, or the feeling that others are inferior, it is ego's trick, not understanding."
   },
   {
-    "id": 637,
-    "question": "What is the core message of 'Tat Tvam Asi'?",
+    "id": 34,
+    "question": "What do the four Mahavakyas point toward?",
     "options": [
       {
         "key": "A",
-        "text": "The individual self is superior to the universal reality."
+        "text": "Four different final truths"
       },
       {
         "key": "B",
-        "text": "One must strive to become one with Brahman."
+        "text": "The same non-dual direction of witness, Atma, consciousness, and Brahman"
       },
       {
         "key": "C",
-        "text": "The inner witness and the ultimate reality (Brahman) are not two."
+        "text": "Four different rituals"
       },
       {
         "key": "D",
-        "text": "The body and mind are the true nature of the Self."
+        "text": "Only external worship"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Tat Tvam Asi, Aham Brahmasmi, Ayam Atma Brahma, and Prajnanam Brahma all point from different angles toward the same non-dual truth."
+  },
+  {
+    "id": 35,
+    "question": "What confusion should the seeker avoid after hearing 'Consciousness is Brahman'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "That a special experience must be grasped"
+      },
+      {
+        "key": "B",
+        "text": "That experiences are known in consciousness"
+      },
+      {
+        "key": "C",
+        "text": "That compassion is necessary"
+      },
+      {
+        "key": "D",
+        "text": "That thoughts are also known"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The mind wants to turn even consciousness into an experience. The chapter makes clear that consciousness is not an experience but the basis of all experiences."
+  },
+  {
+    "id": 36,
+    "question": "Where is the real place of the Mahavakyas said to be?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Only in chanting"
+      },
+      {
+        "key": "B",
+        "text": "Only in outer discussion"
+      },
+      {
+        "key": "C",
+        "text": "In living inner recognition and remembrance"
+      },
+      {
+        "key": "D",
+        "text": "Only on the page of a book"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter states, '\"You are That\" means that the witness recognized within is not separate from the final truth. Your real nature and the ground of existence are not two.' This encapsulates the core message."
+    "explanation": "Mahavakyas may be heard outwardly, but their real meaning opens within recognition. They are not just words; they are direction and remembrance."
   },
   {
-    "id": 638,
-    "question": "When 'Aham Brahmasmi' is understood correctly, it leads to:",
+    "id": 37,
+    "question": "If a seeker says, 'I have memorized the Mahavakyas, so I have knowledge,' what is the problem?",
     "options": [
       {
         "key": "A",
-        "text": "A sense of spiritual superiority and detachment from others."
+        "text": "It limits understanding to memory"
       },
       {
         "key": "B",
-        "text": "An urge to constantly prove one's realization."
+        "text": "It is deep Nididhyasan"
       },
       {
         "key": "C",
-        "text": "A quiet simplicity and humility."
+        "text": "It is the final state of witness"
       },
       {
         "key": "D",
-        "text": "A rejection of all worldly activities."
+        "text": "It proves compassion"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The purpose of Mahavakyas is not mere memorization. If they do not enter life and experience, they remain only information."
+  },
+  {
+    "id": 38,
+    "question": "What place does reasoning have while listening to Mahavakyas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Reasoning is completely forbidden"
+      },
+      {
+        "key": "B",
+        "text": "Reasoning has its place, but Mahavakyas are not only for the intellect"
+      },
+      {
+        "key": "C",
+        "text": "Reasoning alone gives final recognition"
+      },
+      {
+        "key": "D",
+        "text": "Reasoning itself is Brahman"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Reasoning and reflection are useful, but Mahavakyas guide the intellect toward quiet recognition. They should not become only a topic of debate."
+  },
+  {
+    "id": 39,
+    "question": "Why are Mahavakyas not called a future achievement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because they show that the real nature is already present, only covered by mistaken identity"
+      },
+      {
+        "key": "B",
+        "text": "Because they have no use"
+      },
+      {
+        "key": "C",
+        "text": "Because they need not be heard"
+      },
+      {
+        "key": "D",
+        "text": "Because they are only history"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakyas say that truth is not an object to be gained in the future. It is already present; attention must turn away from mistaken body-mind identity."
+  },
+  {
+    "id": 40,
+    "question": "What does the example of the necklace already on the neck explain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Truth is hidden far away"
+      },
+      {
+        "key": "B",
+        "text": "What is being searched for is already close; it only needs to be pointed out"
+      },
+      {
+        "key": "C",
+        "text": "The necklace itself is Brahman"
+      },
+      {
+        "key": "D",
+        "text": "The search is useless"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Just as a person searches outside for a necklace already on the neck, the seeker searches for truth outside. The Mahavakyas remind the seeker that truth is not separate."
+  },
+  {
+    "id": 41,
+    "question": "What is the main purpose of the exercises in Chapter 6?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To make Mahavakyas into egoic declarations"
+      },
+      {
+        "key": "B",
+        "text": "To see body-mind and return toward the knowing presence"
+      },
+      {
+        "key": "C",
+        "text": "To forcefully stop all experiences"
+      },
+      {
+        "key": "D",
+        "text": "To only chant Sanskrit words"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The exercises help the seeker know body, mind, emotion, and ego-story, and then return quietly toward the direction indicated by the Mahavakyas."
+  },
+  {
+    "id": 42,
+    "question": "What is the right way to hear 'Tat Tvam Asi' in life?",
+    "options": [
+      {
+        "key": "A",
+        "text": "In criticism or sorrow, return from the experience toward the witness-truth"
+      },
+      {
+        "key": "B",
+        "text": "Tell everyone that I am superior to them"
+      },
+      {
+        "key": "C",
+        "text": "Treat every bodily desire as truth"
+      },
+      {
+        "key": "D",
+        "text": "Try to make pleasure permanent"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When criticism, sorrow, or success appears, 'You are That' turns the seeker away from the experiencer's story toward true nature."
+  },
+  {
+    "id": 43,
+    "question": "What is the mature view of sorrow in the light of Mahavakyas?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ignore sorrow by calling it false"
+      },
+      {
+        "key": "B",
+        "text": "Respect sorrow, but do not take Atma to be limited by sorrow"
+      },
+      {
+        "key": "C",
+        "text": "Stay away from sorrowful people"
+      },
+      {
+        "key": "D",
+        "text": "Treat sorrow as spiritual failure"
+      }
+    ],
+    "correct": "B",
+    "explanation": "In practical life, sorrow must be heard with compassion. At the same time, there is clarity that the basis of Atma is not limited by sorrow."
+  },
+  {
+    "id": 44,
+    "question": "What do Mahavakyas not make the seeker?",
+    "options": [
+      {
+        "key": "A",
+        "text": "More aware"
+      },
+      {
+        "key": "B",
+        "text": "More compassionate"
+      },
+      {
+        "key": "C",
+        "text": "More humble"
+      },
+      {
+        "key": "D",
+        "text": "More egoic and filled with specialness"
+      }
+    ],
+    "correct": "D",
+    "explanation": "If Mahavakyas increase ego and specialness, understanding is wrong. In the right direction they deepen humility, compassion, and witness-awareness."
+  },
+  {
+    "id": 45,
+    "question": "Why can consciousness be called the nearest?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because whatever is known is known in consciousness"
+      },
+      {
+        "key": "B",
+        "text": "Because it is visible only to the eyes"
+      },
+      {
+        "key": "C",
+        "text": "Because it exists only outside the body"
+      },
+      {
+        "key": "D",
+        "text": "Because it is a special color"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Thought, emotion, body, sound, memory, and silence are all known in consciousness. Therefore consciousness is not far like an object; it is the closest basis of experience."
+  },
+  {
+    "id": 46,
+    "question": "What does the example of rooms and light clarify?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rooms themselves are consciousness"
+      },
+      {
+        "key": "B",
+        "text": "The content of experience may differ, but the nature of knowing is illumination"
+      },
+      {
+        "key": "C",
+        "text": "Light cannot be known, so life is meaningless"
+      },
+      {
+        "key": "D",
+        "text": "Each body has a completely separate final truth"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Different rooms may contain different scenes, but light illuminates them. Likewise, the content of body-mind differs, but the nature of knowing points in one direction."
+  },
+  {
+    "id": 47,
+    "question": "Toward which next chapter does Chapter 6 build a bridge?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Layers of Ego"
+      },
+      {
+        "key": "B",
+        "text": "Maya and the World"
+      },
+      {
+        "key": "C",
+        "text": "The Turiya State"
+      },
+      {
+        "key": "D",
+        "text": "The Search for the Self"
       }
     ],
     "correct": "C",
-    "explanation": "The text contrasts ego's claim ('heaviness and superiority') with true recognition ('silence, simplicity, and humility'). Correct understanding of 'Aham Brahmasmi' fosters inner quietude and humility."
+    "explanation": "After understanding the direction of consciousness through the Mahavakyas, the next chapter moves toward the basis of waking, dream, and deep sleep—the Turiya State."
   },
   {
-    "id": 639,
-    "question": "The statement 'Ayam Atma Brahma' protects against misinterpreting 'Atma' as:",
+    "id": 48,
+    "question": "How should Mahavakyas be held in Nididhyasan?",
     "options": [
       {
         "key": "A",
-        "text": "The universal ground of existence."
+        "text": "As announcement and display"
       },
       {
         "key": "B",
-        "text": "The witness-consciousness."
+        "text": "As quiet remembrance and a direction for repeatedly returning in experience"
       },
       {
         "key": "C",
-        "text": "The ultimate reality."
+        "text": "As arguments to defeat others"
       },
       {
         "key": "D",
-        "text": "A tiny, private object inside each person."
+        "text": "Only as exam answers"
       }
     ],
-    "correct": "D",
-    "explanation": "The chapter advises not to imagine Atma as a 'tiny private object inside each person.' It clarifies that consciousness, in its truth, is not confined by body-mind, thus protecting against a limited, individualistic view of Atma."
+    "correct": "B",
+    "explanation": "In Nididhyasan, the Mahavakyas are to be heard again and again within life. They are not announcements, but quiet remembrance and direction."
   },
   {
-    "id": 640,
-    "question": "In 'Prajnanam Brahma,' consciousness is described as the 'light of knowing.' What does this imply?",
+    "id": 49,
+    "question": "What is the central message of Chapter 6?",
     "options": [
       {
         "key": "A",
-        "text": "Consciousness is a fleeting, temporary phenomenon."
+        "text": "Mahavakyas are meant to enlarge the ego"
       },
       {
         "key": "B",
-        "text": "Consciousness is solely responsible for generating thoughts."
+        "text": "The seeker's true nature is not separate from Brahman"
       },
       {
         "key": "C",
-        "text": "Consciousness is a state that can be achieved through intense effort."
+        "text": "Mahavakyas are only social teachings"
       },
       {
         "key": "D",
-        "text": "Consciousness is the fundamental awareness that illuminates all experiences."
+        "text": "Mahavakyas make the body the final truth"
       }
     ],
-    "correct": "D",
-    "explanation": "The text defines consciousness as 'the light of knowing because of which thoughts are known, emotions are known, the body is known, and the world is known.' This highlights its role as the fundamental illuminator of all experience."
+    "correct": "B",
+    "explanation": "The whole chapter points to the fact that witness, Atma, consciousness, and Brahman are not separate objects, but indications toward the same non-dual truth."
   },
   {
-    "id": 641,
-    "question": "What is the danger of trying to 'experience consciousness as light, bliss, or a deep state'?",
+    "id": 50,
+    "question": "After hearing the Mahavakyas, what should the seeker remember?",
     "options": [
       {
         "key": "A",
-        "text": "It leads to immediate enlightenment."
+        "text": "Do not turn them into claims; let them become humble recognition and compassion in life"
       },
       {
         "key": "B",
-        "text": "It strengthens the ego's identification with spiritual states."
+        "text": "Use them only to impress others"
       },
       {
         "key": "C",
-        "text": "It makes one indifferent to worldly suffering."
+        "text": "Stop practice immediately after hearing them"
       },
       {
         "key": "D",
-        "text": "It turns consciousness into just another object of experience, which comes and goes."
+        "text": "Treat them as decorative words only"
       }
     ],
-    "correct": "D",
-    "explanation": "The chapter warns against this, stating, 'whatever comes as an experience is known in consciousness... Consciousness is not what comes and goes. Consciousness is that in which coming and going are known.' This means treating it as an experience misses its true nature."
-  },
-  {
-    "id": 642,
-    "question": "The chapter suggests that the Mahavakyas, when understood, should lead to:",
-    "options": [
-      {
-        "key": "A",
-        "text": "A sense of intellectual superiority."
-      },
-      {
-        "key": "B",
-        "text": "Increased reactivity to life's challenges."
-      },
-      {
-        "key": "C",
-        "text": "A desire to renounce all worldly activities."
-      },
-      {
-        "key": "D",
-        "text": "Deepened compassion and softened separation."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Regarding 'Tat Tvam Asi,' the text says, 'If it softens separation and deepens compassion, it is being heard rightly.' This principle applies broadly to the understanding of the Mahavakyas, fostering connection rather than isolation."
-  },
-  {
-    "id": 643,
-    "question": "What is the role of Nididhyasan in relation to the Mahavakyas?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It is the initial stage of learning the Mahavakyas."
-      },
-      {
-        "key": "B",
-        "text": "It is a formal ceremony for initiating seekers into Mahavakya study."
-      },
-      {
-        "key": "C",
-        "text": "It is a method for intellectually dissecting the Mahavakyas."
-      },
-      {
-        "key": "D",
-        "text": "It is the practice of returning to the truth of the Mahavakyas in daily life."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Nididhyasan is described as 'returning again and again to the truth that has been heard and understood.' It's about integrating the Mahavakya's meaning into the fabric of everyday living, not just during meditation."
-  },
-  {
-    "id": 644,
-    "question": "The chapter mentions that the next chapter will discuss Turiya. What is Turiya related to, according to this chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The practice of Neti-Neti."
-      },
-      {
-        "key": "B",
-        "text": "The four main Mahavakyas."
-      },
-      {
-        "key": "C",
-        "text": "The ego's transformation into Brahman."
-      },
-      {
-        "key": "D",
-        "text": "The unchanging awareness present through waking, dream, and deep sleep states."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter states, 'We will look at waking, dream, and deep sleep, and then the unchanging awareness that knows all three but is not limited to any of them.' This unchanging awareness is the context for Turiya."
-  },
-  {
-    "id": 645,
-    "question": "What is the primary purpose of the Mahavakyas, as stated in the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To provide a complex philosophical framework."
-      },
-      {
-        "key": "B",
-        "text": "To create new spiritual experiences."
-      },
-      {
-        "key": "C",
-        "text": "To enlarge the ego's sense of self."
-      },
-      {
-        "key": "D",
-        "text": "To offer direct pointers to one's real nature."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter explicitly states, 'Mahavakyas are the great statements of Advaita... They are great because they point directly to your real nature.'"
-  },
-  {
-    "id": 646,
-    "question": "In the practice described, after noticing that the body, mind, and emotions are known, what is the next step?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To try to change the body or mind."
-      },
-      {
-        "key": "B",
-        "text": "To analyze the content of the experiences."
-      },
-      {
-        "key": "C",
-        "text": "To seek a new spiritual experience."
-      },
-      {
-        "key": "D",
-        "text": "To ask gently if the knower is changing in the same way."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The practice suggests: 'notice that the body is known... Then ask gently: is the knower changing in the same way?' This directs attention to the unchanging witness before engaging with the Mahavakya."
-  },
-  {
-    "id": 647,
-    "question": "The statement 'Tat Tvam Asi' is not meant to imply:",
-    "options": [
-      {
-        "key": "A",
-        "text": "That your real nature is the ground of all existence."
-      },
-      {
-        "key": "B",
-        "text": "That the knowing presence within is Brahman."
-      },
-      {
-        "key": "C",
-        "text": "That the witness is not separate from the final truth."
-      },
-      {
-        "key": "D",
-        "text": "That the body's every desire is truth."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter clarifies that 'Tat Tvam Asi' does not mean 'the body's every desire is truth' or 'every thought of the mind is divine instruction.' It points beyond the limitations of body and mind."
-  },
-  {
-    "id": 648,
-    "question": "What is the correct interpretation of 'Aham Brahmasmi' regarding practical life?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It negates the need for practical actions like eating or working."
-      },
-      {
-        "key": "B",
-        "text": "It makes one realize that practical life is an illusion and should be abandoned."
-      },
-      {
-        "key": "C",
-        "text": "It implies that all practical actions are inherently divine."
-      },
-      {
-        "key": "D",
-        "text": "It clarifies one's identity within practical life, without destroying it."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The text states, 'Outer life continues. Food must be eaten, work must be done... Aham Brahmasmi does not destroy practical life. It clarifies identity within practical life.'"
-  },
-  {
-    "id": 649,
-    "question": "The analogy of space not being divided by pots illustrates that:",
-    "options": [
-      {
-        "key": "A",
-        "text": "Space is a limited entity."
-      },
-      {
-        "key": "B",
-        "text": "Pots represent the ego, and space represents Brahman."
-      },
-      {
-        "key": "C",
-        "text": "When a pot breaks, space is created."
-      },
-      {
-        "key": "D",
-        "text": "Consciousness, like space, is not truly confined by individual forms (body-mind)."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The analogy explains that space is not truly divided by the pots that appear to contain it. Similarly, consciousness is not confined by the body-mind, illustrating the non-dual nature of Atma and Brahman."
-  },
-  {
-    "id": 650,
-    "question": "What is the ultimate goal of integrating the Mahavakyas into life, as described by Nididhyasan?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To achieve a permanent state of bliss."
-      },
-      {
-        "key": "B",
-        "text": "To intellectually master the philosophical concepts."
-      },
-      {
-        "key": "C",
-        "text": "To develop a unique spiritual identity."
-      },
-      {
-        "key": "D",
-        "text": "To allow the truth pointed to by the Mahavakyas to be remembered and recognized amidst all experiences."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Nididhyasan is described as 'returning again and again to the truth that has been heard and understood.' This means remembering the truth indicated by the Mahavakyas ('Tat Tvam Asi,' etc.) when body-identification, restlessness, or ego claims arise, or when the world feels heavy."
+    "correct": "A",
+    "explanation": "The true fruit of Mahavakyas appears in life: claims reduce, witness-awareness deepens, and compassion and humility grow."
   }
 ]

@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 2 ki shuruaat Adhyay 1 se kaise judti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pehle andar saakshi ki disha dekhi gayi, ab wahi drishti bahar jagat ki taraf mudti hai"
+      },
+      {
+        "key": "B",
+        "text": "Adhyay 1 ko poori tarah chhodkar sirf karmkand shuru hota hai"
+      },
+      {
+        "key": "C",
+        "text": "Ab sharir ko hi antim satya siddh kiya jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Ab sadhak ko sansar se turant bhaagne ko kaha jata hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay 1 mein sadhak ne sharir, mann aur saakshi ki disha dekhi. Adhyay 2 mein wahi saakshi bahar ke jagat ko naye nazariye se dekhna shuru karta hai."
+  },
+  {
+    "id": 2,
+    "question": "Adhyay ke anusaar sansar humein aam taur par kaisa lagta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hamesha jhootha aur bekaar"
+      },
+      {
+        "key": "B",
+        "text": "Thos, real, stable aur bina sawal ke sach jaisa"
+      },
+      {
+        "key": "C",
+        "text": "Puri tarah adrishya"
+      },
+      {
+        "key": "D",
+        "text": "Sirf dhyan mein dikhne wala"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jagat rang, awaaz, sharir, log, samay aur ghatnaon ke roop mein bahut thos lagta hai. Sadhak aam taur par yeh sawal nahi uthata ki jo dikh raha hai, kya wahi antim satya bhi hai."
+  },
+  {
+    "id": 3,
+    "question": "Ek hi baarish alag-alag logon ko alag kyun lag sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki baarish sach mein har vyakti ke liye alag padarth ban jati hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki baarish ka koi astitva nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki anubhav sirf bahar se nahi, andar ki smriti, pasand aur sthiti se bhi banta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki indriyan kabhi kaam nahi karti"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Bahar baarish ek hi ho sakti hai, par kisi ko suhaani lagti hai aur kisi ko pareshaan karti hai. Isse dikhta hai ki anubhav mein bahar ki vastu ke saath andar ki drishti bhi judti hai."
+  },
+  {
+    "id": 4,
+    "question": "Ek hi gaane ke alag-alag anubhav ka example kya batata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gaana sirf ek vyakti ko sunai deta hai"
+      },
+      {
+        "key": "B",
+        "text": "Har vyakti ko har cheez bilkul same dikhai-sunai deti hai"
+      },
+      {
+        "key": "C",
+        "text": "Sangeet spiritual path mein badha hai"
+      },
+      {
+        "key": "D",
+        "text": "Ek hi bahari ghatna andar ki smriti aur bhaav ke karan alag anubhav ban sakti hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Ek gaana kisi ko emotional kar sakta hai aur kisi ko normal lag sakta hai. Isse saaf hota hai ki anubhav sirf bahari sound nahi, andar ki sthiti se bhi banta hai."
+  },
+  {
+    "id": 5,
+    "question": "Indriyon ki seema samjhane ka main purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh dikhana ki hum sansar ko indriyon aur mann ke madhyam se limited roop mein jaante hain"
+      },
+      {
+        "key": "B",
+        "text": "Science ko galat siddh karna"
+      },
+      {
+        "key": "C",
+        "text": "Aankh aur kaan ka use band kar dena"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ko turant nasht maan lena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay science ko galat nahi kehta. Woh bas dikhata hai ki aankh, kaan aur mann limited tools hain; isliye hamara anubhav poora antim satya nahi ho sakta."
+  },
+  {
+    "id": 6,
+    "question": "“Hum sansar ko directly nahi dekhte” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar kabhi dikhai hi nahi deta"
+      },
+      {
+        "key": "B",
+        "text": "Hum sansar ko indriyon, mann, smriti aur meaning ke filters se dekhte hain"
+      },
+      {
+        "key": "C",
+        "text": "Sansar sirf imagination hai, vyavahar mein bhi nahi hai"
+      },
+      {
+        "key": "D",
+        "text": "Dekhna spiritual galti hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jo hum dekhte-sunte hain, woh indriyon aur mann se chhankar aata hai. Isliye anubhav aur antim satya mein farak ho sakta hai."
+  },
+  {
+    "id": 7,
+    "question": "Sapne ka gehra example adhyay mein kisliye diya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh siddh karne ke liye ki jagrat sansar ka koi practical importance nahi"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ko neend mein hi sadhana karne ko kehne ke liye"
+      },
+      {
+        "key": "C",
+        "text": "Yeh dikhane ke liye ki sapna apne samay mein sach jaisa lagta hai, par jaagne par uski sthiti badal jati hai"
+      },
+      {
+        "key": "D",
+        "text": "Sabhi anubhavon ko darawna batane ke liye"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sapne mein log, jagah aur samay sach lagte hain. Jaagne par pata chalta hai ki woh state-specific satya tha; isse jagrat jagat par bhi gehri jaanch ka prashn uthta hai."
+  },
+  {
+    "id": 8,
+    "question": "Adhyay mein sansar ko lekar kaunsi savdhani rakhi gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar ko turant bekaar keh dena"
+      },
+      {
+        "key": "B",
+        "text": "Sansar ko antim satya maan kar pakad lena"
+      },
+      {
+        "key": "C",
+        "text": "Sansar ki har responsibility chhod dena"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ko nakarna nahi, balki naye nazariye se dekhna"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay sansar ko jhooth ya meaningless kehne ki jaldi nahi karta. Woh sadhak ko bas itna dekhne ko kehta hai ki anubhav aur antim satya mein farak ho sakta hai."
+  },
+  {
+    "id": 9,
+    "question": "Is adhyay mein Maya ki basic definition kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh shakti jiske karan ek advaita satya anek naam aur roop mein dikhai deta hai"
+      },
+      {
+        "key": "B",
+        "text": "Ek enemy force jo sadhak ko punish karti hai"
+      },
+      {
+        "key": "C",
+        "text": "Sirf personal laziness"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ki disease"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Fixed terminology ke anusaar Maya jagat-star par woh shakti hai jisse ek hi satya anekta, naam aur roop ke roop mein dikhai deta hai."
+  },
+  {
+    "id": 10,
+    "question": "Maya ko “jhooth” na kehkar kaise samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh bilkul nahi hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh anubhav mein effective hai, par gyaan mein uski independent final reality nahi rehti"
+      },
+      {
+        "key": "C",
+        "text": "Woh sharir ka doosra naam hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh sirf paap hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maya anubhav mein dikhai deti hai aur vyavahar mein effective hai. Par samajh aane par uski independent final reality nahi rehti; isliye use poori tarah satya ya asatya dono nahi kaha gaya."
+  },
+  {
+    "id": 11,
+    "question": "Sona aur gehno ka example Maya ko kaise samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sona aur gehne bilkul unrelated hain"
+      },
+      {
+        "key": "B",
+        "text": "Gehno ka koi practical use nahi"
+      },
+      {
+        "key": "C",
+        "text": "Gehno ke naam-roop alag hain, par mool padarth sona ek hi hai"
+      },
+      {
+        "key": "D",
+        "text": "Sona sirf imagination hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Angoothi, haar aur kangan naam-roop mein alag hain, par base sona hai. Isi tarah jagat mein naam-roop anek dikhte hain, par gehra base ek hai."
+  },
+  {
+    "id": 12,
+    "question": "Naam aur roop ke khel ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Naam aur roop hi Brahm hain, isliye koi jaanch nahi chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Naam aur roop yaad rakhna hi mukti hai"
+      },
+      {
+        "key": "C",
+        "text": "Naam aur roop se nafrat karni chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Naam aur roop vyavahar mein useful hain, par woh final base nahi hain"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Naam aur roop se vyavahar chalta hai, par woh badalte hain. Maya ki samajh dikhati hai ki bhed vyavahar mein hain, par antim samajh mein ek gehra base hai."
+  },
+  {
+    "id": 13,
+    "question": "Indradhanush ka example kis baat ko clear karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Door se rangon ka sundar roop dikhta hai, par paas se light aur water droplets ki arrangement samajh mein aati hai"
+      },
+      {
+        "key": "B",
+        "text": "Indradhanush puri tarah permanent object hai"
+      },
+      {
+        "key": "C",
+        "text": "Rangon ka anubhav hamesha galat hai"
+      },
+      {
+        "key": "D",
+        "text": "Sundarta spiritual path mein badha hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Indradhanush anubhav mein sundar aur real lagta hai, par uski independent object-reality nahi. Isse Maya ki subtle position samajh mein aati hai."
+  },
+  {
+    "id": 14,
+    "question": "“Maya na poori tarah satya, na poori tarah asatya” ka simple meaning kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya ko samajhna impossible hai, isliye baat chhod deni chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Maya anubhav mein dikhti hai, par final truth ki tarah independent nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Maya sirf shabdon ka khel hai, anubhav mein nahi"
+      },
+      {
+        "key": "D",
+        "text": "Maya sirf burai hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maya ka effect anubhav mein hai, par gyaan mein woh independent final truth nahi rehti. Isliye woh na bilkul na hone jaisi hai, na Brahm ki tarah antim satya."
+  },
+  {
+    "id": 15,
+    "question": "Jadugar ke kartab ka example Maya ko kaise samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jadugar hi Brahm hai"
+      },
+      {
+        "key": "B",
+        "text": "Har anubhav dhokha hai aur uska koi value nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kartab dekhte waqt sach jaisa lagta hai, par samajh aane par uska raaz khul jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Maya sirf bachchon ke liye topic hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jadugar ka kartab anubhav mein effect karta hai, par samajh aane par pata chalta hai ki woh final truth nahi tha. Maya bhi anubhav mein effective hai, par gyaan se uska raaz khulta hai."
+  },
+  {
+    "id": 16,
+    "question": "“Mera ghar” aur “tumhara ghar” ke example se kya samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ghar ka koi practical importance nahi"
+      },
+      {
+        "key": "B",
+        "text": "Sabhi gharon ko chhod dena chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Ghar hi final truth hai"
+      },
+      {
+        "key": "D",
+        "text": "Naam aur ownership alag dikhte hain, par padarth aur elements ka base wider hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Vyavahar mein mera-tumhara ghar alag hai, par eent, mitti, shram aur prakriti ke elements ek wider vyavastha se aate hain. Yeh naam-roop aur base ka farak dikhata hai."
+  },
+  {
+    "id": 17,
+    "question": "“Mera desh” aur “tumhara desh” ka example kis balance ki taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vyavahar mein bhed ka samman, samajh mein dharti aur base ki ekta"
+      },
+      {
+        "key": "B",
+        "text": "Kisi desh ka koi importance nahi"
+      },
+      {
+        "key": "C",
+        "text": "Bhed hi final truth hai"
+      },
+      {
+        "key": "D",
+        "text": "Sadhak ko sab rules tod dene chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Vyavahar mein boundaries aur responsibilities maanni padti hain. Par gehri samajh mein dharti ek hai aur bhed naam-roop ke level par hain."
+  },
+  {
+    "id": 18,
+    "question": "Maya ka practical effect mainly kis mein dikhta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ki height mein"
+      },
+      {
+        "key": "B",
+        "text": "Naam aur roop ko final truth maan kar pakad banane mein"
+      },
+      {
+        "key": "C",
+        "text": "Sapnon ko yaad na rakhne mein"
+      },
+      {
+        "key": "D",
+        "text": "Sirf weather badalne mein"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Hum naam, roop, ownership, role aur bhed ko bahut real maan kar bandh jate hain. Maya ki samajh inhi naam-roop ki pakad ko dikhati hai."
+  },
+  {
+    "id": 19,
+    "question": "Vyavahar mein bhed ka samman aur samajh mein ekta ka balance kya batata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vyavahar chhod dena chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Sirf ekta bolni hai, responsibility nahi nibhaani"
+      },
+      {
+        "key": "C",
+        "text": "Life mein roles nibhaane hain, par andar ekta ki drishti rakhni hai"
+      },
+      {
+        "key": "D",
+        "text": "Bhed ko final truth maan-na hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay sikhata hai ki vyavahar mein ghar, kaam, rishte aur boundaries nibhaani hain. Lekin samajh mein yaad rakhna hai ki naam-roop ke neeche ek gehra base hai."
+  },
+  {
+    "id": 20,
+    "question": "Maya ko dosh nahi, darshan ka dwar kyun kaha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki Maya sadhak ko punish karti hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Maya sirf buri shakti hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Maya se bachna impossible hai, isliye haar maan-ni chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki Maya humein naam-roop ke paar base ko dekhne ki jigyasa deti hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Maya koi enemy nahi hai. Woh jagat ke anubhav ko samajhne ka dwar banti hai, jahan sadhak naam-roop ke peeche base ki jaanch karta hai."
+  },
+  {
+    "id": 21,
+    "question": "Maya aur Avidya mein is adhyay ke anusaar main difference kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya jagat-star par ek satya ko anek roop mein dikhati hai, Avidya vyakti-star par sharir-mann ko “main” maan-na hai"
+      },
+      {
+        "key": "B",
+        "text": "Maya vyakti-star ki bhool hai aur Avidya jagat-star ki vyavastha"
+      },
+      {
+        "key": "C",
+        "text": "Dono ka koi farak nahi"
+      },
+      {
+        "key": "D",
+        "text": "Avidya sirf weather ka naam hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Maya jagat-star ki vyavastha hai jisse advaita satya anek roop mein dikhta hai. Avidya vyakti-star ki bhool hai jisme sadhak sharir-mann ko apna swaroop maan leta hai."
+  },
+  {
+    "id": 22,
+    "question": "Sadhak ke liye Maya aur Avidya ka practical farak kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya aur Avidya dono sirf words hain, life se koi relation nahi"
+      },
+      {
+        "key": "B",
+        "text": "Maya dikhati hai ki jagat naam-roop mein prakat hai; Avidya dikhati hai ki main sharir-mann ko “main” maan kar bandhata hoon"
+      },
+      {
+        "key": "C",
+        "text": "Maya sirf dukh hai aur Avidya sirf sukh"
+      },
+      {
+        "key": "D",
+        "text": "Dono ko samajhna zaruri nahi"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maya ko dekhkar sadhak jagat ki naam-roop vyavastha samajhta hai. Avidya ko dekhkar woh apni personal wrong identity pehchanta hai."
+  },
+  {
+    "id": 23,
+    "question": "Adhyay mein jagat ko “jhooth” kehne ke bajay kis roop mein samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Purna shunya"
+      },
+      {
+        "key": "B",
+        "text": "Sirf imagination, jiska koi effect nahi"
+      },
+      {
+        "key": "C",
+        "text": "Anitya, badalne wala aur vyavahar mein effective"
+      },
+      {
+        "key": "D",
+        "text": "Sadhana ka enemy"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jagat ko vyavahar mein important maana gaya hai, par woh badalne wala hai. “Sab Maya hai” ka matlab yeh nahi ki kuchh bhi matter nahi karta."
+  },
+  {
+    "id": 24,
+    "question": "“Sab Maya hai” ki galat samajh kya ho sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Life mein karuna aur responsibility badhana"
+      },
+      {
+        "key": "B",
+        "text": "Sansar ko sahi drishti se dekhna"
+      },
+      {
+        "key": "C",
+        "text": "Naam-roop ki pakad ko pehchanna"
+      },
+      {
+        "key": "D",
+        "text": "Yeh maan lena ki kuchh bhi matter nahi karta aur responsibility chhod dena"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay warning deta hai ki “sab Maya hai” ko udasinta ya responsibility chhodne ka bahana nahi banana chahiye. Yeh wrong understanding hai."
+  },
+  {
+    "id": 25,
+    "question": "Sansarik life aur sadhana ke baare mein adhyay kya kehta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono saath chal sakte hain"
+      },
+      {
+        "key": "B",
+        "text": "Sadhana ke liye family chhodna compulsory hai"
+      },
+      {
+        "key": "C",
+        "text": "Kaam karne wala vyakti sadhak nahi ho sakta"
+      },
+      {
+        "key": "D",
+        "text": "Sadhana sirf jungle mein possible hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Sadhak job, family, responsibility aur society mein rehkar bhi Maya ki samajh rakh sakta hai. Yeh contradiction nahi, balki life ko clarity se jeene ki disha hai."
+  },
+  {
+    "id": 26,
+    "question": "Kaam mein failure aane par Maya ki samajh sadhak ko kaise help karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh kaam chhod deta hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh failure ko final identity nahi banata, phir bhi seekh aur responsibility leta hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh doosron ko blame karta hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh kehta hai ki effort ka koi value nahi"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Success-failure naam-roop ke khel mein aate-jaate hain. Sadhak poori mehnat karta hai, par result ko apne antim swaroop ka proof nahi banata."
+  },
+  {
+    "id": 27,
+    "question": "Maya ki samajh karuna ko kaise affect karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh karuna ko khatam kar deti hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh doosron ke dukh ko meaningless bana deti hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh alagav kam karke karuna ko gehra karti hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh sirf apne sukh par dhyan deti hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jab sadhak dekhta hai ki sab naam-roop ek gehre base par prakat hain, to alagav ki kathorta kam hoti hai. Isse doosron ke dukh ke prati karuna badhti hai."
+  },
+  {
+    "id": 28,
+    "question": "Karuna aur Maya ke context mein kaunsi samajh galat hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sab ek base se prakat hain, isliye karuna gehri ho sakti hai"
+      },
+      {
+        "key": "B",
+        "text": "Doosron ka dukh dekhkar help aur sensitivity rakhni chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Maya ki samajh alagav ko kam kar sakti hai"
+      },
+      {
+        "key": "D",
+        "text": "Sab Maya hai, isliye kisi ke dukh se mujhe koi relation nahi"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay clear karta hai ki Maya ki samajh udasinta nahi laati. Sahi samajh mein doosron ka dukh apna-sa lagta hai aur karuna gehri hoti hai."
+  },
+  {
+    "id": 29,
+    "question": "Responsibility aur bhed ke samman ka sahi arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vyavahar mein apna kaam, ghar aur rishte responsibility se nibhana"
+      },
+      {
+        "key": "B",
+        "text": "Sabhi bhedon ko vyavahar mein bhi nakar dena"
+      },
+      {
+        "key": "C",
+        "text": "Kisi rule ka palan na karna"
+      },
+      {
+        "key": "D",
+        "text": "Sirf andar ki shanti ke liye doosron ko chhod dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Samajh mein ekta hai, par vyavahar mein bhed ka samman hai. Isliye rishte, kaam aur social responsibilities awareness se nibhaani hain."
+  },
+  {
+    "id": 30,
+    "question": "Maya ki samajh se pakad kaise dheeli hoti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhak sab rishte khatam kar deta hai"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak dekhta hai ki naam-roop badalte hain, isliye unse final identity nahi banani"
+      },
+      {
+        "key": "C",
+        "text": "Sadhak duniya ko nafrat se dekhta hai"
+      },
+      {
+        "key": "D",
+        "text": "Sadhak sharir ko kasht deta hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab naam, roop, success, failure aur roles badalne wale dikhte hain, to unse bani hard identity dheeli hoti hai. Yeh Maya ki samajh ka practical fruit hai."
+  },
+  {
+    "id": 31,
+    "question": "Adhyay ke anusaar Maya ko samajhna sansar chhodna kyun nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki sansar hi final truth hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sadhana ki koi zarurat nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Maya ki samajh sansar mein jagkar, karuna aur responsibility se jeena sikhati hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki anubhavon ki jaanch nahi karni chahiye"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay ka conclusion hai ki sansar mein rehna hai, par uski pakad se mukt hokar. Maya ki samajh life ko reject nahi karti, balki clear banati hai."
+  },
+  {
+    "id": 32,
+    "question": "“Anubhav aur satya ke beech doori” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jo anubhav mein dikhta hai, wahi hamesha final truth hai"
+      },
+      {
+        "key": "B",
+        "text": "Anubhavon ka koi importance nahi"
+      },
+      {
+        "key": "C",
+        "text": "Satya sirf imagination hai"
+      },
+      {
+        "key": "D",
+        "text": "Anubhav limited tools se aata hai; isliye use final truth maan-ne se pehle jaanchna hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Hamara anubhav indriyon, mann aur drishti se chhankar aata hai. Isliye anubhav ko respect dete hue bhi use final truth maan-ne ki jaldi nahi karni."
+  },
+  {
+    "id": 33,
+    "question": "Pehle abhyas mein sadhak ko kisi vastu ya ghatna ko dekhkar kya poochna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh mujhe kaise dikh rahi hai, aur kya yeh sabko aisi hi dikhti hogi?"
+      },
+      {
+        "key": "B",
+        "text": "Main ise kaise tyag doon?"
+      },
+      {
+        "key": "C",
+        "text": "Yeh vastu kiski galti hai?"
+      },
+      {
+        "key": "D",
+        "text": "Isse mujhe kitna benefit milega?"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Pehla abhyas sadhak ko anubhav ki personal nature dekhne ke liye hai. Use dekhna hai ki bahar ki vastu mein kitna hai aur mann ki smriti, pasand-naapasand kitna jod rahi hai."
+  },
+  {
+    "id": 34,
+    "question": "Naam-roop ke abhyas mein cup ko dekhkar kya jaanchna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Cup ko turant tyagna hai ya nahi"
+      },
+      {
+        "key": "B",
+        "text": "Naam cup hai, roop cup jaisa hai, par padarth kya hai?"
+      },
+      {
+        "key": "C",
+        "text": "Cup spiritual hai ya nahi"
+      },
+      {
+        "key": "D",
+        "text": "Cup se mukti milegi ya nahi"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Yeh abhyas naam aur roop se aage padarth aur base ko dekhne ki disha deta hai. Isse Maya ki samajh anubhav mein utarti hai."
+  },
+  {
+    "id": 35,
+    "question": "Kisi vyakti ko dekhte waqt naam-roop abhyas mein kya poochna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh vyakti mujhse upar hai ya neeche?"
+      },
+      {
+        "key": "B",
+        "text": "Is vyakti se mujhe kya benefit milega?"
+      },
+      {
+        "key": "C",
+        "text": "Main ise naam, role aur purane anubhavon se dekh raha hoon, ya abhi sach mein dekh raha hoon?"
+      },
+      {
+        "key": "D",
+        "text": "Is vyakti ko kaise badalna chahiye?"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Yeh abhyas sadhak ko dikhata hai ki woh vyakti ko directly nahi, balki purane anubhavon, role aur naam ke through dekhta hai. Isse drishti zyada aware hoti hai."
+  },
+  {
+    "id": 36,
+    "question": "Is hafte ke abhyas mein kisi ghatna ko dekhkar kaunsa prashn poochna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Main isse kaise bhaagoon?"
+      },
+      {
+        "key": "B",
+        "text": "Kaun guilty hai?"
+      },
+      {
+        "key": "C",
+        "text": "Kya yeh ghatna hamesha rahegi?"
+      },
+      {
+        "key": "D",
+        "text": "Mera mann ismein kaunsi kahani jod raha hai?"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Weekly practice sadhak ko event aur mann ki story mein farak dekhne ko kehta hai. Yahi Maya ki samajh ko daily life mein laane ka tareeka hai."
+  },
+  {
+    "id": 37,
+    "question": "Weekly practice mein vyavahar aur andar ki pakad ke baare mein kya poochna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Vyavahar mein mujhe kya responsibility nibhaani hai, aur andar kis pakad ko dheela karna hai?"
+      },
+      {
+        "key": "B",
+        "text": "Mujhe kise harana hai?"
+      },
+      {
+        "key": "C",
+        "text": "Mujhe kaunsa experience pakadna hai?"
+      },
+      {
+        "key": "D",
+        "text": "Mujhe kaunsi role hamesha rakhni hai?"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh prashn adhyay ke balance ko pakadta hai: bahar responsibility nibhaani hai, andar pakad ko halka karna hai. Yahi Maya ki practical samajh hai."
+  },
+  {
+    "id": 38,
+    "question": "Adhyay ke end mein agle adhyay ki taraf kaunsa bridge banaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ab sansar ko poori tarah destroy karna hai"
+      },
+      {
+        "key": "B",
+        "text": "Ab saakshi-bhav ko aur gehraai se life mein stable karna hai"
+      },
+      {
+        "key": "C",
+        "text": "Ab sirf karmkand karna hai"
+      },
+      {
+        "key": "D",
+        "text": "Ab sadhana khatam ho gayi"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Dusre adhyay mein bahar ki Maya ko samjha gaya. Iske baad agla adhyay saakshi-bhav ko life ke beech aur gehra karne ki disha mein jata hai."
+  },
+  {
+    "id": 39,
+    "question": "“Sansar mein raho, par pakad se mukt raho” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kisi se baat na karna"
+      },
+      {
+        "key": "B",
+        "text": "Har anubhav ko galat maan-na"
+      },
+      {
+        "key": "C",
+        "text": "Life ke kaam, rishte aur responsibility nibhaate hue unhe final identity na banana"
+      },
+      {
+        "key": "D",
+        "text": "Sharir aur mann ko punish karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay life chhodne ki nahi, pakad ko halka karne ki baat karta hai. Vyavahar mein rehna hai, par naam-roop ko final truth bana kar bandhna nahi hai."
+  },
+  {
+    "id": 40,
+    "question": "Maya ki samajh sadhak ko kis tarah ka jeevan jeene ki disha deti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Udaasin aur kathor"
+      },
+      {
+        "key": "B",
+        "text": "Sirf imagination mein khoya hua"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaagta hua"
+      },
+      {
+        "key": "D",
+        "text": "Clear, karunamay aur balanced"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Sahi samajh mein sansar se bhaagna nahi, balki clarity, karuna aur responsibility ke saath jeena aata hai. Yahi Maya ki mature drishti hai."
+  },
+  {
+    "id": 41,
+    "question": "“Jagat vyavahar mein important hai” yeh baat kyun repeat ki gayi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Taaki sadhak Maya ki samajh ko irresponsibility na bana le"
+      },
+      {
+        "key": "B",
+        "text": "Taaki sadhak Maya ko bhool jaaye"
+      },
+      {
+        "key": "C",
+        "text": "Taaki jagat ko final Brahm keh de"
+      },
+      {
+        "key": "D",
+        "text": "Taaki sadhana rok de"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay savdhan karta hai ki “sab Maya hai” kehkar life, rishte aur dukh ko halka na samjha jaye. Vyavahar mein jagat ka importance aur responsibility bani rehti hai."
+  },
+  {
+    "id": 42,
+    "question": "Maya ko samajhte hue sadhak ko failure mein kya yaad rakhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ab koi effort nahi karna"
+      },
+      {
+        "key": "B",
+        "text": "Failure meri final identity nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Doosron ko blame dena"
+      },
+      {
+        "key": "D",
+        "text": "Sadhana chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Success-failure experience ke level par aate-jaate hain. Unhe learning aur action ke roop mein lena hai, par unse apni final identity nahi banani."
+  },
+  {
+    "id": 43,
+    "question": "Maya ki samajh mein beauty aur jagat ke prati sahi drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Beauty hamesha bhram hai, isliye use dekhna galat hai"
+      },
+      {
+        "key": "B",
+        "text": "Sansar se nafrat karni hai"
+      },
+      {
+        "key": "C",
+        "text": "Sansar sundar ho sakta hai, usmein jeena hai, par uski pakad se mukt rehna hai"
+      },
+      {
+        "key": "D",
+        "text": "Beauty hi final truth hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay sansar ko reject nahi karta. Woh kehta hai ki sansar sundar hai aur usmein jeena hai, par naam-roop ki pakad se mukt hokar."
+  },
+  {
+    "id": 44,
+    "question": "Saakshi aur Maya ke sambandh mein is adhyay ki disha kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi aur Maya dono ko nakar dena hai"
+      },
+      {
+        "key": "B",
+        "text": "Maya saakshi ko destroy kar deti hai"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi sirf sharir hai"
+      },
+      {
+        "key": "D",
+        "text": "Andar saakshi ki pehchaan ke baad wahi saakshi jagat ki Maya ko dekhta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay 1 mein andar ki disha khuli. Adhyay 2 mein wahi jaanne wali drishti bahar ke jagat ko dekhti hai aur Maya ki vyavastha ko samajhti hai."
+  },
+  {
+    "id": 45,
+    "question": "Adhyay mein “poora sach” maan-ne ki jaldi se kyun bachaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki anubhav limited indriyon aur mann se aata hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sach ka koi existence nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sabhi anubhav bekaar hain"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sadhak ko sochna nahi chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Hum jo dekhte-sunte hain, woh limited indriyon aur mann se chhankar aata hai. Isliye anubhav ko respect dete hue bhi final truth declare karne ki jaldi nahi karni chahiye."
+  },
+  {
+    "id": 46,
+    "question": "Is adhyay mein “Maya” word ko negative kyun nahi banaya gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki Maya sirf paap hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Maya dosh nahi, advaita satya ke anek roopon mein prakat hone ki vyavastha hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Maya ka sansar se koi relation nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki Maya sirf personal laziness hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maya ko jigyasa aur darshan ka vishay kaha gaya hai. Yeh koi enemy nahi, balki woh vyavastha hai jisme ek satya anek naam-roop mein dikhta hai."
+  },
+  {
+    "id": 47,
+    "question": "Kaunsa option Adhyay 2 ke saar ke sabse kareeb hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar ko destroy kar dena hi gyaan hai"
+      },
+      {
+        "key": "B",
+        "text": "Maya ka matlab sharir se nafrat"
+      },
+      {
+        "key": "C",
+        "text": "Sansar anubhav mein real lagta hai, Maya naam-roop ki vyavastha hai, aur sadhak ko jagruk hokar jeena hai"
+      },
+      {
+        "key": "D",
+        "text": "Avidya aur Maya sirf ek hi word hain"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Adhyay pehle sansar ke anubhav ki reality ko dekhta hai, phir Maya ko naam-roop ki vyavastha ke roop mein samjhata hai, aur ant mein responsibility aur karuna se jeene ki disha deta hai."
+  },
+  {
+    "id": 48,
+    "question": "Maya ko samajhne ke baad sadhak ko kya nahi karna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Naam-roop ko dekhna"
+      },
+      {
+        "key": "B",
+        "text": "Karuna rakhna"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility nibhana"
+      },
+      {
+        "key": "D",
+        "text": "Sansar se bhaagna ya use meaningless maan-na"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Adhyay clear karta hai ki Maya samajhne ka matlab sansar chhodna nahi hai. Udasinta aur palayan wrong understanding hain."
+  },
+  {
+    "id": 49,
+    "question": "Adhyay 2 mein sadhak ki drishti mein kaunsa change expected hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar ko naam-roop ke roop mein dekhkar andar pakad dheeli karna"
+      },
+      {
+        "key": "B",
+        "text": "Sansar ko pehle ki tarah bina prashn kiye final truth maan-na"
+      },
+      {
+        "key": "C",
+        "text": "Har cheez ko darr se dekhna"
+      },
+      {
+        "key": "D",
+        "text": "Sabhi anubhav band kar dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Maya ki samajh se sadhak dekhta hai ki naam aur roop badalte hain. Isse jagat ka vyavahar chalta hai, par andar ki pakad halki hoti hai."
+  },
+  {
+    "id": 50,
+    "question": "Adhyay 2 ka final message kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya ko samajhna sab rishte chhodna hai"
+      },
+      {
+        "key": "B",
+        "text": "Maya ko samajhna sansar chhodna nahi, sansar mein jagkar jeena hai"
+      },
+      {
+        "key": "C",
+        "text": "Maya ko samajhna sirf shastra yaad karna hai"
+      },
+      {
+        "key": "D",
+        "text": "Maya ko samajhna sharir ko nakarna hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay ka samapan clear karta hai ki sansar mein rehna hai, par uski pakad se mukt hokar. Maya ki samajh life ko zyada aware aur karunamay banati hai."
+  }
+]

@@ -1,7 +1,8 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
+
 
 // ── Design tokens ──────────────────────────────────────────────
 const GOLD = '#d4a843';
@@ -149,150 +150,64 @@ function ScoreCard({
   chapterNum: number;
 }) {
   const isHindi = lang === 'hi';
+  const isHinglish = lang === 'hl';
   const pct = Math.round((score / total) * 100);
   const isLast = chapterNum === 8;
-  const router = useRouter();
+
+  // Encouragement message — always positive, no pass/fail
+  const getMessage = () => {
+    if (pct === 100) return isHindi ? 'अद्भुत! सभी उत्तर सही! 🌟' : isHinglish ? 'Waah! Sab sahi! 🌟' : 'Perfect score! Outstanding! 🌟';
+    if (pct >= 80) return isHindi ? 'बहुत अच्छा! आपकी समझ गहरी है। 🙏' : isHinglish ? 'Bahut achha! Aapki samajh gehri hai. 🙏' : 'Excellent! Your understanding is deep. 🙏';
+    if (pct >= 60) return isHindi ? 'अच्छा प्रयास! अभ्यास से ज्ञान गहराता है। 🙏' : isHinglish ? 'Achha prayas! Abhyas se gyan gehrata hai. 🙏' : 'Good effort! Practice deepens wisdom. 🙏';
+    return isHindi ? 'हर प्रयास एक कदम आगे है। आगे बढ़ते रहें। 🙏' : isHinglish ? 'Har prayas ek kadam aage hai. Aage badhte rahein. 🙏' : 'Every attempt is a step forward. Keep going. 🙏';
+  };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        textAlign: 'center',
-        gap: '1.5rem',
-        padding: 'clamp(2rem,5vw,4rem)',
-        maxWidth: '600px',
-        margin: '0 auto',
-      }}
-    >
-      {/* Decorative circle */}
-      <div
-        style={{
-          width: '120px',
-          height: '120px',
-          borderRadius: '50%',
-          border: `2px solid ${GOLD}`,
-          background: 'rgba(212,168,67,0.06)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          boxShadow: `0 0 40px rgba(212,168,67,0.2)`,
-        }}
-      >
-        <span
-          style={{
-            fontFamily: 'var(--font-cormorant)',
-            fontStyle: 'italic',
-            fontSize: '2.2rem',
-            color: GOLD,
-            lineHeight: 1,
-          }}
-        >
-          {score}
-        </span>
-        <span
-          style={{
-            fontFamily: 'var(--font-inter)',
-            fontSize: '0.65rem',
-            color: MUTED,
-            letterSpacing: '0.1em',
-          }}
-        >
-          / {total}
-        </span>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1.75rem', padding: 'clamp(2rem,5vw,4rem)', maxWidth: '600px', margin: '0 auto' }}>
+
+      {/* Score ring */}
+      <div style={{ position: 'relative', width: '140px', height: '140px' }}>
+        <svg width="140" height="140" viewBox="0 0 140 140" style={{ position: 'absolute', inset: 0, transform: 'rotate(-90deg)' }}>
+          <circle cx="70" cy="70" r="58" fill="none" stroke="rgba(212,168,67,0.1)" strokeWidth="6" />
+          <circle cx="70" cy="70" r="58" fill="none" stroke={GOLD} strokeWidth="6"
+            strokeLinecap="round"
+            strokeDasharray={`${2 * Math.PI * 58}`}
+            strokeDashoffset={`${2 * Math.PI * 58 * (1 - pct / 100)}`}
+            style={{ transition: 'stroke-dashoffset 1s ease' }}
+          />
+        </svg>
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+          <span style={{ fontFamily: 'var(--font-cormorant)', fontStyle: 'italic', fontSize: '2.5rem', color: GOLD, lineHeight: 1 }}>{score}</span>
+          <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.62rem', color: MUTED, letterSpacing: '0.1em' }}>/ {total}</span>
+        </div>
       </div>
 
       <div>
-        <h2
-          style={{
-            fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-cormorant)',
-            fontStyle: isHindi ? 'normal' : 'italic',
-            fontSize: 'clamp(1.5rem,4vw,2.2rem)',
-            fontWeight: isHindi ? 600 : 300,
-            color: IVORY,
-            marginBottom: '0.5rem',
-          }}
-        >
-          {isHindi
-            ? `आपने ${score}/${total} सही किए 🙏`
-            : `You got ${score}/${total} correct 🙏`}
+        <div style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>🙏</div>
+        <h2 style={{ fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-cormorant)', fontStyle: isHindi ? 'normal' : 'italic', fontSize: 'clamp(1.4rem,4vw,2rem)', fontWeight: isHindi ? 600 : 300, color: IVORY, marginBottom: '0.6rem' }}>
+          {isHindi ? `अभ्यास पूर्ण` : isHinglish ? `Abhyas Poora` : `Practice Complete`}
         </h2>
-        <p
-          style={{
-            fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)',
-            fontSize: '1rem',
-            color: MUTED,
-          }}
-        >
-          {pct >= 80
-            ? (isHindi ? 'उत्कृष्ट! आपकी समझ गहरी है।' : 'Excellent! Your understanding is deep.')
-            : pct >= 60
-            ? (isHindi ? 'अच्छा! थोड़ा और अभ्यास करें।' : 'Good! A little more practice will help.')
-            : (isHindi ? 'पुनः अध्याय पढ़ें और फिर प्रयास करें।' : 'Review the chapter and try again.')}
+        <p style={{ fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.95rem', color: MUTED, lineHeight: 1.7 }}>
+          {getMessage()}
+        </p>
+        <p style={{ fontFamily: 'var(--font-inter)', fontSize: '0.72rem', color: 'rgba(212,168,67,0.4)', marginTop: '0.5rem', letterSpacing: '0.06em' }}>
+          {pct}% · {score}/{total}
         </p>
       </div>
 
-      {/* Next action */}
+      {/* Action buttons — always go forward */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', width: '100%', maxWidth: '320px' }}>
         {isLast ? (
-          <a
-            href={`/course/${lang}/final-test`}
-            style={{
-              display: 'block',
-              padding: '1rem 2rem',
-              background: GOLD,
-              color: '#061008',
-              borderRadius: '12px',
-              fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)',
-              fontSize: '1rem',
-              fontWeight: 700,
-              textDecoration: 'none',
-              textAlign: 'center',
-              boxShadow: `0 4px 20px rgba(212,168,67,0.35)`,
-            }}
-          >
-            {isHindi ? 'अंतिम परीक्षा दें →' : 'Take Final Test →'}
+          <a href={`/course/${lang}/final-test`} style={{ display: 'block', padding: '1rem 2rem', background: GOLD, color: '#050e07', borderRadius: '12px', fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', fontWeight: 700, textDecoration: 'none', textAlign: 'center', boxShadow: `0 4px 24px rgba(212,168,67,0.35)` }}>
+            {isHindi ? 'अंतिम परीक्षा दें →' : isHinglish ? 'Final Test Dein →' : 'Take Final Test →'}
           </a>
         ) : (
-          <a
-            href={`/course/${lang}/${chapterNum + 1}`}
-            style={{
-              display: 'block',
-              padding: '1rem 2rem',
-              background: GOLD,
-              color: '#061008',
-              borderRadius: '12px',
-              fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)',
-              fontSize: '1rem',
-              fontWeight: 700,
-              textDecoration: 'none',
-              textAlign: 'center',
-              boxShadow: `0 4px 20px rgba(212,168,67,0.35)`,
-            }}
-          >
-            {isHindi
-              ? `अगले अध्याय पर जाएं → (${chapterNum + 1}/${8})`
-              : `Next Chapter → (${chapterNum + 1}/${8})`}
+          <a href={`/course/${lang}/${chapterNum + 1}`} style={{ display: 'block', padding: '1rem 2rem', background: GOLD, color: '#050e07', borderRadius: '12px', fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', fontWeight: 700, textDecoration: 'none', textAlign: 'center', boxShadow: `0 4px 24px rgba(212,168,67,0.35)` }}>
+            {isHindi ? `अध्याय ${chapterNum + 1} पर जाएं →` : isHinglish ? `Adhyay ${chapterNum + 1} par Jaayein →` : `Go to Chapter ${chapterNum + 1} →`}
           </a>
         )}
-
-        <a
-          href={`/course/${lang}/${chapterNum}`}
-          style={{
-            display: 'block',
-            padding: '0.75rem 2rem',
-            border: `1px solid ${BORDER}`,
-            borderRadius: '12px',
-            color: MUTED,
-            fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)',
-            fontSize: '0.88rem',
-            textDecoration: 'none',
-            textAlign: 'center',
-          }}
-        >
-          {isHindi ? '← अध्याय पुनः पढ़ें' : '← Re-read Chapter'}
+        <a href={`/course/${lang}/${chapterNum}`} style={{ display: 'block', padding: '0.75rem 2rem', border: `1px solid ${BORDER}`, borderRadius: '12px', color: MUTED, fontFamily: isHindi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.85rem', textDecoration: 'none', textAlign: 'center' }}>
+          {isHindi ? '← अध्याय पुनः पढ़ें' : isHinglish ? '← Adhyay dobara padhen' : '← Re-read Chapter'}
         </a>
       </div>
     </div>

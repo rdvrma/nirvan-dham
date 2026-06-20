@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 6 mein Mahavakyon ko Neti-Neti ke baad kyun laya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki Neti-Neti galat pehchaan ko saaf karti hai aur Mahavakya satya ki disha dikhate hain"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Mahavakya sirf kathin Sanskrit shabd yaad karane ke liye hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Neti-Neti ke baad sharir ko chhodna zaruri ho jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki Mahavakya sansar ko poori tarah jhooth prove karte hain"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Neti-Neti sadhak ko badalne wali pehchaanon se halka karti hai. Uske baad Mahavakya sadhak ko uske sachche swaroop ki positive disha mein modte hain."
+  },
+  {
+    "id": 2,
+    "question": "Is adhyay mein Mahavakya ko mukhya roop se kaise samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ek social rule ke roop mein"
+      },
+      {
+        "key": "B",
+        "text": "Ek ritual ke roop mein"
+      },
+      {
+        "key": "C",
+        "text": "Apne real swaroop ki taraf seedha sanket karne wale vakya ke roop mein"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate aur scholarship badhane wale vakya ke roop mein"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mahavakya sadhak ko koi nayi vastu nahi dete. Ve identity ko body-mind se hata kar Atma, Chetana aur Brahman ki disha mein le jaate hain."
+  },
+  {
+    "id": 3,
+    "question": "Mahavakya ko blind belief kyun nahi banana chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki belief kabhi useful nahi hota"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Mahavakya sirf maanne ke liye nahi, andar dekhkar pehchanne ke liye hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Mahavakya ka koi spiritual importance nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sirf chanting hi kaafi hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay batata hai ki Mahavakya sadhak se kehta hai—dekho. Sirf maan lene se baat mann mein reh sakti hai; pehchaan anubhav mein clear honi chahiye."
+  },
+  {
+    "id": 4,
+    "question": "Chaar pramukh Mahavakyon mein 'Tat Tvam Asi' ka saral arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chetana hi Brahman hai"
+      },
+      {
+        "key": "B",
+        "text": "Main Brahman hoon"
+      },
+      {
+        "key": "C",
+        "text": "Yeh Atma Brahman hai"
+      },
+      {
+        "key": "D",
+        "text": "Tum wahi ho"
+      }
+    ],
+    "correct": "D",
+    "explanation": "'Tat Tvam Asi' ka saral arth hai—tum wahi ho. Yeh body-mind se nahi, shishya ke sachche swaroop ki taraf diya gaya sanket hai."
+  },
+  {
+    "id": 5,
+    "question": "'Tat Tvam Asi' mein 'tum' kiski taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir, naam aur social identity ki taraf"
+      },
+      {
+        "key": "B",
+        "text": "Us jaanne wali upasthiti ki taraf jo sharir-mann ko jaanti hai"
+      },
+      {
+        "key": "C",
+        "text": "Sirf mann ki imagination ki taraf"
+      },
+      {
+        "key": "D",
+        "text": "Sirf kisi special experience ki taraf"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Mahavakya mein 'tum' ka arth sharir, mann ya ahankar nahi hai. Yeh us saakshi-swaroop ki taraf sanket hai jo experiences ko jaanta hai."
+  },
+  {
+    "id": 6,
+    "question": "'Tat Tvam Asi' mein 'wahi' kiski taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Brahman, yani woh aseem satya jo sabka aadhar hai"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ka profession"
+      },
+      {
+        "key": "C",
+        "text": "Mann ki sabse pasandida bhavna"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ki sabse shaant avastha"
+      }
+    ],
+    "correct": "A",
+    "explanation": "'Wahi' Brahman ki taraf sanket karta hai—woh aseem aur antim satya jo sabka aadhar hai. Mahavakya andar ke satya aur us aadhar ki ekta dikhata hai."
+  },
+  {
+    "id": 7,
+    "question": "'Tum wahi ho' ko body-mind par seedha apply karna kyun galat hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki body-mind badalte hain; Mahavakya saakshi-swaroop ki taraf sanket karta hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki body-mind kabhi experience mein aate hi nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sharir hi Brahman ka final form hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki mann ko jaana possible nahi"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Body aur mind limited aur badalne wale hain. Mahavakya ego ya body-mind ko bada nahi karta, balki unhe jaanne wale saakshi ki disha deta hai."
+  },
+  {
+    "id": 8,
+    "question": "Lehar aur samudra ka example kya samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Lehar ka koi importance nahi"
+      },
+      {
+        "key": "B",
+        "text": "Lehar ko samudra se ladna chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Roop alag dikh sakte hain, par saar mein jal ek hi hai"
+      },
+      {
+        "key": "D",
+        "text": "Samudra sirf imagination hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Lehar roop mein limited dikhti hai, par saar mein jal hai. Waise hi sadhak body-mind roop mein limited dikhta hai, par sachche swaroop mein Brahman se alag nahi."
+  },
+  {
+    "id": 9,
+    "question": "Mitti aur ghade ka example Mahavakya ki kis disha ko clear karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Naam aur roop alag ho sakte hain, par aadhar ek ho sakta hai"
+      },
+      {
+        "key": "B",
+        "text": "Sab ghade todna hi gyaan hai"
+      },
+      {
+        "key": "C",
+        "text": "Mitti ka ghade se koi relation nahi"
+      },
+      {
+        "key": "D",
+        "text": "Roop hi final truth hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Ghada, diya aur murti naam-roop mein alag hain, par substance mitti hi hai. Yeh example dikhata hai ki anek roop ek aadhar par appear ho sakte hain."
+  },
+  {
+    "id": 10,
+    "question": "'Tat Tvam Asi' sahi dhang se samajhne par sadhak mein kya badhta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spiritual pride"
+      },
+      {
+        "key": "B",
+        "text": "Dusron ko chhota maan-ne ki bhavna"
+      },
+      {
+        "key": "C",
+        "text": "Vinamrata, karuna aur alagav ki kathorta mein kami"
+      },
+      {
+        "key": "D",
+        "text": "Sansar se ghrina"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jab sadhak dekhta hai ki andar ka satya sabke aadhar se alag nahi, to claim nahi badhta. Vinamrata, karuna aur ekta ki jhalak gehri hoti hai."
+  },
+  {
+    "id": 11,
+    "question": "'Aham Brahmasmi' ka saral arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Main Brahman hoon"
+      },
+      {
+        "key": "B",
+        "text": "Tum wahi ho"
+      },
+      {
+        "key": "C",
+        "text": "Chetana hi Brahman hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh jagat hi final truth hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "'Aham Brahmasmi' ka saral arth hai—main Brahman hoon. Par yahan 'main' ahankar nahi, saakshi-swaroop Atma ki disha mein hai."
+  },
+  {
+    "id": 12,
+    "question": "'Aham Brahmasmi' mein 'main' ka arth kya nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi-swaroop Atma"
+      },
+      {
+        "key": "B",
+        "text": "Shaant jaanne wali upasthiti"
+      },
+      {
+        "key": "C",
+        "text": "Body-mind wala ahankar jo special hone ka claim kare"
+      },
+      {
+        "key": "D",
+        "text": "Body-mind ko jaanne wala aadhar"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Yeh Mahavakya egoic claim nahi hai. Agar limited ego kahe 'main Brahman hoon' aur khud ko bada maanne lage, to samajh galat disha mein chali gayi."
+  },
+  {
+    "id": 13,
+    "question": "Agar ahankar 'Main Brahman hoon' ko pakad le, to kya danger hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh aur vinamra ho jayega"
+      },
+      {
+        "key": "B",
+        "text": "Woh is vakya ko superiority aur specialness ki identity bana sakta hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh turant sharir se mukt ho jayega"
+      },
+      {
+        "key": "D",
+        "text": "Woh saare experiences ko rok dega"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay warning deta hai ki ego Mahavakya ko bhi naya spiritual claim bana sakta hai. Sahi samajh ego ko heavy nahi, light karti hai."
+  },
+  {
+    "id": 14,
+    "question": "'Aham Brahmasmi' ka sahi phal kya hona chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Superiority aur announcement"
+      },
+      {
+        "key": "B",
+        "text": "Responsibility se bhaagna"
+      },
+      {
+        "key": "C",
+        "text": "Karuna, saralta aur limited identity ka dheela hona"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ko destroyed maanna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sahi samajh mein 'main' heavy nahi hota. Limited identity relax hoti hai, karuna badhti hai aur sadhak zyada saral aur responsible hota hai."
+  },
+  {
+    "id": 15,
+    "question": "'Ayam Atma Brahma' ka saral arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tum wahi ho"
+      },
+      {
+        "key": "B",
+        "text": "Yeh Atma Brahman hai"
+      },
+      {
+        "key": "C",
+        "text": "Main sharir hoon"
+      },
+      {
+        "key": "D",
+        "text": "Sansar hi Atma hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "'Ayam Atma Brahma' batata hai ki andar pehchaani gayi Atma aur sarvavyapi Brahman do alag satya nahi hain."
+  },
+  {
+    "id": 16,
+    "question": "Is course mein Atma aur Brahman ka sambandh kaise clear kiya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Atma andar pehchana gaya satya hai, Brahman wahi satya aseem sandarbh mein hai"
+      },
+      {
+        "key": "B",
+        "text": "Atma aur Brahman do opposite powers hain"
+      },
+      {
+        "key": "C",
+        "text": "Atma sirf sharir hai aur Brahman sirf vichar hai"
+      },
+      {
+        "key": "D",
+        "text": "Atma ka Brahman se koi sambandh nahi"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Course clarity ke liye Atma ko andar pehchane gaye sachche swaroop ke roop mein aur Brahman ko usi satya ke aseem, sarvavyapi sandarbh mein rakhta hai."
+  },
+  {
+    "id": 17,
+    "question": "Ghade ke andar aakash ka example kya samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har ghade ka aakash sach mein alag-alag hai"
+      },
+      {
+        "key": "B",
+        "text": "Ghada tootne par aakash bhi toot jata hai"
+      },
+      {
+        "key": "C",
+        "text": "Body-mind boundaries dikhate hain, par Chetana ka aadhar private limited object nahi"
+      },
+      {
+        "key": "D",
+        "text": "Aakash ka koi existence nahi"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Kai ghado mein aakash alag dikhta hai, par aakash actually divide nahi hota. Waise hi bodies aur minds alag hain, par Atma apne satya mein Brahman se alag nahi."
+  },
+  {
+    "id": 18,
+    "question": "Mahavakya ko life mein utarne ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unhe sirf yaad karke dusron ko sunana"
+      },
+      {
+        "key": "B",
+        "text": "Har experience mein body-mind identity se hatkar jaanne wali disha mein lautna"
+      },
+      {
+        "key": "C",
+        "text": "Life ke saare karm chhod dena"
+      },
+      {
+        "key": "D",
+        "text": "Har experience ko Brahman kehkar suppress kar dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Mahavakya life mein tab utarte hain jab sukh, dukh, criticism, success ya sadhana ke experience mein sadhak saakshi aur Atma ki disha mein laut ta hai."
+  },
+  {
+    "id": 19,
+    "question": "'Prajnanam Brahma' ka saral arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chetana hi Brahman hai"
+      },
+      {
+        "key": "B",
+        "text": "Main Brahman hoon"
+      },
+      {
+        "key": "C",
+        "text": "Tum wahi ho"
+      },
+      {
+        "key": "D",
+        "text": "Yeh sharir Brahman hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "'Prajnanam Brahma' yeh sanket deta hai ki har experience ka aadhar Chetana hai. Yeh sirf mann ki awareness nahi, balki experience ko possible karne wala aadhar hai."
+  },
+  {
+    "id": 20,
+    "question": "Adhyay 6 mein Chetana ko kaise samjhaya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf sochne ki capacity ke roop mein"
+      },
+      {
+        "key": "B",
+        "text": "Sirf waking mind ki activity ke roop mein"
+      },
+      {
+        "key": "C",
+        "text": "Woh jaanne ka prakash jiske karan sharir, mann, vichar aur sansar jaane jaate hain"
+      },
+      {
+        "key": "D",
+        "text": "Ek badalti hui feeling ke roop mein"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Chetana woh aadhar hai jisme vichar, bhavna, sharir, sansar aur silence tak known hote hain. Woh koi thought ya emotion nahi, balki jaanne ka prakash hai."
+  },
+  {
+    "id": 21,
+    "question": "Chetana ko experience ki object kyun nahi banaya ja sakta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki experience Chetana mein jaana jata hai; Chetana experience ki object nahi hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Chetana kabhi present nahi hoti"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Chetana sirf neend mein hoti hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki Chetana sirf body ka part hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jo bhi experience aayega, woh Chetana mein jaana jayega. Isliye Chetana ko experience ki object ki tarah pakadna possible nahi; woh experiences ka aadhar hai."
+  },
+  {
+    "id": 22,
+    "question": "Saakshi aur Chetana ka relation adhyay mein kaise rakha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi mann hai aur Chetana sharir"
+      },
+      {
+        "key": "B",
+        "text": "Saakshi experiences ko dekhne ki disha hai; Chetana woh jaanne ka prakash hai jisme poora experience-field appear hota hai"
+      },
+      {
+        "key": "C",
+        "text": "Dono ka koi relation nahi"
+      },
+      {
+        "key": "D",
+        "text": "Saakshi sirf dream mein hota hai aur Chetana sirf waking mein"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Saakshi sadhak ko experiences ko dekhne ki disha deta hai. Chetana us jaanne ki vistarata hai jisme poora experience-field appear hota hai."
+  },
+  {
+    "id": 23,
+    "question": "Agar dhyan mein prakash ya anand ka experience aaye, to adhyay ke anusaar use kaise dekhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use turant final Brahman maan lena chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Use pakadkar permanent banana chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Use experience ke roop mein jaana chahiye, kyunki woh bhi aaya aur ja sakta hai"
+      },
+      {
+        "key": "D",
+        "text": "Use galat kehkar suppress kar dena chahiye"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Prakash, anand, shanti ya khaali-pan jaise experiences sundar ho sakte hain, par ve experiences hain. Jo experience aaya aur gaya, woh Chetana swayam nahi ho sakta."
+  },
+  {
+    "id": 24,
+    "question": "'Prajnanam Brahma' life mein kaise utarta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har experience ko Chetana mein appear hote dekhna"
+      },
+      {
+        "key": "B",
+        "text": "Har feeling ko rok dena"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra padhna"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ki responsibilities chhod dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab sadhak praise, criticism, sukh, dukh, darr aur shanti—sabko Chetana mein known experiences ke roop mein dekhta hai, tab yeh Mahavakya life mein utarta hai."
+  },
+  {
+    "id": 25,
+    "question": "Chetana ki samajh karuna ko kyun gehra karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh dusron ke dukh ko jhooth kehti hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki separation ki kathorta kam hoti hai aur sab experiences ek hi aadhar mein dekhe jaate hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sadhak sansar se cut off ho jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki karuna sadhana mein obstacle hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Chetana ko aadhar maanne se sadhak dusron ke dukh ko chhota nahi karta. Separation kam hota hai, isliye sensitivity aur karuna badhti hai."
+  },
+  {
+    "id": 26,
+    "question": "Mahavakya ahankar ko kya dene ke liye nahi hain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nayi spiritual declaration aur superiority"
+      },
+      {
+        "key": "B",
+        "text": "Vinamrata"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi ki disha"
+      },
+      {
+        "key": "D",
+        "text": "Identity ki clarity"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakya ego ko bada karne ke liye nahi hain. Unka uddeshya limited identity ko dheela karna aur sadhak ko Atma-Brahman ki disha mein modna hai."
+  },
+  {
+    "id": 27,
+    "question": "Is course mein Nididhyasan ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf vakyon ko memorize karna"
+      },
+      {
+        "key": "B",
+        "text": "Sune aur samjhe hue satya ko baar-baar apne experience mein clear karna"
+      },
+      {
+        "key": "C",
+        "text": "Sansar ka tyag karna"
+      },
+      {
+        "key": "D",
+        "text": "Kisi ek thought ko zabardasti pakde rehna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Nididhyasan sirf dhyan mein baithna nahi hai. Yeh life ke beech baar-baar samjhe hue satya mein lautkar use stable karna hai."
+  },
+  {
+    "id": 28,
+    "question": "Mahavakyon ko sirf buddhi mein rakhna kyun enough nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki unhe life ke experiences mein utarna zaruri hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki buddhi bilkul useless hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Mahavakya ka arth koi nahi samajh sakta"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sirf chanting hi unka goal hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakya pehle intellect mein samjhe ja sakte hain, par journey wahan poori nahi hoti. Unhe dukh, sukh, relation, karma aur sadhana ke beech identity ki disha banana hota hai."
+  },
+  {
+    "id": 29,
+    "question": "Adhyay ke anusaar 'Main Brahman hoon' ko kaise rakhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron par prove karne ke liye"
+      },
+      {
+        "key": "B",
+        "text": "Spiritual image banane ke liye"
+      },
+      {
+        "key": "C",
+        "text": "Andar ki shaant pehchaan ke roop mein, claim banakar nahi"
+      },
+      {
+        "key": "D",
+        "text": "Social title ke roop mein"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Yeh vakya bahar announcement ke liye nahi hai. Sahi samajh mein yeh silence, vinamrata aur limited identity ke halke hone ki disha deta hai."
+  },
+  {
+    "id": 30,
+    "question": "'Ayam Atma Brahma' kis bhram ko door karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ki Atma sirf ek chhoti private object hai"
+      },
+      {
+        "key": "B",
+        "text": "Ki sharir badalta hai"
+      },
+      {
+        "key": "C",
+        "text": "Ki mann mein thoughts aate hain"
+      },
+      {
+        "key": "D",
+        "text": "Ki karma karna padta hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh Mahavakya batata hai ki Atma koi chhoti personal object nahi hai. Andar pehchana gaya satya Brahman se alag nahi hai."
+  },
+  {
+    "id": 31,
+    "question": "Mahavakya sunne se pehle sadhak ki kaunsi taiyari useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Body-mind, bhavna, role aur ahankar ko known objects ke roop mein dekhna"
+      },
+      {
+        "key": "B",
+        "text": "Sirf Sanskrit grammar seekhna"
+      },
+      {
+        "key": "C",
+        "text": "Dusron se debate karna"
+      },
+      {
+        "key": "D",
+        "text": "Sansar ko destroyed maanna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Agar galat pehchaanen dekhi nahi gayin, to Mahavakya ego ki language ban sakte hain. Neti-Neti ki safai Mahavakya sunne ki bhoomi taiyar karti hai."
+  },
+  {
+    "id": 32,
+    "question": "Mahavakya aur Neti-Neti ka sahi sambandh kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono ek-dusre ke opposite hain"
+      },
+      {
+        "key": "B",
+        "text": "Neti-Neti identity saaf karti hai, Mahavakya satya ki disha dikhate hain"
+      },
+      {
+        "key": "C",
+        "text": "Mahavakya Neti-Neti ko useless banate hain"
+      },
+      {
+        "key": "D",
+        "text": "Neti-Neti sirf body ke liye hai aur Mahavakya sirf karma ke liye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Neti-Neti kehti hai—yeh nahi, yeh nahi. Us safai ke baad Mahavakya batate hain ki sachche swaroop ki disha kya hai."
+  },
+  {
+    "id": 33,
+    "question": "Mahavakya ka galat use kaunsa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use saakshi-bhav mein sunna"
+      },
+      {
+        "key": "B",
+        "text": "Use life mein karuna ke saath utarna"
+      },
+      {
+        "key": "C",
+        "text": "Use egoic declaration banakar kehna ki main sabse upar hoon"
+      },
+      {
+        "key": "D",
+        "text": "Use body-mind identity se hatne ki disha banana"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Agar Mahavakya se superiority, rules se chhoot ya dusron ko chhota maanne ki feeling aaye, to woh ego ki chaal hai, Mahavakya ki samajh nahi."
+  },
+  {
+    "id": 34,
+    "question": "Chaaron Mahavakya kis taraf sanket karte hain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Chaar alag-alag final truths ki taraf"
+      },
+      {
+        "key": "B",
+        "text": "Saakshi, Atma, Chetana aur Brahman ki ek hi advaita disha ki taraf"
+      },
+      {
+        "key": "C",
+        "text": "Chaar alag-alag rituals ki taraf"
+      },
+      {
+        "key": "D",
+        "text": "Sirf external worship ki taraf"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Tat Tvam Asi, Aham Brahmasmi, Ayam Atma Brahma aur Prajnanam Brahma alag-alag angles se usi ek advaita satya ki taraf sanket karte hain."
+  },
+  {
+    "id": 35,
+    "question": "'Chetana hi Brahman hai' sunkar sadhak ko kis bhram se bachna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ki use koi special experience pakadna hoga"
+      },
+      {
+        "key": "B",
+        "text": "Ki experiences Chetana mein jaane jaate hain"
+      },
+      {
+        "key": "C",
+        "text": "Ki karuna zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Ki thoughts bhi jaane jaate hain"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mann Chetana ko bhi experience banakar pakadna chahta hai. Adhyay clear karta hai ki Chetana experience nahi, sab experiences ka aadhar hai."
+  },
+  {
+    "id": 36,
+    "question": "Mahavakyon ka real place kahan bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf chanting mein"
+      },
+      {
+        "key": "B",
+        "text": "Sirf external discussion mein"
+      },
+      {
+        "key": "C",
+        "text": "Andar ki living recognition aur remembrance mein"
+      },
+      {
+        "key": "D",
+        "text": "Sirf book ke pages mein"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mahavakya bahar se sune ja sakte hain, par unka real meaning andar recognition mein khulta hai. Ve sirf words nahi, direction aur remembrance hain."
+  },
+  {
+    "id": 37,
+    "question": "Agar sadhak kahe 'Maine Mahavakya yaad kar liye, isliye gyaan ho gaya', to problem kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh samajh ko sirf memory tak limited kar deta hai"
+      },
+      {
+        "key": "B",
+        "text": "Yeh deep Nididhyasan hai"
+      },
+      {
+        "key": "C",
+        "text": "Yeh saakshi ki final state hai"
+      },
+      {
+        "key": "D",
+        "text": "Yeh karuna ka proof hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakya ka purpose sirf yaad rakhna nahi hai. Agar ve life aur experience mein nahi utarte, to ve sirf information bankar reh jaate hain."
+  },
+  {
+    "id": 38,
+    "question": "Mahavakya sunte waqt tark ka place kaisa bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Tark poori tarah forbidden hai"
+      },
+      {
+        "key": "B",
+        "text": "Tark ka place hai, par Mahavakya sirf buddhi ke liye nahi hain"
+      },
+      {
+        "key": "C",
+        "text": "Sirf tark se final recognition mil jati hai"
+      },
+      {
+        "key": "D",
+        "text": "Tark hi Brahman hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Tark aur manan useful hain, par Mahavakya buddhi ko shaant karke pehchaan ki disha mein le jaate hain. Unhe sirf debate ka topic nahi banana hai."
+  },
+  {
+    "id": 39,
+    "question": "Mahavakya ko future achievement kyun nahi kaha gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki ve batate hain ki real swaroop abhi bhi hai, sirf galat identity se dhaka hua hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki unka koi use nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki unhe sunna zaruri nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki ve sirf history hain"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakya kehte hain ki satya future mein milne wali object nahi. Woh abhi hai; bas body-mind ki galat identity se dhyan hatana hai."
+  },
+  {
+    "id": 40,
+    "question": "Gale mein padi mala ka example kya samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Satya bahut door chhupa hai"
+      },
+      {
+        "key": "B",
+        "text": "Jise dhunda ja raha hai, woh pehle se paas hai; bas yaad dilana hai"
+      },
+      {
+        "key": "C",
+        "text": "Mala hi Brahman hai"
+      },
+      {
+        "key": "D",
+        "text": "Khoj useless hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jaise vyakti apne gale ki mala bahar dhundhta hai, waise hi sadhak satya ko bahar dhundhta hai. Mahavakya yaad dilate hain ki satya tumse alag nahi."
+  },
+  {
+    "id": 41,
+    "question": "Adhyay 6 ke exercises ka main purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mahavakyon ko egoic declaration banana"
+      },
+      {
+        "key": "B",
+        "text": "Body-mind ko dekhkar jaanne wali upasthiti ki disha mein lautna"
+      },
+      {
+        "key": "C",
+        "text": "Sab experiences ko zabardasti rokna"
+      },
+      {
+        "key": "D",
+        "text": "Sirf Sanskrit words chant karna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Exercises sadhak ko sharir, mann, bhavna aur ego-story ko jaan kar Mahavakya ki disha mein shaant lautne mein help karte hain."
+  },
+  {
+    "id": 42,
+    "question": "'Tat Tvam Asi' ko life mein sunne ka sahi tareeka kaunsa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Criticism ya dukh mein experience se hatkar saakshi-satya ki disha mein lautna"
+      },
+      {
+        "key": "B",
+        "text": "Har vyakti se kehna ki main tumse superior hoon"
+      },
+      {
+        "key": "C",
+        "text": "Sharir ki har desire ko satya maanna"
+      },
+      {
+        "key": "D",
+        "text": "Sukh ko permanent banane ki koshish karna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab criticism, dukh ya success aati hai, tab 'tum wahi ho' sadhak ko anubhavkarta ki story se hata kar sachche swaroop ki disha mein lautata hai."
+  },
+  {
+    "id": 43,
+    "question": "Mahavakya ki maturity mein dukh ke prati sahi drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dukh ko jhooth kehkar ignore karna"
+      },
+      {
+        "key": "B",
+        "text": "Dukh ka samman karna, par Atma ko dukh se limited na maanna"
+      },
+      {
+        "key": "C",
+        "text": "Dukhi vyakti se distance banana"
+      },
+      {
+        "key": "D",
+        "text": "Dukh ko spiritual failure maanna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Vyavahar mein dukh ko sunna aur karuna rakhna zaruri hai. Saath hi yeh clarity bhi rehti hai ki Atma ka aadhar dukh se limited nahi hota."
+  },
+  {
+    "id": 44,
+    "question": "Mahavakya sadhak ko kaisa nahi banate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Zyada aware"
+      },
+      {
+        "key": "B",
+        "text": "Zyada compassionate"
+      },
+      {
+        "key": "C",
+        "text": "Zyada humble"
+      },
+      {
+        "key": "D",
+        "text": "Zyada egoic aur specialness se bhara hua"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Agar Mahavakya se ego aur specialness badh rahi hai, to samajh galat hai. Sahi disha mein ve vinamrata, karuna aur saakshi-bhav ko gehra karte hain."
+  },
+  {
+    "id": 45,
+    "question": "Chetana ko sabse nazdeek kyun kaha ja sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki jo bhi known hai, woh Chetana mein hi known hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yeh sirf aankhon se dikhai deti hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh sirf body ke bahar hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh ek special color hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Vichar, bhavna, sharir, dhwani, memory aur silence—sab Chetana mein known hote hain. Isliye Chetana object ki tarah door nahi, experience ka nearest aadhar hai."
+  },
+  {
+    "id": 46,
+    "question": "Rooms aur light ka example kya clear karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Rooms hi Chetana hain"
+      },
+      {
+        "key": "B",
+        "text": "Experience ki content alag ho sakti hai, par jaanne ki nature prakashit karna hai"
+      },
+      {
+        "key": "C",
+        "text": "Light ko jaana impossible hai, isliye life meaningless hai"
+      },
+      {
+        "key": "D",
+        "text": "Har body mein completely alag final truth hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Alag rooms mein scenes alag ho sakte hain, par light ka kaam illuminate karna hai. Waise hi body-mind ki content alag hai, par jaanne ki nature ek disha dikhati hai."
+  },
+  {
+    "id": 47,
+    "question": "Adhyay 6 kis agle adhyay ki taraf bridge banata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar ki Paratein"
+      },
+      {
+        "key": "B",
+        "text": "Maya aur Jagat"
+      },
+      {
+        "key": "C",
+        "text": "Turiya Avastha"
+      },
+      {
+        "key": "D",
+        "text": "Swayam Ki Khoj"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mahavakya mein Chetana ki disha samajhne ke baad agla adhyay jagrat, swapna aur sushupti ke aadhar—Turiya Avastha—ki taraf badhta hai."
+  },
+  {
+    "id": 48,
+    "question": "Nididhyasan mein Mahavakya kaise rakhne chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Announcement aur display ki tarah"
+      },
+      {
+        "key": "B",
+        "text": "Shaant smaran aur experience mein baar-baar lautne ki disha ki tarah"
+      },
+      {
+        "key": "C",
+        "text": "Dusron ko haraane ke argument ki tarah"
+      },
+      {
+        "key": "D",
+        "text": "Sirf exam answer ki tarah"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Nididhyasan mein Mahavakya ko life ke experiences mein baar-baar sunna hai. Ve announcement nahi, shaant smaran aur pehchaan ki disha hain."
+  },
+  {
+    "id": 49,
+    "question": "Adhyay 6 ka central message kaunsa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mahavakya ego ko bada karne ke liye hain"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ka sachcha swaroop Brahman se alag nahi"
+      },
+      {
+        "key": "C",
+        "text": "Mahavakya sirf social teachings hain"
+      },
+      {
+        "key": "D",
+        "text": "Mahavakya sharir ko final truth banate hain"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Poora adhyay isi disha mein hai ki Saakshi, Atma, Chetana aur Brahman alag-alag objects nahi, balki ek hi advaita satya ki taraf sanket hain."
+  },
+  {
+    "id": 50,
+    "question": "Mahavakya sunne ke baad sadhak ko kis baat ka dhyan rakhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unhe claim na banakar life mein humble recognition aur karuna ke roop mein utarna"
+      },
+      {
+        "key": "B",
+        "text": "Unhe sirf dusron ko impress karne ke liye bolna"
+      },
+      {
+        "key": "C",
+        "text": "Unhe sunte hi practice chhod dena"
+      },
+      {
+        "key": "D",
+        "text": "Unhe sirf decorative words maanna"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Mahavakya ka sahi phal life mein dikhta hai—claim kam hota hai, saakshi-bhav gehra hota hai, karuna aur vinamrata badhti hai."
+  }
+]

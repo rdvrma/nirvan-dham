@@ -1,1202 +1,1202 @@
 [
   {
-    "id": 301,
-    "question": "According to the chapter, what is the common misunderstanding about witnessing?",
+    "id": 1,
+    "question": "What is the main focus of Chapter 3?",
     "options": [
       {
         "key": "A",
-        "text": "It is something that happens only when one is in a quiet room with eyes closed."
+        "text": "Keeping witness-consciousness alive in everyday moving life"
       },
       {
         "key": "B",
-        "text": "It is a state that can only be achieved through intense meditation."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "It requires suppressing all emotions and thoughts."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "It is a special state only accessible to advanced practitioners."
+        "text": "It requires escaping from the world and relationships"
       }
     ],
     "correct": "A",
-    "explanation": "The chapter explicitly states that a common misunderstanding is that witnessing happens only when meditating in a quiet room. It clarifies that witnessing is available in all activities, not just formal meditation."
+    "explanation": "Chapter 3 does not limit witness-consciousness to meditation. It shows that witnessing can be remembered while walking, speaking, working and feeling."
   },
   {
-    "id": 302,
-    "question": "How does the chapter describe the nature of witnessing?",
+    "id": 2,
+    "question": "How does Chapter 3 connect with the earlier chapters?",
     "options": [
       {
         "key": "A",
-        "text": "A simple, natural knowing presence."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "A tense and focused alertness on every sensation."
+        "text": "It applies the recognition of the witness within and the understanding of maya outside to life"
       },
       {
         "key": "C",
-        "text": "An inner guard that pressures the mind to control thoughts."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "D",
-        "text": "A state of detachment achieved through rigorous practice."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text differentiates witnessing from tense alertness or an inner guard, describing it as 'simple knowing.' It uses the analogy of the eye seeing naturally when open and light is present to illustrate this point."
-  },
-  {
-    "id": 303,
-    "question": "Which of the following is NOT listed as an area where witnessing is often forgotten?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Spiritual practices"
-      },
-      {
-        "key": "B",
-        "text": "Relationships"
-      },
-      {
-        "key": "C",
-        "text": "Deep emotions"
-      },
-      {
-        "key": "D",
-        "text": "Work and results"
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter identifies relationships, work and results, and deep emotions as the three main areas where old identity becomes active and witnessing is often forgotten. Spiritual practices are not listed as one of these specific areas."
-  },
-  {
-    "id": 304,
-    "question": "The chapter suggests calling witnessing a 'return' rather than a 'practice' to avoid which potential pitfall?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The mind turning it into another achievement to be measured."
-      },
-      {
-        "key": "B",
-        "text": "The mind becoming too relaxed and losing focus."
-      },
-      {
-        "key": "C",
-        "text": "The experiencer feeling overwhelmed by the effort involved."
-      },
-      {
-        "key": "D",
-        "text": "The Witness becoming a separate entity from daily life."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text explains that if witnessing is treated only as a practice, the mind might turn it into an achievement, leading to questions like 'How well did I witness today?'. Calling it a 'return' emphasizes coming back to what is already present, avoiding this performance-oriented mindset."
-  },
-  {
-    "id": 305,
-    "question": "What is the purpose of the practice suggested for the first section: 'This action is happening. The body is doing it. Something is knowing it.'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To recognize that experience is happening and being known, without trying to grasp the knowing."
-      },
-      {
-        "key": "B",
-        "text": "To deeply analyze the mechanics of the action."
-      },
-      {
-        "key": "C",
-        "text": "To actively control the body's movements."
-      },
-      {
-        "key": "D",
-        "text": "To strengthen the connection between the mind and the body."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The practice aims to help the seeker recognize that an action is occurring, the body is performing it, and there is a knowing presence. The instruction is to 'simply recognize that experience is happening and is being known,' not to actively 'catch the knowing'."
-  },
-  {
-    "id": 306,
-    "question": "Why are relationships considered the 'living test' for witnessing?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Because the experiencer becomes active quickly, making it hard to maintain witnessing."
-      },
-      {
-        "key": "B",
-        "text": "Because they are the easiest place to practice witnessing."
-      },
-      {
-        "key": "C",
-        "text": "Because relationships are solely based on logical interactions."
-      },
-      {
-        "key": "D",
-        "text": "Because they require complete emotional detachment."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter states that relationships are a test because 'the experiencer becomes active quickly.' This means old identities, expectations, and reactions surface easily, making it challenging to remain the Witness."
-  },
-  {
-    "id": 307,
-    "question": "What is the primary reason cited for why hurt goes deeper in close relationships compared to a stranger's words?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Close relationships involve expectations, old memories, and the need for recognition."
-      },
-      {
-        "key": "B",
-        "text": "Close relationships involve less emotional investment."
-      },
-      {
-        "key": "C",
-        "text": "Strangers' words are usually more polite and less direct."
-      },
-      {
-        "key": "D",
-        "text": "The Witness is less active in familiar interactions."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The text explains that in close relationships, words from a loved one wound deeply because of 'expectations, old memories, the need for recognition, the desire for love, and the wish for respect.' These elements are not typically present with a stranger."
-  },
-  {
-    "id": 308,
-    "question": "What does 'listening with witnessing' involve?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Hearing the other person and simultaneously seeing your own internal reactions."
-      },
-      {
-        "key": "B",
-        "text": "Silently agreeing with everything the other person says."
-      },
-      {
-        "key": "C",
-        "text": "Preparing your response while the other person is still speaking."
-      },
-      {
-        "key": "D",
-        "text": "Interrupting to correct misunderstandings immediately."
-      }
-    ],
-    "correct": "A",
-    "explanation": "Listening with witnessing means 'hearing the other person and also seeing what rises within.' It involves observing both the external communication and the internal reactions, such as defense mechanisms, as they arise."
-  },
-  {
-    "id": 309,
-    "question": "In the example of a conversation, what does the 'pause' with witnessing allow Person B to do?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To notice their defensive reaction and choose a clear response instead of a blind one."
-      },
-      {
-        "key": "B",
-        "text": "To immediately counter Person A's accusation."
-      },
-      {
-        "key": "C",
-        "text": "To ignore Person A's feelings and focus on their own defense."
-      },
-      {
-        "key": "D",
-        "text": "To end the conversation abruptly to avoid conflict."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The example shows that after feeling a defensive reaction, Person B takes a breath (a pause) and then responds with clarity, asking to understand rather than arguing. This demonstrates seeing the reaction and choosing a conscious response."
-  },
-  {
-    "id": 310,
-    "question": "When criticism comes in a relationship, what does 'naming the hurt of the experiencer' suggest?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To identify the specific 'I' that is reacting, such as 'the 'I' that wants to be right'."
-      },
-      {
-        "key": "B",
-        "text": "To suppress the feeling of hurt by labeling it."
-      },
-      {
-        "key": "C",
-        "text": "To immediately dismiss the criticism as invalid."
-      },
-      {
-        "key": "D",
-        "text": "To express anger outwardly to defend oneself."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter suggests naming the hurt by identifying the specific aspect of the 'I' that is arising, such as 'The ‘I’ that wants to be right is arising.' This naming opens space and brings clarity, rather than suppressing the emotion."
-  },
-  {
-    "id": 311,
-    "question": "How does witnessing purify love in relationships?",
-    "options": [
-      {
-        "key": "A",
-        "text": "By revealing the presence of fear or control mixed with love."
-      },
-      {
-        "key": "B",
-        "text": "By making the person incapable of feeling love."
-      },
-      {
-        "key": "C",
-        "text": "By ensuring all expectations in love are met."
-      },
-      {
-        "key": "D",
-        "text": "By encouraging the shaping of the loved one according to one's desires."
-      }
-    ],
-    "correct": "A",
-    "explanation": "Witnessing helps to distinguish love from clinging by revealing if 'fear is mixed with my love.' This seeing makes love more truthful and less about control or fear-based expectations."
-  },
-  {
-    "id": 312,
-    "question": "The practice for relationships asks the seeker to identify which sentence activated the experiencer. What does this imply?",
-    "options": [
-      {
-        "key": "A",
-        "text": "That specific words or phrases can trigger old identities and reactions."
-      },
-      {
-        "key": "B",
-        "text": "That only strong insults can activate the experiencer."
-      },
-      {
-        "key": "C",
-        "text": "That the experiencer is always looking for reasons to react."
-      },
-      {
-        "key": "D",
-        "text": "That the experiencer is a separate entity from the self."
-      }
-    ],
-    "correct": "A",
-    "explanation": "Identifying the sentence that activates the experiencer helps the seeker understand how certain words or situations trigger their sense of self, leading to reactions based on old wounds or desires like respect, being understood, or being right."
-  },
-  {
-    "id": 313,
-    "question": "In the context of work and results, what is the danger of turning results into 'final identity'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "It creates suffering when results do not match the identity."
-      },
-      {
-        "key": "B",
-        "text": "It leads to excessive humility and lack of ambition."
-      },
-      {
-        "key": "C",
-        "text": "It makes one overly dependent on external validation."
-      },
-      {
-        "key": "D",
-        "text": "It causes one to avoid challenging tasks."
-      }
-    ],
-    "correct": "A",
-    "explanation": "The chapter states that 'turning work and results into final identity creates suffering.' This is because when the outcome does not align with the identity ('I am successful' or 'I am a failure'), it leads to pain and distress."
-  },
-  {
-    "id": 314,
-    "question": "Witnessing in work does NOT advocate for which of the following?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Working sincerely and fulfilling responsibility."
-      },
-      {
-        "key": "B",
-        "text": "Making the result the proof of one's final identity."
-      },
-      {
-        "key": "C",
-        "text": "Preparing and learning to improve."
-      },
-      {
-        "key": "D",
-        "text": "Working from clarity rather than fear."
+        "text": "It is only a practice of memorizing scriptures"
       }
     ],
     "correct": "B",
-    "explanation": "The chapter explicitly advises against making the result the proof of final identity. It encourages sincere work, preparation, learning, and responsibility, but emphasizes that results are influenced by many factors beyond one's direct control."
+    "explanation": "The earlier chapters introduced the witness and maya. Chapter 3 brings that understanding into the actual fields of daily life."
   },
   {
-    "id": 315,
-    "question": "When a project fails, how does witnessing help a person move forward?",
+    "id": 3,
+    "question": "Which common misunderstanding about witness-consciousness is corrected in Chapter 3?",
     "options": [
       {
         "key": "A",
-        "text": "By immediately erasing the disappointment and hurt."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "B",
-        "text": "By seeing the result as an experience and a lesson, not a verdict on one's entire being."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "C",
-        "text": "By accepting the failure as a personal defect and stopping all future efforts."
+        "text": "That witness-consciousness comes only by sitting with closed eyes in a quiet room is an incomplete understanding"
       },
       {
         "key": "D",
-        "text": "By blaming external factors and refusing to learn from the situation."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Witnessing allows the person to see that 'this result is not the verdict on my whole being.' This perspective enables learning and improvement by recognizing the failure as an experience and a lesson, rather than a final judgment."
-  },
-  {
-    "id": 316,
-    "question": "What is the difference between inspiration and comparison in the context of work?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Inspiration is about surpassing others, while comparison is about collaboration."
-      },
-      {
-        "key": "B",
-        "text": "Inspiration leads to learning energy, while comparison brings the pain of insufficiency."
-      },
-      {
-        "key": "C",
-        "text": "Inspiration focuses on past achievements, while comparison looks to the future."
-      },
-      {
-        "key": "D",
-        "text": "Inspiration is a form of ego, while comparison is a sign of humility."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter distinguishes between these two by stating, 'Inspiration brings learning energy. Comparison brings the pain of insufficiency.' Comparison involves measuring one's value against others, often leading to feelings of inadequacy."
-  },
-  {
-    "id": 317,
-    "question": "How does witnessing help in the face of success?",
-    "options": [
-      {
-        "key": "A",
-        "text": "By suppressing the joy and gratitude associated with success."
-      },
-      {
-        "key": "B",
-        "text": "By recognizing success as an experience and being aware of potential ego inflation."
-      },
-      {
-        "key": "C",
-        "text": "By ensuring that success is always attributed to external factors."
-      },
-      {
-        "key": "D",
-        "text": "By making one indifferent to praise and recognition."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Witnessing in success means honoring effort and gratitude, but also seeing that 'success too is an experience.' It helps in recognizing when 'a wave of ego may be rising' and knowing it, rather than being completely carried away by it."
-  },
-  {
-    "id": 318,
-    "question": "The practice for work and results asks the seeker to identify the 'identity the experiencer created from it.' What does this help to reveal?",
-    "options": [
-      {
-        "key": "A",
-        "text": "The objective reality of the event."
-      },
-      {
-        "key": "B",
-        "text": "The experiencer's tendency to tie outcomes to their sense of self."
-      },
-      {
-        "key": "C",
-        "text": "The specific skills that led to the success or failure."
-      },
-      {
-        "key": "D",
-        "text": "The opinions of others regarding the outcome."
-      }
-    ],
-    "correct": "B",
-    "explanation": "This question helps the seeker see how the 'experiencer' (the 'I' that identifies with events) creates a personal identity based on success or failure. Recognizing this tendency is key to not letting results define one's entire being."
-  },
-  {
-    "id": 319,
-    "question": "When intense emotions like fear or anger arise, what is the role of witnessing?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To immediately deny the emotion and pretend it doesn't exist."
-      },
-      {
-        "key": "B",
-        "text": "To know the emotion honestly without letting it become one's final identity."
-      },
-      {
-        "key": "C",
-        "text": "To run away from the situation causing the emotion."
-      },
-      {
-        "key": "D",
-        "text": "To suppress the emotion by covering it with spiritual words."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Witnessing deep emotions means 'knowing the emotion honestly without turning it into your final identity.' It is about acknowledging the emotion's presence and experience, not denying, running from, or suppressing it."
-  },
-  {
-    "id": 320,
-    "question": "The chapter states that deep emotions feel real because they are felt in the body. What is the implication of this for sadhana (spiritual practice)?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Sadhana means removing all emotions from the body."
-      },
-      {
-        "key": "B",
-        "text": "Sadhana means being honest with emotions, not necessarily removing them."
-      },
-      {
-        "key": "C",
-        "text": "Sadhana requires ignoring bodily sensations associated with emotions."
-      },
-      {
-        "key": "D",
-        "text": "Sadhana proves that emotions are ultimately false."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text clarifies that 'Sadhana does not mean removing emotions; it means being honest with them.' Since emotions are felt in the body and are real experiences, the practice involves acknowledging them rather than trying to eliminate them."
-  },
-  {
-    "id": 321,
-    "question": "When fear arises, what is the first step suggested by witnessing?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To immediately create a future story to distract the mind."
-      },
-      {
-        "key": "B",
-        "text": "To name the fear and the mind's activity, such as 'Fear is arising' and 'The mind is imagining the future'."
-      },
-      {
-        "key": "C",
-        "text": "To suppress the fear by focusing only on the present moment."
-      },
-      {
-        "key": "D",
-        "text": "To analyze the root cause of the fear in childhood."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter suggests that the first step in witnessing fear is 'naming: 'Fear is arising,' 'The mind is imagining the future,' 'The body is tight.'' This brings awareness to the emotion and the mental process, rather than getting lost in it."
-  },
-  {
-    "id": 322,
-    "question": "How does witnessing approach grief?",
-    "options": [
-      {
-        "key": "A",
-        "text": "By immediately dismissing it as Maya (illusion)."
-      },
-      {
-        "key": "B",
-        "text": "By respecting grief, giving it space, and knowing it is being experienced."
-      },
-      {
-        "key": "C",
-        "text": "By encouraging the seeker to suppress tears and avoid acknowledging hurt."
-      },
-      {
-        "key": "D",
-        "text": "By trying to find a logical explanation for the grief."
-      }
-    ],
-    "correct": "B",
-    "explanation": "Witnessing grief involves respecting it, giving it space, feeling the heaviness, and letting tears be known. It acknowledges that 'Grief is here, and it is being known,' rather than trying to remove or deny it."
-  },
-  {
-    "id": 323,
-    "question": "What is the difference between anger arising and speaking immediately from anger?",
-    "options": [
-      {
-        "key": "A",
-        "text": "There is no significant difference; both are uncontrolled reactions."
-      },
-      {
-        "key": "B",
-        "text": "Witnessing allows for the possibility of seeing anger and then responding with clarity, rather than reacting impulsively."
-      },
-      {
-        "key": "C",
-        "text": "Speaking immediately from anger is a sign of strength, while anger arising is weakness."
-      },
-      {
-        "key": "D",
-        "text": "Anger arising is natural, but speaking from it is always wrong."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter distinguishes between these: 'Anger arising is one thing. Speaking immediately from anger is another. Seeing anger and then speaking with clarity is a third possibility.' Witnessing opens this third possibility."
-  },
-  {
-    "id": 324,
-    "question": "According to the chapter, what is the distinction between emotion and story?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Emotion is a story, and story is a direct sensation."
-      },
-      {
-        "key": "B",
-        "text": "Emotion is the direct sensation, while story is the mind's interpretation built around it."
-      },
-      {
-        "key": "C",
-        "text": "Both emotion and story are false and should be ignored."
-      },
-      {
-        "key": "D",
-        "text": "Story is always true, while emotion is often misleading."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The text defines emotion as 'direct sensation' and story as 'what the mind builds around it.' For example, grief is the emotion, while 'This always happens to me' is the story built upon it."
-  },
-  {
-    "id": 325,
-    "question": "What does the chapter mean when it states, 'Witnessing is not emotionlessness'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Witnessing requires the complete eradication of all feelings."
-      },
-      {
-        "key": "B",
-        "text": "Witnessing allows emotions to arise but prevents complete identification with them."
-      },
-      {
-        "key": "C",
-        "text": "Witnessing means emotions will never arise in the practitioner."
-      },
-      {
-        "key": "D",
-        "text": "Witnessing is a state of apathy where one is indifferent to all emotional experiences."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter clarifies that witnessing does not mean becoming emotionless. Instead, it means that 'emotions may arise, but complete identity is not formed with them.' It's about giving space to emotion, not being bound by it."
-  },
-  {
-    "id": 326,
-    "question": "What is the essence of witnessing as presented at the end of the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Witnessing is a separate spiritual state achieved through detachment from life."
-      },
-      {
-        "key": "B",
-        "text": "Witnessing is the art of remembering the knowing presence in the middle of life's experiences."
-      },
-      {
-        "key": "C",
-        "text": "Witnessing requires destroying emotions and running away from relationships."
-      },
-      {
-        "key": "D",
-        "text": "Witnessing is a distant destination that requires immense effort to reach."
-      }
-    ],
-    "correct": "B",
-    "explanation": "The chapter concludes by stating, 'witnessing is not separate from life. It is the art of remembering in the middle of life.' It emphasizes returning to the knowing presence that is already present in every experience."
-  },
-  {
-    "id": 327,
-    "question": "The practice for this week involves noticing 'Where is this emotion felt in the body?' What is the purpose of this inquiry?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To find a physical cure for emotional distress."
-      },
-      {
-        "key": "B",
-        "text": "To identify the exact source of the emotional trigger."
-      },
-      {
-        "key": "C",
-        "text": "To understand that emotions manifest as physical sensations."
-      },
-      {
-        "key": "D",
-        "text": "To prove that emotions are purely psychosomatic."
+        "text": "It is meant to make the seeker superior to others"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter explains that 'Deep emotion is felt in the body.' Noticing where it is felt helps the seeker acknowledge the physical manifestation of the emotion, understanding it as a real experience occurring in the body."
+    "explanation": "The chapter clarifies that witnessing is not restricted to a meditation room. It is available in conversation, work, relationships and emotions."
   },
   {
-    "id": 328,
-    "question": "What does the chapter suggest is the difference between 'giving space to emotion' and 'being bound by emotion'?",
+    "id": 4,
+    "question": "What is the main difference between witness-consciousness and concentration?",
     "options": [
       {
         "key": "A",
-        "text": "Giving space is active suppression, while being bound is passive acceptance."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "B",
-        "text": "Giving space means ignoring the emotion, while being bound means reacting impulsively."
+        "text": "It is meant to make the seeker superior to others"
       },
       {
         "key": "C",
-        "text": "Giving space is a conscious acknowledgment, while being bound is complete identification and loss of self."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "D",
-        "text": "There is no practical difference; both lead to the same outcome."
+        "text": "Witness-consciousness is effortless knowing, not strained alertness all the time"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Witness-consciousness is not tense vigilance. It is natural presence, like the eye seeing without extra effort."
+  },
+  {
+    "id": 5,
+    "question": "What does the example of the eye explain about witness-consciousness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Just as the eye sees naturally, the witness naturally knows"
+      },
+      {
+        "key": "B",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "C",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The eye does not strain to see. In the same way, witnessing is not an artificial effort but natural knowing."
+  },
+  {
+    "id": 6,
+    "question": "According to Chapter 3, where is witness-consciousness most often forgotten?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "B",
+        "text": "In relationships, work-success-failure, and deep emotions"
+      },
+      {
+        "key": "C",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "D",
+        "text": "It teaches hard identification with experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter identifies three main fields: close relationships, result-oriented work, and deep emotions such as fear, sorrow and anger."
+  },
+  {
+    "id": 7,
+    "question": "Why is it useful to call witness-consciousness a “return”?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "B",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "C",
+        "text": "Because witness-consciousness is already present; attention only moves away from it"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
       }
     ],
     "correct": "C",
-    "explanation": "The text differentiates these by stating, 'Giving space to emotion and being bound by emotion are different. Witnessing gives space. The experiencer becomes bound.' Giving space is acknowledging without losing oneself, while being bound means complete identification with the emotion."
+    "explanation": "Witness-consciousness is not something newly created. It is a repeated return to the already-present knowing presence."
   },
   {
-    "id": 329,
-    "question": "The chapter mentions that the Witness was recognized in Chapter 1. What was the Witness described as?",
+    "id": 8,
+    "question": "What is a simple practice of witness-consciousness during daily activity?",
     "options": [
       {
         "key": "A",
-        "text": "The active experiencer of life's events."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "The collection of all thoughts and emotions."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "C",
-        "text": "The quiet knowing presence that knows every state."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "D",
-        "text": "The external world of name and form."
+        "text": "While drinking tea or walking, sensing that something is knowing the activity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter makes ordinary activities a field of practice. Drinking tea, walking or speaking can all reveal the knowing presence."
+  },
+  {
+    "id": 9,
+    "question": "Why does the mind react so quickly in relationships?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because expectation, memory and identity are deeply connected in close relationships"
+      },
+      {
+        "key": "B",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "C",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Expectations and old memories connected with close people run deep. Therefore even a small remark can strongly activate the experiencer."
+  },
+  {
+    "id": 10,
+    "question": "Why can the same words hurt differently when spoken by a stranger and by someone close?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "B",
+        "text": "Because expectation and emotional connection are stronger with someone close"
+      },
+      {
+        "key": "C",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "D",
+        "text": "It is limited only to sitting in a meditation room"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Words from someone close touch identity, expectation and old memories. That is why the same words may hurt more deeply from a loved one."
+  },
+  {
+    "id": 11,
+    "question": "What does witness-consciousness in listening mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "B",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "C",
+        "text": "Listening fully first and then responding with awareness"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter states that in Chapter 1, 'the quiet knowing presence called the Witness was recognized.' This presence is described as knowing every state, whether peace or restlessness, stillness or movement."
+    "explanation": "Usually we prepare a reply while listening. Listening with witness-consciousness means first knowing the whole experience and then responding clearly."
   },
   {
-    "id": 330,
-    "question": "When life presents challenges like hurt relationships or work failures, what is the common reaction of the seeker, as described in the chapter?",
+    "id": 12,
+    "question": "What can a small pause do in a sharp conversation?",
     "options": [
       {
         "key": "A",
-        "text": "They immediately return to the Witness."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "B",
-        "text": "They detach completely and observe neutrally."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "They say, 'This happened to me,' 'I am hurt,' or 'I failed,' identifying with the experiencer."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "They seek solace only in meditation."
+        "text": "It can turn the conversation from blind reaction toward conscious response"
+      }
+    ],
+    "correct": "D",
+    "explanation": "After hearing something harsh, reaction rises immediately. A small pause allows the hurt and reaction within to be seen."
+  },
+  {
+    "id": 13,
+    "question": "Saying “the I that wants respect is rising right now” is part of which practice?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Recognizing the wound of the experiencer"
+      },
+      {
+        "key": "B",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "C",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
+      }
+    ],
+    "correct": "A",
+    "explanation": "This statement helps the seeker see the identity and need behind the reaction. The wound of the experiencer becomes clear."
+  },
+  {
+    "id": 14,
+    "question": "What does witness-consciousness not bring into relationships?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "B",
+        "text": "Indifference and coldness"
+      },
+      {
+        "key": "C",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "D",
+        "text": "It is only a practice of memorizing scriptures"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter clearly says that witnessing does not make relationships cold or distant. It frees love from need and grasping."
+  },
+  {
+    "id": 15,
+    "question": "What is the main difference between love and grasping?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "B",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "C",
+        "text": "Love gives freedom; grasping tries to bind the other through need"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter notes that at such moments, 'the seeker often returns to the experiencer and says, 'This happened to me,' 'I am hurt,' 'I failed.' This highlights the tendency to identify with the personal experience rather than remaining the Witness."
+    "explanation": "Witness-consciousness shows that love can deepen without hard control and fear. Grasping carries ownership and insecurity."
   },
   {
-    "id": 331,
-    "question": "The analogy of a lamp in a prayer room versus the rest of the house is used to illustrate what point about witnessing?",
+    "id": 16,
+    "question": "How does the experiencer become active in work and achievement?",
     "options": [
       {
         "key": "A",
-        "text": "Meditation is the only place where true light can be found."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "B",
-        "text": "Witnessing is a special state reserved for sacred times and places."
+        "text": "It is meant to make the seeker superior to others"
       },
       {
         "key": "C",
-        "text": "Limiting witnessing to meditation is like saying light exists only in one room; knowing is present everywhere."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "D",
-        "text": "The prayer room's light is different from the light in other rooms."
+        "text": "It begins to connect success and failure with its very identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "When results arrive, the experiencer quickly says “I am successful” or “I am a failure.” This ties identity to external outcomes."
+  },
+  {
+    "id": 17,
+    "question": "What does witness-consciousness teach about effort and result?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Work sincerely, but do not make the result proof of final identity"
+      },
+      {
+        "key": "B",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "C",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Witness-consciousness does not teach laziness. It keeps effort clear and prevents the result from becoming the final proof of self-worth."
+  },
+  {
+    "id": 18,
+    "question": "How does the trap of comparison work in the field of work?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "B",
+        "text": "Comparison with others increases the experiencer’s sense of lack and insecurity"
+      },
+      {
+        "key": "C",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "D",
+        "text": "It teaches hard identification with experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Thoughts like “he is ahead of me” strengthen the experiencer. Witness-consciousness recognizes them as thoughts."
+  },
+  {
+    "id": 19,
+    "question": "What is the right use of witness-consciousness after failure?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "B",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "C",
+        "text": "Seeing the pain and learning, without making failure the final identity"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
       }
     ],
     "correct": "C",
-    "explanation": "This analogy is used to counter the misunderstanding that witnessing is only for meditation. It emphasizes that just as a lit lamp reveals wherever it reaches, the knowing presence of the Witness is present in every experience, not confined to a specific time or place."
+    "explanation": "Witness-consciousness does not deny the pain of failure. It knows disappointment, learns from it, and does not harden into “I am a failure.”"
   },
   {
-    "id": 332,
-    "question": "Witnessing is compared to the eye seeing. What does this comparison highlight?",
+    "id": 20,
+    "question": "Why is witness-consciousness needed during success?",
     "options": [
       {
         "key": "A",
-        "text": "Seeing requires intense effort and focus, just like witnessing."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "The eye struggles to see when there is too much light."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "C",
-        "text": "Seeing happens naturally when the eye is open and light is present, similar to how the Witness knows naturally."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "D",
-        "text": "The eye creates what it sees, just as the Witness creates experiences."
+        "text": "Because the joy of success can turn into egoic identity"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Joy in success is natural, but it can become “I am great.” Witness-consciousness keeps enjoyment from becoming ego."
+  },
+  {
+    "id": 21,
+    "question": "Why is witness-consciousness tested during deep emotions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because fear, sorrow and anger can quickly carry the seeker away"
+      },
+      {
+        "key": "B",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "C",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Deep emotions strongly affect the body and mind. In such moments the seeker can easily be lost in the experiencer."
+  },
+  {
+    "id": 22,
+    "question": "What does it mean to see fear with witness-consciousness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "B",
+        "text": "Knowing fear’s bodily and mental presence without immediately identifying with it"
+      },
+      {
+        "key": "C",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "D",
+        "text": "It is limited only to sitting in a meditation room"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When fear appears, tension in the body and imagination in the mind may arise. Witness-consciousness knows them without becoming “I am fear.”"
+  },
+  {
+    "id": 23,
+    "question": "What is the right relationship of witness-consciousness with anger?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "B",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "C",
+        "text": "Knowing the energy of anger and then responding with clarity"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter uses the eye's natural ability to see when conditions are right to illustrate that witnessing is also natural. 'The Witness knows naturally. A thought appears - it is known. A feeling rises - it is known.'"
+    "explanation": "Witness-consciousness does not deny anger. It knows anger as it rises in body and mind, reducing blind reaction."
   },
   {
-    "id": 333,
-    "question": "What does the chapter mean by 'attention becomes entangled in experience, and then it returns' in the context of witnessing?",
+    "id": 24,
+    "question": "What does witness-consciousness not do during sorrow?",
     "options": [
       {
         "key": "A",
-        "text": "Attention must be forcefully pulled back from experiences."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "B",
-        "text": "Entanglement is a sign of deep spiritual progress."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "Attention naturally gets lost in experiences, and witnessing is the process of attention coming back to the knowing presence."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "Returning is a difficult practice that requires constant struggle."
+        "text": "It does not cover sorrow with spiritual phrases and deny it"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Covering sorrow by saying “this is nothing” is not witnessing. The witness knows sorrow and does not create final identity from it."
+  },
+  {
+    "id": 25,
+    "question": "Why is it useful to observe the body during deep emotions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because emotion also appears as sensations in the body"
+      },
+      {
+        "key": "B",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "C",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Fear, sorrow or anger can appear as tightness, heat, heaviness or heartbeat. Observing them helps the emotion be known."
+  },
+  {
+    "id": 26,
+    "question": "Why is naming an emotion, such as “anger is arising,” helpful?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "B",
+        "text": "It helps the seeker know the emotion and create a little space from it"
+      },
+      {
+        "key": "C",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "D",
+        "text": "It is only a practice of memorizing scriptures"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When the seeker names an emotion, total identification with it softens. Naming opens the space of seeing."
+  },
+  {
+    "id": 27,
+    "question": "Why does witness-consciousness not suppress emotions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "B",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "C",
+        "text": "Because suppression does not bring understanding and may hide emotions inside"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter describes witnessing as a 'return.' It explains that attention gets 'entangled in experience,' meaning it gets lost in thoughts or emotions, and then 'it returns' to the underlying knowing presence. This return is the sadhana."
+    "explanation": "Suppression may hide an emotion without clarifying it. Witness-consciousness respectfully knows it as experience, not identity."
   },
   {
-    "id": 334,
-    "question": "In relationships, why do words from someone close hurt more deeply?",
+    "id": 28,
+    "question": "When can the expectation “I must be calm” become an obstacle?",
     "options": [
       {
         "key": "A",
-        "text": "Because close relationships involve less emotional investment."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "B",
-        "text": "Because the Witness is less active in familiar interactions."
+        "text": "It is meant to make the seeker superior to others"
       },
       {
         "key": "C",
-        "text": "Because expectations, memories, and personal identity are involved."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "D",
-        "text": "Because close relationships are based solely on logical arguments."
+        "text": "When it becomes a fight against the present experience"
+      }
+    ],
+    "correct": "D",
+    "explanation": "If the seeker forces calmness onto every emotional moment, they begin fighting the actual experience. First the experience must be known."
+  },
+  {
+    "id": 29,
+    "question": "What is the difference between witness-consciousness and indifference?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Witness-consciousness knows experience; indifference may cut off from experience"
+      },
+      {
+        "key": "B",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "C",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Witness-consciousness is sensitive awareness. Indifference may sometimes be a form of avoidance or emotional withdrawal."
+  },
+  {
+    "id": 30,
+    "question": "What is the final purpose of witness-consciousness in Chapter 3?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "B",
+        "text": "To make the seeker clearer, more compassionate and balanced within life"
+      },
+      {
+        "key": "C",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "D",
+        "text": "It teaches hard identification with experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Witness-consciousness is not anti-life. It brings clarity, pause, compassion and steadiness into the midst of experience."
+  },
+  {
+    "id": 31,
+    "question": "What is one practical result of witness-consciousness in relationships?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "B",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "C",
+        "text": "Greater listening and clarity in dialogue"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter explains that hurt goes deeper in close relationships because 'expectations, memories, and personal identity are involved.' These factors create a more sensitive ground for words to impact the experiencer."
+    "explanation": "When space appears before reaction, the seeker listens better and responds more clearly. This deepens both compassion and truth."
   },
   {
-    "id": 335,
-    "question": "What is the role of the Witness when hurt arises in a relationship?",
+    "id": 32,
+    "question": "What is one practical result of witness-consciousness in work?",
     "options": [
       {
         "key": "A",
-        "text": "To deny that any hurt is occurring."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "To immediately retaliate with anger."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "C",
-        "text": "To simply know: 'The experience of hurt is arising,' which reduces blind reaction."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "D",
-        "text": "To create a story that justifies the hurt."
+        "text": "Working with clarity and reducing identification with results"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Witness-consciousness does not weaken work. It makes effort honest and keeps results from becoming the final measure of self-worth."
+  },
+  {
+    "id": 33,
+    "question": "What is one practical result of witness-consciousness during deep emotions?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Knowing the emotion and creating space before being carried away by it"
+      },
+      {
+        "key": "B",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "C",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
+      }
+    ],
+    "correct": "A",
+    "explanation": "When fear, sorrow or anger arises, witnessing knows it as an experience. This allows the seeker to see rather than be lost."
+  },
+  {
+    "id": 34,
+    "question": "How does the idea of “return” in witness-consciousness affect the seeker?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "B",
+        "text": "It makes the seeker light, patient and ready to return again and again"
+      },
+      {
+        "key": "C",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "D",
+        "text": "It is limited only to sitting in a meditation room"
+      }
+    ],
+    "correct": "B",
+    "explanation": "When witnessing is seen as a return, forgetting does not become failure. The seeker patiently returns to knowing."
+  },
+  {
+    "id": 35,
+    "question": "Which statement about witness-consciousness is wrong according to Chapter 3?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "B",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "C",
+        "text": "It is available only in meditation and not in life"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
       }
     ],
     "correct": "C",
-    "explanation": "The Witness does not deny hurt but simply knows it. The text states, 'The Witness does not say there is no hurt. It simply knows: 'The experience of hurt is arising.' This knowing reduces blind reaction and creates space."
+    "explanation": "One of the chapter’s main corrections is that witnessing is not limited to meditation. It is available in every field of life."
   },
   {
-    "id": 336,
-    "question": "When a loved one says, 'You never understand,' what often happens internally for the experiencer?",
+    "id": 36,
+    "question": "Which sentence expresses the right direction of witness-consciousness?",
     "options": [
       {
         "key": "A",
-        "text": "They calmly ask for clarification."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "B",
-        "text": "They prepare a logical counter-argument."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "An entire story rises, such as 'I do so much, yet I am not seen.'"
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "They immediately accept the feedback and apologize."
+        "text": "Anger is arising, and it is being known"
+      }
+    ],
+    "correct": "D",
+    "explanation": "This sentence does not deny the emotion, and it also does not turn it into final identity. This is the language of witnessing."
+  },
+  {
+    "id": 37,
+    "question": "What does “witness-consciousness is not separate from life” mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Every ordinary event can become an opportunity to return to witnessing"
+      },
+      {
+        "key": "B",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "C",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Conversation, work, emotion, success, failure or drinking tea can all become fields of practice."
+  },
+  {
+    "id": 38,
+    "question": "What does awareness during success mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "B",
+        "text": "Enjoying success without turning it into “I am great”"
+      },
+      {
+        "key": "C",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "D",
+        "text": "It is only a practice of memorizing scriptures"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter does not call the joy of success wrong. The care is that joy should not turn into ego and superiority."
+  },
+  {
+    "id": 39,
+    "question": "What does awareness during failure mean?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "B",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "C",
+        "text": "Learning from failure and knowing the pain without becoming the failure"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter uses this exact example: 'If a loved one says, ‘You never understand,’ an entire story may rise: ‘I do so much, yet I am not seen,’ ‘I am not valued.’' This illustrates how a single sentence can trigger a complex internal narrative for the experiencer."
+    "explanation": "Witness-consciousness can see failure as learning. Pain may arise, but it does not harden into “I am incapable.”"
   },
   {
-    "id": 337,
-    "question": "What is the purpose of 'naming the hurt of the experiencer'?",
+    "id": 40,
+    "question": "Why is it necessary to distinguish love from grasping in relationships?",
     "options": [
       {
         "key": "A",
-        "text": "To suppress the hurt and pretend it doesn't exist."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "B",
-        "text": "To create a story that justifies the hurt."
+        "text": "It is meant to make the seeker superior to others"
       },
       {
         "key": "C",
-        "text": "To open space and bring clarity, rather than suppressing hurt."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "D",
-        "text": "To encourage blind reaction and emotional outburst."
+        "text": "Because grasping turns love into need, fear and control"
+      }
+    ],
+    "correct": "D",
+    "explanation": "When control and fear of loss mix with love, it becomes grasping. Witness-consciousness makes love clearer and freer."
+  },
+  {
+    "id": 41,
+    "question": "What kind of practice is Chapter 3 offering?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A practice of seeing and returning in small moments of life"
+      },
+      {
+        "key": "B",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "C",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter teaches the recognition of witnessing in daily activities, relationships, work and emotions."
+  },
+  {
+    "id": 42,
+    "question": "In which situation is the seeker listening with witness-consciousness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "B",
+        "text": "They are knowing the words, their reaction and the inner hurt"
+      },
+      {
+        "key": "C",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "D",
+        "text": "It teaches hard identification with experiences"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Listening with witness-consciousness is not only hearing words. The seeker knows both the outer speech and the inner reaction."
+  },
+  {
+    "id": 43,
+    "question": "How does saying “a comparison thought is arising” help?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It means suppressing emotions"
+      },
+      {
+        "key": "B",
+        "text": "It teaches hard identification with experiences"
+      },
+      {
+        "key": "C",
+        "text": "Recognizing comparison as a thought creates some distance from it"
+      },
+      {
+        "key": "D",
+        "text": "It requires escaping from the world and relationships"
       }
     ],
     "correct": "C",
-    "explanation": "Naming the hurt, by identifying the specific 'I' that is reacting (e.g., 'the 'I' that wants importance'), 'opens space. Space is not coldness; it is clarity.' This is presented as an alternative to suppression or blind reaction."
+    "explanation": "Instead of immediately believing comparison, recognizing it as a thought is witnessing. It reveals the experiencer’s insecurity."
   },
   {
-    "id": 338,
-    "question": "How does the chapter differentiate between love and clinging?",
+    "id": 44,
+    "question": "If peace does not come in meditation, what is Chapter 3’s view?",
     "options": [
       {
         "key": "A",
-        "text": "Love is about control, while clinging is about freedom."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "Clinging is a sign of deep affection, while love is superficial."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "C",
-        "text": "Love has tenderness and sees the other; clinging has fear and wants to shape the other."
+        "text": "It is only a practice of memorizing scriptures"
       },
       {
         "key": "D",
-        "text": "Both love and clinging are identical in their expression."
+        "text": "The absence of peace is also a known experience"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Witness-consciousness does not depend on a special peaceful state. Restlessness or the absence of peace can also be known."
+  },
+  {
+    "id": 45,
+    "question": "How is witness-consciousness related to compassion in Chapter 3?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It softens reaction and increases the possibility of listening, understanding and responding with compassion"
+      },
+      {
+        "key": "B",
+        "text": "It requires escaping from the world and relationships"
+      },
+      {
+        "key": "C",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "D",
+        "text": "It is meant to make the seeker superior to others"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Witness-consciousness is not indifference. It clarifies experiences, allowing relationships and emotions to be seen more sensitively."
+  },
+  {
+    "id": 46,
+    "question": "What does “returning in the middle of life” indicate?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is only a practice of memorizing scriptures"
+      },
+      {
+        "key": "B",
+        "text": "Recognizing again the knowing presence in the middle of experiences"
+      },
+      {
+        "key": "C",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "D",
+        "text": "It is limited only to sitting in a meditation room"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Returning is not going to some outer place. It is recognizing the knowing presence already here in the middle of experience."
+  },
+  {
+    "id": 47,
+    "question": "What does Chapter 3 caution the seeker about?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is meant to make the seeker superior to others"
+      },
+      {
+        "key": "B",
+        "text": "It is limited only to sitting in a meditation room"
+      },
+      {
+        "key": "C",
+        "text": "Turning witness-consciousness into tense vigilance or a special achievement"
+      },
+      {
+        "key": "D",
+        "text": "It means suppressing emotions"
       }
     ],
     "correct": "C",
-    "explanation": "The chapter clearly states: 'Love has tenderness. Clinging has fear. Love sees the other. Clinging wants to shape the other.' This distinction is crucial for understanding authentic connection versus possessiveness."
+    "explanation": "Witness-consciousness is effortless presence. If it is turned into strain or spiritual achievement, the experiencer can take hold again."
   },
   {
-    "id": 339,
-    "question": "What is the primary outcome of identifying 'the 'I' that wants importance is arising' when someone does not listen?",
+    "id": 48,
+    "question": "What direction does the conclusion of Chapter 3 prepare for?",
     "options": [
       {
         "key": "A",
-        "text": "It leads to immediate anger and confrontation."
+        "text": "It is limited only to sitting in a meditation room"
       },
       {
         "key": "B",
-        "text": "It helps to suppress the feeling of being unimportant."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "It proves that the other person is intentionally disrespecting you."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "It creates space and clarity by naming the underlying desire."
+        "text": "Seeing the layers of ego more clearly"
       }
     ],
     "correct": "D",
-    "explanation": "Naming the specific 'I' that is reacting, such as 'the 'I' that wants importance,' helps to de-personalize the hurt. This act of naming 'opens space,' bringing clarity rather than allowing the experiencer to remain completely entangled in the wound."
+    "explanation": "After seeing witnessing in life, the next step is recognizing the subtle layers of ego. The following chapter moves in that direction."
   },
   {
-    "id": 340,
-    "question": "In the context of work, what does it mean to 'not make the result the proof of your final identity'?",
+    "id": 49,
+    "question": "Which option best summarizes the teaching of Chapter 3?",
     "options": [
       {
         "key": "A",
-        "text": "To avoid working hard and taking risks."
+        "text": "Witness-consciousness is an effortless return available in every field of life"
       },
       {
         "key": "B",
-        "text": "To accept failure gracefully but not strive for success."
+        "text": "It means suppressing emotions"
       },
       {
         "key": "C",
-        "text": "To delegate all responsibilities and avoid personal involvement."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "D",
-        "text": "To understand that your worth is not solely determined by outcomes like success or failure."
+        "text": "It requires escaping from the world and relationships"
       }
     ],
-    "correct": "D",
-    "explanation": "This instruction means that while effort and responsibility are important, one's sense of self should not be completely tied to the results achieved. Success or failure in work are experiences, not the definition of one's entire being."
+    "correct": "A",
+    "explanation": "The central message is that witnessing is not a separate spiritual event, but a return to the knowing presence available in every moment."
   },
   {
-    "id": 341,
-    "question": "The chapter uses the example of a farmer planting seeds. What does this illustrate about effort and results?",
+    "id": 50,
+    "question": "According to Chapter 3, what is a simple sign of real progress?",
     "options": [
       {
         "key": "A",
-        "text": "The farmer's effort is irrelevant if the weather is bad."
+        "text": "It teaches hard identification with experiences"
       },
       {
         "key": "B",
-        "text": "Results are entirely dependent on the farmer's skill."
+        "text": "A little space appearing in reaction, grasping and identity"
       },
       {
         "key": "C",
-        "text": "A farmer should not work hard if rain is not guaranteed."
+        "text": "It requires escaping from the world and relationships"
       },
       {
         "key": "D",
-        "text": "Effort is within one's control, but results depend on many factors, including circumstances beyond one's hands."
+        "text": "It is only a practice of memorizing scriptures"
       }
     ],
-    "correct": "D",
-    "explanation": "The farmer's example highlights that while the farmer 'works carefully,' factors like 'rain and weather are not fully in his hands.' This illustrates that effort is controllable, but results are influenced by numerous external factors, reinforcing the idea of not tying identity solely to outcomes."
-  },
-  {
-    "id": 342,
-    "question": "What is the 'trap of comparison' in work?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Comparing one's work to others to find inspiration for improvement."
-      },
-      {
-        "key": "B",
-        "text": "Collaborating with colleagues to achieve a common goal."
-      },
-      {
-        "key": "C",
-        "text": "Focusing solely on one's own progress without external reference points."
-      },
-      {
-        "key": "D",
-        "text": "Using others' achievements as a benchmark for one's own value and worth."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter describes the trap of comparison as when 'the mind is measuring my value through another person' and the 'experiencer is afraid of being left behind.' It contrasts this with inspiration, which brings learning energy, while comparison brings 'the pain of insufficiency.'"
-  },
-  {
-    "id": 343,
-    "question": "When failure comes, what does witnessing suggest about dealing with the pain?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To immediately suppress the pain and move on."
-      },
-      {
-        "key": "B",
-        "text": "To declare oneself a failure and give up all future efforts."
-      },
-      {
-        "key": "C",
-        "text": "To blame others for the failure to avoid personal discomfort."
-      },
-      {
-        "key": "D",
-        "text": "To give space to the pain, see disappointment, know heaviness, and witness fear without suppression."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Witnessing failure is not about erasing pain. It means 'give space to the pain. If disappointment is present, see it. If the body is heavy, know it. If fear rises, do not suppress it.' Witnessing is clarity that knows pain."
-  },
-  {
-    "id": 344,
-    "question": "What is the danger of intense emotions like fear, grief, or anger?",
-    "options": [
-      {
-        "key": "A",
-        "text": "They always lead to spiritual enlightenment."
-      },
-      {
-        "key": "B",
-        "text": "They are inherently negative and must be avoided at all costs."
-      },
-      {
-        "key": "C",
-        "text": "They indicate a lack of spiritual progress."
-      },
-      {
-        "key": "D",
-        "text": "They can cause the seeker to be swept away, making it difficult to remember they are being known."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter states that when these emotions rise intensely, 'the seeker may be swept away. At that time it is difficult to remember that emotion is being known.' This highlights the challenge of maintaining the Witness perspective amidst strong emotional currents."
-  },
-  {
-    "id": 345,
-    "question": "When witnessing deep emotions, what is the role of 'bringing emotion into light'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "To expose the emotion to harsh judgment."
-      },
-      {
-        "key": "B",
-        "text": "To understand that emotions are permanent and unchangeable."
-      },
-      {
-        "key": "C",
-        "text": "To immediately eradicate the emotion from the body and mind."
-      },
-      {
-        "key": "D",
-        "text": "To acknowledge the emotion's presence and observe its arising, affecting, and changing nature."
-      }
-    ],
-    "correct": "D",
-    "explanation": "Bringing emotion into light means seeing that 'Emotions arise, affect body and mind, and change.' Witnessing observes this process: 'Fear is arising,' 'Grief is being experienced,' 'Anger is here.' It is about honest observation, not suppression or denial."
-  },
-  {
-    "id": 346,
-    "question": "What is the relationship between emotion and story, according to the chapter?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Emotion is the story, and story is the direct sensation."
-      },
-      {
-        "key": "B",
-        "text": "They are the same and cannot be distinguished."
-      },
-      {
-        "key": "C",
-        "text": "Story is always true, while emotion is often false."
-      },
-      {
-        "key": "D",
-        "text": "The emotion is the direct sensation, and the story is what the mind builds around it."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The chapter clearly defines emotion as 'direct sensation' and story as 'what the mind builds around it.' Witnessing helps differentiate between the passing wave of emotion and the narrative the mind constructs, which often extends the emotional experience."
-  },
-  {
-    "id": 347,
-    "question": "Why is it important to distinguish between 'giving space to emotion' and 'being bound by emotion'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Because being bound by emotion is the goal of witnessing."
-      },
-      {
-        "key": "B",
-        "text": "Because giving space means suppressing the emotion, while being bound means expressing it freely."
-      },
-      {
-        "key": "C",
-        "text": "Because only giving space is considered a spiritual practice."
-      },
-      {
-        "key": "D",
-        "text": "Because giving space allows the emotion to be known without losing oneself, whereas being bound means complete identification."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The distinction is crucial: 'Witnessing gives space.' This means acknowledging the emotion without losing the sense of self. 'The experiencer becomes bound' when one completely identifies with the emotion, losing the perspective of the Witness."
-  },
-  {
-    "id": 348,
-    "question": "What is the 'art of remembering in the middle of life'?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Recalling past events with perfect accuracy."
-      },
-      {
-        "key": "B",
-        "text": "Forgetting oneself in intense emotional experiences."
-      },
-      {
-        "key": "C",
-        "text": "Constantly seeking new spiritual practices."
-      },
-      {
-        "key": "D",
-        "text": "The practice of witnessing, which is not separate from life but integrated into it."
-      }
-    ],
-    "correct": "D",
-    "explanation": "This phrase encapsulates the essence of witnessing as presented in the chapter. It means 'witnessing is not separate from life. It is the art of remembering in the middle of life.' It's about maintaining awareness amidst all life's activities and experiences."
-  },
-  {
-    "id": 349,
-    "question": "What is the primary message of the 'Closing: Returning Is the Path' section?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Witnessing is a difficult destination requiring immense effort."
-      },
-      {
-        "key": "B",
-        "text": "One must destroy all emotions and run away from relationships to achieve witnessing."
-      },
-      {
-        "key": "C",
-        "text": "Indifference to work and success is the ultimate goal."
-      },
-      {
-        "key": "D",
-        "text": "The path is not about avoiding life's experiences but about returning to the knowing presence within each one."
-      }
-    ],
-    "correct": "D",
-    "explanation": "The section emphasizes that witnessing is 'the return to the knowing presence already here in every experience.' It clarifies that one does not need to leave life or destroy emotions; the practice is 'not to forget yourself' amidst these experiences."
-  },
-  {
-    "id": 350,
-    "question": "The practice for this week asks the seeker to ask, 'Am I knowing it as an experience, or making identity from it?' What does this question aim to reveal?",
-    "options": [
-      {
-        "key": "A",
-        "text": "Whether the emotion is real or imagined."
-      },
-      {
-        "key": "B",
-        "text": "The difference between objective events and subjective reactions."
-      },
-      {
-        "key": "C",
-        "text": "The intensity of the physical sensation."
-      },
-      {
-        "key": "D",
-        "text": "The tendency to tie one's sense of self to the emotional experience."
-      }
-    ],
-    "correct": "D",
-    "explanation": "This question directly addresses the core issue of identification. It prompts the seeker to discern whether they are simply experiencing the emotion ('knowing it as an experience') or if they are allowing it to define who they are ('making identity from it'), which is the trap of the experiencer."
+    "correct": "B",
+    "explanation": "Progress appears in small moments: a pause before reaction, knowing an emotion, and reducing identification with results. This is witnessing entering life."
   }
 ]

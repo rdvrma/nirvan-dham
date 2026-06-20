@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 7 kis samajh se aage badhta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya ko ek naya goal maan-ne se"
+      },
+      {
+        "key": "B",
+        "text": "Mahavakya ki us direction se jahan chetana ko basis maana gaya hai"
+      },
+      {
+        "key": "C",
+        "text": "Sansar ko poori tarah chhod dene se"
+      },
+      {
+        "key": "D",
+        "text": "Sirf sharir ki dekhbhaal se"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Pichhle adhyay mein Mahavakya ne saakshi, atma, chetana aur Brahm ki direction di thi. Adhyay 7 us samajh ko avasthaon ki jaanch tak le jata hai."
+  },
+  {
+    "id": 2,
+    "question": "Adhyay 7 mein mukhya roop se kaun si teen avasthaon ki jaanch hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jaagrat, swapna aur sushupti"
+      },
+      {
+        "key": "B",
+        "text": "Bhakti, karm aur gyaan"
+      },
+      {
+        "key": "C",
+        "text": "Sharir, naam aur pesha"
+      },
+      {
+        "key": "D",
+        "text": "Sukh, dukh aur krodh"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Is adhyay mein sadhak ko roz anubhav hone wali teen avasthaon — jaagrat, swapna aur sushupti — ko dekhne ko kaha gaya hai. Inhi ke basis ki taraf Turiya sanket karta hai."
+  },
+  {
+    "id": 3,
+    "question": "Jaagrat avastha mein sadhak ko sansar kaisa lagta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Poora absent"
+      },
+      {
+        "key": "B",
+        "text": "Sirf imagination jaisa"
+      },
+      {
+        "key": "C",
+        "text": "Thos, real aur practical roop se important"
+      },
+      {
+        "key": "D",
+        "text": "Sirf neend ka hissa"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jaagrat mein sharir, log, samay, jagah aur ghatnaen bahut real lagti hain. Adhyay ise deny nahi karta, bas dikhata hai ki yeh avastha bhi jaani ja rahi hai."
+  },
+  {
+    "id": 4,
+    "question": "Jaagrat avastha mein anubhavkarta sabse zyada active kyun hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki wahan koi anubhav nahi hota"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sharir, sansar, rishte aur results saamne hote hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki mann poori tarah band hota hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki wahan sushupti chal rahi hoti hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jaagrat mein sharir, kaam, log, success-failure aur rishte ki material milti hai. Isliye anubhavkarta jaldi kehta hai — mere saath yeh hua, main successful ya unsuccessful hoon."
+  },
+  {
+    "id": 5,
+    "question": "Jaagrat avastha ko final truth kyun nahi maana gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki jaagrat mein koi experience nahi hota"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki jaagrat avastha bhi aati-jaati aur jaani jaati hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sharir hamesha fixed rehta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki swapna hi ekmatra satya hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jaagrat avastha subah aati hai, din bhar chalti hai, aur phir pichhe hat jaati hai. Jo avastha aati-jaati aur jaani jaati hai, woh final basis nahi ho sakti."
+  },
+  {
+    "id": 6,
+    "question": "Swapna avastha mein experience kaisa lagta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sapne ke andar woh real jaisa lagta hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh kabhi experience nahi hota"
+      },
+      {
+        "key": "C",
+        "text": "Woh sirf waking body se dekha jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Woh hamesha clearly false lagta hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Swapna mein log, jagah, darr, sukh aur events real lag sakte hain. Jaagne par unki position badalti hai, par sapne ke andar experience effective tha."
+  },
+  {
+    "id": 7,
+    "question": "Swapna ka example sadhak ko kya sikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jaagrat sansar ka koi practical importance nahi"
+      },
+      {
+        "key": "B",
+        "text": "Kisi avastha ke andar experience sach jaisa lag sakta hai, par avastha badalne par uski position badalti hai"
+      },
+      {
+        "key": "C",
+        "text": "Sapne dekhna spiritual obstacle hai"
+      },
+      {
+        "key": "D",
+        "text": "Swapna sharir hi atma hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Swapna apne samay par real lagta hai, par jaagne par uska evaluation badal jata hai. Isse sadhak samajhta hai ki avastha aur final truth mein farq ho sakta hai."
+  },
+  {
+    "id": 8,
+    "question": "Sushupti avastha mein aam taur par kya absent hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi karmon ki responsibility"
+      },
+      {
+        "key": "B",
+        "text": "Jaagrat sansar, swapna sansar aur mann ki normal activity"
+      },
+      {
+        "key": "C",
+        "text": "Sharir ka existence hi"
+      },
+      {
+        "key": "D",
+        "text": "Subah uthne ki possibility"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Gehri neend mein na jaagrat sansar rehta hai, na swapna, na mann ki normal activity. Phir bhi uthkar hum kehte hain ki neend aayi ya kuchh pata nahi tha."
+  },
+  {
+    "id": 9,
+    "question": "“Achchhi neend aayi” ya “kuchh pata nahi tha” kehna kis taraf sanket karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ki neend mein ahankar bahut active tha"
+      },
+      {
+        "key": "B",
+        "text": "Ki anubhavon ke absence ka bhi kisi basis par baad mein gyaan hua"
+      },
+      {
+        "key": "C",
+        "text": "Ki sushupti mein sansar aur clear ho gaya"
+      },
+      {
+        "key": "D",
+        "text": "Ki mann ne sab kuchh soch liya"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Gehri neend mein mann ki normal activity nahi rehti, phir bhi uska baad mein smaran hota hai. Isse anubhavon ke absence ke bhi kisi basis ka sanket milta hai."
+  },
+  {
+    "id": 10,
+    "question": "Adhyay mein sushupti ko moksha ya poora gyaan kyun nahi kaha gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki wahan sharir bahut active hota hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki wahan clear atma-gyaan nahi, sirf mann ki activity ka laya hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki wahan jaagrat sansar badh jata hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki wahan sapne kabhi nahi aate"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sushupti mein rest hai, par conscious atma-gyaan nahi. Mann shaant hota hai, lekin sadhak wahan apne swaroop ko clearly nahi pehchanta."
+  },
+  {
+    "id": 11,
+    "question": "Is adhyay mein Turiya ka saral arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ek nayi avastha jo future mein milegi"
+      },
+      {
+        "key": "B",
+        "text": "Woh achal jagrukta jo jaagrat, swapna aur sushupti ko jaanti hai"
+      },
+      {
+        "key": "C",
+        "text": "Gehri neend ka doosra naam"
+      },
+      {
+        "key": "D",
+        "text": "Sirf anand ka experience"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Turiya woh basis hai jisme teenon avasthaen aati-jaati hain. Yeh koi aane-jaane wali event nahi, balki avasthaon ko jaanne wali achal jagrukta ki direction hai."
+  },
+  {
+    "id": 12,
+    "question": "Turiya ko “chauthi avastha” kehne mein savdhani kyun chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki Turiya language mein nahi aa sakta"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki sadhak ise teen avasthaon ke baad aane wali nayi event samajh sakta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Turiya sirf swapna mein hota hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki Turiya mann ki imagination hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Bhasha mein Turiya ko chautha kaha ja sakta hai, par yeh teenon ke baad aane wali alag avastha nahi. Yeh jaagrat, swapna aur sushupti ka basis hai."
+  },
+  {
+    "id": 13,
+    "question": "Dhyan mein aane wali shanti, prakash ya anand ko Turiya kyun nahi maana gaya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki ve hamesha bure experiences hain"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki ve aate-jaate aur jaane jaate hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sadhak ko dhyan nahi karna chahiye"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki ve sirf sharir ki illness hain"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Shanti, prakash, anand ya khaali-pan experiences ho sakte hain. Jo experience aata-jaata aur jaana jata hai, woh Turiya nahi, Turiya mein jaana gaya experience hai."
+  },
+  {
+    "id": 14,
+    "question": "Jaagrat mein Turiya ki direction kaise dekhi ja sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sansar ko forcefully rok kar"
+      },
+      {
+        "key": "B",
+        "text": "Sharir, vichar, dhwani aur experiences ko jaane jaate hue dekhkar"
+      },
+      {
+        "key": "C",
+        "text": "Sirf so kar"
+      },
+      {
+        "key": "D",
+        "text": "Har vichar ko final truth maan kar"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jaagrat mein shabd, sharir, vichar, dhwani aur bhaav sab jaane ja rahe hain. Unhe jaanne wali presence ki taraf dekhna Turiya ki direction kholta hai."
+  },
+  {
+    "id": 15,
+    "question": "Film aur screen ka example jaagrat mein kya dikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kahani mein kho jaane se basis bhool jata hai"
+      },
+      {
+        "key": "B",
+        "text": "Screen har scene se destroy ho jaati hai"
+      },
+      {
+        "key": "C",
+        "text": "Film dekhna sadhana ke against hai"
+      },
+      {
+        "key": "D",
+        "text": "Jaagrat experience kabhi badalta nahi"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jaise movie mein kahani dekhte waqt screen bhool jaati hai, waise hi jaagrat mein naam-roop mein ulajhkar basis nahi dikhta. Screen chhupi nahi, dhyan usse hat gaya hai."
+  },
+  {
+    "id": 16,
+    "question": "Swapna mein Turiya ko kis roop mein samajhna chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Swapna ke kisi character ke roop mein"
+      },
+      {
+        "key": "B",
+        "text": "Swapna experience ke basis ke roop mein"
+      },
+      {
+        "key": "C",
+        "text": "Swapna ko rokne wali shakti ke roop mein"
+      },
+      {
+        "key": "D",
+        "text": "Sirf darr ke roop mein"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Swapna ki duniya bhi kisi knowing mein prakat hoti hai. Turiya swapna ki object nahi, balki swapna experience ka basis hai."
+  },
+  {
+    "id": 17,
+    "question": "Sushupti mein Turiya ki samajh sabse subtle kyun hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki wahan experience ki normal chain nahi rehti, phir bhi existence ki continuity nahi toot-ti"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki wahan sabse zyada thoughts chalte hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki wahan waking body daudta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki wahan ahankar poori tarah prove ho jata hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Gehri neend mein mann aur anubhavkarta shaant hote hain, par subah existence ki continuity aur neend ka smaran milta hai. Yeh Turiya ke basis ki taraf subtle sanket hai."
+  },
+  {
+    "id": 18,
+    "question": "Saakshi aur Turiya ka sambandh adhyay mein kaise rakha gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono poori tarah opposite hain"
+      },
+      {
+        "key": "B",
+        "text": "Saakshi sadhana ka doorway hai aur Turiya usi ki state-less depth hai"
+      },
+      {
+        "key": "C",
+        "text": "Saakshi sirf sharir hai aur Turiya sirf mann"
+      },
+      {
+        "key": "D",
+        "text": "Dono sirf imagination hain"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Saakshi ko sharir-mann ko jaanne wali presence ke roop mein pehchana jata hai. Jab wahi samajh teenon avasthaon ke basis tak gehri hoti hai, Turiya ki direction khulti hai."
+  },
+  {
+    "id": 19,
+    "question": "Turiya aur chetana ke sambandh mein kaun si baat sahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya mann ki consciousness par depend hai"
+      },
+      {
+        "key": "B",
+        "text": "Chetana sirf thoughts ka naam hai"
+      },
+      {
+        "key": "C",
+        "text": "Turiya wahi achal chetana hai jisme avasthaen jaani jaati hain"
+      },
+      {
+        "key": "D",
+        "text": "Chetana sushupti mein poori tarah destroy ho jaati hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Mahavakya wale adhyay mein chetana ko basis kaha gaya tha. Turiya usi achal chetana ko avasthaon ke context mein clear karta hai."
+  },
+  {
+    "id": 20,
+    "question": "Turiya ko “paana” problem kyun ban sakta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki paane ki language use future object bana deti hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki Turiya ka koi importance nahi"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki sirf jaagrat avastha paayi ja sakti hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki sadhak ko questions nahi poochhne chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jo paaya jata hai, use mann door ya absent maanta hai. Turiya pehle se har experience ka basis hai, isliye use paana nahi, pehchanna hai."
+  },
+  {
+    "id": 21,
+    "question": "“Turiya ordinary moment mein bhi hai” ka kya arth hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya sirf ashram mein possible hai"
+      },
+      {
+        "key": "B",
+        "text": "Chai peena, chalna, bolna ya gussa uthna — sab usi knowing mein prakat hain"
+      },
+      {
+        "key": "C",
+        "text": "Turiya sirf meditation mein aata hai"
+      },
+      {
+        "key": "D",
+        "text": "Ordinary life spiritual nahi"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay batata hai ki taste, words, movement, anger, sorrow aur peace — sab knowing mein hi prakat hain. Isliye ordinary moment bhi Turiya ki direction ka doorway hai."
+  },
+  {
+    "id": 22,
+    "question": "Turiya ki samajh emotions ke saath kya karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unhe suppress karti hai"
+      },
+      {
+        "key": "B",
+        "text": "Unhe deny karti hai"
+      },
+      {
+        "key": "C",
+        "text": "Unhe aane-jaane deti hai aur jaane jaate hue dekhti hai"
+      },
+      {
+        "key": "D",
+        "text": "Unhe final atma maan leti hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Turiya ki pehchan mein darr, dukh, krodh, prem aur karuna ko dabaya nahi jata. Ve jaane jaate hain, par final identity nahi bante."
+  },
+  {
+    "id": 23,
+    "question": "Rishton mein Turiya ki direction kaise dikh sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Har relationship se bhaag kar"
+      },
+      {
+        "key": "B",
+        "text": "Kathor shabd sunkar sharir, mann aur chot ko jaane jaate hue dekhna"
+      },
+      {
+        "key": "C",
+        "text": "Kisi ki baat na sunna"
+      },
+      {
+        "key": "D",
+        "text": "Har reaction ko sahi maan lena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Rishton mein chot aur reaction jaldi uthte hain. Unhe jaanne se ek inner space banta hai, jahan saakshi-bhav aur Turiya ki jhalak possible hoti hai."
+  },
+  {
+    "id": 24,
+    "question": "Kaam ke field mein Turiya ki samajh kya sikhati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kaam chhod dena"
+      },
+      {
+        "key": "B",
+        "text": "Result se final identity na banate hue imaandari se karm karna"
+      },
+      {
+        "key": "C",
+        "text": "Har result ko apni atma maan lena"
+      },
+      {
+        "key": "D",
+        "text": "Responsibility se bachna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Kaam, effort aur result waking experience mein jaane jaate hain. Turiya ki samajh karm ko weak nahi karti, balki result ke around “main” ki grip ko halka karti hai."
+  },
+  {
+    "id": 25,
+    "question": "Sadhana mein Turiya ki samajh kyun zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki har meditation experience ko final maan lena chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki shanti, ashanti, gehra experience aur “kuchh nahi hua” — sab jaane jaate hain"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki dhyan mein thoughts aana failure hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki dhyan sirf neend hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sadhana mein experiences aate-jaate hain. Turiya ki samajh sadhak ko kisi special experience ko pakadne se bachati hai aur experiences ke basis ki taraf lautati hai."
+  },
+  {
+    "id": 26,
+    "question": "Turiya aur sushupti mein kya farq hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono bilkul same hain"
+      },
+      {
+        "key": "B",
+        "text": "Turiya behoshi hai aur sushupti awareness"
+      },
+      {
+        "key": "C",
+        "text": "Sushupti mein mann ki activity shaant hai, par clear atma-gyaan nahi; Turiya teenon avasthaon ka basis hai"
+      },
+      {
+        "key": "D",
+        "text": "Turiya sirf sapno mein aata hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sushupti mein rest hai par conscious recognition nahi. Turiya mann ki absence bhar nahi, balki jaagrat, swapna aur sushupti — teenon ka basis hai."
+  },
+  {
+    "id": 27,
+    "question": "Agyeya ka simple meaning kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jise normal object ki tarah nahi jaana ja sakta"
+      },
+      {
+        "key": "B",
+        "text": "Jo bilkul absent hai"
+      },
+      {
+        "key": "C",
+        "text": "Jo sirf darr hai"
+      },
+      {
+        "key": "D",
+        "text": "Jo sirf sharir hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Agyeya ka arth hai — saakshi, atma, chetana ya Turiya ko mann ya indriyan object ki tarah nahi pakad sakti. Ve knowing ka basis hain, object nahi."
+  },
+  {
+    "id": 28,
+    "question": "Aankh ka example agyeya ko kaise samjhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aankh sab dekhti hai par apne dekhne ko object ki tarah directly nahi dekh sakti"
+      },
+      {
+        "key": "B",
+        "text": "Aankh kabhi kuchh dekhti hi nahi"
+      },
+      {
+        "key": "C",
+        "text": "Aankh mann se alag nahi hai"
+      },
+      {
+        "key": "D",
+        "text": "Aankh hi Turiya hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Aankh dekhne ka instrument hai, par apne seeing ko object nahi bana sakti. Waise hi chetana sabko jaanti hai, par khud object ki tarah saamne nahi aati."
+  },
+  {
+    "id": 29,
+    "question": "Deepak ya light ka example kis baat ko clear karta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Light ko light karne ke liye hamesha doosri light chahiye"
+      },
+      {
+        "key": "B",
+        "text": "Chetana ko jaanne ke liye alag chetana chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Light objects ko dikhati hai aur khud prakash hai; chetana bhi knowing ka basis hai"
+      },
+      {
+        "key": "D",
+        "text": "Deepak ignorance ka symbol hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Light objects ko dikhati hai; use dikhane ke liye doosri light nahi chahiye. Waise hi thoughts, emotions aur body chetana mein jaane jaate hain; chetana ko koi doosri chetana nahi jaanti."
+  },
+  {
+    "id": 30,
+    "question": "Mann Turiya ko object ki tarah kyun nahi pakad sakta?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki Turiya mann mein jaana jata hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki mann khud Turiya mein jaana jata hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki Turiya sirf imagination hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki mann hamesha silent rehta hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Mann khud thoughts aur experiences ke roop mein jaana jata hai. Jo mann ko jaanne ka basis hai, use mann object ki tarah saamne rakhkar nahi pakad sakta."
+  },
+  {
+    "id": 31,
+    "question": "Agyeya ka arth darkness ya absence kyun nahi hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki woh object ki tarah knowable nahi, par swaroop ke roop mein sabse near hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki woh sirf agyaan hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki woh experience se kabhi related nahi"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki woh sirf word hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Agyeya ka meaning yeh nahi ki truth absent hai. Meaning yeh hai ki use object ki tarah nahi jaana ja sakta, kyunki wahi sab knowing ka nearest basis hai."
+  },
+  {
+    "id": 32,
+    "question": "Object ko jaan-na aur apne swaroop mein hona — inmein kya farq hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dono mein koi farq nahi"
+      },
+      {
+        "key": "B",
+        "text": "Object alag hokar jaana jata hai; atma alag object nahi, apna swaroop hai"
+      },
+      {
+        "key": "C",
+        "text": "Swaroop sirf imagination hai"
+      },
+      {
+        "key": "D",
+        "text": "Object hi final atma hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Cup, sound ya thought alag object ki tarah jaane jaate hain. Atma ko is tarah nahi jaana jata, kyunki woh tumse alag object nahi, tumhara sachcha swaroop hai."
+  },
+  {
+    "id": 33,
+    "question": "Anubhavkarta ki subtle final trick kya ho sakti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Woh atma, Turiya ya Brahm ko bhi apna special experience banana chahta hai"
+      },
+      {
+        "key": "B",
+        "text": "Woh har experience ko jaane deta hai"
+      },
+      {
+        "key": "C",
+        "text": "Woh kabhi claim nahi karta"
+      },
+      {
+        "key": "D",
+        "text": "Woh saakshi se kabhi alag nahi hota"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Anubhavkarta keh sakta hai: mujhe atma ka experience chahiye ya mujhe Turiya mil gaya. Is tarah woh truth ko bhi achievement aur story bana sakta hai."
+  },
+  {
+    "id": 34,
+    "question": "“Mujhe nahi pata” ki pavitrata kis mein hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Agyaan ko permanent bana lene mein"
+      },
+      {
+        "key": "B",
+        "text": "Mann ki sahi limit pehchan kar silence ki taraf jhukne mein"
+      },
+      {
+        "key": "C",
+        "text": "Sadhana chhod dene mein"
+      },
+      {
+        "key": "D",
+        "text": "Koi bhi question na poochhne mein"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab mann dekhta hai ki truth object ki tarah uski grip mein nahi aayega, to uska claim soft hota hai. Yeh defeat nahi, humility aur silence ki beginning ho sakti hai."
+  },
+  {
+    "id": 35,
+    "question": "Agyeya ki samajh Mahavakya sunne mein kaise help karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Mahavakya ko slogan bana deti hai"
+      },
+      {
+        "key": "B",
+        "text": "Words se chipakne ke bajay unke sanket ki direction mein thaharati hai"
+      },
+      {
+        "key": "C",
+        "text": "Mahavakya ko useless prove karti hai"
+      },
+      {
+        "key": "D",
+        "text": "Ahankar ko badhane deti hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Mahavakya object nahi dete, direction dete hain. Agyeya ki samajh sadhak ko words par rukne ke bajay knowing ke basis ki taraf lautati hai."
+  },
+  {
+    "id": 36,
+    "question": "Agyeya ki samajh sadhana ko kis cheez se bachati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Experiences ke bazaar mein bhatakne se"
+      },
+      {
+        "key": "B",
+        "text": "Sadhana karne se"
+      },
+      {
+        "key": "C",
+        "text": "Karuna rakhne se"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ka dhyan rakhne se"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab final truth ko experience nahi maana jata, to sadhak shanti, prakash ya special states collect karne mein nahi phansata. Woh experience ke basis ki taraf lautta hai."
+  },
+  {
+    "id": 37,
+    "question": "Agyeya ki samajh ant mein sadhak ko kis taraf le jaati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hard debate ki taraf"
+      },
+      {
+        "key": "B",
+        "text": "Silence mein thaharne aur mann ki grip halki karne ki taraf"
+      },
+      {
+        "key": "C",
+        "text": "Sansar se nafrat ki taraf"
+      },
+      {
+        "key": "D",
+        "text": "Experiences ko suppress karne ki taraf"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab mann apni limit samajhta hai, to woh pakadne ki koshish chhodta hai. Tab sadhak us natural knowing mein rest karna seekhta hai jo pehle se hai."
+  },
+  {
+    "id": 38,
+    "question": "Adhyay 7 ke abhyason ka main purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya ko special experience ki tarah pakadna"
+      },
+      {
+        "key": "B",
+        "text": "Jaagrat, thought, feeling, silence aur desire ko jaane jaate hue pehchanna"
+      },
+      {
+        "key": "C",
+        "text": "Sushupti mein jagna prove karna"
+      },
+      {
+        "key": "D",
+        "text": "Dusron ki avastha judge karna"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Abhyas sadhak ko experiences ko dekhne aur poochhne ki direction dete hain ki jo yeh sab jaan raha hai, kya woh bhi experience ki object hai."
+  },
+  {
+    "id": 39,
+    "question": "Teenon avasthaon ki collective jaanch se kya khulta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sirf jaagrat satya hai"
+      },
+      {
+        "key": "B",
+        "text": "Swapna aur sushupti useless hain"
+      },
+      {
+        "key": "C",
+        "text": "Avasthaen badalti hain, isliye unke basis ki jaanch zaruri hai"
+      },
+      {
+        "key": "D",
+        "text": "Koi avastha jaani hi nahi jaati"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Jaagrat, swapna aur sushupti alag experiences dete hain, par teenon aati-jaati hain. Isse sadhak us basis ki taraf mudta hai jo inke aane-jaane ko jaanta hai."
+  },
+  {
+    "id": 40,
+    "question": "Turiya ki samajh life se door kyun nahi karti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki yeh life ke sabhi experiences ke basis ko pehchanna sikhati hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki yeh sirf sharir ko value deti hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki yeh responsibility chhodne ko kehti hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki yeh sirf deep sleep hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Turiya life ko rokne ka naam nahi hai. Kaam, rishte, emotions aur sadhana chalti rehti hain; sadhak unke basis ki pehchan seekhta hai."
+  },
+  {
+    "id": 41,
+    "question": "Turiya ki pehchan ka pehla phal kya bataya gaya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pakar dheeli hona"
+      },
+      {
+        "key": "B",
+        "text": "Ahankar badhna"
+      },
+      {
+        "key": "C",
+        "text": "Duniya se nafrat"
+      },
+      {
+        "key": "D",
+        "text": "Har experience rok dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Turiya ki direction mein experiences, results, emotions aur states thode halke dikhne lagte hain. Unse bani grip dheeli hone lagti hai."
+  },
+  {
+    "id": 42,
+    "question": "Turiya ki pehchan mein sthirta ka kya arth hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Bahar sab events band ho jayein"
+      },
+      {
+        "key": "B",
+        "text": "Andar ek basis pehchana jaye jo life ki lehron se poori tarah nahi hilta"
+      },
+      {
+        "key": "C",
+        "text": "Mann kabhi thought na kare"
+      },
+      {
+        "key": "D",
+        "text": "Sharir fixed statue ban jaye"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Sthirta ka arth bahari life ka ruk jaana nahi. Yeh us basis ki pehchan hai jo changing experiences ke beech silent roop se present hai."
+  },
+  {
+    "id": 43,
+    "question": "Turiya ki sahi samajh karuna ko kaise affect karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ke dukh ko chhota kar deti hai"
+      },
+      {
+        "key": "B",
+        "text": "Alagav ki kathorta kam karke karuna ko gehra karti hai"
+      },
+      {
+        "key": "C",
+        "text": "Sadhak ko indifferent banati hai"
+      },
+      {
+        "key": "D",
+        "text": "Rishton ko meaningless kar deti hai"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab sadhak experiences ke ek basis ki direction dekhta hai, to separation soft hota hai. Isse dusron ke dukh ke prati sensitivity aur karuna badh sakti hai."
+  },
+  {
+    "id": 44,
+    "question": "Turiya ki pehchan se saralta kyun aati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyunki sadhak ko apni avastha prove karne ki zarurat kam hoti hai"
+      },
+      {
+        "key": "B",
+        "text": "Kyunki woh bolna band kar deta hai"
+      },
+      {
+        "key": "C",
+        "text": "Kyunki woh sansar destroy kar deta hai"
+      },
+      {
+        "key": "D",
+        "text": "Kyunki woh sirf dreams dekhta hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab basis pehle se hai, to special experiences ya high states ka claim karne ki zarurat kam hoti hai. Isse saralta aur vinamrata aati hai."
+  },
+  {
+    "id": 45,
+    "question": "Adhyay 7 ki journey ka correct sequence kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ahankar, Maya, seva, daan"
+      },
+      {
+        "key": "B",
+        "text": "Jaagrat-swapna-sushupti ki jaanch, Turiya ki clarity, agyeya ki samajh, life mein pehchan"
+      },
+      {
+        "key": "C",
+        "text": "Sirf Mahavakya yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Sansar chhodna aur so jana"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay pehle teen avasthaon ki jaanch karta hai, phir Turiya ko basis batata hai, phir agyeya ko samjhata hai aur ant mein life mein Turiya ki pehchan ko rakhta hai."
+  },
+  {
+    "id": 46,
+    "question": "Adhyay 7 agle adhyay ki taraf kis prashn se bridge banata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir ko kaise strong karein?"
+      },
+      {
+        "key": "B",
+        "text": "Jab yeh samajh life mein utarne lage, to Nirvan ki jhalak kaisi dikhti hai?"
+      },
+      {
+        "key": "C",
+        "text": "Zyada sapne kaise dekhein?"
+      },
+      {
+        "key": "D",
+        "text": "Kaun sa pad sabse bada hai?"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Turiya ki samajh ke baad final adhyay Nirvan ki jhalak ki taraf badhta hai. Wahan dekha jayega ki galat pakar shaant hone par freedom life mein kaise dikhti hai."
+  },
+  {
+    "id": 47,
+    "question": "Turiya ko experience ya object na banane ki teaching ka saar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jo jaana ja raha hai, woh experience hai; Turiya experiences ka basis hai"
+      },
+      {
+        "key": "B",
+        "text": "Jo bhi anand aaye wahi Turiya hai"
+      },
+      {
+        "key": "C",
+        "text": "Turiya sirf light ka vision hai"
+      },
+      {
+        "key": "D",
+        "text": "Turiya mann ki imagination hai"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay baar-baar clear karta hai ki jo aata-jaata aur jaana jata hai, woh experience hai. Turiya woh basis hai jisme experiences aate-jaate hain."
+  },
+  {
+    "id": 48,
+    "question": "“Kya jaanne ki presence abhi absent hai?” yeh question kisliye hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Turiya ko future object na maan kar abhi ke experience mein pehchanne ke liye"
+      },
+      {
+        "key": "B",
+        "text": "Sadhak ko confuse karne ke liye"
+      },
+      {
+        "key": "C",
+        "text": "Mann ko badhane ke liye"
+      },
+      {
+        "key": "D",
+        "text": "Sharir ko deny karne ke liye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh question sadhak ko experiences ke pichhe bhaagne se rokta hai. Woh dekhta hai ki knowing presence abhi bhi hai, isliye Turiya door ki achievement nahi."
+  },
+  {
+    "id": 49,
+    "question": "“Shanti ya khaali-pan bhi jaana ja raha hai” — is vaakya se kya clear hota hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Shanti hi hamesha Turiya hai"
+      },
+      {
+        "key": "B",
+        "text": "Khaali-pan ko pakadna chahiye"
+      },
+      {
+        "key": "C",
+        "text": "Shanti aur khaali-pan bhi experiences hain, final knower nahi"
+      },
+      {
+        "key": "D",
+        "text": "Maun bekaar hai"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Agar shanti ya khaali-pan jaana ja raha hai, to ve bhi experience field mein hain. Turiya us knowing ki direction hai jisme ye experiences aate-jaate hain."
+  },
+  {
+    "id": 50,
+    "question": "Adhyay 7 ka sabse short saar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Avasthaen badalti hain, experiences aate-jaate hain, par knowing ka basis achal hai"
+      },
+      {
+        "key": "B",
+        "text": "Sirf jaagrat avastha satya hai"
+      },
+      {
+        "key": "C",
+        "text": "Gehri neend hi final knowledge hai"
+      },
+      {
+        "key": "D",
+        "text": "Har special experience ko pakadna chahiye"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay ka center yahi hai ki jaagrat, swapna, sushupti aur sabhi experiences badalte hain. Turiya us achal knowing ki direction hai jo in sabka basis hai."
+  }
+]

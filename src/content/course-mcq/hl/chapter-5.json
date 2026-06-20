@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "question": "Adhyay 5 mein “Neti-Neti” ka core meaning kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh nahi, yeh nahi — jo badalta aur jaana ja raha hai, woh final “main” nahi"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Neti-Neti hard rejection nahi hai. Yeh changing aur known identity ko final self na maanne ki art hai."
+  },
+  {
+    "id": 2,
+    "question": "Neti-Neti ka purpose kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Galat pehchaan ko halka karna aur saakshi ki taraf lautna"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay mein Neti-Neti identity ki safai hai. Yeh life se bhaagna nahi, pakad ko halka karna hai."
+  },
+  {
+    "id": 3,
+    "question": "Sharir par Neti-Neti apply karne ka sahi arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Sharir ki dekhbhaal karte hue use final “main” na maana"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Sharir sadhan hai, uska samman karna hai. Par sharir badalta aur jaana jaata hai, isliye final “main” nahi."
+  },
+  {
+    "id": 4,
+    "question": "Mann par Neti-Neti ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Thoughts aur emotions ko jaana, par unse final identity na banana"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Mann changing flow hai. Neti-Neti use suppress nahi karti, bas final swaroop nahi maanti."
+  },
+  {
+    "id": 5,
+    "question": "Emotions ke prati Neti-Neti ki drishti kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Emotions ko space dena, unhe jaana, par unse poori identity na banana"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Dukh, darr ya gussa deny nahi karna. Unhe jaana hai, par “main yahi hoon” nahi banana."
+  },
+  {
+    "id": 6,
+    "question": "Role par Neti-Neti kya sikhati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Role nibhana hai, role banna nahi hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Roles practical life mein zaruri hain. Par father, teacher ya sadhak final identity nahi hai."
+  },
+  {
+    "id": 7,
+    "question": "Image par Neti-Neti ka main use kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Logon ki rai ki chinta ko jaana, par usse final identity na banana"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Image dusron ke mann mein banti-bigadti hai. Isliye woh final swaroop nahi ho sakti."
+  },
+  {
+    "id": 8,
+    "question": "Story par Neti-Neti ka arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Story ka samman karna, par usmein kaid na hona"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Life events sach ho sakti hain, par story mann mein uthti aur badalti hai. Woh final “main” nahi."
+  },
+  {
+    "id": 9,
+    "question": "Victim-story par Neti-Neti kyon zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyonki pain ko permanent identity bana lena bondage hai"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Adhyay pain ko deny nahi karta. Woh kehta hai—wound ko dekho, par wound ban mat jao."
+  },
+  {
+    "id": 10,
+    "question": "Special hone ki story par Neti-Neti kya karti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Special dikhne ki ichchha ko pehchankar halka karti hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "“Main alag hoon” ya “mera experience bada hai” wali identity separation la sakti hai. Neti ise dekhti hai."
+  },
+  {
+    "id": 11,
+    "question": "Spiritual identity par Neti-Neti kyon zaruri hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Kyonki ego sadhana, gyaan aur experience ko bhi pakad sakta hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ego “main sadhak hoon” ya “mujhe gyaan hua” jaisi subtle identity bana sakta hai. Isliye Neti zaruri hai."
+  },
+  {
+    "id": 12,
+    "question": "“Main saakshi hoon” par bhi caution kyon chahiye?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Kyonki yeh sentence bhi nayi spiritual identity ban sakta hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Saakshi direction hai, title nahi. Agar “main saakshi hoon” claim ban jaye, use bhi jaana ja sakta hai."
+  },
+  {
+    "id": 13,
+    "question": "Neti-Neti aur vinamrata ka sambandh kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Pakad dhili hone se natural vinamrata aati hai"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Jab role, story aur spiritual image halki hoti hai, claims kam hote hain. Yeh vinamrata ki direction hai."
+  },
+  {
+    "id": 14,
+    "question": "Neti ke baad kya bachta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Shaant jaanne wali presence ki direction clear hoti hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Neti ke baad unconsciousness nahi bachta. False identity hatt-ti hai aur knowing presence clear hoti hai."
+  },
+  {
+    "id": 15,
+    "question": "Emptiness ko Neti-Neti kaise dekhti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Agar emptiness experience hai, to woh bhi jaana ja raha hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Emptiness, shanti ya silence experience ki tarah aa sakte hain. Jo aata-jaata hai, use final truth nahi pakadna."
+  },
+  {
+    "id": 16,
+    "question": "Neti-Neti kisi special experience par kyon nahi rukti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Jo experience aaya aur gaya, woh final knower nahi ho sakta"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Shanti, anand ya light agar jaana gaya hai, to woh experience hai. Saakshi experiences ko jaanta hai, experience nahi banta."
+  },
+  {
+    "id": 17,
+    "question": "Neti-Neti life se door kyon nahi karti?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Kyonki yeh life ko right place deti hai, deny nahi karti"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Sharir, relationships, work aur sadhana chalte rehte hain. Neti sirf unse bani final identity ko halka karti hai."
+  },
+  {
+    "id": 18,
+    "question": "Room se samaan hatne ka example kya dikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Unnecessary identities haten to andar space aur halka-pan aata hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jaise room se unnecessary samaan hatega to jagah khulegi, waise hi Neti andar openness laati hai."
+  },
+  {
+    "id": 19,
+    "question": "Criticism ke time Neti-Neti ka use kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Dekhna ki image par chot lagi hai aur yeh jaana ja raha hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Criticism mein anubhavkarta aur image ki chot uth sakti hai. Neti use pehchanti hai, final “main” nahi banati."
+  },
+  {
+    "id": 20,
+    "question": "Praise ke time Neti-Neti kya sikhati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Praise ka anand ho, par usse heavy ego na bane"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Praise ka sukh beautiful ho sakta hai. Par use fixed identity banana pakad hai."
+  },
+  {
+    "id": 21,
+    "question": "Neti-Neti ka mature form kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Drishti hi Neti ban jaye"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Dheere-dheere words zaruri nahi rehte. Sadhak changing cheez ko pehchankar saakshi mein lautta hai."
+  },
+  {
+    "id": 22,
+    "question": "Neti-Neti kab tak useful hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Jab tak changing cheezon se “main” ki pakad banti hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab sharir, mann, role, story ya experience se identity banti hai, Neti direction deti hai."
+  },
+  {
+    "id": 23,
+    "question": "Neti ko hard na banane ka kya matlab hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Ise loving clarity ki tarah lana"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Neti war, pressure ya self-blame nahi hai. Ise gentle aur honest seeing banana hai."
+  },
+  {
+    "id": 24,
+    "question": "Spiritual experiences par Neti-Neti kya kehti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Experiences ka samman karo, par unhe final identity mat banao"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Shanti, gyaan ki glimpse ya seva sacred ho sakti hai, par “main special hoon” ban jaye to Neti zaruri hai."
+  },
+  {
+    "id": 25,
+    "question": "“Saakshi achievement nahi” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Saakshi ko spiritual title ya claim nahi banana hai"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi knowing ki direction hai, personal trophy nahi. Claim bane to ego aa sakta hai."
+  },
+  {
+    "id": 26,
+    "question": "Neti-Neti sadhak ko ordinary hone ki taraf kyon laati hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Kyonki special dikhne ki pakad dhili hoti hai"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Jab sadhak ko apni depth prove nahi karni padti, woh simple aur natural hota hai. Yeh ordinariness hai."
+  },
+  {
+    "id": 27,
+    "question": "Story mann mein kyon badalti rehti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Kyonki mann aur memory events ko alag meanings dete hain"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Ek hi event time ke saath dukh, pride ya learning ban sakta hai. Isliye story final “main” nahi."
+  },
+  {
+    "id": 28,
+    "question": "“Wound ko dekho, wound bano mat” kya sikhata hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Pain ka samman karo, par use permanent identity mat banao"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Yeh sentence pain ko chhota nahi karta. Yeh sadhak ko victim-story mein kaid hone se bachata hai."
+  },
+  {
+    "id": 29,
+    "question": "Roles badalte hain, phir bhi kya bana rehta hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "“Main hoon” ki basic feeling"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Din bhar roles badalte hain, par hone ki basic feeling rehti hai. Neti ise dekhne mein help karti hai."
+  },
+  {
+    "id": 30,
+    "question": "Image ki chinta par Neti ka sahi sentence kaun-sa hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Log kya sochenge — yeh thought uth raha hai. Neti."
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Yeh sentence concern ko suppress nahi karta, recognize karta hai. Recognition se pakad halki ho sakti hai."
+  },
+  {
+    "id": 31,
+    "question": "Neti mein behavior aur understanding ka balance kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Behavior mein responsibility rahe, understanding mein pakad halki ho"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Neti relationships ya karma ko end nahi karti. Woh unse bani final identity ko halka karti hai."
+  },
+  {
+    "id": 32,
+    "question": "Neti-Neti aur saakshi ka relation kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Neti known layers ko halka karke saakshi ki direction dikhati hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Sharir, mann, emotion aur identity ko final na maanne se attention knowing presence ki taraf lautta hai."
+  },
+  {
+    "id": 33,
+    "question": "Neti-Neti kis tarah ki art hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Identity ki safai aur pakad ko loose karne ki art"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Yeh sirf words repeat karna nahi. Yeh changing identities ko dekhkar unhe right place dena hai."
+  },
+  {
+    "id": 34,
+    "question": "“Jo tum ho, use banana nahi hai” ka matlab kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Truth pehle se hai; bas false identity ki layers dekhni hain"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Suraj ko light banne ki zarurat nahi. Badal hatte hain to light dikhti hai; truth recognize hota hai."
+  },
+  {
+    "id": 35,
+    "question": "Suraj aur badal ka example kis baat ke liye hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Covering layers haten to light apne aap dikhti hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Neti truth nahi banati. Yeh covering identities dikhati hai, jisse light clear hoti hai."
+  },
+  {
+    "id": 36,
+    "question": "Is adhyay mein maun ka sahi arth kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Andar ki pakad dhili hone se khulti jagah"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Maun sirf sound na hona nahi. Jab “main” ki pakad slow hoti hai, inner quiet khulti hai."
+  },
+  {
+    "id": 37,
+    "question": "Dhyan mein shanti aaye to kya karna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Use jaano, samman do, par final identity mat banao"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Shanti beautiful experience hai, par agar woh aati-jaati hai to known cheez hai. Use pakadna nahi."
+  },
+  {
+    "id": 38,
+    "question": "Weekly practice mein kaun-si identity dekhni hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Sharir, mann, emotion, role, image ya spiritual experience se bani identity"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Practice ka purpose strong identity ko pakadna nahi, dekhna hai. Dekhna hi use halka karta hai."
+  },
+  {
+    "id": 39,
+    "question": "Neti-Neti ke baad Mahavakya kyon aate hain?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Kyonki Neti galat identity clear karti hai aur Mahavakya truth ki direction dete hain"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Neti kehti hai “yeh nahi.” Uske baad Mahavakya truth ki direction batate hain."
+  },
+  {
+    "id": 40,
+    "question": "Experience ki bhookh ko Neti kaise dekhti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Yeh bhi jaani ja rahi desire hai"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Special experience paane ki desire anubhavkarta ki movement ho sakti hai. Neti use bhi dekhti hai."
+  },
+  {
+    "id": 41,
+    "question": "Neti-Neti mein kis se fight nahi karni hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sharir, mann, emotion, role ya experience se"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Neti war nahi, clarity hai. Yeh experiences ko right place deti hai aur unse final identity hatati hai."
+  },
+  {
+    "id": 42,
+    "question": "Spiritual pride ka example kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "“Meri sadhana special hai, main dusron se aage hoon”"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Yeh sadhana ki language mein ego ki layer hai. Neti ise pehchankar halka karti hai."
+  },
+  {
+    "id": 43,
+    "question": "Aware dikhne ki desire ko Neti kaise dekhti hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Yeh bhi jaani ja rahi mental layer hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Agar awareness image ban jaye, to woh bhi mind ki object hai. Neti use final truth nahi maanti."
+  },
+  {
+    "id": 44,
+    "question": "Neti-Neti mein sabse important caution kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Ise life se escape ya self-blame ka tool na banana"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Neti gentle clarity hai. Agar yeh hard rejection ban jaye, iska bhaav kho jata hai."
+  },
+  {
+    "id": 45,
+    "question": "“Main saakshi hoon” thought uthe to kya dekhna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Yeh thought bhi jaana ja raha hai"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Saakshi thought nahi hai. Agar saakshi ka thought uthta hai, to woh bhi known layer hai."
+  },
+  {
+    "id": 46,
+    "question": "Neti-Neti ka practical fruit kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Criticism, praise, tiredness aur worry mein pakad halki hona"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Life chalta rehta hai, par experiences se bani hard identity kam hoti hai. Yeh practical fruit hai."
+  },
+  {
+    "id": 47,
+    "question": "Adhyay 5 ka saar kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sadhana ko burden banana"
+      },
+      {
+        "key": "B",
+        "text": "Life ko meaningless maana"
+      },
+      {
+        "key": "C",
+        "text": "Neti-Neti false identity ko loose karke saakshi ki taraf lautne ki art hai"
+      },
+      {
+        "key": "D",
+        "text": "Sirf debate karna"
+      }
+    ],
+    "correct": "C",
+    "explanation": "Yeh life ko deny nahi karti. Yeh changing cheezon ko right place deti hai aur knowing presence ki taraf lautati hai."
+  },
+  {
+    "id": 48,
+    "question": "Neti-Neti ke final practice mein kya nahi karna hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Sabhi experiences ko rok dena"
+      },
+      {
+        "key": "B",
+        "text": "Sharir aur sansar se nafrat karna"
+      },
+      {
+        "key": "C",
+        "text": "Sirf shastra yaad karna"
+      },
+      {
+        "key": "D",
+        "text": "Kisi special experience ya light ka wait karna"
+      }
+    ],
+    "correct": "D",
+    "explanation": "Practice mein experiences ko aate-jaate dekhna hai. Special state ka wait nayi pakad ban sakta hai."
+  },
+  {
+    "id": 49,
+    "question": "Neti-Neti mein “yeh bhi jaani ja rahi dharna hai” ka kya matlab hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spiritual dharna bhi agar dikh rahi hai, to usse final identity nahi banani"
+      },
+      {
+        "key": "B",
+        "text": "Har thought ko final truth maan lena"
+      },
+      {
+        "key": "C",
+        "text": "Responsibility se bhaag jana"
+      },
+      {
+        "key": "D",
+        "text": "Emotions ko daba dena"
+      }
+    ],
+    "correct": "A",
+    "explanation": "Neti-Neti sirf worldly identity par nahi rukti. Yeh spiritual ideas aur claims ko bhi dekhti hai."
+  },
+  {
+    "id": 50,
+    "question": "Neti-Neti ka final bhaav kya hai?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dusron ko galat prove karna"
+      },
+      {
+        "key": "B",
+        "text": "Jo nahi ho use chhodna, aur jo ho use pakadne ki koshish na karna"
+      },
+      {
+        "key": "C",
+        "text": "Apne spiritual experience ko announce karna"
+      },
+      {
+        "key": "D",
+        "text": "Sab roles hamesha ke liye chhod dena"
+      }
+    ],
+    "correct": "B",
+    "explanation": "Adhyay ka final bhaav hai false identity ka halka hona. Truth ko object ki tarah pakadna nahi, uske prakash mein jeena hai."
+  }
+]
