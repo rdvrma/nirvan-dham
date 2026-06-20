@@ -446,6 +446,124 @@ export default function SadhanaPage() {
         </div>
       </div>
 
+
+      {/* ══════════ NIRVAN SUTRA COURSE — Premium Highlight ══════════ */}
+      <section style={{ position: 'relative', overflow: 'hidden', margin: '0' }}>
+        {/* Cinematic video background */}
+        <video autoPlay muted loop playsInline src="/course-videos/hero.mp4" style={{
+          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.2,
+        }} />
+        {/* Dark overlays */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(5,14,7,0.97) 0%, rgba(8,20,10,0.85) 50%, rgba(5,14,7,0.97) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 65% 50% at 80% 50%, rgba(212,168,67,0.06) 0%, transparent 70%)' }} />
+        {/* Gold shimmer border top */}
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, transparent, #d4a843 25%, #ffe89a 50%, #d4a843 75%, transparent)' }} />
+
+        <div style={{ position: 'relative', zIndex: 2, maxWidth: '1160px', margin: '0 auto', padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,4rem)' }}>
+
+          {/* Section label */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, #d4a843)' }} />
+            <span style={{ fontSize: '0.56rem', letterSpacing: '0.35em', color: '#d4a843', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', fontWeight: 700 }}>
+              SHRAVANA · FLAGSHIP COURSE
+            </span>
+            <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, #d4a843, transparent)' }} />
+          </div>
+
+          {/* Main 2-col layout */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,6vw,6rem)', alignItems: 'center' }} className="sadh-course-grid">
+
+            {/* LEFT — text */}
+            <div>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.35rem 0.9rem', borderRadius: '999px', border: '1px solid rgba(212,168,67,0.3)', background: 'rgba(212,168,67,0.07)', marginBottom: '1.5rem' }}>
+                <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: GOLD, display: 'inline-block', animation: 'sadhPulse 2s ease-in-out infinite' }} />
+                <span style={{ fontSize: '0.6rem', color: GOLD, letterSpacing: '0.15em', fontFamily: 'var(--font-inter)' }}>
+                  {isHi ? 'निर्वाण सूत्र पाठ्यक्रम' : 'NIRVAN SUTRA COURSE'}
+                </span>
+              </div>
+
+              <h2 style={{
+                fontFamily: 'var(--font-cormorant)', fontWeight: isHi ? 600 : 300,
+                fontSize: 'clamp(2.8rem,5.5vw,4.8rem)', lineHeight: 1.05,
+                color: 'var(--c-ivory)', marginBottom: '1.25rem',
+                fontStyle: isHi ? 'normal' : 'italic',
+              }}>
+                {isHi ? 'आप कौन हैं?' : 'Who are you?'}
+              </h2>
+
+              <p style={{ color: 'rgba(245,237,216,0.58)', lineHeight: 1.95, fontSize: 'clamp(0.92rem,1.5vw,1.02rem)', marginBottom: '2.25rem', maxWidth: '460px', fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)' }}>
+                {isHi
+                  ? 'साधना के बाद अगला कदम है श्रवण। निर्वाण सूत्र पाठ्यक्रम में 8 अध्यायों में अद्वैत, आत्म-जांच और मुक्ति की गहरी यात्रा शुरू करें।'
+                  : 'After Sadhana comes Shravana. Begin a deep journey through 8 chapters of Advaita, self-inquiry and liberation in the Nirvan Sutra Course.'}
+              </p>
+
+              {/* Stats */}
+              <div style={{ display: 'flex', gap: '2.5rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+                {[
+                  { num: '8', label: isHi ? 'अध्याय' : 'Chapters' },
+                  { num: '3', label: isHi ? 'भाषाएं' : 'Languages' },
+                  { num: '∞', label: isHi ? 'स्वतंत्र पहुंच' : 'Free Access' },
+                ].map(s => (
+                  <div key={s.num}>
+                    <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.6rem', fontWeight: 300, color: GOLD, lineHeight: 1 }}>{s.num}</div>
+                    <div style={{ fontSize: '0.68rem', color: 'rgba(245,237,216,0.4)', letterSpacing: '0.08em', fontFamily: 'var(--font-inter)', marginTop: '0.2rem' }}>{s.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Bold CTA */}
+              <Link href="/course" style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.7rem',
+                padding: '1.05rem 2.4rem', borderRadius: '6px',
+                background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`,
+                color: '#061008', textDecoration: 'none', fontWeight: 800,
+                fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)',
+                fontSize: '0.98rem', letterSpacing: '0.04em',
+                boxShadow: `0 8px 40px rgba(212,168,67,0.32)`,
+                transition: 'all 0.3s',
+              }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 16px 56px rgba(212,168,67,0.48)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 40px rgba(212,168,67,0.32)'; }}
+              >
+                {isHi ? 'पाठ्यक्रम शुरू करें' : 'Begin the Course'} →
+              </Link>
+            </div>
+
+            {/* RIGHT — chapter list */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              {[
+                { n: '01', hi: 'स्वयं की खोज', en: 'The Discovery of Self' },
+                { n: '02', hi: 'मन की परतें', en: 'Layers of the Mind' },
+                { n: '03', hi: 'साक्षी बोध', en: 'Witness Awareness' },
+                { n: '04', hi: 'अहंकार की जड़', en: 'The Root of Ego' },
+                { n: '05', hi: 'माया का खेल', en: 'The Play of Maya' },
+                { n: '06', hi: 'ध्यान का द्वार', en: 'Gateway of Meditation' },
+                { n: '07', hi: 'मुक्ति की राह', en: 'Path of Liberation' },
+                { n: '08', hi: 'निर्वाण सूत्र', en: 'Nirvan Sutra' },
+              ].map((ch, i) => (
+                <div key={ch.n} style={{
+                  display: 'flex', alignItems: 'center', gap: '1rem',
+                  padding: '0.7rem 1rem', borderRadius: '8px',
+                  border: `1px solid ${i === 5 ? 'rgba(212,168,67,0.22)' : 'rgba(212,168,67,0.07)'}`,
+                  background: i === 5 ? 'rgba(212,168,67,0.07)' : 'rgba(5,14,7,0.55)',
+                  backdropFilter: 'blur(8px)',
+                }}>
+                  <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.56rem', color: 'rgba(212,168,67,0.45)', letterSpacing: '0.1em', minWidth: '18px' }}>{ch.n}</span>
+                  <span style={{ flex: 1, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.86rem', color: i === 5 ? GOLD : 'rgba(245,237,216,0.6)', fontWeight: i === 5 ? 600 : 400 }}>
+                    {isHi ? ch.hi : ch.en}
+                  </span>
+                  {i === 5 && <span style={{ fontSize: '0.5rem', color: 'rgba(212,168,67,0.4)' }}>◈</span>}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom border */}
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px', background: 'linear-gradient(90deg, transparent, rgba(212,168,67,0.35) 50%, transparent)' }} />
+        <style>{`@media(max-width:768px){.sadh-course-grid{grid-template-columns:1fr !important;}}`}</style>
+      </section>
+
       <ContactSection lang={activeLang} />
 
       <style>{`
