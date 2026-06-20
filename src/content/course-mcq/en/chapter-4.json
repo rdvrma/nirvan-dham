@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 401,
+    "question": "According to Chapter 4, what is the deepest meaning of ego in the context of this course?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The mistaken sense of 'I' that identifies with the body, mind, name, story, and role."
+      },
+      {
+        "key": "B",
+        "text": "The tendency to feel pride and superiority over others."
+      },
+      {
+        "key": "C",
+        "text": "The desire for constant praise and recognition from society."
+      },
+      {
+        "key": "D",
+        "text": "The inability to admit mistakes or accept criticism."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter defines ego as something deeper than just pride. It is the fundamental mistaken identity where the sense of 'I' is equated with the body, mind, name, story, and role, rather than the witness-consciousness. This mistaken identification is the root cause of much confusion."
+  },
+  {
+    "id": 402,
+    "question": "Which of the following is presented as a common misunderstanding about ego in this chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego only manifests as arrogance and a desire to be right."
+      },
+      {
+        "key": "B",
+        "text": "Ego is solely related to one's social status and profession."
+      },
+      {
+        "key": "C",
+        "text": "Ego is primarily about physical appearance and health."
+      },
+      {
+        "key": "D",
+        "text": "Ego is a spiritual concept that only affects advanced practitioners."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text explicitly states that ego is not only about thinking highly of oneself ('I am great') but can also manifest as feeling worthless ('I am very small'). This clarifies that ego encompasses a broader range of self-identification than just pride."
+  },
+  {
+    "id": 403,
+    "question": "The chapter states that ego's first and most obvious grip is identification with which aspect?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The body and its conditions"
+      },
+      {
+        "key": "B",
+        "text": "The mind and its thoughts"
+      },
+      {
+        "key": "C",
+        "text": "Name and personal story"
+      },
+      {
+        "key": "D",
+        "text": "Spiritual experiences"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text identifies identification with the body as the 'first and most obvious grip of ego.' Examples like 'I am beautiful,' 'I am sick,' or 'I am old' illustrate this point. While caring for the body is necessary, mistaking its states for one's entire identity is the beginning of ego."
+  },
+  {
+    "id": 404,
+    "question": "What is the fundamental difference between the witness and ego regarding the body's states?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness knows the body's states without identifying with them, while ego claims them as 'I'."
+      },
+      {
+        "key": "B",
+        "text": "The witness denies the body's states, while ego accepts them."
+      },
+      {
+        "key": "C",
+        "text": "The ego tries to change the body's states, while the witness remains indifferent."
+      },
+      {
+        "key": "D",
+        "text": "The witness controls the body's states, while ego is controlled by them."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter explains that the body undergoes various changes (aging, sickness, health). The witness is aware of these states, but ego mistakenly claims these states as its own identity ('I am this state'). This distinction is crucial for understanding ego's identification."
+  },
+  {
+    "id": 405,
+    "question": "According to the text, how does ego grip the mind?",
+    "options": [
+      {
+        "key": "A",
+        "text": "By taking ownership of the mind's flow, declaring 'This is me'."
+      },
+      {
+        "key": "B",
+        "text": "By suppressing all thoughts and emotions."
+      },
+      {
+        "key": "C",
+        "text": "By creating new thoughts that are entirely separate from the self."
+      },
+      {
+        "key": "D",
+        "text": "By preventing any new opinions or preferences from forming."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter states that the mind is a 'changing flow' of thoughts, emotions, and memories. Ego's grip occurs when it identifies with this flow, saying 'This is me,' rather than recognizing these as transient mental movements known by the witness."
+  },
+  {
+    "id": 406,
+    "question": "When ego turns an opinion into identity, what is the consequence if someone disagrees?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The ego feels wounded and defensive."
+      },
+      {
+        "key": "B",
+        "text": "The ego seeks to logically debate the disagreement."
+      },
+      {
+        "key": "C",
+        "text": "The ego dismisses the other person's opinion entirely."
+      },
+      {
+        "key": "D",
+        "text": "The ego tries to understand the other's perspective."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text explains that if an opinion is turned into an identity, disagreement from others causes the ego to feel 'wounded.' This happens because the opinion has become an extension of 'me,' making any challenge feel like a personal attack."
+  },
+  {
+    "id": 407,
+    "question": "What is the relationship between ego and the experiencer as described in the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego is the root mistaken identity, from which the experiencer arises."
+      },
+      {
+        "key": "B",
+        "text": "The experiencer is the cause, and ego is the effect."
+      },
+      {
+        "key": "C",
+        "text": "They are separate entities that can exist independently."
+      },
+      {
+        "key": "D",
+        "text": "The experiencer is the witness, and ego is a temporary illusion."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter states that ego is the 'root mistaken identity - “I am the body-mind.”' From this identity, the 'experiencer' arises, claiming experiences as its own. The witness, however, can know both ego and the experiencer."
+  },
+  {
+    "id": 408,
+    "question": "When sadness arises, what is the difference between the witness's knowing and the ego's statement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Witness: 'Sadness is being experienced.' Ego: 'I am sad.'"
+      },
+      {
+        "key": "B",
+        "text": "Witness: 'I am sad.' Ego: 'Sadness is being experienced.'"
+      },
+      {
+        "key": "C",
+        "text": "Witness: 'Sadness is not real.' Ego: 'I am sad.'"
+      },
+      {
+        "key": "D",
+        "text": "Witness: 'I must overcome sadness.' Ego: 'Sadness is a part of me.'"
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text uses sadness as an example: the witness knows 'Sadness is being experienced,' while ego claims 'I am sad.' This highlights how ego personalizes and identifies with the experience, whereas the witness remains a detached observer."
+  },
+  {
+    "id": 409,
+    "question": "The chapter uses the analogy of an actor playing a king to illustrate which concept?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The difference between playing a role and mistaking it for one's true identity."
+      },
+      {
+        "key": "B",
+        "text": "The importance of embracing one's roles in life."
+      },
+      {
+        "key": "C",
+        "text": "The danger of becoming too attached to spiritual experiences."
+      },
+      {
+        "key": "D",
+        "text": "The fleeting nature of worldly success and failure."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The actor analogy shows that playing a role (like a king) is functional and has meaning within its context, but the actor going home and still believing he is the king represents the ego's mistake of taking a role as final identity. The key is to play the role without becoming it."
+  },
+  {
+    "id": 410,
+    "question": "What is the core issue when a role becomes ego, according to the text?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The person turns the role into their final identity."
+      },
+      {
+        "key": "B",
+        "text": "The role itself is inherently problematic."
+      },
+      {
+        "key": "C",
+        "text": "The person fails to perform the role effectively."
+      },
+      {
+        "key": "D",
+        "text": "The role requires too much effort and responsibility."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter clarifies that roles like 'father' or 'teacher' are necessary and fine in practical life. The problem arises when the person 'turns the role into “me”' or takes it as their 'final identity,' which is the essence of ego."
+  },
+  {
+    "id": 411,
+    "question": "How does ego relate to a person's name and personal story?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego uses name and story to create a fixed identity."
+      },
+      {
+        "key": "B",
+        "text": "Name and story are irrelevant to ego."
+      },
+      {
+        "key": "C",
+        "text": "The witness erases name and story to overcome ego."
+      },
+      {
+        "key": "D",
+        "text": "Name and story are the only true aspects of self."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text explains that ego is also made from name and personal story. These narratives, often based on memory, are taken as fixed identity ('This happened to me, therefore this is who I am'), which is a key manifestation of ego."
+  },
+  {
+    "id": 412,
+    "question": "What is a potential subtle trap for seekers when they begin to see their ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Developing a new ego of being a 'bad seeker' or 'full of ego'."
+      },
+      {
+        "key": "B",
+        "text": "Becoming too proud of their self-awareness."
+      },
+      {
+        "key": "C",
+        "text": "Trying to immediately eliminate all egoic tendencies."
+      },
+      {
+        "key": "D",
+        "text": "Becoming discouraged and giving up the spiritual path."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter warns that seeing ego can lead to fear and self-blame, such as thinking 'I must not be a good seeker.' This can become a 'subtle trap' where the self-criticism itself becomes another story of ego, like 'I am a bad seeker.'"
+  },
+  {
+    "id": 413,
+    "question": "How does witness-consciousness interact with ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Witness-consciousness knows ego without judgment, like a lamp illuminating objects."
+      },
+      {
+        "key": "B",
+        "text": "Witness-consciousness fights and destroys ego."
+      },
+      {
+        "key": "C",
+        "text": "Witness-consciousness ignores ego to maintain peace."
+      },
+      {
+        "key": "D",
+        "text": "Witness-consciousness merges with ego to transform it."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text uses the analogy of a lamp illuminating a room to describe how witness-consciousness reveals ego. It 'knows ego' without fighting it, and this clear seeing is what begins to loosen ego's grip. It is a process of recognition, not combat."
+  },
+  {
+    "id": 414,
+    "question": "What is the recommended approach to ego, as opposed to fighting or killing it?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Suppression and denial"
+      },
+      {
+        "key": "B",
+        "text": "Recognition and gentle observation"
+      },
+      {
+        "key": "C",
+        "text": "Acceptance and indulgence"
+      },
+      {
+        "key": "D",
+        "text": "Intellectual understanding and debate"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter strongly advises against fighting or killing ego, stating that the path is 'seeing.' It recommends recognizing ego, allowing it, and returning to witness-consciousness. This gentle observation is key to its loosening grip."
+  },
+  {
+    "id": 415,
+    "question": "In the second section, what are the three visible layers of ego discussed?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Body, mind, and emotions"
+      },
+      {
+        "key": "B",
+        "text": "Role, image, and story"
+      },
+      {
+        "key": "C",
+        "text": "Pride, arrogance, and self-pity"
+      },
+      {
+        "key": "D",
+        "text": "Knowledge, experience, and practice"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The second section explicitly details three layers of ego: the ego of role, the ego of image (how one appears to others), and the ego of story (one's personal narrative). These are presented as common manifestations of ego."
+  },
+  {
+    "id": 416,
+    "question": "What distinguishes 'playing a role' from 'becoming a role' in the context of ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Playing a role is always genuine; becoming a role is always false."
+      },
+      {
+        "key": "B",
+        "text": "Playing a role involves responsibility; becoming a role involves attachment."
+      },
+      {
+        "key": "C",
+        "text": "Playing a role is for oneself; becoming a role is for others."
+      },
+      {
+        "key": "D",
+        "text": "Playing a role is a temporary act; becoming a role is a permanent state."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The text differentiates these by stating that playing a role carries responsibility, while becoming the role leads to attachment. For example, a mother caring for a child is playing a role, but demanding control over the child's choices is becoming the role."
+  },
+  {
+    "id": 417,
+    "question": "The ego of image is concerned with:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Internal peace and self-acceptance."
+      },
+      {
+        "key": "B",
+        "text": "How one appears in the eyes of others."
+      },
+      {
+        "key": "C",
+        "text": "The objective truth of one's actions."
+      },
+      {
+        "key": "D",
+        "text": "Developing a strong sense of self-identity."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter defines the ego of image as the concern for 'how do I appear in the eyes of others?' It drives the desire to seem good, wise, successful, or spiritual, often leading to actions performed to protect this appearance rather than from truth."
+  },
+  {
+    "id": 418,
+    "question": "When criticism disturbs someone, the chapter suggests asking:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Why is this person criticizing me?"
+      },
+      {
+        "key": "B",
+        "text": "Am I concerned with truth, or with protecting my image?"
+      },
+      {
+        "key": "C",
+        "text": "How can I prove this criticism wrong?"
+      },
+      {
+        "key": "D",
+        "text": "Is this criticism a sign of my spiritual growth?"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The text guides the seeker to inquire whether their disturbance stems from concern for truth or from the need to protect their image. This self-questioning helps to identify the ego of image at play."
+  },
+  {
+    "id": 419,
+    "question": "What is the ego of story?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The ability to recall past events accurately."
+      },
+      {
+        "key": "B",
+        "text": "The narrative one creates about oneself, which ego turns into fixed identity."
+      },
+      {
+        "key": "C",
+        "text": "The objective recounting of historical events."
+      },
+      {
+        "key": "D",
+        "text": "The process of writing memoirs and autobiographies."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The ego of story is described as the personal narrative made from memories, wounds, and conclusions. Ego turns this story into a fixed identity ('This happened to me, therefore this is who I am'), rather than seeing it as a mental construct known by the witness."
+  },
+  {
+    "id": 420,
+    "question": "The identity of being a 'victim' is presented as a subtle form of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spiritual ego"
+      },
+      {
+        "key": "B",
+        "text": "Ego of story"
+      },
+      {
+        "key": "C",
+        "text": "Ego of role"
+      },
+      {
+        "key": "D",
+        "text": "Ego of image"
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter identifies the 'identity of being a victim' as a subtle form of story-ego. It occurs when a person becomes so identified with suffering that the pain becomes their identity, tying them to the past and preventing them from seeing the present clearly."
+  },
+  {
+    "id": 421,
+    "question": "When a layer of ego is seen, the chapter advises to:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Call it a failure and try to hide it."
+      },
+      {
+        "key": "B",
+        "text": "Recognize it as grace, like light revealing dust."
+      },
+      {
+        "key": "C",
+        "text": "Blame oneself for being a bad seeker."
+      },
+      {
+        "key": "D",
+        "text": "Immediately suppress it to avoid further contamination."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Seeing a layer of ego is presented not as a failure but as 'grace.' It's compared to light revealing dust in a room; the light doesn't create the dust but makes it visible. This seeing allows for gentle cleaning, not suppression or self-punishment."
+  },
+  {
+    "id": 422,
+    "question": "What is spiritual ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The absence of ego in spiritual practitioners."
+      },
+      {
+        "key": "B",
+        "text": "The ego that arises from spiritual practices and experiences."
+      },
+      {
+        "key": "C",
+        "text": "The ego that only affects those who are not spiritual."
+      },
+      {
+        "key": "D",
+        "text": "The ego that is easily recognized due to its overt pride."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Spiritual ego is described as the 'same old “I” takes hold of spiritual words, experiences, roles, and achievements, and makes a new identity out of them.' It's subtle because it can speak in the language of peace, humility, or knowledge, rather than just pride."
+  },
+  {
+    "id": 423,
+    "question": "Which of the following is an example of spiritual ego mentioned in the text?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Feeling peaceful during meditation."
+      },
+      {
+        "key": "B",
+        "text": "Thinking 'I meditate regularly; I am better than others.'"
+      },
+      {
+        "key": "C",
+        "text": "Serving others with genuine compassion."
+      },
+      {
+        "key": "D",
+        "text": "Studying spiritual texts to gain understanding."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter explicitly gives the example: 'I meditate regularly; I am better than others' as a manifestation of spiritual ego. This shows how the 'I' can grasp spiritual activities and create a sense of superiority."
+  },
+  {
+    "id": 424,
+    "question": "The ego of humility is characterized by:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Genuine selflessness and lack of desire for recognition."
+      },
+      {
+        "key": "B",
+        "text": "Saying 'I am nothing' while inwardly wanting praise for humility."
+      },
+      {
+        "key": "C",
+        "text": "Accepting all criticism without any inner reaction."
+      },
+      {
+        "key": "D",
+        "text": "Focusing solely on inner spiritual experiences."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The text describes the ego of humility as a subtle trap where a seeker might say 'I am nothing' but inwardly desires others to acknowledge their humility. It highlights the discrepancy between outward expression and inner motivation driven by ego."
+  },
+  {
+    "id": 425,
+    "question": "True knowledge, as opposed to the ego of knowledge, is described as making a person:",
+    "options": [
+      {
+        "key": "A",
+        "text": "More closed off and certain of their interpretations."
+      },
+      {
+        "key": "B",
+        "text": "More open, gentle, and able to listen."
+      },
+      {
+        "key": "C",
+        "text": "More superior and unwilling to listen."
+      },
+      {
+        "key": "D",
+        "text": "More focused on proving others wrong."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter contrasts the ego of knowledge ('I know,' 'My interpretation is superior') with true knowledge. True knowledge fosters openness, gentleness, and the ability to listen, rather than creating hardness or superiority."
+  },
+  {
+    "id": 426,
+    "question": "The feeling 'I am awakened' can be a subtle form of spiritual ego because:",
+    "options": [
+      {
+        "key": "A",
+        "text": "True awakening dissolves the sense of 'I'."
+      },
+      {
+        "key": "B",
+        "text": "All of the above."
+      },
+      {
+        "key": "C",
+        "text": "It implies superiority over those who are not awakened."
+      },
+      {
+        "key": "D",
+        "text": "It is an achievement that ego can grasp."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The text explains that 'I am awakened' can be spiritual ego because true awareness loosens the grip of 'I.' This feeling can turn awakening into an achievement, imply superiority ('I am awake; others are asleep'), and is a prime example of ego grasping spiritual concepts."
+  },
+  {
+    "id": 427,
+    "question": "What is the opposite of spiritual ego, characterized by understanding without display and clarity without hardness?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Enlightenment"
+      },
+      {
+        "key": "B",
+        "text": "Renunciation"
+      },
+      {
+        "key": "C",
+        "text": "Simplicity"
+      },
+      {
+        "key": "D",
+        "text": "Detachment"
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter defines the opposite of spiritual ego as 'simplicity.' This is characterized by understanding without display, clarity without hardness, experience without grasping, and service without claim, reflecting a state of being free from spiritual pride or specialness."
+  },
+  {
+    "id": 428,
+    "question": "When noticing spiritual ego, the text advises against:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Seeing the desire for recognition."
+      },
+      {
+        "key": "B",
+        "text": "Feeling pride in a spiritual experience."
+      },
+      {
+        "key": "C",
+        "text": "Drowning in shame or creating a story of being full of ego."
+      },
+      {
+        "key": "D",
+        "text": "Asking where the desire or pride is known."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter warns seekers not to 'drown in shame' or create a new story like 'I am full of ego' when spiritual ego is noticed. Instead, it emphasizes that seeing spiritual ego is the beginning of purification and a sign of witness-consciousness."
+  },
+  {
+    "id": 429,
+    "question": "The core message of the fourth section is to:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Aggressively fight and destroy all ego."
+      },
+      {
+        "key": "B",
+        "text": "Renounce all worldly roles and relationships."
+      },
+      {
+        "key": "C",
+        "text": "See ego in witness-consciousness, rather than fighting it."
+      },
+      {
+        "key": "D",
+        "text": "Ignore ego and focus only on positive experiences."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The fourth section's central conclusion is: 'do not fight the ego; do not try to kill it. See it in witness-consciousness.' The path is described as 'seeing,' not 'war,' because fighting ego often leads to its return in a new form."
+  },
+  {
+    "id": 430,
+    "question": "Why is fighting the ego problematic, according to the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It leads to excessive self-punishment and guilt."
+      },
+      {
+        "key": "B",
+        "text": "It distracts from genuine spiritual practice."
+      },
+      {
+        "key": "C",
+        "text": "It strengthens the ego by giving it a new identity as the 'fighter'."
+      },
+      {
+        "key": "D",
+        "text": "It is an ineffective method that yields no results."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The text explains that the ego that fights ego will return as the 'fighter,' saying 'I am defeating ego.' This demonstrates that the struggle itself can become another form of ego, making 'seeing' the more effective path."
+  },
+  {
+    "id": 431,
+    "question": "What is the difference between a 'practical I' and the egoic 'I'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The practical 'I' is always true, while the egoic 'I' is always false."
+      },
+      {
+        "key": "B",
+        "text": "The practical 'I' is about self-preservation, while the egoic 'I' is about self-destruction."
+      },
+      {
+        "key": "C",
+        "text": "The practical 'I' is used for daily functions and belongs to role/function, while the egoic 'I' becomes final truth."
+      },
+      {
+        "key": "D",
+        "text": "There is no difference; they are interchangeable terms."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter distinguishes between the 'practical I' (e.g., 'I am hungry,' 'I will do it') which is functional, and the egoic 'I' which becomes 'final truth.' The practical 'I' is acknowledged as belonging to role and function, whereas the egoic 'I' is the mistaken identification."
+  },
+  {
+    "id": 432,
+    "question": "The layers of ego loosen through which three primary means?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Fighting, suppressing, and denying."
+      },
+      {
+        "key": "B",
+        "text": "Intellectual understanding, debate, and analysis."
+      },
+      {
+        "key": "C",
+        "text": "Recognizing, allowing, and returning to witness-consciousness."
+      },
+      {
+        "key": "D",
+        "text": "Seeking external validation and praise."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The text states that ego layers loosen through 'recognizing, allowing, and returning to witness-consciousness.' This gentle, observational approach is contrasted with aggressive methods like fighting or suppression."
+  },
+  {
+    "id": 433,
+    "question": "How is ego compared to dust on a mirror?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Dust destroys the mirror's reflective ability."
+      },
+      {
+        "key": "B",
+        "text": "The mirror itself is bad, like ego."
+      },
+      {
+        "key": "C",
+        "text": "Dust obscures the reflection but doesn't destroy the mirror's capacity to reflect."
+      },
+      {
+        "key": "D",
+        "text": "Cleaning the dust requires harsh scrubbing."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The analogy illustrates that ego-layers are like dust on a mirror. They make the reflection (truth) unclear, but they do not destroy the mirror's inherent capacity to reflect. Cleaning is done gently, implying recognition and observation, not destruction."
+  },
+  {
+    "id": 434,
+    "question": "When the grip of ego loosens, how do relationships typically change?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hurt becomes more frequent and intense."
+      },
+      {
+        "key": "B",
+        "text": "Disagreements are always seen as personal insults."
+      },
+      {
+        "key": "C",
+        "text": "Relationships become more truthful, with less immediate hurt and more space for disagreement."
+      },
+      {
+        "key": "D",
+        "text": "Love becomes more grasping and demanding."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter explains that as ego loosens, hurt may still arise but can be seen, disagreements can be heard, and love gains space. Witness-consciousness, by reducing ego's need to protect image and story, makes relationships more truthful."
+  },
+  {
+    "id": 435,
+    "question": "How does work change when ego loosens its grip?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Work becomes a means to prove one's identity and superiority."
+      },
+      {
+        "key": "B",
+        "text": "Success leads to arrogance, and failure leads to despair."
+      },
+      {
+        "key": "C",
+        "text": "Work becomes a field for learning and service, with gratitude for success and learning from failure."
+      },
+      {
+        "key": "D",
+        "text": "Action becomes weaker and less decisive."
+      }
+    ],
+    "correct": "C",
+    "explanation": "When ego loosens, work transforms from a tool to prove identity into a field for learning and service. Success brings gratitude, and failure becomes a doorway to learning, leading to cleaner, not weaker, action."
+  },
+  {
+    "id": 436,
+    "question": "What is the primary purpose of sadhana, according to the chapter, when ego is involved?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To collect as many positive spiritual experiences as possible."
+      },
+      {
+        "key": "B",
+        "text": "To achieve a state of permanent peace and bliss."
+      },
+      {
+        "key": "C",
+        "text": "To know oneself amidst all experiences, including egoic ones."
+      },
+      {
+        "key": "D",
+        "text": "To eliminate all traces of ego from one's being."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter states that the purpose of sadhana is not to collect experiences or eliminate ego, but 'to know yourself in the midst of all experiences.' This includes knowing yourself when peace comes, when it doesn't, when pride arises, or when inferiority arises."
+  },
+  {
+    "id": 437,
+    "question": "The chapter concludes by stating that the next step after understanding the layers of ego is:",
+    "options": [
+      {
+        "key": "A",
+        "text": "To actively engage in spiritual warfare."
+      },
+      {
+        "key": "B",
+        "text": "To embrace the 'I' as the ultimate reality."
+      },
+      {
+        "key": "C",
+        "text": "To deepen the understanding of what one is not (Neti-Neti)."
+      },
+      {
+        "key": "D",
+        "text": "To seek external validation for one's spiritual progress."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter sets up the next step as deepening the direction of 'Neti-Neti,' meaning 'not this, not this.' This process involves clearly recognizing what one is not (body, mind, egoic identities) so that what one truly is can become self-evident."
+  },
+  {
+    "id": 438,
+    "question": "What is the outcome of seeing the layers of ego in the right spirit?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Increased burden and self-criticism."
+      },
+      {
+        "key": "B",
+        "text": "A sense of permanent failure and inadequacy."
+      },
+      {
+        "key": "C",
+        "text": "Great lightness and freedom from egoic burdens."
+      },
+      {
+        "key": "D",
+        "text": "The need to constantly prove one's egolessness."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The text suggests that seeing ego, when done in the right spirit, brings 'great lightness.' It frees the seeker from having to make every role their final identity, collapsing under criticism, or inflating with praise."
+  },
+  {
+    "id": 439,
+    "question": "When the sense of 'I' rises strongly, the chapter advises to pause and ask:",
+    "options": [
+      {
+        "key": "A",
+        "text": "How can I suppress this feeling immediately?"
+      },
+      {
+        "key": "B",
+        "text": "Who is responsible for this strong 'I'?"
+      },
+      {
+        "key": "C",
+        "text": "Should I share this experience with others for validation?"
+      },
+      {
+        "key": "D",
+        "text": "What kind of 'I' is this, what is it identifying with, and is it being known?"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter provides specific questions for when the sense of 'I' rises strongly: 'What kind of “I” is this? What is it identifying with? What does it want? Is this too being known?' These questions facilitate seeing and softening the ego's grip."
+  },
+  {
+    "id": 440,
+    "question": "The practice for the week suggests observing ego layers and asking what the 'I' wants. Which of the following is NOT listed as a possible desire?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Respect"
+      },
+      {
+        "key": "B",
+        "text": "Security"
+      },
+      {
+        "key": "C",
+        "text": "Control"
+      },
+      {
+        "key": "D",
+        "text": "Self-discovery"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The practice section lists potential desires of the ego as 'respect, security, control, love, recognition, to be proven right, or to appear special.' Self-discovery is not listed as a primary egoic desire in this context."
+  },
+  {
+    "id": 441,
+    "question": "What is the fundamental mistake that gives rise to the experiencer, according to the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The belief that the world is not the final truth."
+      },
+      {
+        "key": "B",
+        "text": "The inability to remember witness-consciousness in daily life."
+      },
+      {
+        "key": "C",
+        "text": "The ego's desire for pride and superiority."
+      },
+      {
+        "key": "D",
+        "text": "The mistaken identity that says 'I am this body-mind'."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter explicitly states, 'ego is the root mistake that says: “I am this body-mind.” From this mistake the experiencer is born.' This foundational identification is the source of the personal 'I' that claims experiences."
+  },
+  {
+    "id": 442,
+    "question": "When someone says 'I am a seeker,' how can this role become ego?",
+    "options": [
+      {
+        "key": "A",
+        "text": "If they stop seeking spiritual truths."
+      },
+      {
+        "key": "B",
+        "text": "If they neglect their worldly responsibilities."
+      },
+      {
+        "key": "C",
+        "text": "If they cannot explain their spiritual beliefs clearly."
+      },
+      {
+        "key": "D",
+        "text": "If they feel superior to others because they are spiritual."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The text warns that even the 'seeker-role' can become ego if the person 'feels higher than others because he is spiritual.' This highlights how any role, including a spiritual one, can be used by ego to create a sense of superiority."
+  },
+  {
+    "id": 443,
+    "question": "The chapter suggests that a spiritual image can become a layer of ego if:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The seeker genuinely embodies qualities like calmness and wisdom."
+      },
+      {
+        "key": "B",
+        "text": "The seeker shares their spiritual experiences openly."
+      },
+      {
+        "key": "C",
+        "text": "The seeker uses spiritual knowledge to help others."
+      },
+      {
+        "key": "D",
+        "text": "The seeker begins to perform that image and hides arising negative emotions."
+      }
+    ],
+    "correct": "D",
+    "explanation": "A spiritual image becomes ego when the seeker starts to 'perform that image,' hiding emotions like anger or fear to maintain the appearance of being calm, deep, or awakened. This is about protecting the image rather than embodying truth."
+  },
+  {
+    "id": 444,
+    "question": "What is the danger of turning awakening into an achievement?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It leads to genuine humility and selflessness."
+      },
+      {
+        "key": "B",
+        "text": "It makes one more compassionate towards others."
+      },
+      {
+        "key": "C",
+        "text": "It dissolves the sense of 'I' completely and effortlessly."
+      },
+      {
+        "key": "D",
+        "text": "It can become a subtle form of spiritual ego, creating division."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The text warns that turning awakening into an achievement, saying 'I am awake; others are asleep,' can be a dangerous turn. It revives the old division and sense of superiority, which is a form of spiritual ego."
+  },
+  {
+    "id": 445,
+    "question": "The practice of seeing ego is described as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "A violent act of self-annihilation."
+      },
+      {
+        "key": "B",
+        "text": "A process of intellectual analysis."
+      },
+      {
+        "key": "C",
+        "text": "A method to collect spiritual merit."
+      },
+      {
+        "key": "D",
+        "text": "The first step towards distance from ego."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter states, 'Seeing ego is the first distance from ego.' This seeing is not about destruction but about clear recognition, which naturally begins to loosen ego's hold and create space between the observer and the observed phenomenon."
+  },
+  {
+    "id": 446,
+    "question": "When ego says, 'I need respect,' what does the chapter suggest asking?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Why do I deserve respect?"
+      },
+      {
+        "key": "B",
+        "text": "How can I get respect from others?"
+      },
+      {
+        "key": "C",
+        "text": "Is this need for respect a sign of weakness?"
+      },
+      {
+        "key": "D",
+        "text": "Who is it that needs respect, and where is this need known?"
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter guides the seeker to inquire, 'If ego says, “I need respect,” where is that desire known?' This points towards the witness-consciousness, which knows the desire without being identified with it, thereby creating distance from the egoic demand."
+  },
+  {
+    "id": 447,
+    "question": "What is the relationship between ego and memory, as described in the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Memory is the enemy of ego."
+      },
+      {
+        "key": "B",
+        "text": "The witness erases memory to overcome ego."
+      },
+      {
+        "key": "C",
+        "text": "Memory and ego are unrelated phenomena."
+      },
+      {
+        "key": "D",
+        "text": "Ego uses memory to create a fixed identity from personal stories."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter explains that a story lives in memory, and ego turns this story into a fixed identity. For example, 'This happened to me, therefore this is who I am.' Memory provides the content for ego's narrative construction of self."
+  },
+  {
+    "id": 448,
+    "question": "The chapter uses the example of a mirror covered with dust to illustrate that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ego is inherently flawed and must be discarded."
+      },
+      {
+        "key": "B",
+        "text": "The dust (ego) is the true nature of the mirror (self)."
+      },
+      {
+        "key": "C",
+        "text": "The mirror must be broken to remove the dust."
+      },
+      {
+        "key": "D",
+        "text": "The truth (mirror) remains intact, even when obscured by ego-layers (dust)."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The analogy shows that ego-layers are like dust that obscures the clarity of truth (the mirror's reflection). However, the truth itself is not destroyed by the ego; it is merely covered. Gentle cleaning (seeing) reveals the underlying clarity."
+  },
+  {
+    "id": 449,
+    "question": "What is the role of witness-consciousness in relation to spiritual experiences?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It denies all spiritual experiences."
+      },
+      {
+        "key": "B",
+        "text": "It claims spiritual experiences as its own achievement."
+      },
+      {
+        "key": "C",
+        "text": "It creates spiritual experiences through focused will."
+      },
+      {
+        "key": "D",
+        "text": "It knows the experience without grasping it or turning it into identity."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter advises not to grasp spiritual experiences but to let the witness know them. Whatever comes and goes is an experience; the witness is that which knows even the experience itself, preventing it from becoming a fixed identity."
+  },
+  {
+    "id": 450,
+    "question": "The practice for the week encourages observing ego layers and asking 'Can I see this “I”?' What is the significance of this question?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It is a test to determine if one is truly egoless."
+      },
+      {
+        "key": "B",
+        "text": "It aims to create self-blame for having ego."
+      },
+      {
+        "key": "C",
+        "text": "It is meant to provoke a strong emotional reaction to ego."
+      },
+      {
+        "key": "D",
+        "text": "It is an invitation to witness-consciousness, fostering gentle inner cleansing."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Asking 'Can I see this “I”?' is part of the gentle observation process. If the answer is yes, the inner response 'This layer of ego is arising. It is known. I can see it' reinforces the role of witness-consciousness and promotes 'a gentle inner cleansing,' rather than self-blame or judgment."
+  }
+]

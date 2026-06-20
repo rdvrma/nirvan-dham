@@ -20,10 +20,16 @@ Each file should contain an array of question objects (or `{ "questions": [...] 
 ```json
 [
   {
-    "id": 1,
-    "question": "प्रश्न यहाँ लिखें",
-    "options": ["विकल्प A", "विकल्प B", "विकल्प C", "विकल्प D"],
-    "answer": "विकल्प A"
+    "id": 101,
+    "question": "Question text",
+    "options": [
+      { "key": "A", "text": "..." },
+      { "key": "B", "text": "..." },
+      { "key": "C", "text": "..." },
+      { "key": "D", "text": "..." }
+    ],
+    "correct": "B",
+    "explanation": "Detailed explanation grounded in the chapter."
   }
 ]
 ```

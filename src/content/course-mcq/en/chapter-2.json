@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 201,
+    "question": "According to the chapter, what is the primary shift in focus from Chapter 1 to Chapter 2 of the Nirvan Sutra course?",
+    "options": [
+      {
+        "key": "A",
+        "text": "From examining the inner world of body and mind to examining the outer world of experience."
+      },
+      {
+        "key": "B",
+        "text": "From understanding Avidya to understanding Maya."
+      },
+      {
+        "key": "C",
+        "text": "From the concept of the witness to the concept of the experiencer."
+      },
+      {
+        "key": "D",
+        "text": "From the practice of Self-Inquiry to the practice of renunciation."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Chapter 1 focused on looking inward at the body, mind, experiencer, and witness. Chapter 2 shifts this focus outward to examine the world that appears to the witness, asking if it is exactly as it appears."
+  },
+  {
+    "id": 202,
+    "question": "The chapter states that spirituality does not say, \"Deny what appears.\" Instead, it says:",
+    "options": [
+      {
+        "key": "A",
+        "text": "\"Look more deeply at what appears.\""
+      },
+      {
+        "key": "B",
+        "text": "\"Accept what appears as the final truth.\""
+      },
+      {
+        "key": "C",
+        "text": "\"Question the reality of what appears.\""
+      },
+      {
+        "key": "D",
+        "text": "\"Ignore what appears and focus on the witness.\""
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text explicitly states that spirituality encourages a deeper examination of what appears, rather than outright denial or blind acceptance. This deeper look is the beginning of spiritual inquiry."
+  },
+  {
+    "id": 203,
+    "question": "When considering the example of rain, the chapter uses it to illustrate that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The experience of the world is shaped by both external events and internal interpretation."
+      },
+      {
+        "key": "B",
+        "text": "The physical phenomenon of rain is different for everyone."
+      },
+      {
+        "key": "C",
+        "text": "Rain is a prime example of Maya, appearing differently to each person."
+      },
+      {
+        "key": "D",
+        "text": "Farmers are the only ones who truly understand the significance of rain."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The example of rain shows how the same external event (rain) leads to different internal experiences (joy for a farmer, disturbance for a traveler) due to individual factors like memory, desire, and fear. This highlights the interplay between the outer event and inner interpretation."
+  },
+  {
+    "id": 204,
+    "question": "According to the chapter, why do we not meet the world directly?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because our senses and mind act as intermediaries, filtering our experience."
+      },
+      {
+        "key": "B",
+        "text": "Because the world is an illusion created by Maya, and thus cannot be directly encountered."
+      },
+      {
+        "key": "C",
+        "text": "Because our physical bodies prevent direct contact with external reality."
+      },
+      {
+        "key": "D",
+        "text": "Because science has proven that direct perception is impossible."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text explains that we know the world through our senses (eyes, ears, skin, etc.) and the mind, which gathers and interprets these impressions. These senses and the mind have limitations, meaning we experience the world as it enters our field of perception, not directly."
+  },
+  {
+    "id": 205,
+    "question": "The chapter uses the dream example to suggest that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Experiences that feel real within a state may not be the final truth upon waking."
+      },
+      {
+        "key": "B",
+        "text": "The waking world is exactly the same as a dream."
+      },
+      {
+        "key": "C",
+        "text": "Dreams are merely imagination and have no bearing on waking reality."
+      },
+      {
+        "key": "D",
+        "text": "The fear experienced in a dream is a sign of Avidya."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The dream example illustrates that an experience can feel very real within a particular state (like dreaming), but upon waking, its status changes. This raises the question of whether the waking world, though seemingly solid, might also not be the final truth."
+  },
+  {
+    "id": 206,
+    "question": "What is the primary caution given regarding the understanding of Maya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "That understanding Maya is not about denying the world but seeing it with clarity and balance."
+      },
+      {
+        "key": "B",
+        "text": "That one must immediately reject the world as false."
+      },
+      {
+        "key": "C",
+        "text": "That one should become insensitive to the suffering of others."
+      },
+      {
+        "key": "D",
+        "text": "That Maya is a dangerous illusion that must be destroyed."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter explicitly warns against rejecting the world or becoming insensitive. Instead, it emphasizes that understanding Maya means seeing the world in its proper place, with clarity, compassion, and balance, without blind attachment or harsh denial."
+  },
+  {
+    "id": 207,
+    "question": "The chapter defines Maya as:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The power through which one non-dual truth appears as many names, forms, and experiences."
+      },
+      {
+        "key": "B",
+        "text": "The power that makes the world absolutely false and unreal."
+      },
+      {
+        "key": "C",
+        "text": "The individual's misidentification with the body-mind."
+      },
+      {
+        "key": "D",
+        "text": "The ultimate reality that underlies all existence."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The text provides a specific definition for Maya within the course lexicon: 'the power through which one non-dual truth appears as many names, forms, and experiences.' This distinguishes it from Avidya and the ultimate truth itself."
+  },
+  {
+    "id": 208,
+    "question": "Using the example of gold and ornaments, the chapter illustrates that Maya:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Shows that names and forms change, but the basic substance remains one."
+      },
+      {
+        "key": "B",
+        "text": "Means that ornaments are ultimately false and have no value."
+      },
+      {
+        "key": "C",
+        "text": "Implies that gold itself is an illusion."
+      },
+      {
+        "key": "D",
+        "text": "Suggests that different ornaments are fundamentally different substances."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The gold and ornaments example highlights how various forms (ring, necklace) are made from one substance (gold). Names and forms change, but the underlying reality (gold) remains. This illustrates Maya as the play of name and form appearing upon a deeper ground."
+  },
+  {
+    "id": 209,
+    "question": "The rainbow example is used to show that Maya:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Is beautiful and effective in experience, but not solid or final in the way it appears."
+      },
+      {
+        "key": "B",
+        "text": "Is a solid object that can be grasped."
+      },
+      {
+        "key": "C",
+        "text": "Is completely false and does not exist."
+      },
+      {
+        "key": "D",
+        "text": "Is an illusion created by the mind to deceive us."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The rainbow appears beautiful and is experienced, but it's not a solid object. It arises from a relationship between light and water. Similarly, Maya is effective and appears in experience but is not solid or final; it's a mystery of appearance."
+  },
+  {
+    "id": 210,
+    "question": "According to the chapter, why can Maya not be called fully true?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because what appears through Maya is constantly changing."
+      },
+      {
+        "key": "B",
+        "text": "Because it does not appear in experience at all."
+      },
+      {
+        "key": "C",
+        "text": "Because it is an illusion created by the senses."
+      },
+      {
+        "key": "D",
+        "text": "Because it is the ultimate reality itself."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Maya cannot be called fully true because everything that appears through it is impermanent and changing. Names, forms, experiences, and even the body change over time, indicating that they are not the final, unchanging truth."
+  },
+  {
+    "id": 211,
+    "question": "Why can Maya not be called fully false?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Because it has an effect and must be lived within."
+      },
+      {
+        "key": "B",
+        "text": "Because it is the ultimate reality."
+      },
+      {
+        "key": "C",
+        "text": "Because it is a creation of the witness."
+      },
+      {
+        "key": "D",
+        "text": "Because it is the same as Avidya."
+      }
+    ],
+    "correct": "A",
+    "explanation": "Maya cannot be called fully false because it appears in experience and has practical effects. Life must be lived within Maya; hunger arises, love arises, responsibilities exist, and these cannot be ignored. It is effective in experience."
+  },
+  {
+    "id": 212,
+    "question": "The magician's performance is used as an analogy for Maya to illustrate that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Understanding the 'method' behind Maya loosens its grip."
+      },
+      {
+        "key": "B",
+        "text": "The world is a complete illusion with no basis in reality."
+      },
+      {
+        "key": "C",
+        "text": "Magicians are the ultimate spiritual teachers."
+      },
+      {
+        "key": "D",
+        "text": "The world is exactly as it appears, like a magic trick."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The analogy suggests that while a magician's trick is astonishing when not understood, knowing the method behind it changes the viewer's perception. Similarly, understanding Maya, rather than just being astonished by the world, loosens its grip."
+  },
+  {
+    "id": 213,
+    "question": "In practical life, understanding Maya means:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Recognizing unity inwardly while respecting practical differences in behavior."
+      },
+      {
+        "key": "B",
+        "text": "Erasing all practical differences and responsibilities."
+      },
+      {
+        "key": "C",
+        "text": "Becoming indifferent to the needs of others."
+      },
+      {
+        "key": "D",
+        "text": "Abandoning worldly duties and seeking isolation."
+      }
+    ],
+    "correct": "A",
+    "explanation": "The chapter emphasizes a balance: recognizing unity inwardly while maintaining clear action, responsibility, and respect for practical differences in behavior. It's about living responsibly without creating inner bondage."
+  },
+  {
+    "id": 214,
+    "question": "The chapter clarifies that Maya is not a fault but a doorway because:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya is the ultimate truth that allows us to see the ground beyond it."
+      },
+      {
+        "key": "B",
+        "text": "Without Maya, the world would not appear, and thus the path of practice would not exist."
+      },
+      {
+        "key": "C",
+        "text": "Maya is the canvas upon which the painter creates the world."
+      },
+      {
+        "key": "D",
+        "text": "Maya is the force that binds us to the ultimate reality."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Maya is described as a doorway because it is the very field of appearance within which practice, learning, relationships, and compassion arise. If the world did not appear, the spiritual path itself would not manifest."
+  },
+  {
+    "id": 215,
+    "question": "What is the distinction made between Maya and Avidya in this chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya is the individual's misidentification, while Avidya is the world's appearance."
+      },
+      {
+        "key": "B",
+        "text": "Maya is the arrangement of appearance at the world level, while Avidya is the individual's wrong identity with body-mind."
+      },
+      {
+        "key": "C",
+        "text": "Maya and Avidya are synonyms for the same concept."
+      },
+      {
+        "key": "D",
+        "text": "Maya refers to the witness, and Avidya refers to the experiencer."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter defines Maya as the world-level appearance of one truth as many, and Avidya as the individual-level misidentification with the body-mind. Maya is the stage, and Avidya is the actor's mistaken belief about who they are on that stage."
+  },
+  {
+    "id": 216,
+    "question": "How does the understanding of Maya change life, according to the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Outward circumstances change dramatically, leading to escape from the world."
+      },
+      {
+        "key": "B",
+        "text": "The way of seeing changes, leading to less inner bondage and more awareness within life."
+      },
+      {
+        "key": "C",
+        "text": "Life becomes completely predictable and free from all challenges."
+      },
+      {
+        "key": "D",
+        "text": "The understanding of Maya makes one indifferent to all events."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that while outward circumstances may not change immediately, the way of seeing shifts. This leads to a loosening of the grip of the world, increased awareness, and less inner bondage, allowing one to be awake within life."
+  },
+  {
+    "id": 217,
+    "question": "The common misunderstanding that the world is a 'lie' is corrected by understanding that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The world is indeed a lie and has no practical importance."
+      },
+      {
+        "key": "B",
+        "text": "The world is experienced, has practical importance, but is not final and unchanging."
+      },
+      {
+        "key": "C",
+        "text": "Only the ultimate truth is real; everything else is a lie."
+      },
+      {
+        "key": "D",
+        "text": "The world is a lie, but we must pretend it is real for practical purposes."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter clarifies that the world is not a lie but is impermanent, changing, and unstable. It is present in experience and has practical importance, but it should not be treated as a final, independent truth."
+  },
+  {
+    "id": 218,
+    "question": "How can spiritual practice and daily life move together according to the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "By abandoning daily life and focusing solely on spiritual practice."
+      },
+      {
+        "key": "B",
+        "text": "By recognizing that success and failure, joy and sorrow, are changing events within Maya, not defining one's final nature."
+      },
+      {
+        "key": "C",
+        "text": "By treating all worldly responsibilities as unimportant illusions."
+      },
+      {
+        "key": "D",
+        "text": "By ensuring that all daily actions lead to immediate spiritual realization."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter suggests that one can engage fully in daily life and responsibilities while inwardly remembering that events and emotions are changing aspects of Maya. This understanding prevents complete collapse during failure or excessive ego inflation during success."
+  },
+  {
+    "id": 219,
+    "question": "True understanding of Maya, according to the chapter, does not reduce compassion but:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Makes one indifferent to the suffering of others."
+      },
+      {
+        "key": "B",
+        "text": "Deepens compassion by softening the hard walls of separation."
+      },
+      {
+        "key": "C",
+        "text": "Replaces compassion with intellectual understanding."
+      },
+      {
+        "key": "D",
+        "text": "Leads to pity for those caught in Maya."
+      }
+    ],
+    "correct": "B",
+    "explanation": "When the hardness of separation softens due to recognizing the underlying unity, compassion arises naturally. Seeing another's pain as familiar, rather than completely alien, fosters a deeper connection and willingness to help."
+  },
+  {
+    "id": 220,
+    "question": "The chapter advises that if injustice is happening, a seeker should:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Say 'It is all Maya' and walk away."
+      },
+      {
+        "key": "B",
+        "text": "Stand with truth and act appropriately within practical life, while inwardly remembering the changing nature of events."
+      },
+      {
+        "key": "C",
+        "text": "Tolerate it blindly, as it is part of the world's play."
+      },
+      {
+        "key": "D",
+        "text": "Become angry and try to destroy the source of injustice."
+      }
+    ],
+    "correct": "B",
+    "explanation": "Understanding Maya does not mean tolerating injustice. It means acting with responsibility and truth in practical life (dharma) while inwardly not getting bound by the event or the reaction, recognizing it as part of the changing play of name and form."
+  },
+  {
+    "id": 221,
+    "question": "What is the balance to be maintained regarding understanding Maya?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Unity in behavior and difference in understanding."
+      },
+      {
+        "key": "B",
+        "text": "Difference in behavior and unity in understanding."
+      },
+      {
+        "key": "C",
+        "text": "Complete unity in both behavior and understanding."
+      },
+      {
+        "key": "D",
+        "text": "Complete difference in both behavior and understanding."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter stresses maintaining unity in understanding (recognizing the deeper ground) while acting with clear action, responsibility, and respect for practical differences in behavior. This is the mature way to live within Maya."
+  },
+  {
+    "id": 222,
+    "question": "How does understanding Maya loosen the grip of the world?",
+    "options": [
+      {
+        "key": "A",
+        "text": "By making the world disappear entirely."
+      },
+      {
+        "key": "B",
+        "text": "By allowing space for awareness that experiences are not the final truth."
+      },
+      {
+        "key": "C",
+        "text": "By making the seeker insensitive to all external events."
+      },
+      {
+        "key": "D",
+        "text": "By creating a complete detachment from all relationships."
+      }
+    ],
+    "correct": "B",
+    "explanation": "When the grip loosens, it means that while pain or joy may still arise, there is an inner space to see that these are changing waves and not the final truth of one's existence. This brings a soft freedom and increased awareness."
+  },
+  {
+    "id": 223,
+    "question": "The chapter summarizes that the world feels real, but different people experience it differently because:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The world itself changes constantly for each person."
+      },
+      {
+        "key": "B",
+        "text": "Senses and mind, along with memory and viewpoint, participate in shaping experience."
+      },
+      {
+        "key": "C",
+        "text": "Only the witness truly perceives the world accurately."
+      },
+      {
+        "key": "D",
+        "text": "Maya directly alters individual perception."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter highlights that the experience of the world is not solely determined by external factors. Our senses, mind, past experiences, desires, and fears all play a role in how we perceive and interpret events, leading to varied experiences of the same external reality."
+  },
+  {
+    "id": 224,
+    "question": "What is the relationship between the witness and Maya, as described towards the end of the chapter?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness creates Maya, and Maya hides the witness."
+      },
+      {
+        "key": "B",
+        "text": "Maya makes the world appear, and the witness knows the world."
+      },
+      {
+        "key": "C",
+        "text": "The witness is a part of Maya, and Maya is the ultimate truth."
+      },
+      {
+        "key": "D",
+        "text": "The witness is indifferent to Maya, while Maya is the only reality."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The chapter concludes by stating that Maya makes the world appear, and the witness knows the world. The seeker's journey involves living in the appearing world without forgetting the knowing presence of the witness."
+  },
+  {
+    "id": 225,
+    "question": "The practice for today suggests asking about an object or event: 'In this experience, how much is the outer object, and how much is memory, preference, dislike, or meaning added by my mind?' This question aims to help the seeker:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Determine the objective reality of the object."
+      },
+      {
+        "key": "B",
+        "text": "See the interplay between external appearance and internal interpretation."
+      },
+      {
+        "key": "C",
+        "text": "Identify the limitations of their senses."
+      },
+      {
+        "key": "D",
+        "text": "Understand the ultimate truth behind Maya."
+      }
+    ],
+    "correct": "B",
+    "explanation": "This question is designed to encourage a gentle inquiry into how much of the perceived experience is due to the external object itself and how much is contributed by the mind's internal processes like memory, preferences, and added meanings. This is a key step in understanding Maya."
+  },
+  {
+    "id": 226,
+    "question": "The chapter emphasizes that understanding Maya is not about leaving the world, but about:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Escaping from all responsibilities and relationships."
+      },
+      {
+        "key": "B",
+        "text": "Living in the world with more clarity, compassion, and balance."
+      },
+      {
+        "key": "C",
+        "text": "Denying the existence of the world and its experiences."
+      },
+      {
+        "key": "D",
+        "text": "Becoming completely detached and indifferent to life."
+      }
+    ],
+    "correct": "B",
+    "explanation": "The text explicitly states that understanding Maya is an invitation to live in the world with enhanced clarity, compassion, and balance, not to abandon it. It's about seeing life with deeper vision."
+  },
+  {
+    "id": 227,
+    "question": "When a seeker hears 'Everything is Maya,' the mind might wrongly conclude that relationships and work are false. The correct understanding is that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Relationships and work are indeed false and should be ignored."
+      },
+      {
+        "key": "B",
+        "text": "Only the ultimate truth is real; Maya means everything else is a lie."
+      },
+      {
+        "key": "C",
+        "text": "While relationships and work have practical importance and are experienced, they are not the final, unchanging truth."
+      },
+      {
+        "key": "D",
+        "text": "Relationships and work are real only if they are permanent."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter corrects the misunderstanding that Maya means the world is a lie. Instead, it emphasizes that the world is experienced, has practical importance, but is impermanent and changing, thus not the final truth."
+  },
+  {
+    "id": 228,
+    "question": "The practice for this week involves pausing when an event happens and asking: 'In practical life, what responsibility must be fulfilled, and inwardly what grip can be loosened?' This suggests:",
+    "options": [
+      {
+        "key": "A",
+        "text": "That responsibilities are illusions and should be abandoned."
+      },
+      {
+        "key": "B",
+        "text": "That one must choose between fulfilling responsibilities and loosening inner grip."
+      },
+      {
+        "key": "C",
+        "text": "That it is possible to act responsibly while reducing inner bondage."
+      },
+      {
+        "key": "D",
+        "text": "That loosening the inner grip means becoming passive in practical life."
+      }
+    ],
+    "correct": "C",
+    "explanation": "This practice encourages fulfilling necessary responsibilities in practical life while simultaneously working to loosen the inner grip of attachment or aversion to the outcomes. It's about integrating practice within daily actions."
+  },
+  {
+    "id": 229,
+    "question": "The chapter uses the example of a painter and a canvas to explain Maya. The painting represents:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The ultimate truth."
+      },
+      {
+        "key": "B",
+        "text": "The ground upon which everything appears."
+      },
+      {
+        "key": "C",
+        "text": "The play of name and form appearing in experience."
+      },
+      {
+        "key": "D",
+        "text": "The viewer's mind."
+      }
+    ],
+    "correct": "C",
+    "explanation": "In the analogy, the painting, with its mountains, rivers, and people, represents the various names and forms that appear in the world of experience. The canvas, on the other hand, represents the deeper ground upon which these appearances manifest."
+  },
+  {
+    "id": 230,
+    "question": "What is the practical effect of understanding Maya on a seeker's response to insults?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The seeker becomes completely immune to insults and feels no pain."
+      },
+      {
+        "key": "B",
+        "text": "The seeker immediately retaliates with anger."
+      },
+      {
+        "key": "C",
+        "text": "The seeker may still feel pain, but recognizes it as a changing wave in the mind, not their final identity."
+      },
+      {
+        "key": "D",
+        "text": "The seeker stops interacting with people to avoid insults."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Understanding Maya loosens the grip by allowing the seeker to see that even painful experiences like insults are temporary waves in the mind and part of the changing play of name and form, rather than a definitive statement about their core being."
+  },
+  {
+    "id": 231,
+    "question": "The chapter states that the world is not a lie, but it is:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Permanent and unchanging."
+      },
+      {
+        "key": "B",
+        "text": "Solid and independent."
+      },
+      {
+        "key": "C",
+        "text": "Changing, passing, and unstable."
+      },
+      {
+        "key": "D",
+        "text": "An illusion created solely by the mind."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The chapter explicitly corrects the misunderstanding of the world being a 'lie.' Instead, it clarifies that the world is impermanent, changing, passing, and unstable, which is why it cannot be treated as the final, unmoving truth."
+  },
+  {
+    "id": 232,
+    "question": "What is the purpose of the 'Practice for Today' which asks the seeker to look at an object or event and ask questions about its appearance?",
+    "options": [
+      {
+        "key": "A",
+        "text": "To memorize the properties of the object."
+      },
+      {
+        "key": "B",
+        "text": "To prove that the object is not real."
+      },
+      {
+        "key": "C",
+        "text": "To begin seeing the world as if for the first time, by questioning its immediate appearance."
+      },
+      {
+        "key": "D",
+        "text": "To understand the scientific principles behind the object's existence."
+      }
+    ],
+    "correct": "C",
+    "explanation": "The practice aims to gently encourage the seeker to look freshly at ordinary things, questioning how they appear and how much of that appearance is shaped by the mind's additions. This process helps in seeing the world anew, beyond its immediate, unquestioned presentation."
+  },
+  {
+    "id": 233,
+    "question": "The chapter suggests that understanding Maya does not create indifference but rather:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Leads to a complete withdrawal from all interactions."
+      },
+      {
+        "key": "B",
+        "text": "Makes one believe that suffering is not real."
+      },
+      {
+        "key": "C",
+        "text": "Softens the hard walls of separation and fosters compassion."
+      },
+      {
+        "key": "D",
+        "text": "Encourages a detached observation without any emotional response."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Contrary to the idea that understanding Maya leads to indifference, the chapter explains that it actually deepens compassion. By recognizing the underlying unity, the sense of separation softens, allowing for a more empathetic connection with others' experiences."
+  },
+  {
+    "id": 234,
+    "question": "When considering 'my house' versus 'your house,' the chapter uses this example to show that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Ownership is the ultimate reality."
+      },
+      {
+        "key": "B",
+        "text": "Practical differences are illusions that should be ignored."
+      },
+      {
+        "key": "C",
+        "text": "While names and ownership create practical distinctions, the underlying substance (materials) is common."
+      },
+      {
+        "key": "D",
+        "text": "The concept of 'house' is fundamentally different for each person."
+      }
+    ],
+    "correct": "C",
+    "explanation": "This example illustrates the play of name and form. While 'my house' and 'your house' are necessary distinctions in practical life, the underlying materials are similar. This shows how names and forms create differences, but a deeper view reveals commonality."
+  },
+  {
+    "id": 235,
+    "question": "The chapter states that the world is 'present in experience, but it is not the final truth.' This implies that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The world is unreal and should be disregarded."
+      },
+      {
+        "key": "B",
+        "text": "The world is real only when it is permanent."
+      },
+      {
+        "key": "C",
+        "text": "The world has a functional reality within experience but lacks ultimate, unchanging existence."
+      },
+      {
+        "key": "D",
+        "text": "The final truth is the world itself."
+      }
+    ],
+    "correct": "C",
+    "explanation": "This statement highlights the dual nature of Maya: it is experienced and has practical effects, but because it is changing and impermanent, it cannot be considered the ultimate, unchanging truth. It exists within the realm of appearance."
+  },
+  {
+    "id": 236,
+    "question": "In the context of Maya, what does the chapter mean by 'living awake within the world'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Constantly being aware of every detail of the external environment."
+      },
+      {
+        "key": "B",
+        "text": "Escaping the world to achieve a state of pure consciousness."
+      },
+      {
+        "key": "C",
+        "text": "Fulfilling responsibilities while inwardly remembering the changing nature of phenomena and not being bound by them."
+      },
+      {
+        "key": "D",
+        "text": "Denying all experiences as unreal."
+      }
+    ],
+    "correct": "C",
+    "explanation": "Living awake within the world means engaging fully with life's responsibilities and experiences, but doing so with an inner awareness that these are changing appearances. It's about not being blindly bound by them, maintaining a connection to the deeper reality."
+  },
+  {
+    "id": 237,
+    "question": "The chapter uses the example of a job or business to illustrate that spiritual practice and daily life can move together. If a result is unexpected, a seeker with understanding of Maya:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Collapses completely, believing their worth is lost."
+      },
+      {
+        "key": "B",
+        "text": "Blames others for the unexpected outcome."
+      },
+      {
+        "key": "C",
+        "text": "Sees the result as a changing event in name and form, not defining their final nature."
+      },
+      {
+        "key": "D",
+        "text": "Stops working altogether, deeming the effort futile."
+      }
+    ],
+    "correct": "C",
+    "explanation": "When faced with unexpected results, a seeker with understanding of Maya can pause and recognize that success and failure belong to the field of name and form. This prevents them from collapsing inwardly, even as they learn from the experience and continue responsible action."
+  },
+  {
+    "id": 238,
+    "question": "The chapter states that the witness 'knows the world.' This implies:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The witness is the creator of the world."
+      },
+      {
+        "key": "B",
+        "text": "The witness is separate from the world and observes it without any interaction."
+      },
+      {
+        "key": "C",
+        "text": "The witness is the experiencer of all phenomena within Maya."
+      },
+      {
+        "key": "D",
+        "text": "The witness is identical to Maya."
+      }
+    ],
+    "correct": "C",
+    "explanation": "While the witness is the quiet knowing presence, it is also described as 'knowing the world.' This means it is aware of the world's appearance and events, serving as the underlying consciousness in which Maya unfolds and is known."
+  },
+  {
+    "id": 239,
+    "question": "What is the central message of the 'Closing' section regarding the world?",
+    "options": [
+      {
+        "key": "A",
+        "text": "The world is beautiful but ultimately a lie that must be escaped."
+      },
+      {
+        "key": "B",
+        "text": "The world is permanent and unchanging, offering the final truth."
+      },
+      {
+        "key": "C",
+        "text": "The world is inherently evil and must be destroyed."
+      },
+      {
+        "key": "D",
+        "text": "The world is to be lived with love, responsibility, and compassion, without being bound by its changing grip."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The closing section reiterates that the world is beautiful and not to be denied. It should be lived with love, responsibility, and compassion, while inwardly remembering its changing nature and maintaining inner freedom by not being bound by its grip."
+  },
+  {
+    "id": 240,
+    "question": "The chapter's subtitle, 'Is the world exactly as it appears?', directly leads to the exploration of:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The nature of the witness."
+      },
+      {
+        "key": "B",
+        "text": "The practice of Self-Inquiry."
+      },
+      {
+        "key": "C",
+        "text": "The definition of Avidya."
+      },
+      {
+        "key": "D",
+        "text": "The concept of Maya and the appearance of the world."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The central question of the chapter directly probes the nature of the world's appearance, setting the stage for an examination of Maya, which explains how the one truth appears as many forms and experiences, and whether this appearance is the final reality."
+  },
+  {
+    "id": 241,
+    "question": "When observing a cup, the practice asks: 'The name is cup, the form is cup-like, but what is the substance?' This question is intended to help the seeker:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Identify the brand of the cup."
+      },
+      {
+        "key": "B",
+        "text": "Determine the cup's practical use."
+      },
+      {
+        "key": "C",
+        "text": "Understand the manufacturing process of the cup."
+      },
+      {
+        "key": "D",
+        "text": "Recognize the play of name and form versus the underlying ground."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This practice encourages the seeker to look beyond the given name ('cup') and form to consider the underlying substance from which it is made. This is a direct application of understanding Maya as the appearance of name and form upon a deeper ground."
+  },
+  {
+    "id": 242,
+    "question": "The chapter states, 'Spirituality does not teach escape from the world. It teaches right seeing of the world.' This means:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Spiritual seekers must live in isolation from society."
+      },
+      {
+        "key": "B",
+        "text": "The world is inherently flawed and must be rejected."
+      },
+      {
+        "key": "C",
+        "text": "Spiritual practice is only possible outside the world."
+      },
+      {
+        "key": "D",
+        "text": "The goal is to transcend the world by understanding its nature, not by abandoning it."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This statement clarifies that spirituality is not about renouncing the world but about transforming one's perception of it. Right seeing involves understanding its nature (Maya) and living within it with clarity and balance, rather than escaping it."
+  },
+  {
+    "id": 243,
+    "question": "The phrase 'Maya is effective in experience, but it is not the final truth' suggests that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya is a complete illusion with no reality."
+      },
+      {
+        "key": "B",
+        "text": "The final truth is Maya itself."
+      },
+      {
+        "key": "C",
+        "text": "Experience is separate from Maya."
+      },
+      {
+        "key": "D",
+        "text": "The world has a functional reality within our experience but is not the ultimate, unchanging reality."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This core statement defines Maya's nature: it has a real effect and is experienced, making it functionally important. However, because it is changing and impermanent, it cannot be the final, absolute truth. It is the appearance of truth."
+  },
+  {
+    "id": 244,
+    "question": "When the chapter mentions that 'the mind gives that experience a name, a meaning, and a story,' it is explaining how:",
+    "options": [
+      {
+        "key": "A",
+        "text": "The senses directly perceive reality."
+      },
+      {
+        "key": "B",
+        "text": "The ultimate truth is revealed."
+      },
+      {
+        "key": "C",
+        "text": "Maya operates independently of the mind."
+      },
+      {
+        "key": "D",
+        "text": "Our personal world is constructed from sensory impressions and mental interpretation."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This highlights the role of the mind in processing sensory input. The mind takes raw impressions, assigns names, meanings, and narratives, thereby constructing 'my world.' This process is central to how experience is formed and how Maya manifests individually."
+  },
+  {
+    "id": 245,
+    "question": "The chapter uses the example of 'my country' and 'your country' to show that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "National boundaries are the ultimate reality."
+      },
+      {
+        "key": "B",
+        "text": "National differences are illusions that should be ignored."
+      },
+      {
+        "key": "C",
+        "text": "The concept of 'country' is inherently false."
+      },
+      {
+        "key": "D",
+        "text": "While practical distinctions like nationality are necessary for society, from a deeper view, the earth and humanity are one."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This example illustrates that while practical distinctions (like national borders) are needed for societal functioning, a deeper perspective reveals a common ground (one earth, one humanity). Understanding Maya involves holding both the practical necessity of difference and the deeper recognition of unity."
+  },
+  {
+    "id": 246,
+    "question": "What is the significance of the statement, 'The world is beautiful. ... But the world changes.'?",
+    "options": [
+      {
+        "key": "A",
+        "text": "It suggests that beauty is only found in permanent things."
+      },
+      {
+        "key": "B",
+        "text": "It implies that change negates beauty."
+      },
+      {
+        "key": "C",
+        "text": "It means the world is beautiful only when it is not changing."
+      },
+      {
+        "key": "D",
+        "text": "It balances appreciation for the world's experiences with the understanding of its impermanence."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This statement captures the essence of understanding Maya. It acknowledges the beauty and richness of the world's experiences (colors, relationships, love) while simultaneously reminding the seeker that these are transient. This balanced view prevents both blind attachment and harsh denial."
+  },
+  {
+    "id": 247,
+    "question": "The chapter's approach to Maya is described as 'middle clarity.' This means:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Accepting Maya as either fully true or fully false."
+      },
+      {
+        "key": "B",
+        "text": "Ignoring Maya altogether."
+      },
+      {
+        "key": "C",
+        "text": "Believing Maya is a complete illusion."
+      },
+      {
+        "key": "D",
+        "text": "Finding a path between blind attachment and harsh denial."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The 'middle clarity' refers to understanding Maya as appearing and effective, yet not final. It's a balanced perspective that avoids the extremes of either taking the world as the absolute truth (blind attachment) or denying its existence and effect (harsh denial)."
+  },
+  {
+    "id": 248,
+    "question": "The practice of asking 'Am I seeing this person through name, role, and old memory, or am I seeing freshly?' is aimed at:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Judging the person's character."
+      },
+      {
+        "key": "B",
+        "text": "Confirming the person's identity and role."
+      },
+      {
+        "key": "C",
+        "text": "Determining if the person is real."
+      },
+      {
+        "key": "D",
+        "text": "Identifying the limitations of one's own perception and biases."
+      }
+    ],
+    "correct": "D",
+    "explanation": "This question encourages introspection about how one perceives others. It prompts the seeker to examine if their view is colored by pre-conceived notions, past experiences, or labels (name, role, memory), rather than a fresh, unbiased observation."
+  },
+  {
+    "id": 249,
+    "question": "The statement 'Maya is not magic in the ordinary sense, but this example helps us understand' suggests that:",
+    "options": [
+      {
+        "key": "A",
+        "text": "Maya is a literal trick performed by an external entity."
+      },
+      {
+        "key": "B",
+        "text": "Magic is the true nature of reality."
+      },
+      {
+        "key": "C",
+        "text": "Maya is a concept that cannot be understood through analogies."
+      },
+      {
+        "key": "D",
+        "text": "The analogy of magic helps illustrate how Maya operates, even if it's not identical to stage magic."
+      }
+    ],
+    "correct": "D",
+    "explanation": "The chapter uses the magician's performance as an analogy to illustrate how Maya functions: something appears surprising and real until the underlying method is understood, at which point its grip loosens. It's not literal magic, but the principle of appearance and understanding is similar."
+  },
+  {
+    "id": 250,
+    "question": "The transition to the next chapter, 'Witness-Attitude in Depth,' is motivated by the need to understand:",
+    "options": [
+      {
+        "key": "A",
+        "text": "How to escape Maya completely."
+      },
+      {
+        "key": "B",
+        "text": "The ultimate nature of the world as Maya."
+      },
+      {
+        "key": "C",
+        "text": "The difference between Maya and Avidya."
+      },
+      {
+        "key": "D",
+        "text": "How to maintain the witness-attitude while living amidst Maya."
+      }
+    ],
+    "correct": "D",
+    "explanation": "Having explored the nature of Maya and the world's appearance, the natural next step is to integrate this understanding with the concept of the witness. The next chapter focuses on how to embody the witness-attitude continuously, even while engaged in the activities of life within Maya."
+  }
+]

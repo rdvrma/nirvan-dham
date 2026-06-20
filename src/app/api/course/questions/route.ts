@@ -9,12 +9,17 @@ import { join } from 'path';
 type CourseLang = 'hi' | 'en' | 'hl';
 const VALID_LANGS: CourseLang[] = ['hi', 'en', 'hl'];
 
+export interface McqOption {
+  key: 'A' | 'B' | 'C' | 'D';
+  text: string;
+}
+
 export interface McqQuestion {
-  id: number | string;
+  id: number;
   question: string;
-  options: string[];
-  answer: string;
-  [key: string]: unknown;
+  options: McqOption[];
+  correct: 'A' | 'B' | 'C' | 'D';
+  explanation: string;
 }
 
 /** Fisher-Yates shuffle (returns a new array) */
