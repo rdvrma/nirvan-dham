@@ -202,21 +202,7 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
                       {hi ? 'पढ़ने का तरीका चुनें' : 'Choose how to read'}
                     </p>
                     <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-                      {/* Book Style */}
-                      <Link
-                        href={`/library/${book.slug}/read`}
-                        style={readModeCard('book')}
-                      >
-                        <span style={{ fontSize: '1.6rem', display: 'block', marginBottom: '0.5rem' }}>📖</span>
-                        <strong style={{ display: 'block', fontSize: '0.88rem', marginBottom: '0.25rem', fontWeight: 700 }}>
-                          {hi ? 'बुक स्टाइल' : 'Book Style'}
-                        </strong>
-                        <span style={{ fontSize: '0.72rem', opacity: 0.62, lineHeight: 1.5 }}>
-                          {hi ? 'पन्ने पलटते हुए पढ़ें' : 'Flip pages like a real book'}
-                        </span>
-                      </Link>
-
-                      {/* Blog Style */}
+                      {/* Blog Style — shown first */}
                       <Link
                         href={`/library/${book.slug}/read?mode=blog`}
                         style={readModeCard('blog')}
@@ -227,6 +213,20 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
                         </strong>
                         <span style={{ fontSize: '0.72rem', opacity: 0.62, lineHeight: 1.5 }}>
                           {hi ? 'स्क्रॉल करें · लाइट/डार्क · फ़ॉन्ट साइज़' : 'Scroll · Light/Dark · Font size'}
+                        </span>
+                      </Link>
+
+                      {/* Book Style — shown second */}
+                      <Link
+                        href={`/library/${book.slug}/read`}
+                        style={readModeCard('book')}
+                      >
+                        <span style={{ fontSize: '1.6rem', display: 'block', marginBottom: '0.5rem' }}>📖</span>
+                        <strong style={{ display: 'block', fontSize: '0.88rem', marginBottom: '0.25rem', fontWeight: 700 }}>
+                          {hi ? 'बुक स्टाइल' : 'Book Style'}
+                        </strong>
+                        <span style={{ fontSize: '0.72rem', opacity: 0.62, lineHeight: 1.5 }}>
+                          {hi ? 'पन्ने पलटते हुए पढ़ें' : 'Flip pages like a real book'}
                         </span>
                       </Link>
                     </div>

@@ -848,21 +848,22 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
             display: block;
             position: absolute;
             inset: 0;
-            pointer-events: none;
+            pointer-events: none; /* transparent to taps EXCEPT children below */
             z-index: 35;
           }
 
           .mobile-reader-tap-zone {
             position: absolute;
-            top: 0.75rem;
-            bottom: calc(6.25rem + env(safe-area-inset-bottom));
-            width: min(18vw, 82px);
+            top: 0;
+            bottom: 0;
+            width: min(22vw, 96px);
             border: 0;
             padding: 0;
             background: transparent;
             opacity: 0;
-            pointer-events: auto;
+            pointer-events: auto !important;
             touch-action: manipulation;
+            cursor: pointer;
           }
 
           .mobile-reader-tap-zone:disabled {

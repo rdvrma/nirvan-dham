@@ -140,7 +140,7 @@ export default function EbookReader({ pdfUrl, title, author, onClose, downloadUr
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [scale, setScale] = useState(1.4);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const [flipState, setFlipState] = useState<'idle' | 'flipping-next' | 'flipping-prev'>('idle');
   const [pageInput, setPageInput] = useState('1');
@@ -322,9 +322,14 @@ export default function EbookReader({ pdfUrl, title, author, onClose, downloadUr
       {/* ── Book Stage ── */}
       <div
         style={{
-          flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center',
-          padding: '5rem 1rem 4.5rem',
-          overflow: 'auto',
+          flex: 1, display: 'flex', alignItems: 'flex-start', justifyContent: 'center',
+          paddingTop: '5rem',
+          paddingBottom: '5rem',
+          paddingLeft: '1rem',
+          paddingRight: '1rem',
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          WebkitOverflowScrolling: 'touch',
         }}
       >
         {loading && (
