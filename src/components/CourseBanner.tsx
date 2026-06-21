@@ -161,14 +161,13 @@ function FullBanner({ hi }: { hi: boolean }) {
 
           {/* Headline */}
           <h2 style={{
-            fontFamily: 'var(--font-cormorant)',
+            fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
             fontSize: 'clamp(2.4rem, 5vw, 4.5rem)',
             fontWeight: hi ? 600 : 300,
             fontStyle: hi ? 'normal' : 'italic',
             lineHeight: 1.05,
             color: 'var(--c-ivory)',
             marginBottom: '1.25rem',
-            fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
           } as React.CSSProperties}>
             {hi ? 'आप कौन हैं?' : 'Who are you?'}
           </h2>
