@@ -71,7 +71,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
   const navLinks = [
     { href: '/', label: lang === 'hi' ? 'मुख्य पृष्ठ' : 'Home' },
     { href: '/nirvan-sutra', label: lang === 'hi' ? 'निर्वाण सूत्र' : 'Nirvan Sutra' },
-    { href: '/nirvan-shakti-snan-sadhna', label: lang === 'hi' ? 'शक्ति स्नान' : 'Shakti Snan' },
+    // { href: '/nirvan-shakti-snan-sadhna', label: lang === 'hi' ? 'शक्ति स्नान' : 'Shakti Snan' }, // Hidden temporarily
     { href: '/library', label: lang === 'hi' ? 'पुस्तकालय' : 'Library' },
     { href: '/guided-meditation', label: lang === 'hi' ? 'ध्यान मार्गदर्शन' : 'Guided Meditation' },
     { href: '/bodhgaya-samvad', label: lang === 'hi' ? 'बोधगया संवाद' : 'Bodhgaya Samvad' },
@@ -280,7 +280,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
       <div
         className="md:hidden overflow-hidden transition-all duration-400"
         style={{
-          maxHeight: menuOpen ? '520px' : '0',
+          maxHeight: menuOpen ? '480px' : '0',
           background: 'rgba(8,15,10,0.97)',
           backdropFilter: 'blur(20px)',
           borderTop: '1px solid rgba(212,168,67,0.08)',
