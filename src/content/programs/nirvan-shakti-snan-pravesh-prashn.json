@@ -1,0 +1,70 @@
+{
+  "program": "Nirvan Shakti Snan Sadhna",
+  "language": "hi",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "category": "साधना-पृष्ठभूमि",
+      "prompt": "आपने अब तक ध्यान/साधना किस रूप में की है और कितने समय तक की है?",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q2",
+      "category": "अनुभवों की प्रकृति",
+      "prompt": "ध्यान में आपको अब तक किस प्रकार के अनुभव हुए हैं? जैसे ऊर्जा, कंपन, गर्मी, प्रकाश, रंग, आँसू, मौन, भय, शून्यता आदि।",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q3",
+      "category": "आंतरिक लक्ष्य",
+      "prompt": "इस यात्रा से आपकी मुख्य अपेक्षा क्या है? आप किस अनुभव, परिवर्तन या दिशा की तलाश में हैं?",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q4",
+      "category": "नियमितता",
+      "prompt": "क्या आप प्रतिदिन निश्चित समय पर 1 घंटे की वीडियो-कॉल ध्यान साधना में नियमित बैठने के लिए तैयार हैं?",
+      "response_type": "yes_no_with_details",
+      "required": true
+    },
+    {
+      "id": "q5",
+      "category": "स्थिरता और सुरक्षा",
+      "prompt": "आपकी वर्तमान मानसिक और भावनात्मक स्थिति कैसी है? पिछले 6 महीनों में कोई गंभीर anxiety, depression, panic, psychosis, therapy या medication रहा है?",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q6",
+      "category": "संवेदनशीलता",
+      "prompt": "क्या कभी ध्यान/साधना के दौरान कोई ऐसा अनुभव हुआ जिससे आप बहुत डर गए, अस्थिर हुए या आपकी daily life प्रभावित हुई?",
+      "response_type": "yes_no_with_details",
+      "required": true
+    },
+    {
+      "id": "q7",
+      "category": "आधारभूमि",
+      "prompt": "आपकी वर्तमान जीवन-शैली कैसी है? नींद, आहार, नशा/शराब, डिजिटल-आसक्ति और दिनचर्या के बारे में संक्षेप में लिखें।",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q8",
+      "category": "श्रद्धा और openness",
+      "prompt": "आप गुरु, देवी, मंत्र और शक्ति स्नान/शक्तिपात के प्रति कितने खुले हैं? कोई संकोच या प्रश्न हो तो लिखें।",
+      "response_type": "long_text",
+      "required": true
+    },
+    {
+      "id": "q9",
+      "category": "मंडल-योग्यता",
+      "prompt": "क्या आप group-maryada, गोपनीयता, सम्मान और अनुभवों को अहंकार-रहित ढंग से साझा करने के लिए तैयार हैं?",
+      "response_type": "yes_no_with_details",
+      "required": true
+    }
+  ]
+}

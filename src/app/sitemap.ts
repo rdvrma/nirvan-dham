@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about-aadisatv',
     '/nirvan-sutra',
+    '/nirvan-shakti-snan-sadhna',
     '/spiritual-guidance',
     '/online-samvad',
     '/bodhgaya-samvad',
