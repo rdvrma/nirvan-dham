@@ -106,20 +106,20 @@ export async function GET() {
 
   const { data: progress, error } = await supabase
     .from('user_progress')
-    .select('name, email, phone, highest_chapter_unlocked, final_test_submitted_at')
+    .select('*')
     .eq('user_id', user.id)
     .maybeSingle();
 
   if (error || !progress) {
-    return NextResponse.json({ error: 'Progress profile is unavailable. Run the Supabase SQL setup first.' }, { status: 500 });
+    return NextResponse.json({ error: 'Progress profile is unavailable. Please ensure you are logged in and have started the course.' }, { status: 500 });
   }
 
   return NextResponse.json({
     name: progress.name || user.user_metadata.name || '',
     email: progress.email || user.email || '',
     phone: progress.phone || '',
-    highestChapterUnlocked: progress.highest_chapter_unlocked,
-    submittedAt: progress.final_test_submitted_at,
+    highestChapterUnlocked: progress.highest_chapter_unlocked ?? 1,
+    submittedAt: progress.final_test_submitted_at || null,
   });
 }
 
@@ -158,13 +158,13 @@ export async function POST(request: NextRequest) {
 
   const { data: progress, error: progressError } = await supabase
     .from('user_progress')
-    .select('name, email, highest_chapter_unlocked, final_test_submitted_at')
+    .select('*')
     .eq('user_id', user.id)
     .maybeSingle();
   if (progressError || !progress) {
-    return NextResponse.json({ error: 'Progress profile is unavailable. Run the Supabase SQL setup first.' }, { status: 500 });
+    return NextResponse.json({ error: 'Progress profile is unavailable. Please ensure you are logged in.' }, { status: 500 });
   }
-  if (progress.highest_chapter_unlocked < 9) {
+  if ((progress.highest_chapter_unlocked ?? 1) < 9) {
     return NextResponse.json({ error: 'Complete and pass all eight chapter practices before taking the final test.' }, { status: 403 });
   }
   if (progress.final_test_submitted_at) {
@@ -175,41 +175,61 @@ export async function POST(request: NextRequest) {
   const email = progress.email || user.email || '';
   if (!email) return NextResponse.json({ error: 'A verified email address is required.' }, { status: 400 });
 
+  let submissionId = null;
+  let submittedAt = new Date().toISOString();
+
+  // 1. Attempt to save to Supabase
   const { data: submission, error: insertError } = await supabase
     .from('course_final_submissions')
     .insert({ user_id: user.id, language, name, email, phone, answers })
     .select('id, submitted_at')
     .single();
-  if (insertError || !submission) {
-    const alreadySubmitted = insertError?.code === '23505';
-    return NextResponse.json(
-      { error: alreadySubmitted ? 'Your final test has already been submitted.' : 'Your final test could not be saved.' },
-      { status: alreadySubmitted ? 409 : 500 },
-    );
+
+  if (insertError) {
+    // If it's a duplicate submission error, return 409
+    if (insertError.code === '23505') {
+      return NextResponse.json({ error: 'Your final test has already been submitted.' }, { status: 409 });
+    }
+    console.error('[course/submit] Could not save to DB (perhaps table is missing), proceeding to email:', insertError.message);
+  } else if (submission) {
+    submissionId = submission.id;
+    submittedAt = submission.submitted_at;
   }
 
-  const { error: updateProgressError } = await supabase
-    .from('user_progress')
-    .update({
-      phone,
-      final_test_submitted_at: submission.submitted_at,
-      shravana_completed_at: submission.submitted_at,
-    })
-    .eq('user_id', user.id);
-  if (updateProgressError) {
-    console.error('[course/submit] Progress completion update failed', updateProgressError);
+  // 2. Attempt to update progress
+  if (submissionId) {
+    const { error: updateProgressError } = await supabase
+      .from('user_progress')
+      .update({
+        phone,
+        final_test_submitted_at: submittedAt,
+        shravana_completed_at: submittedAt,
+      })
+      .eq('user_id', user.id);
+    if (updateProgressError) {
+      console.error('[course/submit] Progress completion update failed', updateProgressError);
+    }
   }
 
+  // 3. Send Email Notification
   const notification = await notifyAdmin({ name, email, phone, language, answers });
-  await supabase.rpc('update_final_submission_delivery_status', {
-    target_submission_id: submission.id,
-    target_status: notification.status,
-    target_error: notification.error ?? null,
-  });
+  
+  if (submissionId) {
+    await supabase.rpc('update_final_submission_delivery_status', {
+      target_submission_id: submissionId,
+      target_status: notification.status,
+      target_error: notification.error ?? null,
+    });
+  }
+
+  // If both database and email fail, return an error
+  if (!submissionId && notification.status !== 'sent') {
+    return NextResponse.json({ error: 'Your test could not be saved or emailed due to server configuration issues.' }, { status: 500 });
+  }
 
   return NextResponse.json({
     success: true,
-    submittedAt: submission.submitted_at,
+    submittedAt: submittedAt,
     emailStatus: notification.status,
   });
 }

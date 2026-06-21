@@ -60,26 +60,34 @@ function loadChapter(lang: string, num: number): { title: string; subtitle: stri
       };
     }
 
-    // English & Hinglish & some Hindi chapters: { metadata, sections: [{section_title/heading/title, elements/content/blocks}] }
+    // English & Hinglish & some Hindi chapters: { metadata, sections: [{section_title/heading/title, elements/content/blocks/paragraphs}] }
     const d = raw as HinglishChapter;
     const fallbackTitle = lang === 'en'
       ? `Chapter ${num}`
       : `Adhyay ${num}`;
     return {
-      title: d.metadata?.chapter_title ?? d.metadata?.title ?? raw.title ?? fallbackTitle,
+      title: d.metadata?.chapter_title ?? d.metadata?.title ?? raw.title ?? raw.chapter_title ?? fallbackTitle,
       subtitle: d.metadata?.subtitle ?? raw.subtitle ?? '',
-      sections: (d.sections ?? []).map(s => ({
+      sections: (d.sections ?? []).map((s: any) => ({
         heading: s.section_title ?? s.heading ?? s.title ?? null,
-        paragraphs: s.blocks
-          ? s.blocks
-          : s.elements 
-            ? s.elements
-                .filter(el => ['paragraph', 'text', 'p', 'body'].includes(el.type))
-                .map(el => (el.text ?? el.content ?? '').trim())
-                .filter(Boolean)
-            : s.content
-                ? s.content.split('\n\n').map(p => p.trim()).filter(Boolean)
-                : [],
+        paragraphs: Array.isArray(s.paragraphs) && s.paragraphs.length > 0
+          ? s.paragraphs
+          : s.blocks
+            ? s.blocks
+            : s.elements 
+              ? s.elements
+                  .map((el: any) => {
+                    const txt = (el.text ?? el.content ?? '').trim();
+                    if (!txt) return null;
+                    if (el.type === 'h2') return `## ${txt}`;
+                    if (el.type === 'h3') return `### ${txt}`;
+                    if (['paragraph', 'text', 'p', 'body'].includes(el.type)) return txt;
+                    return null;
+                  })
+                  .filter(Boolean)
+              : s.content
+                  ? s.content.split('\n\n').map((p: string) => p.trim()).filter(Boolean)
+                  : [],
       })),
     };
   } catch {
@@ -88,9 +96,16 @@ function loadChapter(lang: string, num: number): { title: string; subtitle: stri
 }
 
 function renderMd(text: string): string {
-  return text
+  const html = text
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/__(.*?)__/g, '<strong>$1</strong>');
+  if (html.startsWith('### ')) {
+    return `<span style="display:block;font-size:1.15em;font-weight:700;margin-top:1.5rem;color:#d4a843;">${html.slice(4)}</span>`;
+  }
+  if (html.startsWith('## ')) {
+    return `<span style="display:block;font-size:1.35em;font-weight:700;margin-top:2rem;margin-bottom:0.5rem;color:#f5edd8;border-bottom:1px solid rgba(212,168,67,0.2);padding-bottom:0.5rem;">${html.slice(3)}</span>`;
+  }
+  return html;
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
