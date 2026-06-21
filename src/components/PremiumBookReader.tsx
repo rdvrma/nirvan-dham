@@ -61,6 +61,7 @@ interface FlipBookApi {
     flipNext: (corner?: 'top' | 'bottom') => void;
     flipPrev: (corner?: 'top' | 'bottom') => void;
     turnToPage: (pageIndex: number) => void;
+    getCurrentPageIndex: () => number;
   };
 }
 
@@ -96,6 +97,8 @@ const IMAGE_ZOOM_STEP = 0.15;
 
 export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBookReaderProps) {
   const flipRef = useRef<FlipBookApi | null>(null);
+  const navigationTimerRef = useRef<number | null>(null);
+  const pendingPageRef = useRef<number | null>(null);
   const manuscript = useMemo(() => getBookManuscript(book.slug), [book.slug]);
   const manuscriptPages = useMemo(() => manuscript ? buildManuscriptPages(manuscript) : [], [manuscript]);
   const mode: ReaderMode = manuscript ? 'manuscript' : (book.pageImages?.length ? 'image' : 'pdf');
@@ -103,7 +106,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
   const [pdfDoc, setPdfDoc] = useState<PdfDocument | null>(null);
   const [loading, setLoading] = useState(mode === 'pdf');
   const [error, setError] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(() => Math.max(1, Math.round(initialPage) || 1));
   const [theme, setTheme] = useState<ReaderTheme>('dark');
   const [view, setView] = useState<ReaderView>('flip');
   const [fontScale, setFontScale] = useState(1);
@@ -156,8 +159,12 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
 
     if (mode === 'manuscript' || mode === 'image') {
       setLoading(false);
-      setCurrentPage(clampPage(initialPage || storedPage || 1, immediateTotal));
-      return;
+      const targetPage = clampPage(initialPage || storedPage || 1, immediateTotal);
+      setCurrentPage(targetPage);
+      const frame = window.requestAnimationFrame(() => {
+        flipRef.current?.pageFlip().turnToPage(targetPage - 1);
+      });
+      return () => window.cancelAnimationFrame(frame);
     }
 
     let cancelled = false;
@@ -235,23 +242,54 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
 
   const turnToPage = useCallback((page: number) => {
     const safePage = clampPage(page, totalPages);
+    if (navigationTimerRef.current !== null) {
+      window.clearTimeout(navigationTimerRef.current);
+      navigationTimerRef.current = null;
+    }
+    pendingPageRef.current = null;
     flipRef.current?.pageFlip().turnToPage(safePage - 1);
     syncPage(safePage);
   }, [syncPage, totalPages]);
 
-  const goNext = useCallback(() => {
-    if (currentPage >= totalPages) return;
-    const nextPage = currentPage + 1;
-    flipRef.current?.pageFlip().flipNext('bottom');
-    window.setTimeout(() => syncPage(nextPage), 920);
-  }, [currentPage, syncPage, totalPages]);
+  const navigateAdjacent = useCallback((direction: 'next' | 'prev') => {
+    if (pendingPageRef.current !== null) return;
 
-  const goPrev = useCallback(() => {
-    if (currentPage <= 1) return;
-    const previousPage = currentPage - 1;
-    flipRef.current?.pageFlip().flipPrev('bottom');
-    window.setTimeout(() => syncPage(previousPage), 920);
-  }, [currentPage, syncPage]);
+    const api = flipRef.current?.pageFlip();
+    const actualPage = api ? api.getCurrentPageIndex() + 1 : currentPage;
+    const targetPage = actualPage + (direction === 'next' ? 1 : -1);
+    if (targetPage < 1 || targetPage > totalPages) return;
+
+    if (!api) {
+      syncPage(targetPage);
+      return;
+    }
+
+    pendingPageRef.current = targetPage;
+    if (direction === 'next') api.flipNext('bottom');
+    else api.flipPrev('bottom');
+
+    navigationTimerRef.current = window.setTimeout(() => {
+      let resolvedIndex = api.getCurrentPageIndex();
+
+      // The page-flip animation can be ignored by some mobile browsers. Keep
+      // the animation, then make the requested magazine page authoritative.
+      if (mode === 'image' && pageSize.portrait && resolvedIndex !== targetPage - 1) {
+        api.turnToPage(targetPage - 1);
+        resolvedIndex = api.getCurrentPageIndex();
+      }
+
+      syncPage(resolvedIndex + 1);
+      pendingPageRef.current = null;
+      navigationTimerRef.current = null;
+    }, 1040);
+  }, [currentPage, mode, pageSize.portrait, syncPage, totalPages]);
+
+  const goNext = useCallback(() => navigateAdjacent('next'), [navigateAdjacent]);
+  const goPrev = useCallback(() => navigateAdjacent('prev'), [navigateAdjacent]);
+
+  useEffect(() => () => {
+    if (navigationTimerRef.current !== null) window.clearTimeout(navigationTimerRef.current);
+  }, []);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -268,6 +306,11 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
   }, [goNext, goPrev, mode, view]);
 
   function onFlip(event: FlipEvent) {
+    if (navigationTimerRef.current !== null) {
+      window.clearTimeout(navigationTimerRef.current);
+      navigationTimerRef.current = null;
+    }
+    pendingPageRef.current = null;
     syncPage(event.data + 1);
   }
 
@@ -460,7 +503,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
               </HTMLFlipBook>
             </div>
 
-            {pageSize.portrait && (
+            {pageSize.portrait && mode !== 'image' && (
               <div className="mobile-reader-tap-zones">
                 <button
                   type="button"
@@ -766,6 +809,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
         }
 
         .image-flip-page {
+          overflow: hidden;
           touch-action: pan-x pan-y pinch-zoom;
         }
 
@@ -785,6 +829,7 @@ export default function PremiumBookReader({ book, initialPage = 1 }: PremiumBook
           touch-action: pan-x pan-y pinch-zoom;
           scrollbar-width: thin;
           scrollbar-color: rgba(126,91,31,0.55) transparent;
+          -webkit-overflow-scrolling: touch;
         }
 
         .image-page-frame.is-zoomed {
