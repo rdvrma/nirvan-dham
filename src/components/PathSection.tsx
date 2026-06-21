@@ -2,269 +2,152 @@
 
 import Link from 'next/link';
 import type { Language } from '@/lib/i18n';
-import SacredBackground from '@/components/SacredBackground';
-import { content } from '@/lib/i18n';
 
 interface PathSectionProps {
   lang: Language;
 }
 
-const STAGE_COLORS = [
-  { accent: '#d4a843', bg: 'rgba(212,168,67,0.05)', ring: 'rgba(212,168,67,0.25)' },
-  { accent: '#3d8a58', bg: 'rgba(61,138,88,0.05)',  ring: 'rgba(61,138,88,0.2)'  },
-  { accent: '#8b6cc8', bg: 'rgba(139,108,200,0.05)', ring: 'rgba(139,108,200,0.2)' },
-];
-
-const STAGE_NUMBERS = ['01', '02', '03'];
-
 export default function PathSection({ lang }: PathSectionProps) {
-  const t = content[lang].path;
-  const isHindi = lang === 'hi';
+  const hi = lang === 'hi';
 
   return (
-    <section
-      id="sadhana"
-      className="section-pad relative overflow-hidden"
-      style={{ background: 'var(--c-bg)' }}
-    >
-      {/* Sri Yantra sacred background */}
-      <SacredBackground variant="sri-yantra" intensity="soft" />
-      {/* Background */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse 80% 50% at 50% 80%, rgba(26,92,53,0.1) 0%, transparent 70%)',
-        }}
+    <section id="sadhana" style={{ position: 'relative', overflow: 'hidden', padding: 0 }}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        src="/course-videos/hero.mp4"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}
       />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(4,10,6,0.97) 0%, rgba(6,16,8,0.78) 40%, rgba(12,28,14,0.88) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 70% 60% at 80% 50%, rgba(212,168,67,0.08) 0%, transparent 70%)' }} />
+      <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, transparent 0%, #d4a843 30%, #ffe89a 50%, #d4a843 70%, transparent 100%)' }} />
 
-      <div className="nd-container" style={{ position: 'relative', zIndex: 10 }}>
-        {/* Header */}
-        <div className="nd-section-header">
-          <p className="pill mx-auto mb-5" style={{ width: 'fit-content' }}>
-            {isHindi ? 'आंतरिक यात्रा' : 'Inner Journey'}
-          </p>
-          <h2
-            className={`font-serif ${isHindi ? 'font-hindi' : ''}`}
-            style={{
-              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-              fontWeight: isHindi ? 600 : 300,
-              color: 'var(--c-ivory)',
-              marginBottom: '0.5rem',
-              lineHeight: 1.1,
-            }}
-          >
-            {t.heading}
-          </h2>
-          <p
-            className={!isHindi ? 'font-hindi' : ''}
-            style={{
-              fontSize: 'clamp(0.875rem, 2vw, 1.05rem)',
-              color: 'var(--c-ivdim)',
-              opacity: 0.6,
-            }}
-          >
-            {t.subheading}
-          </p>
+      <div style={{ position: 'relative', zIndex: 2, maxWidth: '1200px', margin: '0 auto', padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,4rem)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem' }}>
+          <div style={{ width: '36px', height: '1px', background: 'linear-gradient(90deg, transparent, #d4a843)' }} />
+          <span style={{ fontSize: '0.58rem', letterSpacing: '0.32em', color: '#d4a843', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', fontWeight: 700 }}>
+            {hi ? 'श्रवण · प्रमुख पाठ्यक्रम' : 'FLAGSHIP COURSE · SHRAVANA'}
+          </span>
+          <div style={{ width: '36px', height: '1px', background: 'linear-gradient(90deg, #d4a843, transparent)' }} />
         </div>
 
-        {/* Path cards — vertical journey feel */}
-        <div className="relative">
-          {/* Connecting line */}
-          <div
-            className="absolute hidden lg:block"
-            style={{
-              left: '50%',
-              top: 0,
-              bottom: 0,
-              width: '1px',
-              background: 'linear-gradient(180deg, transparent, rgba(212,168,67,0.15), rgba(212,168,67,0.15), transparent)',
-              transform: 'translateX(-50%)',
-            }}
-          />
+        <div className="home-course-highlight-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,6vw,6rem)', alignItems: 'center' }}>
+          <div>
+            <div style={{ display: 'inline-block', padding: '0.4rem 1rem', border: '1px solid rgba(212,168,67,0.35)', borderRadius: '999px', background: 'rgba(212,168,67,0.08)', marginBottom: '1.5rem' }}>
+              <span style={{ fontSize: '0.62rem', color: '#d4a843', letterSpacing: '0.15em', fontFamily: 'var(--font-inter)' }}>
+                {hi ? 'पाठ्यक्रम · निर्वाण सूत्र' : 'COURSE · NIRVAN SUTRA'}
+              </span>
+            </div>
 
-          <div className="nd-grid-3">
-            {t.cards.map((card, i) => {
-              const color = STAGE_COLORS[i];
-              const num = STAGE_NUMBERS[i];
-              return (
-                <div
-                  key={card.level}
-                  className="group relative transition-premium"
-                  style={{
-                    borderRadius: '12px',
-                    border: `1px solid ${card.available ? color.ring : 'rgba(212,168,67,0.06)'}`,
-                    background: `rgba(13,31,16,0.5)`,
-                    backdropFilter: 'blur(12px)',
-                    overflow: 'hidden',
-                    opacity: card.available ? 1 : 0.7,
-                    transitionDuration: '0.4s',
-                  }}
-                  onMouseEnter={(e) => {
-                    if (!card.available) return;
-                    (e.currentTarget as HTMLElement).style.transform = 'translateY(-6px)';
-                    (e.currentTarget as HTMLElement).style.boxShadow = `0 16px 48px rgba(0,0,0,0.5), 0 0 30px ${color.bg}`;
-                    (e.currentTarget as HTMLElement).style.borderColor = color.accent;
-                  }}
-                  onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-                    (e.currentTarget as HTMLElement).style.boxShadow = 'none';
-                    (e.currentTarget as HTMLElement).style.borderColor = card.available ? color.ring : 'rgba(212,168,67,0.06)';
-                  }}
-                >
-                  {/* Top accent bar */}
-                  <div
-                    style={{
-                      height: '3px',
-                      background: card.available
-                        ? `linear-gradient(90deg, transparent, ${color.accent}, transparent)`
-                        : 'rgba(212,168,67,0.08)',
-                    }}
-                  />
+            <h2 style={{
+              fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)',
+              fontWeight: hi ? 700 : 300,
+              fontSize: 'clamp(3.2rem,6vw,5.5rem)',
+              lineHeight: 1,
+              color: 'var(--c-ivory)',
+              marginBottom: '1.5rem',
+              fontStyle: hi ? 'normal' : 'italic',
+              letterSpacing: hi ? 0 : '-0.02em',
+            }}>
+              {hi ? 'आप कौन हैं?' : 'Who are you?'}
+            </h2>
 
-                  <div style={{ padding: '2rem 1.75rem 2.25rem' }}>
-                    {/* Stage number + availability tag */}
-                    <div className="flex items-start justify-between mb-5">
-                      <span
-                        className="font-serif"
-                        style={{
-                          fontSize: '3rem',
-                          fontWeight: 300,
-                          color: color.accent,
-                          opacity: 0.2,
-                          lineHeight: 1,
-                          fontStyle: 'italic',
-                        }}
-                      >
-                        {num}
-                      </span>
-                      <span
-                        style={{
-                          padding: '0.2rem 0.75rem',
-                          borderRadius: '9999px',
-                          fontSize: '0.7rem',
-                          fontWeight: 600,
-                          letterSpacing: '0.08em',
-                          textTransform: 'uppercase',
-                          background: card.available
-                            ? `${color.accent}22`
-                            : 'rgba(212,168,67,0.05)',
-                          color: card.available ? color.accent : 'var(--c-ivdim)',
-                          border: `1px solid ${card.available ? color.accent + '44' : 'rgba(212,168,67,0.1)'}`,
-                        }}
-                      >
-                        {card.tag}
-                      </span>
-                    </div>
+            <p style={{ color: 'rgba(245,237,216,0.6)', lineHeight: 1.95, fontSize: 'clamp(0.95rem,1.6vw,1.05rem)', marginBottom: '2.5rem', maxWidth: '480px', fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)' }}>
+              {hi
+                ? 'निर्वाण सूत्र पाठ्यक्रम साधक को जागरूकता, आत्म-जांच, अद्वैत और सत्य के प्रत्यक्ष दर्शन की ओर ले जाता है। 8 अध्याय। 3 भाषाएं। एक यात्रा।'
+                : 'The Nirvan Sutra Course guides the seeker through awareness, self-inquiry, non-duality and direct seeing of truth. 8 Chapters. 3 Languages. One Journey.'}
+            </p>
 
-                    {/* Level labels */}
-                    <div className="mb-3">
-                      <p
-                        className={`font-hindi`}
-                        style={{
-                          fontSize: 'clamp(1.3rem, 2.5vw, 1.6rem)',
-                          fontWeight: 600,
-                          color: 'var(--c-ivory)',
-                          lineHeight: 1.2,
-                        }}
-                      >
-                        {card.level}
-                      </p>
-                      <p
-                        className={!isHindi ? 'font-hindi' : ''}
-                        style={{
-                          fontSize: '0.75rem',
-                          color: color.accent,
-                          opacity: 0.7,
-                          letterSpacing: '0.05em',
-                          marginTop: '2px',
-                        }}
-                      >
-                        {card.label}
-                      </p>
-                    </div>
-
-                    {/* Card title */}
-                    <p
-                      className={`font-serif ${isHindi ? 'font-hindi' : ''}`}
-                      style={{
-                        fontSize: isHindi ? '1.1rem' : '1.15rem',
-                        fontWeight: isHindi ? 500 : 400,
-                        color: 'var(--c-ivory)',
-                        fontStyle: isHindi ? 'normal' : 'italic',
-                        marginBottom: '1rem',
-                        lineHeight: 1.3,
-                      }}
-                    >
-                      {card.title}
-                    </p>
-
-                    {/* Divider */}
-                    <div
-                      style={{
-                        height: '1px',
-                        background: `linear-gradient(90deg, ${color.accent}33, transparent)`,
-                        marginBottom: '1rem',
-                      }}
-                    />
-
-                    {/* Description */}
-                    <p
-                      className={isHindi ? 'font-hindi' : ''}
-                      style={{
-                        fontSize: isHindi ? '0.9rem' : '0.875rem',
-                        color: 'var(--c-ivdim)',
-                        lineHeight: isHindi ? 1.9 : 1.75,
-                        opacity: 0.75,
-                      }}
-                    >
-                      {card.desc}
-                    </p>
-
-                    {/* CTA */}
-                    {card.available && (
-                      <Link
-                        href="/guided-meditation"
-                        className={`mt-6 block transition-premium w-full text-center ${isHindi ? 'font-hindi' : ''}`}
-                        style={{
-                          padding: '0.75rem 1.5rem',
-                          borderRadius: '4px',
-                          border: `1px solid ${color.accent}55`,
-                          background: `${color.accent}11`,
-                          color: color.accent,
-                          fontWeight: 500,
-                          fontSize: isHindi ? '0.9rem' : '0.8rem',
-                          letterSpacing: isHindi ? '0' : '0.04em',
-                          textDecoration: 'none',
-                          display: 'block',
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.currentTarget as HTMLElement).style.background = `${color.accent}22`;
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLElement).style.background = `${color.accent}11`;
-                        }}
-                      >
-                        {isHindi ? 'प्रारंभ करें →' : 'Begin Journey →'}
-                      </Link>
-                    )}
-                  </div>
-
-                  {/* Unavailable overlay pattern */}
-                  {!card.available && (
-                    <div
-                      className="absolute inset-0 pointer-events-none"
-                      style={{
-                        background: 'repeating-linear-gradient(45deg, transparent, transparent 8px, rgba(0,0,0,0.04) 8px, rgba(0,0,0,0.04) 9px)',
-                      }}
-                    />
-                  )}
+            <div style={{ display: 'flex', gap: '2rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
+              {[
+                { num: '8', label: hi ? 'अध्याय' : 'Chapters' },
+                { num: '3', label: hi ? 'भाषाएं' : 'Languages' },
+                { num: '40%', label: hi ? 'उत्तीर्ण मानदंड' : 'Pass Criteria' },
+              ].map((stat) => (
+                <div key={stat.num}>
+                  <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.8rem', fontWeight: 300, color: '#d4a843', lineHeight: 1 }}>{stat.num}</div>
+                  <div style={{ fontSize: '0.7rem', color: 'rgba(245,237,216,0.45)', letterSpacing: '0.08em', fontFamily: 'var(--font-inter)', marginTop: '0.25rem' }}>{stat.label}</div>
                 </div>
-              );
-            })}
+              ))}
+            </div>
+
+            <Link
+              href="/course"
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '1.1rem 2.5rem', borderRadius: '6px',
+                background: 'linear-gradient(135deg, #d4a843 0%, #ffe89a 50%, #c49832 100%)', color: '#061008', textDecoration: 'none',
+                fontWeight: 800, fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', letterSpacing: '0.04em',
+                boxShadow: '0 8px 40px rgba(212,168,67,0.35), 0 2px 12px rgba(212,168,67,0.2)', transition: 'all 0.3s',
+              }}
+              onMouseEnter={(event) => {
+                event.currentTarget.style.transform = 'translateY(-3px)';
+                event.currentTarget.style.boxShadow = '0 16px 60px rgba(212,168,67,0.5)';
+              }}
+              onMouseLeave={(event) => {
+                event.currentTarget.style.transform = 'translateY(0)';
+                event.currentTarget.style.boxShadow = '0 8px 40px rgba(212,168,67,0.35)';
+              }}
+            >
+              {hi ? 'पाठ्यक्रम शुरू करें' : 'Start the Course'} →
+            </Link>
+          </div>
+
+          <div className="home-course-mandala-col" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem' }}>
+            <div style={{ position: 'relative' }}>
+              <div style={{ position: 'absolute', inset: '-24px', borderRadius: '50%', background: 'radial-gradient(circle, rgba(212,168,67,0.14) 0%, transparent 70%)', filter: 'blur(14px)', pointerEvents: 'none' }} />
+              <svg viewBox="0 0 220 220" width="260" height="260" style={{ display: 'block', opacity: 0.88 }} aria-hidden="true">
+                <defs>
+                  <radialGradient id="home-course-gold-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stopColor="#ffe89a" stopOpacity="0.95" />
+                    <stop offset="55%" stopColor="#d4a843" stopOpacity="0.55" />
+                    <stop offset="100%" stopColor="#c49832" stopOpacity="0" />
+                  </radialGradient>
+                  <filter id="home-course-soft-blur"><feGaussianBlur stdDeviation="2.5" /></filter>
+                </defs>
+                <circle cx="110" cy="110" r="98" fill="url(#home-course-gold-glow)" filter="url(#home-course-soft-blur)" />
+                {[98, 82, 62, 40, 20].map((radius, index) => <circle key={radius} cx="110" cy="110" r={radius} fill="none" stroke={index === 2 ? '#ffe89a' : '#d4a843'} strokeWidth={index === 0 ? '0.5' : '0.4'} strokeOpacity={0.2 + index * 0.03} />)}
+                {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((angle) => {
+                  const radians = angle * Math.PI / 180;
+                  return <line key={angle} x1={110 + Math.cos(radians) * 22} y1={110 + Math.sin(radians) * 22} x2={110 + Math.cos(radians) * 98} y2={110 + Math.sin(radians) * 98} stroke="#d4a843" strokeWidth="0.3" strokeOpacity="0.18" />;
+                })}
+                {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => {
+                  const radians = angle * Math.PI / 180;
+                  const cx = 110 + Math.cos(radians) * 64;
+                  const cy = 110 + Math.sin(radians) * 64;
+                  return <ellipse key={angle} cx={cx} cy={cy} rx="17" ry="28" transform={`rotate(${angle + 90}, ${cx}, ${cy})`} fill="none" stroke="#d4a843" strokeWidth="0.7" strokeOpacity="0.42" />;
+                })}
+                {[22.5, 67.5, 112.5, 157.5, 202.5, 247.5, 292.5, 337.5].map((angle) => {
+                  const radians = angle * Math.PI / 180;
+                  const cx = 110 + Math.cos(radians) * 38;
+                  const cy = 110 + Math.sin(radians) * 38;
+                  return <ellipse key={angle} cx={cx} cy={cy} rx="10" ry="18" transform={`rotate(${angle + 90}, ${cx}, ${cy})`} fill="none" stroke="#ffe89a" strokeWidth="0.6" strokeOpacity="0.48" />;
+                })}
+                <circle cx="110" cy="110" r="6" fill="#d4a843" fillOpacity="0.75" />
+                <circle cx="110" cy="110" r="3" fill="#ffe89a" fillOpacity="0.95" />
+              </svg>
+            </div>
+            <div style={{ textAlign: 'center' }}>
+              <p style={{ fontSize: '0.62rem', letterSpacing: '0.25em', color: 'rgba(212,168,67,0.7)', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '0.5rem' }}>
+                {hi ? '८ अध्याय · ३ भाषाएं · एक यात्रा' : '8 Chapters · 3 Languages · One Journey'}
+              </p>
+              <p style={{ fontSize: '0.82rem', color: 'rgba(245,237,216,0.38)', fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)', fontStyle: hi ? 'normal' : 'italic', letterSpacing: '0.04em' }}>
+                {hi ? 'सत्य की खोज में एक पूर्ण यात्रा' : 'A complete journey into truth'}
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
+      <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px', background: 'linear-gradient(90deg, transparent 0%, rgba(212,168,67,0.4) 50%, transparent 100%)' }} />
+
+      <style>{`
+        @media (max-width: 768px) {
+          .home-course-highlight-grid { grid-template-columns: 1fr !important; }
+          .home-course-mandala-col { display: none !important; }
+        }
+      `}</style>
     </section>
   );
 }
