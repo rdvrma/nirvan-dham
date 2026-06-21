@@ -101,17 +101,36 @@ export default function CourseLandingPage() {
     setSavedLang(localStorage.getItem('course-lang'));
   }, []);
 
-  // Route to Lexicon first, then chapters
   async function handleStart(code: string) {
     setSelecting(code);
     const { data: { user } } = await createClient().auth.getUser();
-    const destination = `/course/${code}/lexicon`;
+    
     if (!user) {
-      router.push(`/login?next=${encodeURIComponent(destination)}`);
+      router.push(`/login?next=${encodeURIComponent(`/course/${code}/lexicon`)}`);
       return;
     }
     localStorage.setItem('course-lang', code);
-    setTimeout(() => router.push(destination), 280);
+    
+    try {
+      const res = await fetch('/api/course/submit', { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        const unlocked = data.highestChapterUnlocked || 1;
+        if (unlocked === 1) {
+          router.push(`/course/${code}/lexicon`);
+        } else if (unlocked > 8) {
+          router.push(`/course/${code}/final-test`);
+        } else {
+          router.push(`/course/${code}/${unlocked}`);
+        }
+        return;
+      }
+    } catch (e) {
+      console.error('Failed to fetch progress for redirect', e);
+    }
+    
+    // Fallback if API fails
+    router.push(`/course/${code}/lexicon`);
   }
 
   return (
