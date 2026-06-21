@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import CourseBanner from '@/components/CourseBanner';
 
 interface EbookReaderProps {
   pdfUrl: string;
@@ -452,6 +453,13 @@ export default function EbookReader({ pdfUrl, title, author, onClose, downloadUr
                 }}
               />
             )}
+          </div>
+        )}
+
+        {/* Course invitation — shown when reader reaches last page */}
+        {!loading && !error && totalPages > 0 && currentPage >= totalPages && (
+          <div style={{ width: '100%', maxWidth: '760px', padding: '0 1rem 5rem' }}>
+            <CourseBanner lang="hi" variant="strip" />
           </div>
         )}
       </div>

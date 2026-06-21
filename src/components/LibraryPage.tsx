@@ -8,6 +8,7 @@ import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 import MuktibodhMagazineSection from '@/components/MuktibodhMagazineSection';
+import CourseBanner from '@/components/CourseBanner';
 import { EBOOKS, AUDIOBOOKS, MAGAZINES } from '@/lib/library-data';
 import type { EBook } from '@/lib/library-data';
 
@@ -455,6 +456,7 @@ export default function LibraryPage() {
       )}
 
       <div style={{ height: '4rem' }} />
+      <CourseBanner lang={lang} variant="full" />
       <ContactSection lang={lang} />
     </div>
   );

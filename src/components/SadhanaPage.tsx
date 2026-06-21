@@ -449,13 +449,13 @@ export default function SadhanaPage() {
 
       {/* ══════════ NIRVAN SUTRA COURSE — Premium Highlight ══════════ */}
       <section style={{ position: 'relative', overflow: 'hidden', margin: '0' }}>
-        {/* Cinematic video background */}
+        {/* Cinematic video background — opacity increased for more presence */}
         <video autoPlay muted loop playsInline src="/course-videos/hero.mp4" style={{
-          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.2,
+          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.30,
         }} />
-        {/* Dark overlays */}
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(5,14,7,0.97) 0%, rgba(8,20,10,0.85) 50%, rgba(5,14,7,0.97) 100%)' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 65% 50% at 80% 50%, rgba(212,168,67,0.06) 0%, transparent 70%)' }} />
+        {/* Dark overlays — slightly lighter center to let video breathe */}
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(4,11,5,0.96) 0%, rgba(8,20,10,0.78) 50%, rgba(4,11,5,0.96) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 65% 50% at 80% 50%, rgba(212,168,67,0.08) 0%, transparent 70%)' }} />
         {/* Gold shimmer border top */}
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, transparent, #d4a843 25%, #ffe89a 50%, #d4a843 75%, transparent)' }} />
 
@@ -465,7 +465,7 @@ export default function SadhanaPage() {
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
             <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, #d4a843)' }} />
             <span style={{ fontSize: '0.56rem', letterSpacing: '0.35em', color: '#d4a843', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', fontWeight: 700 }}>
-              SHRAVANA · FLAGSHIP COURSE
+              {isHi ? 'श्रवण · प्रमुख पाठ्यक्रम' : 'SHRAVANA · FLAGSHIP COURSE'}
             </span>
             <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, #d4a843, transparent)' }} />
           </div>
@@ -482,11 +482,14 @@ export default function SadhanaPage() {
                 </span>
               </div>
 
+              {/* Hero headline — larger, more dramatic */}
               <h2 style={{
-                fontFamily: 'var(--font-cormorant)', fontWeight: isHi ? 600 : 300,
-                fontSize: 'clamp(2.8rem,5.5vw,4.8rem)', lineHeight: 1.05,
+                fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-cormorant)',
+                fontWeight: isHi ? 700 : 300,
+                fontSize: 'clamp(3.2rem,6vw,5.5rem)', lineHeight: 1.0,
                 color: 'var(--c-ivory)', marginBottom: '1.25rem',
                 fontStyle: isHi ? 'normal' : 'italic',
+                letterSpacing: isHi ? '-0.01em' : '-0.02em',
               }}>
                 {isHi ? 'आप कौन हैं?' : 'Who are you?'}
               </h2>
@@ -514,23 +517,23 @@ export default function SadhanaPage() {
               {/* Bold CTA */}
               <Link href="/course" style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.7rem',
-                padding: '1.05rem 2.4rem', borderRadius: '6px',
+                padding: '1.1rem 2.6rem', borderRadius: '6px',
                 background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`,
                 color: '#061008', textDecoration: 'none', fontWeight: 800,
                 fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)',
-                fontSize: '0.98rem', letterSpacing: '0.04em',
-                boxShadow: `0 8px 40px rgba(212,168,67,0.32)`,
+                fontSize: '1rem', letterSpacing: '0.04em',
+                boxShadow: `0 8px 48px rgba(212,168,67,0.36)`,
                 transition: 'all 0.3s',
               }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 16px 56px rgba(212,168,67,0.48)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 40px rgba(212,168,67,0.32)'; }}
+                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 18px 64px rgba(212,168,67,0.54)'; }}
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 48px rgba(212,168,67,0.36)'; }}
               >
                 {isHi ? 'पाठ्यक्रम शुरू करें' : 'Begin the Course'} →
               </Link>
             </div>
 
-            {/* RIGHT — chapter list */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            {/* RIGHT — enhanced chapter list with glow */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
               {[
                 { n: '01', hi: 'स्वयं की खोज', en: 'The Discovery of Self' },
                 { n: '02', hi: 'मन की परतें', en: 'Layers of the Mind' },
@@ -540,29 +543,46 @@ export default function SadhanaPage() {
                 { n: '06', hi: 'ध्यान का द्वार', en: 'Gateway of Meditation' },
                 { n: '07', hi: 'मुक्ति की राह', en: 'Path of Liberation' },
                 { n: '08', hi: 'निर्वाण सूत्र', en: 'Nirvan Sutra' },
-              ].map((ch, i) => (
-                <div key={ch.n} style={{
-                  display: 'flex', alignItems: 'center', gap: '1rem',
-                  padding: '0.7rem 1rem', borderRadius: '8px',
-                  border: `1px solid ${i === 5 ? 'rgba(212,168,67,0.22)' : 'rgba(212,168,67,0.07)'}`,
-                  background: i === 5 ? 'rgba(212,168,67,0.07)' : 'rgba(5,14,7,0.55)',
-                  backdropFilter: 'blur(8px)',
-                }}>
-                  <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.56rem', color: 'rgba(212,168,67,0.45)', letterSpacing: '0.1em', minWidth: '18px' }}>{ch.n}</span>
-                  <span style={{ flex: 1, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.86rem', color: i === 5 ? GOLD : 'rgba(245,237,216,0.6)', fontWeight: i === 5 ? 600 : 400 }}>
-                    {isHi ? ch.hi : ch.en}
-                  </span>
-                  {i === 5 && <span style={{ fontSize: '0.5rem', color: 'rgba(212,168,67,0.4)' }}>◈</span>}
-                </div>
-              ))}
+              ].map((ch, i) => {
+                const isActive = i === 5;
+                return (
+                  <div
+                    key={ch.n}
+                    className={`sadh-chapter-row${isActive ? ' sadh-chapter-active' : ''}`}
+                    style={{
+                      display: 'flex', alignItems: 'center', gap: '1rem',
+                      padding: '0.75rem 1.1rem', borderRadius: '8px',
+                      border: `1px solid ${isActive ? 'rgba(212,168,67,0.35)' : 'rgba(212,168,67,0.07)'}`,
+                      background: isActive ? 'rgba(212,168,67,0.09)' : 'rgba(5,14,7,0.55)',
+                      backdropFilter: 'blur(8px)',
+                      boxShadow: isActive ? '0 0 20px rgba(212,168,67,0.12), inset 0 0 12px rgba(212,168,67,0.04)' : 'none',
+                      transition: 'all 0.22s',
+                      cursor: 'default',
+                    }}
+                  >
+                    <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.55rem', color: isActive ? 'rgba(212,168,67,0.7)' : 'rgba(212,168,67,0.35)', letterSpacing: '0.1em', minWidth: '18px' }}>{ch.n}</span>
+                    <span style={{ flex: 1, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.88rem', color: isActive ? GOLD : 'rgba(245,237,216,0.58)', fontWeight: isActive ? 600 : 400 }}>
+                      {isHi ? ch.hi : ch.en}
+                    </span>
+                    {isActive && <span style={{ fontSize: '0.55rem', color: 'rgba(212,168,67,0.55)', animation: 'sadhPulse 2.5s ease-in-out infinite' }}>◈</span>}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
 
         {/* Bottom border */}
         <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px', background: 'linear-gradient(90deg, transparent, rgba(212,168,67,0.35) 50%, transparent)' }} />
-        <style>{`@media(max-width:768px){.sadh-course-grid{grid-template-columns:1fr !important;}}`}</style>
+        <style>{`
+          @media(max-width:768px){.sadh-course-grid{grid-template-columns:1fr !important;}}
+          .sadh-chapter-row:hover:not(.sadh-chapter-active){
+            border-color: rgba(212,168,67,0.18) !important;
+            background: rgba(212,168,67,0.04) !important;
+          }
+        `}</style>
       </section>
+
 
       <ContactSection lang={activeLang} />
 
