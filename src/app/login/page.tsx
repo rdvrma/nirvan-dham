@@ -19,6 +19,12 @@ function LoginForm() {
   const [error, setError] = useState(searchParams.get('error') ?? '');
   const [loading, setLoading] = useState(false);
 
+  // Check if Supabase is properly configured
+  const isConfigured = !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!isConfigured && !error) {
+    setError('System Configuration Error: Database connection keys are missing. Please configure Vercel Environment Variables.');
+  }
+
   async function signIn(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setError('');
