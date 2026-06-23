@@ -7,7 +7,7 @@ import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 
-// ── Pre-computed SVG mandala lines (static = no SSR/client hydration mismatch) ──
+// ── Pre-computed SVG mandala lines ──────────────────────────────
 const MANDALA_LINES = [
   { x1: 585, y1: 450, x2: 864, y2: 450 },
   { x1: 567, y1: 517, x2: 819, y2: 620 },
@@ -23,47 +23,106 @@ const MANDALA_LINES = [
   { x1: 567, y1: 383, x2: 819, y2: 280 },
 ];
 
+// ── Design Tokens ────────────────────────────────────────────────
+const GOLD       = '#d4a843';
+const GOLD_DIM   = 'rgba(212,168,67,0.65)';
+const GOLD_FAINT = 'rgba(212,168,67,0.08)';
+const BG         = '#080f0a';
+// Shakti / Devi palette  — deep rose-crimson
+const SHAKTI_PRI  = '#c06080';   // muted rose-red
+const SHAKTI_GLOW = 'rgba(192,96,128,0.18)';
+const SHAKTI_DIM  = 'rgba(192,96,128,0.65)';
+// Guru / Sutra palette   — emerald-green (existing site color)
+const GURU_PRI   = '#3d8a58';
+const GURU_GLOW  = 'rgba(61,138,88,0.18)';
+const GURU_DIM   = 'rgba(61,138,88,0.65)';
 
-// ── Design tokens ──────────────────────────────────
-const GOLD = '#d4a843';
-const GOLD_DIM = 'rgba(212,168,67,0.65)';
-const BG = '#080f0a';
-
-// ── Bilingual copy ────────────────────────────────
+// ── Bilingual copy ───────────────────────────────────────────────
 const copy = {
   hi: {
-    pill: 'निर्वाण सूत्र',
-    heroTitle: 'साधना',
-    heroSub: 'भीतर की यात्रा — तीन चरणों में',
-    heroDesc: 'ये guided meditations आपको शोर से परे, साक्षी भाव में और स्वयं की प्रत्यक्ष पहचान की ओर ले जाती हैं।',
-    cta1: 'अभी सुनना शुरू करें',
-    cta2: 'ऑनलाइन संवाद',
+    // Hero
+    heroTitle: 'साधना-द्वार',
+    heroSub:   'दो धाराएँ · एक ही धाम',
+    heroDesc:  'भीतर की यात्रा दो मार्गों से होती है — देवी महामाया का अनुभव-पथ और गुरु का ज्ञान-पथ। यहाँ दोनों द्वार खुले हैं।',
     scrollDown: 'नीचे स्क्रॉल करें',
-    guidedBy: 'आदिसत्व द्वारा निर्देशित',
-    level1: { badge: '✓ मुक्त प्रवेश', title: 'प्रारंभिक', sub: 'जागृति का बीज', count: '8 सत्र उपलब्ध' },
-    level2: { badge: '🔒 बंद', title: 'मध्यवर्ती', sub: 'साक्षी का जागरण', count: '8 सत्र' },
-    level3: { badge: '🔒 बंद', title: 'विशेषज्ञ', sub: 'निर्वाण का द्वार', count: '8 सत्र' },
-    trackTitle: '8 Guided Meditations',
-    trackNote: 'अद्वैत वेदांत पर आधारित — English में उपलब्ध। हिंदी शीघ्र।',
+
+    // Shakti card
+    shaktiLabel:    'देवी महामाया की अभिव्यक्ति',
+    shaktiTitle:    'निर्वाण शक्ति\nस्नान साधना',
+    shaktiSub:      'अनुभव · मंत्र · शक्ति स्नान · भक्ति',
+    shaktiDesc:     'देवी महामाया की उपस्थिति में दैनिक ध्यान, दीक्षा, मंत्र-साधना और मासिक Shakti Snan की जीवंत यात्रा।',
+    shaktiBadge1:   'निःशुल्क साधना',
+    shaktiBadge2:   'दैनिक 1 घंटा',
+    shaktiBadge3:   'Aadisatv Deeksha',
+    shaktiCta:      'साधना में प्रवेश करें',
+    shaktiNote:     '6 मास · 6 शक्ति स्नान · सामूहिक मंडल',
+
+    // Guru card
+    guruLabel:      'गुरु की अभिव्यक्ति',
+    guruTitle:      'निर्वाण सूत्र',
+    guruSub:        'ज्ञान · साक्षी · आत्मबोध · अद्वैत',
+    guruDesc:       'गुरु आदिसत्व द्वारा निर्देशित। ध्यान-सत्र, पाठ्यक्रम और अद्वैत वेदांत की गहरी ज्ञान-यात्रा।',
+    guruBadge1:     'निर्देशित ऑडियो',
+    guruBadge2:     '8 सत्र',
+    guruBadge3:     'पाठ्यक्रम',
+    guruCta:        'ध्यान सत्र सुनें',
+    guruNote:       '3 स्तर · 24 ध्यान · Nirvan Sutra Course',
+
+    // Divider
+    dividerText:    'दोनों पथ विरोधी नहीं — एक ही धाम की दो धाराएँ',
+
+    // Audio Section
+    trackTitle:     '8 निर्देशित ध्यान',
+    trackNote:      'अद्वैत वेदांत पर आधारित — English में उपलब्ध। हिंदी शीघ्र।',
+    audioLabel:     'प्रारंभिक · मुक्त प्रवेश',
+    hiComingSoon:   '🔜 हिंदी शीघ्र',
+    completeNote:   'सभी 8 सत्र पूरे करने के बाद मध्यवर्ती/विशेषज्ञ का प्रवेश नीचे माँगें।',
+    samvadTitle:    'आगे बढ़ने के लिए संवाद करें',
+    samvadDesc:     'ये सत्र आपके भीतर कुछ जगा रहे हैं? आदिसत्व से सीधे संवाद करें।',
+    onlineSamvad:   'ऑनलाइन संवाद',
+    bodhgaya:       'बोधगया संवाद',
   },
   en: {
-    pill: 'Nirvan Sutra',
-    heroTitle: 'Sadhana',
-    heroSub: 'The Inner Journey — Three Stages',
-    heroDesc: 'These guided meditations take you beyond mental noise, into witness awareness and the direct recognition of who you truly are.',
-    cta1: 'Start Listening Now',
-    cta2: 'Online Samvad',
+    heroTitle: 'The Sacred Gateway',
+    heroSub:   'Two Streams · One Dhama',
+    heroDesc:  'The inner journey unfolds through two paths — the experiential path of Devi Mahamaya and the wisdom path of the Guru. Both doors are open here.',
     scrollDown: 'Scroll Down',
-    guidedBy: 'Guided by Aadisatv',
-    level1: { badge: '✓ Free Access', title: 'Beginner', sub: 'The Seed of Awakening', count: '8 Sessions Available' },
-    level2: { badge: '🔒 Locked', title: 'Intermediate', sub: 'Awakening of the Witness', count: '8 Sessions' },
-    level3: { badge: '🔒 Locked', title: 'Advanced', sub: 'The Gate of Nirvana', count: '8 Sessions' },
-    trackTitle: '8 Guided Meditations',
-    trackNote: 'Based on Advaita Vedanta — Available in English. Hindi coming soon.',
+
+    shaktiLabel:    'The Expression of Devi Mahamaya',
+    shaktiTitle:    'Nirvan Shakti\nSnan Sadhna',
+    shaktiSub:      'Experience · Mantra · Shakti Snan · Bhakti',
+    shaktiDesc:     'A living journey of daily meditation, initiation, mantra-sadhna and monthly Shakti Snan in the presence of Devi Mahamaya.',
+    shaktiBadge1:   'Free Sadhna',
+    shaktiBadge2:   '1 Hour Daily',
+    shaktiBadge3:   'Aadisatv Deeksha',
+    shaktiCta:      'Enter the Sadhna',
+    shaktiNote:     '6 Months · 6 Shakti Snans · Sacred Circle',
+
+    guruLabel:      'The Expression of the Guru',
+    guruTitle:      'Nirvan Sutra',
+    guruSub:        'Knowledge · Witness · Self-Realization · Advaita',
+    guruDesc:       'Guided by Aadisatv. Meditation sessions, a flagship course and a deep journey into Advaita Vedanta.',
+    guruBadge1:     'Guided Audio',
+    guruBadge2:     '8 Sessions',
+    guruBadge3:     'Course',
+    guruCta:        'Listen Now',
+    guruNote:       '3 Levels · 24 Meditations · Nirvan Sutra Course',
+
+    dividerText:    'These paths are not opposites — two streams of the same Dhama',
+
+    trackTitle:     '8 Guided Meditations',
+    trackNote:      'Based on Advaita Vedanta — Available in English. Hindi coming soon.',
+    audioLabel:     'Beginner · Open Access',
+    hiComingSoon:   '🔜 Coming soon',
+    completeNote:   'After completing all 8, request Intermediate/Advanced access below.',
+    samvadTitle:    'Connect to Go Deeper',
+    samvadDesc:     'Are these sessions awakening something within? Connect directly with Aadisatv.',
+    onlineSamvad:   'Online Samvad',
+    bodhgaya:       'Bodhgaya Samvad',
   },
 } as const;
 
-// ── Track data ────────────────────────────────────
+// ── Track data ───────────────────────────────────────────────────
 interface Track {
   id: number;
   enTitle: string;
@@ -85,7 +144,7 @@ const BEGINNER_TRACKS: Track[] = [
   { id: 8, enTitle: 'Open Eyed Awareness', hiTitle: 'खुली आँखों की जागरूकता', enDesc: 'Bridge formal meditation and daily life with panoramic presence.', hiDesc: 'ध्यान और दैनिक जीवन के बीच सेतु — सतत जागरूकता।', enFile: '/sadhana/en-08-open-eyed-awareness.mp3', hiFile: null },
 ];
 
-// ── Wave bars ────────────────────────────────────
+// ── Wave bars (playing indicator) ───────────────────────────────
 function WaveBars() {
   return (
     <span style={{ display: 'inline-flex', gap: '2px', alignItems: 'flex-end', height: '14px' }}>
@@ -97,7 +156,7 @@ function WaveBars() {
   );
 }
 
-// ── Audio card ────────────────────────────────────
+// ── Audio card ───────────────────────────────────────────────────
 function AudioCard({ track, lang, isActive, onPlay }: { track: Track; lang: Language; isActive: boolean; onPlay: () => void }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
@@ -107,7 +166,7 @@ function AudioCard({ track, lang, isActive, onPlay }: { track: Track; lang: Lang
   const [hov, setHov] = useState(false);
   const isHi = lang === 'hi';
   const title = isHi ? track.hiTitle : track.enTitle;
-  const file = isHi ? track.hiFile : track.enFile;
+  const file  = isHi ? track.hiFile  : track.enFile;
   const isPlaceholder = !file;
   function fmt(s: number) { return `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`; }
   useEffect(() => { if (!isActive && playing) { audioRef.current?.pause(); setPlaying(false); } }, [isActive, playing]);
@@ -156,19 +215,22 @@ function AudioCard({ track, lang, isActive, onPlay }: { track: Track; lang: Lang
   );
 }
 
-// ── Locked level ──────────────────────────────────
+// ── Locked level ─────────────────────────────────────────────────
 function LockedLevel({ lang, level }: { lang: Language; level: 'intermediate' | 'advanced' }) {
-  const [showForm, setShowForm] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  const [showForm, setShowForm]     = useState(false);
+  const [submitted, setSubmitted]   = useState(false);
   const [submitting, setSubmitting] = useState(false);
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
-  const isHi = lang === 'hi';
+  const [formData, setFormData]     = useState({ name: '', email: '', phone: '', message: '' });
+  const isHi  = lang === 'hi';
   const isAdv = level === 'advanced';
   const accentColor = isAdv ? '#fb923c' : '#67e8f9';
-  const levelName = isAdv ? (isHi ? 'विशेषज्ञ' : 'Advanced') : (isHi ? 'मध्यवर्ती' : 'Intermediate');
+  const levelName  = isAdv ? (isHi ? 'विशेषज्ञ' : 'Advanced') : (isHi ? 'मध्यवर्ती' : 'Intermediate');
   const levelTitle = isAdv ? (isHi ? 'निर्वाण का द्वार' : 'The Gate of Nirvana') : (isHi ? 'साक्षी का जागरण' : 'Awakening of the Witness');
   const fieldSt: React.CSSProperties = { width: '100%', padding: '0.7rem 0.9rem', background: 'rgba(8,15,10,0.7)', border: `1px solid ${accentColor}22`, borderRadius: '7px', color: 'var(--c-ivory)', fontSize: '0.88rem', fontFamily: 'var(--font-hind)', outline: 'none' };
-  const placeholderTracks = [isHi ? ['माया का स्वरूप','विचारों का उद्गम','भावनाओं का साक्षी','अहं की परतें','द्वैत से अद्वैत','चेतना का विस्तार','स्वयं की खोज','अद्वैत में जीवन'] : ['The Nature of Maya','Source of Thoughts','Witnessing Emotions','Layers of the Ego','Duality to Non-Duality','Expanding Consciousness','Self-Inquiry','Living in Non-Duality'], isHi ? ['प्रत्यक्ष दर्शन','शुद्ध जागरूकता','अहं का विसर्जन','तुरीय अवस्था','आत्मा का प्रकाश','निर्विकल्प समाधि','महावाक्य','मोक्ष की झलक'] : ['Direct Seeing','Pure Awareness','Ego Dissolution','The Turiya State','Light of the Self','Nirvikalpa Samadhi','The Mahavakyas','A Glimpse of Liberation']][isAdv ? 1 : 0];
+  const placeholderTracks = [
+    isHi ? ['माया का स्वरूप','विचारों का उद्गम','भावनाओं का साक्षी','अहं की परतें','द्वैत से अद्वैत','चेतना का विस्तार','स्वयं की खोज','अद्वैत में जीवन'] : ['The Nature of Maya','Source of Thoughts','Witnessing Emotions','Layers of the Ego','Duality to Non-Duality','Expanding Consciousness','Self-Inquiry','Living in Non-Duality'],
+    isHi ? ['प्रत्यक्ष दर्शन','शुद्ध जागरूकता','अहं का विसर्जन','तुरीय अवस्था','आत्मा का प्रकाश','निर्विकल्प समाधि','महावाक्य','मोक्ष की झलक'] : ['Direct Seeing','Pure Awareness','Ego Dissolution','The Turiya State','Light of the Self','Nirvikalpa Samadhi','The Mahavakyas','A Glimpse of Liberation'],
+  ][isAdv ? 1 : 0];
   async function submit(e: React.FormEvent) {
     e.preventDefault(); setSubmitting(true);
     try {
@@ -202,7 +264,7 @@ function LockedLevel({ lang, level }: { lang: Language; level: 'intermediate' | 
           <p style={{ color: 'var(--c-ivdim)', fontSize: '0.88rem', lineHeight: 1.8 }}>
             {isHi ? 'पहले प्रारंभिक के सभी 8 सत्र पूरे करें।' : 'Complete all 8 Beginner sessions first.'}
             <span style={{ display: 'block', fontSize: '0.7rem', color: accentColor, opacity: 0.6, fontStyle: 'italic', marginTop: '0.25rem' }}>
-              ✦ {isHi ? 'गुरु की अनुमति के बिना आगे नहीं' : 'Cannot proceed without the Master\'s permission'}
+              ✦ {isHi ? 'गुरु की अनुमति के बिना आगे नहीं' : "Cannot proceed without the Master's permission"}
             </span>
           </p>
         </div>
@@ -237,11 +299,11 @@ function LockedLevel({ lang, level }: { lang: Language; level: 'intermediate' | 
 }
 
 // ══════════════════════════════════════════
-//  MAIN PAGE
+//   MAIN PAGE
 // ══════════════════════════════════════════
 export default function SadhanaPage() {
-  const [lang, setLang] = useState<Language>('hi');
-  const [mounted, setMounted] = useState(false);
+  const [lang, setLang]             = useState<Language>('hi');
+  const [mounted, setMounted]       = useState(false);
   const [activeTrack, setActiveTrack] = useState<number | null>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const audioSectionRef = useRef<HTMLDivElement>(null);
@@ -267,18 +329,41 @@ export default function SadhanaPage() {
     <div style={{ minHeight: '100vh', background: BG, color: 'var(--c-ivory)', overflowX: 'hidden', fontFamily: 'var(--font-hind)' }}>
       <Header lang={activeLang} onLangChange={handleLangChange} />
 
-      {/* ══════════ HERO SECTION ══════════ */}
+      {/* ═══════════════════════════════════════
+          HERO — Full-screen spiritual gateway
+      ═══════════════════════════════════════ */}
       <section style={{ position: 'relative', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
 
-        {/* ── Full-screen dark gradient BG ── */}
-        <div style={{ position: 'absolute', inset: 0, background: `radial-gradient(ellipse 90% 70% at 50% 0%, rgba(26,92,53,0.38), transparent 65%), radial-gradient(ellipse 60% 50% at 80% 100%, rgba(61,138,88,0.14), transparent 60%), linear-gradient(to bottom, #080f0a 0%, #0a1a0e 60%, #080f0a 100%)` }} />
+        {/* ── Full-screen video background ── */}
+        <video
+          autoPlay muted loop playsInline
+          onCanPlay={() => setVideoLoaded(true)}
+          style={{
+            position: 'absolute', inset: 0,
+            width: '100%', height: '100%',
+            objectFit: 'cover', objectPosition: 'center',
+            opacity: videoLoaded ? 0.32 : 0,
+            transition: 'opacity 1.4s ease',
+            zIndex: 0,
+          }}
+        >
+          <source src="/sadhana-hero/promo.mp4" type="video/mp4" />
+          <source src="/sadhana-hero/aadisatv-guide.mp4" type="video/mp4" />
+        </video>
 
-        {/* ── Subtle grid ── */}
-        <div style={{ position: 'absolute', inset: 0, opacity: 0.06, backgroundImage: `linear-gradient(rgba(212,168,67,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(212,168,67,.02) 1px,transparent 1px)`, backgroundSize: '70px 70px', pointerEvents: 'none' }} />
+        {/* Dark veil over video — keeps text legible */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 1, background: 'linear-gradient(to bottom, rgba(6,12,7,0.72) 0%, rgba(8,15,10,0.55) 45%, rgba(8,15,10,0.82) 100%)' }} />
 
-        {/* ── Spinning mandala ── */}
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', pointerEvents: 'none' }}>
-          <svg width="900" height="900" viewBox="0 0 900 900" fill="none" aria-hidden suppressHydrationWarning style={{ opacity: 0.04, animation: 'sadhSpin 180s linear infinite' }}>
+        {/* Background layered gradients (on top of video) */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 2, background: `radial-gradient(ellipse 80% 60% at 50% 0%, rgba(26,92,53,0.22), transparent 60%), radial-gradient(ellipse 50% 40% at 15% 60%, ${SHAKTI_GLOW}, transparent 55%), radial-gradient(ellipse 50% 40% at 85% 60%, ${GURU_GLOW}, transparent 55%)` }} />
+
+        {/* Subtle gold grid */}
+        <div style={{ position: 'absolute', inset: 0, zIndex: 3, opacity: 0.04, backgroundImage: `linear-gradient(rgba(212,168,67,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(212,168,67,.02) 1px,transparent 1px)`, backgroundSize: '80px 80px', pointerEvents: 'none' }} />
+
+        {/* Large spinning mandala — centered */}
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', pointerEvents: 'none', zIndex: 4 }}>
+          <svg width="960" height="960" viewBox="0 0 900 900" fill="none" aria-hidden suppressHydrationWarning
+            style={{ opacity: 0.035, animation: 'sadhSpin 200s linear infinite' }}>
             <style>{`@keyframes sadhSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}`}</style>
             {[414, 315, 225, 135].map((r, i) => <circle key={r} cx="450" cy="450" r={r} stroke="#d4a843" strokeWidth={i === 0 ? '1' : '0.6'} strokeDasharray={i % 2 ? '5 8' : undefined} />)}
             {MANDALA_LINES.map((l, i) => <line key={i} x1={l.x1} y1={l.y1} x2={l.x2} y2={l.y2} stroke="#d4a843" strokeWidth="0.4" />)}
@@ -286,127 +371,243 @@ export default function SadhanaPage() {
           </svg>
         </div>
 
-        {/* ── Main hero layout: text left, video right ── */}
-        <div style={{ position: 'relative', zIndex: 10, maxWidth: '1200px', width: '100%', margin: '0 auto', padding: '6rem clamp(1.5rem,4vw,3rem) 4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,5vw,5rem)', alignItems: 'center' }} className="sadh-hero-grid">
+        {/* Hero content */}
+        <div style={{ position: 'relative', zIndex: 10, maxWidth: '1200px', width: '100%', margin: '0 auto', padding: '7rem clamp(1.5rem,4vw,3rem) 4rem', textAlign: 'center' }}>
 
-          {/* ── LEFT — text ── */}
-          <div>
-            {/* Pill */}
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.3rem 0.85rem', borderRadius: '999px', border: '1px solid rgba(212,168,67,0.3)', background: 'rgba(212,168,67,0.08)', marginBottom: '1.75rem' }}>
-              <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: GOLD, animation: 'sadhPulse 2.5s ease-in-out infinite' }} />
-              <span style={{ fontSize: '0.62rem', letterSpacing: '0.22em', color: GOLD, textTransform: 'uppercase' }}>{c.pill}</span>
-            </div>
-            <style>{`@keyframes sadhPulse{0%,100%{opacity:0.4;transform:scale(1)}50%{opacity:1;transform:scale(1.4)}}`}</style>
+          {/* Eyebrow pill */}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.3rem 1rem', borderRadius: '999px', border: `1px solid ${GOLD}30`, background: GOLD_FAINT, marginBottom: '2rem' }}>
+            <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: GOLD, animation: 'sadhPulse 2.5s ease-in-out infinite' }} />
+            <span style={{ fontSize: '0.6rem', letterSpacing: '0.28em', color: GOLD, textTransform: 'uppercase' }}>Nirvan Dham</span>
+          </div>
+          <style>{`@keyframes sadhPulse{0%,100%{opacity:0.4;transform:scale(1)}50%{opacity:1;transform:scale(1.4)}}`}</style>
 
-            {/* Main title */}
-            <h1 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 200, fontSize: 'clamp(4.5rem,9vw,8rem)', lineHeight: 0.88, color: 'var(--c-ivory)', marginBottom: '0.5rem', letterSpacing: '-0.01em' }}>
-              {c.heroTitle}
-            </h1>
-            <p style={{ fontFamily: 'var(--font-cormorant)', fontSize: 'clamp(1.1rem,2.2vw,1.6rem)', fontWeight: 300, color: GOLD_DIM, fontStyle: 'italic', marginBottom: '1.5rem', lineHeight: 1.3 }}>
-              {c.heroSub}
-            </p>
+          {/* Main title */}
+          <h1 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 200, fontSize: 'clamp(3.8rem,9vw,7.5rem)', lineHeight: 0.9, color: 'var(--c-ivory)', marginBottom: '1.2rem', letterSpacing: '-0.01em' }}>
+            {c.heroTitle}
+          </h1>
+          <p style={{ fontFamily: 'var(--font-cormorant)', fontSize: 'clamp(1rem,2vw,1.5rem)', fontWeight: 300, color: GOLD_DIM, fontStyle: 'italic', marginBottom: '1.5rem' }}>
+            {c.heroSub}
+          </p>
+          <div style={{ width: '60px', height: '1px', background: `linear-gradient(90deg,transparent,${GOLD},transparent)`, margin: '0 auto 1.5rem' }} />
+          <p style={{ color: 'var(--c-ivdim)', lineHeight: 2, fontSize: 'clamp(0.9rem,1.5vw,1.05rem)', maxWidth: '580px', margin: '0 auto 3.5rem' }}>
+            {c.heroDesc}
+          </p>
 
-            {/* Gold divider */}
-            <div style={{ width: '80px', height: '1px', background: `linear-gradient(90deg,${GOLD},transparent)`, marginBottom: '1.5rem' }} />
+          {/* ═══ DUAL CARDS ════════════════════════════════════════════ */}
+          <div className="sadh-dual-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(1rem,3vw,2rem)', maxWidth: '1100px', margin: '0 auto', textAlign: 'left' }}>
 
-            {/* Desc */}
-            <p style={{ color: 'var(--c-ivdim)', lineHeight: 1.95, fontSize: 'clamp(0.92rem,1.5vw,1.05rem)', marginBottom: '2.5rem', maxWidth: '440px' }}>
-              {c.heroDesc}
-            </p>
+            {/* ── SHAKTI CARD — Devi (PRIMARY) ── */}
+            <div style={{
+              position: 'relative', borderRadius: '20px', overflow: 'hidden',
+              border: `1px solid ${SHAKTI_PRI}30`,
+              background: `linear-gradient(145deg, rgba(192,96,128,0.08) 0%, rgba(8,15,10,0.85) 50%, rgba(192,96,128,0.05) 100%)`,
+              backdropFilter: 'blur(20px)',
+              boxShadow: `0 0 0 1px ${SHAKTI_PRI}15, 0 8px 60px ${SHAKTI_GLOW}, inset 0 1px 0 rgba(255,255,255,0.04)`,
+              transition: 'all 0.4s ease',
+            }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 1px ${SHAKTI_PRI}40, 0 16px 80px rgba(192,96,128,0.28), inset 0 1px 0 rgba(255,255,255,0.06)`; (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 1px ${SHAKTI_PRI}15, 0 8px 60px ${SHAKTI_GLOW}, inset 0 1px 0 rgba(255,255,255,0.04)`; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; }}>
 
-            {/* CTA buttons */}
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center', marginBottom: '3rem' }}>
-              <button onClick={scrollToAudio} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.95rem 2.25rem', borderRadius: '6px', background: GOLD, color: '#0a1209', fontWeight: 700, fontSize: '0.9rem', border: 'none', cursor: 'pointer', letterSpacing: '0.04em', fontFamily: 'var(--font-hind)', boxShadow: `0 8px 32px rgba(212,168,67,0.3)`, transition: 'all 0.3s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = `0 12px 40px rgba(212,168,67,0.4)`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = `0 8px 32px rgba(212,168,67,0.3)`; }}>
-                ▶ {c.cta1}
-              </button>
-              <Link href="/online-samvad" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.95rem 1.75rem', borderRadius: '6px', border: `1px solid ${GOLD}45`, background: `${GOLD}0d`, color: GOLD, fontWeight: 600, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em', transition: 'all 0.3s' }}
-                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = `${GOLD}18`; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = `${GOLD}0d`; }}>
-                🌐 {c.cta2}
-              </Link>
-            </div>
+              {/* Top shimmer line — rose */}
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: `linear-gradient(90deg, transparent, ${SHAKTI_PRI}, #e8a0b4, ${SHAKTI_PRI}, transparent)` }} />
 
-            {/* 3 level badges */}
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
-              {[
-                { data: c.level1, color: GOLD, glow: 'rgba(212,168,67,0.12)' },
-                { data: c.level2, color: '#67e8f9', glow: 'rgba(103,232,249,0.08)' },
-                { data: c.level3, color: '#fb923c', glow: 'rgba(251,146,60,0.08)' },
-              ].map((lv, i) => (
-                <div key={i} style={{ padding: '0.6rem 0.9rem', borderRadius: '8px', border: `1px solid ${lv.color}22`, background: `${lv.color}08`, flex: '1 1 auto', minWidth: '100px' }}>
-                  <p style={{ fontSize: '0.58rem', color: `${lv.color}70`, letterSpacing: '0.1em', marginBottom: '0.2rem' }}>{lv.data.badge}</p>
-                  <p style={{ fontSize: '0.82rem', color: 'var(--c-ivory)', fontWeight: 600 }}>{lv.data.title}</p>
-                  <p style={{ fontSize: '0.65rem', color: 'var(--c-ivdim)', opacity: 0.6 }}>{lv.data.count}</p>
+              {/* PRIMARY badge */}
+              <div style={{ position: 'absolute', top: '1.2rem', right: '1.2rem', padding: '0.22rem 0.7rem', borderRadius: '999px', background: `${SHAKTI_PRI}20`, border: `1px solid ${SHAKTI_PRI}50`, fontSize: '0.55rem', fontFamily: 'var(--font-inter)', fontWeight: 700, letterSpacing: '0.18em', color: SHAKTI_PRI, textTransform: 'uppercase' }}>
+                Primary Path
+              </div>
+
+              <div style={{ padding: 'clamp(1.8rem,4vw,2.5rem)' }}>
+                {/* Devi symbol */}
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem', padding: '0.28rem 0.85rem', borderRadius: '999px', background: `${SHAKTI_PRI}12`, border: `1px solid ${SHAKTI_PRI}30`, marginBottom: '1.2rem' }}>
+                    <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: SHAKTI_PRI, opacity: 0.85, animation: 'sadhPulse 3s ease-in-out infinite' }} />
+                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', color: SHAKTI_DIM, textTransform: 'uppercase' }}>{c.shaktiLabel}</span>
+                  </div>
                 </div>
-              ))}
+
+                {/* Title */}
+                <h2 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 300, fontSize: 'clamp(2rem,4vw,3.2rem)', lineHeight: 1.05, color: 'var(--c-ivory)', marginBottom: '0.75rem', whiteSpace: 'pre-line' }}>
+                  {c.shaktiTitle}
+                </h2>
+
+                {/* Attributes row */}
+                <p style={{ fontSize: '0.65rem', letterSpacing: '0.12em', color: SHAKTI_DIM, textTransform: 'uppercase', marginBottom: '1.2rem', fontFamily: 'var(--font-inter)' }}>
+                  {c.shaktiSub}
+                </p>
+
+                {/* Gold divider — rose tint */}
+                <div style={{ width: '48px', height: '1px', background: `linear-gradient(90deg,${SHAKTI_PRI},transparent)`, marginBottom: '1.2rem' }} />
+
+                {/* Description */}
+                <p style={{ color: 'var(--c-ivdim)', lineHeight: 1.9, fontSize: 'clamp(0.88rem,1.4vw,0.98rem)', marginBottom: '1.8rem' }}>
+                  {c.shaktiDesc}
+                </p>
+
+                {/* Mini badges */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+                  {[c.shaktiBadge1, c.shaktiBadge2, c.shaktiBadge3].map((b, i) => (
+                    <span key={i} style={{ padding: '0.3rem 0.75rem', borderRadius: '999px', background: `${SHAKTI_PRI}10`, border: `1px solid ${SHAKTI_PRI}28`, color: SHAKTI_DIM, fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.05em' }}>✦ {b}</span>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <Link href="/nirvan-shakti-snan-sadhna" style={{
+                  display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
+                  padding: '0.95rem 2rem', borderRadius: '8px',
+                  background: `linear-gradient(135deg, ${SHAKTI_PRI} 0%, #d4708a 50%, #b85070 100%)`,
+                  color: '#fff', textDecoration: 'none', fontWeight: 700,
+                  fontFamily: 'var(--font-hind)', fontSize: '0.95rem', letterSpacing: '0.03em',
+                  boxShadow: `0 8px 32px rgba(192,96,128,0.35)`,
+                  transition: 'all 0.3s', marginBottom: '1rem', width: '100%', justifyContent: 'center',
+                }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 14px 44px rgba(192,96,128,0.5)'; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(192,96,128,0.35)'; }}>
+                  🌸 {c.shaktiCta} →
+                </Link>
+
+                {/* Footer note */}
+                <p style={{ fontSize: '0.65rem', color: 'var(--c-ivdim)', opacity: 0.55, textAlign: 'center', letterSpacing: '0.06em' }}>
+                  {c.shaktiNote}
+                </p>
+              </div>
+            </div>
+
+            {/* ── GURU CARD — Nirvan Sutra (SECONDARY) ── */}
+            <div style={{
+              position: 'relative', borderRadius: '20px', overflow: 'hidden',
+              border: `1px solid ${GURU_PRI}25`,
+              background: `linear-gradient(145deg, rgba(61,138,88,0.07) 0%, rgba(8,15,10,0.88) 50%, rgba(61,138,88,0.04) 100%)`,
+              backdropFilter: 'blur(20px)',
+              boxShadow: `0 0 0 1px ${GURU_PRI}12, 0 8px 48px ${GURU_GLOW}, inset 0 1px 0 rgba(255,255,255,0.03)`,
+              transition: 'all 0.4s ease',
+            }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 1px ${GURU_PRI}35, 0 14px 64px rgba(61,138,88,0.24), inset 0 1px 0 rgba(255,255,255,0.05)`; (e.currentTarget as HTMLElement).style.transform = 'translateY(-4px)'; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = `0 0 0 1px ${GURU_PRI}12, 0 8px 48px ${GURU_GLOW}, inset 0 1px 0 rgba(255,255,255,0.03)`; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; }}>
+
+              {/* Top shimmer line — emerald */}
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: `linear-gradient(90deg, transparent, ${GURU_PRI}, #5dba7d, ${GURU_PRI}, transparent)` }} />
+
+              <div style={{ padding: 'clamp(1.8rem,4vw,2.5rem)' }}>
+                {/* Guru label */}
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem', padding: '0.28rem 0.85rem', borderRadius: '999px', background: `${GURU_PRI}10`, border: `1px solid ${GURU_PRI}28`, marginBottom: '1.2rem' }}>
+                    <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: GURU_PRI, opacity: 0.85, animation: 'sadhPulse 3.5s ease-in-out infinite' }} />
+                    <span style={{ fontSize: '0.55rem', letterSpacing: '0.2em', color: GURU_DIM, textTransform: 'uppercase' }}>{c.guruLabel}</span>
+                  </div>
+                </div>
+
+                {/* Title */}
+                <h2 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 300, fontSize: 'clamp(2rem,4vw,3.2rem)', lineHeight: 1.05, color: 'var(--c-ivory)', marginBottom: '0.75rem' }}>
+                  {c.guruTitle}
+                </h2>
+
+                {/* Attributes row */}
+                <p style={{ fontSize: '0.65rem', letterSpacing: '0.12em', color: GURU_DIM, textTransform: 'uppercase', marginBottom: '1.2rem', fontFamily: 'var(--font-inter)' }}>
+                  {c.guruSub}
+                </p>
+
+                {/* Emerald divider */}
+                <div style={{ width: '48px', height: '1px', background: `linear-gradient(90deg,${GURU_PRI},transparent)`, marginBottom: '1.2rem' }} />
+
+                {/* Description */}
+                <p style={{ color: 'var(--c-ivdim)', lineHeight: 1.9, fontSize: 'clamp(0.88rem,1.4vw,0.98rem)', marginBottom: '1.8rem' }}>
+                  {c.guruDesc}
+                </p>
+
+                {/* Mini badges */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '2rem' }}>
+                  {[c.guruBadge1, c.guruBadge2, c.guruBadge3].map((b, i) => (
+                    <span key={i} style={{ padding: '0.3rem 0.75rem', borderRadius: '999px', background: `${GURU_PRI}08`, border: `1px solid ${GURU_PRI}22`, color: GURU_DIM, fontSize: '0.68rem', fontWeight: 600, letterSpacing: '0.05em' }}>✦ {b}</span>
+                  ))}
+                </div>
+
+                {/* Two CTAs: Audio + Course */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', marginBottom: '1rem' }}>
+                  <button onClick={scrollToAudio} style={{
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                    padding: '0.95rem 2rem', borderRadius: '8px',
+                    background: `linear-gradient(135deg, ${GURU_PRI} 0%, #4da869 50%, #347a4d 100%)`,
+                    color: '#f0f8f2', fontWeight: 700, fontFamily: 'var(--font-hind)', fontSize: '0.95rem',
+                    letterSpacing: '0.03em', border: 'none', cursor: 'pointer',
+                    boxShadow: `0 8px 32px rgba(61,138,88,0.32)`, transition: 'all 0.3s',
+                  }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 14px 44px rgba(61,138,88,0.45)'; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(61,138,88,0.32)'; }}>
+                    🎧 {c.guruCta}
+                  </button>
+                  <Link href="/course" style={{
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem',
+                    padding: '0.8rem 2rem', borderRadius: '8px',
+                    border: `1px solid ${GOLD}38`, background: GOLD_FAINT,
+                    color: GOLD, textDecoration: 'none', fontWeight: 600,
+                    fontFamily: 'var(--font-hind)', fontSize: '0.9rem', letterSpacing: '0.03em',
+                    transition: 'all 0.3s',
+                  }}
+                    onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = `${GOLD}14`; (e.currentTarget as HTMLElement).style.borderColor = `${GOLD}55`; }}
+                    onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = GOLD_FAINT; (e.currentTarget as HTMLElement).style.borderColor = `${GOLD}38`; }}>
+                    📖 {isHi ? 'पाठ्यक्रम देखें' : 'View Course'} →
+                  </Link>
+                </div>
+
+                {/* Footer note */}
+                <p style={{ fontSize: '0.65rem', color: 'var(--c-ivdim)', opacity: 0.55, textAlign: 'center', letterSpacing: '0.06em' }}>
+                  {c.guruNote}
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* ── RIGHT — Video avatar ── */}
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
-            {/* Outer glow ring */}
-            <div style={{ position: 'absolute', width: '110%', height: '110%', borderRadius: '50%', background: `radial-gradient(circle, rgba(26,92,53,0.22) 0%, transparent 70%)`, pointerEvents: 'none' }} />
-
-            {/* Video circle container */}
-            <div style={{ position: 'relative', width: 'clamp(280px,40vw,480px)', aspectRatio: '1/1', borderRadius: '50%', overflow: 'hidden', border: `2px solid ${GOLD}22`, boxShadow: `0 0 80px rgba(26,92,53,0.3), 0 0 0 1px rgba(212,168,67,0.08), inset 0 0 60px rgba(212,168,67,0.04)`, background: 'rgba(8,15,10,0.8)' }}>
-              <video
-                autoPlay loop muted playsInline
-                onCanPlay={() => setVideoLoaded(true)}
-                style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: videoLoaded ? 1 : 0, transition: 'opacity 1s ease', transform: 'scale(1.05)' }}>
-                <source src="/sadhana-hero/promo.mp4" type="video/mp4" />
-                <source src="/sadhana-hero/aadisatv-guide.mp4" type="video/mp4" />
-              </video>
-              {/* Gradient overlay at bottom */}
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '35%', background: 'linear-gradient(to top, rgba(8,15,10,0.7), transparent)', pointerEvents: 'none' }} />
-              {/* Loading placeholder */}
-              {!videoLoaded && (
-                <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(8,15,10,0.8)' }}>
-                  <div style={{ fontSize: '3rem', color: GOLD, opacity: 0.4, animation: 'sadhPulse 2s ease-in-out infinite' }}>◎</div>
-                </div>
-              )}
-            </div>
-
-            {/* Floating label */}
-            <div style={{ position: 'absolute', bottom: 'clamp(-1rem,2vw,-0.5rem)', left: '50%', transform: 'translateX(-50%)', background: 'rgba(8,15,10,0.9)', backdropFilter: 'blur(12px)', border: `1px solid ${GOLD}28`, borderRadius: '999px', padding: '0.4rem 1.1rem', whiteSpace: 'nowrap' }}>
-              <p style={{ fontSize: '0.65rem', letterSpacing: '0.16em', color: GOLD_DIM, textTransform: 'uppercase' }}>{c.guidedBy}</p>
-            </div>
-
-            {/* Orbiting dot */}
-            <div style={{ position: 'absolute', inset: '-8px', borderRadius: '50%', border: `1px solid ${GOLD}12`, animation: 'sadhOrbit 12s linear infinite', pointerEvents: 'none' }}>
-              <div style={{ position: 'absolute', top: '5%', left: '50%', width: '6px', height: '6px', borderRadius: '50%', background: GOLD, marginLeft: '-3px', boxShadow: `0 0 8px ${GOLD}` }} />
-            </div>
-            <style>{`@keyframes sadhOrbit{from{transform:rotate(0)}to{transform:rotate(360deg)}}`}</style>
-          </div>
+          {/* ── Scroll indicator ── */}
+          <button onClick={scrollToAudio} style={{ marginTop: '4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', background: 'transparent', border: 'none', cursor: 'pointer', color: GOLD_DIM, fontSize: '0.6rem', letterSpacing: '0.18em', textTransform: 'uppercase', animation: 'sadhFloat 3s ease-in-out infinite' }}>
+            <span>{c.scrollDown}</span>
+            <span style={{ display: 'block', width: '1px', height: '32px', background: `linear-gradient(to bottom,${GOLD_DIM},transparent)` }} />
+          </button>
+          <style>{`@keyframes sadhFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}`}</style>
         </div>
-
-        {/* Scroll indicator */}
-        <button onClick={scrollToAudio} style={{ position: 'absolute', bottom: '2rem', left: '50%', transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem', background: 'transparent', border: 'none', cursor: 'pointer', color: GOLD_DIM, fontSize: '0.62rem', letterSpacing: '0.16em', textTransform: 'uppercase', animation: 'sadhFloat 3s ease-in-out infinite', zIndex: 10 }}>
-          <span>{c.scrollDown}</span>
-          <span style={{ display: 'block', width: '1px', height: '32px', background: `linear-gradient(to bottom,${GOLD_DIM},transparent)`, margin: '0 auto' }} />
-        </button>
-        <style>{`@keyframes sadhFloat{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}`}</style>
       </section>
 
-      {/* ══════════ AUDIO SECTION ══════════ */}
-      <div ref={audioSectionRef} style={{ position: 'relative', zIndex: 2, maxWidth: '860px', margin: '0 auto', padding: '5rem clamp(1rem,4vw,2rem) 6rem' }}>
+      {/* ═══════════════════════════════════════
+          DIVIDER — "Two streams, one Dhama"
+      ═══════════════════════════════════════ */}
+      <div style={{ position: 'relative', padding: '3.5rem clamp(1.5rem,4vw,3rem)', textAlign: 'center', overflow: 'hidden' }}>
+        {/* left line */}
+        <div style={{ position: 'absolute', left: 0, top: '50%', width: '35%', height: '1px', background: `linear-gradient(90deg, transparent, ${SHAKTI_PRI}30, ${GOLD}20)` }} />
+        {/* right line */}
+        <div style={{ position: 'absolute', right: 0, top: '50%', width: '35%', height: '1px', background: `linear-gradient(270deg, transparent, ${GURU_PRI}30, ${GOLD}20)` }} />
+        <span style={{ position: 'relative', fontSize: '0.68rem', color: 'var(--c-ivdim)', letterSpacing: '0.18em', textTransform: 'uppercase', opacity: 0.7 }}>
+          ✦ {c.dividerText} ✦
+        </span>
+      </div>
+
+      {/* ═══════════════════════════════════════
+          GURU AUDIO SECTION (backfoot — secondary)
+      ═══════════════════════════════════════ */}
+      <div ref={audioSectionRef} style={{ position: 'relative', zIndex: 2, maxWidth: '860px', margin: '0 auto', padding: '4rem clamp(1rem,4vw,2rem) 6rem' }}>
+
+        {/* Section label */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2.5rem', justifyContent: 'center' }}>
+          <div style={{ width: '40px', height: '1px', background: `linear-gradient(90deg, transparent, ${GURU_PRI})` }} />
+          <span style={{ fontSize: '0.58rem', letterSpacing: '0.3em', color: GURU_DIM, textTransform: 'uppercase', fontFamily: 'var(--font-inter)', fontWeight: 700 }}>
+            {isHi ? 'गुरु का ज्ञान-मार्ग' : "The Guru's Knowledge Path"}
+          </span>
+          <div style={{ width: '40px', height: '1px', background: `linear-gradient(90deg, ${GURU_PRI}, transparent)` }} />
+        </div>
 
         {/* Beginner header */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.1rem 1.4rem', borderRadius: '10px', background: 'rgba(212,168,67,0.06)', border: '1px solid rgba(212,168,67,0.2)', marginBottom: '1.25rem', flexWrap: 'wrap' }}>
-          <div style={{ width: '44px', height: '44px', borderRadius: '50%', border: `1.5px solid ${GOLD}50`, background: `${GOLD}10`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', flexShrink: 0 }}>🌱</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1.1rem 1.4rem', borderRadius: '10px', background: `${GURU_PRI}08`, border: `1px solid ${GURU_PRI}20`, marginBottom: '1.25rem', flexWrap: 'wrap' }}>
+          <div style={{ width: '44px', height: '44px', borderRadius: '50%', border: `1.5px solid ${GURU_PRI}50`, background: `${GURU_PRI}10`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', flexShrink: 0 }}>🌱</div>
           <div style={{ flex: 1 }}>
-            <p style={{ fontSize: '0.58rem', letterSpacing: '0.2em', color: GOLD_DIM, textTransform: 'uppercase', marginBottom: '0.15rem' }}>{isHi ? 'प्रारंभिक · मुक्त प्रवेश' : 'Beginner · Open Access'}</p>
+            <p style={{ fontSize: '0.58rem', letterSpacing: '0.2em', color: GURU_DIM, textTransform: 'uppercase', marginBottom: '0.15rem' }}>{c.audioLabel}</p>
             <h2 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 300, fontSize: 'clamp(1.3rem,2.5vw,1.8rem)', color: 'var(--c-ivory)', lineHeight: 1.1 }}>{c.trackTitle}</h2>
           </div>
           <div style={{ display: 'flex', gap: '0.4rem' }}>
             <span style={{ padding: '0.25rem 0.65rem', borderRadius: '999px', background: 'rgba(134,239,172,0.1)', border: '1px solid rgba(134,239,172,0.25)', color: '#86efac', fontSize: '0.62rem', fontWeight: 700 }}>✓ {isHi ? 'निःशुल्क' : 'Free'}</span>
-            <span style={{ padding: '0.25rem 0.65rem', borderRadius: '999px', background: 'rgba(212,168,67,0.1)', border: '1px solid rgba(212,168,67,0.25)', color: GOLD, fontSize: '0.62rem', fontWeight: 700 }}>↓ {isHi ? 'डाउनलोड' : 'Download'}</span>
+            <span style={{ padding: '0.25rem 0.65rem', borderRadius: '999px', background: GOLD_FAINT, border: `1px solid ${GOLD}25`, color: GOLD, fontSize: '0.62rem', fontWeight: 700 }}>↓ {isHi ? 'डाउनलोड' : 'Download'}</span>
           </div>
         </div>
 
         {isHi && (
-          <div style={{ padding: '0.8rem 1.1rem', borderRadius: '7px', background: 'rgba(212,168,67,0.05)', border: '1px solid rgba(212,168,67,0.12)', marginBottom: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+          <div style={{ padding: '0.8rem 1.1rem', borderRadius: '7px', background: GOLD_FAINT, border: `1px solid ${GOLD}12`, marginBottom: '0.85rem', display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
             <span style={{ fontSize: '1rem' }}>🔜</span>
             <p style={{ color: 'var(--c-ivdim)', fontSize: '0.82rem', lineHeight: 1.7 }}>हिंदी ऑडियो शीघ्र। अभी <strong style={{ color: GOLD }}>EN</strong> चुनें।</p>
           </div>
@@ -418,9 +619,9 @@ export default function SadhanaPage() {
           ))}
         </div>
 
-        <div style={{ padding: '0.9rem 1.25rem', borderRadius: '8px', background: 'rgba(212,168,67,0.04)', border: '1px solid rgba(212,168,67,0.1)', textAlign: 'center', marginBottom: '3rem' }}>
+        <div style={{ padding: '0.9rem 1.25rem', borderRadius: '8px', background: GOLD_FAINT, border: `1px solid ${GOLD}10`, textAlign: 'center', marginBottom: '3rem' }}>
           <p style={{ color: 'var(--c-ivdim)', fontSize: '0.85rem', lineHeight: 1.8 }}>
-            ✦ {isHi ? 'सभी 8 सत्र पूरे करने के बाद मध्यवर्ती/विशेषज्ञ का access नीचे माँगें।' : 'After completing all 8, request Intermediate/Advanced access below.'}
+            ✦ {c.completeNote}
           </p>
         </div>
 
@@ -431,37 +632,31 @@ export default function SadhanaPage() {
         </div>
 
         {/* Samvad CTA */}
-        <div style={{ textAlign: 'center', padding: '2.5rem 2rem', borderRadius: '14px', border: '1px solid rgba(212,168,67,0.16)', background: 'rgba(8,15,10,0.5)', backdropFilter: 'blur(14px)' }}>
+        <div style={{ textAlign: 'center', padding: '2.5rem 2rem', borderRadius: '14px', border: `1px solid ${GOLD}16`, background: 'rgba(8,15,10,0.5)', backdropFilter: 'blur(14px)' }}>
           <div style={{ fontSize: '1.6rem', marginBottom: '0.75rem' }}>🙏</div>
           <h3 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 300, fontSize: 'clamp(1.4rem,3vw,2rem)', color: 'var(--c-ivory)', marginBottom: '0.65rem' }}>
-            {isHi ? 'आगे बढ़ने के लिए संवाद करें' : 'Connect to Go Deeper'}
+            {c.samvadTitle}
           </h3>
           <p style={{ color: 'var(--c-ivdim)', fontSize: '0.88rem', lineHeight: 1.85, marginBottom: '1.5rem', maxWidth: '420px', margin: '0 auto 1.5rem' }}>
-            {isHi ? 'ये सत्र आपके भीतर कुछ जगा रहे हैं? आदिसत्व से सीधे संवाद करें।' : 'Are these sessions awakening something within? Connect directly with Aadisatv.'}
+            {c.samvadDesc}
           </p>
           <div style={{ display: 'flex', gap: '0.85rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/online-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: `1px solid ${GOLD}42`, background: `${GOLD}10`, color: GOLD, fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🌐 {isHi ? 'ऑनलाइन संवाद →' : 'Online Samvad →'}</Link>
-            <Link href="/bodhgaya-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: '1px solid rgba(134,239,172,0.28)', background: 'rgba(134,239,172,0.07)', color: '#86efac', fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🪷 {isHi ? 'बोधगया संवाद →' : 'Bodhgaya Samvad →'}</Link>
+            <Link href="/online-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: `1px solid ${GOLD}42`, background: `${GOLD}10`, color: GOLD, fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🌐 {c.onlineSamvad} →</Link>
+            <Link href="/bodhgaya-samvad" style={{ padding: '0.8rem 1.6rem', borderRadius: '7px', border: '1px solid rgba(134,239,172,0.28)', background: 'rgba(134,239,172,0.07)', color: '#86efac', fontWeight: 700, fontSize: '0.88rem', textDecoration: 'none', letterSpacing: '0.04em' }}>🪷 {c.bodhgaya} →</Link>
           </div>
         </div>
       </div>
 
-
-      {/* ══════════ NIRVAN SUTRA COURSE — Premium Highlight ══════════ */}
+      {/* ═══════════════════════════════════════
+          NIRVAN SUTRA COURSE — Guru's flagship
+      ═══════════════════════════════════════ */}
       <section style={{ position: 'relative', overflow: 'hidden', margin: '0' }}>
-        {/* Cinematic video background — opacity increased for more presence */}
-        <video autoPlay muted loop playsInline src="/course-videos/hero.mp4" style={{
-          position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.30,
-        }} />
-        {/* Dark overlays — slightly lighter center to let video breathe */}
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(4,11,5,0.96) 0%, rgba(8,20,10,0.78) 50%, rgba(4,11,5,0.96) 100%)' }} />
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 65% 50% at 80% 50%, rgba(212,168,67,0.08) 0%, transparent 70%)' }} />
-        {/* Gold shimmer border top */}
+        <video autoPlay muted loop playsInline src="/course-videos/hero.mp4" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.28 }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(4,11,5,0.97) 0%, rgba(8,20,10,0.80) 50%, rgba(4,11,5,0.97) 100%)' }} />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 65% 50% at 80% 50%, rgba(212,168,67,0.07) 0%, transparent 70%)' }} />
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, transparent, #d4a843 25%, #ffe89a 50%, #d4a843 75%, transparent)' }} />
 
         <div style={{ position: 'relative', zIndex: 2, maxWidth: '1160px', margin: '0 auto', padding: 'clamp(5rem,10vw,8rem) clamp(1.5rem,5vw,4rem)' }}>
-
-          {/* Section label */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '3rem' }}>
             <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, transparent, #d4a843)' }} />
             <span style={{ fontSize: '0.56rem', letterSpacing: '0.35em', color: '#d4a843', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', fontWeight: 700 }}>
@@ -470,125 +665,68 @@ export default function SadhanaPage() {
             <div style={{ width: '40px', height: '1px', background: 'linear-gradient(90deg, #d4a843, transparent)' }} />
           </div>
 
-          {/* Main 2-col layout */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2rem,6vw,6rem)', alignItems: 'center' }} className="sadh-course-grid">
-
-            {/* LEFT — text */}
             <div>
-              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.35rem 0.9rem', borderRadius: '999px', border: '1px solid rgba(212,168,67,0.3)', background: 'rgba(212,168,67,0.07)', marginBottom: '1.5rem' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.35rem 0.9rem', borderRadius: '999px', border: `1px solid ${GOLD}30`, background: GOLD_FAINT, marginBottom: '1.5rem' }}>
                 <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: GOLD, display: 'inline-block', animation: 'sadhPulse 2s ease-in-out infinite' }} />
-                <span style={{ fontSize: '0.6rem', color: GOLD, letterSpacing: '0.15em', fontFamily: 'var(--font-inter)' }}>
-                  {isHi ? 'निर्वाण सूत्र पाठ्यक्रम' : 'NIRVAN SUTRA COURSE'}
-                </span>
+                <span style={{ fontSize: '0.6rem', color: GOLD, letterSpacing: '0.15em', fontFamily: 'var(--font-inter)' }}>{isHi ? 'निर्वाण सूत्र पाठ्यक्रम' : 'NIRVAN SUTRA COURSE'}</span>
               </div>
-
-              {/* Hero headline — larger, more dramatic */}
-              <h2 style={{
-                fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-cormorant)',
-                fontWeight: isHi ? 700 : 300,
-                fontSize: 'clamp(3.2rem,6vw,5.5rem)', lineHeight: 1.0,
-                color: 'var(--c-ivory)', marginBottom: '1.25rem',
-                fontStyle: isHi ? 'normal' : 'italic',
-                letterSpacing: isHi ? '-0.01em' : '-0.02em',
-              }}>
+              <h2 style={{ fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-cormorant)', fontWeight: isHi ? 700 : 300, fontSize: 'clamp(3.2rem,6vw,5.5rem)', lineHeight: 1.0, color: 'var(--c-ivory)', marginBottom: '1.25rem', fontStyle: isHi ? 'normal' : 'italic', letterSpacing: isHi ? '-0.01em' : '-0.02em' }}>
                 {isHi ? 'आप कौन हैं?' : 'Who are you?'}
               </h2>
-
               <p style={{ color: 'rgba(245,237,216,0.58)', lineHeight: 1.95, fontSize: 'clamp(0.92rem,1.5vw,1.02rem)', marginBottom: '2.25rem', maxWidth: '460px', fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)' }}>
-                {isHi
-                  ? 'साधना के बाद अगला कदम है श्रवण। निर्वाण सूत्र पाठ्यक्रम में 8 अध्यायों में अद्वैत, आत्म-जांच और मुक्ति की गहरी यात्रा शुरू करें।'
-                  : 'After Sadhana comes Shravana. Begin a deep journey through 8 chapters of Advaita, self-inquiry and liberation in the Nirvan Sutra Course.'}
+                {isHi ? 'साधना के बाद अगला कदम है श्रवण। निर्वाण सूत्र पाठ्यक्रम में 8 अध्यायों में अद्वैत, आत्म-जांच और मुक्ति की गहरी यात्रा शुरू करें।' : 'After Sadhana comes Shravana. Begin a deep journey through 8 chapters of Advaita, self-inquiry and liberation in the Nirvan Sutra Course.'}
               </p>
-
-              {/* Stats */}
               <div style={{ display: 'flex', gap: '2.5rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-                {[
-                  { num: '8', label: isHi ? 'अध्याय' : 'Chapters' },
-                  { num: '3', label: isHi ? 'भाषाएं' : 'Languages' },
-                  { num: '∞', label: isHi ? 'स्वतंत्र पहुंच' : 'Free Access' },
-                ].map(s => (
+                {[{ num: '8', label: isHi ? 'अध्याय' : 'Chapters' }, { num: '3', label: isHi ? 'भाषाएं' : 'Languages' }, { num: '∞', label: isHi ? 'स्वतंत्र पहुंच' : 'Free Access' }].map(s => (
                   <div key={s.num}>
                     <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.6rem', fontWeight: 300, color: GOLD, lineHeight: 1 }}>{s.num}</div>
                     <div style={{ fontSize: '0.68rem', color: 'rgba(245,237,216,0.4)', letterSpacing: '0.08em', fontFamily: 'var(--font-inter)', marginTop: '0.2rem' }}>{s.label}</div>
                   </div>
                 ))}
               </div>
-
-              {/* Bold CTA */}
-              <Link href="/course" style={{
-                display: 'inline-flex', alignItems: 'center', gap: '0.7rem',
-                padding: '1.1rem 2.6rem', borderRadius: '6px',
-                background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`,
-                color: '#061008', textDecoration: 'none', fontWeight: 800,
-                fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)',
-                fontSize: '1rem', letterSpacing: '0.04em',
-                boxShadow: `0 8px 48px rgba(212,168,67,0.36)`,
-                transition: 'all 0.3s',
-              }}
+              <Link href="/course" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.7rem', padding: '1.1rem 2.6rem', borderRadius: '6px', background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`, color: '#061008', textDecoration: 'none', fontWeight: 800, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', letterSpacing: '0.04em', boxShadow: `0 8px 48px rgba(212,168,67,0.36)`, transition: 'all 0.3s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 18px 64px rgba(212,168,67,0.54)'; }}
-                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 48px rgba(212,168,67,0.36)'; }}
-              >
+                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 48px rgba(212,168,67,0.36)'; }}>
                 {isHi ? 'पाठ्यक्रम शुरू करें' : 'Begin the Course'} →
               </Link>
             </div>
 
-            {/* RIGHT — enhanced chapter list with glow */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
               {[
-                { n: '01', hi: 'स्वयं की खोज', en: 'The Discovery of Self' },
-                { n: '02', hi: 'मन की परतें', en: 'Layers of the Mind' },
-                { n: '03', hi: 'साक्षी बोध', en: 'Witness Awareness' },
-                { n: '04', hi: 'अहंकार की जड़', en: 'The Root of Ego' },
-                { n: '05', hi: 'माया का खेल', en: 'The Play of Maya' },
-                { n: '06', hi: 'ध्यान का द्वार', en: 'Gateway of Meditation' },
-                { n: '07', hi: 'मुक्ति की राह', en: 'Path of Liberation' },
-                { n: '08', hi: 'निर्वाण सूत्र', en: 'Nirvan Sutra' },
-              ].map((ch, i) => {
-                const isActive = i === 5;
-                return (
-                  <div
-                    key={ch.n}
-                    className={`sadh-chapter-row${isActive ? ' sadh-chapter-active' : ''}`}
-                    style={{
-                      display: 'flex', alignItems: 'center', gap: '1rem',
-                      padding: '0.75rem 1.1rem', borderRadius: '8px',
-                      border: `1px solid ${isActive ? 'rgba(212,168,67,0.35)' : 'rgba(212,168,67,0.07)'}`,
-                      background: isActive ? 'rgba(212,168,67,0.09)' : 'rgba(5,14,7,0.55)',
-                      backdropFilter: 'blur(8px)',
-                      boxShadow: isActive ? '0 0 20px rgba(212,168,67,0.12), inset 0 0 12px rgba(212,168,67,0.04)' : 'none',
-                      transition: 'all 0.22s',
-                      cursor: 'default',
-                    }}
-                  >
-                    <span style={{ fontFamily: 'var(--font-inter)', fontSize: '0.55rem', color: isActive ? 'rgba(212,168,67,0.7)' : 'rgba(212,168,67,0.35)', letterSpacing: '0.1em', minWidth: '18px' }}>{ch.n}</span>
-                    <span style={{ flex: 1, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '0.88rem', color: isActive ? GOLD : 'rgba(245,237,216,0.58)', fontWeight: isActive ? 600 : 400 }}>
-                      {isHi ? ch.hi : ch.en}
-                    </span>
-                    {isActive && <span style={{ fontSize: '0.55rem', color: 'rgba(212,168,67,0.55)', animation: 'sadhPulse 2.5s ease-in-out infinite' }}>◈</span>}
-                  </div>
-                );
-              })}
+                { n: '01', hi: 'स्वयं की खोज',       en: 'The Discovery of Self'  },
+                { n: '02', hi: 'मन का स्वभाव',       en: 'The Nature of Mind'     },
+                { n: '03', hi: 'द्रष्टा और दृश्य',   en: 'The Seer and the Seen'  },
+                { n: '04', hi: 'माया का जाल',         en: 'The Web of Maya'        },
+                { n: '05', hi: 'नेति नेति',           en: 'Neti Neti'              },
+                { n: '06', hi: 'तुरीय अवस्था',       en: 'The Turiya State'       },
+                { n: '07', hi: 'महावाक्य',            en: 'The Mahavakyas'         },
+                { n: '08', hi: 'मोक्ष की देहरी',     en: 'The Threshold of Moksha'},
+              ].map((ch, i) => (
+                <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.75rem 1rem', borderRadius: '8px', border: `1px solid ${GOLD}0d`, background: 'rgba(212,168,67,0.03)', transition: 'all 0.2s' }}
+                  onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(212,168,67,0.07)'; (e.currentTarget as HTMLElement).style.borderColor = `${GOLD}22`; }}
+                  onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(212,168,67,0.03)'; (e.currentTarget as HTMLElement).style.borderColor = `${GOLD}0d`; }}>
+                  <span style={{ fontFamily: 'var(--font-cormorant)', fontSize: '0.8rem', color: GOLD_DIM, opacity: 0.7, letterSpacing: '0.08em', flexShrink: 0 }}>{ch.n}</span>
+                  <span style={{ color: 'rgba(245,237,216,0.65)', fontSize: '0.88rem', flex: 1 }}>{isHi ? ch.hi : ch.en}</span>
+                  <span style={{ color: `${GOLD}35`, fontSize: '0.75rem', flexShrink: 0 }}>→</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-
-        {/* Bottom border */}
-        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '1px', background: 'linear-gradient(90deg, transparent, rgba(212,168,67,0.35) 50%, transparent)' }} />
-        <style>{`
-          @media(max-width:768px){.sadh-course-grid{grid-template-columns:1fr !important;}}
-          .sadh-chapter-row:hover:not(.sadh-chapter-active){
-            border-color: rgba(212,168,67,0.18) !important;
-            background: rgba(212,168,67,0.04) !important;
-          }
-        `}</style>
       </section>
 
-
+      {/* ─── Footer contact ─── */}
       <ContactSection lang={activeLang} />
 
+      {/* ── Global responsive styles ── */}
       <style>{`
         @media (max-width: 700px) {
-          .sadh-hero-grid { grid-template-columns: 1fr !important; }
+          .sadh-dual-grid { grid-template-columns: 1fr !important; }
+          .sadh-course-grid { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 480px) {
+          .sadh-dual-grid { gap: 1.25rem !important; }
         }
       `}</style>
     </div>

@@ -7,6 +7,9 @@
   --shakti-ivory: #f5edd8;
   --shakti-muted: rgba(245, 237, 216, 0.64);
   --shakti-border: rgba(212, 168, 67, 0.2);
+  --shakti-rose: #c06080;
+  --shakti-rose-dim: rgba(192, 96, 128, 0.65);
+  --shakti-rose-faint: rgba(192, 96, 128, 0.08);
   min-height: 100vh;
   overflow: hidden;
   background: var(--shakti-bg);
@@ -179,12 +182,12 @@
 .practiceTimeline h3 { margin-top: 0.45rem; font: 500 1.35rem/1.3 var(--font-hind); }
 .practiceTimeline article > div:last-child > p:last-child { margin-top: 0.6rem; color: var(--shakti-muted); font: 400 0.9rem/1.7 var(--font-hind); }
 
-.entrySection { background: #0a180e; }
+.entrySection { background: #0a180e; position: relative; isolation: isolate; }
 .entryTimeline { max-width: 920px; margin: 3.5rem auto 0; }
 .entryTimeline article { position: relative; display: grid; grid-template-columns: 92px 1fr; gap: 1.2rem; min-height: 118px; }
-.entryTimeline article::before { content: ''; position: absolute; left: 34px; top: 51px; bottom: -4px; width: 1px; background: var(--shakti-border); }
+.entryTimeline article::before { content: ''; position: absolute; left: 34px; top: 51px; bottom: -4px; width: 1px; background: linear-gradient(to bottom, rgba(192,96,128,0.35), rgba(212,168,67,0.1)); }
 .entryTimeline article:last-child::before { display: none; }
-.entryTimeline article > span { width: 68px; height: 48px; display: grid; place-items: center; border: 1px solid var(--shakti-border); border-radius: 999px; color: var(--shakti-gold); background: #0a180e; font: 600 0.72rem/1 var(--font-inter); }
+.entryTimeline article > span { width: 68px; height: 48px; display: grid; place-items: center; border: 1px solid rgba(192,96,128,0.35); border-radius: 999px; color: #c06080; background: rgba(10,24,14,0.9); font: 600 0.72rem/1 var(--font-inter); }
 .entryTimeline h3 { font: 500 1.35rem/1.3 var(--font-hind); }
 .entryTimeline p { margin-top: 0.35rem; color: var(--shakti-muted); font: 400 0.95rem/1.7 var(--font-hind); }
 
@@ -262,7 +265,7 @@
 .safetyLayout aside { margin-top: 1.5rem; padding: 1.25rem; border: 1px solid rgba(181, 91, 75, 0.24); border-radius: 6px; color: rgba(245, 237, 216, 0.58); font: 400 0.88rem/1.75 var(--font-hind); }
 .safetyLayout aside strong { color: #d7a288; }
 
-.finalCta { min-height: 640px; display: grid; place-items: center; padding: 6rem 0; text-align: center; background: #08140b; }
+.finalCta { min-height: 640px; display: grid; place-items: center; padding: 6rem 0; text-align: center; background: #0a0a10; }
 .finalCta h2 { max-width: 900px; margin: 0.8rem auto 0; font: 500 clamp(2.5rem, 5.5vw, 5rem)/1.08 var(--font-hind); text-wrap: balance; }
 .finalCta p:not(.eyebrow) { margin: 1.2rem 0 2rem; color: var(--shakti-muted); font: 400 1.05rem/1.7 var(--font-hind); }
 
