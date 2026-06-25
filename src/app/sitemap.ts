@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { EBOOKS, MAGAZINES, isMagazineReadable } from '@/lib/library-data';
+import { getAllBlogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://nirvandham.in';
@@ -9,12 +10,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '',
     '/about-aadisatv',
     '/nirvan-sutra',
+    '/course',
     '/nirvan-shakti-snan-sadhna',
     '/spiritual-guidance',
     '/online-samvad',
     '/bodhgaya-samvad',
     '/guided-meditation',
     '/library',
+    '/library/audiobooks',
     '/faq',
     '/donation',
     '/blog',
@@ -54,5 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     }));
 
-  return [...staticRoutes, ...bookRoutes, ...magazineRoutes];
+  const blogRoutes = getAllBlogPosts().map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.75,
+  }));
+
+  return [...staticRoutes, ...bookRoutes, ...magazineRoutes, ...blogRoutes];
 }

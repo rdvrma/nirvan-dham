@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/utils/supabase/client';
+import type { Language } from '@/lib/i18n';
+import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
+import Header from '@/components/Header';
 
 // ── Constants (dark theme — landing is always dark/cinematic) ─────────────────
 const GOLD = '#d4a843';
@@ -95,11 +98,18 @@ export default function CourseLandingPage() {
   const [hoveredLang, setHoveredLang] = useState<string | null>(null);
   const [savedLang, setSavedLang] = useState<string | null>(null);
   const [selecting, setSelecting] = useState<string | null>(null);
+  const [uiLang, setUiLang] = useState<Language>('hi');
 
   useEffect(() => {
     setMounted(true);
     setSavedLang(localStorage.getItem('course-lang'));
+    setUiLang(getSavedLanguage());
   }, []);
+
+  function handleUiLangChange(l: Language) {
+    setUiLang(l);
+    saveLanguage(l);
+  }
 
   async function handleStart(code: string) {
     setSelecting(code);
@@ -138,6 +148,7 @@ export default function CourseLandingPage() {
       minHeight: '100vh', background: BG, color: IVORY, overflowX: 'hidden',
       opacity: mounted ? 1 : 0, transition: 'opacity 0.5s ease',
     }}>
+      <Header lang={uiLang} onLangChange={handleUiLangChange} />
 
       {/* ── Background mandala ─────────────────────────────────── */}
       <div aria-hidden style={{
