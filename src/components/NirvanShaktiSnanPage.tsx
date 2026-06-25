@@ -299,8 +299,9 @@ export default function NirvanShaktiSnanPage() {
         <Image
           src="/programs/nirvan-shakti-snan/mahamaya-hero.png"
           alt={isHi ? 'देवी महामाया की ध्यानमय उपस्थिति' : 'The meditative presence of Devi Mahamaya'}
-          fill priority sizes="100vw"
+          fill priority sizes="100vw" quality={85}
           className={styles.heroImage}
+          fetchPriority="high"
         />
         <div className={styles.heroVeil} />
         <div className={styles.heroGeometry} aria-hidden><MandalaMark /></div>

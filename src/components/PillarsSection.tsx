@@ -18,7 +18,7 @@ const PILLAR_GLOWS = [
 export default function PillarsSection({ lang }: PillarsSectionProps) {
   const t = content[lang].pillars;
   const isHindi = lang === 'hi';
-  const pillarLinks = ['/samvad/bodhgaya', '', '/samvad/online'];
+  const pillarLinks = ['/bodhgaya-samvad', '', '/online-samvad'];
 
   return (
     <section
