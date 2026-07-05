@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/login', '/signup', '/course/hi/', '/course/en/', '/course/hl/'],
     },
-    sitemap: 'https://nirvandham.in/sitemap.xml',
+    sitemap: 'https://www.nirvandham.in/sitemap.xml',
   };
 }

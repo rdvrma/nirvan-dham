@@ -3,7 +3,7 @@ import { EBOOKS, MAGAZINES, isMagazineReadable } from '@/lib/library-data';
 import { getAllBlogPosts } from '@/lib/blog';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://nirvandham.in';
+  const baseUrl = 'https://www.nirvandham.in';
   
   // Base static routes
   const routes = [
