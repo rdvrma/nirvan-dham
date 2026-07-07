@@ -104,22 +104,29 @@ export default function GuruBetaForm() {
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    // Honeypot check
+    if (form.website) return;
     setStatus('sending');
     setMessage('');
     try {
-      const res = await fetch('/api/guru-beta/apply', {
+      const res = await fetch('https://formspree.io/f/xqeogwza', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          ...form,
+          _subject: `[Guru Beta आवेदन] ${form.name} — Nirvan Dham`,
+          _source_page: 'Guru Beta Seva Page',
+          _source_url: typeof window !== 'undefined' ? window.location.href : '/guru-beta-seva',
+          _submitted_at: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        }),
       });
-      const body = await res.json();
-      if (!res.ok) throw new Error(body.error || 'अभी आवेदन भेजने में समस्या आ रही है।');
+      if (!res.ok) throw new Error('अभी आवेदन भेजने में समस्या आ रही है।');
       setStatus('success');
       setMessage('आपका आवेदन सुरक्षित रूप से प्राप्त हो गया है। निरवण धाम की ओर से आपसे शीघ्र संपर्क किया जाएगा। प्रणाम।');
       setForm(INITIAL);
     } catch (err) {
       setStatus('error');
-      setMessage(err instanceof Error ? err.message : 'अभी आवेदन भेजने में समस्या आ रही है। कृपया थोड़ी देर बाद पुनः प्रयास करें या निरवण धाम से सीधे संपर्क करें।');
+      setMessage(err instanceof Error ? err.message : 'अभी आवेदन भेजने में समस्या आ रही है। कृपया थोड़ी देर बाद पुनः प्रयास करें।');
     }
   }
 
