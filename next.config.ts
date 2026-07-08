@@ -17,7 +17,7 @@ const securityHeaders = [
       "img-src 'self' data: blob: https:",
       "media-src 'self' blob: https:",
       "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
-      "connect-src 'self' https://*.supabase.co https://generativelanguage.googleapis.com",
+      "connect-src 'self' https://*.supabase.co https://generativelanguage.googleapis.com https://formspree.io",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
