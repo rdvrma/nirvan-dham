@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/login', '/signup', '/course/hi/', '/course/en/', '/course/hl/'],
+      disallow: ['/api/', '/login', '/signup'],
     },
     sitemap: 'https://www.nirvandham.in/sitemap.xml',
   };
