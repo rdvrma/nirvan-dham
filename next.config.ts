@@ -74,6 +74,10 @@ const nextConfig: NextConfig = {
       { source: '/blog/06-the-end-of-ignorance-effort-or-natural-recognition', destination: '/blog', permanent: true },
       { source: '/blog/07-your-nature-is-silence-then-who-takes-the-noise-of-the-world-to-be-real', destination: '/blog', permanent: true },
       { source: '/blog/08-self-guidance-and-the-search-for-truth-five-revolutionary-ideas', destination: '/blog', permanent: true },
+
+      // Library book slug renamed — Google had old URL indexed
+      { source: '/library/tantra-a-confluence-of-paths', destination: '/library/tantra-confluence-of-paths', permanent: true },
+      { source: '/library/tantra-a-confluence-of-paths/read', destination: '/library/tantra-confluence-of-paths/read', permanent: true },
     ];
   },
 };
