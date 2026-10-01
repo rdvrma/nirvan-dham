@@ -229,10 +229,30 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
                           {hi ? 'पन्ने पलटते हुए पढ़ें' : 'Flip pages like a real book'}
                         </span>
                       </Link>
+
+                      {/* Audiobook Style — shown third */}
+                      <Link
+                        href={`/library/audiobooks?book=${book.slug}&lang=${book.lang}`}
+                        style={readModeCard('audio')}
+                      >
+                        <span style={{ fontSize: '1.6rem', display: 'block', marginBottom: '0.5rem' }}>🎧</span>
+                        <strong style={{ display: 'block', fontSize: '0.88rem', marginBottom: '0.25rem', fontWeight: 700 }}>
+                          {hi ? 'ऑडियोबुक' : 'Audiobook'}
+                        </strong>
+                        <span style={{ fontSize: '0.72rem', opacity: 0.62, lineHeight: 1.5 }}>
+                          {hi ? 'अध्यायवार शांत श्रवण' : 'Listen chapter-by-chapter'}
+                        </span>
+                      </Link>
                     </div>
 
-                    {/* PDF download — secondary row */}
+                    {/* PDF download & Audio — secondary row */}
                     <div style={{ display: 'flex', gap: '0.6rem', marginTop: '0.85rem', flexWrap: 'wrap' }}>
+                      <Link
+                        href={`/library/audiobooks?book=${book.slug}&lang=${book.lang}`}
+                        style={{ ...secondaryAction, borderColor: 'rgba(212,168,67,0.3)', color: '#d4a843' }}
+                      >
+                        {hi ? '🎧 ऑडियोबुक सुनें' : '🎧 Listen Audiobook'}
+                      </Link>
                       <a href={book.pdf} download style={secondaryAction}>
                         {hi ? '↓ PDF डाउनलोड' : '↓ Download PDF'}
                       </a>
@@ -246,6 +266,12 @@ export default function BookDetailPage({ book }: BookDetailPageProps) {
                   <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
                     <Link href={`/library/${book.slug}/read`} style={primaryAction}>
                       {hi ? '📖 पुस्तक पढ़ें' : '📖 Read Book'}
+                    </Link>
+                    <Link
+                      href={`/library/audiobooks?book=${book.slug}&lang=${book.lang}`}
+                      style={{ ...secondaryAction, borderColor: 'rgba(212,168,67,0.3)', color: '#d4a843' }}
+                    >
+                      {hi ? '🎧 ऑडियोबुक' : '🎧 Audiobook'}
                     </Link>
                     <a href={book.pdf} download style={secondaryAction}>
                       {hi ? '↓ PDF डाउनलोड' : '↓ Download PDF'}
@@ -378,8 +404,9 @@ const secondaryButton: CSSProperties = {
   fontFamily: 'inherit',
 };
 
-function readModeCard(mode: 'book' | 'blog'): CSSProperties {
+function readModeCard(mode: 'book' | 'blog' | 'audio'): CSSProperties {
   const isBook = mode === 'book';
+  const isAudio = mode === 'audio';
   return {
     display: 'block',
     flex: '1 1 140px',
@@ -387,13 +414,13 @@ function readModeCard(mode: 'book' | 'blog'): CSSProperties {
     maxWidth: '200px',
     padding: '1.1rem 1.2rem',
     borderRadius: '12px',
-    border: isBook
+    border: isBook || isAudio
       ? '1px solid rgba(212,168,67,0.38)'
       : '1px solid rgba(255,255,255,0.1)',
-    background: isBook
+    background: isBook || isAudio
       ? 'rgba(212,168,67,0.1)'
       : 'rgba(255,255,255,0.04)',
-    color: isBook ? '#f7dfa0' : 'rgba(245,237,216,0.75)',
+    color: isBook || isAudio ? '#f7dfa0' : 'rgba(245,237,216,0.75)',
     textDecoration: 'none',
     cursor: 'pointer',
     transition: 'all 0.25s',

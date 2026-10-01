@@ -173,6 +173,22 @@ function BookCard({ book, hi }: { book: EBook; hi: boolean }) {
               >
                 {hi ? '📖 पढ़ें' : '📖 Read'}
               </Link>
+              <Link
+                href={`/library/audiobooks?book=${book.slug}&lang=${book.lang}`}
+                style={{
+                  padding: '0.58rem 0.65rem', textAlign: 'center',
+                  background: 'rgba(212,168,67,0.08)',
+                  border: '1px solid rgba(212,168,67,0.24)', borderRadius: '10px',
+                  color: '#d4a843', fontSize: '0.82rem',
+                  textDecoration: 'none', transition: 'all 0.2s',
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                }}
+                title={hi ? 'ऑडियोबुक सुनें' : 'Listen to Audiobook'}
+                onMouseEnter={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.2)')}
+                onMouseLeave={e => (e.currentTarget.style.background = 'rgba(212,168,67,0.08)')}
+              >
+                🎧
+              </Link>
               <a
                 href={book.pdf} download
                 style={{

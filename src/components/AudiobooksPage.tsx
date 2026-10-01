@@ -37,11 +37,31 @@ export default function AudiobooksPage() {
   }, []);
 
   useEffect(() => {
-    const queryLang = new URLSearchParams(window.location.search).get('lang');
-    if (queryLang !== 'hi' && queryLang !== 'en') return;
-    setLang(queryLang);
-    saveLanguage(queryLang);
-    if (!channelTouched) setChannel(queryLang);
+    const params = new URLSearchParams(window.location.search);
+    const queryLang = params.get('lang');
+    if (queryLang === 'hi' || queryLang === 'en') {
+      setLang(queryLang);
+      saveLanguage(queryLang);
+      if (!channelTouched) setChannel(queryLang);
+    }
+
+    const queryBook = params.get('book');
+    if (queryBook) {
+      const hIdx = HINDI_AUDIOBOOKS.findIndex((b) => b.slug === queryBook);
+      if (hIdx !== -1) {
+        setChannel('hi');
+        setActiveBookIndex(hIdx);
+        return;
+      }
+      const baseSlug = queryBook.replace(/-en$/, '');
+      const eIdx = ENGLISH_AUDIOBOOKS.findIndex(
+        (b) => b.slug === queryBook || b.slug === `${baseSlug}-en` || b.slug === baseSlug
+      );
+      if (eIdx !== -1) {
+        setChannel('en');
+        setActiveBookIndex(eIdx);
+      }
+    }
   }, [channelTouched]);
 
   const hi = lang === 'hi';
