@@ -21,3 +21,9 @@ ADMIN_EMAIL=where-you-want-final-test-alerts@example.com
 ```
 
 The `course_admin_progress` view in Supabase Table Editor shows completion status. The linked `course_final_submissions` table stores the exact fifteen prompts and written answers.
+
+## Free-project activity check
+
+The production Vercel deployment schedules three read-only checks per day against `user_progress` at 00:00, 08:00, and 16:00 UTC. Set a random `CRON_SECRET` (at least 16 characters) in the **nirvan-dham** Vercel project's Production environment before deploying. Vercel sends it as `Authorization: Bearer <secret>` when calling the cron route. After deployment, confirm the three jobs appear under **Settings → Cron Jobs** and return HTTP 200 in runtime logs. A 401 means the secret is missing or mismatched; a 503 means the Supabase read failed.
+
+Supabase Free-project pausing is activity-based and this check cannot guarantee that the project will never pause. Keep the pause-warning email enabled and monitor cron failures.
