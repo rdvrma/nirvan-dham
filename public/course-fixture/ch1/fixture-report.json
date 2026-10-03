@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "problems": [],
+  "files": [
+    {
+      "path": "video/master-540p.mp4",
+      "bytes": 7701940,
+      "sha256": "e786aeb2d43f3fd83f6842e12bb8f5584fb60b66f71c4f9344606ab47c425f91"
+    },
+    {
+      "path": "audio/hi.m4a",
+      "bytes": 1470303,
+      "sha256": "22d84a3566cb91edf3c10b93075be7cdeedfa088b37d4cfe2730f37ec04e4e28"
+    },
+    {
+      "path": "audio/en.m4a",
+      "bytes": 1361995,
+      "sha256": "f36d2428a91de54245121dba5682e0c310039200c9b0f5fd1602a8afc7b47524"
+    },
+    {
+      "path": "captions/hi.vtt",
+      "bytes": 12679,
+      "sha256": "3cc9155c8ea2ad337692dd0d62d10b9eaca9cce6dcccc42a52e887883b43312d"
+    },
+    {
+      "path": "captions/hi.words.json",
+      "bytes": 60844,
+      "sha256": "05a69d9d2856f65698525ab28fc5f5c3c7cff6b7c924b7e78ee37637d2244e46"
+    },
+    {
+      "path": "captions/en.vtt",
+      "bytes": 9472,
+      "sha256": "4d067e81b3f4a415a2fe98ba4ada83af099af21e0755b62a51f4e52728180ded"
+    },
+    {
+      "path": "captions/en.words.json",
+      "bytes": 46321,
+      "sha256": "6ebc0680716e168d6324c94731a36160717c8703d91e229140ecb3c3e52fc73c"
+    }
+  ],
+  "masterProxySec": 219.584,
+  "manifestDurationSec": 219.567,
+  "verification": "VERIFIER-FAIL"
+}
