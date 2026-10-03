@@ -17,13 +17,9 @@ else
   say "node_modules is up to date"
 fi
 
-# 2. Playwright browser (Chromium only, used by the e2e tests): install only when the cache lacks it
+# 2. Playwright browser (Chromium only, used by the e2e tests). `playwright install` is itself idempotent (it skips what is already in the cache).
 if [ -d node_modules/@playwright/test ]; then
-  if npx --no-install playwright install --dry-run chromium 2>/dev/null | grep -q "browser: chromium.*is already installed\|Install location" && [ -n "$(ls -d "${PLAYWRIGHT_BROWSERS_PATH:-$HOME/.cache/ms-playwright}"/chromium-* "$LOCALAPPDATA"/ms-playwright/chromium-* 2>/dev/null | head -1)" ]; then
-    say "Playwright Chromium is installed"
-  else
-    say "installing Playwright Chromium"
-    npx --no-install playwright install chromium || say "Playwright browser install failed (run it manually: npx playwright install chromium)"
-  fi
+  say "ensuring Playwright Chromium"
+  npx --no-install playwright install chromium || say "Playwright browser install failed (run it manually: npx playwright install chromium)"
 fi
 say "done"

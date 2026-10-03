@@ -6,6 +6,8 @@ import path from 'path';
 import Link from 'next/link';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
+import { chooseChapterExperience, isVideoCourseEnabled } from '@/lib/video-course/config';
+import VideoLessonEntry from '@/components/video-course/VideoLessonEntry';
 
 // ── Types ──────────────────────────────────────────────────────────────────────
 interface Section { heading: string | null; paragraphs: string[] }
@@ -109,9 +111,9 @@ function renderMd(text: string): string {
 }
 
 // ── Page ──────────────────────────────────────────────────────────────────────
-interface PageProps { params: Promise<{ lang: string; chapter: string }> }
+interface PageProps { params: Promise<{ lang: string; chapter: string }>; searchParams?: Promise<{ view?: string }> }
 
-export default async function ChapterPage({ params }: PageProps) {
+export default async function ChapterPage({ params, searchParams }: PageProps) {
   const { lang, chapter } = await params;
   const chapterNum = parseInt(chapter, 10);
 
@@ -130,6 +132,11 @@ export default async function ChapterPage({ params }: PageProps) {
   }
   if (chapterNum > highestUnlocked) {
     redirect(`/course/${lang}/${Math.min(highestUnlocked, TOTAL_CHAPTERS)}`);
+  }
+
+  // Video lessons (feature flag NEXT_PUBLIC_VIDEO_COURSE, default off): for a chapter that has a lesson config the video lesson replaces the reading page; ?view=read keeps the reading flow reachable.
+  if (chooseChapterExperience({ flagOn: isVideoCourseEnabled(), chapter: chapterNum, view: (await searchParams)?.view }) === 'video') {
+    return <VideoLessonEntry chapter={chapterNum} courseLang={lang} mode="course" backHref="/course" readHref={`/course/${lang}/${chapterNum}?view=read`} />;
   }
 
   const isHindi = lang === 'hi';
