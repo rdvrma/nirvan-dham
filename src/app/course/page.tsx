@@ -6,6 +6,8 @@ import { createClient } from '@/utils/supabase/client';
 import type { Language } from '@/lib/i18n';
 import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 import Header from '@/components/Header';
+import { isVideoCourseEnabled } from '@/lib/video-course/config';
+import VideoLessonsEntry from '@/components/video-course/VideoLessonsEntry';
 
 // ── Constants (dark theme — landing is always dark/cinematic) ─────────────────
 const GOLD = '#d4a843';
@@ -290,6 +292,8 @@ export default function CourseLandingPage() {
             })}
           </div>
         </div>
+
+        {isVideoCourseEnabled() && <VideoLessonsEntry savedLang={savedLang} />}
 
         </div> {/* end zIndex:2 content wrapper */}
 

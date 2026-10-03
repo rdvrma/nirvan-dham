@@ -1,0 +1,2495 @@
+{
+  "schema": "nirvan-lesson-manifest/3",
+  "id": "m2-nirvan-sutra-ch1",
+  "verification": "VERIFIER-FAIL",
+  "verificationNote": "automated review (code checks + independent verifier subagent), not human-approved; see REVIEW.md",
+  "chapter": {
+    "course": "निर्वाण सूत्र",
+    "number": 1,
+    "khand": "प्रथम खंड",
+    "title": {
+      "hi": "निर्वाण सूत्र 1: स्वयं की खोज",
+      "en": "Nirvan Sutra 1: The Search for Oneself"
+    },
+    "subtitle": {
+      "hi": "मैं कौन हूँ?",
+      "en": "Who am I?"
+    }
+  },
+  "source": {
+    "course": "निर्वाण सूत्र",
+    "chapter": 1,
+    "khand": "प्रथम खंड",
+    "khand_title": "मैं कौन हूँ? की पहली दस्तक",
+    "corpus_file": "corpus/hi/course/chapter-1.md",
+    "corpus_lines": [
+      27,
+      42
+    ],
+    "json_file": "src/content/course-ebooks/hi/1.json",
+    "json_path": "khands[0].sections[0..1]",
+    "repo": "rdvrma/nirvan-dham (local working copy: nirvan-sutra)",
+    "commit": "2c9f42d4b956035290aaf9e5315027e67d50d362",
+    "source_sha256": "b012a9cd4e4a0062de8dfa86dfb43f3e1b5ad5de2b1a2078f2cf16fc5a7f2081",
+    "cut": {
+      "after_paragraph": 7,
+      "last_included": "जब तक यह प्रश्न केवल दिमाग में रहता है, तब तक यह दर्शन जैसा लगता है। ल…",
+      "first_excluded": "मान लो किसी ने तुम्हारी आलोचना कर दी। तुरंत भीतर चोट लगती है। प्रश्न उ…",
+      "note": "the chapter continues; the lesson stops at a paragraph (segment) boundary, never inside a paragraph"
+    },
+    "verbatim": true,
+    "word_count": 391,
+    "englishReference": "corpus/en/course/chapter-1-opening.md"
+  },
+  "durationSec": 219.567,
+  "video": {
+    "master": "video/master-540p.mp4",
+    "width": 960,
+    "height": 540,
+    "fps": 30,
+    "codec": "h264+aac",
+    "hls": null,
+    "textFree": "the master carries no captions; gold diagram labels are part of the drawing scenes (labels.<lang>.json re-renders only those)",
+    "sourceMaster": {
+      "width": 1920,
+      "height": 1080,
+      "file": "master.mp4 (not in the fixture)"
+    }
+  },
+  "audio": [
+    {
+      "lang": "hi",
+      "file": "audio/hi.m4a",
+      "default": true,
+      "role": "master timeline",
+      "voice": "bulbul:v3 soham, pace 0.85"
+    },
+    {
+      "lang": "en",
+      "file": "audio/en.m4a",
+      "default": false,
+      "role": "proof track (machine translation, not human-reviewed)",
+      "voice": "bulbul:v3 soham en-IN, pace 0.85"
+    }
+  ],
+  "captions": [
+    {
+      "lang": "hi",
+      "vtt": "captions/hi.vtt",
+      "wordTiming": "captions/hi.words.json",
+      "wordTimingMethod": "ctc forced alignment"
+    },
+    {
+      "lang": "en",
+      "vtt": "captions/en.vtt",
+      "wordTiming": "captions/en.words.json",
+      "status": "proof",
+      "wordTimingMethod": "estimated, proportional to characters (not forced-aligned)"
+    }
+  ],
+  "labels": {
+    "hi": "labels.hi.json",
+    "en": "labels.en.json",
+    "note": "diagram labels of scenes sc05 and sc10 per language; a new language adds a file and re-renders only those scenes (node scripts/m2-render.mjs --only sc05,sc10 --lang <code>)"
+  },
+  "segments": [
+    {
+      "id": "g1",
+      "label": "Section 'भूमिका': the restlessness that begins the journey",
+      "startSec": 2,
+      "endSec": 53.342,
+      "durationSec": 51.34,
+      "sentences": [
+        "s01",
+        "s02",
+        "s03",
+        "s04",
+        "s05",
+        "s06",
+        "s07",
+        "s08",
+        "s09",
+        "s10"
+      ],
+      "scenes": [
+        "sc01",
+        "sc02",
+        "sc03",
+        "sc04"
+      ],
+      "pauseMarker": {
+        "atSec": 50.842,
+        "durationSec": 2.5
+      },
+      "visualEvent": "the afternoon light starts to leave the courtyard and the doorway stays dark (the emptiness)",
+      "interaction": {
+        "prompts": [
+          {
+            "hi": "आपके जीवन में कौन-सी बेचैनी बाहर से सब ठीक होने पर भी बनी रहती है?",
+            "en": "What restlessness stays with you even when everything looks fine from the outside?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          },
+          {
+            "hi": "वह कब सबसे ज़्यादा महसूस होती है?",
+            "en": "When do you feel it most?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "g2",
+      "label": "The restlessness is pushed down, and returns at night as a question",
+      "startSec": 53.342,
+      "endSec": 84.667,
+      "durationSec": 31.33,
+      "sentences": [
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ],
+      "scenes": [
+        "sc05",
+        "sc06"
+      ],
+      "pauseMarker": {
+        "atSec": 82.167,
+        "durationSec": 2.5
+      },
+      "visualEvent": "deep night: only one small lamp remains lit and the busy shapes are gone",
+      "interaction": {
+        "prompts": [
+          {
+            "hi": "जब यह प्रश्न भीतर उठता है, तो आप सबसे पहले क्या करते हैं?",
+            "en": "When this question rises inside you, what do you do first?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          },
+          {
+            "hi": "रात की शांति में आपके भीतर कौन-सा प्रश्न जागता है?",
+            "en": "In the quiet of the night, which question wakes in you?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "g3",
+      "label": "The question is honesty, not weakness; the journey is meeting oneself",
+      "startSec": 84.667,
+      "endSec": 118.299,
+      "durationSec": 33.63,
+      "sentences": [
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21"
+      ],
+      "scenes": [
+        "sc07",
+        "sc08"
+      ],
+      "pauseMarker": {
+        "atSec": 115.799,
+        "durationSec": 2.5
+      },
+      "visualEvent": "a thin gold path is drawn from the foot of the frame to the doorway (the journey begins)",
+      "interaction": {
+        "prompts": [
+          {
+            "hi": "क्या आप इस प्रश्न को कमज़ोरी मानते हैं या ईमानदारी?",
+            "en": "Do you take this question as weakness or as honesty?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          },
+          {
+            "hi": "स्वयं से मिलने की यात्रा आपके लिए कहाँ से शुरू होती है?",
+            "en": "Where does the journey of meeting yourself begin for you?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "g4",
+      "label": "The house with a quiet room never entered; the chapter begins with the question",
+      "startSec": 118.299,
+      "endSec": 164.563,
+      "durationSec": 46.26,
+      "sentences": [
+        "s22",
+        "s23",
+        "s24"
+      ],
+      "scenes": [
+        "sc09",
+        "sc10",
+        "sc11"
+      ],
+      "pauseMarker": {
+        "atSec": 159.063,
+        "durationSec": 5.5
+      },
+      "visualEvent": "the quiet knowing place is outlined in brighter gold on the house plan",
+      "interaction": {
+        "prompts": [
+          {
+            "hi": "आपके भीतर वह शांत जगह कहाँ है, जहाँ आप अभी तक नहीं गए?",
+            "en": "Where is the quiet place inside you that you have never entered?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          },
+          {
+            "hi": "एक क्षण रुककर देखिए: जो इस प्रश्न को सुन रहा है, वह कौन है?",
+            "en": "Pause for a moment: who is it that is listening to this question?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "g5",
+      "label": "Section 'मैं कौन हूँ?': the old question that is new each time, and becomes practical",
+      "startSec": 164.563,
+      "endSec": 218.067,
+      "durationSec": 53.5,
+      "sentences": [
+        "s25",
+        "s26",
+        "s27",
+        "s28",
+        "s29",
+        "s30",
+        "s31",
+        "s32"
+      ],
+      "scenes": [
+        "sc12",
+        "sc13",
+        "sc14",
+        "sc15"
+      ],
+      "pauseMarker": {
+        "atSec": 212.067,
+        "durationSec": 6
+      },
+      "visualEvent": "morning light fills the doorway completely (the question becomes practical)",
+      "interaction": {
+        "prompts": [
+          {
+            "hi": "आपके अपने जीवन में यह प्रश्न कब सबसे व्यावहारिक हो जाता है?",
+            "en": "When does this question become most practical in your own life?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          },
+          {
+            "hi": "आज किस बात ने आपको यह पूछने पर मजबूर किया?",
+            "en": "What made you ask it today?",
+            "source": "generated",
+            "reviewed": false,
+            "languageSource": {
+              "hi": "authored with the segment",
+              "en": "machine translation"
+            },
+            "narrated": false,
+            "inLessonText": false
+          }
+        ]
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s01",
+      "startSec": 2,
+      "speechEndSec": 8.809,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "अध्यात्म की यात्रा हमेशा मंदिर, आश्रम या किसी पुस्तक से शुरू नहीं होती।",
+        "en": "The spiritual journey does not always begin in a temple, an ashram, or a sacred book."
+      }
+    },
+    {
+      "id": "s02",
+      "startSec": 9.809,
+      "speechEndSec": 15.057,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कई बार यह यात्रा एक बहुत साधारण-सी बेचैनी से शुरू होती है।",
+        "en": "Many times it begins with a very ordinary restlessness."
+      }
+    },
+    {
+      "id": "s03",
+      "startSec": 16.057,
+      "speechEndSec": 18.364,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "बाहर से सब ठीक दिखता है।",
+        "en": "Outwardly, all looks fine."
+      }
+    },
+    {
+      "id": "s04",
+      "startSec": 19.364,
+      "speechEndSec": 21.179,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "काम चल रहा है।",
+        "en": "Work is going on."
+      }
+    },
+    {
+      "id": "s05",
+      "startSec": 22.179,
+      "speechEndSec": 23.1,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "परिवार है।",
+        "en": "Family is there."
+      }
+    },
+    {
+      "id": "s06",
+      "startSec": 24.101,
+      "speechEndSec": 25.737,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "लोग पहचानते हैं।",
+        "en": "People know you."
+      }
+    },
+    {
+      "id": "s07",
+      "startSec": 26.737,
+      "speechEndSec": 33.489,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कभी पैसा आता है, कभी प्रशंसा मिलती है, कभी कोई सपना पूरा भी हो जाता है।",
+        "en": "Sometimes money comes, sometimes appreciation, sometimes even a dream is fulfilled."
+      }
+    },
+    {
+      "id": "s08",
+      "startSec": 34.489,
+      "speechEndSec": 38.231,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "फिर भी भीतर कहीं एक खालीपन रह जाता है।",
+        "en": "Yet somewhere inside, an emptiness remains."
+      }
+    },
+    {
+      "id": "s09",
+      "startSec": 39.23,
+      "speechEndSec": 43.594,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "ऐसा लगता है जैसे कुछ है जो मिल नहीं रहा।",
+        "en": "It feels as if something is still missing."
+      }
+    },
+    {
+      "id": "s10",
+      "startSec": 44.594,
+      "speechEndSec": 50.842,
+      "pauseAfterSec": 2.5,
+      "text": {
+        "hi": "जैसे जीवन चल तो रहा है, लेकिन भीतर कोई गहरा उत्तर अभी बाकी है।",
+        "en": "Life is moving, but a deeper answer is still waiting."
+      }
+    },
+    {
+      "id": "s11",
+      "startSec": 53.342,
+      "speechEndSec": 56.101,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कई लोग इस बेचैनी को दबा देते हैं।",
+        "en": "Many people try to cover this restlessness."
+      }
+    },
+    {
+      "id": "s12",
+      "startSec": 57.101,
+      "speechEndSec": 59.706,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कोई काम में और डूब जाता है।",
+        "en": "One sinks deeper into work."
+      }
+    },
+    {
+      "id": "s13",
+      "startSec": 60.706,
+      "speechEndSec": 63.472,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कोई रिश्तों में उत्तर खोजता है।",
+        "en": "Another searches for the answer in relationships."
+      }
+    },
+    {
+      "id": "s14",
+      "startSec": 64.473,
+      "speechEndSec": 66.675,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कोई मनोरंजन में खो जाता है।",
+        "en": "One is lost in entertainment."
+      }
+    },
+    {
+      "id": "s15",
+      "startSec": 67.675,
+      "speechEndSec": 69.892,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "कोई नए लक्ष्य बना लेता है।",
+        "en": "Someone sets new goals."
+      }
+    },
+    {
+      "id": "s16",
+      "startSec": 70.891,
+      "speechEndSec": 82.167,
+      "pauseAfterSec": 2.5,
+      "text": {
+        "hi": "कुछ समय के लिए मन व्यस्त हो जाता है, लेकिन रात के किसी शांत क्षण में वही प्रश्न फिर उठता है - क्या बस इतना ही जीवन है?",
+        "en": "For a while the mind stays busy, but in some quiet moment of the night the same question returns: is this all that life is?"
+      }
+    },
+    {
+      "id": "s17",
+      "startSec": 84.667,
+      "speechEndSec": 87.448,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "यह प्रश्न कमजोरी का संकेत नहीं है।",
+        "en": "This question is not a sign of weakness."
+      }
+    },
+    {
+      "id": "s18",
+      "startSec": 88.447,
+      "speechEndSec": 91.332,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "यह भीतर की ईमानदारी का संकेत है।",
+        "en": "It is a sign of inner honesty."
+      }
+    },
+    {
+      "id": "s19",
+      "startSec": 92.332,
+      "speechEndSec": 107.849,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "जब मनुष्य केवल जीने से संतुष्ट नहीं रहता, बल्कि जानना चाहता है कि मैं कौन हूँ, मैं क्यों दुखी होता हूँ, मुझे हमेशा कुछ कमी क्यों लगती है, तब अध्यात्म की यात्रा शुरू होती है।",
+        "en": "When a human being is not satisfied with just living, but wants to know who am I, why do I suffer, why does something always feel missing, then the spiritual journey begins."
+      }
+    },
+    {
+      "id": "s20",
+      "startSec": 108.849,
+      "speechEndSec": 112.298,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "यह यात्रा संसार से भागने की यात्रा नहीं है।",
+        "en": "This journey is not an escape from the world."
+      }
+    },
+    {
+      "id": "s21",
+      "startSec": 113.299,
+      "speechEndSec": 115.799,
+      "pauseAfterSec": 2.5,
+      "text": {
+        "hi": "यह स्वयं से मिलने की यात्रा है।",
+        "en": "It is a journey of meeting oneself."
+      }
+    },
+    {
+      "id": "s22",
+      "startSec": 118.299,
+      "speechEndSec": 129.056,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "जैसे कोई व्यक्ति अपने ही घर में वर्षों रहे, पर उसे पता ही न हो कि घर के भीतर एक शांत कमरा भी है जहाँ वह कभी गया ही नहीं।",
+        "en": "It is like living in your own house for many years, and not knowing that inside it there is a quiet room where you have never gone."
+      }
+    },
+    {
+      "id": "s23",
+      "startSec": 130.056,
+      "speechEndSec": 146.845,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "वैसे ही हम जीवन भर शरीर, नाम, काम, रिश्ते और विचारों में रहते हैं, पर अपने भीतर उस शांत जानने वाली जगह को ठीक से नहीं देखते जहाँ से सब अनुभव जाने जाते हैं।",
+        "en": "In the same way, we live all our lives in body, name, work, relationships and thoughts, but we do not properly look at that quiet knowing place within, from where all experiences are known."
+      }
+    },
+    {
+      "id": "s24",
+      "startSec": 147.845,
+      "speechEndSec": 159.063,
+      "pauseAfterSec": 5.5,
+      "text": {
+        "hi": "इस अध्याय की शुरुआत उसी सरल प्रश्न से होती है, जो देखने में छोटा है, पर जीवन की जड़ तक जाता है: मैं कौन हूँ?",
+        "en": "This chapter begins with that simple question, which looks small, but reaches the root of life: who am I?"
+      }
+    },
+    {
+      "id": "s25",
+      "startSec": 164.563,
+      "speechEndSec": 165.819,
+      "pauseAfterSec": 2,
+      "text": {
+        "hi": "“मैं कौन हूँ?”",
+        "en": "“Who am I?”"
+      }
+    },
+    {
+      "id": "s26",
+      "startSec": 167.819,
+      "speechEndSec": 169.639,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "यह प्रश्न नया नहीं है।",
+        "en": "This question is not new."
+      }
+    },
+    {
+      "id": "s27",
+      "startSec": 170.639,
+      "speechEndSec": 174.473,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "हजारों वर्षों से मनुष्य इसे पूछता आया है।",
+        "en": "For thousands of years, human beings have been asking it."
+      }
+    },
+    {
+      "id": "s28",
+      "startSec": 175.473,
+      "speechEndSec": 183.921,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "लेकिन आश्चर्य की बात यह है कि हर साधक के जीवन में यह प्रश्न पहली बार जैसा ही लगता है।",
+        "en": "But the surprising thing is that in every seeker's life, this question feels like the first time."
+      }
+    },
+    {
+      "id": "s29",
+      "startSec": 184.921,
+      "speechEndSec": 188.267,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "क्योंकि यह प्रश्न किताब का प्रश्न नहीं है।",
+        "en": "Because this question is not a question from a book."
+      }
+    },
+    {
+      "id": "s30",
+      "startSec": 189.267,
+      "speechEndSec": 191.936,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "यह तुम्हारे अपने जीवन का प्रश्न है।",
+        "en": "It is a question of your own life."
+      }
+    },
+    {
+      "id": "s31",
+      "startSec": 192.936,
+      "speechEndSec": 199.097,
+      "pauseAfterSec": 1,
+      "text": {
+        "hi": "जब तक यह प्रश्न केवल दिमाग में रहता है, तब तक यह दर्शन जैसा लगता है।",
+        "en": "As long as this question stays only in the head, it feels like philosophy."
+      }
+    },
+    {
+      "id": "s32",
+      "startSec": 200.097,
+      "speechEndSec": 212.067,
+      "pauseAfterSec": 6,
+      "text": {
+        "hi": "लेकिन जब जीवन में दुख, असंतोष, डर, अकेलापन या गहरी खोज उठती है, तब यह प्रश्न बहुत व्यावहारिक हो जाता है।",
+        "en": "But when sorrow, dissatisfaction, fear, loneliness or a deep seeking arises in life, this question becomes very practical."
+      }
+    }
+  ],
+  "beats": [
+    {
+      "id": "b00",
+      "kind": "opening",
+      "scene": "sc01",
+      "sentence": null,
+      "startSec": 0,
+      "endSec": 1.91,
+      "text": {
+        "hi": ""
+      },
+      "strategy": "quiet_hold",
+      "interactionStrategy": "silence_open",
+      "teachingIntent": "Settle attention before the voice; nothing to look at.",
+      "visualIdea": "Near-black frame with fine grain and a barely perceptible breath of warm light.",
+      "caption": "",
+      "keyIdea": false
+    },
+    {
+      "id": "b01",
+      "kind": "narration",
+      "scene": "sc01",
+      "sentence": "s01",
+      "startSec": 1.91,
+      "endSec": 5.43,
+      "text": {
+        "hi": "अध्यात्म की यात्रा हमेशा मंदिर,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "The journey does not start in a holy place; it starts in an ordinary place.",
+      "visualIdea": "Near-black gives way to a late-afternoon courtyard, long soft shadows, the arched doorway small and closed.",
+      "caption": "अध्यात्म की यात्रा हमेशा मंदिर,",
+      "keyIdea": false
+    },
+    {
+      "id": "b02",
+      "kind": "narration",
+      "scene": "sc01",
+      "sentence": "s01",
+      "startSec": 5.43,
+      "endSec": 9.719,
+      "text": {
+        "hi": "आश्रम या किसी पुस्तक से शुरू नहीं होती।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Say it plainly: not a temple, not an ashram, not a book.",
+      "visualIdea": "A slow drift along the wall toward the doorway; the unlit lamp on its stool comes into the frame.",
+      "caption": "आश्रम या किसी पुस्तक से शुरू नहीं होती।",
+      "keyIdea": false
+    },
+    {
+      "id": "b03",
+      "kind": "narration",
+      "scene": "sc01",
+      "sentence": "s02",
+      "startSec": 9.719,
+      "endSec": 12.873,
+      "text": {
+        "hi": "कई बार यह यात्रा एक बहुत साधारण-सी बेचैनी से शुरू होती है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It begins as an ordinary restlessness.",
+      "visualIdea": "Push toward the stool and the lamp; a cool edge of shadow creeps across the packed earth.",
+      "caption": "कई बार यह यात्रा एक बहुत साधारण-सी बेचैनी से शुरू होती है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b04",
+      "kind": "narration",
+      "scene": "sc01",
+      "sentence": "s02",
+      "startSec": 12.873,
+      "endSec": 16.027,
+      "text": {
+        "hi": "कई बार यह यात्रा एक बहुत साधारण-सी बेचैनी से शुरू होती है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Name the feeling: simple, ordinary, easy to miss.",
+      "visualIdea": "Pull back to a wide view; the shadow edge has moved a little, nothing else has changed.",
+      "caption": "कई बार यह यात्रा एक बहुत साधारण-सी बेचैनी से शुरू होती है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b05",
+      "kind": "narration",
+      "scene": "sc02",
+      "sentence": "s03",
+      "startSec": 16.027,
+      "endSec": 19.254,
+      "text": {
+        "hi": "बाहर से सब ठीक दिखता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "From the outside everything looks fine.",
+      "visualIdea": "Bright warm afternoon: the stool with its brass dish, the clay pot and the bench each in its place by the wall, everything orderly.",
+      "caption": "बाहर से सब ठीक दिखता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b06",
+      "kind": "narration",
+      "scene": "sc02",
+      "sentence": "s04",
+      "startSec": 19.254,
+      "endSec": 22.069,
+      "text": {
+        "hi": "काम चल रहा है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Work is running.",
+      "visualIdea": "Framing moves to the stool side; the brass dish sits ready, an ordinary working day.",
+      "caption": "काम चल रहा है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b07",
+      "kind": "narration",
+      "scene": "sc02",
+      "sentence": "s05",
+      "startSec": 22.069,
+      "endSec": 24.051,
+      "text": {
+        "hi": "परिवार है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "There is a family.",
+      "visualIdea": "Framing moves to the clay pot beside the doorway; the house is lived in.",
+      "caption": "परिवार है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b08",
+      "kind": "narration",
+      "scene": "sc02",
+      "sentence": "s06",
+      "startSec": 24.051,
+      "endSec": 26.627,
+      "text": {
+        "hi": "लोग पहचानते हैं।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "People know you.",
+      "visualIdea": "Wide again with the doorway centred and the gate side of the courtyard in view; the light is full and kind.",
+      "caption": "लोग पहचानते हैं।",
+      "keyIdea": false
+    },
+    {
+      "id": "b09",
+      "kind": "narration",
+      "scene": "sc03",
+      "sentence": "s07",
+      "startSec": 26.627,
+      "endSec": 30.667,
+      "text": {
+        "hi": "कभी पैसा आता है, कभी प्रशंसा मिलती है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Money comes, praise comes.",
+      "visualIdea": "Golden hour: the courtyard glows warmly, the brass dish on the stool catches the light.",
+      "caption": "कभी पैसा आता है, कभी प्रशंसा मिलती है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b10",
+      "kind": "narration",
+      "scene": "sc03",
+      "sentence": "s07",
+      "startSec": 30.667,
+      "endSec": 34.419,
+      "text": {
+        "hi": "कभी कोई सपना पूरा भी हो जाता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Even a dream comes true.",
+      "visualIdea": "The light gets richer; the camera rises a little to show more of the wall and the neem branches.",
+      "caption": "कभी कोई सपना पूरा भी हो जाता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b11",
+      "kind": "narration",
+      "scene": "sc03",
+      "sentence": "s08",
+      "startSec": 34.419,
+      "endSec": 39.16,
+      "text": {
+        "hi": "फिर भी भीतर कहीं एक खालीपन रह जाता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Even so, an emptiness remains inside.",
+      "visualIdea": "The warm light starts to leave the courtyard from the left; the doorway interior stays dark.",
+      "caption": "फिर भी भीतर कहीं एक खालीपन रह जाता है।",
+      "keyIdea": true
+    },
+    {
+      "id": "b12",
+      "kind": "narration",
+      "scene": "sc04",
+      "sentence": "s09",
+      "startSec": 39.16,
+      "endSec": 41.852,
+      "text": {
+        "hi": "ऐसा लगता है जैसे कुछ है जो मिल नहीं रहा।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It feels as if something is missing.",
+      "visualIdea": "Dusk: the light drains to blue; the arched doorway is an empty dark opening, the stool and lamp small against it.",
+      "caption": "ऐसा लगता है जैसे कुछ है जो मिल नहीं रहा।",
+      "keyIdea": false
+    },
+    {
+      "id": "b13",
+      "kind": "narration",
+      "scene": "sc04",
+      "sentence": "s09",
+      "startSec": 41.852,
+      "endSec": 44.544,
+      "text": {
+        "hi": "ऐसा लगता है जैसे कुछ है जो मिल नहीं रहा।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Missing, but not named.",
+      "visualIdea": "Slow push toward the dark doorway; the edges of the courtyard fall into soft shadow.",
+      "caption": "ऐसा लगता है जैसे कुछ है जो मिल नहीं रहा।",
+      "keyIdea": false
+    },
+    {
+      "id": "b14",
+      "kind": "narration",
+      "scene": "sc04",
+      "sentence": "s10",
+      "startSec": 44.544,
+      "endSec": 47.324,
+      "text": {
+        "hi": "जैसे जीवन चल तो रहा है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Life is running.",
+      "visualIdea": "Pull back; the courtyard is still orderly, but dim.",
+      "caption": "जैसे जीवन चल तो रहा है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b15",
+      "kind": "narration",
+      "scene": "sc04",
+      "sentence": "s10",
+      "startSec": 47.324,
+      "endSec": 50.278,
+      "text": {
+        "hi": "लेकिन भीतर कोई गहरा उत्तर अभी बाकी है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Yet a deeper answer is still waiting inside.",
+      "visualIdea": "Drift toward the doorway again; the dark opening is the only thing the eye settles on.",
+      "caption": "लेकिन भीतर कोई गहरा उत्तर अभी बाकी है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b16",
+      "kind": "narration",
+      "scene": "sc04",
+      "sentence": "s10",
+      "startSec": 50.278,
+      "endSec": 53.232,
+      "text": {
+        "hi": "लेकिन भीतर कोई गहरा उत्तर अभी बाकी है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "The answer is still waiting.",
+      "visualIdea": "Hold on the doorway as the blue deepens; one faint cool line of light lies on the threshold.",
+      "caption": "लेकिन भीतर कोई गहरा उत्तर अभी बाकी है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b17",
+      "kind": "narration",
+      "scene": "sc05",
+      "sentence": "s11",
+      "startSec": 53.232,
+      "endSec": 56.991,
+      "text": {
+        "hi": "कई लोग इस बेचैनी को दबा देते हैं।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Many people push the restlessness down.",
+      "visualIdea": "Early evening: small oil lamps are lit along the base of the wall, warm flames, the doorway still dark.",
+      "caption": "कई लोग इस बेचैनी को दबा देते हैं।",
+      "keyIdea": false
+    },
+    {
+      "id": "b18",
+      "kind": "narration",
+      "scene": "sc05",
+      "sentence": "s12",
+      "startSec": 56.991,
+      "endSec": 60.596,
+      "text": {
+        "hi": "कोई काम में और डूब जाता है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "One sinks deeper into work.",
+      "visualIdea": "A thin gold square is drawn on the left with its label; the lamps flicker.",
+      "caption": "कोई काम में और डूब जाता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b19",
+      "kind": "narration",
+      "scene": "sc05",
+      "sentence": "s13",
+      "startSec": 60.596,
+      "endSec": 64.383,
+      "text": {
+        "hi": "कोई रिश्तों में उत्तर खोजता है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "One looks for the answer in relationships.",
+      "visualIdea": "A second thin gold shape, two crossing lines, is drawn beside the first with its label.",
+      "caption": "कोई रिश्तों में उत्तर खोजता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b20",
+      "kind": "narration",
+      "scene": "sc05",
+      "sentence": "s14",
+      "startSec": 64.383,
+      "endSec": 67.545,
+      "text": {
+        "hi": "कोई मनोरंजन में खो जाता है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "One loses oneself in entertainment.",
+      "visualIdea": "A third shape, a row of short strokes, is drawn with its label; the camera drifts right.",
+      "caption": "कोई मनोरंजन में खो जाता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b21",
+      "kind": "narration",
+      "scene": "sc05",
+      "sentence": "s15",
+      "startSec": 67.545,
+      "endSec": 70.781,
+      "text": {
+        "hi": "कोई नए लक्ष्य बना लेता है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "One sets new goals.",
+      "visualIdea": "A fourth shape, an upward chevron, is drawn with its label; the four shapes form a busy row.",
+      "caption": "कोई नए लक्ष्य बना लेता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b22",
+      "kind": "narration",
+      "scene": "sc06",
+      "sentence": "s16",
+      "startSec": 70.781,
+      "endSec": 74.741,
+      "text": {
+        "hi": "कुछ समय के लिए मन व्यस्त हो जाता है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "For a while the mind stays busy.",
+      "visualIdea": "Deep night, a dark sky and no moon: the courtyard is dark, only one small lamp is lit on the stool; the busy shapes are gone.",
+      "caption": "कुछ समय के लिए मन व्यस्त हो जाता है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b23",
+      "kind": "narration",
+      "scene": "sc06",
+      "sentence": "s16",
+      "startSec": 74.741,
+      "endSec": 79.679,
+      "text": {
+        "hi": "लेकिन रात के किसी शांत क्षण में वही प्रश्न फिर उठता है - क्या बस इतना ही जीवन है?"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "In some quiet moment of the night the question rises.",
+      "visualIdea": "Slow push toward the lone lamp, the flame steady, the dark doorway behind it.",
+      "caption": "लेकिन रात के किसी शांत क्षण में वही प्रश्न फिर उठता है - क्या बस इतना ही जीवन है?",
+      "keyIdea": false
+    },
+    {
+      "id": "b24",
+      "kind": "narration",
+      "scene": "sc06",
+      "sentence": "s16",
+      "startSec": 79.679,
+      "endSec": 84.617,
+      "text": {
+        "hi": "लेकिन रात के किसी शांत क्षण में वही प्रश्न फिर उठता है - क्या बस इतना ही जीवन है?"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "Is this all there is to life?",
+      "visualIdea": "Hold close on the lamp and the dark doorway; the flame breathes, nothing else moves.",
+      "caption": "लेकिन रात के किसी शांत क्षण में वही प्रश्न फिर उठता है - क्या बस इतना ही जीवन है?",
+      "keyIdea": false
+    },
+    {
+      "id": "b25",
+      "kind": "narration",
+      "scene": "sc07",
+      "sentence": "s17",
+      "startSec": 84.617,
+      "endSec": 88.357,
+      "text": {
+        "hi": "यह प्रश्न कमजोरी का संकेत नहीं है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "The question is not a sign of weakness.",
+      "visualIdea": "Pre-dawn cool blue-grey light; the courtyard emerges quietly, the lamp still burning.",
+      "caption": "यह प्रश्न कमजोरी का संकेत नहीं है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b26",
+      "kind": "narration",
+      "scene": "sc07",
+      "sentence": "s18",
+      "startSec": 88.357,
+      "endSec": 92.282,
+      "text": {
+        "hi": "यह भीतर की ईमानदारी का संकेत है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is a sign of inner honesty.",
+      "visualIdea": "The camera settles low and steady on the stool and the doorway; the doorway edge brightens very slightly.",
+      "caption": "यह भीतर की ईमानदारी का संकेत है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b27",
+      "kind": "narration",
+      "scene": "sc07",
+      "sentence": "s19",
+      "startSec": 92.282,
+      "endSec": 96.462,
+      "text": {
+        "hi": "जब मनुष्य केवल जीने से संतुष्ट नहीं रहता,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "When a person is no longer content just to live.",
+      "visualIdea": "Wide view with the neem tree against a paling sky; the lamp flame small and calm.",
+      "caption": "जब मनुष्य केवल जीने से संतुष्ट नहीं रहता,",
+      "keyIdea": false
+    },
+    {
+      "id": "b28",
+      "kind": "narration",
+      "scene": "sc07",
+      "sentence": "s19",
+      "startSec": 96.462,
+      "endSec": 100.062,
+      "text": {
+        "hi": "बल्कि जानना चाहता है कि मैं कौन हूँ,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "...but wants to know who I am.",
+      "visualIdea": "Push toward the doorway; the dark opening is now a little less dark.",
+      "caption": "बल्कि जानना चाहता है कि मैं कौन हूँ,",
+      "keyIdea": false
+    },
+    {
+      "id": "b29",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s19",
+      "startSec": 100.062,
+      "endSec": 101.942,
+      "text": {
+        "hi": "मैं क्यों दुखी होता हूँ,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Why do I suffer?",
+      "visualIdea": "A cool pre-dawn light on the wall; the camera rises slightly, the doorway small.",
+      "caption": "मैं क्यों दुखी होता हूँ,",
+      "keyIdea": false
+    },
+    {
+      "id": "b30",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s19",
+      "startSec": 101.942,
+      "endSec": 104.922,
+      "text": {
+        "hi": "मुझे हमेशा कुछ कमी क्यों लगती है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Why do I always feel something is lacking?",
+      "visualIdea": "Low framing along the packed earth toward the stool; the lamp flame leans very gently.",
+      "caption": "मुझे हमेशा कुछ कमी क्यों लगती है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b31",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s19",
+      "startSec": 104.922,
+      "endSec": 108.799,
+      "text": {
+        "hi": "तब अध्यात्म की यात्रा शुरू होती है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "Then the spiritual journey begins.",
+      "visualIdea": "A thin gold line begins to be drawn from the foot of the frame, a straight path leading toward the doorway.",
+      "caption": "तब अध्यात्म की यात्रा शुरू होती है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b32",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s20",
+      "startSec": 108.799,
+      "endSec": 113.269,
+      "text": {
+        "hi": "यह यात्रा संसार से भागने की यात्रा नहीं है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is not a journey of fleeing the world.",
+      "visualIdea": "The path continues and stays inside the courtyard walls; the camera keeps the wall and the gate in view.",
+      "caption": "यह यात्रा संसार से भागने की यात्रा नहीं है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b33",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s21",
+      "startSec": 113.269,
+      "endSec": 115.789,
+      "text": {
+        "hi": "यह स्वयं से मिलने की यात्रा है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is a journey of meeting oneself.",
+      "visualIdea": "The gold path reaches the threshold of the doorway and a short gold bar is drawn across it, like a line under a sentence.",
+      "caption": "यह स्वयं से मिलने की यात्रा है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b34",
+      "kind": "narration",
+      "scene": "sc08",
+      "sentence": "s21",
+      "startSec": 115.789,
+      "endSec": 118.309,
+      "text": {
+        "hi": "यह स्वयं से मिलने की यात्रा है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "Meeting oneself.",
+      "visualIdea": "Hold; the gold path rests, the faint warm line of dawn grows along the top of the wall.",
+      "caption": "यह स्वयं से मिलने की यात्रा है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b35",
+      "kind": "narration",
+      "scene": "sc09",
+      "sentence": "s22",
+      "startSec": 118.309,
+      "endSec": 121.809,
+      "text": {
+        "hi": "जैसे कोई व्यक्ति अपने ही घर में वर्षों रहे,"
+      },
+      "strategy": "still_metaphor",
+      "interactionStrategy": "none",
+      "teachingIntent": "The metaphor: someone lives for years in their own house.",
+      "visualIdea": "Pre-dawn blue: the courtyard and the pointed-arch doorway, the door ajar and a faint pale space inside; the stool and its dish outside.",
+      "caption": "जैसे कोई व्यक्ति अपने ही घर में वर्षों रहे,",
+      "keyIdea": false
+    },
+    {
+      "id": "b36",
+      "kind": "narration",
+      "scene": "sc09",
+      "sentence": "s22",
+      "startSec": 121.809,
+      "endSec": 125.897,
+      "text": {
+        "hi": "पर उसे पता ही न हो कि घर के भीतर एक शांत कमरा भी है जहाँ वह कभी गया ही नहीं।"
+      },
+      "strategy": "still_metaphor",
+      "interactionStrategy": "none",
+      "teachingIntent": "...and does not know there is a quiet room in it.",
+      "visualIdea": "Slow push toward the open doorway; the dark room beyond it is barely visible.",
+      "caption": "पर उसे पता ही न हो कि घर के भीतर एक शांत कमरा भी है जहाँ वह कभी गया ही नहीं।",
+      "keyIdea": false
+    },
+    {
+      "id": "b37",
+      "kind": "narration",
+      "scene": "sc09",
+      "sentence": "s22",
+      "startSec": 125.897,
+      "endSec": 129.986,
+      "text": {
+        "hi": "पर उसे पता ही न हो कि घर के भीतर एक शांत कमरा भी है जहाँ वह कभी गया ही नहीं।"
+      },
+      "strategy": "still_metaphor",
+      "interactionStrategy": "none",
+      "teachingIntent": "...a room where they have never been.",
+      "visualIdea": "Framing settles on the threshold; the room inside stays still and unvisited, nothing stirs.",
+      "caption": "पर उसे पता ही न हो कि घर के भीतर एक शांत कमरा भी है जहाँ वह कभी गया ही नहीं।",
+      "keyIdea": false
+    },
+    {
+      "id": "b38",
+      "kind": "narration",
+      "scene": "sc10",
+      "sentence": "s23",
+      "startSec": 129.986,
+      "endSec": 133.386,
+      "text": {
+        "hi": "वैसे ही हम जीवन भर शरीर,"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "In the same way we live in the body...",
+      "visualIdea": "A thin gold plan of the house is drawn over the night courtyard: an outer rectangle with rooms; the first room is labelled with its word.",
+      "caption": "वैसे ही हम जीवन भर शरीर,",
+      "keyIdea": false
+    },
+    {
+      "id": "b39",
+      "kind": "narration",
+      "scene": "sc10",
+      "sentence": "s23",
+      "startSec": 133.386,
+      "endSec": 135.166,
+      "text": {
+        "hi": "नाम, काम,"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "...the name, the work...",
+      "visualIdea": "Two more rooms are drawn and labelled.",
+      "caption": "नाम, काम,",
+      "keyIdea": false
+    },
+    {
+      "id": "b40",
+      "kind": "narration",
+      "scene": "sc10",
+      "sentence": "s23",
+      "startSec": 135.166,
+      "endSec": 138.006,
+      "text": {
+        "hi": "रिश्ते और विचारों में रहते हैं,"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "...relationships and thoughts.",
+      "visualIdea": "Two further rooms are drawn and labelled; the plan is full of rooms.",
+      "caption": "रिश्ते और विचारों में रहते हैं,",
+      "keyIdea": false
+    },
+    {
+      "id": "b41",
+      "kind": "narration",
+      "scene": "sc10",
+      "sentence": "s23",
+      "startSec": 138.006,
+      "endSec": 142.88,
+      "text": {
+        "hi": "पर अपने भीतर उस शांत जानने वाली जगह को ठीक से नहीं देखते जहाँ से सब अनुभव जाने जाते हैं।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "...but we do not look at the quiet knowing place within.",
+      "visualIdea": "One small room in the middle stays empty and unlabelled; the other labels fade away.",
+      "caption": "पर अपने भीतर उस शांत जानने वाली जगह को ठीक से नहीं देखते जहाँ से सब अनुभव जाने जाते हैं।",
+      "keyIdea": false
+    },
+    {
+      "id": "b42",
+      "kind": "narration",
+      "scene": "sc10",
+      "sentence": "s23",
+      "startSec": 142.88,
+      "endSec": 147.755,
+      "text": {
+        "hi": "पर अपने भीतर उस शांत जानने वाली जगह को ठीक से नहीं देखते जहाँ से सब अनुभव जाने जाते हैं।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "...from where all experience is known.",
+      "visualIdea": "The empty room is outlined in brighter gold and labelled; a thin gold hairline runs from it to the lit doorway in the picture.",
+      "caption": "पर अपने भीतर उस शांत जानने वाली जगह को ठीक से नहीं देखते जहाँ से सब अनुभव जाने जाते हैं।",
+      "keyIdea": true
+    },
+    {
+      "id": "b43",
+      "kind": "narration",
+      "scene": "sc11",
+      "sentence": "s24",
+      "startSec": 147.755,
+      "endSec": 150.295,
+      "text": {
+        "hi": "इस अध्याय की शुरुआत उसी सरल प्रश्न से होती है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "This chapter begins with that simple question.",
+      "visualIdea": "The plan drawing is gone; the night courtyard, the doorway open with a steady warm lamp glow in the room within.",
+      "caption": "इस अध्याय की शुरुआत उसी सरल प्रश्न से होती है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b44",
+      "kind": "narration",
+      "scene": "sc11",
+      "sentence": "s24",
+      "startSec": 150.295,
+      "endSec": 152.835,
+      "text": {
+        "hi": "इस अध्याय की शुरुआत उसी सरल प्रश्न से होती है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Simple.",
+      "visualIdea": "Slow drift toward the lit doorway; the wall holds the faint warm light.",
+      "caption": "इस अध्याय की शुरुआत उसी सरल प्रश्न से होती है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b45",
+      "kind": "narration",
+      "scene": "sc11",
+      "sentence": "s24",
+      "startSec": 152.835,
+      "endSec": 155.055,
+      "text": {
+        "hi": "जो देखने में छोटा है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Small to look at.",
+      "visualIdea": "Pull back toward the courtyard; the night sky above the wall is a faint blue.",
+      "caption": "जो देखने में छोटा है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b46",
+      "kind": "narration",
+      "scene": "sc11",
+      "sentence": "s24",
+      "startSec": 155.055,
+      "endSec": 159.625,
+      "text": {
+        "hi": "पर जीवन की जड़ तक जाता है: मैं कौन हूँ?"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "Yet it reaches to the root of life: who am I?",
+      "visualIdea": "Push slowly toward the doorway and the lamp glow; the courtyard otherwise dims.",
+      "caption": "पर जीवन की जड़ तक जाता है: मैं कौन हूँ?",
+      "keyIdea": true
+    },
+    {
+      "id": "b47",
+      "kind": "reflection",
+      "scene": "sc11",
+      "sentence": "s24",
+      "startSec": 159.625,
+      "endSec": 164.513,
+      "text": {
+        "hi": ""
+      },
+      "strategy": "quiet_hold",
+      "interactionStrategy": "reflection_pause",
+      "teachingIntent": "Reflection silence after the question.",
+      "visualIdea": "The frame darkens to almost nothing; only the small lamp glow in the doorway and a thin gold hairline remain.",
+      "caption": "",
+      "keyIdea": false
+    },
+    {
+      "id": "b48",
+      "kind": "narration",
+      "scene": "sc12",
+      "sentence": "s25",
+      "startSec": 164.513,
+      "endSec": 167.829,
+      "text": {
+        "hi": "“मैं कौन हूँ?”"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "The question again, now quoted.",
+      "visualIdea": "First light of dawn behind the wall: a pale warm sky, the doorway open, the courtyard waking.",
+      "caption": "“मैं कौन हूँ?”",
+      "keyIdea": false
+    },
+    {
+      "id": "b49",
+      "kind": "narration",
+      "scene": "sc12",
+      "sentence": "s26",
+      "startSec": 167.829,
+      "endSec": 170.569,
+      "text": {
+        "hi": "यह प्रश्न नया नहीं है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is not new.",
+      "visualIdea": "Camera pulls back along the wall to reveal its whole length.",
+      "caption": "यह प्रश्न नया नहीं है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b50",
+      "kind": "narration",
+      "scene": "sc12",
+      "sentence": "s27",
+      "startSec": 170.569,
+      "endSec": 175.423,
+      "text": {
+        "hi": "हजारों वर्षों से मनुष्य इसे पूछता आया है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "For thousands of years people have asked it.",
+      "visualIdea": "A long thin gold line runs along the top of the wall and small gold lamp outlines are drawn on it one by one, many, like a long row of askers.",
+      "caption": "हजारों वर्षों से मनुष्य इसे पूछता आया है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b51",
+      "kind": "narration",
+      "scene": "sc13",
+      "sentence": "s28",
+      "startSec": 175.423,
+      "endSec": 180.117,
+      "text": {
+        "hi": "लेकिन आश्चर्य की बात यह है कि हर साधक के जीवन में यह प्रश्न पहली बार जैसा ही लगता है।"
+      },
+      "strategy": "svg_drawing",
+      "interactionStrategy": "none",
+      "teachingIntent": "Strangely, each seeker feels it as the first time.",
+      "visualIdea": "The row of gold lamp outlines fades one by one except the last at the foot of the frame; warm dawn light spreads.",
+      "caption": "लेकिन आश्चर्य की बात यह है कि हर साधक के जीवन में यह प्रश्न पहली बार जैसा ही लगता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b52",
+      "kind": "narration",
+      "scene": "sc13",
+      "sentence": "s28",
+      "startSec": 180.117,
+      "endSec": 184.811,
+      "text": {
+        "hi": "लेकिन आश्चर्य की बात यह है कि हर साधक के जीवन में यह प्रश्न पहली बार जैसा ही लगता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "Always the first time.",
+      "visualIdea": "Framing narrows to the single stool and its lamp in morning light.",
+      "caption": "लेकिन आश्चर्य की बात यह है कि हर साधक के जीवन में यह प्रश्न पहली बार जैसा ही लगता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b53",
+      "kind": "narration",
+      "scene": "sc13",
+      "sentence": "s29",
+      "startSec": 184.811,
+      "endSec": 189.217,
+      "text": {
+        "hi": "क्योंकि यह प्रश्न किताब का प्रश्न नहीं है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is not a question from a book.",
+      "visualIdea": "Pull away from the stool toward the wide courtyard; the neem tree stands clear against the sky.",
+      "caption": "क्योंकि यह प्रश्न किताब का प्रश्न नहीं है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b54",
+      "kind": "narration",
+      "scene": "sc13",
+      "sentence": "s30",
+      "startSec": 189.217,
+      "endSec": 192.906,
+      "text": {
+        "hi": "यह तुम्हारे अपने जीवन का प्रश्न है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "It is the question of your own life.",
+      "visualIdea": "The camera moves to the open doorway; light falls through it onto the packed earth.",
+      "caption": "यह तुम्हारे अपने जीवन का प्रश्न है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b55",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s31",
+      "startSec": 192.906,
+      "endSec": 196.566,
+      "text": {
+        "hi": "जब तक यह प्रश्न केवल दिमाग में रहता है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "While the question stays only in the head...",
+      "visualIdea": "Clear calm morning daylight, long gentle shadows, the doorway open, the lamp a small cool shape.",
+      "caption": "जब तक यह प्रश्न केवल दिमाग में रहता है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b56",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s31",
+      "startSec": 196.566,
+      "endSec": 200.007,
+      "text": {
+        "hi": "तब तक यह दर्शन जैसा लगता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "...it feels like philosophy.",
+      "visualIdea": "Wide still view; slow drift; nothing in the picture presses.",
+      "caption": "तब तक यह दर्शन जैसा लगता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b57",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s32",
+      "startSec": 200.007,
+      "endSec": 202.327,
+      "text": {
+        "hi": "लेकिन जब जीवन में दुख,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "But when life brings sorrow...",
+      "visualIdea": "Framing tightens on the doorway threshold; a cool bar of shadow lies across it.",
+      "caption": "लेकिन जब जीवन में दुख,",
+      "keyIdea": false
+    },
+    {
+      "id": "b58",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s32",
+      "startSec": 202.327,
+      "endSec": 204.727,
+      "text": {
+        "hi": "असंतोष, डर,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "...dissatisfaction, fear...",
+      "visualIdea": "Slow push through the threshold light; the shadow bar slowly shortens.",
+      "caption": "असंतोष, डर,",
+      "keyIdea": false
+    },
+    {
+      "id": "b59",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s32",
+      "startSec": 204.727,
+      "endSec": 208.287,
+      "text": {
+        "hi": "अकेलापन या गहरी खोज उठती है,"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "none",
+      "teachingIntent": "...loneliness or a deep search...",
+      "visualIdea": "Camera pulls back into the courtyard, wide and quiet.",
+      "caption": "अकेलापन या गहरी खोज उठती है,",
+      "keyIdea": false
+    },
+    {
+      "id": "b60",
+      "kind": "narration",
+      "scene": "sc14",
+      "sentence": "s32",
+      "startSec": 208.287,
+      "endSec": 212.067,
+      "text": {
+        "hi": "तब यह प्रश्न बहुत व्यावहारिक हो जाता है।"
+      },
+      "strategy": "still_event",
+      "interactionStrategy": "think_time",
+      "teachingIntent": "...then the question becomes very practical.",
+      "visualIdea": "Morning light fills the doorway completely; the courtyard is plain, clear and lived-in.",
+      "caption": "तब यह प्रश्न बहुत व्यावहारिक हो जाता है।",
+      "keyIdea": false
+    },
+    {
+      "id": "b61",
+      "kind": "reflection",
+      "scene": "sc15",
+      "sentence": null,
+      "startSec": 212.067,
+      "endSec": 215.067,
+      "text": {
+        "hi": ""
+      },
+      "strategy": "quiet_hold",
+      "interactionStrategy": "reflection_pause",
+      "teachingIntent": "Reflection silence at the end of the passage.",
+      "visualIdea": "The courtyard dissolves to a closer view of the doorway at night: only the small lamp glow inside, the rest in shadow.",
+      "caption": "",
+      "keyIdea": false
+    },
+    {
+      "id": "b62",
+      "kind": "reflection",
+      "scene": "sc15",
+      "sentence": null,
+      "startSec": 215.067,
+      "endSec": 218.067,
+      "text": {
+        "hi": ""
+      },
+      "strategy": "quiet_hold",
+      "interactionStrategy": "reflection_pause",
+      "teachingIntent": "Quiet.",
+      "visualIdea": "A thin gold hairline at the centre; only grain and a few slow dust motes.",
+      "caption": "",
+      "keyIdea": false
+    },
+    {
+      "id": "b63",
+      "kind": "close",
+      "scene": "sc15",
+      "sentence": null,
+      "startSec": 218.067,
+      "endSec": 219.567,
+      "text": {
+        "hi": ""
+      },
+      "strategy": "quiet_hold",
+      "interactionStrategy": "none",
+      "teachingIntent": "Close.",
+      "visualIdea": "The frame fades to black.",
+      "caption": "",
+      "keyIdea": false
+    }
+  ],
+  "scenes": [
+    {
+      "id": "sc01",
+      "parent": "sc01",
+      "title": "An ordinary place, an ordinary beginning",
+      "segment": "g1",
+      "beats": [
+        "b00",
+        "b01",
+        "b02",
+        "b03",
+        "b04"
+      ],
+      "startSec": 0,
+      "endSec": 16.027,
+      "still": "m2b_sc01",
+      "stillKind": "master",
+      "stillSource": "the first picture (M2 root)",
+      "stillJudgeScore": 7,
+      "transitionIn": null,
+      "camera": {
+        "waypoints": 5,
+        "zoomRange": [
+          1.04,
+          1.18
+        ]
+      }
+    },
+    {
+      "id": "sc02",
+      "parent": "sc02",
+      "title": "From outside everything looks fine",
+      "segment": "g1",
+      "beats": [
+        "b05",
+        "b06",
+        "b07",
+        "b08"
+      ],
+      "startSec": 16.027,
+      "endSec": 26.627,
+      "still": "m2b_sc02",
+      "stillKind": "master",
+      "stillSource": "crop of m2_sc01, redrawn by the edit model",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 4,
+        "zoomRange": [
+          1,
+          1.1
+        ]
+      }
+    },
+    {
+      "id": "sc03",
+      "parent": "sc03",
+      "title": "Success arrives, and still",
+      "segment": "g1",
+      "beats": [
+        "b09",
+        "b10",
+        "b11"
+      ],
+      "startSec": 26.627,
+      "endSec": 39.16,
+      "still": "m2b_sc03",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1.08,
+          1.2
+        ]
+      }
+    },
+    {
+      "id": "sc04a",
+      "parent": "sc04",
+      "title": "Something is missing (shot 1 of 2)",
+      "segment": "g1",
+      "beats": [
+        "b12",
+        "b13",
+        "b14"
+      ],
+      "startSec": 39.16,
+      "endSec": 47.324,
+      "still": "m2b_sc04w",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc04b",
+      "parent": "sc04",
+      "title": "Something is missing (shot 2 of 2)",
+      "segment": "g1",
+      "beats": [
+        "b15",
+        "b16"
+      ],
+      "startSec": 47.324,
+      "endSec": 53.232,
+      "still": "m2b_sc04",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc05",
+      "parent": "sc05",
+      "title": "Busy, so as not to feel it",
+      "segment": "g2",
+      "beats": [
+        "b17",
+        "b18",
+        "b19",
+        "b20",
+        "b21"
+      ],
+      "startSec": 53.232,
+      "endSec": 70.781,
+      "still": "m2b_sc05",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 5,
+        "zoomRange": [
+          1.06,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc06",
+      "parent": "sc06",
+      "title": "In the quiet of the night the question rises",
+      "segment": "g2",
+      "beats": [
+        "b22",
+        "b23",
+        "b24"
+      ],
+      "startSec": 70.781,
+      "endSec": 84.617,
+      "still": "m2b_sc06",
+      "stillKind": "detail",
+      "stillSource": "crop of m2_sc01, redrawn by the edit model",
+      "stillJudgeScore": 7.5,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc07a",
+      "parent": "sc07",
+      "title": "Not weakness: honesty (shot 1 of 2)",
+      "segment": "g3",
+      "beats": [
+        "b25",
+        "b26",
+        "b27"
+      ],
+      "startSec": 84.617,
+      "endSec": 96.462,
+      "still": "m2b_sc07",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1,
+          1.12
+        ]
+      }
+    },
+    {
+      "id": "sc07b",
+      "parent": "sc07",
+      "title": "Not weakness: honesty (shot 2 of 2)",
+      "segment": "g3",
+      "beats": [
+        "b28"
+      ],
+      "startSec": 96.462,
+      "endSec": 100.062,
+      "still": "m2b_sc07c",
+      "stillKind": "detail",
+      "stillSource": "crop of m2b_sc07, redrawn by the edit model",
+      "stillJudgeScore": 7.5,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.1
+        ]
+      }
+    },
+    {
+      "id": "sc08",
+      "parent": "sc08",
+      "title": "The journey is toward oneself",
+      "segment": "g3",
+      "beats": [
+        "b29",
+        "b30",
+        "b31",
+        "b32",
+        "b33",
+        "b34"
+      ],
+      "startSec": 100.062,
+      "endSec": 118.309,
+      "still": "m2b_sc08",
+      "stillKind": "master",
+      "stillSource": "crop of m2_sc01, redrawn by the edit model",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 6,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc09a",
+      "parent": "sc09",
+      "title": "The house with a quiet room (shot 1 of 2)",
+      "segment": "g4",
+      "beats": [
+        "b35"
+      ],
+      "startSec": 118.309,
+      "endSec": 121.809,
+      "still": "m2b_sc09",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.08
+        ]
+      }
+    },
+    {
+      "id": "sc09b",
+      "parent": "sc09",
+      "title": "The house with a quiet room (shot 2 of 2)",
+      "segment": "g4",
+      "beats": [
+        "b36",
+        "b37"
+      ],
+      "startSec": 121.809,
+      "endSec": 129.986,
+      "still": "m2b_sc09c",
+      "stillKind": "detail",
+      "stillSource": "non-generative crop of m2b_sc09",
+      "stillJudgeScore": null,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.12
+        ]
+      }
+    },
+    {
+      "id": "sc10",
+      "parent": "sc10",
+      "title": "The rooms we live in",
+      "segment": "g4",
+      "beats": [
+        "b38",
+        "b39",
+        "b40",
+        "b41",
+        "b42"
+      ],
+      "startSec": 129.986,
+      "endSec": 147.755,
+      "still": "m2b_sc10",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 5,
+        "zoomRange": [
+          1,
+          1.12
+        ]
+      }
+    },
+    {
+      "id": "sc11",
+      "parent": "sc11",
+      "title": "The chapter begins with the question",
+      "segment": "g4",
+      "beats": [
+        "b43",
+        "b44",
+        "b45",
+        "b46",
+        "b47"
+      ],
+      "startSec": 147.755,
+      "endSec": 164.513,
+      "still": "m2b_sc11",
+      "stillKind": "master",
+      "stillSource": "non-generative crop of m2b_sc10",
+      "stillJudgeScore": null,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 5,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc12",
+      "parent": "sc12",
+      "title": "An old question",
+      "segment": "g5",
+      "beats": [
+        "b48",
+        "b49",
+        "b50"
+      ],
+      "startSec": 164.513,
+      "endSec": 175.423,
+      "still": "m2b_sc12",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc13a",
+      "parent": "sc13",
+      "title": "Always the first time (shot 1 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b51"
+      ],
+      "startSec": 175.423,
+      "endSec": 180.117,
+      "still": "m2b_sc13",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1.18,
+          1.24
+        ]
+      }
+    },
+    {
+      "id": "sc13b",
+      "parent": "sc13",
+      "title": "Always the first time (shot 2 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b52"
+      ],
+      "startSec": 180.117,
+      "endSec": 184.811,
+      "still": "m2b_sc13c",
+      "stillKind": "detail",
+      "stillSource": "crop of m2b_sc13, redrawn by the edit model",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.08
+        ]
+      }
+    },
+    {
+      "id": "sc13c",
+      "parent": "sc13",
+      "title": "Always the first time (shot 3 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b53",
+        "b54"
+      ],
+      "startSec": 184.811,
+      "endSec": 192.906,
+      "still": "m2b_sc13",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 8,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc14a",
+      "parent": "sc14",
+      "title": "When it becomes practical (shot 1 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b55",
+        "b56"
+      ],
+      "startSec": 192.906,
+      "endSec": 200.007,
+      "still": "m2b_sc14w",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7.5,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.1
+        ]
+      }
+    },
+    {
+      "id": "sc14b",
+      "parent": "sc14",
+      "title": "When it becomes practical (shot 2 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b57",
+        "b58"
+      ],
+      "startSec": 200.007,
+      "endSec": 204.727,
+      "still": "m2b_sc14",
+      "stillKind": "master",
+      "stillSource": "crop of m2b_sc13, redrawn by the edit model",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1.04,
+          1.14
+        ]
+      }
+    },
+    {
+      "id": "sc14c",
+      "parent": "sc14",
+      "title": "When it becomes practical (shot 3 of 3)",
+      "segment": "g5",
+      "beats": [
+        "b59",
+        "b60"
+      ],
+      "startSec": 204.727,
+      "endSec": 212.067,
+      "still": "m2b_sc14w",
+      "stillKind": "master",
+      "stillSource": "edited from m2_sc01",
+      "stillJudgeScore": 7.5,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.5
+      },
+      "camera": {
+        "waypoints": 2,
+        "zoomRange": [
+          1,
+          1.12
+        ]
+      }
+    },
+    {
+      "id": "sc15",
+      "parent": "sc15",
+      "title": "Quiet close",
+      "segment": "g5",
+      "beats": [
+        "b61",
+        "b62",
+        "b63"
+      ],
+      "startSec": 212.067,
+      "endSec": 219.567,
+      "still": "m2b_sc15",
+      "stillKind": "detail",
+      "stillSource": "crop of m2b_sc10, redrawn by the edit model",
+      "stillJudgeScore": 7,
+      "transitionIn": {
+        "type": "dip",
+        "durationSec": 0.8
+      },
+      "camera": {
+        "waypoints": 3,
+        "zoomRange": [
+          1.06,
+          1.06
+        ]
+      }
+    }
+  ],
+  "pausePoints": [
+    {
+      "id": "p-opening",
+      "kind": "opening_silence",
+      "atSec": 0,
+      "durationSec": 2,
+      "autoResume": true
+    },
+    {
+      "id": "p-g1",
+      "kind": "think",
+      "segment": "g1",
+      "atSec": 50.842,
+      "durationSec": 2.5,
+      "autoResume": true
+    },
+    {
+      "id": "p-g2",
+      "kind": "think",
+      "segment": "g2",
+      "atSec": 82.167,
+      "durationSec": 2.5,
+      "autoResume": true
+    },
+    {
+      "id": "p-g3",
+      "kind": "think",
+      "segment": "g3",
+      "atSec": 115.799,
+      "durationSec": 2.5,
+      "autoResume": true
+    },
+    {
+      "id": "p-g4",
+      "kind": "reflection",
+      "segment": "g4",
+      "atSec": 159.063,
+      "durationSec": 5.5,
+      "autoResume": true,
+      "playerHint": "offer an optional hold: the viewer may stay in the quiet frame, then resume"
+    },
+    {
+      "id": "p-g5",
+      "kind": "reflection",
+      "segment": "g5",
+      "atSec": 212.067,
+      "durationSec": 6,
+      "autoResume": true,
+      "playerHint": "offer an optional hold: the viewer may stay in the quiet frame, then resume"
+    }
+  ],
+  "englishTrack": {
+    "published": true,
+    "fit": true,
+    "loudnessMatched": true,
+    "driftFlags": [],
+    "glossaryViolations": 0,
+    "round": 3,
+    "publish": true,
+    "note": "machine translation and machine voice; not human-reviewed"
+  },
+  "fixture": {
+    "schema": "nirvan-player-fixture/1",
+    "note": "proxy media for developing and testing a player; the masters stay in the repository build output (out/m2b), not here",
+    "builtFrom": {
+      "manifest": "out/m2b/package/manifest.json",
+      "masterSha256": "7c2c41d7fb56cd5e651e21560edf76bb4ca97d111a9559fbb9c7483e613b3ba0"
+    },
+    "files": [
+      {
+        "path": "video/master-540p.mp4",
+        "bytes": 7701940,
+        "sha256": "e786aeb2d43f3fd83f6842e12bb8f5584fb60b66f71c4f9344606ab47c425f91"
+      },
+      {
+        "path": "audio/hi.m4a",
+        "bytes": 1470303,
+        "sha256": "22d84a3566cb91edf3c10b93075be7cdeedfa088b37d4cfe2730f37ec04e4e28"
+      },
+      {
+        "path": "audio/en.m4a",
+        "bytes": 1361995,
+        "sha256": "f36d2428a91de54245121dba5682e0c310039200c9b0f5fd1602a8afc7b47524"
+      },
+      {
+        "path": "captions/hi.vtt",
+        "bytes": 12679,
+        "sha256": "3cc9155c8ea2ad337692dd0d62d10b9eaca9cce6dcccc42a52e887883b43312d"
+      },
+      {
+        "path": "captions/hi.words.json",
+        "bytes": 60844,
+        "sha256": "05a69d9d2856f65698525ab28fc5f5c3c7cff6b7c924b7e78ee37637d2244e46"
+      },
+      {
+        "path": "captions/en.vtt",
+        "bytes": 9472,
+        "sha256": "4d067e81b3f4a415a2fe98ba4ada83af099af21e0755b62a51f4e52728180ded"
+      },
+      {
+        "path": "captions/en.words.json",
+        "bytes": 46321,
+        "sha256": "6ebc0680716e168d6324c94731a36160717c8703d91e229140ecb3c3e52fc73c"
+      }
+    ]
+  }
+}

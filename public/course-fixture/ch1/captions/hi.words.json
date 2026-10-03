@@ -1,0 +1,3306 @@
+{
+  "language": "hi",
+  "method": "ctc-forced-alignment",
+  "words": [
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 0,
+      "text": "अध्यात्म",
+      "start": 2.06,
+      "end": 2.66
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 1,
+      "text": "की",
+      "start": 2.8,
+      "end": 2.86
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 2,
+      "text": "यात्रा",
+      "start": 3,
+      "end": 3.38
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 3,
+      "text": "हमेशा",
+      "start": 3.94,
+      "end": 4.44
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 4,
+      "text": "मंदिर,",
+      "start": 4.58,
+      "end": 5.12
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 5,
+      "text": "आश्रम",
+      "start": 5.58,
+      "end": 6.16
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 6,
+      "text": "या",
+      "start": 6.62,
+      "end": 6.68
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 7,
+      "text": "किसी",
+      "start": 6.82,
+      "end": 7.04
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 8,
+      "text": "पुस्तक",
+      "start": 7.18,
+      "end": 7.62
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 9,
+      "text": "से",
+      "start": 7.7,
+      "end": 7.76
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 10,
+      "text": "शुरू",
+      "start": 7.92,
+      "end": 8.08
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 11,
+      "text": "नहीं",
+      "start": 8.16,
+      "end": 8.3
+    },
+    {
+      "sentence": "s01",
+      "beat": "b01",
+      "i": 12,
+      "text": "होती।",
+      "start": 8.36,
+      "end": 8.6
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 0,
+      "text": "कई",
+      "start": 9.869,
+      "end": 10.009
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 1,
+      "text": "बार",
+      "start": 10.149,
+      "end": 10.349
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 2,
+      "text": "यह",
+      "start": 10.469,
+      "end": 10.549
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 3,
+      "text": "यात्रा",
+      "start": 10.669,
+      "end": 11.089
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 4,
+      "text": "एक",
+      "start": 11.689,
+      "end": 11.849
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 5,
+      "text": "बहुत",
+      "start": 11.949,
+      "end": 12.269
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 6,
+      "text": "साधारण-सी",
+      "start": 12.449,
+      "end": 13.229
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 7,
+      "text": "बेचैनी",
+      "start": 13.389,
+      "end": 13.889
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 8,
+      "text": "से",
+      "start": 14.009,
+      "end": 14.069
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 9,
+      "text": "शुरू",
+      "start": 14.209,
+      "end": 14.389
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 10,
+      "text": "होती",
+      "start": 14.409,
+      "end": 14.689
+    },
+    {
+      "sentence": "s02",
+      "beat": "b03",
+      "i": 11,
+      "text": "है।",
+      "start": 14.769,
+      "end": 14.809
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 0,
+      "text": "बाहर",
+      "start": 16.177,
+      "end": 16.517
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 1,
+      "text": "से",
+      "start": 16.657,
+      "end": 16.717
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 2,
+      "text": "सब",
+      "start": 16.937,
+      "end": 17.117
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 3,
+      "text": "ठीक",
+      "start": 17.317,
+      "end": 17.537
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 4,
+      "text": "दिखता",
+      "start": 17.637,
+      "end": 17.957
+    },
+    {
+      "sentence": "s03",
+      "beat": "b05",
+      "i": 5,
+      "text": "है।",
+      "start": 18.057,
+      "end": 18.117
+    },
+    {
+      "sentence": "s04",
+      "beat": "b06",
+      "i": 0,
+      "text": "काम",
+      "start": 19.404,
+      "end": 19.764
+    },
+    {
+      "sentence": "s04",
+      "beat": "b06",
+      "i": 1,
+      "text": "चल",
+      "start": 20.104,
+      "end": 20.344
+    },
+    {
+      "sentence": "s04",
+      "beat": "b06",
+      "i": 2,
+      "text": "रहा",
+      "start": 20.384,
+      "end": 20.604
+    },
+    {
+      "sentence": "s04",
+      "beat": "b06",
+      "i": 3,
+      "text": "है।",
+      "start": 20.764,
+      "end": 20.804
+    },
+    {
+      "sentence": "s05",
+      "beat": "b07",
+      "i": 0,
+      "text": "परिवार",
+      "start": 22.219,
+      "end": 22.699
+    },
+    {
+      "sentence": "s05",
+      "beat": "b07",
+      "i": 1,
+      "text": "है।",
+      "start": 22.799,
+      "end": 22.839
+    },
+    {
+      "sentence": "s06",
+      "beat": "b08",
+      "i": 0,
+      "text": "लोग",
+      "start": 24.201,
+      "end": 24.401
+    },
+    {
+      "sentence": "s06",
+      "beat": "b08",
+      "i": 1,
+      "text": "पहचानते",
+      "start": 24.521,
+      "end": 25.241
+    },
+    {
+      "sentence": "s06",
+      "beat": "b08",
+      "i": 2,
+      "text": "हैं।",
+      "start": 25.381,
+      "end": 25.441
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 0,
+      "text": "कभी",
+      "start": 26.777,
+      "end": 26.957
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 1,
+      "text": "पैसा",
+      "start": 27.117,
+      "end": 27.477
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 2,
+      "text": "आता",
+      "start": 27.757,
+      "end": 27.817
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 3,
+      "text": "है,",
+      "start": 27.917,
+      "end": 27.977
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 4,
+      "text": "कभी",
+      "start": 28.817,
+      "end": 28.977
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 5,
+      "text": "प्रशंसा",
+      "start": 29.137,
+      "end": 29.717
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 6,
+      "text": "मिलती",
+      "start": 29.817,
+      "end": 30.117
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 7,
+      "text": "है,",
+      "start": 30.197,
+      "end": 30.257
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 8,
+      "text": "कभी",
+      "start": 30.817,
+      "end": 31.017
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 9,
+      "text": "कोई",
+      "start": 31.157,
+      "end": 31.297
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 10,
+      "text": "सपना",
+      "start": 31.497,
+      "end": 31.877
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 11,
+      "text": "पूरा",
+      "start": 32.097,
+      "end": 32.357
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 12,
+      "text": "भी",
+      "start": 32.477,
+      "end": 32.537
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 13,
+      "text": "हो",
+      "start": 32.637,
+      "end": 32.697
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 14,
+      "text": "जाता",
+      "start": 32.817,
+      "end": 33.097
+    },
+    {
+      "sentence": "s07",
+      "beat": "b09",
+      "i": 15,
+      "text": "है।",
+      "start": 33.197,
+      "end": 33.237
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 0,
+      "text": "फिर",
+      "start": 34.569,
+      "end": 34.729
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 1,
+      "text": "भी",
+      "start": 34.829,
+      "end": 34.889
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 2,
+      "text": "भीतर",
+      "start": 35.009,
+      "end": 35.469
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 3,
+      "text": "कहीं",
+      "start": 36.069,
+      "end": 36.289
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 4,
+      "text": "एक",
+      "start": 36.369,
+      "end": 36.409
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 5,
+      "text": "खालीपन",
+      "start": 36.649,
+      "end": 37.229
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 6,
+      "text": "रह",
+      "start": 37.309,
+      "end": 37.449
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 7,
+      "text": "जाता",
+      "start": 37.589,
+      "end": 37.849
+    },
+    {
+      "sentence": "s08",
+      "beat": "b11",
+      "i": 8,
+      "text": "है।",
+      "start": 37.949,
+      "end": 38.009
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 0,
+      "text": "ऐसा",
+      "start": 39.31,
+      "end": 39.63
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 1,
+      "text": "लगता",
+      "start": 39.79,
+      "end": 40.15
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 2,
+      "text": "है",
+      "start": 40.35,
+      "end": 40.41
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 3,
+      "text": "जैसे",
+      "start": 40.63,
+      "end": 40.93
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 4,
+      "text": "कुछ",
+      "start": 41.11,
+      "end": 41.35
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 5,
+      "text": "है",
+      "start": 41.49,
+      "end": 41.55
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 6,
+      "text": "जो",
+      "start": 42.31,
+      "end": 42.39
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 7,
+      "text": "मिल",
+      "start": 42.67,
+      "end": 42.83
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 8,
+      "text": "नहीं",
+      "start": 42.95,
+      "end": 43.11
+    },
+    {
+      "sentence": "s09",
+      "beat": "b12",
+      "i": 9,
+      "text": "रहा।",
+      "start": 43.21,
+      "end": 43.29
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 0,
+      "text": "जैसे",
+      "start": 44.694,
+      "end": 45.034
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 1,
+      "text": "जीवन",
+      "start": 45.234,
+      "end": 45.574
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 2,
+      "text": "चल",
+      "start": 45.754,
+      "end": 45.914
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 3,
+      "text": "तो",
+      "start": 46.094,
+      "end": 46.154
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 4,
+      "text": "रहा",
+      "start": 46.274,
+      "end": 46.534
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 5,
+      "text": "है,",
+      "start": 46.694,
+      "end": 46.734
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 6,
+      "text": "लेकिन",
+      "start": 47.474,
+      "end": 47.734
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 7,
+      "text": "भीतर",
+      "start": 47.914,
+      "end": 48.294
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 8,
+      "text": "कोई",
+      "start": 48.454,
+      "end": 48.594
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 9,
+      "text": "गहरा",
+      "start": 48.794,
+      "end": 49.134
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 10,
+      "text": "उत्तर",
+      "start": 49.294,
+      "end": 49.614
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 11,
+      "text": "अभी",
+      "start": 49.734,
+      "end": 49.914
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 12,
+      "text": "बाकी",
+      "start": 50.074,
+      "end": 50.414
+    },
+    {
+      "sentence": "s10",
+      "beat": "b14",
+      "i": 13,
+      "text": "है।",
+      "start": 50.514,
+      "end": 50.594
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 0,
+      "text": "कई",
+      "start": 53.382,
+      "end": 53.522
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 1,
+      "text": "लोग",
+      "start": 53.682,
+      "end": 53.922
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 2,
+      "text": "इस",
+      "start": 54.122,
+      "end": 54.322
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 3,
+      "text": "बेचैनी",
+      "start": 54.482,
+      "end": 54.942
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 4,
+      "text": "को",
+      "start": 55.022,
+      "end": 55.082
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 5,
+      "text": "दबा",
+      "start": 55.202,
+      "end": 55.422
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 6,
+      "text": "देते",
+      "start": 55.542,
+      "end": 55.762
+    },
+    {
+      "sentence": "s11",
+      "beat": "b17",
+      "i": 7,
+      "text": "हैं।",
+      "start": 55.822,
+      "end": 55.922
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 0,
+      "text": "कोई",
+      "start": 57.141,
+      "end": 57.301
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 1,
+      "text": "काम",
+      "start": 57.461,
+      "end": 57.721
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 2,
+      "text": "में",
+      "start": 57.821,
+      "end": 57.921
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 3,
+      "text": "और",
+      "start": 58.401,
+      "end": 58.601
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 4,
+      "text": "डूब",
+      "start": 58.761,
+      "end": 59.001
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 5,
+      "text": "जाता",
+      "start": 59.101,
+      "end": 59.381
+    },
+    {
+      "sentence": "s12",
+      "beat": "b18",
+      "i": 6,
+      "text": "है।",
+      "start": 59.441,
+      "end": 59.521
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 0,
+      "text": "कोई",
+      "start": 60.746,
+      "end": 60.946
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 1,
+      "text": "रिश्तों",
+      "start": 61.066,
+      "end": 61.466
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 2,
+      "text": "में",
+      "start": 61.606,
+      "end": 61.686
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 3,
+      "text": "उत्तर",
+      "start": 61.986,
+      "end": 62.426
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 4,
+      "text": "खोजता",
+      "start": 62.566,
+      "end": 63.006
+    },
+    {
+      "sentence": "s13",
+      "beat": "b19",
+      "i": 5,
+      "text": "है।",
+      "start": 63.166,
+      "end": 63.226
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 0,
+      "text": "कोई",
+      "start": 64.533,
+      "end": 64.653
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 1,
+      "text": "मनोरंजन",
+      "start": 64.793,
+      "end": 65.433
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 2,
+      "text": "में",
+      "start": 65.533,
+      "end": 65.613
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 3,
+      "text": "खो",
+      "start": 65.773,
+      "end": 65.853
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 4,
+      "text": "जाता",
+      "start": 66.013,
+      "end": 66.273
+    },
+    {
+      "sentence": "s14",
+      "beat": "b20",
+      "i": 5,
+      "text": "है।",
+      "start": 66.393,
+      "end": 66.433
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 0,
+      "text": "कोई",
+      "start": 67.695,
+      "end": 67.815
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 1,
+      "text": "नए",
+      "start": 68.075,
+      "end": 68.135
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 2,
+      "text": "लक्ष्य",
+      "start": 68.455,
+      "end": 68.815
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 3,
+      "text": "बना",
+      "start": 68.915,
+      "end": 69.115
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 4,
+      "text": "लेता",
+      "start": 69.215,
+      "end": 69.495
+    },
+    {
+      "sentence": "s15",
+      "beat": "b21",
+      "i": 5,
+      "text": "है।",
+      "start": 69.615,
+      "end": 69.655
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 0,
+      "text": "कुछ",
+      "start": 70.931,
+      "end": 71.111
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 1,
+      "text": "समय",
+      "start": 71.211,
+      "end": 71.491
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 2,
+      "text": "के",
+      "start": 71.651,
+      "end": 71.691
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 3,
+      "text": "लिए",
+      "start": 71.791,
+      "end": 72.011
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 4,
+      "text": "मन",
+      "start": 72.631,
+      "end": 72.851
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 5,
+      "text": "व्यस्त",
+      "start": 73.031,
+      "end": 73.391
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 6,
+      "text": "हो",
+      "start": 73.491,
+      "end": 73.551
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 7,
+      "text": "जाता",
+      "start": 73.671,
+      "end": 73.951
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "beat": "b22",
+      "i": 8,
+      "text": "है,",
+      "start": 73.991,
+      "end": 74.051
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 0,
+      "text": "लेकिन",
+      "start": 74.891,
+      "end": 75.131
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 1,
+      "text": "रात",
+      "start": 75.331,
+      "end": 75.711
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 2,
+      "text": "के",
+      "start": 75.811,
+      "end": 75.851
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 3,
+      "text": "किसी",
+      "start": 75.991,
+      "end": 76.211
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 4,
+      "text": "शांत",
+      "start": 76.451,
+      "end": 76.851
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 5,
+      "text": "क्षण",
+      "start": 76.951,
+      "end": 77.411
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 6,
+      "text": "में",
+      "start": 77.511,
+      "end": 77.611
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 7,
+      "text": "वही",
+      "start": 78.491,
+      "end": 78.671
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 8,
+      "text": "प्रश्न",
+      "start": 78.851,
+      "end": 79.231
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 9,
+      "text": "फिर",
+      "start": 79.411,
+      "end": 79.591
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 10,
+      "text": "उठता",
+      "start": 79.611,
+      "end": 79.911
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 11,
+      "text": "है -",
+      "start": 79.991,
+      "end": 80.051
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 12,
+      "text": "क्या",
+      "start": 80.431,
+      "end": 80.531
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 13,
+      "text": "बस",
+      "start": 80.631,
+      "end": 80.791
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 14,
+      "text": "इतना",
+      "start": 80.911,
+      "end": 81.231
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 15,
+      "text": "ही",
+      "start": 81.311,
+      "end": 81.371
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 16,
+      "text": "जीवन",
+      "start": 81.511,
+      "end": 81.831
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "beat": "b23",
+      "i": 17,
+      "text": "है?",
+      "start": 81.871,
+      "end": 81.951
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 0,
+      "text": "यह",
+      "start": 84.767,
+      "end": 84.847
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 1,
+      "text": "प्रश्न",
+      "start": 84.987,
+      "end": 85.287
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 2,
+      "text": "कमजोरी",
+      "start": 85.467,
+      "end": 85.907
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 3,
+      "text": "का",
+      "start": 86.087,
+      "end": 86.167
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 4,
+      "text": "संकेत",
+      "start": 86.347,
+      "end": 86.807
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 5,
+      "text": "नहीं",
+      "start": 86.847,
+      "end": 87.067
+    },
+    {
+      "sentence": "s17",
+      "beat": "b25",
+      "i": 6,
+      "text": "है।",
+      "start": 87.147,
+      "end": 87.207
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 0,
+      "text": "यह",
+      "start": 88.507,
+      "end": 88.647
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 1,
+      "text": "भीतर",
+      "start": 88.827,
+      "end": 89.227
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 2,
+      "text": "की",
+      "start": 89.367,
+      "end": 89.407
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 3,
+      "text": "ईमानदारी",
+      "start": 89.547,
+      "end": 90.067
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 4,
+      "text": "का",
+      "start": 90.247,
+      "end": 90.347
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 5,
+      "text": "संकेत",
+      "start": 90.527,
+      "end": 90.987
+    },
+    {
+      "sentence": "s18",
+      "beat": "b26",
+      "i": 6,
+      "text": "है।",
+      "start": 91.007,
+      "end": 91.087
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 0,
+      "text": "जब",
+      "start": 92.432,
+      "end": 92.592
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 1,
+      "text": "मनुष्य",
+      "start": 92.672,
+      "end": 93.132
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 2,
+      "text": "केवल",
+      "start": 93.692,
+      "end": 94.012
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 3,
+      "text": "जीने",
+      "start": 94.172,
+      "end": 94.412
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 4,
+      "text": "से",
+      "start": 94.552,
+      "end": 94.612
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 5,
+      "text": "संतुष्ट",
+      "start": 94.752,
+      "end": 95.332
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 6,
+      "text": "नहीं",
+      "start": 95.432,
+      "end": 95.612
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "beat": "b27",
+      "i": 7,
+      "text": "रहता,",
+      "start": 95.672,
+      "end": 95.952
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 0,
+      "text": "बल्कि",
+      "start": 96.612,
+      "end": 96.892
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 1,
+      "text": "जानना",
+      "start": 97.032,
+      "end": 97.452
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 2,
+      "text": "चाहता",
+      "start": 97.592,
+      "end": 97.932
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 3,
+      "text": "है",
+      "start": 98.032,
+      "end": 98.092
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 4,
+      "text": "कि",
+      "start": 98.732,
+      "end": 98.772
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 5,
+      "text": "मैं",
+      "start": 98.872,
+      "end": 98.952
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 6,
+      "text": "कौन",
+      "start": 99.112,
+      "end": 99.412
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "beat": "b28",
+      "i": 7,
+      "text": "हूँ,",
+      "start": 99.532,
+      "end": 99.632
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "beat": "b29",
+      "i": 0,
+      "text": "मैं",
+      "start": 100.212,
+      "end": 100.292
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "beat": "b29",
+      "i": 1,
+      "text": "क्यों",
+      "start": 100.452,
+      "end": 100.612
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "beat": "b29",
+      "i": 2,
+      "text": "दुखी",
+      "start": 100.772,
+      "end": 101.012
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "beat": "b29",
+      "i": 3,
+      "text": "होता",
+      "start": 101.072,
+      "end": 101.352
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "beat": "b29",
+      "i": 4,
+      "text": "हूँ,",
+      "start": 101.492,
+      "end": 101.552
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 0,
+      "text": "मुझे",
+      "start": 102.092,
+      "end": 102.292
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 1,
+      "text": "हमेशा",
+      "start": 102.412,
+      "end": 102.852
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 2,
+      "text": "कुछ",
+      "start": 103.012,
+      "end": 103.172
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 3,
+      "text": "कमी",
+      "start": 103.272,
+      "end": 103.492
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 4,
+      "text": "क्यों",
+      "start": 103.652,
+      "end": 103.812
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 5,
+      "text": "लगती",
+      "start": 103.912,
+      "end": 104.232
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-4",
+      "beat": "b30",
+      "i": 6,
+      "text": "है,",
+      "start": 104.372,
+      "end": 104.432
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 0,
+      "text": "तब",
+      "start": 105.072,
+      "end": 105.252
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 1,
+      "text": "अध्यात्म",
+      "start": 105.392,
+      "end": 106.032
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 2,
+      "text": "की",
+      "start": 106.212,
+      "end": 106.252
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 3,
+      "text": "यात्रा",
+      "start": 106.372,
+      "end": 106.772
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 4,
+      "text": "शुरू",
+      "start": 106.932,
+      "end": 107.112
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 5,
+      "text": "होती",
+      "start": 107.212,
+      "end": 107.472
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-5",
+      "beat": "b31",
+      "i": 6,
+      "text": "है।",
+      "start": 107.552,
+      "end": 107.612
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 0,
+      "text": "यह",
+      "start": 108.949,
+      "end": 109.109
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 1,
+      "text": "यात्रा",
+      "start": 109.269,
+      "end": 109.629
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 2,
+      "text": "संसार",
+      "start": 109.829,
+      "end": 110.309
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 3,
+      "text": "से",
+      "start": 110.429,
+      "end": 110.489
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 4,
+      "text": "भागने",
+      "start": 110.609,
+      "end": 110.969
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 5,
+      "text": "की",
+      "start": 111.109,
+      "end": 111.149
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 6,
+      "text": "यात्रा",
+      "start": 111.249,
+      "end": 111.629
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 7,
+      "text": "नहीं",
+      "start": 111.729,
+      "end": 111.949
+    },
+    {
+      "sentence": "s20",
+      "beat": "b32",
+      "i": 8,
+      "text": "है।",
+      "start": 112.029,
+      "end": 112.109
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 0,
+      "text": "यह",
+      "start": 113.419,
+      "end": 113.499
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 1,
+      "text": "स्वयं",
+      "start": 113.739,
+      "end": 114.099
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 2,
+      "text": "से",
+      "start": 114.259,
+      "end": 114.299
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 3,
+      "text": "मिलने",
+      "start": 114.459,
+      "end": 114.739
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 4,
+      "text": "की",
+      "start": 114.899,
+      "end": 114.939
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 5,
+      "text": "यात्रा",
+      "start": 115.039,
+      "end": 115.439
+    },
+    {
+      "sentence": "s21",
+      "beat": "b33",
+      "i": 6,
+      "text": "है।",
+      "start": 115.539,
+      "end": 115.599
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 0,
+      "text": "जैसे",
+      "start": 118.459,
+      "end": 118.739
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 1,
+      "text": "कोई",
+      "start": 118.899,
+      "end": 119.059
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 2,
+      "text": "व्यक्ति",
+      "start": 119.139,
+      "end": 119.459
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 3,
+      "text": "अपने",
+      "start": 119.499,
+      "end": 119.759
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 4,
+      "text": "ही",
+      "start": 119.899,
+      "end": 119.959
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 5,
+      "text": "घर",
+      "start": 120.139,
+      "end": 120.319
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 6,
+      "text": "में",
+      "start": 120.419,
+      "end": 120.499
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 7,
+      "text": "वर्षों",
+      "start": 120.619,
+      "end": 120.959
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "beat": "b35",
+      "i": 8,
+      "text": "रहे,",
+      "start": 121.059,
+      "end": 121.259
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 0,
+      "text": "पर",
+      "start": 121.959,
+      "end": 122.099
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 1,
+      "text": "उसे",
+      "start": 122.199,
+      "end": 122.379
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 2,
+      "text": "पता",
+      "start": 122.519,
+      "end": 122.759
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 3,
+      "text": "ही",
+      "start": 122.879,
+      "end": 122.939
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 4,
+      "text": "न",
+      "start": 123.019,
+      "end": 123.039
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 5,
+      "text": "हो",
+      "start": 123.219,
+      "end": 123.279
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 6,
+      "text": "कि",
+      "start": 123.899,
+      "end": 123.939
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 7,
+      "text": "घर",
+      "start": 124.099,
+      "end": 124.259
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 8,
+      "text": "के",
+      "start": 124.379,
+      "end": 124.439
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 9,
+      "text": "भीतर",
+      "start": 124.599,
+      "end": 124.979
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 10,
+      "text": "एक",
+      "start": 125.099,
+      "end": 125.259
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 11,
+      "text": "शांत",
+      "start": 125.399,
+      "end": 125.679
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 12,
+      "text": "कमरा",
+      "start": 125.779,
+      "end": 126.059
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 13,
+      "text": "भी",
+      "start": 126.199,
+      "end": 126.259
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 14,
+      "text": "है",
+      "start": 126.399,
+      "end": 126.459
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 15,
+      "text": "जहाँ",
+      "start": 127.119,
+      "end": 127.319
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 16,
+      "text": "वह",
+      "start": 127.439,
+      "end": 127.599
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 17,
+      "text": "कभी",
+      "start": 127.819,
+      "end": 128.019
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 18,
+      "text": "गया",
+      "start": 128.179,
+      "end": 128.379
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 19,
+      "text": "ही",
+      "start": 128.479,
+      "end": 128.559
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "beat": "b36",
+      "i": 20,
+      "text": "नहीं।",
+      "start": 128.639,
+      "end": 128.859
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 0,
+      "text": "वैसे",
+      "start": 130.136,
+      "end": 130.436
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 1,
+      "text": "ही",
+      "start": 130.576,
+      "end": 130.616
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 2,
+      "text": "हम",
+      "start": 130.796,
+      "end": 130.976
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 3,
+      "text": "जीवन",
+      "start": 131.516,
+      "end": 131.896
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 4,
+      "text": "भर",
+      "start": 132.036,
+      "end": 132.256
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "beat": "b38",
+      "i": 5,
+      "text": "शरीर,",
+      "start": 132.476,
+      "end": 132.936
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-2",
+      "beat": "b39",
+      "i": 0,
+      "text": "नाम,",
+      "start": 133.536,
+      "end": 134.016
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-2",
+      "beat": "b39",
+      "i": 1,
+      "text": "काम,",
+      "start": 134.476,
+      "end": 134.896
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 0,
+      "text": "रिश्ते",
+      "start": 135.316,
+      "end": 135.696
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 1,
+      "text": "और",
+      "start": 136.256,
+      "end": 136.376
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 2,
+      "text": "विचारों",
+      "start": 136.476,
+      "end": 136.916
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 3,
+      "text": "में",
+      "start": 136.976,
+      "end": 137.056
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 4,
+      "text": "रहते",
+      "start": 137.136,
+      "end": 137.396
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "beat": "b40",
+      "i": 5,
+      "text": "हैं,",
+      "start": 137.436,
+      "end": 137.536
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 0,
+      "text": "पर",
+      "start": 138.156,
+      "end": 138.276
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 1,
+      "text": "अपने",
+      "start": 138.336,
+      "end": 138.616
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 2,
+      "text": "भीतर",
+      "start": 138.756,
+      "end": 139.176
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 3,
+      "text": "उस",
+      "start": 139.316,
+      "end": 139.476
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 4,
+      "text": "शांत",
+      "start": 139.676,
+      "end": 140.096
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 5,
+      "text": "जानने",
+      "start": 140.276,
+      "end": 140.656
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 6,
+      "text": "वाली",
+      "start": 140.796,
+      "end": 141.016
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 7,
+      "text": "जगह",
+      "start": 141.176,
+      "end": 141.416
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 8,
+      "text": "को",
+      "start": 141.596,
+      "end": 141.656
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 9,
+      "text": "ठीक",
+      "start": 142.376,
+      "end": 142.656
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 10,
+      "text": "से",
+      "start": 142.776,
+      "end": 142.836
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 11,
+      "text": "नहीं",
+      "start": 142.916,
+      "end": 143.136
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 12,
+      "text": "देखते",
+      "start": 143.236,
+      "end": 143.596
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 13,
+      "text": "जहाँ",
+      "start": 144.336,
+      "end": 144.536
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 14,
+      "text": "से",
+      "start": 144.676,
+      "end": 144.736
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 15,
+      "text": "सब",
+      "start": 144.936,
+      "end": 145.156
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 16,
+      "text": "अनुभव",
+      "start": 145.276,
+      "end": 145.656
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 17,
+      "text": "जाने",
+      "start": 145.816,
+      "end": 146.056
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 18,
+      "text": "जाते",
+      "start": 146.176,
+      "end": 146.476
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "beat": "b41",
+      "i": 19,
+      "text": "हैं।",
+      "start": 146.556,
+      "end": 146.636
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 0,
+      "text": "इस",
+      "start": 147.905,
+      "end": 148.125
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 1,
+      "text": "अध्याय",
+      "start": 148.305,
+      "end": 148.765
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 2,
+      "text": "की",
+      "start": 148.965,
+      "end": 149.025
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 3,
+      "text": "शुरुआत",
+      "start": 149.225,
+      "end": 149.845
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 4,
+      "text": "उसी",
+      "start": 150.325,
+      "end": 150.565
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 5,
+      "text": "सरल",
+      "start": 150.825,
+      "end": 151.105
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 6,
+      "text": "प्रश्न",
+      "start": 151.245,
+      "end": 151.545
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 7,
+      "text": "से",
+      "start": 151.705,
+      "end": 151.745
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 8,
+      "text": "होती",
+      "start": 151.865,
+      "end": 152.105
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "beat": "b43",
+      "i": 9,
+      "text": "है,",
+      "start": 152.265,
+      "end": 152.325
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "beat": "b45",
+      "i": 0,
+      "text": "जो",
+      "start": 152.985,
+      "end": 153.045
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "beat": "b45",
+      "i": 1,
+      "text": "देखने",
+      "start": 153.225,
+      "end": 153.605
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "beat": "b45",
+      "i": 2,
+      "text": "में",
+      "start": 153.725,
+      "end": 153.825
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "beat": "b45",
+      "i": 3,
+      "text": "छोटा",
+      "start": 153.965,
+      "end": 154.285
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "beat": "b45",
+      "i": 4,
+      "text": "है,",
+      "start": 154.445,
+      "end": 154.505
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 0,
+      "text": "पर",
+      "start": 155.205,
+      "end": 155.365
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 1,
+      "text": "जीवन",
+      "start": 155.525,
+      "end": 155.845
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 2,
+      "text": "की",
+      "start": 155.985,
+      "end": 156.025
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 3,
+      "text": "जड़",
+      "start": 156.225,
+      "end": 156.385
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 4,
+      "text": "तक",
+      "start": 156.505,
+      "end": 156.665
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 5,
+      "text": "जाता",
+      "start": 156.785,
+      "end": 157.105
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 6,
+      "text": "है:",
+      "start": 157.245,
+      "end": 157.325
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 7,
+      "text": "मैं",
+      "start": 158.085,
+      "end": 158.165
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 8,
+      "text": "कौन",
+      "start": 158.365,
+      "end": 158.605
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-3",
+      "beat": "b46",
+      "i": 9,
+      "text": "हूँ?",
+      "start": 158.725,
+      "end": 158.825
+    },
+    {
+      "sentence": "s25",
+      "beat": "b48",
+      "i": 0,
+      "text": "“मैं",
+      "start": 164.663,
+      "end": 164.763
+    },
+    {
+      "sentence": "s25",
+      "beat": "b48",
+      "i": 1,
+      "text": "कौन",
+      "start": 165.003,
+      "end": 165.283
+    },
+    {
+      "sentence": "s25",
+      "beat": "b48",
+      "i": 2,
+      "text": "हूँ?”",
+      "start": 165.403,
+      "end": 165.483
+    },
+    {
+      "sentence": "s26",
+      "beat": "b49",
+      "i": 0,
+      "text": "यह",
+      "start": 167.979,
+      "end": 168.139
+    },
+    {
+      "sentence": "s26",
+      "beat": "b49",
+      "i": 1,
+      "text": "प्रश्न",
+      "start": 168.239,
+      "end": 168.579
+    },
+    {
+      "sentence": "s26",
+      "beat": "b49",
+      "i": 2,
+      "text": "नया",
+      "start": 168.719,
+      "end": 168.919
+    },
+    {
+      "sentence": "s26",
+      "beat": "b49",
+      "i": 3,
+      "text": "नहीं",
+      "start": 169.039,
+      "end": 169.239
+    },
+    {
+      "sentence": "s26",
+      "beat": "b49",
+      "i": 4,
+      "text": "है।",
+      "start": 169.359,
+      "end": 169.399
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 0,
+      "text": "हजारों",
+      "start": 170.719,
+      "end": 171.179
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 1,
+      "text": "वर्षों",
+      "start": 171.299,
+      "end": 171.699
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 2,
+      "text": "से",
+      "start": 171.859,
+      "end": 171.919
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 3,
+      "text": "मनुष्य",
+      "start": 172.079,
+      "end": 172.599
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 4,
+      "text": "इसे",
+      "start": 173.059,
+      "end": 173.319
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 5,
+      "text": "पूछता",
+      "start": 173.479,
+      "end": 173.859
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 6,
+      "text": "आया",
+      "start": 173.919,
+      "end": 174.119
+    },
+    {
+      "sentence": "s27",
+      "beat": "b50",
+      "i": 7,
+      "text": "है।",
+      "start": 174.199,
+      "end": 174.259
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 0,
+      "text": "लेकिन",
+      "start": 175.573,
+      "end": 175.873
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 1,
+      "text": "आश्चर्य",
+      "start": 176.033,
+      "end": 176.533
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 2,
+      "text": "की",
+      "start": 176.673,
+      "end": 176.713
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 3,
+      "text": "बात",
+      "start": 176.873,
+      "end": 177.153
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 4,
+      "text": "यह",
+      "start": 177.293,
+      "end": 177.373
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 5,
+      "text": "है",
+      "start": 177.533,
+      "end": 177.593
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 6,
+      "text": "कि",
+      "start": 178.393,
+      "end": 178.433
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 7,
+      "text": "हर",
+      "start": 178.653,
+      "end": 178.833
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 8,
+      "text": "साधक",
+      "start": 179.013,
+      "end": 179.373
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 9,
+      "text": "के",
+      "start": 179.513,
+      "end": 179.553
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 10,
+      "text": "जीवन",
+      "start": 179.753,
+      "end": 180.053
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 11,
+      "text": "में",
+      "start": 180.173,
+      "end": 180.273
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 12,
+      "text": "यह",
+      "start": 181.033,
+      "end": 181.173
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 13,
+      "text": "प्रश्न",
+      "start": 181.333,
+      "end": 181.673
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 14,
+      "text": "पहली",
+      "start": 181.853,
+      "end": 182.133
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 15,
+      "text": "बार",
+      "start": 182.293,
+      "end": 182.493
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 16,
+      "text": "जैसा",
+      "start": 182.633,
+      "end": 182.913
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 17,
+      "text": "ही",
+      "start": 183.033,
+      "end": 183.073
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 18,
+      "text": "लगता",
+      "start": 183.173,
+      "end": 183.493
+    },
+    {
+      "sentence": "s28",
+      "beat": "b51",
+      "i": 19,
+      "text": "है।",
+      "start": 183.633,
+      "end": 183.693
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 0,
+      "text": "क्योंकि",
+      "start": 184.961,
+      "end": 185.281
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 1,
+      "text": "यह",
+      "start": 185.921,
+      "end": 186.041
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 2,
+      "text": "प्रश्न",
+      "start": 186.181,
+      "end": 186.541
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 3,
+      "text": "किताब",
+      "start": 186.701,
+      "end": 187.061
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 4,
+      "text": "का",
+      "start": 187.141,
+      "end": 187.181
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 5,
+      "text": "प्रश्न",
+      "start": 187.301,
+      "end": 187.621
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 6,
+      "text": "नहीं",
+      "start": 187.721,
+      "end": 187.941
+    },
+    {
+      "sentence": "s29",
+      "beat": "b53",
+      "i": 7,
+      "text": "है।",
+      "start": 188.021,
+      "end": 188.061
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 0,
+      "text": "यह",
+      "start": 189.367,
+      "end": 189.507
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 1,
+      "text": "तुम्हारे",
+      "start": 189.667,
+      "end": 190.027
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 2,
+      "text": "अपने",
+      "start": 190.127,
+      "end": 190.407
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 3,
+      "text": "जीवन",
+      "start": 190.547,
+      "end": 190.827
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 4,
+      "text": "का",
+      "start": 190.927,
+      "end": 190.987
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 5,
+      "text": "प्रश्न",
+      "start": 191.107,
+      "end": 191.467
+    },
+    {
+      "sentence": "s30",
+      "beat": "b54",
+      "i": 6,
+      "text": "है।",
+      "start": 191.607,
+      "end": 191.667
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 0,
+      "text": "जब",
+      "start": 193.056,
+      "end": 193.216
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 1,
+      "text": "तक",
+      "start": 193.356,
+      "end": 193.556
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 2,
+      "text": "यह",
+      "start": 193.656,
+      "end": 193.796
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 3,
+      "text": "प्रश्न",
+      "start": 193.956,
+      "end": 194.276
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 4,
+      "text": "केवल",
+      "start": 194.876,
+      "end": 195.196
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 5,
+      "text": "दिमाग",
+      "start": 195.336,
+      "end": 195.676
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 6,
+      "text": "में",
+      "start": 195.756,
+      "end": 195.816
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 7,
+      "text": "रहता",
+      "start": 195.876,
+      "end": 196.176
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 8,
+      "text": "है,",
+      "start": 196.276,
+      "end": 196.336
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 9,
+      "text": "तब",
+      "start": 196.716,
+      "end": 196.876
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 10,
+      "text": "तक",
+      "start": 197.016,
+      "end": 197.196
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 11,
+      "text": "यह",
+      "start": 197.316,
+      "end": 197.396
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 12,
+      "text": "दर्शन",
+      "start": 197.576,
+      "end": 197.996
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 13,
+      "text": "जैसा",
+      "start": 198.096,
+      "end": 198.376
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 14,
+      "text": "लगता",
+      "start": 198.456,
+      "end": 198.756
+    },
+    {
+      "sentence": "s31",
+      "beat": "b55",
+      "i": 15,
+      "text": "है।",
+      "start": 198.816,
+      "end": 198.896
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "beat": "b57",
+      "i": 0,
+      "text": "लेकिन",
+      "start": 200.157,
+      "end": 200.417
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "beat": "b57",
+      "i": 1,
+      "text": "जब",
+      "start": 200.557,
+      "end": 200.717
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "beat": "b57",
+      "i": 2,
+      "text": "जीवन",
+      "start": 200.917,
+      "end": 201.257
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "beat": "b57",
+      "i": 3,
+      "text": "में",
+      "start": 201.357,
+      "end": 201.437
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "beat": "b57",
+      "i": 4,
+      "text": "दुख,",
+      "start": 201.657,
+      "end": 201.917
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "beat": "b58",
+      "i": 0,
+      "text": "असंतोष,",
+      "start": 202.477,
+      "end": 203.297
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "beat": "b58",
+      "i": 1,
+      "text": "डर,",
+      "start": 204.017,
+      "end": 204.317
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 0,
+      "text": "अकेलापन",
+      "start": 204.877,
+      "end": 205.697
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 1,
+      "text": "या",
+      "start": 206.337,
+      "end": 206.417
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 2,
+      "text": "गहरी",
+      "start": 206.597,
+      "end": 206.897
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 3,
+      "text": "खोज",
+      "start": 207.177,
+      "end": 207.457
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 4,
+      "text": "उठती",
+      "start": 207.597,
+      "end": 207.897
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-3",
+      "beat": "b59",
+      "i": 5,
+      "text": "है,",
+      "start": 207.997,
+      "end": 208.077
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 0,
+      "text": "तब",
+      "start": 208.437,
+      "end": 208.657
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 1,
+      "text": "यह",
+      "start": 208.757,
+      "end": 208.897
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 2,
+      "text": "प्रश्न",
+      "start": 209.037,
+      "end": 209.377
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 3,
+      "text": "बहुत",
+      "start": 210.117,
+      "end": 210.457
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 4,
+      "text": "व्यावहारिक",
+      "start": 210.557,
+      "end": 211.137
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 5,
+      "text": "हो",
+      "start": 211.257,
+      "end": 211.317
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 6,
+      "text": "जाता",
+      "start": 211.437,
+      "end": 211.717
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-4",
+      "beat": "b60",
+      "i": 7,
+      "text": "है।",
+      "start": 211.777,
+      "end": 211.837
+    }
+  ]
+}
