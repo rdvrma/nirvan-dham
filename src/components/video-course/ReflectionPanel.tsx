@@ -27,10 +27,9 @@ export function ReflectionPanel({ prompts, lang, copy, skipDelaySec, initialAnsw
 
   useEffect(() => {
     first.current?.focus({ preventScroll: false });
-    setLeft(skipDelaySec);
     const id = setInterval(() => setLeft((s) => (s > 0 ? s - 1 : 0)), 1000);
     return () => clearInterval(id);
-  }, [skipDelaySec, prompts]);
+  }, []); // the panel is keyed by pause point: a new question is a new mount, so the countdown restarts by itself
 
   const wrote = answers.some((a) => a.trim().length > 0);
   const canContinue = (wrote || left === 0) && !busy;

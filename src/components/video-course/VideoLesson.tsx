@@ -57,7 +57,7 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
   const [manifest, setManifest] = useState<Manifest | null>(null);
   const [audioLang, setAudioLang] = useState<TrackLanguage>(initialLang);
   const [captionLang, setCaptionLang] = useState<TrackLanguage | 'off'>(initialLang);
-  const [cues, setCues] = useState<CaptionCue[] | null>(null);
+  const [cueState, setCueState] = useState<{ key: string | null; cues: CaptionCue[] | null }>({ key: null, cues: null });
   const [wordLevel, setWordLevel] = useState(true);
   const [jitterFallback, setJitterFallback] = useState(false);
   const [time, setTime] = useState(0);
@@ -82,12 +82,11 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
 
   const stops = useMemo(() => (manifest ? buildPauseStops(manifest) : []), [manifest]);
   const stopsRef = useRef<PauseStop[]>([]);
-  stopsRef.current = stops;
+  useEffect(() => { stopsRef.current = stops; }, [stops]);
 
   // ── manifest ─────────────────────────────────────────────────────────────────────────────────────
   useEffect(() => {
     let alive = true;
-    setPhase('loading');
     (async () => {
       try {
         const res = await fetch(lesson.manifest, { cache: 'no-cache' });
@@ -123,31 +122,35 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
   const captionOptions = useMemo(() => (manifest ? enabled.filter((l) => availableLanguages(manifest).includes(l) || captionTrackFor(manifest, l)) : [initialLang]), [manifest, enabled, initialLang]);
 
   // ── captions: word timing first, WebVTT as the fallback ──────────────────────────────────────────
+  // loaded cues are stored with the track they belong to: after a language switch no cues show (never the old language's) until the new file has arrived
+  const trackKey = manifest && captionLang !== 'off' && captionTrackFor(manifest, captionLang) ? `${manifest.id}:${captionLang}` : null;
+  const cues = cueState.key === trackKey ? cueState.cues : null;
   useEffect(() => {
-    if (!manifest || captionLang === 'off') { setCues(null); return; }
+    if (!manifest || captionLang === 'off' || !trackKey) return;
     const track = captionTrackFor(manifest, captionLang);
-    if (!track) { setCues(null); return; }
+    if (!track) return;
     let alive = true;
+    const done = (c: CaptionCue[] | null, word: boolean) => { if (alive) { setCueState({ key: trackKey, cues: c }); setWordLevel(word); } };
     (async () => {
       try {
         if (track.wordTiming) {
           const res = await fetch(resolveMedia(lesson.manifest, track.wordTiming));
           const parsed = parseWordTiming(await res.json());
-          if (parsed.ok && parsed.value.words.length) { if (alive) { setCues(buildCues(parsed.value.words)); setWordLevel(true); } return; }
+          if (parsed.ok && parsed.value.words.length) { done(buildCues(parsed.value.words), true); return; }
         }
       } catch { /* fall through to the VTT */ }
       try {
         if (track.vtt) {
           const res = await fetch(resolveMedia(lesson.manifest, track.vtt));
           const parsed = parseVtt(await res.text());
-          if (alive) { setCues(parsed); setWordLevel(parsed.some((c) => c.words.length > 1 && c.words[1].start > c.words[0].start)); }
+          done(parsed, parsed.some((c) => c.words.length > 1 && c.words[1].start > c.words[0].start));
           return;
         }
       } catch { /* captions are optional: the lesson still plays */ }
-      if (alive) setCues(null);
+      done(null, true);
     })();
     return () => { alive = false; };
-  }, [manifest, captionLang, lesson.manifest]);
+  }, [manifest, captionLang, trackKey, lesson.manifest]);
 
   // ── the video source ─────────────────────────────────────────────────────────────────────────────
   const saveProgress = useCallback(async (pos?: number) => {
@@ -192,11 +195,15 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
       timeRef.current = t;
       setTime(t);
       jitter.current.push(t, performance.now(), st === 'playing', src.getRate());
-      if (!jitterFallback && jitter.current.exceeds(cfg.captionJitterLimitMs)) {
+      // hysteresis: sentence level when the clock is above the limit over a full window, back to words once it is clearly steady again
+      if (!jitterFallback && jitter.current.exceeds(cfg.captionJitterLimitMs, 30)) {
         setJitterFallback(true);
         console.info(`[video-course] caption clock jitter p95 ${Math.round(jitter.current.percentile(95))} ms is above ${cfg.captionJitterLimitMs} ms: captions fall back to sentence level`);
+      } else if (jitterFallback && jitter.current.samples >= 30 && jitter.current.percentile(95) < cfg.captionJitterLimitMs * 0.6) {
+        setJitterFallback(false);
+        console.info('[video-course] caption clock is steady again: word highlight restored');
       }
-      window.__nirvanVideoDiag = { jitterP95Ms: Math.round(jitter.current.percentile(95)), jitterSamples: jitter.current.samples, captionMode: jitterFallback || !wordLevel ? 'sentence' : 'word', sourceKind: src.kind, time: t };
+      window.__nirvanVideoDiag = { jitterP95Ms: Math.round(jitter.current.percentile(95)), jitterSamples: jitter.current.samples, captionMode: jitterFallback || !wordLevel ? 'sentence' : 'word', wordLevel, jitterFallback, sourceKind: src.kind, time: t };
       if (activeStopRef.current) { prevTimeRef.current = t; return; }
       const act = evaluateTick({ prev: prevTimeRef.current, cur: t, stops: stopsRef.current, completed: completedRef.current, mode: cfg.unlockMode, seekJumpSec: cfg.seekJumpSec });
       prevTimeRef.current = t;
@@ -275,6 +282,7 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
 
   return (
     <main style={{ minHeight: '100vh', background: '#050e07', color: IVORY, fontFamily: bodyFont }} data-testid="video-lesson" data-source={sourceKind} data-phase={phase}>
+      <style>{PLAYER_CSS}</style>
       <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', padding: '0 clamp(1rem, 4vw, 2.5rem)', height: '54px', borderBottom: '1px solid rgba(212,168,67,0.1)' }}>
         <Link href={backHref} style={{ color: MUTED, textDecoration: 'none', fontFamily: 'var(--font-inter), system-ui, sans-serif', fontSize: '0.8rem', padding: '0.6rem 0.2rem' }}>← {copy.back}</Link>
         {readHref && <Link href={readHref} style={{ color: 'rgba(212,168,67,0.75)', textDecoration: 'none', fontFamily: 'var(--font-inter), system-ui, sans-serif', fontSize: '0.78rem', padding: '0.6rem 0.2rem' }}>{copy.readText}</Link>}
@@ -287,7 +295,7 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
           <div role="alert" style={{ padding: '1.5rem', border: '1px solid rgba(212,168,67,0.25)', borderRadius: '12px', background: 'rgba(12,24,14,0.9)' }}>
             <p style={{ margin: '0 0 0.6rem', fontSize: '1.05rem' }}>{copy.loadError}</p>
             {errorMsg && <p style={{ margin: '0 0 1rem', color: MUTED, fontSize: '0.8rem', fontFamily: 'var(--font-inter), system-ui, sans-serif' }}>{errorMsg}</p>}
-            <button type="button" onClick={() => setAttempt((a) => a + 1)} style={{ border: 0, borderRadius: '8px', padding: '0.7rem 1.2rem', background: GOLD, color: '#061008', fontWeight: 700, cursor: 'pointer', minHeight: '44px' }}>{copy.retry}</button>
+            <button type="button" onClick={() => { setPhase('loading'); setAttempt((a) => a + 1); }} style={{ border: 0, borderRadius: '8px', padding: '0.7rem 1.2rem', background: GOLD, color: '#061008', fontWeight: 700, cursor: 'pointer', minHeight: '44px' }}>{copy.retry}</button>
           </div>
         ) : (
           <>
@@ -351,5 +359,11 @@ export default function VideoLesson({ lesson, courseLang, adapter, guide = noopG
     </main>
   );
 }
+
+// keyboard focus is always visible; learners who ask for reduced motion get none (the player only fades colours, but it respects the setting)
+const PLAYER_CSS = `
+[data-testid="video-lesson"] a:focus-visible, [data-testid="video-lesson"] button:focus-visible, [data-testid="video-lesson"] select:focus-visible, [data-testid="video-lesson"] textarea:focus-visible, [data-testid="video-lesson"] video:focus-visible { outline: 2px solid #ffe89a; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { [data-testid="video-lesson"] *, [data-testid="video-lesson"] *::before, [data-testid="video-lesson"] *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
+`;
 
 const selectStyle = { background: 'rgba(4,12,6,0.9)', color: IVORY, border: '1px solid rgba(212,168,67,0.3)', borderRadius: '8px', padding: '0.5rem 0.6rem', minHeight: '44px', fontFamily: 'inherit', fontSize: '0.85rem' } as const;

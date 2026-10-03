@@ -173,7 +173,7 @@ describe('sync jitter meter', () => {
   it('reads near zero for a steady clock polled every 200 ms', () => {
     const m = new JitterMeter();
     for (let i = 0; i < 40; i++) m.push(i * 0.2, i * 200, true);
-    expect(m.samples).toBe(39);
+    expect(m.samples).toBe(36); // 40 readings minus the 4 warm-up readings
     expect(m.percentile(95)).toBeLessThan(5);
     expect(m.exceeds(250)).toBe(false);
   });
@@ -192,6 +192,13 @@ describe('sync jitter meter', () => {
     m.push(5, 0, true);
     m.push(60, 200, true); // jumped 55 s in 200 ms: a seek
     expect(m.samples).toBe(0);
+  });
+
+  it('ignores the warm-up readings after playback starts, so a start-up stall does not count', () => {
+    const m = new JitterMeter(60, 4);
+    const t = [0, 0.9, 0.9, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7, 2.9, 3.1, 3.3, 3.5, 3.7, 3.9, 4.1, 4.3, 4.5, 4.7, 4.9];
+    t.forEach((x, i) => m.push(x, i * 200, true));
+    expect(m.percentile(95)).toBeLessThan(5);
   });
 
   it('needs enough samples before it decides', () => {

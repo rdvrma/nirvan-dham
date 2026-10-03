@@ -102,6 +102,9 @@ export class LocalSource implements VideoSource {
       this.audio = document.createElement('audio');
       this.audio.preload = 'auto';
       this.audio.setAttribute('aria-hidden', 'true');
+      this.audio.setAttribute('data-testid', 'lesson-audio');
+      this.audio.hidden = true;
+      v.parentElement?.appendChild(this.audio);
     }
     if (this.audio.getAttribute('data-src') !== file) {
       this.audio.src = file;

@@ -208,7 +208,9 @@ export function captionWindow(words: TimedWord[], wordIndex: number, maxChars: n
 export class JitterMeter {
   private last: { t: number; now: number } | null = null;
   private devs: number[] = [];
-  constructor(private readonly windowSize = 60) {}
+  private skip = 0;
+  /** `warmup`: readings right after playback (re)starts are ignored: a player's clock settles for a moment while it starts decoding */
+  constructor(private readonly windowSize = 60, private readonly warmup = 4) {}
 
   reset() {
     this.last = null;
@@ -217,6 +219,12 @@ export class JitterMeter {
   push(playerTimeSec: number, nowMs: number, playing: boolean, rate = 1) {
     if (!playing) {
       this.last = null;
+      return;
+    }
+    if (!this.last) this.skip = this.warmup;
+    if (this.skip > 0) {
+      this.skip--;
+      this.last = { t: playerTimeSec, now: nowMs };
       return;
     }
     if (this.last) {
