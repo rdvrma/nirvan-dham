@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const SARVAM_API_KEY = process.env.SARVAM_API_KEY || 'sk_5daqnj3r_A5kDtSrHDGLh8E2TyZxBOXE7';
+const SARVAM_API_KEY = process.env.SARVAM_API_KEY;
 const BOOKS_DIR = path.join(__dirname, '..', 'src', 'content', 'books');
 const OUTPUT_DIR = path.join(__dirname, '..', 'public', 'library', 'audiobooks');
 
