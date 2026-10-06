@@ -6,9 +6,10 @@ import SacredBackground from '@/components/SacredBackground';
 
 interface ContactSectionProps {
   lang: Language;
+  homeLinks?: boolean;
 }
 
-export default function ContactSection({ lang }: ContactSectionProps) {
+export default function ContactSection({ lang, homeLinks = false }: ContactSectionProps) {
   const t = content[lang].contact;
   const ft = content[lang].footer;
   const nav = content[lang].nav;
@@ -239,11 +240,11 @@ export default function ContactSection({ lang }: ContactSectionProps) {
             </p>
             <nav style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {[
-                { href: '#darshan', label: nav.darshan },
-                { href: '#sadhana', label: nav.sadhana },
-                { href: '#ai-guide', label: nav.aiGuide },
-                { href: '#guidance', label: nav.samvad },
-                { href: '#app', label: content[lang].app.heading },
+                { href: homeLinks ? '/#darshan' : '#darshan', label: nav.darshan },
+                { href: homeLinks ? '/#sadhana' : '#sadhana', label: nav.sadhana },
+                { href: homeLinks ? '/ask-guide' : '#ai-guide', label: nav.aiGuide },
+                { href: homeLinks ? '/#guidance' : '#guidance', label: nav.samvad },
+                { href: homeLinks ? '/#app' : '#app', label: content[lang].app.heading },
               ].map((link) => (
                 <a
                   key={link.href}

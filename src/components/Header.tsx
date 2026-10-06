@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import type { User } from '@supabase/supabase-js';
 import type { Language } from '@/lib/i18n';
-import { content, saveLanguage } from '@/lib/i18n';
+import { saveLanguage } from '@/lib/i18n';
 import { createClient } from '@/utils/supabase/client';
 
 interface HeaderProps {
@@ -15,7 +15,6 @@ interface HeaderProps {
 }
 
 export default function Header({ lang, onLangChange }: HeaderProps) {
-  const t = content[lang].nav;
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -59,7 +58,6 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
       };
     } catch (err) {
       console.warn('Supabase client failed to initialize. Check NEXT_PUBLIC_SUPABASE_URL.', err);
-      setUser(null);
     }
   }, []);
 
@@ -74,6 +72,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
     // { href: '/nirvan-shakti-snan-sadhna', label: lang === 'hi' ? 'शक्ति स्नान' : 'Shakti Snan' }, // Hidden temporarily
     { href: '/library', label: lang === 'hi' ? 'पुस्तकालय' : 'Library' },
     { href: '/guided-meditation', label: lang === 'hi' ? 'ध्यान मार्गदर्शन' : 'Guided Meditation' },
+    { href: '/ask-guide', label: lang === 'hi' ? 'AI गाइड' : 'AI Guide' },
     { href: '/bodhgaya-samvad', label: lang === 'hi' ? 'बोधगया संवाद' : 'Bodhgaya Samvad' },
     { href: '/online-samvad', label: lang === 'hi' ? 'ऑनलाइन संवाद' : 'Online Samvad' },
     { href: '/blog', label: lang === 'hi' ? 'ब्लॉग' : 'Blog' },
@@ -87,6 +86,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
     color: 'var(--c-ivdim)',
     textDecoration: 'none',
     letterSpacing: lang === 'en' ? '0.04em' : '0',
+    whiteSpace: 'nowrap' as const,
   };
 
   return (
@@ -165,7 +165,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-7">
+        <nav className="hidden xl:flex items-center gap-4">
           {navLinks.map((link) => {
             const className = `transition-premium ${lang === 'hi' ? 'font-hindi' : ''}`;
             const hoverProps = {
@@ -250,7 +250,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
           </div>
 
           <button
-            className="md:hidden flex flex-col justify-center items-center gap-1.5 p-2"
+            className="xl:hidden flex flex-col justify-center items-center gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
             style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}
@@ -278,7 +278,7 @@ export default function Header({ lang, onLangChange }: HeaderProps) {
       </div>
 
       <div
-        className="md:hidden overflow-hidden transition-all duration-400"
+        className="xl:hidden overflow-hidden transition-all duration-400"
         style={{
           maxHeight: menuOpen ? '480px' : '0',
           background: 'rgba(8,15,10,0.97)',

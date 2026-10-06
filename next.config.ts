@@ -59,8 +59,6 @@ const nextConfig: NextConfig = {
       { source: '/guidance', destination: '/spiritual-guidance', permanent: true },
       // Old /iccha-purti spelling → correct spelling
       { source: '/iccha-purti', destination: '/ichchha-poorti', permanent: true },
-      // Old /ai-guide → guided-meditation (closest equivalent)
-      { source: '/ai-guide', destination: '/guided-meditation', permanent: true },
       // Old /app → course page
       { source: '/app', destination: '/course', permanent: true },
       // Old /lw → home

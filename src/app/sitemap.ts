@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/online-samvad',
     '/bodhgaya-samvad',
     '/guided-meditation',
+    '/ask-guide',
     '/library',
     '/library/audiobooks',
     '/faq',

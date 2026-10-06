@@ -26,7 +26,9 @@ export default function HomePage() {
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    if (!window.location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }
 
     window.setTimeout(() => {
       const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);

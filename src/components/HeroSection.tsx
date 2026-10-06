@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import type { Language } from '@/lib/i18n';
 import { content } from '@/lib/i18n';
 import SacredBackground from '@/components/SacredBackground';
+import Link from 'next/link';
 
 interface HeroSectionProps {
   lang: Language;
@@ -155,8 +156,21 @@ export default function HeroSection({ lang }: HeroSectionProps) {
             <span style={{ position: 'relative', zIndex: 1, fontSize: '1.1em' }}>→</span>
           </a>
 
+          <Link href="/ask-guide"
+            className={`transition-premium ${isHindi ? 'font-hindi' : ''}`}
+            style={{
+              padding: '0.9rem 2rem', borderRadius: '4px',
+              border: '1px solid rgba(212,168,67,0.45)',
+              background: 'rgba(212,168,67,0.12)', color: 'var(--c-gold)',
+              fontWeight: 600, fontSize: isHindi ? '0.95rem' : '0.875rem',
+              textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+            }}
+          >
+            {t.cta2} →
+          </Link>
+
           {/* Secondary */}
-          <a href="/library"
+          <Link href="/library"
             className={`transition-premium ${isHindi ? 'font-hindi' : ''}`}
             style={{
               position: 'relative', overflow: 'hidden',
@@ -173,7 +187,7 @@ export default function HeroSection({ lang }: HeroSectionProps) {
           >
             <span style={{ color: 'var(--c-gold)', fontSize: '1.1em' }}>✦</span>
             <span>{isHindi ? 'पुस्तकालय' : 'Library'}</span>
-          </a>
+          </Link>
 
           {/* Tertiary */}
           <a href="#guidance"

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from 'react';
 import type { Language } from '@/lib/i18n';
 import { content } from '@/lib/i18n';
 import SacredBackground from '@/components/SacredBackground';
+import Link from 'next/link';
 
 interface Message {
   role: 'bot' | 'user';
@@ -12,9 +13,10 @@ interface Message {
 
 interface AIGuidePanelProps {
   lang: Language;
+  standalone?: boolean;
 }
 
-export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
+export default function AIGuidePanel({ lang, standalone = false }: AIGuidePanelProps) {
   const t = content[lang].aiGuide;
   const isHindi = lang === 'hi';
   const [messages, setMessages] = useState<Message[]>(() => [
@@ -28,12 +30,13 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
   const lastWelcomeRef = useRef(t.welcomeMsg);
 
   useEffect(() => {
+    const previousWelcome = lastWelcomeRef.current;
+    lastWelcomeRef.current = t.welcomeMsg;
     setMessages((prev) => {
-      if (prev.length !== 1 || prev[0]?.role !== 'bot' || prev[0]?.text !== lastWelcomeRef.current) {
+      if (prev.length !== 1 || prev[0]?.role !== 'bot' || prev[0]?.text !== previousWelcome) {
         return prev;
       }
 
-      lastWelcomeRef.current = t.welcomeMsg;
       return [{ role: 'bot', text: t.welcomeMsg }];
     });
   }, [t.welcomeMsg]);
@@ -122,7 +125,7 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
     <section
       id="ai-guide"
       className="section-pad relative overflow-hidden"
-      style={{ background: 'var(--c-mist, #122418)' }}
+      style={{ background: 'var(--c-mist, #122418)', minHeight: standalone ? 'calc(100vh - 72px)' : undefined }}
     >
       {/* Om field sacred background */}
       <SacredBackground variant="om-field" intensity="soft" />
@@ -199,6 +202,23 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
           </p>
         </div>
 
+        {!standalone && (
+          <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
+            <Link
+              href="/ask-guide"
+              className={isHindi ? 'font-hindi' : ''}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+                padding: '0.75rem 1.25rem', borderRadius: '6px',
+                background: 'var(--c-gold)', color: 'var(--c-bg)',
+                fontWeight: 600, textDecoration: 'none',
+              }}
+            >
+              {isHindi ? 'पूरा AI Guide खोलें' : 'Open AI Guide'} →
+            </Link>
+          </div>
+        )}
+
         {/* Chat container */}
         <div
           className="relative"
@@ -254,7 +274,7 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
           {/* Messages area */}
           <div
             style={{
-              height: '340px',
+              height: standalone ? 'clamp(210px, 28vh, 280px)' : '340px',
               overflowY: 'auto',
               padding: '1.5rem',
               display: 'flex',
@@ -368,6 +388,7 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
           >
             <input
               value={input}
+              aria-label={isHindi ? 'AI Guide से प्रश्न पूछें' : 'Ask the AI Guide a question'}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && !e.shiftKey && sendMessage(input)}
               placeholder={cooldown > 0
