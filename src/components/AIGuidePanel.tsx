@@ -71,7 +71,7 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
       const res = await fetch('/api/ai-guide', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: question, history: messages, lang }),
+        body: JSON.stringify({ message: question, history: messages.slice(1), lang }),
       });
 
       if (res.status === 429) {
@@ -246,7 +246,7 @@ export default function AIGuidePanel({ lang }: AIGuidePanelProps) {
                 {isHindi ? 'Aadisatv AI गाइड' : 'Aadisatv AI Guide'}
               </p>
               <p style={{ fontSize: '0.7rem', color: 'var(--c-sage)', letterSpacing: '0.05em' }}>
-                ● {isHindi ? 'Gemini द्वारा संचालित' : 'Powered by Gemini'}
+                ● {isHindi ? 'Sarvam AI द्वारा संचालित' : 'Powered by Sarvam AI'}
               </p>
             </div>
           </div>
