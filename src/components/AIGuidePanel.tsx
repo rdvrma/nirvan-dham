@@ -125,7 +125,12 @@ export default function AIGuidePanel({ lang, standalone = false }: AIGuidePanelP
     <section
       id="ai-guide"
       className="section-pad relative overflow-hidden"
-      style={{ background: 'var(--c-mist, #122418)', minHeight: standalone ? 'calc(100vh - 72px)' : undefined }}
+      style={{
+        background: 'var(--c-mist, #122418)',
+        minHeight: standalone ? 'calc(100vh - 72px)' : undefined,
+        paddingTop: standalone ? 'clamp(1.5rem, 4vh, 2.5rem)' : undefined,
+        paddingBottom: standalone ? '2rem' : undefined,
+      }}
     >
       {/* Om field sacred background */}
       <SacredBackground variant="om-field" intensity="soft" />
@@ -146,7 +151,7 @@ export default function AIGuidePanel({ lang, standalone = false }: AIGuidePanelP
         paddingRight: 'clamp(1.25rem, 4vw, 3rem)',
       }}>
         {/* Header */}
-        <div style={{ textAlign: 'center', marginBottom: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ textAlign: 'center', marginBottom: standalone ? '1.25rem' : '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <p className="pill mx-auto mb-5" style={{ width: 'fit-content' }}>
             {isHindi ? 'पवित्र संवाद' : 'Sacred Dialogue'}
           </p>
@@ -186,6 +191,7 @@ export default function AIGuidePanel({ lang, standalone = false }: AIGuidePanelP
             display: 'flex',
             alignItems: 'flex-start',
             gap: '0.75rem',
+            marginBottom: standalone ? '1rem' : undefined,
           }}
         >
           <span style={{ color: 'var(--c-gold)', fontSize: '0.9rem', marginTop: '1px', flexShrink: 0 }}>ℹ</span>
@@ -274,7 +280,7 @@ export default function AIGuidePanel({ lang, standalone = false }: AIGuidePanelP
           {/* Messages area */}
           <div
             style={{
-              height: standalone ? 'clamp(210px, 28vh, 280px)' : '340px',
+              height: standalone ? 'clamp(160px, 22vh, 220px)' : '340px',
               overflowY: 'auto',
               padding: '1.5rem',
               display: 'flex',
