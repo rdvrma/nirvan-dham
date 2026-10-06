@@ -1,0 +1,70 @@
+{
+  "desktop-1280x800": {
+    "lessonReadyMs": 630,
+    "clickToPlayingMs": 2,
+    "jsBytesLoadedOnPreviewPage": 482630,
+    "jsFilesLoaded": 13,
+    "captionJitterP95Ms": 1,
+    "captionJitterSamples": 60,
+    "captionBottomGapShare": 0.082,
+    "a11y": {
+      "unnamedControls": 0,
+      "tabOrder": [
+        "A",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "rail-seg-0",
+        "caption-select",
+        "ask-guide"
+      ],
+      "contrast": {
+        "title": 16.8,
+        "askGuide": 8.8
+      },
+      "reducedMotionTransitions": 0
+    },
+    "slow4g": {
+      "lessonReadyMs": 5163,
+      "playToFirstFrameMs": 2615
+    }
+  },
+  "phone-390x844": {
+    "lessonReadyMs": 586,
+    "clickToPlayingMs": 1,
+    "jsBytesLoadedOnPreviewPage": 482630,
+    "jsFilesLoaded": 13,
+    "captionJitterP95Ms": 2,
+    "captionJitterSamples": 59,
+    "captionBottomGapShare": 0.084,
+    "a11y": {
+      "unnamedControls": 0,
+      "tabOrder": [
+        "A",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "Lesson video",
+        "rail-seg-0",
+        "caption-select",
+        "ask-guide"
+      ],
+      "contrast": {
+        "title": 16.8,
+        "askGuide": 8.8
+      },
+      "reducedMotionTransitions": 0
+    },
+    "slow4g": {
+      "lessonReadyMs": 5132,
+      "playToFirstFrameMs": 2607
+    }
+  }
+}

@@ -1,0 +1,2679 @@
+{
+  "language": "en",
+  "method": "estimated-proportional-to-characters (not forced-aligned)",
+  "words": [
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 0,
+      "text": "The",
+      "start": 2,
+      "end": 2.297
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 1,
+      "text": "spiritual",
+      "start": 2.297,
+      "end": 3.189
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 2,
+      "text": "journey",
+      "start": 3.189,
+      "end": 3.882
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 3,
+      "text": "does",
+      "start": 3.882,
+      "end": 4.278
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 4,
+      "text": "not",
+      "start": 4.278,
+      "end": 4.575
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 5,
+      "text": "always",
+      "start": 4.575,
+      "end": 5.17
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 6,
+      "text": "begin",
+      "start": 5.17,
+      "end": 5.665
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 7,
+      "text": "in",
+      "start": 5.665,
+      "end": 5.863
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 8,
+      "text": "a",
+      "start": 5.863,
+      "end": 6.061
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 9,
+      "text": "temple,",
+      "start": 6.061,
+      "end": 6.656
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 10,
+      "text": "an",
+      "start": 6.656,
+      "end": 6.854
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-1",
+      "i": 11,
+      "text": "ashram,",
+      "start": 6.854,
+      "end": 7.448
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-2",
+      "i": 0,
+      "text": "or",
+      "start": 7.448,
+      "end": 7.645
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-2",
+      "i": 1,
+      "text": "a",
+      "start": 7.645,
+      "end": 7.843
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-2",
+      "i": 2,
+      "text": "sacred",
+      "start": 7.843,
+      "end": 8.435
+    },
+    {
+      "sentence": "s01",
+      "cue": "s01-2",
+      "i": 3,
+      "text": "book.",
+      "start": 8.435,
+      "end": 8.83
+    },
+    {
+      "sentence": "s02",
+      "i": 0,
+      "text": "Many",
+      "start": 9.809,
+      "end": 10.156
+    },
+    {
+      "sentence": "s02",
+      "i": 1,
+      "text": "times",
+      "start": 10.156,
+      "end": 10.59
+    },
+    {
+      "sentence": "s02",
+      "i": 2,
+      "text": "it",
+      "start": 10.59,
+      "end": 10.764
+    },
+    {
+      "sentence": "s02",
+      "i": 3,
+      "text": "begins",
+      "start": 10.764,
+      "end": 11.284
+    },
+    {
+      "sentence": "s02",
+      "i": 4,
+      "text": "with",
+      "start": 11.284,
+      "end": 11.632
+    },
+    {
+      "sentence": "s02",
+      "i": 5,
+      "text": "a",
+      "start": 11.632,
+      "end": 11.805
+    },
+    {
+      "sentence": "s02",
+      "i": 6,
+      "text": "very",
+      "start": 11.805,
+      "end": 12.152
+    },
+    {
+      "sentence": "s02",
+      "i": 7,
+      "text": "ordinary",
+      "start": 12.152,
+      "end": 12.847
+    },
+    {
+      "sentence": "s02",
+      "i": 8,
+      "text": "restlessness.",
+      "start": 12.847,
+      "end": 13.888
+    },
+    {
+      "sentence": "s03",
+      "i": 0,
+      "text": "Outwardly,",
+      "start": 16.057,
+      "end": 17.212
+    },
+    {
+      "sentence": "s03",
+      "i": 1,
+      "text": "all",
+      "start": 17.212,
+      "end": 17.596
+    },
+    {
+      "sentence": "s03",
+      "i": 2,
+      "text": "looks",
+      "start": 17.596,
+      "end": 18.238
+    },
+    {
+      "sentence": "s03",
+      "i": 3,
+      "text": "fine.",
+      "start": 18.238,
+      "end": 18.751
+    },
+    {
+      "sentence": "s04",
+      "i": 0,
+      "text": "Work",
+      "start": 19.364,
+      "end": 19.762
+    },
+    {
+      "sentence": "s04",
+      "i": 1,
+      "text": "is",
+      "start": 19.762,
+      "end": 19.961
+    },
+    {
+      "sentence": "s04",
+      "i": 2,
+      "text": "going",
+      "start": 19.961,
+      "end": 20.459
+    },
+    {
+      "sentence": "s04",
+      "i": 3,
+      "text": "on.",
+      "start": 20.459,
+      "end": 20.658
+    },
+    {
+      "sentence": "s05",
+      "i": 0,
+      "text": "Family",
+      "start": 22.179,
+      "end": 22.721
+    },
+    {
+      "sentence": "s05",
+      "i": 1,
+      "text": "is",
+      "start": 22.721,
+      "end": 22.901
+    },
+    {
+      "sentence": "s05",
+      "i": 2,
+      "text": "there.",
+      "start": 22.901,
+      "end": 23.353
+    },
+    {
+      "sentence": "s06",
+      "i": 0,
+      "text": "People",
+      "start": 24.101,
+      "end": 24.681
+    },
+    {
+      "sentence": "s06",
+      "i": 1,
+      "text": "know",
+      "start": 24.681,
+      "end": 25.067
+    },
+    {
+      "sentence": "s06",
+      "i": 2,
+      "text": "you.",
+      "start": 25.067,
+      "end": 25.357
+    },
+    {
+      "sentence": "s07",
+      "i": 0,
+      "text": "Sometimes",
+      "start": 26.737,
+      "end": 27.548
+    },
+    {
+      "sentence": "s07",
+      "i": 1,
+      "text": "money",
+      "start": 27.548,
+      "end": 27.999
+    },
+    {
+      "sentence": "s07",
+      "i": 2,
+      "text": "comes,",
+      "start": 27.999,
+      "end": 28.45
+    },
+    {
+      "sentence": "s07",
+      "i": 3,
+      "text": "sometimes",
+      "start": 28.45,
+      "end": 29.261
+    },
+    {
+      "sentence": "s07",
+      "i": 4,
+      "text": "appreciation,",
+      "start": 29.261,
+      "end": 30.343
+    },
+    {
+      "sentence": "s07",
+      "i": 5,
+      "text": "sometimes",
+      "start": 30.343,
+      "end": 31.154
+    },
+    {
+      "sentence": "s07",
+      "i": 6,
+      "text": "even",
+      "start": 31.154,
+      "end": 31.514
+    },
+    {
+      "sentence": "s07",
+      "i": 7,
+      "text": "a",
+      "start": 31.514,
+      "end": 31.695
+    },
+    {
+      "sentence": "s07",
+      "i": 8,
+      "text": "dream",
+      "start": 31.695,
+      "end": 32.145
+    },
+    {
+      "sentence": "s07",
+      "i": 9,
+      "text": "is",
+      "start": 32.145,
+      "end": 32.326
+    },
+    {
+      "sentence": "s07",
+      "i": 10,
+      "text": "fulfilled.",
+      "start": 32.326,
+      "end": 33.137
+    },
+    {
+      "sentence": "s08",
+      "i": 0,
+      "text": "Yet",
+      "start": 34.489,
+      "end": 34.8
+    },
+    {
+      "sentence": "s08",
+      "i": 1,
+      "text": "somewhere",
+      "start": 34.8,
+      "end": 35.735
+    },
+    {
+      "sentence": "s08",
+      "i": 2,
+      "text": "inside,",
+      "start": 35.735,
+      "end": 36.357
+    },
+    {
+      "sentence": "s08",
+      "i": 3,
+      "text": "an",
+      "start": 36.357,
+      "end": 36.565
+    },
+    {
+      "sentence": "s08",
+      "i": 4,
+      "text": "emptiness",
+      "start": 36.565,
+      "end": 37.499
+    },
+    {
+      "sentence": "s08",
+      "i": 5,
+      "text": "remains.",
+      "start": 37.499,
+      "end": 38.226
+    },
+    {
+      "sentence": "s09",
+      "i": 0,
+      "text": "It",
+      "start": 39.23,
+      "end": 39.408
+    },
+    {
+      "sentence": "s09",
+      "i": 1,
+      "text": "feels",
+      "start": 39.408,
+      "end": 39.854
+    },
+    {
+      "sentence": "s09",
+      "i": 2,
+      "text": "as",
+      "start": 39.854,
+      "end": 40.032
+    },
+    {
+      "sentence": "s09",
+      "i": 3,
+      "text": "if",
+      "start": 40.032,
+      "end": 40.211
+    },
+    {
+      "sentence": "s09",
+      "i": 4,
+      "text": "something",
+      "start": 40.211,
+      "end": 41.013
+    },
+    {
+      "sentence": "s09",
+      "i": 5,
+      "text": "is",
+      "start": 41.013,
+      "end": 41.191
+    },
+    {
+      "sentence": "s09",
+      "i": 6,
+      "text": "still",
+      "start": 41.191,
+      "end": 41.637
+    },
+    {
+      "sentence": "s09",
+      "i": 7,
+      "text": "missing.",
+      "start": 41.637,
+      "end": 42.261
+    },
+    {
+      "sentence": "s10",
+      "i": 0,
+      "text": "Life",
+      "start": 44.594,
+      "end": 45.003
+    },
+    {
+      "sentence": "s10",
+      "i": 1,
+      "text": "is",
+      "start": 45.003,
+      "end": 45.208
+    },
+    {
+      "sentence": "s10",
+      "i": 2,
+      "text": "moving,",
+      "start": 45.208,
+      "end": 45.822
+    },
+    {
+      "sentence": "s10",
+      "i": 3,
+      "text": "but",
+      "start": 45.822,
+      "end": 46.129
+    },
+    {
+      "sentence": "s10",
+      "i": 4,
+      "text": "a",
+      "start": 46.129,
+      "end": 46.334
+    },
+    {
+      "sentence": "s10",
+      "i": 5,
+      "text": "deeper",
+      "start": 46.334,
+      "end": 46.947
+    },
+    {
+      "sentence": "s10",
+      "i": 6,
+      "text": "answer",
+      "start": 46.947,
+      "end": 47.561
+    },
+    {
+      "sentence": "s10",
+      "i": 7,
+      "text": "is",
+      "start": 47.561,
+      "end": 47.766
+    },
+    {
+      "sentence": "s10",
+      "i": 8,
+      "text": "still",
+      "start": 47.766,
+      "end": 48.278
+    },
+    {
+      "sentence": "s10",
+      "i": 9,
+      "text": "waiting.",
+      "start": 48.278,
+      "end": 48.994
+    },
+    {
+      "sentence": "s11",
+      "i": 0,
+      "text": "Many",
+      "start": 53.342,
+      "end": 53.689
+    },
+    {
+      "sentence": "s11",
+      "i": 1,
+      "text": "people",
+      "start": 53.689,
+      "end": 54.208
+    },
+    {
+      "sentence": "s11",
+      "i": 2,
+      "text": "try",
+      "start": 54.208,
+      "end": 54.468
+    },
+    {
+      "sentence": "s11",
+      "i": 3,
+      "text": "to",
+      "start": 54.468,
+      "end": 54.642
+    },
+    {
+      "sentence": "s11",
+      "i": 4,
+      "text": "cover",
+      "start": 54.642,
+      "end": 55.075
+    },
+    {
+      "sentence": "s11",
+      "i": 5,
+      "text": "this",
+      "start": 55.075,
+      "end": 55.421
+    },
+    {
+      "sentence": "s11",
+      "i": 6,
+      "text": "restlessness.",
+      "start": 55.421,
+      "end": 56.461
+    },
+    {
+      "sentence": "s12",
+      "i": 0,
+      "text": "One",
+      "start": 57.101,
+      "end": 57.377
+    },
+    {
+      "sentence": "s12",
+      "i": 1,
+      "text": "sinks",
+      "start": 57.377,
+      "end": 57.837
+    },
+    {
+      "sentence": "s12",
+      "i": 2,
+      "text": "deeper",
+      "start": 57.837,
+      "end": 58.388
+    },
+    {
+      "sentence": "s12",
+      "i": 3,
+      "text": "into",
+      "start": 58.388,
+      "end": 58.756
+    },
+    {
+      "sentence": "s12",
+      "i": 4,
+      "text": "work.",
+      "start": 58.756,
+      "end": 59.124
+    },
+    {
+      "sentence": "s13",
+      "i": 0,
+      "text": "Another",
+      "start": 60.706,
+      "end": 61.239
+    },
+    {
+      "sentence": "s13",
+      "i": 1,
+      "text": "searches",
+      "start": 61.239,
+      "end": 61.849
+    },
+    {
+      "sentence": "s13",
+      "i": 2,
+      "text": "for",
+      "start": 61.849,
+      "end": 62.078
+    },
+    {
+      "sentence": "s13",
+      "i": 3,
+      "text": "the",
+      "start": 62.078,
+      "end": 62.306
+    },
+    {
+      "sentence": "s13",
+      "i": 4,
+      "text": "answer",
+      "start": 62.306,
+      "end": 62.764
+    },
+    {
+      "sentence": "s13",
+      "i": 5,
+      "text": "in",
+      "start": 62.764,
+      "end": 62.916
+    },
+    {
+      "sentence": "s13",
+      "i": 6,
+      "text": "relationships.",
+      "start": 62.916,
+      "end": 63.907
+    },
+    {
+      "sentence": "s14",
+      "i": 0,
+      "text": "One",
+      "start": 64.473,
+      "end": 64.713
+    },
+    {
+      "sentence": "s14",
+      "i": 1,
+      "text": "is",
+      "start": 64.713,
+      "end": 64.874
+    },
+    {
+      "sentence": "s14",
+      "i": 2,
+      "text": "lost",
+      "start": 64.874,
+      "end": 65.194
+    },
+    {
+      "sentence": "s14",
+      "i": 3,
+      "text": "in",
+      "start": 65.194,
+      "end": 65.354
+    },
+    {
+      "sentence": "s14",
+      "i": 4,
+      "text": "entertainment.",
+      "start": 65.354,
+      "end": 66.396
+    },
+    {
+      "sentence": "s15",
+      "i": 0,
+      "text": "Someone",
+      "start": 67.675,
+      "end": 68.438
+    },
+    {
+      "sentence": "s15",
+      "i": 1,
+      "text": "sets",
+      "start": 68.438,
+      "end": 68.873
+    },
+    {
+      "sentence": "s15",
+      "i": 2,
+      "text": "new",
+      "start": 68.873,
+      "end": 69.2
+    },
+    {
+      "sentence": "s15",
+      "i": 3,
+      "text": "goals.",
+      "start": 69.2,
+      "end": 69.745
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 0,
+      "text": "For",
+      "start": 70.891,
+      "end": 71.203
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 1,
+      "text": "a",
+      "start": 71.203,
+      "end": 71.411
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 2,
+      "text": "while",
+      "start": 71.411,
+      "end": 71.931
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 3,
+      "text": "the",
+      "start": 71.931,
+      "end": 72.243
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 4,
+      "text": "mind",
+      "start": 72.243,
+      "end": 72.659
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 5,
+      "text": "stays",
+      "start": 72.659,
+      "end": 73.179
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-1",
+      "i": 6,
+      "text": "busy,",
+      "start": 73.179,
+      "end": 73.595
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 0,
+      "text": "but",
+      "start": 73.595,
+      "end": 73.907
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 1,
+      "text": "in",
+      "start": 73.907,
+      "end": 74.115
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 2,
+      "text": "some",
+      "start": 74.115,
+      "end": 74.531
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 3,
+      "text": "quiet",
+      "start": 74.531,
+      "end": 75.051
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 4,
+      "text": "moment",
+      "start": 75.051,
+      "end": 75.675
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 5,
+      "text": "of",
+      "start": 75.675,
+      "end": 75.883
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 6,
+      "text": "the",
+      "start": 75.883,
+      "end": 76.195
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 7,
+      "text": "night",
+      "start": 76.195,
+      "end": 76.715
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 8,
+      "text": "the",
+      "start": 76.715,
+      "end": 77.027
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 9,
+      "text": "same",
+      "start": 77.027,
+      "end": 77.443
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 10,
+      "text": "question",
+      "start": 77.443,
+      "end": 78.275
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-2",
+      "i": 11,
+      "text": "returns:",
+      "start": 78.275,
+      "end": 79.003
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 0,
+      "text": "is",
+      "start": 79.003,
+      "end": 79.225
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 1,
+      "text": "this",
+      "start": 79.225,
+      "end": 79.67
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 2,
+      "text": "all",
+      "start": 79.67,
+      "end": 80.004
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 3,
+      "text": "that",
+      "start": 80.004,
+      "end": 80.449
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 4,
+      "text": "life",
+      "start": 80.449,
+      "end": 80.894
+    },
+    {
+      "sentence": "s16",
+      "cue": "s16-3",
+      "i": 5,
+      "text": "is?",
+      "start": 80.894,
+      "end": 81.116
+    },
+    {
+      "sentence": "s17",
+      "i": 0,
+      "text": "This",
+      "start": 84.667,
+      "end": 85.043
+    },
+    {
+      "sentence": "s17",
+      "i": 1,
+      "text": "question",
+      "start": 85.043,
+      "end": 85.796
+    },
+    {
+      "sentence": "s17",
+      "i": 2,
+      "text": "is",
+      "start": 85.796,
+      "end": 85.984
+    },
+    {
+      "sentence": "s17",
+      "i": 3,
+      "text": "not",
+      "start": 85.984,
+      "end": 86.267
+    },
+    {
+      "sentence": "s17",
+      "i": 4,
+      "text": "a",
+      "start": 86.267,
+      "end": 86.455
+    },
+    {
+      "sentence": "s17",
+      "i": 5,
+      "text": "sign",
+      "start": 86.455,
+      "end": 86.831
+    },
+    {
+      "sentence": "s17",
+      "i": 6,
+      "text": "of",
+      "start": 86.831,
+      "end": 87.019
+    },
+    {
+      "sentence": "s17",
+      "i": 7,
+      "text": "weakness.",
+      "start": 87.019,
+      "end": 87.772
+    },
+    {
+      "sentence": "s18",
+      "i": 0,
+      "text": "It",
+      "start": 88.447,
+      "end": 88.635
+    },
+    {
+      "sentence": "s18",
+      "i": 1,
+      "text": "is",
+      "start": 88.635,
+      "end": 88.824
+    },
+    {
+      "sentence": "s18",
+      "i": 2,
+      "text": "a",
+      "start": 88.824,
+      "end": 89.012
+    },
+    {
+      "sentence": "s18",
+      "i": 3,
+      "text": "sign",
+      "start": 89.012,
+      "end": 89.389
+    },
+    {
+      "sentence": "s18",
+      "i": 4,
+      "text": "of",
+      "start": 89.389,
+      "end": 89.577
+    },
+    {
+      "sentence": "s18",
+      "i": 5,
+      "text": "inner",
+      "start": 89.577,
+      "end": 90.048
+    },
+    {
+      "sentence": "s18",
+      "i": 6,
+      "text": "honesty.",
+      "start": 90.048,
+      "end": 90.707
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 0,
+      "text": "When",
+      "start": 92.332,
+      "end": 92.778
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 1,
+      "text": "a",
+      "start": 92.778,
+      "end": 93.001
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 2,
+      "text": "human",
+      "start": 93.001,
+      "end": 93.558
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 3,
+      "text": "being",
+      "start": 93.558,
+      "end": 94.115
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 4,
+      "text": "is",
+      "start": 94.115,
+      "end": 94.338
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 5,
+      "text": "not",
+      "start": 94.338,
+      "end": 94.672
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 6,
+      "text": "satisfied",
+      "start": 94.672,
+      "end": 95.675
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 7,
+      "text": "with",
+      "start": 95.675,
+      "end": 96.121
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 8,
+      "text": "just",
+      "start": 96.121,
+      "end": 96.566
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 9,
+      "text": "living,",
+      "start": 96.566,
+      "end": 97.235
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 10,
+      "text": "but",
+      "start": 97.235,
+      "end": 97.569
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 11,
+      "text": "wants",
+      "start": 97.569,
+      "end": 98.126
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 12,
+      "text": "to",
+      "start": 98.126,
+      "end": 98.349
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 13,
+      "text": "know",
+      "start": 98.349,
+      "end": 98.795
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 14,
+      "text": "who",
+      "start": 98.795,
+      "end": 99.129
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 15,
+      "text": "am",
+      "start": 99.129,
+      "end": 99.352
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-1",
+      "i": 16,
+      "text": "I,",
+      "start": 99.352,
+      "end": 99.575
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 0,
+      "text": "why",
+      "start": 99.575,
+      "end": 99.902
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 1,
+      "text": "do",
+      "start": 99.902,
+      "end": 100.119
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 2,
+      "text": "I",
+      "start": 100.119,
+      "end": 100.337
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 3,
+      "text": "suffer,",
+      "start": 100.337,
+      "end": 100.99
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 4,
+      "text": "why",
+      "start": 100.99,
+      "end": 101.317
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 5,
+      "text": "does",
+      "start": 101.317,
+      "end": 101.752
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 6,
+      "text": "something",
+      "start": 101.752,
+      "end": 102.732
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 7,
+      "text": "always",
+      "start": 102.732,
+      "end": 103.385
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 8,
+      "text": "feel",
+      "start": 103.385,
+      "end": 103.82
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-2",
+      "i": 9,
+      "text": "missing,",
+      "start": 103.82,
+      "end": 104.582
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "i": 0,
+      "text": "then",
+      "start": 104.582,
+      "end": 105.001
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "i": 1,
+      "text": "the",
+      "start": 105.001,
+      "end": 105.316
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "i": 2,
+      "text": "spiritual",
+      "start": 105.316,
+      "end": 106.259
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "i": 3,
+      "text": "journey",
+      "start": 106.259,
+      "end": 106.993
+    },
+    {
+      "sentence": "s19",
+      "cue": "s19-3",
+      "i": 4,
+      "text": "begins.",
+      "start": 106.993,
+      "end": 107.622
+    },
+    {
+      "sentence": "s20",
+      "i": 0,
+      "text": "This",
+      "start": 108.849,
+      "end": 109.198
+    },
+    {
+      "sentence": "s20",
+      "i": 1,
+      "text": "journey",
+      "start": 109.198,
+      "end": 109.808
+    },
+    {
+      "sentence": "s20",
+      "i": 2,
+      "text": "is",
+      "start": 109.808,
+      "end": 109.982
+    },
+    {
+      "sentence": "s20",
+      "i": 3,
+      "text": "not",
+      "start": 109.982,
+      "end": 110.244
+    },
+    {
+      "sentence": "s20",
+      "i": 4,
+      "text": "an",
+      "start": 110.244,
+      "end": 110.418
+    },
+    {
+      "sentence": "s20",
+      "i": 5,
+      "text": "escape",
+      "start": 110.418,
+      "end": 110.941
+    },
+    {
+      "sentence": "s20",
+      "i": 6,
+      "text": "from",
+      "start": 110.941,
+      "end": 111.29
+    },
+    {
+      "sentence": "s20",
+      "i": 7,
+      "text": "the",
+      "start": 111.29,
+      "end": 111.551
+    },
+    {
+      "sentence": "s20",
+      "i": 8,
+      "text": "world.",
+      "start": 111.551,
+      "end": 111.987
+    },
+    {
+      "sentence": "s21",
+      "i": 0,
+      "text": "It",
+      "start": 113.299,
+      "end": 113.499
+    },
+    {
+      "sentence": "s21",
+      "i": 1,
+      "text": "is",
+      "start": 113.499,
+      "end": 113.699
+    },
+    {
+      "sentence": "s21",
+      "i": 2,
+      "text": "a",
+      "start": 113.699,
+      "end": 113.899
+    },
+    {
+      "sentence": "s21",
+      "i": 3,
+      "text": "journey",
+      "start": 113.899,
+      "end": 114.599
+    },
+    {
+      "sentence": "s21",
+      "i": 4,
+      "text": "of",
+      "start": 114.599,
+      "end": 114.799
+    },
+    {
+      "sentence": "s21",
+      "i": 5,
+      "text": "meeting",
+      "start": 114.799,
+      "end": 115.499
+    },
+    {
+      "sentence": "s21",
+      "i": 6,
+      "text": "oneself.",
+      "start": 115.499,
+      "end": 116.199
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 0,
+      "text": "It",
+      "start": 118.299,
+      "end": 118.505
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 1,
+      "text": "is",
+      "start": 118.505,
+      "end": 118.712
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 2,
+      "text": "like",
+      "start": 118.712,
+      "end": 119.124
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 3,
+      "text": "living",
+      "start": 119.124,
+      "end": 119.743
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 4,
+      "text": "in",
+      "start": 119.743,
+      "end": 119.949
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 5,
+      "text": "your",
+      "start": 119.949,
+      "end": 120.362
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 6,
+      "text": "own",
+      "start": 120.362,
+      "end": 120.671
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 7,
+      "text": "house",
+      "start": 120.671,
+      "end": 121.187
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 8,
+      "text": "for",
+      "start": 121.187,
+      "end": 121.497
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 9,
+      "text": "many",
+      "start": 121.497,
+      "end": 121.909
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-1",
+      "i": 10,
+      "text": "years,",
+      "start": 121.909,
+      "end": 122.425
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 0,
+      "text": "and",
+      "start": 122.425,
+      "end": 122.725
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 1,
+      "text": "not",
+      "start": 122.725,
+      "end": 123.024
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 2,
+      "text": "knowing",
+      "start": 123.024,
+      "end": 123.723
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 3,
+      "text": "that",
+      "start": 123.723,
+      "end": 124.122
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 4,
+      "text": "inside",
+      "start": 124.122,
+      "end": 124.721
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 5,
+      "text": "it",
+      "start": 124.721,
+      "end": 124.921
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 6,
+      "text": "there",
+      "start": 124.921,
+      "end": 125.42
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 7,
+      "text": "is",
+      "start": 125.42,
+      "end": 125.62
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 8,
+      "text": "a",
+      "start": 125.62,
+      "end": 125.82
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 9,
+      "text": "quiet",
+      "start": 125.82,
+      "end": 126.319
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 10,
+      "text": "room",
+      "start": 126.319,
+      "end": 126.718
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 11,
+      "text": "where",
+      "start": 126.718,
+      "end": 127.217
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 12,
+      "text": "you",
+      "start": 127.217,
+      "end": 127.517
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 13,
+      "text": "have",
+      "start": 127.517,
+      "end": 127.916
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 14,
+      "text": "never",
+      "start": 127.916,
+      "end": 128.416
+    },
+    {
+      "sentence": "s22",
+      "cue": "s22-2",
+      "i": 15,
+      "text": "gone.",
+      "start": 128.416,
+      "end": 128.815
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 0,
+      "text": "In",
+      "start": 130.056,
+      "end": 130.287
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 1,
+      "text": "the",
+      "start": 130.287,
+      "end": 130.633
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 2,
+      "text": "same",
+      "start": 130.633,
+      "end": 131.095
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 3,
+      "text": "way,",
+      "start": 131.095,
+      "end": 131.441
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 4,
+      "text": "we",
+      "start": 131.441,
+      "end": 131.672
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 5,
+      "text": "live",
+      "start": 131.672,
+      "end": 132.133
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 6,
+      "text": "all",
+      "start": 132.133,
+      "end": 132.479
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 7,
+      "text": "our",
+      "start": 132.479,
+      "end": 132.825
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 8,
+      "text": "lives",
+      "start": 132.825,
+      "end": 133.402
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 9,
+      "text": "in",
+      "start": 133.402,
+      "end": 133.633
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 10,
+      "text": "body,",
+      "start": 133.633,
+      "end": 134.095
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 11,
+      "text": "name,",
+      "start": 134.095,
+      "end": 134.556
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-1",
+      "i": 12,
+      "text": "work,",
+      "start": 134.556,
+      "end": 135.018
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-2",
+      "i": 0,
+      "text": "relationships",
+      "start": 135.018,
+      "end": 136.248
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-2",
+      "i": 1,
+      "text": "and",
+      "start": 136.248,
+      "end": 136.532
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-2",
+      "i": 2,
+      "text": "thoughts,",
+      "start": 136.532,
+      "end": 137.289
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 0,
+      "text": "but",
+      "start": 137.289,
+      "end": 137.601
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 1,
+      "text": "we",
+      "start": 137.601,
+      "end": 137.809
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 2,
+      "text": "do",
+      "start": 137.809,
+      "end": 138.016
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 3,
+      "text": "not",
+      "start": 138.016,
+      "end": 138.328
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 4,
+      "text": "properly",
+      "start": 138.328,
+      "end": 139.159
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 5,
+      "text": "look",
+      "start": 139.159,
+      "end": 139.575
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 6,
+      "text": "at",
+      "start": 139.575,
+      "end": 139.783
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 7,
+      "text": "that",
+      "start": 139.783,
+      "end": 140.198
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 8,
+      "text": "quiet",
+      "start": 140.198,
+      "end": 140.718
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 9,
+      "text": "knowing",
+      "start": 140.718,
+      "end": 141.445
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 10,
+      "text": "place",
+      "start": 141.445,
+      "end": 141.965
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-3",
+      "i": 11,
+      "text": "within,",
+      "start": 141.965,
+      "end": 142.588
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 0,
+      "text": "from",
+      "start": 142.588,
+      "end": 142.99
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 1,
+      "text": "where",
+      "start": 142.99,
+      "end": 143.491
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 2,
+      "text": "all",
+      "start": 143.491,
+      "end": 143.793
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 3,
+      "text": "experiences",
+      "start": 143.793,
+      "end": 144.897
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 4,
+      "text": "are",
+      "start": 144.897,
+      "end": 145.198
+    },
+    {
+      "sentence": "s23",
+      "cue": "s23-4",
+      "i": 5,
+      "text": "known.",
+      "start": 145.198,
+      "end": 145.7
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 0,
+      "text": "This",
+      "start": 147.845,
+      "end": 148.221
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 1,
+      "text": "chapter",
+      "start": 148.221,
+      "end": 148.879
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 2,
+      "text": "begins",
+      "start": 148.879,
+      "end": 149.442
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 3,
+      "text": "with",
+      "start": 149.442,
+      "end": 149.818
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 4,
+      "text": "that",
+      "start": 149.818,
+      "end": 150.194
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 5,
+      "text": "simple",
+      "start": 150.194,
+      "end": 150.758
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 6,
+      "text": "question,",
+      "start": 150.758,
+      "end": 151.51
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 7,
+      "text": "which",
+      "start": 151.51,
+      "end": 151.979
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 8,
+      "text": "looks",
+      "start": 151.979,
+      "end": 152.449
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-1",
+      "i": 9,
+      "text": "small,",
+      "start": 152.449,
+      "end": 152.919
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 0,
+      "text": "but",
+      "start": 152.919,
+      "end": 153.223
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 1,
+      "text": "reaches",
+      "start": 153.223,
+      "end": 153.934
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 2,
+      "text": "the",
+      "start": 153.934,
+      "end": 154.238
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 3,
+      "text": "root",
+      "start": 154.238,
+      "end": 154.644
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 4,
+      "text": "of",
+      "start": 154.644,
+      "end": 154.847
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 5,
+      "text": "life:",
+      "start": 154.847,
+      "end": 155.253
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 6,
+      "text": "who",
+      "start": 155.253,
+      "end": 155.557
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 7,
+      "text": "am",
+      "start": 155.557,
+      "end": 155.76
+    },
+    {
+      "sentence": "s24",
+      "cue": "s24-2",
+      "i": 8,
+      "text": "I?",
+      "start": 155.76,
+      "end": 155.963
+    },
+    {
+      "sentence": "s25",
+      "i": 0,
+      "text": "“Who",
+      "start": 164.563,
+      "end": 164.884
+    },
+    {
+      "sentence": "s25",
+      "i": 1,
+      "text": "am",
+      "start": 164.884,
+      "end": 165.098
+    },
+    {
+      "sentence": "s25",
+      "i": 2,
+      "text": "I?”",
+      "start": 165.098,
+      "end": 165.312
+    },
+    {
+      "sentence": "s26",
+      "i": 0,
+      "text": "This",
+      "start": 167.819,
+      "end": 168.162
+    },
+    {
+      "sentence": "s26",
+      "i": 1,
+      "text": "question",
+      "start": 168.162,
+      "end": 168.848
+    },
+    {
+      "sentence": "s26",
+      "i": 2,
+      "text": "is",
+      "start": 168.848,
+      "end": 169.019
+    },
+    {
+      "sentence": "s26",
+      "i": 3,
+      "text": "not",
+      "start": 169.019,
+      "end": 169.277
+    },
+    {
+      "sentence": "s26",
+      "i": 4,
+      "text": "new.",
+      "start": 169.277,
+      "end": 169.534
+    },
+    {
+      "sentence": "s27",
+      "i": 0,
+      "text": "For",
+      "start": 170.639,
+      "end": 170.895
+    },
+    {
+      "sentence": "s27",
+      "i": 1,
+      "text": "thousands",
+      "start": 170.895,
+      "end": 171.664
+    },
+    {
+      "sentence": "s27",
+      "i": 2,
+      "text": "of",
+      "start": 171.664,
+      "end": 171.835
+    },
+    {
+      "sentence": "s27",
+      "i": 3,
+      "text": "years,",
+      "start": 171.835,
+      "end": 172.262
+    },
+    {
+      "sentence": "s27",
+      "i": 4,
+      "text": "human",
+      "start": 172.262,
+      "end": 172.689
+    },
+    {
+      "sentence": "s27",
+      "i": 5,
+      "text": "beings",
+      "start": 172.689,
+      "end": 173.202
+    },
+    {
+      "sentence": "s27",
+      "i": 6,
+      "text": "have",
+      "start": 173.202,
+      "end": 173.544
+    },
+    {
+      "sentence": "s27",
+      "i": 7,
+      "text": "been",
+      "start": 173.544,
+      "end": 173.886
+    },
+    {
+      "sentence": "s27",
+      "i": 8,
+      "text": "asking",
+      "start": 173.886,
+      "end": 174.398
+    },
+    {
+      "sentence": "s27",
+      "i": 9,
+      "text": "it.",
+      "start": 174.398,
+      "end": 174.569
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 0,
+      "text": "But",
+      "start": 175.473,
+      "end": 175.746
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 1,
+      "text": "the",
+      "start": 175.746,
+      "end": 176.019
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 2,
+      "text": "surprising",
+      "start": 176.019,
+      "end": 176.928
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 3,
+      "text": "thing",
+      "start": 176.928,
+      "end": 177.383
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 4,
+      "text": "is",
+      "start": 177.383,
+      "end": 177.565
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 5,
+      "text": "that",
+      "start": 177.565,
+      "end": 177.929
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 6,
+      "text": "in",
+      "start": 177.929,
+      "end": 178.111
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 7,
+      "text": "every",
+      "start": 178.111,
+      "end": 178.565
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 8,
+      "text": "seeker's",
+      "start": 178.565,
+      "end": 179.202
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-1",
+      "i": 9,
+      "text": "life,",
+      "start": 179.202,
+      "end": 179.566
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 0,
+      "text": "this",
+      "start": 179.566,
+      "end": 179.92
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 1,
+      "text": "question",
+      "start": 179.92,
+      "end": 180.629
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 2,
+      "text": "feels",
+      "start": 180.629,
+      "end": 181.072
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 3,
+      "text": "like",
+      "start": 181.072,
+      "end": 181.426
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 4,
+      "text": "the",
+      "start": 181.426,
+      "end": 181.692
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 5,
+      "text": "first",
+      "start": 181.692,
+      "end": 182.135
+    },
+    {
+      "sentence": "s28",
+      "cue": "s28-2",
+      "i": 6,
+      "text": "time.",
+      "start": 182.135,
+      "end": 182.489
+    },
+    {
+      "sentence": "s29",
+      "i": 0,
+      "text": "Because",
+      "start": 184.921,
+      "end": 185.43
+    },
+    {
+      "sentence": "s29",
+      "i": 1,
+      "text": "this",
+      "start": 185.43,
+      "end": 185.721
+    },
+    {
+      "sentence": "s29",
+      "i": 2,
+      "text": "question",
+      "start": 185.721,
+      "end": 186.303
+    },
+    {
+      "sentence": "s29",
+      "i": 3,
+      "text": "is",
+      "start": 186.303,
+      "end": 186.449
+    },
+    {
+      "sentence": "s29",
+      "i": 4,
+      "text": "not",
+      "start": 186.449,
+      "end": 186.667
+    },
+    {
+      "sentence": "s29",
+      "i": 5,
+      "text": "a",
+      "start": 186.667,
+      "end": 186.813
+    },
+    {
+      "sentence": "s29",
+      "i": 6,
+      "text": "question",
+      "start": 186.813,
+      "end": 187.394
+    },
+    {
+      "sentence": "s29",
+      "i": 7,
+      "text": "from",
+      "start": 187.394,
+      "end": 187.685
+    },
+    {
+      "sentence": "s29",
+      "i": 8,
+      "text": "a",
+      "start": 187.685,
+      "end": 187.831
+    },
+    {
+      "sentence": "s29",
+      "i": 9,
+      "text": "book.",
+      "start": 187.831,
+      "end": 188.122
+    },
+    {
+      "sentence": "s30",
+      "i": 0,
+      "text": "It",
+      "start": 189.267,
+      "end": 189.446
+    },
+    {
+      "sentence": "s30",
+      "i": 1,
+      "text": "is",
+      "start": 189.446,
+      "end": 189.624
+    },
+    {
+      "sentence": "s30",
+      "i": 2,
+      "text": "a",
+      "start": 189.624,
+      "end": 189.803
+    },
+    {
+      "sentence": "s30",
+      "i": 3,
+      "text": "question",
+      "start": 189.803,
+      "end": 190.517
+    },
+    {
+      "sentence": "s30",
+      "i": 4,
+      "text": "of",
+      "start": 190.517,
+      "end": 190.695
+    },
+    {
+      "sentence": "s30",
+      "i": 5,
+      "text": "your",
+      "start": 190.695,
+      "end": 191.052
+    },
+    {
+      "sentence": "s30",
+      "i": 6,
+      "text": "own",
+      "start": 191.052,
+      "end": 191.32
+    },
+    {
+      "sentence": "s30",
+      "i": 7,
+      "text": "life.",
+      "start": 191.32,
+      "end": 191.677
+    },
+    {
+      "sentence": "s31",
+      "i": 0,
+      "text": "As",
+      "start": 192.936,
+      "end": 193.142
+    },
+    {
+      "sentence": "s31",
+      "i": 1,
+      "text": "long",
+      "start": 193.142,
+      "end": 193.555
+    },
+    {
+      "sentence": "s31",
+      "i": 2,
+      "text": "as",
+      "start": 193.555,
+      "end": 193.762
+    },
+    {
+      "sentence": "s31",
+      "i": 3,
+      "text": "this",
+      "start": 193.762,
+      "end": 194.174
+    },
+    {
+      "sentence": "s31",
+      "i": 4,
+      "text": "question",
+      "start": 194.174,
+      "end": 195
+    },
+    {
+      "sentence": "s31",
+      "i": 5,
+      "text": "stays",
+      "start": 195,
+      "end": 195.516
+    },
+    {
+      "sentence": "s31",
+      "i": 6,
+      "text": "only",
+      "start": 195.516,
+      "end": 195.929
+    },
+    {
+      "sentence": "s31",
+      "i": 7,
+      "text": "in",
+      "start": 195.929,
+      "end": 196.135
+    },
+    {
+      "sentence": "s31",
+      "i": 8,
+      "text": "the",
+      "start": 196.135,
+      "end": 196.445
+    },
+    {
+      "sentence": "s31",
+      "i": 9,
+      "text": "head,",
+      "start": 196.445,
+      "end": 196.858
+    },
+    {
+      "sentence": "s31",
+      "i": 10,
+      "text": "it",
+      "start": 196.858,
+      "end": 197.064
+    },
+    {
+      "sentence": "s31",
+      "i": 11,
+      "text": "feels",
+      "start": 197.064,
+      "end": 197.58
+    },
+    {
+      "sentence": "s31",
+      "i": 12,
+      "text": "like",
+      "start": 197.58,
+      "end": 197.993
+    },
+    {
+      "sentence": "s31",
+      "i": 13,
+      "text": "philosophy.",
+      "start": 197.993,
+      "end": 199.025
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 0,
+      "text": "But",
+      "start": 200.097,
+      "end": 200.464
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 1,
+      "text": "when",
+      "start": 200.464,
+      "end": 200.954
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 2,
+      "text": "sorrow,",
+      "start": 200.954,
+      "end": 201.688
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 3,
+      "text": "dissatisfaction,",
+      "start": 201.688,
+      "end": 203.523
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 4,
+      "text": "fear,",
+      "start": 203.523,
+      "end": 204.013
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 5,
+      "text": "loneliness",
+      "start": 204.013,
+      "end": 205.236
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 6,
+      "text": "or",
+      "start": 205.236,
+      "end": 205.481
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 7,
+      "text": "a",
+      "start": 205.481,
+      "end": 205.726
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 8,
+      "text": "deep",
+      "start": 205.726,
+      "end": 206.215
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 9,
+      "text": "seeking",
+      "start": 206.215,
+      "end": 207.072
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 10,
+      "text": "arises",
+      "start": 207.072,
+      "end": 207.806
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 11,
+      "text": "in",
+      "start": 207.806,
+      "end": 208.051
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-1",
+      "i": 12,
+      "text": "life,",
+      "start": 208.051,
+      "end": 208.54
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "i": 0,
+      "text": "this",
+      "start": 208.54,
+      "end": 209.005
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "i": 1,
+      "text": "question",
+      "start": 209.005,
+      "end": 209.935
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "i": 2,
+      "text": "becomes",
+      "start": 209.935,
+      "end": 210.748
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "i": 3,
+      "text": "very",
+      "start": 210.748,
+      "end": 211.213
+    },
+    {
+      "sentence": "s32",
+      "cue": "s32-2",
+      "i": 4,
+      "text": "practical.",
+      "start": 211.213,
+      "end": 212.259
+    }
+  ]
+}
