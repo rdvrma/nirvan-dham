@@ -7,6 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "bot:telegram": "tsx scripts/telegram-bot.ts",
+    "bot:start": "node scripts/telegram-control.mjs start",
+    "bot:stop": "node scripts/telegram-control.mjs stop",
+    "bot:status": "node scripts/telegram-control.mjs status",
+    "bot:webhook:enable": "tsx scripts/telegram-webhook.ts enable",
+    "bot:webhook:status": "tsx scripts/telegram-webhook.ts status",
+    "test:telegram": "tsx --test tests/telegram-bot.test.ts tests/ai-guide.test.ts tests/telegram-languages.test.ts tests/telegram-cloud.test.ts",
+    "bot:publish-languages": "tsx scripts/generate-telegram-locales.ts",
     "upload:knowledge": "node scripts/upload-nirvan-knowledge.js"
   },
   "dependencies": {
@@ -29,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }

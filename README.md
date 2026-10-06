@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Telegram AI companion
+
+The free Nirvan Dham bot uses the website's Sarvam AI guide and published teaching
+content. See [Telegram setup and operations](docs/telegram-bot.md).
+Use `npm run bot:start`, `npm run bot:status`, and `npm run bot:stop` for local
+background operation; the computer must remain online for replies.
+
 First, run the development server:
 
 ```bash
