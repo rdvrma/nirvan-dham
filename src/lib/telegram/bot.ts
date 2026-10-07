@@ -1,7 +1,7 @@
 import type { AnswerDepth, GuideMessage } from '../ai-guide/answer';
 import { BOT_LANGUAGES, isBotLanguage, languageKeyboard, type BotLanguage, type LanguageKeyboard } from './languages';
 import { localizeControlText } from './ui';
-import { inspectSpam, moderationNotice, reserveGroupIntake, type GroupAccess, type GroupRuntime, type ModerationAction } from './groups';
+import { inspectSpam, moderationNotice, OWNER_GROUP_DEFAULTS, reserveGroupIntake, type GroupAccess, type GroupRuntime, type ModerationAction } from './groups';
 import type { GroupMessageAnalysis } from './answer';
 
 export const TELEGRAM_BOT_USERNAME = 'NirvanDhamGuideBot';
@@ -256,7 +256,7 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
       message = { message_id: callback.message.message_id, date: Math.floor(deps.now() / 1000), chat: callback.message.chat, from: callback.from, text: `/language ${data.slice(6)}` };
     }
   }
-  const groupSettings = message ? state.groups?.settings?.[String(message.chat.id)] : undefined;
+  const groupSettings = message ? state.groups?.settings?.[String(message.chat.id)] ?? OWNER_GROUP_DEFAULTS[String(message.chat.id)] : undefined;
   const conversation = telegramConversation({ ...update, message }, groupSettings?.autoReply || groupSettings?.moderation);
   if (!message || !conversation) {
     state.offset = update.update_id + 1;
@@ -280,12 +280,12 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
   let groupReply: string | undefined;
   if (conversation.group && ['auto', 'moderation', 'unban', 'modstatus'].includes(command ?? '')) {
     const access = await deps.groupAccess?.(message.chat.id, message.from!.id);
-    if (!access?.userIsAdmin) groupReply = 'यह command केवल group admins के लिए है।';
+    if (!access?.userIsAdmin && command !== 'modstatus') groupReply = 'यह command केवल group admins के लिए है।';
     else {
       const runtime = state.groups ??= {};
-      const settings = (runtime.settings ??= {})[String(message.chat.id)] ??= { autoReply: false, moderation: false };
+      const settings = (runtime.settings ??= {})[String(message.chat.id)] ??= { ...(groupSettings ?? { autoReply: false, moderation: false }) };
       const arg = text.split(/\s+/)[1]?.toLowerCase();
-      if (command === 'modstatus') groupReply = `Automatic answers: ${settings.autoReply ? 'ON' : 'OFF'}\nSpam moderation: ${settings.moderation ? 'ON' : 'OFF'}\nBot delete/restrict: ${access.canDelete}/${access.canRestrict}\nRecent moderation actions: ${runtime.audit?.filter(item => item.chatId === message.chat.id).length ?? 0}`;
+      if (command === 'modstatus') groupReply = `Automatic answers: ${settings.autoReply ? 'ON' : 'OFF'}\nSpam moderation: ${settings.moderation ? 'ON' : 'OFF'}\nBot delete/restrict: ${!!access?.canDelete}/${!!access?.canRestrict}\nRecent moderation actions: ${runtime.audit?.filter(item => item.chatId === message.chat.id).length ?? 0}`;
       else if (command === 'unban') {
         const userId = arg ? Number(arg) : message.reply_to_message?.from?.id;
         if (!Number.isSafeInteger(userId) || userId! <= 0 || !deps.unban) groupReply = 'सदस्य के पुराने message पर Reply करके /unban भेजें, या /unban USER_ID लिखें।';
@@ -297,7 +297,7 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
           groupReply = 'इस सदस्य की bot द्वारा लगाई गई रोक हटा दी गई है।';
         }
       } else if (!['on', 'off'].includes(arg ?? '')) groupReply = `/${command} on या /${command} off भेजें।`;
-      else if (arg === 'on' && (!access.botIsAdmin || (command === 'moderation' && (!access.canDelete || !access.canRestrict)))) groupReply = 'पहले bot को group admin बनाकर delete और restrict members के अधिकार दें।';
+      else if (arg === 'on' && (!access?.botIsAdmin || (command === 'moderation' && (!access.canDelete || !access.canRestrict)))) groupReply = 'पहले bot को group admin बनाकर delete और restrict members के अधिकार दें।';
       else {
         if (command === 'auto') settings.autoReply = arg === 'on'; else settings.moderation = arg === 'on';
         groupReply = command === 'auto' && settings.autoReply

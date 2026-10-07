@@ -92,6 +92,11 @@ The bot must already be a group administrator. Moderation additionally requires
 delete-message and restrict-member permissions. Privacy mode does not need to
 be disabled: Telegram sends all human group messages to bot administrators.
 Other groups keep their existing behavior until their own admin opts in.
+The bot owner explicitly configured group `-1003665343752` with both modes on
+in `OWNER_GROUP_DEFAULTS` on 7 October 2026. This is deployment configuration,
+not a Telegram role grant. Persisted group-admin commands override that default;
+turning one setting off preserves the other. `/modstatus` is read-only and can be
+used by any member. All mutating commands still require a current group admin.
 
 In automatic mode, write a question directly. Gemma identifies questions and
 the language of each new message, including Hindi versus Nepali and Marathi.

@@ -61,6 +61,25 @@ test('classification and answer budgets stay separate; non-questions do not spen
   assert.equal(reserveGroupIntake(runtime, 8, now), true);
 });
 
+test('owner default applies only to the requested supergroup and admin overrides keep the other setting', async () => {
+  const f = fixture();
+  const ownerGroup = -1003665343752;
+  f.admin(false);
+  await handleTelegramUpdate(f.message(1, 'What is awareness?', 50, ownerGroup), f.state, f.deps);
+  assert.equal(f.answers.length, 1);
+  await handleTelegramUpdate(f.message(2, '/modstatus', 50, ownerGroup), f.state, f.deps);
+  assert.match(f.sent.at(-1)!, /Automatic answers: ON\nSpam moderation: ON/);
+  await handleTelegramUpdate(f.message(3, '/auto off', 50, ownerGroup), f.state, f.deps);
+  assert.equal(f.state.groups!.settings![ownerGroup].autoReply, true);
+  f.admin(true);
+  await handleTelegramUpdate(f.message(4, '/moderation off', 50, ownerGroup), f.state, f.deps);
+  assert.equal(f.state.groups!.settings![ownerGroup].autoReply, true);
+  assert.equal(f.state.groups!.settings![ownerGroup].moderation, false);
+  await handleTelegramUpdate(f.message(5, '/auto off', 50, ownerGroup), f.state, f.deps);
+  await handleTelegramUpdate(f.message(6, 'What is awareness?', 50, ownerGroup), f.state, f.deps);
+  assert.equal(f.answers.length, 1);
+});
+
 test('normal links and scam warnings are safe; repeat links, flood and repeated scams produce temporary actions', () => {
   const runtime: GroupRuntime = {};
   const inspect = (text: string, id: number, user = 50) => inspectSpam(runtime, { chatId, userId: user, messageId: id, text, now: now + id * 100 });

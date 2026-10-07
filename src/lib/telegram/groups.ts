@@ -1,6 +1,13 @@
 import { createHash } from 'node:crypto';
 
 export interface GroupSettings { autoReply: boolean; moderation: boolean }
+/** Explicitly configured by the bot owner for the group requested on 7 Oct 2026.
+ * Group admins can override these defaults through the persisted commands.
+ * This changes bot behavior only; it does not grant Telegram membership rights.
+ */
+export const OWNER_GROUP_DEFAULTS: Readonly<Record<string, GroupSettings>> = {
+  '-1003665343752': { autoReply: true, moderation: true },
+};
 export interface GroupAccess { userIsAdmin: boolean; botIsAdmin: boolean; canDelete: boolean; canRestrict: boolean }
 export interface SpamRecord {
   recent: { time: number; fingerprint: string }[];
