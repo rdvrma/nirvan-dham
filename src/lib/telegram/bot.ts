@@ -1,6 +1,8 @@
 import type { AnswerDepth, GuideMessage } from '../ai-guide/answer';
 import { BOT_LANGUAGES, isBotLanguage, languageKeyboard, type BotLanguage, type LanguageKeyboard } from './languages';
 import { localizeControlText } from './ui';
+import { inspectSpam, moderationNotice, reserveGroupIntake, type GroupAccess, type GroupRuntime, type ModerationAction } from './groups';
+import type { GroupMessageAnalysis } from './answer';
 
 export const TELEGRAM_BOT_USERNAME = 'NirvanDhamGuideBot';
 
@@ -12,9 +14,13 @@ export interface TelegramUpdate {
     message_id: number;
     date: number;
     text?: string;
+    caption?: string;
+    entities?: { type: string; url?: string }[];
+    caption_entities?: { type: string; url?: string }[];
+    message_thread_id?: number;
     chat: { id: number; type: string };
     from?: TelegramSender;
-    reply_to_message?: { from?: TelegramSender };
+    reply_to_message?: { from?: TelegramSender; message_id?: number };
   };
   callback_query?: {
     id: string;
@@ -42,6 +48,9 @@ interface PendingAnswer {
   chatId: number;
   messageId: number;
   seekerId?: string;
+  languageCode?: string;
+  moderation?: ModerationAction;
+  messageThreadId?: number;
   question?: string;
   lang: BotLanguage;
   depth: 'detailed' | 'short';
@@ -59,14 +68,19 @@ export interface BotState {
   usage: Record<string, Usage>;
   globalUsage: { day: string; count: number };
   pending?: PendingAnswer;
+  groups?: GroupRuntime;
 }
 
 export interface BotDependencies {
   save: () => Promise<void>;
-  send: (chatId: number, text: string, messageId: number, first: boolean, keyboard?: LanguageKeyboard) => Promise<void>;
+  send: (chatId: number, text: string, messageId: number, first: boolean, keyboard?: LanguageKeyboard, messageThreadId?: number) => Promise<void>;
   ackCallback?: (id: string) => Promise<void>;
   typing: (chatId: number) => Promise<void>;
-  answer: (input: { question: string; lang: BotLanguage; depth: AnswerDepth; history: GuideMessage[] }) => Promise<string>;
+  answer: (input: { question: string; lang: BotLanguage; depth: AnswerDepth; history: GuideMessage[]; languageCode?: string }) => Promise<string>;
+  analyze?: (text: string) => Promise<GroupMessageAnalysis>;
+  groupAccess?: (chatId: number, userId: number) => Promise<GroupAccess>;
+  moderate?: (action: ModerationAction) => Promise<boolean>;
+  unban?: (chatId: number, userId: number) => Promise<void>;
   now: () => number;
   dailyLimit: number;
   globalDailyLimit: number;
@@ -77,12 +91,12 @@ export function emptyBotState(): BotState {
 }
 
 /** Group context belongs to one sender in one chat, never to the entire group. */
-export function telegramConversation(update: TelegramUpdate): { key: string; usageId: string; text: string; group: boolean } | null {
+export function telegramConversation(update: TelegramUpdate, automatic = false): { key: string; usageId: string; text: string; group: boolean; addressed: boolean } | null {
   const message = update.message;
   if (!message?.from || message.from.is_bot) return null;
-  const text = message.text?.trim() ?? '';
+  const text = (message.text ?? message.caption)?.trim() ?? '';
   if (message.chat.type === 'private') return message.from.id === message.chat.id
-    ? { key: String(message.chat.id), usageId: String(message.from.id), text, group: false } : null;
+    ? { key: String(message.chat.id), usageId: String(message.from.id), text, group: false, addressed: true } : null;
   if (!['group', 'supergroup'].includes(message.chat.type) || message.from.id <= 0) return null;
   const command = text.match(/^\/(\w+)(?:@([A-Za-z0-9_]+))?(?:\s|$)/);
   const username = TELEGRAM_BOT_USERNAME.toLowerCase();
@@ -93,14 +107,19 @@ export function telegramConversation(update: TelegramUpdate): { key: string; usa
     && message.reply_to_message.from.username?.toLowerCase() === username;
   const mention = new RegExp(`@${TELEGRAM_BOT_USERNAME}(?![A-Za-z0-9_])`, 'ig');
   const mentioned = mention.test(text);
-  if (!ownCommand && !ownReply && !mentioned && command?.[1].toLowerCase() !== 'ask') return null;
+  const automaticCommand = automatic && !!command && ['auto', 'moderation', 'modstatus', 'unban', 'help', 'start', 'language', 'languages', 'lang', 'short', 'detailed', 'new', 'forget', 'privacy', 'course', 'hindi', 'english'].includes(command[1].toLowerCase());
+  const addressed = ownCommand || ownReply || mentioned || command?.[1].toLowerCase() === 'ask' || automaticCommand;
+  if (!addressed && (!automatic || !text)) return null;
   return {
-    key: `group:${message.chat.id}:${message.from.id}`, usageId: String(message.from.id), group: true,
+    key: `group:${message.chat.id}:${message.from.id}`, usageId: String(message.from.id), group: true, addressed,
     text: text.replace(mention, '').replace(/^\/ask(?:\s|$)/i, '').trim(),
   };
 }
 
-function groupHelp(lang: BotLanguage): string {
+function groupHelp(lang: BotLanguage, automatic = false): string {
+  if (automatic) return lang === 'hi'
+    ? 'अपना सवाल सीधे लिखें; /ask या mention ज़रूरी नहीं। जवाब आपके नए प्रश्न की भाषा में मिलेगा। सामान्य अभिवादन पर bot चुप रहता है।\n/short — छोटे उत्तर\n/detailed — विस्तृत उत्तर\n/new — अपना नया संवाद\n/forget — अपनी संवाद-स्मृति हटाएँ\n\nहर सदस्य का संदर्भ अलग है। Group के प्रश्न-जवाब सभी सदस्यों को दिखते हैं। प्रश्न पहचानने के लिए नए text messages Sarvam AI को भेजे जाते हैं; उत्तर के लिए आपका प्रश्न और इसी group का आपका हाल का bot संवाद भेजा जाता है। Private chat की memory यहाँ नहीं आती। Spam जाँच के लिए संदेशों के fingerprints एक दिन तक और हाल की 50 कार्रवाइयों का विवरण सहेजा जाता है।\n\nसीमा: 2000 अक्षर, प्रति व्यक्ति 30 प्रश्न/दिन; सभी chats मिलाकर 300 उत्तर/दिन। प्रश्न पहचानने की अलग सीमा 90 messages/व्यक्ति/दिन और कुल 600/दिन है। Admin: /auto off, /moderation off, /modstatus।\nPrivate chat: https://t.me/NirvanDhamGuideBot'
+    : 'Write your question directly; no /ask or mention is needed. Answers follow the language of each new question. Greetings stay quiet.\n/short — shorter answers\n/detailed — detailed answers\n/new — your fresh conversation\n/forget — remove your conversation memory\n\nEach member has separate context. Questions and answers are visible to everyone in this group. New text messages are sent to Sarvam AI to identify questions; your question and your recent bot conversation in this group are sent to generate answers. Private chat history is never used here. Spam checks retain message fingerprints for up to a day and the latest 50 moderation actions.\n\nLimits: 2000 characters, 30 questions/person/day, 300 answers/day across all chats. Classification has a separate 90 messages/person/day and 600/day total limit. Admin: /auto off, /moderation off, /modstatus.\nPrivate chat: https://t.me/NirvanDhamGuideBot';
   return lang === 'hi'
     ? 'इस group में सवाल ऐसे पूछें:\n/ask@NirvanDhamGuideBot साक्षीभाव क्या है?\n\nअगला सवाल मेरे जवाब पर Reply करके पूछें।\n/language@NirvanDhamGuideBot या /lang@NirvanDhamGuideBot en से अपनी भाषा चुनें।\n/short@NirvanDhamGuideBot — छोटा जवाब\n/detailed@NirvanDhamGuideBot — विस्तृत जवाब\n/new@NirvanDhamGuideBot — अपना नया संवाद\n\nहर सदस्य की भाषा और संदर्भ अलग हैं। Group में प्रश्न और जवाब सभी सदस्यों को दिखाई देते हैं; आपके private bot संवाद का संदर्भ यहाँ इस्तेमाल नहीं होता। सवाल और इस group में आपके हाल के bot संवाद Sarvam AI को उत्तर बनाने के लिए भेजे जाते हैं। निजी बातचीत: https://t.me/NirvanDhamGuideBot'
     : 'Ask in this group:\n/ask@NirvanDhamGuideBot What is witness awareness?\n\nReply to my answer to ask a follow-up.\n/lang@NirvanDhamGuideBot en — choose your language code\n/short@NirvanDhamGuideBot — shorter answers\n/detailed@NirvanDhamGuideBot — detailed answers\n/new@NirvanDhamGuideBot — your fresh conversation\n\nEach member has separate preferences and context. Group questions and answers are visible to all members; private bot history is never used here. Your question and recent bot conversation in this group are sent to Sarvam AI to answer. Private chat: https://t.me/NirvanDhamGuideBot';
@@ -187,9 +206,19 @@ export async function finishPending(state: BotState, deps: BotDependencies): Pro
   const pending = state.pending;
   if (!pending) return;
   if (!pending.chunks) {
+    if (pending.moderation) {
+      if (!deps.moderate) throw new Error('Moderation transport unavailable');
+      const applied = await deps.moderate(pending.moderation);
+      const runtime = state.groups ??= {};
+      runtime.audit = [...(runtime.audit ?? []), { ...pending.moderation, time: deps.now(), applied }].slice(-50);
+      pending.chunks = [moderationNotice(pending.moderation, applied)];
+      await deps.save();
+    }
+  }
+  if (!pending.chunks) {
     await deps.typing(pending.chatId).catch(() => undefined);
     try {
-      const answer = await deps.answer({ question: pending.question!, lang: pending.lang, history: pending.history, depth: pending.depth });
+      const answer = await deps.answer({ question: pending.question!, lang: pending.lang, history: pending.history, depth: pending.depth, ...(pending.languageCode ? { languageCode: pending.languageCode } : {}) });
       if (!answer.trim()) throw new Error('empty answer');
       pending.answer = answer;
       pending.chunks = splitTelegramText(answer);
@@ -199,7 +228,7 @@ export async function finishPending(state: BotState, deps: BotDependencies): Pro
     await deps.save();
   }
   while (pending.nextChunk < pending.chunks.length) {
-    await deps.send(pending.chatId, pending.chunks[pending.nextChunk], pending.messageId, pending.nextChunk === 0, pending.nextChunk === 0 ? pending.keyboard : undefined);
+    await deps.send(pending.chatId, pending.chunks[pending.nextChunk], pending.messageId, pending.nextChunk === 0, pending.nextChunk === 0 ? pending.keyboard : undefined, pending.messageThreadId);
     pending.nextChunk += 1;
     await deps.save();
   }
@@ -227,7 +256,8 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
       message = { message_id: callback.message.message_id, date: Math.floor(deps.now() / 1000), chat: callback.message.chat, from: callback.from, text: `/language ${data.slice(6)}` };
     }
   }
-  const conversation = telegramConversation({ ...update, message });
+  const groupSettings = message ? state.groups?.settings?.[String(message.chat.id)] : undefined;
+  const conversation = telegramConversation({ ...update, message }, groupSettings?.autoReply || groupSettings?.moderation);
   if (!message || !conversation) {
     state.offset = update.update_id + 1;
     await deps.save();
@@ -247,13 +277,77 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
   seeker.lastSeen = now;
   const text = conversation.text;
   const command = text.match(/^\/(\w+)(?:@\w+)?(?:\s|$)/)?.[1]?.toLowerCase();
+  let groupReply: string | undefined;
+  if (conversation.group && ['auto', 'moderation', 'unban', 'modstatus'].includes(command ?? '')) {
+    const access = await deps.groupAccess?.(message.chat.id, message.from!.id);
+    if (!access?.userIsAdmin) groupReply = 'यह command केवल group admins के लिए है।';
+    else {
+      const runtime = state.groups ??= {};
+      const settings = (runtime.settings ??= {})[String(message.chat.id)] ??= { autoReply: false, moderation: false };
+      const arg = text.split(/\s+/)[1]?.toLowerCase();
+      if (command === 'modstatus') groupReply = `Automatic answers: ${settings.autoReply ? 'ON' : 'OFF'}\nSpam moderation: ${settings.moderation ? 'ON' : 'OFF'}\nBot delete/restrict: ${access.canDelete}/${access.canRestrict}\nRecent moderation actions: ${runtime.audit?.filter(item => item.chatId === message.chat.id).length ?? 0}`;
+      else if (command === 'unban') {
+        const userId = arg ? Number(arg) : message.reply_to_message?.from?.id;
+        if (!Number.isSafeInteger(userId) || userId! <= 0 || !deps.unban) groupReply = 'सदस्य के पुराने message पर Reply करके /unban भेजें, या /unban USER_ID लिखें।';
+        else if (!runtime.audit?.some(item => item.chatId === message.chat.id && item.userId === userId && item.applied && item.action !== 'warn' && item.until * 1000 > now)) groupReply = 'इस सदस्य के लिए bot की कोई सक्रिय posting रोक दर्ज नहीं है। दूसरी रोक Telegram की member settings से जाँचें।';
+        else {
+          await deps.unban(message.chat.id, userId!);
+          if (runtime.spam) delete runtime.spam[`${message.chat.id}:${userId}`];
+          for (const item of runtime.audit ?? []) if (item.chatId === message.chat.id && item.userId === userId) item.until = 0;
+          groupReply = 'इस सदस्य की bot द्वारा लगाई गई रोक हटा दी गई है।';
+        }
+      } else if (!['on', 'off'].includes(arg ?? '')) groupReply = `/${command} on या /${command} off भेजें।`;
+      else if (arg === 'on' && (!access.botIsAdmin || (command === 'moderation' && (!access.canDelete || !access.canRestrict)))) groupReply = 'पहले bot को group admin बनाकर delete और restrict members के अधिकार दें।';
+      else {
+        if (command === 'auto') settings.autoReply = arg === 'on'; else settings.moderation = arg === 'on';
+        groupReply = command === 'auto' && settings.autoReply
+          ? 'Automatic जवाब चालू हैं। अब सीधे अपना सवाल लिखें; /ask या mention ज़रूरी नहीं। जवाब हर सवाल की भाषा में होगा। शुभकामनाओं और सामान्य घोषणाओं पर bot चुप रहेगा। प्रश्न पहचानने के लिए इस group के नए text messages Sarvam AI को भेजे जाते हैं; निजी chat की memory यहाँ इस्तेमाल नहीं होती। /auto off से admin इसे बंद कर सकते हैं।'
+          : command === 'moderation' && settings.moderation
+            ? 'Spam moderation चालू है: स्पष्ट scam promotion हटाकर चेतावनी, repeated links/flood पर 1 घंटे की posting रोक, एक दिन में 3 उल्लंघन पर 24 घंटे posting block। पुराने messages बने रहेंगे। Admin accounts पर automatic कार्रवाई नहीं होगी। /moderation off से बंद करें; /unban से bot की रोक हटाएँ।'
+            : `${command === 'auto' ? 'Automatic जवाब' : 'Spam moderation'} बंद है।`;
+      }
+    }
+  }
+  // Moderation uses conservative deterministic evidence, never an LLM's ban decision.
+  if (conversation.group && groupSettings?.moderation && !command && text) {
+    const runtime = state.groups ??= {};
+    const action = inspectSpam(runtime, { chatId: message.chat.id, userId: message.from!.id,
+      messageId: message.message_id, text, now,
+      links: [...(message.entities ?? []), ...(message.caption_entities ?? [])].flatMap(item => item.url ? [item.url] : []),
+    });
+    if (action) {
+      const access = await deps.groupAccess?.(message.chat.id, message.from!.id);
+      if (access && !access.userIsAdmin && access.canDelete && access.canRestrict && deps.moderate) {
+        state.pending = { updateId: update.update_id, chatId: message.chat.id, messageId: message.message_id,
+          seekerId: id, lang: seeker.lang, depth: seeker.depth, history: [], nextChunk: 0, moderation: action,
+          messageThreadId: message.message_thread_id };
+        await deps.save(); await finishPending(state, deps); return;
+      }
+    }
+  }
+  // Quietly acknowledge unrelated group traffic, including non-question media.
+  if (conversation.group && !conversation.addressed && (!groupSettings?.autoReply || command || !text || text.length > 2000 || now - message.date * 1000 > 10 * 60_000)) {
+    state.offset = update.update_id + 1; await deps.save(); return;
+  }
+  let languageCode: string | undefined;
+  if (conversation.group && groupSettings?.autoReply && !command && text && text.length <= 2000 && now - message.date * 1000 <= 10 * 60_000 && !groupReply) {
+    const runtime = state.groups ??= {};
+    if (!deps.analyze || !reserveGroupIntake(runtime, message.from!.id, now)) {
+      state.offset = update.update_id + 1; await deps.save(); return;
+    }
+    await deps.save();
+    const analysis = await deps.analyze(text);
+    if (!analysis.isQuestion && !conversation.addressed) { state.offset = update.update_id + 1; await deps.save(); return; }
+    languageCode = analysis.languageCode;
+    if (isBotLanguage(languageCode)) seeker.lang = languageCode;
+  }
   const keyboard = conversation.group ? undefined : command === 'start' ? languageKeyboard('welcome')
     : ['language', 'languages'].includes(command ?? '') || (command === 'lang' && !isBotLanguage(text.split(/\s+/)[1] ?? '')) ? languageKeyboard(text.split(/\s+/)[1] === 'more' ? 'more' : 'global') : undefined;
   const groupLanguageMenu = ['language', 'languages'].includes(command ?? '')
     || (command === 'lang' && !isBotLanguage(text.split(/\s+/)[1] ?? ''));
-  let reply = conversation.group && groupLanguageMenu ? groupLanguages(seeker.lang)
+  let reply = groupReply ?? (conversation.group && groupLanguageMenu ? groupLanguages(seeker.lang)
     : conversation.group && (['start', 'help', 'privacy'].includes(command ?? '') || !text)
-      ? groupHelp(seeker.lang) : controlReply(text, seeker);
+      ? groupHelp(seeker.lang, groupSettings?.autoReply) : controlReply(text, seeker));
   if (!reply && (!text || text.length > 2000)) reply = seeker.lang === 'hi' ? 'कृपया अपना प्रश्न text में लिखें, अधिकतम 2000 अक्षर। अभी photo और voice का विश्लेषण उपलब्ध नहीं है।' : 'Please write a text question of at most 2000 characters. Photo and voice analysis are not available yet.';
   if (!reply && now - message.date * 1000 > 10 * 60_000) reply = seeker.lang === 'hi' ? 'आपका प्रश्न bot के offline होने के समय आया था। कृपया फिर भेजें ताकि अब उसका उत्तर दे सकूँ।' : 'Your question arrived while the bot was offline. Please send it again so I can answer now.';
   if (!reply && !reserveQuestion(state, conversation.usageId, deps)) reply = seeker.lang === 'hi' ? 'अभी उपयोग सीमा पूरी हुई है। लगातार प्रश्नों के बीच एक मिनट रुकें; दैनिक सीमा के लिए अगले दिन फिर प्रयास करें। /help और /course उपलब्ध हैं।' : 'The usage limit has been reached. Wait a minute between repeated questions, or return tomorrow for the daily limit. /help and /course remain available.';
@@ -261,6 +355,8 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
   state.pending = {
     updateId: update.update_id, chatId: message.chat.id, messageId: message.message_id, seekerId: id,
     lang: seeker.lang, depth: seeker.depth, history: [...seeker.history], nextChunk: 0,
+    ...(languageCode ? { languageCode } : {}),
+    ...(message.message_thread_id ? { messageThreadId: message.message_thread_id } : {}),
     ...(keyboard ? { keyboard } : {}),
     ...(reply ? { chunks: splitTelegramText(reply) } : { question: text }),
   };

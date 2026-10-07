@@ -16,6 +16,16 @@ export function parseTelegramUpdate(value: unknown): TelegramUpdate | null {
   if (!Number.isSafeInteger(data.update_id) || data.update_id < 0) return null;
   const message = data.message;
   if (message && (!Number.isSafeInteger(message.message_id) || !Number.isSafeInteger(message.date) || !message.chat || !Number.isSafeInteger(message.chat.id) || typeof message.chat.type !== 'string' || (message.text !== undefined && typeof message.text !== 'string') || (message.from && !Number.isSafeInteger(message.from.id)))) return null;
+  if (message) {
+    if (message.caption !== undefined && typeof message.caption !== 'string') return null;
+    if (message.message_thread_id !== undefined && !Number.isSafeInteger(message.message_thread_id)) return null;
+    for (const sender of [message.from, message.reply_to_message?.from]) {
+      if (sender && (!Number.isSafeInteger(sender.id) || (sender.username !== undefined && typeof sender.username !== 'string') || (sender.is_bot !== undefined && typeof sender.is_bot !== 'boolean'))) return null;
+    }
+    for (const entities of [message.entities, message.caption_entities]) {
+      if (entities !== undefined && (!Array.isArray(entities) || entities.length > 100 || entities.some(item => !item || typeof item.type !== 'string' || (item.url !== undefined && (typeof item.url !== 'string' || item.url.length > 2048))))) return null;
+    }
+  }
   const callback = data.callback_query;
   if (callback && (typeof callback.id !== 'string' || callback.id.length > 256 || !callback.from || !Number.isSafeInteger(callback.from.id) || (callback.data !== undefined && (typeof callback.data !== 'string' || callback.data.length > 64)) || (callback.message && (!Number.isSafeInteger(callback.message.message_id) || !callback.message.chat || !Number.isSafeInteger(callback.message.chat.id) || typeof callback.message.chat.type !== 'string')))) return null;
   return data;
@@ -40,8 +50,12 @@ export async function readWebhookBody(request: Request): Promise<unknown> {
 
 export async function runCloudUpdate(update: TelegramUpdate, store: CloudBotStore, dependencies: Omit<BotDependencies, 'save'>): Promise<'done' | 'busy'> {
   const message = update.message ?? (update.callback_query?.message ? { ...update.callback_query.message, from: update.callback_query.from } : undefined);
-  // Ignore unrelated group traffic before acquiring the shared database lease.
-  if (!message || !telegramConversation({ ...update, message: { date: 0, ...message } })) return 'done';
+  // Group configuration lives in the database. Inspect new human text there so
+  // automatic groups can process unmentioned questions; unrelated chats stay quiet.
+  if (!message || !message.from || message.from.is_bot) return 'done';
+  const isGroupText = ['group', 'supergroup'].includes(message.chat.type)
+    && message.from.id > 0 && 'date' in message && !!(message.text || message.caption);
+  if (!isGroupText && !telegramConversation({ ...update, message: { date: 0, ...message } })) return 'done';
   const owner = randomUUID();
   const envelope = await store.claim(owner);
   if (!envelope) return 'busy';

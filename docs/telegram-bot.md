@@ -70,7 +70,7 @@ not required. Use `/help@NirvanDhamGuideBot` for the group instructions.
 - Length: `/short@NirvanDhamGuideBot` or `/detailed@NirvanDhamGuideBot`.
 - Reset your own group context: `/new@NirvanDhamGuideBot` or `/forget@NirvanDhamGuideBot`.
 
-Only questions addressed to this bot are processed. Ordinary traffic, commands
+By default, only questions addressed to this bot are processed. Ordinary traffic, commands
 for other bots, channels and bot senders are ignored. A plain username mention
 is also supported when Telegram delivers it; the qualified `/ask` command works
 with privacy mode. Each member has separate context/preferences per group;
@@ -78,6 +78,61 @@ private chat history is never copied into a group. Group answers are public to
 the group's members. Quota counters are per Telegram user across all chats, so
 switching groups cannot reset the daily budget. Group language selection uses
 commands rather than shared inline buttons.
+
+### Automatic group questions and spam moderation
+
+An existing group admin can enable these independently, for that group only:
+
+```
+/auto@NirvanDhamGuideBot on
+/moderation@NirvanDhamGuideBot on
+```
+
+The bot must already be a group administrator. Moderation additionally requires
+delete-message and restrict-member permissions. Privacy mode does not need to
+be disabled: Telegram sends all human group messages to bot administrators.
+Other groups keep their existing behavior until their own admin opts in.
+
+In automatic mode, write a question directly. Gemma identifies questions and
+the language of each new message, including Hindi versus Nepali and Marathi.
+Greetings, announcements and quoted teaching passages normally stay quiet.
+The detected language overrides an earlier menu selection for that question.
+The 33-language manual menu remains available; automatic detection also accepts
+valid language codes recognized by ICU (for example Finnish). Quality outside
+the tested languages depends on the translation model; this is not a guarantee
+of every world language. Roman Hindi receives native-script Hindi answers.
+Question text and photo/video captions are supported; media itself is not analyzed.
+
+New human text messages in enabled groups are sent to Sarvam for classification.
+Non-questions are not kept in conversational history. Answer memory remains
+separate for each group/member and never uses private chat history. Classification
+has a separate bounded allowance: 10 messages/minute/person, 90/day/person and
+600/day total (UTC). Traffic beyond this allowance is skipped. Existing answer
+limits (30/person/day, 300 total/day, 5/minute/person) also remain in effect.
+
+Moderation uses deterministic rules, not the model's judgment:
+
+- Links alone, unfamiliar languages and quoted scam warnings are not violations.
+- A link with an obvious scam promotion is removed with a warning.
+- Four identical linked messages within a minute, or ten messages in twenty
+  seconds, trigger removal of the offending message and a one-hour posting mute.
+- Three detected violations in a day produce a 24-hour posting block.
+- Admins are exempt, and permissions/admin status are checked again immediately
+  before an action. This does not remove the account from the group or erase old
+  messages; Telegram supergroup bans forcibly erase history, so temporary posting
+  restrictions are used. This is bounded anti-spam, not detection of every scam.
+
+Spam checks keep hashed text fingerprints for up to a day and the latest 50
+moderation events in the existing private cloud state. Actual action execution
+uses the saved outbox; Telegram errors are sanitized. A retry after a checkpoint
+does not repeat the action. As with message delivery, a crash between an API call
+and saving can repeat a delete/restriction call, so actions use fixed expiry times.
+
+Admin controls after activation: `/auto off`, `/moderation off`, `/modstatus`.
+To lift a bot-recorded active restriction, reply to the member's message with
+`/unban`, or use `/unban USER_ID` from the moderation notice. Manual restrictions
+without an active bot action must be reviewed in Telegram's member settings.
+Group replies are paced to respect Telegram's 20 messages/minute guidance.
 
 ## Local polling fallback
 

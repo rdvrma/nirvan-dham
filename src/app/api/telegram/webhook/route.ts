@@ -1,6 +1,6 @@
 import { createCloudBotStore } from '@/lib/telegram/cloud-store';
 import { createTelegramTransport } from '@/lib/telegram/transport';
-import { generateTelegramAnswer } from '@/lib/telegram/answer';
+import { analyzeGroupMessage, generateTelegramAnswer } from '@/lib/telegram/answer';
 import { isWebhookAuthorized, parseTelegramUpdate, readWebhookBody, runCloudUpdate } from '@/lib/telegram/webhook';
 
 export const runtime = 'nodejs';
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
     const globalDailyLimit = Number(process.env.TELEGRAM_GLOBAL_DAILY_LIMIT || 300);
     if (![dailyLimit, globalDailyLimit].every((n) => Number.isSafeInteger(n) && n > 0)) throw new Error('Invalid limit');
     const result = await runCloudUpdate(update, createCloudBotStore(), {
-      ...createTelegramTransport(), answer: generateTelegramAnswer, now: Date.now, dailyLimit, globalDailyLimit,
+      ...createTelegramTransport(), answer: generateTelegramAnswer, analyze: analyzeGroupMessage, now: Date.now, dailyLimit, globalDailyLimit,
     });
     return result === 'done' ? Response.json({ ok: true }) : new Response('Busy; retry', { status: 503, headers: { 'Retry-After': '5' } });
   } catch {

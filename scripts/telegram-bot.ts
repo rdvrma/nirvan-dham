@@ -3,7 +3,8 @@ import { access, mkdir, open, readFile, rename, rm, writeFile } from 'node:fs/pr
 import { homedir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
-import { generateTelegramAnswer } from '../src/lib/telegram/answer';
+import { analyzeGroupMessage, generateTelegramAnswer } from '../src/lib/telegram/answer';
+import { createTelegramTransport } from '../src/lib/telegram/transport';
 import { emptyBotState, finishPending, handleTelegramUpdate, type BotState, type TelegramUpdate, type BotDependencies } from '../src/lib/telegram/bot';
 
 loadEnvConfig(process.cwd());
@@ -79,11 +80,14 @@ async function main() {
       if ((error as NodeJS.ErrnoException).code !== 'ENOENT') throw error;
       state = emptyBotState();
     }
+    const groupTransport = createTelegramTransport();
     const deps: BotDependencies = {
+      groupAccess: groupTransport.groupAccess, moderate: groupTransport.moderate, unban: groupTransport.unban,
       now: Date.now,
       dailyLimit: positiveLimit('TELEGRAM_DAILY_LIMIT', 30),
       globalDailyLimit: positiveLimit('TELEGRAM_GLOBAL_DAILY_LIMIT', 300),
       answer: generateTelegramAnswer,
+      analyze: analyzeGroupMessage,
       save: async () => {
         await writeFile(`${file}.tmp`, JSON.stringify(state), { mode: 0o600 });
         await rename(`${file}.tmp`, file);
