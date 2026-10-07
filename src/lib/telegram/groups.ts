@@ -44,7 +44,7 @@ export function reserveGroupIntake(runtime: GroupRuntime, userId: number, now: n
 
 /** Conservative rules: links alone and unfamiliar languages are never a violation. */
 export function inspectSpam(runtime: GroupRuntime, input: {
-  chatId: number; userId: number; messageId: number; text: string; links?: string[]; now: number;
+  chatId: number; userId: number; messageId: number; text: string; links?: string[]; now: number; sentAt?: number;
 }): ModerationAction | null {
   const records = runtime.spam ??= {};
   for (const [key, value] of Object.entries(records)) {
@@ -58,17 +58,20 @@ export function inspectSpam(runtime: GroupRuntime, input: {
   }
   const key = `${input.chatId}:${input.userId}`;
   const record = records[key] ??= { recent: [], strikes: 0, lastViolation: 0 };
+  // Queue/retry latency must not conceal a burst. Use Telegram's signed update
+  // timestamp for the detection window, and wall time for restriction expiry.
+  const eventTime = Math.min(input.now, Math.max(input.now - 600_000, input.sentAt ?? input.now));
   const normalized = input.text.normalize('NFKC').replace(/[\u200B-\u200D\uFEFF]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
   const fingerprint = createHash('sha256').update(normalized).digest('hex').slice(0, 24);
-  record.recent = record.recent.filter(item => input.now - item.time < 60_000).slice(-11);
-  record.recent.push({ time: input.now, fingerprint });
+  record.recent = record.recent.filter(item => Math.abs(eventTime - item.time) < 60_000).slice(-11);
+  record.recent.push({ time: eventTime, fingerprint });
   const hasLink = /(?:https?:\/\/|www\.|t\.me\/)/i.test(normalized) || !!input.links?.length;
   const promotion = /(?:guaranteed\s+(?:profit|returns?)|double\s+your\s+money|free\s+crypto\s+airdrop|casino\s+(?:bonus|signup)|porn\s+(?:chat|video)|xxx\s+(?:chat|video)|पैस[ाे]\s+दोगुन[ाे]|गारंटीड\s+(?:कमाई|मुनाफा))/i.test(normalized);
-  const quotedWarning = /(?:scam|fraud|beware|avoid|don't|do not|धोखाधड़ी|सावधान|फ्रॉड|ठगी)/i.test(normalized);
+  const quotedWarning = /(?:scam|fraud|beware|avoid|don't|do not|धोखाधड़ी|सावधान|फ्रॉड|ठगी|[?？])/i.test(normalized);
   let reason: ModerationAction['reason'] | undefined;
   if (hasLink && promotion && !quotedWarning) reason = 'scam-promotion';
   else if (hasLink && normalized.length >= 30 && record.recent.filter(item => item.fingerprint === fingerprint).length >= 4) reason = 'repeated-links';
-  else if (record.recent.filter(item => input.now - item.time < 20_000).length >= 10) reason = 'flood';
+  else if (record.recent.filter(item => Math.abs(eventTime - item.time) < 20_000).length >= 10) reason = 'flood';
   if (!reason) return null;
   if (input.now - record.lastViolation > 86_400_000) record.strikes = 0;
   record.strikes++; record.lastViolation = input.now;

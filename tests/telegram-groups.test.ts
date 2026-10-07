@@ -66,6 +66,7 @@ test('normal links and scam warnings are safe; repeat links, flood and repeated 
   const inspect = (text: string, id: number, user = 50) => inspectSpam(runtime, { chatId, userId: user, messageId: id, text, now: now + id * 100 });
   assert.equal(inspect('Read this teaching https://nirvandham.in', 1), null);
   assert.equal(inspect('Beware: guaranteed profit https://example.com scam', 2), null);
+  assert.equal(inspect('Is guaranteed profit real? https://example.com', 2, 80), null);
   const repeated = 'Please visit this long repeated promotional link https://example.com';
   for (let i = 3; i <= 5; i++) assert.equal(inspect(repeated, i), null);
   assert.equal(inspect(repeated, 6)!.action, 'mute');
@@ -75,6 +76,15 @@ test('normal links and scam warnings are safe; repeat links, flood and repeated 
   assert.equal(block.until, Math.floor((now + 800) / 1000) + 86_400);
   for (let i = 1; i < 10; i++) assert.equal(inspect('different message ' + i, i, 60), null);
   assert.equal(inspect('message 10', 10, 60)!.reason, 'flood');
+});
+
+test('slow webhook processing does not hide a burst sent within twenty seconds', () => {
+  const runtime: GroupRuntime = {};
+  let action;
+  for (let i = 0; i < 10; i++) action = inspectSpam(runtime, { chatId, userId: 80, messageId: i,
+    text: 'burst ' + i, now: now + i * 20_000, sentAt: now + i * 1000 });
+  assert.equal(action!.reason, 'flood');
+  assert.equal(action!.until, Math.floor((now + 180_000) / 1000) + 3600);
 });
 
 test('admins are protected and a saved moderation notice retries without acting twice', async () => {

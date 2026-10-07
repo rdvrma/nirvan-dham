@@ -312,7 +312,7 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
   if (conversation.group && groupSettings?.moderation && !command && text) {
     const runtime = state.groups ??= {};
     const action = inspectSpam(runtime, { chatId: message.chat.id, userId: message.from!.id,
-      messageId: message.message_id, text, now,
+      messageId: message.message_id, text, now, sentAt: message.date * 1000,
       links: [...(message.entities ?? []), ...(message.caption_entities ?? [])].flatMap(item => item.url ? [item.url] : []),
     });
     if (action) {
