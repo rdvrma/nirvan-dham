@@ -2,6 +2,10 @@ import type { AnswerDepth, GuideMessage } from '../ai-guide/answer';
 import { BOT_LANGUAGES, isBotLanguage, languageKeyboard, type BotLanguage, type LanguageKeyboard } from './languages';
 import { localizeControlText } from './ui';
 
+export const TELEGRAM_BOT_USERNAME = 'NirvanDhamGuideBot';
+
+interface TelegramSender { id: number; is_bot?: boolean; username?: string }
+
 export interface TelegramUpdate {
   update_id: number;
   message?: {
@@ -9,7 +13,8 @@ export interface TelegramUpdate {
     date: number;
     text?: string;
     chat: { id: number; type: string };
-    from?: { id: number; is_bot?: boolean };
+    from?: TelegramSender;
+    reply_to_message?: { from?: TelegramSender };
   };
   callback_query?: {
     id: string;
@@ -36,6 +41,7 @@ interface PendingAnswer {
   updateId: number;
   chatId: number;
   messageId: number;
+  seekerId?: string;
   question?: string;
   lang: BotLanguage;
   depth: 'detailed' | 'short';
@@ -68,6 +74,43 @@ export interface BotDependencies {
 
 export function emptyBotState(): BotState {
   return { version: 1, offset: 0, users: {}, usage: {}, globalUsage: { day: '', count: 0 } };
+}
+
+/** Group context belongs to one sender in one chat, never to the entire group. */
+export function telegramConversation(update: TelegramUpdate): { key: string; usageId: string; text: string; group: boolean } | null {
+  const message = update.message;
+  if (!message?.from || message.from.is_bot) return null;
+  const text = message.text?.trim() ?? '';
+  if (message.chat.type === 'private') return message.from.id === message.chat.id
+    ? { key: String(message.chat.id), usageId: String(message.from.id), text, group: false } : null;
+  if (!['group', 'supergroup'].includes(message.chat.type) || message.from.id <= 0) return null;
+  const command = text.match(/^\/(\w+)(?:@([A-Za-z0-9_]+))?(?:\s|$)/);
+  const username = TELEGRAM_BOT_USERNAME.toLowerCase();
+  // Commands aimed at another bot must never be consumed, even in a reply.
+  if (command?.[2] && command[2].toLowerCase() !== username) return null;
+  const ownCommand = command?.[2]?.toLowerCase() === username;
+  const ownReply = message.reply_to_message?.from?.is_bot === true
+    && message.reply_to_message.from.username?.toLowerCase() === username;
+  const mention = new RegExp(`@${TELEGRAM_BOT_USERNAME}(?![A-Za-z0-9_])`, 'ig');
+  const mentioned = mention.test(text);
+  if (!ownCommand && !ownReply && !mentioned && command?.[1].toLowerCase() !== 'ask') return null;
+  return {
+    key: `group:${message.chat.id}:${message.from.id}`, usageId: String(message.from.id), group: true,
+    text: text.replace(mention, '').replace(/^\/ask(?:\s|$)/i, '').trim(),
+  };
+}
+
+function groupHelp(lang: BotLanguage): string {
+  return lang === 'hi'
+    ? 'इस group में सवाल ऐसे पूछें:\n/ask@NirvanDhamGuideBot साक्षीभाव क्या है?\n\nअगला सवाल मेरे जवाब पर Reply करके पूछें।\n/language@NirvanDhamGuideBot या /lang@NirvanDhamGuideBot en से अपनी भाषा चुनें।\n/short@NirvanDhamGuideBot — छोटा जवाब\n/detailed@NirvanDhamGuideBot — विस्तृत जवाब\n/new@NirvanDhamGuideBot — अपना नया संवाद\n\nहर सदस्य की भाषा और संदर्भ अलग हैं। Group में प्रश्न और जवाब सभी सदस्यों को दिखाई देते हैं; आपके private bot संवाद का संदर्भ यहाँ इस्तेमाल नहीं होता। सवाल और इस group में आपके हाल के bot संवाद Sarvam AI को उत्तर बनाने के लिए भेजे जाते हैं। निजी बातचीत: https://t.me/NirvanDhamGuideBot'
+    : 'Ask in this group:\n/ask@NirvanDhamGuideBot What is witness awareness?\n\nReply to my answer to ask a follow-up.\n/lang@NirvanDhamGuideBot en — choose your language code\n/short@NirvanDhamGuideBot — shorter answers\n/detailed@NirvanDhamGuideBot — detailed answers\n/new@NirvanDhamGuideBot — your fresh conversation\n\nEach member has separate preferences and context. Group questions and answers are visible to all members; private bot history is never used here. Your question and recent bot conversation in this group are sent to Sarvam AI to answer. Private chat: https://t.me/NirvanDhamGuideBot';
+}
+
+function groupLanguages(lang: BotLanguage): string {
+  const instruction = lang === 'hi'
+    ? 'अपनी भाषा का code भेजें, जैसे /lang@NirvanDhamGuideBot hi या /lang@NirvanDhamGuideBot es। यह पसंद केवल इस group में आपके लिए बदलेगी।'
+    : 'Send your language code, for example /lang@NirvanDhamGuideBot en or /lang@NirvanDhamGuideBot es. This changes only your preference in this group.';
+  return `${instruction}\n\n${Object.entries(BOT_LANGUAGES).map(([code, value]) => `${code} — ${value.label}`).join('\n')}`;
 }
 
 /** Plain text avoids Markdown escaping failures; split on paragraphs where possible. */
@@ -161,7 +204,7 @@ export async function finishPending(state: BotState, deps: BotDependencies): Pro
     await deps.save();
   }
   if (pending.answer && pending.question) {
-    const seeker = state.users[String(pending.chatId)];
+    const seeker = state.users[pending.seekerId ?? String(pending.chatId)];
     if (seeker) seeker.history = [...pending.history, { role: 'user', content: pending.question }, { role: 'assistant', content: pending.answer }].slice(-8) as GuideMessage[];
   }
   state.offset = Math.max(state.offset, pending.updateId + 1);
@@ -184,13 +227,14 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
       message = { message_id: callback.message.message_id, date: Math.floor(deps.now() / 1000), chat: callback.message.chat, from: callback.from, text: `/language ${data.slice(6)}` };
     }
   }
-  if (!message || message.chat.type !== 'private' || !message.from || message.from.is_bot || message.from.id !== message.chat.id) {
+  const conversation = telegramConversation({ ...update, message });
+  if (!message || !conversation) {
     state.offset = update.update_id + 1;
     await deps.save();
     return;
   }
   const now = deps.now();
-  const id = String(message.chat.id);
+  const id = conversation.key;
   // Store bounded conversation context, and discard old histories even without /forget.
   for (const [key, user] of Object.entries(state.users)) {
     if (now - user.lastSeen > 7 * 86_400_000) delete state.users[key];
@@ -201,17 +245,21 @@ export async function handleTelegramUpdate(update: TelegramUpdate, state: BotSta
   }
   const seeker = state.users[id] ??= { lang: 'hi', depth: 'detailed', history: [], lastSeen: now };
   seeker.lastSeen = now;
-  const text = message.text?.trim() ?? '';
+  const text = conversation.text;
   const command = text.match(/^\/(\w+)(?:@\w+)?(?:\s|$)/)?.[1]?.toLowerCase();
-  const keyboard = command === 'start' ? languageKeyboard('welcome')
+  const keyboard = conversation.group ? undefined : command === 'start' ? languageKeyboard('welcome')
     : ['language', 'languages'].includes(command ?? '') || (command === 'lang' && !isBotLanguage(text.split(/\s+/)[1] ?? '')) ? languageKeyboard(text.split(/\s+/)[1] === 'more' ? 'more' : 'global') : undefined;
-  let reply = controlReply(text, seeker);
+  const groupLanguageMenu = ['language', 'languages'].includes(command ?? '')
+    || (command === 'lang' && !isBotLanguage(text.split(/\s+/)[1] ?? ''));
+  let reply = conversation.group && groupLanguageMenu ? groupLanguages(seeker.lang)
+    : conversation.group && (['start', 'help', 'privacy'].includes(command ?? '') || !text)
+      ? groupHelp(seeker.lang) : controlReply(text, seeker);
   if (!reply && (!text || text.length > 2000)) reply = seeker.lang === 'hi' ? 'कृपया अपना प्रश्न text में लिखें, अधिकतम 2000 अक्षर। अभी photo और voice का विश्लेषण उपलब्ध नहीं है।' : 'Please write a text question of at most 2000 characters. Photo and voice analysis are not available yet.';
   if (!reply && now - message.date * 1000 > 10 * 60_000) reply = seeker.lang === 'hi' ? 'आपका प्रश्न bot के offline होने के समय आया था। कृपया फिर भेजें ताकि अब उसका उत्तर दे सकूँ।' : 'Your question arrived while the bot was offline. Please send it again so I can answer now.';
-  if (!reply && !reserveQuestion(state, id, deps)) reply = seeker.lang === 'hi' ? 'अभी उपयोग सीमा पूरी हुई है। लगातार प्रश्नों के बीच एक मिनट रुकें; दैनिक सीमा के लिए अगले दिन फिर प्रयास करें। /help और /course उपलब्ध हैं।' : 'The usage limit has been reached. Wait a minute between repeated questions, or return tomorrow for the daily limit. /help and /course remain available.';
+  if (!reply && !reserveQuestion(state, conversation.usageId, deps)) reply = seeker.lang === 'hi' ? 'अभी उपयोग सीमा पूरी हुई है। लगातार प्रश्नों के बीच एक मिनट रुकें; दैनिक सीमा के लिए अगले दिन फिर प्रयास करें। /help और /course उपलब्ध हैं।' : 'The usage limit has been reached. Wait a minute between repeated questions, or return tomorrow for the daily limit. /help and /course remain available.';
   if (reply) reply = localizeControlText(reply, seeker.lang);
   state.pending = {
-    updateId: update.update_id, chatId: message.chat.id, messageId: message.message_id,
+    updateId: update.update_id, chatId: message.chat.id, messageId: message.message_id, seekerId: id,
     lang: seeker.lang, depth: seeker.depth, history: [...seeker.history], nextChunk: 0,
     ...(keyboard ? { keyboard } : {}),
     ...(reply ? { chunks: splitTelegramText(reply) } : { question: text }),

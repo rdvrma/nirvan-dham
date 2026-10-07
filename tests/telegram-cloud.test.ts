@@ -71,6 +71,24 @@ test('concurrent invocations cannot spend quota or deliver twice', async () => {
   assert.equal(f.state().state.globalUsage.count, 1);
 });
 
+test('cloud accepts addressed group questions and ignores unrelated messages before locking', async () => {
+  const f = fixture();
+  const group = update(1);
+  group.message!.chat = { id: -900, type: 'group' };
+  group.message!.text = 'ordinary group conversation';
+  const claim = f.store.claim;
+  let claims = 0;
+  f.store.claim = async (owner) => { claims++; return claim(owner); };
+  assert.equal(await runCloudUpdate(group, f.store, f.deps), 'done');
+  assert.equal(claims, 0);
+  group.message!.text = '/ask@NirvanDhamGuideBot What is self-inquiry?';
+  assert.equal(await runCloudUpdate(group, f.store, f.deps), 'done');
+  assert.equal(await runCloudUpdate(group, f.store, f.deps), 'done');
+  assert.equal(f.answerCount(), 1);
+  assert.equal(f.state().state.users['group:-900:50'].history.length, 2);
+  assert.deepEqual(f.state().completed, [1]);
+});
+
 test('an undeliverable old outbox does not acknowledge and lose a newer question', async () => {
   const f = fixture();
   f.deps.send = async () => { throw new TelegramTransportError(0); };

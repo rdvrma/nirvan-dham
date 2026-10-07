@@ -58,6 +58,27 @@ Cloud availability depends on Vercel, Supabase and Sarvam, including free-tier
 limits. Sarvam requests remain billable. The existing Supabase keepalive cron
 is retained. No paid hosting plan is automatically enabled.
 
+## Add the same bot to a group
+
+Open `https://t.me/NirvanDhamGuideBot?startgroup=true`, select the group and add
+the bot as a normal member. Keep Telegram privacy mode enabled; admin access is
+not required. Use `/help@NirvanDhamGuideBot` for the group instructions.
+
+- Ask: `/ask@NirvanDhamGuideBot साक्षीभाव क्या है?`
+- Follow up: Reply to a message from the bot and type your next question.
+- Language: `/lang@NirvanDhamGuideBot es` (or `hi`, `en` and other supported codes).
+- Length: `/short@NirvanDhamGuideBot` or `/detailed@NirvanDhamGuideBot`.
+- Reset your own group context: `/new@NirvanDhamGuideBot` or `/forget@NirvanDhamGuideBot`.
+
+Only questions addressed to this bot are processed. Ordinary traffic, commands
+for other bots, channels and bot senders are ignored. A plain username mention
+is also supported when Telegram delivers it; the qualified `/ask` command works
+with privacy mode. Each member has separate context/preferences per group;
+private chat history is never copied into a group. Group answers are public to
+the group's members. Quota counters are per Telegram user across all chats, so
+switching groups cannot reset the daily budget. Group language selection uses
+commands rather than shared inline buttons.
+
 ## Local polling fallback
 
 1. Create a bot with the verified `@BotFather` account using `/newbot`.
@@ -89,12 +110,13 @@ storage. It contains no Telegram/Sarvam credentials.
 
 `/forget` clears the bot's conversation memory but does not delete messages from
 Telegram or data retained by Sarvam. Inactive histories are removed after seven
-days when another message is processed. User histories are separated by chat ID.
+days when another message is processed. Private histories are separated by chat
+ID; group histories are separated by group ID and sender ID.
 Names, phone numbers and contacts are not stored. Questions and recent messages
 are transmitted to Sarvam to generate a reply; disclose this before use.
 
-Only private chats are processed. Group messages and messages from bots are
-ignored. Pending answers are saved before delivery and resumed after restarts;
+Private chats and explicitly addressed group questions are processed. Messages
+from bots are ignored. Pending answers are saved before delivery and resumed after restarts;
 successfully checkpointed chunks are not resent. Telegram does not provide an
 idempotency key for `sendMessage`: a crash between successful sending and saving,
 or an ambiguous network timeout, can still duplicate a chunk. An active webhook

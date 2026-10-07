@@ -76,7 +76,7 @@ test('global budget and minute budget bound expensive calls', async () => {
   assert.equal(f.calls.length, 5);
 });
 
-test('groups, bots and oversized/media questions never call AI', async () => {
+test('unaddressed groups, bots and oversized/media questions never call AI', async () => {
   const f = fixture();
   const group = f.message(1, 'secret group text');
   group.message!.chat.type = 'group';
@@ -131,4 +131,68 @@ test('splitting keeps paragraph boundaries, emoji and Telegram limit', () => {
   assert.equal(chunks.join(''), input);
   assert.ok(chunks.every((chunk) => chunk.length <= 3500));
   assert.ok(chunks.every((chunk) => !/[\uD800-\uDBFF]$/.test(chunk)));
+});
+
+function groupMessage(f: ReturnType<typeof fixture>, id: number, text: string, user = 100, chat = -900): TelegramUpdate {
+  return { update_id: id, message: { message_id: id, date: f.deps.now() / 1000, text,
+    from: { id: user }, chat: { id: chat, type: 'group' } } };
+}
+
+test('group questions require our command, mention or reply; unrelated traffic and other bots are ignored', async () => {
+  const f = fixture();
+  for (const [i, text] of ['सुप्रभात', '/help', '/ask@OtherBot ध्यान?', '@NirvanDhamGuideBotFake ध्यान?'].entries()) {
+    await handleTelegramUpdate(groupMessage(f, i + 1, text), f.state, f.deps);
+  }
+  assert.equal(f.calls.length, 0);
+  assert.equal(f.sent.length, 0);
+  await handleTelegramUpdate(groupMessage(f, 5, '/ask@NirvanDhamGuideBot साक्षीभाव क्या है?'), f.state, f.deps);
+  assert.equal(f.calls[0].question, 'साक्षीभाव क्या है?');
+  assert.equal(f.sent[0].id, -900);
+  const mention = groupMessage(f, 6, '@NirvanDhamGuideBot ध्यान क्या है?');
+  mention.message!.chat.type = 'supergroup';
+  await handleTelegramUpdate(mention, f.state, f.deps);
+  assert.equal(f.calls[1].question, 'ध्यान क्या है?');
+  const followup = groupMessage(f, 7, 'और समझाएँ');
+  followup.message!.reply_to_message = { from: { id: 8678629807, is_bot: true, username: 'NirvanDhamGuideBot' } };
+  await handleTelegramUpdate(followup, f.state, f.deps);
+  assert.equal(f.calls[2].history.length, 4);
+});
+
+test('group members, other groups and private chats have separate context; quota remains per person', async () => {
+  const f = fixture();
+  await handleTelegramUpdate(f.message(1, 'Private question'), f.state, f.deps);
+  await handleTelegramUpdate(groupMessage(f, 2, '/lang@NirvanDhamGuideBot en'), f.state, f.deps);
+  await handleTelegramUpdate(groupMessage(f, 3, '/ask@NirvanDhamGuideBot Group question'), f.state, f.deps);
+  assert.equal(f.calls[1].lang, 'en');
+  assert.deepEqual(f.calls[1].history, []);
+  const otherMember = groupMessage(f, 4, 'Follow-up', 200);
+  otherMember.message!.reply_to_message = { from: { id: 8678629807, is_bot: true, username: 'NirvanDhamGuideBot' } };
+  await handleTelegramUpdate(otherMember, f.state, f.deps);
+  assert.equal(f.calls[2].lang, 'hi');
+  assert.deepEqual(f.calls[2].history, []);
+  await handleTelegramUpdate(groupMessage(f, 5, '/ask@NirvanDhamGuideBot Other group', 100, -901), f.state, f.deps);
+  assert.equal(f.calls[3].lang, 'hi');
+  assert.deepEqual(f.calls[3].history, []);
+  await handleTelegramUpdate(groupMessage(f, 6, '/forget@NirvanDhamGuideBot'), f.state, f.deps);
+  assert.deepEqual(f.state.users['group:-900:100'].history, []);
+  assert.equal(f.state.users['100'].history.length, 2);
+  assert.equal(f.state.users['group:-900:200'].history.length, 2);
+  assert.equal(f.state.usage['100'].count, 3);
+  f.deps.dailyLimit = 3;
+  await handleTelegramUpdate(f.message(7, 'Quota cannot be bypassed'), f.state, f.deps);
+  assert.equal(f.calls.length, 4);
+});
+
+test('a group outbox resumes and saves memory to its original member', async () => {
+  const f = fixture();
+  const send = f.deps.send;
+  f.deps.send = async () => { throw new Error('temporary delivery failure'); };
+  await assert.rejects(handleTelegramUpdate(groupMessage(f, 1, '/ask@NirvanDhamGuideBot ध्यान?'), f.state, f.deps));
+  const restored = JSON.parse(f.disk());
+  f.deps.send = send;
+  f.deps.save = async () => undefined;
+  await finishPending(restored, f.deps);
+  assert.equal(restored.users['group:-900:100'].history.length, 2);
+  assert.equal(restored.users['-900'], undefined);
+  assert.equal(f.calls.length, 1);
 });

@@ -1,5 +1,5 @@
 import { randomUUID, timingSafeEqual } from 'node:crypto';
-import { finishPending, handleTelegramUpdate, type BotDependencies, type TelegramUpdate } from './bot';
+import { finishPending, handleTelegramUpdate, telegramConversation, type BotDependencies, type TelegramUpdate } from './bot';
 import type { CloudBotStore } from './cloud-store';
 import { TelegramTransportError } from './transport';
 
@@ -40,8 +40,8 @@ export async function readWebhookBody(request: Request): Promise<unknown> {
 
 export async function runCloudUpdate(update: TelegramUpdate, store: CloudBotStore, dependencies: Omit<BotDependencies, 'save'>): Promise<'done' | 'busy'> {
   const message = update.message ?? (update.callback_query?.message ? { ...update.callback_query.message, from: update.callback_query.from } : undefined);
-  // Private questions only; unsupported updates are safely acknowledged.
-  if (!message || message.chat.type !== 'private' || !message.from || message.from.is_bot || message.from.id !== message.chat.id) return 'done';
+  // Ignore unrelated group traffic before acquiring the shared database lease.
+  if (!message || !telegramConversation({ ...update, message: { date: 0, ...message } })) return 'done';
   const owner = randomUUID();
   const envelope = await store.claim(owner);
   if (!envelope) return 'busy';
