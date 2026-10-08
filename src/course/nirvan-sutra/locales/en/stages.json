@@ -1,0 +1,347 @@
+{
+ "$comment": "English stage texts, transcreated from the Hindi source (locales/hi/stages.json). Sanskrit terms are kept and explained. Status machine: awaiting review.",
+ "locale": "en",
+ "stages": {
+  "S01": {
+   "status": "machine",
+   "title": "Ajñāna — Ignorance", "subtitle": "Not knowing one's own nature",
+   "centralInquiry": "What you search for outside — is it already with you?",
+   "objective": "To see that the ignorance Jñāna Mārga speaks of is not a lack of information, but a mistake about who one is.",
+   "essence": "Ignorance here does not mean foolishness or a lack of education. A very learned person can still live taking themselves to be the body, the mind or their own story. As a rope seen at dusk looks like a snake and fear arises, so not seeing one's own nature gives rise to desire, fear, comparison and sorrow. Ignorance does not have to be fought: as darkness is gone the moment a lamp is lit, the mistake is gone when one sees clearly.",
+   "pointers": ["Ajñāna = not knowing one's own nature", "Not missing information — a mistaken identity", "Ignorance covers the truth; it creates nothing", "Ignorance ends not by fighting but in the light of understanding", "Desire, fear, comparison, sorrow — one root"],
+   "distinctions": [
+    {"left": "Not knowing an object", "right": "Not knowing the knower", "note": "Not knowing a city's name is the first; taking the one who knows to be a body or a thought is the second. Jñāna Mārga speaks of the second."},
+    {"left": "Darkness", "right": "An enemy", "note": "Ignorance is like darkness — it is not driven out; when the light comes, it is simply not there."}
+   ],
+   "observation": {"title": "One minute: seen or learnt?", "steps": ["Sit quietly for one minute.", "Whenever a thought like ‘I am like this’ arises, note it.", "Ask each one: did I see this directly, or did I learn it somewhere?"]},
+   "misconception": {"myth": "Ignorance is foolishness", "truth": "Ignorance is not a lack of intelligence, nor a sin — it is only not seeing oneself directly. Its remedy is to look at oneself directly."},
+   "reflectionPrompt": "Which one thing about yourself did you find today that you had not seen, only assumed?",
+   "check": [
+    {"id": "S01-C1", "prompt": "A professor knows every subject, yet stays restless for days after hearing criticism. From the view of Jñāna Mārga, which ignorance shows here?", "options": ["He should study more subjects", "He takes himself to be his image and role", "His intellect is weak", "This is not ignorance, only sensitivity"], "explanation": "The ignorance of Jñāna Mārga is not a lack of information but a mistaken identity — taking oneself to be an image or a role. That is why a learned person can be hurt too.", "revisit": "Key pointer: ‘Not missing information — a mistaken identity’"},
+    {"id": "S01-C2", "prompt": "In the rope-and-snake example, what happens when the lamp is lit?", "options": ["The snake turns into a rope", "The snake runs away", "It is seen that the snake never was", "One learns to suppress the fear"], "explanation": "The lamp changes nothing; it only shows that what was there was always a rope. Ignorance covers the truth; it creates nothing.", "revisit": "Essence: ‘Ignorance covers the truth; it creates nothing’"},
+    {"id": "S01-C3", "prompt": "Someone notices comparison and envy in themselves again and again. According to Jñāna Mārga, what should be examined next?", "options": ["Keeping away from people who compare", "Forcefully suppressing the envy", "Seeing which belief about ‘I’ the comparison rests on", "Trying to become more successful"], "explanation": "Desire, fear, comparison and sorrow share one root — a belief about oneself. Looking at that belief directly is the step of Jñāna Mārga.", "revisit": "Key pointer: ‘Desire, fear, comparison, sorrow — one root’"}
+   ]
+  },
+  "S02": {
+   "status": "machine",
+   "title": "Jijñāsā — Inquiry", "subtitle": "A true longing to know the truth",
+   "centralInquiry": "Is there a question sleeping inside you too?",
+   "objective": "To see the difference between an ordinary curious mind and the inquiry that turns back on the one who asks.",
+   "essence": "A child asks ‘why?’ about everything; grown up, the same mind starts collecting information. Spiritual inquiry is different — not a heap of answers, but a search for the one who asks. The musk deer searches the whole forest for the fragrance that is in itself. Sorrow, death and uncertainty are not punishments but doors through which this question wakes. Some questions are not answered at once; one lives with them.",
+   "pointers": ["Jijñāsā = the wish to know", "Curiosity collects · inquiry turns inward", "Sorrow and death — doors, not punishments", "Some questions have to be lived with"],
+   "distinctions": [
+    {"left": "Curiosity", "right": "Jijñāsā", "note": "Curiosity adds new information; inquiry makes the knower itself the question."},
+    {"left": "Inquiry", "right": "Doubt", "note": "Doubt wants to knock everything down; inquiry wants to reach the truth and stays open to it."}
+   ],
+   "observation": {"title": "One minute with one question", "steps": ["Sit at ease with your eyes open.", "Hold this question inside: ‘Who is the one knowing all this?’", "Do not hurry to make an answer; stay with the question alone for a minute."]},
+   "misconception": {"myth": "Myth 1: doubting everything", "truth": "Inquiry is not a game of doubt. It is an honest openness to the truth, which examines an answer when it comes, and also accepts it."},
+   "reflectionPrompt": "Which event in your life first woke a question like ‘Who am I?’ in you?",
+   "check": [
+    {"id": "S02-C1", "prompt": "Rina watches new spiritual books and videos every week but never examines anything about herself. What is this?", "options": ["Deep inquiry", "Information-gathering curiosity", "Mumukṣutva", "Doubt"], "explanation": "Curiosity collects, inquiry turns inward. When the search never reaches the one who asks, it remains a collection of information.", "revisit": "Key pointer: ‘Curiosity collects · inquiry turns inward’"},
+    {"id": "S02-C2", "prompt": "After the death of a loved one, the question ‘What is life?’ arises. How does Jñāna Mārga see this question?", "options": ["A delusion of a weak mind", "A punishment best forgotten", "A door through which a true search can begin", "Only a symptom of grief"], "explanation": "Sorrow and death are doors, not punishments. The question they wake can become the seed of inquiry.", "revisit": "Key pointer: ‘Sorrow and death — doors, not punishments’"},
+    {"id": "S02-C3", "prompt": "As soon as ‘Who am I?’ is asked, the mind repeats an answer from a book. What is useful next?", "options": ["Making the memorised answer firm", "Dropping the question, since an answer came", "Setting the answer aside and staying with the question a while", "Looking for a new answer in another book"], "explanation": "Some questions have to be lived with. A borrowed answer closes the question; staying with it keeps it alive.", "revisit": "Key pointer: ‘Some questions have to be lived with’"}
+   ]
+  },
+  "S03": {
+   "status": "machine",
+   "title": "Viveka — Discernment", "subtitle": "Telling what changes from what knows",
+   "centralInquiry": "Glitter and truth — which touchstone tells them apart?",
+   "objective": "To recognise in one's own experience the distinction between the seer and the seen — the one who sees and what is seen.",
+   "essence": "A jeweller tests gold on a touchstone — not by its shine, but by testing. Viveka is that touchstone: the distinction between what changes and what knows the change. The eye sees the pot, the mind knows the eye, and the witness knows the mind. What is seen cannot be the seer. Discernment works not only in meditation but in everyday decisions.",
+   "pointers": ["Viveka = distinguishing the lasting from the passing", "Viveka = not cleverness, clarity", "What is seen is not the seer", "Discernment in daily life"],
+   "distinctions": [
+    {"left": "The seer (dṛk)", "right": "The seen (dṛśya)", "note": "What is being seen is not the one who sees. The body, thoughts and feelings are seen."},
+    {"left": "The lasting (nitya)", "right": "The passing (anitya)", "note": "Experiences change; the knowing of them is not seen to change."},
+    {"left": "Discernment", "right": "Cleverness", "note": "Cleverness wins arguments; discernment sees clearly."}
+   ],
+   "observation": {"title": "Five things and the one who sees", "steps": ["Name five things around you silently.", "Then turn your attention to what is seeing them.", "Look: is the one who sees also one of those five things?"]},
+   "misconception": {"myth": "Myth 2: discernment = judging others", "truth": "Discernment is not a tool for passing verdicts on others. It is the clarity that tells the seen from the seer in one's own experience."},
+   "reflectionPrompt": "At which moment today did you ‘see’ a thought or a feeling instead of ‘becoming’ it?",
+   "check": [
+    {"id": "S03-C1", "prompt": "You can know a thought. What does discernment conclude from this?", "options": ["I am that thought", "A thought is seen, so it is not the seer", "Thoughts are false", "Thoughts must be stopped"], "explanation": "What is seen is not the seer. A thought is known, so it cannot be the knower.", "revisit": "Key pointer: ‘What is seen is not the seer’"},
+    {"id": "S03-C2", "prompt": "In the middle of an argument at work, Ajay notices anger rising and pauses before speaking. What is this an example of?", "options": ["Discernment in daily life", "Suppressing anger", "Judging others", "Indifference"], "explanation": "Discernment works in daily life: seeing a feeling as it rises and not becoming one with it.", "revisit": "Key pointer: ‘Discernment in daily life’"},
+    {"id": "S03-C3", "prompt": "Someone says, ‘I am very discerning, so I spot people's faults at once.’ What should be examined here?", "options": ["Spotting faults even faster", "That discernment is not judging others but the seer-seen distinction", "Keeping away from people", "Nothing, this is fine"], "explanation": "Judging others is not discernment. Discernment sees the distinction between what changes and what knows, within oneself.", "revisit": "Common misconception: ‘discernment = judging others’"}
+   ]
+  },
+  "S04": {
+   "status": "machine",
+   "title": "Vairāgya — Dispassion", "subtitle": "Inner freedom from clinging",
+   "centralInquiry": "Doing it wholeheartedly — and staying free of the result?",
+   "objective": "To see that dispassion is not running away or sadness, but inner freedom from clinging, even amid love and work.",
+   "essence": "A mother cooks for her family wholeheartedly and stays at peace inside even when someone criticises the dish — this is vairāgya. The lotus leaf lives in water and does not get wet. Rāga means clinging; vairāgya is freedom from that clinging, not from life. Love without clinging is possible. And note — even the wish for liberation can become a grip, and a bondage.",
+   "pointers": ["Rāga = clinging · vairāgya = freedom from clinging", "Dispassion = freedom, not escape", "Love without clinging — possible", "Even the wish for liberation can become a bondage"],
+   "distinctions": [
+    {"left": "Dispassion", "right": "Escape", "note": "Escape leaves the situation; dispassion lets go of the grip."},
+    {"left": "Love", "right": "Clinging", "note": "Love gives; clinging makes the other a condition of one's own happiness."}
+   ],
+   "observation": {"title": "Opening the hand", "steps": ["Take a dear object in your hand and hold it tight.", "Feel the tightness of the grip.", "Slowly open the hand — the object is still there. See what changed and what remains."]},
+   "misconception": {"myth": "Myth 2: dispassion = leaving home", "truth": "Dispassion is not leaving home, family or work. Like the lotus leaf, it is living in the world without being soaked inside."},
+   "reflectionPrompt": "Which relationship or goal in your life mixes love and clinging? Look at it carefully today.",
+   "check": [
+    {"id": "S04-C1", "prompt": "Meera does her work wholeheartedly, yet does not break inside when she is not promoted. What does this show?", "options": ["Carelessness about work", "Wholehearted action and freedom from the result — dispassion", "A lack of ambition", "Suppressing feelings"], "explanation": "Dispassion is freedom, not escape: work done fully, the grip on the result loose.", "revisit": "Key pointer: ‘Dispassion = freedom, not escape’"},
+    {"id": "S04-C2", "prompt": "A seeker says, ‘I must have liberation in this very life, whatever it takes’, and is restless every day. What should be examined?", "options": ["That the wish should become stronger", "That the wish for liberation can itself become a grip and a bondage", "That practice should be given up", "That liberation is impossible"], "explanation": "Even the wish for liberation can become a bondage when it turns into another restless grip.", "revisit": "Key pointer: ‘Even the wish for liberation can become a bondage’"},
+    {"id": "S04-C3", "prompt": "What is the most exact meaning of ‘love without clinging’?", "options": ["Not loving anyone", "Loving, without making the other a condition of one's happiness", "Loving God only", "Loving from a distance"], "explanation": "Love gives; clinging makes the other a condition. Dispassion does not erase love; it sets it free.", "revisit": "Key pointer: ‘Love without clinging — possible’"}
+   ]
+  },
+  "S05": {
+   "status": "machine",
+   "title": "Śravaṇa — Listening", "subtitle": "Letting the teaching look at you",
+   "centralInquiry": "Hearing and truly listening — what is the difference?",
+   "objective": "To understand that śravaṇa is not just hearing words, but hearing the teaching as a mirror about oneself.",
+   "essence": "Two students hear the same sentence — one is changed, the other only remembers. Ten men cross a river and count; each counts nine, because the one counting forgets himself. Then someone says: ‘daśamas tvam asi’ — you are the tenth. Śravaṇa is that kind of listening: letting the teaching look at you. It needs a prepared mind — quiet and honest. The great sayings (mahāvākyas) are not information but a mirror of one's own identity.",
+   "pointers": ["Śravaṇa = listening to the teaching of the Self from a teacher, attentively, again and again", "Śravaṇa = letting the teaching look at you", "Preparing the mind to listen", "Mahāvākya = not information, one's own identity"],
+   "distinctions": [
+    {"left": "Hearing", "right": "Śravaṇa", "note": "Hearing takes in words; śravaṇa lets the words come back to oneself."},
+    {"left": "Śraddhā (openness)", "right": "Blind belief", "note": "Śraddhā is openness in order to listen; blind belief is accepting without examining."}
+   ],
+   "observation": {"title": "A sentence and the silence after it", "steps": ["Read or hear one sentence of the teaching slowly.", "Then listen to the silence that follows it.", "See: is this sentence saying something about you?"]},
+   "misconception": {"myth": "Myth 1: listening = blind belief", "truth": "Śravaṇa is not blind belief. It is listening with an open mind and attention, so that it can be examined in manana."},
+   "reflectionPrompt": "Which sentence of today's teaching felt to be ‘about you’, not just ‘about a subject’?",
+   "check": [
+    {"id": "S05-C1", "prompt": "In the story of the tenth man, why does each man count only nine?", "options": ["Their counting was poor", "The one counting forgets to count himself", "One man really had drowned", "The river confused them"], "explanation": "The one counting sees everyone but himself. ‘You are the tenth’ — the teaching turns him back to himself. That is śravaṇa.", "revisit": "Essence: ‘letting the teaching look at you’"},
+    {"id": "S05-C2", "prompt": "A seeker writes every sentence of a discourse in notes but never examines it on himself. What is missing for śravaṇa?", "options": ["Better notes", "Letting the teaching look at oneself", "More discourses", "A sharper memory"], "explanation": "Śravaṇa is not memorising. It lets the teaching turn toward one's own experience.", "revisit": "Common misconception: ‘listening = memorising’"},
+    {"id": "S05-C3", "prompt": "What is the right way to hear the mahāvākya ‘tat tvam asi’?", "options": ["As philosophical information", "As a mirror of one's own identity", "As a mantra to repeat", "As an ancient proverb"], "explanation": "The mahāvākyas are not information; they point to one's own identity and are heard as being about oneself.", "revisit": "Key pointer: ‘Mahāvākya = not information, one's own identity’"}
+   ]
+  },
+  "S06": {
+   "status": "machine",
+   "title": "Manana — Reflection", "subtitle": "What was heard becomes one's own understanding",
+   "centralInquiry": "How does what was heard become one's own understanding?",
+   "objective": "To see that reflection does not suppress doubt; it resolves it through reason and one's own experience.",
+   "essence": "Walking home after satsang, a seeker turns one sentence over and over — this is manana. It is going back to the rope-and-snake spot with a lamp a second time, so that doubt ends at the root. Reflection does not suppress doubt; it resolves it. Reason clears the way but stops when it reaches the knower. When understanding is tested on one's own experience, it becomes seeing.",
+   "pointers": ["Manana = reflecting on the teaching heard, until doubt ends", "Reflection resolves doubt, it does not suppress it", "Reason stops when it reaches the knower", "Understanding tested on experience = seeing"],
+   "distinctions": [
+    {"left": "Reflection", "right": "Worry", "note": "Worry goes round and round; reflection examines a doubt and ends it."},
+    {"left": "Resolving doubt", "right": "Suppressing doubt", "note": "A suppressed doubt returns; a resolved one does not."}
+   ],
+   "observation": {"title": "Test it on this moment", "steps": ["Take the sentence: ‘I am not the body.’", "Do not believe it — test it on this moment's experience: who is aware of the body's sensations?", "Write down the doubt that comes up; that is the subject of your next reflection."]},
+   "misconception": {"myth": "Myth 3: doubt = lack of faith", "truth": "An honest doubt is not the opposite of śraddhā. Manana brings that very doubt into the open and resolves it, so the understanding becomes one's own."},
+   "reflectionPrompt": "What is your biggest doubt at this moment? Write it clearly in one sentence.",
+   "check": [
+    {"id": "S06-C1", "prompt": "A doubt arises: ‘If I am not the body, why do I feel pain?’ According to manana, what should be done?", "options": ["Suppress the doubt as a lack of faith", "Put the doubt in front and examine it on one's own experience", "Drop the subject", "Win an argument with someone"], "explanation": "Reflection resolves doubt; it does not suppress it. Examining an honest doubt on experience is manana.", "revisit": "Key pointer: ‘Reflection resolves doubt, it does not suppress it’"},
+    {"id": "S06-C2", "prompt": "How far does reason help in self-inquiry?", "options": ["Reason alone shows the final truth", "Reason is useless", "Reason clears the way, but stops when it reaches the knower", "Reason is only for debate"], "explanation": "Reason removes misconceptions, but the knower is not a conclusion of reasoning; it is recognised directly.", "revisit": "Key pointer: ‘Reason stops when it reaches the knower’"},
+    {"id": "S06-C3", "prompt": "Mohan circles the same spiritual question all day and gets exhausted. Why is this not manana?", "options": ["Because he did not read a book", "Because manana is not constant thinking but examining a doubt until it is resolved", "Because the question is wrong", "It is manana"], "explanation": "Manana is not constant thinking. It takes a concrete doubt and examines it until it ends.", "revisit": "Common misconception: ‘reflection = constant thinking’"}
+   ]
+  },
+  "S07": {
+   "status": "machine",
+   "title": "Nididhyāsana — Contemplative Abidance", "subtitle": "Abiding in the understood truth",
+   "centralInquiry": "How does an understood truth become natural?",
+   "objective": "To recognise that nididhyāsana is not repeating a thought but abiding in the understood truth — on the cushion and in the kitchen.",
+   "essence": "One who has learnt a raga keeps playing it until it plays itself. The space inside a pot was never imprisoned in the pot — after understanding this, returning again and again to that understanding is nididhyāsana. The old habit, the old identity, will return; it will be seen again. This is not a practice for getting a special experience, but remaining as the knowing in every ordinary task.",
+   "pointers": ["Nididhyāsana = abiding deeply in the truth", "Abiding, not repeating", "The old identity will return — and be seen again", "On the cushion, and in the kitchen"],
+   "distinctions": [
+    {"left": "Abiding", "right": "Repeating", "note": "Repeating ‘I am the witness’ is one more thought; abiding is resting in the awareness that knows the thought too."},
+    {"left": "Nididhyāsana", "right": "Concentration", "note": "Concentration rests on an object; nididhyāsana rests in the knowing in which all objects appear."}
+   ],
+   "observation": {"title": "One ordinary task", "steps": ["Choose an ordinary task — washing dishes, walking, making tea.", "While doing it, notice: in what is all this being known?", "If attention wanders, no matter; simply return as the knower."]},
+   "misconception": {"myth": "Myth 3: a thought came = it broke", "truth": "A thought arising does not break nididhyāsana. The awareness in which thoughts arise does not break; only attention is turned back to it again."},
+   "reflectionPrompt": "In the middle of which ordinary task today did you remember your ‘knowing’? Write about that moment.",
+   "check": [
+    {"id": "S07-C1", "prompt": "Thoughts keep coming during nididhyāsana. What is the right understanding?", "options": ["The practice has failed", "Thoughts must be stopped by force", "Return again to the awareness in which the thoughts arise", "Nididhyāsana is only for people without thoughts"], "explanation": "A thought arising is not a break. Old habits return and are seen again — that is the practice.", "revisit": "Key pointer: ‘The old identity will return — and be seen again’"},
+    {"id": "S07-C2", "prompt": "A seeker repeats ‘I am the witness, I am the witness’ all day. What is being missed?", "options": ["He should repeat it louder", "Repeating is one more thought; nididhyāsana is abiding in awareness", "Nothing is missed", "He should choose another mantra"], "explanation": "Abiding, not repeating. Repeating words is the mind's work; nididhyāsana is resting in the knowing that knows the words too.", "revisit": "Key pointer: ‘Abiding, not repeating’"},
+    {"id": "S07-C3", "prompt": "Where does nididhyāsana happen?", "options": ["Only on the cushion, eyes closed", "Only in an ashram", "On the cushion and in everyday tasks too", "Only in the presence of a teacher"], "explanation": "On the cushion, and in the kitchen. Understanding is tested and lived in every task of life.", "revisit": "Key pointer: ‘On the cushion, and in the kitchen’"}
+   ]
+  },
+  "S08": {
+   "status": "machine",
+   "title": "Neti-Neti — Not This, Not This", "subtitle": "Setting aside what is not oneself",
+   "centralInquiry": "Knowing oneself — by adding, or by removing?",
+   "objective": "To understand that neti-neti denies not the world but one's mistaken identities — and that the one who denies cannot be denied.",
+   "essence": "When a cluttered room is emptied one object at a time, the space of the room appears. Neti-neti is like this: body, senses, mind, intellect, ego — each one is seen, so none is the seer. This is not a denial of life but of identification. What remains at the end is not emptiness; the knower remains, which knew every ‘not this’.",
+   "pointers": ["Neti-neti = not this, not this", "Denying identification, not existence", "The knower cannot be denied", "Not emptiness — the knower remains"],
+   "distinctions": [
+    {"left": "Denying identification", "right": "Denying life", "note": "The body stays, work goes on; only the grip of ‘I am just this’ is removed."},
+    {"left": "What was set aside", "right": "The one setting aside", "note": "Every ‘not this’ is known by someone; that one does not fall into any ‘not this’."}
+   ],
+   "observation": {"title": "Layer by layer", "steps": ["Attend to the body: ‘This is seen, so I am not this.’", "Do the same with a thought, then a feeling, then a memory.", "Finally see: can ‘the one who sees’ be set aside in the same way?"]},
+   "misconception": {"myth": "Myth 2: nothing at the end", "truth": "At the end of neti-neti there is no blankness; the awareness remains that knew every layer. Not empty — whole."},
+   "reflectionPrompt": "Which one identity of yours did you see today as ‘this is seen, so I am not this’?",
+   "check": [
+    {"id": "S08-C1", "prompt": "What is denied in neti-neti?", "options": ["The existence of the world", "Family and duties", "The identification of oneself as body, mind and so on", "Everything, even the knower"], "explanation": "Denying identification, not existence. The world and duties remain; only the mistaken identity goes.", "revisit": "Key pointer: ‘Denying identification, not existence’"},
+    {"id": "S08-C2", "prompt": "Someone fears that ‘after removing everything, nothing will be left.’ What does Jñāna Mārga say?", "options": ["Yes, nothing is left at the end", "The one knowing every layer remains — not emptiness", "The fear is right; stop the practice", "One gets a new body at the end"], "explanation": "The knower cannot be denied. At the end, not emptiness — the knower remains.", "revisit": "Key pointer: ‘Not emptiness — the knower remains’"},
+    {"id": "S08-C3", "prompt": "‘I am not this thought’ — on what basis is this concluded?", "options": ["Because thoughts are bad", "Because a thought is seen, and what is seen is not the seer", "Because scripture says so and it must be accepted", "Because there should be fewer thoughts"], "explanation": "Neti-neti rests on experience: what is known cannot be the knower.", "revisit": "See for yourself: ‘Layer by layer’"}
+   ]
+  },
+  "S09": {
+   "status": "machine",
+   "title": "Sākṣībhāva — Witnessing", "subtitle": "The awareness in which everything appears",
+   "centralInquiry": "Is someone in you quietly watching, too?",
+   "objective": "To recognise the witness not as a thought or a cold detachment, but as the awareness in which everything appears.",
+   "essence": "In the middle of a heated argument someone suddenly sees his own anger rising — in that moment there is a glimpse of the witness. On a cinema screen films of joy and terror play; the screen stays untouched. The witness is not a thought; it is present in waking, dream and deep sleep. But beware: the sense ‘I am the witness’ can itself become a subtle ego.",
+   "pointers": ["Sākṣī = the awareness in which everything appears", "The witness is not a thought", "The witness in all three states", "“I am the witness” — a subtle ego?"],
+   "distinctions": [
+    {"left": "The witness", "right": "Coldness", "note": "The witness does not cut off from feelings; feelings appear fully within it."},
+    {"left": "The witness", "right": "The thought ‘I am the witness’", "note": "The thought comes and goes; that in which it comes is the witness."}
+   ],
+   "observation": {"title": "A thought coming and going", "steps": ["Sit quietly and wait for the next thought.", "Watch it rise, stay and leave.", "Then attend to the ‘space’ in which it came and went."]},
+   "misconception": {"myth": "Myth 1: witness = coldness", "truth": "Witnessing is not emotionlessness. As a screen shows every scene in full, life appears fully in the witness."},
+   "reflectionPrompt": "In the middle of a strong feeling today, was there a moment when you ‘saw’ it? Was there any coldness in that seeing?",
+   "check": [
+    {"id": "S09-C1", "prompt": "What does the cinema-screen example show about the witness?", "options": ["The screen is a character in the film", "Scenes change, the screen stays untouched", "The screen should stop the film", "The screen shows only pleasant scenes"], "explanation": "The witness is like the screen: every experience appears in it, but it is not changed by any experience.", "revisit": "Essence: ‘witness = lamp, screen’"},
+    {"id": "S09-C2", "prompt": "Ravi says, ‘Now I have become the witness, so I don't care about anyone.’ What should be examined?", "options": ["That he should create more distance", "That witnessing is not coldness, and ‘I am the witness’ can also become ego", "That being the witness is impossible", "Nothing, this is the right understanding"], "explanation": "Witnessing is not coldness, and the pride of ‘I am the witness’ is itself a subtle ego.", "revisit": "Key pointer: ‘“I am the witness” — a subtle ego?’"},
+    {"id": "S09-C3", "prompt": "After deep sleep we say, ‘I slept well, I knew nothing.’ What does this point to about the witness?", "options": ["No one was there in sleep", "Even ‘knowing nothing’ was known — the witness is there in sleep too", "In sleep the body is the witness", "This has nothing to do with the witness"], "explanation": "The witness is in all three states. Even the ‘nothing’ of deep sleep did not go unknown.", "revisit": "Key pointer: ‘The witness in all three states’"}
+   ]
+  },
+  "S10": {
+   "status": "machine",
+   "title": "Anubhava — Experience", "subtitle": "What appears, and goes",
+   "centralInquiry": "Experiences come and go — and the knower?",
+   "objective": "To see that every experience — ordinary or spiritual — comes and goes, and the knowing in which they appear does not go.",
+   "essence": "After a beautiful meditation a seeker wants to repeat it the next day, and is disappointed. The film in a projector keeps changing; its light stays the same. Every experience comes and goes; even special spiritual experiences are not proof. Experiences are not to be rejected, nor chased. What never goes is the knowing — and that is you.",
+   "pointers": ["Anubhava = what appears, and goes", "Every experience comes and goes", "A special experience = not proof", "That which never goes"],
+   "distinctions": [
+    {"left": "Experience", "right": "Knowing", "note": "The content of experience changes; knowing is the same in every experience."},
+    {"left": "A special experience", "right": "Understanding", "note": "An experience passes; understanding remains."}
+   ],
+   "observation": {"title": "Three experiences, one knowing", "steps": ["Notice three experiences of this moment — a sound, a sensation, a thought.", "Watch each one come and go.", "Ask: what is common to all three?"]},
+   "misconception": {"myth": "Myth 2: more experiences = more progress", "truth": "The number of experiences is not a measure of progress. Progress is that the steady knowing in experiences becomes clear."},
+   "reflectionPrompt": "Do you try to repeat some old good experience? Watch that attempt carefully today.",
+   "check": [
+    {"id": "S10-C1", "prompt": "Someone had an experience of light in meditation and now waits for it every day. From the view of Jñāna Mārga, what should be examined?", "options": ["A method to get the experience again", "That a special experience also comes and goes, and is not proof", "That the experience was false", "That meditation should be given up"], "explanation": "A special experience is not proof. Every experience comes and goes; what does not go is to be recognised.", "revisit": "Key pointer: ‘A special experience = not proof’"},
+    {"id": "S10-C2", "prompt": "In the projector example, what does ‘the light’ point to?", "options": ["The most beautiful scene", "The knowing in which every experience appears", "The next experience", "The story of the film"], "explanation": "The film changes, the light stays the same — as experiences change and knowing stays the same.", "revisit": "Essence: ‘knowing = you’"},
+    {"id": "S10-C3", "prompt": "‘Experiences come and go’ — which conclusion from this is NOT right?", "options": ["There is no need to chase experiences", "Experiences are false and useless and should be rejected", "Knowing is not seen to come and go", "Understanding is greater than experience"], "explanation": "Rejecting experiences is also a misconception. They come and go but are not false; they are just not your identity.", "revisit": "Common misconception: ‘rejecting experiences’"}
+   ]
+  },
+  "S11": {
+   "status": "machine",
+   "title": "Anubhavakartā — The Experiencer", "subtitle": "The sense of ‘it is happening to me’",
+   "centralInquiry": "To whom does experience happen?",
+   "objective": "To see that the experiencer who says ‘to me’ is also a mental structure that is itself known.",
+   "essence": "‘It hurt me’ — someone tells a friend about their day. The sense that stamps ‘mine’ on every experience is the experiencer. In a red-hot iron ball the fire looks like the ball and the ball looks like it is burning — in the same way awareness and the ‘I-sense’ appear as one. But the experiencer is also known, and in deep sleep it is not there, yet something remains. Its search leads straight to ‘Who am I?’.",
+   "pointers": ["The experiencer = the one who calls every experience “mine”", "The experiencer is also known", "No experiencer in deep sleep", "The search → “Who am I?”"],
+   "distinctions": [
+    {"left": "Experience", "right": "Experiencer", "note": "An experience comes; ‘this is happening to me’ is one more sense that comes."},
+    {"left": "Experiencer", "right": "Knowing", "note": "The experiencer is not there in sleep; that in which this coming and going is known remains."}
+   ],
+   "observation": {"title": "The ‘I’ in ‘I am tired’", "steps": ["Take a simple sentence: ‘I am tired.’", "Look at the tiredness, then at the sense of ‘I’.", "Ask: to whom are both the tiredness and the ‘I’ known?"]},
+   "misconception": {"myth": "Myth 3: the “I” must be destroyed", "truth": "There is no war to destroy the ‘I’. It is to be seen — an ‘I’ that is seen loses its weight."},
+   "reflectionPrompt": "On which experience today did you stamp ‘mine’ the fastest? Look at it again.",
+   "check": [
+    {"id": "S11-C1", "prompt": "In deep sleep there is no sense of ‘I’, yet on waking we say ‘I was asleep.’ What does this point to?", "options": ["We are not there in sleep", "The sense of the experiencer was absent, yet something remained", "Sleep is an illusion", "The ‘I’ always stays the same"], "explanation": "No experiencer in deep sleep, yet knowing remains — that is why sleep is remembered.", "revisit": "Key pointer: ‘No experiencer in deep sleep’"},
+    {"id": "S11-C2", "prompt": "‘I felt bad’ — how do you examine the ‘I’ in this sentence?", "options": ["Forget it", "See that the sense of ‘I’ is also being known", "Take it to be the body", "Suppress the bad feeling"], "explanation": "The experiencer is also known. What is known is not the final knower.", "revisit": "Key pointer: ‘The experiencer is also known’"},
+    {"id": "S11-C3", "prompt": "To which question does the search for the experiencer finally lead?", "options": ["What more experiences do I need?", "Who am I?", "What is my future?", "What do others think?"], "explanation": "From ‘to whom is the experience?’ to ‘Who am I?’ — that is the door to the next stage, self-inquiry.", "revisit": "Key pointer: ‘The search → “Who am I?”’"}
+   ]
+  },
+  "S12": {
+   "status": "machine",
+   "title": "Ātma-vicāra — Self-Inquiry", "subtitle": "Turning back to the source of ‘I’",
+   "centralInquiry": "Who am I?",
+   "objective": "To understand self-inquiry as a method — turning attention back to the source of ‘I’ by asking every thought ‘to whom did this come?’.",
+   "essence": "Asked ‘Who am I?’, the first answer is a name, a job and a family. But this question is not a test; it is a method. A dog chasing its tail grows tired; the game ends when it stops. Ask every thought: ‘To whom did this come?’ — ‘To me.’ — ‘Who am I?’ When the seeker becomes the subject of the search, what remains needs no answer.",
+   "pointers": ["Ātma-vicāra = turning attention back to the source of “I”", "A method, not a test", "To every thought — “to whom?”", "The seeker = the subject of the search"],
+   "distinctions": [
+    {"left": "Self-inquiry", "right": "Mantra repetition", "note": "‘Who am I?’ is not repeated; attention is turned back with it."},
+    {"left": "Looking for an answer", "right": "Returning to the source", "note": "Any answer is one more thought; returning to where thought arises is the method."}
+   ],
+   "observation": {"title": "To whom? To me. Who am I?", "steps": ["Sit quietly for a minute.", "Ask every thought that arises: ‘To whom did this come?’ The answer comes: ‘To me.’", "Then ask: ‘Who am I?’ — and let attention stay there without making an answer."]},
+   "misconception": {"myth": "Myth 2: forcing the mind blank", "truth": "Self-inquiry is not forcing the mind to be empty. When thoughts come, they are the opportunity — return with ‘to whom?’ from each one."},
+   "reflectionPrompt": "‘Who am I?’ — what happened with this question today? Which answers came, and did they last?",
+   "check": [
+    {"id": "S12-C1", "prompt": "How is ‘Who am I?’ used in self-inquiry?", "options": ["By repeating it constantly like a mantra", "By memorising a correct answer", "By asking every thought ‘to whom?’ and turning attention back to the source of ‘I’", "By forcing the mind empty"], "explanation": "Self-inquiry is a method, not a test — turning attention back to the source of ‘I’.", "revisit": "Key pointer: ‘To every thought — “to whom?”’"},
+    {"id": "S12-C2", "prompt": "During self-inquiry Seema gets an answer: ‘I am pure consciousness.’ What is useful to examine next?", "options": ["Memorising the answer", "That this answer is also a thought, which came to someone", "That self-inquiry is now complete", "Telling someone"], "explanation": "Any answer is a thought. What remains needs no answer — it knows the answers too.", "revisit": "Essence: ‘what remains — needs no answer’"},
+    {"id": "S12-C3", "prompt": "Why can expecting a wonderful experience at the end of self-inquiry become an obstacle?", "options": ["Because experiences are dangerous", "Because the expectation turns attention toward a future experience again", "Because self-inquiry has no meaning", "It is no obstacle"], "explanation": "Waiting for a wonderful experience makes the search about an outer object again; self-inquiry turns back to the seeker.", "revisit": "Common misconception: ‘a wonderful experience at the end’"}
+   ]
+  },
+  "S13": {
+   "status": "machine",
+   "title": "Ātma-jñāna — Self-Knowledge", "subtitle": "Recognising what was always present",
+   "centralInquiry": "What was never lost — what is ‘finding’ it?",
+   "objective": "To understand self-knowledge not as a new mystical experience or a personal achievement, but as the recognition of what was always present.",
+   "essence": "A woman searches for her necklace — it is around her neck. The necklace was never lost; attention had simply not gone there. Self-knowledge is such a recognition, not a new experience. The person's life goes on, but the bondage of ‘I am only this limited person’ breaks. It is no personal achievement — no one has gained anything new.",
+   "pointers": ["Ātma-jñāna = recognising what was always present", "Recognition, not a new experience", "The person goes on · the bondage breaks", "Not a personal achievement"],
+   "distinctions": [
+    {"left": "Recognition", "right": "Acquisition", "note": "In acquisition something new comes; in recognition what was there becomes clear."},
+    {"left": "The person", "right": "The bondage", "note": "The person remains; only the limited identity of being a person loosens."}
+   ],
+   "observation": {"title": "Presence before thought", "steps": ["Attend to the moment before the next thought comes.", "Is ‘being’ and ‘knowing’ present in that moment too?", "Without waiting for any experience, look at that very presence."]},
+   "misconception": {"myth": "Myth 2: becoming a special person", "truth": "Self-knowledge does not make anyone special. What is recognised is the same in all — so there is no greatness of a person in it."},
+   "reflectionPrompt": "Do you hold an image of ‘what I will be like after knowledge’? Write that image down and look at it.",
+   "check": [
+    {"id": "S13-C1", "prompt": "What is the main point of the necklace example?", "options": ["The necklace has to be bought elsewhere", "What was being searched for was never lost", "Finding a necklace takes a long time", "Someone else returned the necklace"], "explanation": "Self-knowledge is the recognition of what was always present — not gaining something new.", "revisit": "Key pointer: ‘Recognition, not a new experience’"},
+    {"id": "S13-C2", "prompt": "Someone says, ‘After self-knowledge I will have no problems, no feelings.’ Which misconception is this linked to?", "options": ["That the person's life does not go on", "That self-knowledge comes only from books", "That a teacher is unnecessary", "No misconception"], "explanation": "The person goes on, the bondage breaks. Life's circumstances and feelings remain.", "revisit": "Key pointer: ‘The person goes on · the bondage breaks’"},
+    {"id": "S13-C3", "prompt": "Why is it not right to call self-knowledge a ‘personal achievement’?", "options": ["Because it is very difficult", "Because what is recognised is no person's new possession but everyone's nature", "Because it is measured by a certificate", "Because it takes no effort"], "explanation": "Not a personal achievement: no one gained anything new; what always was is recognised.", "revisit": "Key pointer: ‘Not a personal achievement’"}
+   ]
+  },
+  "S14": {
+   "status": "machine",
+   "title": "Brahma-jñāna — Knowledge of Brahman", "subtitle": "The one reality of all names and forms",
+   "centralInquiry": "Everything — made of one?",
+   "objective": "To understand that Brahman is not a power sitting in the sky or a cosmic vision, but the one reality of all names and forms — and that is one's own nature.",
+   "essence": "Waves rise and fall in the ocean, but every wave is water. From gold come a bangle, a necklace, a ring — many names and forms, one gold. Brahman is the ground of everything in this sense, and ātman and Brahman are one. The world is ‘mithyā’ — its existence depends on something else — not ‘asatya’, like the son of a barren woman. This distinction between satya, mithyā and asatya removes much confusion.",
+   "pointers": ["Brahma-jñāna = the one reality of all = my own nature", "The one reality of all names and forms", "Ātman and Brahman are one", "Satya · mithyā · asatya"],
+   "distinctions": [
+    {"left": "Mithyā (dependent)", "right": "Asatya (non-existent)", "note": "Mithyā appears but is not independent (a wave depends on water); asatya never even appears."},
+    {"left": "Name and form", "right": "Being", "note": "A bangle and a necklace are name and form; gold is their being."}
+   ],
+   "observation": {"title": "Name, form, and that in which they appear", "steps": ["Look at three things — a cup, a tree, your hand.", "Recognise the name and form of each.", "Then see: in which one knowing are all three appearing?"]},
+   "misconception": {"myth": "Myth 3: all is Brahman, so anything goes", "truth": "‘All is Brahman’ is not an excuse for moral carelessness. At the level of conduct, right and wrong, compassion and responsibility remain."},
+   "reflectionPrompt": "Today, looking at a person or a thing, try the distinction of ‘name-form and being’. What changed?",
+   "check": [
+    {"id": "S14-C1", "prompt": "What is the right meaning of ‘the world is mithyā’?", "options": ["The world does not exist at all", "The world appears, but its existence is not independent — like a wave on water", "The world is bad, leave it", "The world is only a dream, do anything"], "explanation": "The world = mithyā, not asatya. It appears, but depends on a ground.", "revisit": "Essence: ‘world = mithyā, not asatya’"},
+    {"id": "S14-C2", "prompt": "What does the example of gold and ornaments point to?", "options": ["The value of ornaments", "One reality in many names and forms", "Collecting gold", "The art of changing forms"], "explanation": "Many names and forms, one gold — so the one reality of all names and forms is Brahman.", "revisit": "Key pointer: ‘The one reality of all names and forms’"},
+    {"id": "S14-C3", "prompt": "Someone says, ‘All is Brahman, so what difference does it make if I hurt someone.’ What should be examined?", "options": ["Nothing, this is right", "That this is not knowledge of Brahman but a misconception — compassion and responsibility remain in conduct", "That pain is also Brahman, so it is fine", "That Brahman is in the sky"], "explanation": "‘All is Brahman, so anything goes’ is a misconception. Knowledge of Brahman is not carelessness but the recognition of unity in all.", "revisit": "Common misconception: ‘all is Brahman, so anything goes’"}
+   ]
+  },
+  "S15": {
+   "status": "machine",
+   "title": "Ajñeyatā — The Unknowable", "subtitle": "The knower is not an object",
+   "centralInquiry": "The seer — never seen, yet not unknown?",
+   "objective": "To understand that the knower cannot become an object of knowledge, and that this is not ignorance but a mature recognition of the limit of thought and language.",
+   "essence": "A child asks: ‘Why can't the eye see itself?’ Yet no one doubts seeing. The knower is not known like an object — this is not ignorance; it is its nature. Words and thoughts point, but they have a limit. The intellect falling silent before the mystery is not defeat; it is maturity.",
+   "pointers": ["Ajñeyatā = the knower is not an object · not ignorance", "The knower, not an object", "The limit of thought and language", "The intellect falling silent = maturity"],
+   "distinctions": [
+    {"left": "Unknowable", "right": "Unknown", "note": "The unknown may be known tomorrow; the unknowable never becomes an object, because it is the knower itself."},
+    {"left": "The intellect falling silent", "right": "Giving up the intellect", "note": "The intellect stops after finishing its work; it is not thrown away."}
+   ],
+   "observation": {"title": "Trying to see the seer", "steps": ["Try to ‘see’ the seer like an object.", "See where this attempt gets stuck.", "When the attempt stops, attend to what remains clear."]},
+   "misconception": {"myth": "Myth 1: nothing can be known", "truth": "Unknowability does not mean ‘nothing can be known’. The knower is not known as an object, yet it is not unknown — it is self-evident."},
+   "reflectionPrompt": "Are you restless with ‘I can't fully understand this’? Look at that restlessness carefully today.",
+   "check": [
+    {"id": "S15-C1", "prompt": "‘The eye cannot see itself’ — what does this make clear about the knower?", "options": ["The knower does not exist", "The knower is not known as an object, yet there is no doubt about it", "The eye is faulty", "We need a mirror"], "explanation": "The knower, not an object. There is no doubt about seeing, even though the eye does not see itself.", "revisit": "Key pointer: ‘The knower, not an object’"},
+    {"id": "S15-C2", "prompt": "Because of unknowability someone says, ‘So scripture and intellect are useless.’ What is right?", "options": ["Yes, they should be dropped", "Words and the intellect point; they have a limit, but they are not useless", "Truth comes only through the intellect", "Scriptures were only for people of old"], "explanation": "Words point, there is a limit — but they are what clear the way. The intellect falling silent is maturity, not abandonment.", "revisit": "Essence: ‘words point · there is a limit’"},
+    {"id": "S15-C3", "prompt": "What is the difference between ‘unknowable’ and ‘unknown’?", "options": ["No difference", "The unknown may be known tomorrow; the unknowable never becomes an object because it is the knower itself", "The unknowable is less important", "Unknown is a spiritual word"], "explanation": "Unknowability is not ignorance: the knower cannot become an object of knowledge.", "revisit": "Key distinction: ‘unknowable · unknown’"}
+   ]
+  },
+  "S16": {
+   "status": "machine",
+   "title": "Śūnyatā / Mauna — Emptiness / Silence", "subtitle": "Empty of objects, full of awareness",
+   "centralInquiry": "Silence — the absence of sound, or that in which sound is?",
+   "objective": "To see that silence is not the absence of sound but the background of sound and thought — and that someone knows even the emptiness.",
+   "essence": "The noise of a crowded street slowly fades — and a quiet comes forward that was there during the noise as well. All kinds of clouds pass through the sky; the sky stays the same. Śūnyatā means being empty of objects, not of awareness. The empty moment between two thoughts is a pointer, not the Self. Ask — who knows this emptiness?",
+   "pointers": ["Śūnyatā = empty of objects · not of awareness", "Silence = the background", "The gap between = a pointer, not the Self", "Who knows the emptiness?"],
+   "distinctions": [
+    {"left": "Silence (mauna)", "right": "Quiet", "note": "Quiet is the absence of sound; silence is that in which sound also appears."},
+    {"left": "An empty moment", "right": "The knower", "note": "The empty moment is also known; so it is not itself the final."}
+   ],
+   "observation": {"title": "Sounds and their place", "steps": ["Listen to the sounds around you for two minutes.", "Then turn attention to that in which the sounds come and go.", "Ask: was this background there during the sounds too?"]},
+   "misconception": {"myth": "Myth 1: emptying the mind", "truth": "The practice of emptiness is not forcing the mind empty. Even while thoughts remain, their background — silence — can be recognised."},
+   "reflectionPrompt": "Does emptiness or quiet frighten you? Sit with that fear for a minute today and write what you saw.",
+   "check": [
+    {"id": "S16-C1", "prompt": "What does the example of the sky and clouds show about silence?", "options": ["The clouds must be removed", "All kinds of clouds pass, the sky stays — silence is the background", "The sky is made of clouds", "Only a clear sky is silence"], "explanation": "Silence = the background. Thoughts and sounds come and go; that in which they come remains.", "revisit": "Key pointer: ‘Silence = the background’"},
+    {"id": "S16-C2", "prompt": "In meditation an empty moment appears between two thoughts, and the seeker thinks, ‘This is the Self.’ What should be examined?", "options": ["How to make the empty moment longer", "That the empty moment is also known — it is a pointer, not the Self", "That thoughts are bad", "Nothing, this is final"], "explanation": "The gap between = a pointer, not the Self. The question is: who knows this emptiness?", "revisit": "Key pointer: ‘The gap between = a pointer, not the Self’"},
+    {"id": "S16-C3", "prompt": "What does ‘śūnyatā’ mean in Jñāna Mārga?", "options": ["Nothing exists", "Empty of objects, but not empty of awareness", "A state of sadness", "The mind being destroyed"], "explanation": "Śūnyatā = empty of objects · not of awareness. ‘Nothing’ is not what remains at the end.", "revisit": "Key pointer: ‘Śūnyatā = empty of objects · not of awareness’"}
+   ]
+  },
+  "S17": {
+   "status": "machine",
+   "title": "Sthitaprajña Life / Sahaja — Natural Living", "subtitle": "Living naturally, settled in understanding",
+   "centralInquiry": "After knowledge — what is life like?",
+   "objective": "To see that steady understanding shows not in an absence of feelings but in equanimity — action goes on, without the burden of the doer.",
+   "essence": "An ordinary day — work, family, traffic, praise and criticism. The sthitaprajña lives amid all of this, not in a cave. The lotus comes back to mind, now in daily life; and the actor who plays every role wholeheartedly but does not take the role to be himself. Steadiness does not mean emotionlessness; it means equanimity. Nothing remains to gain, become or drop — life becomes natural.",
+   "pointers": ["Sthitaprajña life = living naturally, settled in understanding", "Steadiness = equanimity, not emotionlessness", "Action goes on, the burden does not", "Gaining, becoming, dropping — none of it"],
+   "distinctions": [
+    {"left": "Equanimity", "right": "Indifference", "note": "Indifference stops caring; equanimity cares and does not waver."},
+    {"left": "Action", "right": "The burden of doership", "note": "Work is done wholeheartedly; the weight of ‘it all depends on me’ is not there."}
+   ],
+   "observation": {"title": "One task, without the doer's tension", "steps": ["Do one ordinary task today wholeheartedly.", "Now and then notice: is there the tension of ‘I alone must get this right’?", "As the work goes on, watch that tension loosen."]},
+   "misconception": {"myth": "Myth 2: a perfect, flawless person", "truth": "The sthitaprajña is not a flawless, perfect person. Temperament and limits remain; what changes is the identification with them and the grip."},
+   "reflectionPrompt": "How was your equanimity in some praise or criticism today? Without judging yourself, simply look and write.",
+   "check": [
+    {"id": "S17-C1", "prompt": "Anil feels hurt by criticism, but settles quickly and keeps no wish for revenge. What does this show?", "options": ["A failure to be steady, since he was hurt", "Equanimity — the feeling came, but did not shake him", "Indifference", "Suppression"], "explanation": "Steadiness = equanimity, not emotionlessness. A feeling arising is not a failure.", "revisit": "Key pointer: ‘Steadiness = equanimity, not emotionlessness’"},
+    {"id": "S17-C2", "prompt": "What does the actor example say about sthitaprajña life?", "options": ["Life is a play, so nothing is serious", "Playing every role wholeheartedly, but not taking the role to be oneself", "Roles should be given up", "Only one role should be chosen"], "explanation": "Action goes on, the burden does not — the role complete, the identity free.", "revisit": "Key pointer: ‘Action goes on, the burden does not’"},
+    {"id": "S17-C3", "prompt": "‘Becoming a sthitaprajña is only for great people’ — what does Jñāna Mārga say?", "options": ["Yes, it is only for saints", "It is no achievement of becoming; it is living an ordinary life settled in understanding", "One must leave the world for it", "It needs special powers"], "explanation": "Gaining, becoming, dropping — none of it. Sthitaprajña life shows naturally in ordinary life.", "revisit": "Common misconception: ‘only for great people’"}
+   ]
+  }
+ }
+}
