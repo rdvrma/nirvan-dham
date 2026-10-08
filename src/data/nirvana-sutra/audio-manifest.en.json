@@ -1,0 +1,114 @@
+{
+  "pravesh": {
+    "src": "/magazine-audio/narration/en/pravesh-a3d28b48d0.mp3",
+    "title": "An Invitation to Begin",
+    "seconds": 42.216,
+    "sourceHash": "a3d28b48d08acbca614442ca56c4d28816851abfef5b2f16c74fbb6dd5552cfb",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "geet-vatika": {
+    "src": "/magazine-audio/narration/en/geet-vatika-b0dfd56366.mp3",
+    "title": "What I Sought Was Already Near",
+    "seconds": 41.16,
+    "sourceHash": "b0dfd56366354c5ad707f9b4c6bc6652e320fd0cb4c5e83fb4e2221cbb4efb93",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "hasya-kunj": {
+    "src": "/magazine-audio/narration/en/hasya-kunj-56fa2573f7.mp3",
+    "title": "The Impatient Seeker",
+    "seconds": 30.504,
+    "sourceHash": "56fa2573f7d2c7465c1c56458fc2af0953ff49e134f1b40a5299a7c9a9098ce1",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "kahani-van": {
+    "src": "/magazine-audio/narration/en/kahani-van-0b8a077e45.mp3",
+    "title": "The Mirror That Keeps Nothing",
+    "seconds": 48.264,
+    "sourceHash": "0b8a077e45d5e859282c06f9adc9dd54b2b6be353a310255ce86169e94ed8236",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "khidki-aur-aakash": {
+    "src": "/magazine-audio/narration/en/khidki-aur-aakash-1868160fe3.mp3",
+    "title": "The Window and the Sky",
+    "seconds": 103.896,
+    "sourceHash": "1868160fe3f8607fc4cd88173546d2a1d19061dd99ea295187895feaae46b2fa",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "jo-vichar-ko-janta-hai": {
+    "src": "/magazine-audio/narration/en/jo-vichar-ko-janta-hai-cc4b1ad340.mp3",
+    "title": "Knowing a Thought",
+    "seconds": 49.968,
+    "sourceHash": "cc4b1ad340f64ce17dec15b4ee0bb955f68460580e1a936fcbc192cc40443d8f",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "jo-badalta-rahta-hai": {
+    "src": "/magazine-audio/narration/en/jo-badalta-rahta-hai-fc505a0e2c.mp3",
+    "title": "If It Keeps Changing, Can It Be Who I Am?",
+    "seconds": 222.12,
+    "sourceHash": "fc505a0e2c7f029f750d7839edb2f06cda78b45c814eb58ceff236d1798701f7",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "man-ko-shaant-karna": {
+    "src": "/magazine-audio/narration/en/man-ko-shaant-karna-2fdf27dfb2.mp3",
+    "title": "Quieting the Mind—or Understanding It?",
+    "seconds": 221.424,
+    "sourceHash": "2fdf27dfb2ecc3a48f618f73cd7f37450978848650932df5e331af6a6d731848",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "ruk-kar-dekhna": {
+    "src": "/magazine-audio/narration/en/ruk-kar-dekhna-20a8b619cb.mp3",
+    "title": "Three Minutes: Letting a Thought Be Seen",
+    "seconds": 117.936,
+    "sourceHash": "20a8b619cbf9996a7c047995b0a156cf601b98e4041403ae976c42ae6dd4d29a",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "sadhak-se-satya-tak": {
+    "src": "/magazine-audio/narration/en/sadhak-se-satya-tak-9340380a2b.mp3",
+    "title": "From Seeking to Seeing",
+    "seconds": 129.528,
+    "sourceHash": "9340380a2b670c87b7c1e9e6c672694fdc15222f026a1da3d67f99f6c7599acb",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "adhyatmik-anubhav-bhi-bit-jata-hai": {
+    "src": "/magazine-audio/narration/en/adhyatmik-anubhav-bhi-bit-jata-hai-2d8facbe2c.mp3",
+    "title": "Even a Spiritual Experience Passes",
+    "seconds": 241.152,
+    "sourceHash": "2d8facbe2c469bf1cbf89969bc40903c735fba73f11aed96f9d56045018eddc4",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "aatmabodh-ke-baad": {
+    "src": "/magazine-audio/narration/en/aatmabodh-ke-baad-d9bd0528f9.mp3",
+    "title": "Does Life Change After Self-Recognition?",
+    "seconds": 234.456,
+    "sourceHash": "d9bd0528f9dd69cf1ba20a57b9af29747a671d914caacbd9b21c7624433b1510",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "sambandhon-me-sunana": {
+    "src": "/magazine-audio/narration/en/sambandhon-me-sunana-589d410360.mp3",
+    "title": "Listening Before the Answer Arrives",
+    "seconds": 135.696,
+    "sourceHash": "589d410360579d9aad870507ce3107ac7d3a7a28b78b86e985741f20ce872ed9",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "maun-tat": {
+    "src": "/magazine-audio/narration/en/maun-tat-2329eb31ae.mp3",
+    "title": "A Few Moments Without a Conclusion",
+    "seconds": 24.456,
+    "sourceHash": "2329eb31aebe630026b258a1932ae59995b650dbcb323f45af48a409162f8bea",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  }
+}

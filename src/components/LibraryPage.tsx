@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useSyncExternalStore } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Language } from '@/lib/i18n';
@@ -11,6 +11,14 @@ import MuktibodhMagazineSection from '@/components/MuktibodhMagazineSection';
 import CourseBanner from '@/components/CourseBanner';
 import { EBOOKS, AUDIOBOOKS, MAGAZINES } from '@/lib/library-data';
 import type { EBook } from '@/lib/library-data';
+
+const subscribeLanguage = (notify: () => void) => {
+  window.addEventListener('storage', notify);
+  return () => window.removeEventListener('storage', notify);
+};
+const serverLanguage = (): Language => 'hi';
+const clientMounted = () => true;
+const serverMounted = () => false;
 
 // ── Waveform bars ────────────────────────────────────────
 function Waveform() {
@@ -262,17 +270,15 @@ function AudioCard({ book, hi }: { book: typeof AUDIOBOOKS[0]; hi: boolean }) {
 
 // ── Main Page ─────────────────────────────────────────────
 export default function LibraryPage() {
-  // FOUC fix: start with 'hi' (matches server), update after mount
-  const [lang, setLang] = useState<Language>('hi');
-  const [mounted, setMounted] = useState(false);
+  const savedLang = useSyncExternalStore(subscribeLanguage, getSavedLanguage, serverLanguage);
+  const [selectedLang, setLang] = useState<Language | null>(null);
+  const lang = selectedLang ?? savedLang;
+  const mounted = useSyncExternalStore(subscribeLanguage, clientMounted, serverMounted);
   const [ebookTab, setEbookTab] = useState<'hi' | 'en'>('hi');
   const [section, setSection] = useState<'ebooks' | 'audio'>('ebooks');
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const saved = getSavedLanguage();
-    setLang(saved);
-    setMounted(true);
     // Ensure video plays
     if (videoRef.current) {
       videoRef.current.play().catch(() => {});
@@ -360,8 +366,8 @@ export default function LibraryPage() {
             fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
           }}>
             {hi
-              ? 'निर्वाण धाम की शिक्षाएँ — ईबुक, ऑडियोबुक और मासिक पत्रिका मुक्तिबोध'
-              : 'Teachings of Nirvan Dham — eBooks, Audiobooks & the monthly Muktibodh Magazine'}
+              ? 'निर्वाण धाम की शिक्षाएँ — ईबुक, ऑडियोबुक, निर्वाण सूत्र पत्रिका और मुक्तिबोध संग्रह'
+              : 'Teachings of Nirvan Dham — eBooks, Audiobooks, Nirvan Sutra Patrika & the Muktibodh archive'}
           </p>
 
           {/* Section tabs */}
@@ -400,7 +406,7 @@ export default function LibraryPage() {
         </div>
       </section>
 
-      {/* ══ MUKTIBODH BANNER ══ */}
+      {/* ══ NIRVAN SUTRA PATRIKA FEATURE + MUKTIBODH ARCHIVE ══ */}
       <MuktibodhMagazineSection hi={hi} issues={MAGAZINES} />
 
       {/* ══ EBOOKS ══ */}

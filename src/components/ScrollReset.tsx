@@ -8,12 +8,15 @@ function shouldKeepCurrentScroll() {
 }
 
 function scrollToTop() {
+  if (window.location.pathname === '/patrika') return;
   if (shouldKeepCurrentScroll()) return;
 
   window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
 }
 
 function resetScrollPosition() {
+  // The immersive magazine owns its reader/map positions and native-history navigation.
+  if (window.location.pathname === '/patrika') return () => {};
   scrollToTop();
 
   requestAnimationFrame(() => {

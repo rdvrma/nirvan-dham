@@ -1,0 +1,114 @@
+{
+  "pravesh": {
+    "src": "/magazine-audio/narration/pravesh-53c41c6195.mp3",
+    "title": "यात्रा का आरम्भ",
+    "seconds": 41.76,
+    "sourceHash": "53c41c6195cd6d029b8c8a7f20002b9346b8c2630ed94076c7bef6dff1cd661f",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "geet-vatika": {
+    "src": "/magazine-audio/narration/geet-vatika-ccc948abe6.mp3",
+    "title": "जिसे ढूँढ़ा वही निकट था",
+    "seconds": 35.928,
+    "sourceHash": "ccc948abe60ea7b5238b199d5ebd522ebfab7b49b7965b83a052de9c3c44252b",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "hasya-kunj": {
+    "src": "/magazine-audio/narration/hasya-kunj-de82bb7c7a.mp3",
+    "title": "साधक की जल्दी",
+    "seconds": 32.664,
+    "sourceHash": "de82bb7c7aed8be87ab07417160f748dc345bc17c93349dcc6db2bea4ccf79ba",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "kahani-van": {
+    "src": "/magazine-audio/narration/kahani-van-32f7e4036b.mp3",
+    "title": "आईना जो कुछ नहीं रखता",
+    "seconds": 45.288,
+    "sourceHash": "32f7e4036b25b8fafe256bbc1ca90e2612a94fd8c108c54e6d161d9957481426",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "khidki-aur-aakash": {
+    "src": "/magazine-audio/narration/khidki-aur-aakash-3fe6848dcf.mp3",
+    "title": "खिड़की और आकाश",
+    "seconds": 107.832,
+    "sourceHash": "3fe6848dcf95ddee4b1343225a39e44b9e33547012fe17580d74cb119e991620",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "jo-vichar-ko-janta-hai": {
+    "src": "/magazine-audio/narration/jo-vichar-ko-janta-hai-411a009a8a.mp3",
+    "title": "जो विचार को जानता है",
+    "seconds": 54.384,
+    "sourceHash": "411a009a8a3e68933e9d2872ed50256e7e3cd2965ae4810bd372d2769b89d15a",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "jo-badalta-rahta-hai": {
+    "src": "/magazine-audio/narration/jo-badalta-rahta-hai-6850372c22.mp3",
+    "title": "जो बदलता रहता है, वह ‘मैं’ कैसे हो सकता है?",
+    "seconds": 220.056,
+    "sourceHash": "6850372c225be1fd25f2d1f9728691e46c6dc0e05ff4439d8619309e89eda56f",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "man-ko-shaant-karna": {
+    "src": "/magazine-audio/narration/man-ko-shaant-karna-d1e1e09706.mp3",
+    "title": "मन को शांत करना है—या मन को समझना?",
+    "seconds": 222.12,
+    "sourceHash": "d1e1e097068d760d96604a4881236164b18c10d5cd3887ad50af9442dc086a73",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "ruk-kar-dekhna": {
+    "src": "/magazine-audio/narration/ruk-kar-dekhna-3f4fc33e90.mp3",
+    "title": "तीन मिनट: विचार को बिना सँवारे देखना",
+    "seconds": 116.016,
+    "sourceHash": "3f4fc33e909d5afe413fed4302e3c01e9427e4a10557f5d3e707295a184ac188",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "sadhak-se-satya-tak": {
+    "src": "/magazine-audio/narration/sadhak-se-satya-tak-ae0d1839c0.mp3",
+    "title": "साधक से सत्य तक",
+    "seconds": 129.624,
+    "sourceHash": "ae0d1839c05b7f22564e747e9d3dc0bc2a4b59b57a11d8ed0989142a0472550f",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "adhyatmik-anubhav-bhi-bit-jata-hai": {
+    "src": "/magazine-audio/narration/adhyatmik-anubhav-bhi-bit-jata-hai-64ea7137da.mp3",
+    "title": "आध्यात्मिक अनुभव भी बीत जाता है",
+    "seconds": 235.752,
+    "sourceHash": "64ea7137daf866a079d213f0c3862a589878e052aa7c3ffa867ef12a1866c964",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "aatmabodh-ke-baad": {
+    "src": "/magazine-audio/narration/aatmabodh-ke-baad-950fbe6e7d.mp3",
+    "title": "आत्मबोध के बाद क्या जीवन बदल जाता है?",
+    "seconds": 232.752,
+    "sourceHash": "950fbe6e7de8a968928f612a7b729796f60412c783e1829a73f299c8c3819a67",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "sambandhon-me-sunana": {
+    "src": "/magazine-audio/narration/sambandhon-me-sunana-2e287b51ea.mp3",
+    "title": "सुनना: जब उत्तर थोड़ा ठहरता है",
+    "seconds": 130.032,
+    "sourceHash": "2e287b51eaa395d9fdfcfde29ef3ea63a3bb6775ee7fceb1f782f15298c7bed2",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  },
+  "maun-tat": {
+    "src": "/magazine-audio/narration/maun-tat-09fd5d149d.mp3",
+    "title": "कुछ क्षण बिना निष्कर्ष",
+    "seconds": 23.568,
+    "sourceHash": "09fd5d149de00b1a5796a9c0c9a61797be0d50cd0e9ff697c8b63901fa63f59e",
+    "voice": "shubh",
+    "model": "bulbul:v3"
+  }
+}
