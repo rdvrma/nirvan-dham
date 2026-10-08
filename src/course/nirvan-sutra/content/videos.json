@@ -1,0 +1,15 @@
+{
+ "$comment": "Publishing a teaching film = adding/editing its entry here (fields of VideoAsset, src/course/nirvan-sutra/types.ts); every other field keeps its default (placeholder). NS-S01-Q01 carries a PUBLIC CC0 TEST CLIP (MDN 'flower') to prove the replacement path; replace it with the real film.",
+ "lessons": {
+  "NS-S01-Q01": {
+   "videoProvider": "file",
+   "videoId": "test-mdn-flower",
+   "videoUrl": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+   "poster": null,
+   "durationSec": 5,
+   "chapters": [{ "atSec": 0, "title": "Test clip (CC0)" }],
+   "revision": 1,
+   "publishStatus": "published"
+  }
+ }
+}
