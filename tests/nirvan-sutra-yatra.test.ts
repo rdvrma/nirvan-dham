@@ -6,10 +6,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { MemoryProgressStore, setProgressStore, progressStore } from '../src/course/nirvan-sutra/server/store';
 import { handleAction } from '../src/course/nirvan-sutra/server/actions';
-import { answerKeys, itemsForGrading, stageView, stageItemIds, videoAsset, questionView, checkpointView, finalView, source } from '../src/course/nirvan-sutra/server/content';
+import { answerKeys, itemsForGrading, stageView, videoAsset, questionView, checkpointView, finalView, source, writtenPrompts } from '../src/course/nirvan-sutra/server/content';
 import { demoProgress } from '../src/course/nirvan-sutra/server/demo';
 import * as E from '../src/course/nirvan-sutra/engine';
-import { STAGE_IDS, CHECKPOINTS, stageId } from '../src/course/nirvan-sutra/structure';
+import { STAGE_IDS, CHECKPOINTS, stageId, writtenKey } from '../src/course/nirvan-sutra/structure';
 import { LOCALES } from '../src/course/nirvan-sutra/locales';
 import { MockTTSProvider, SarvamTTSProvider } from '../src/course/nirvan-sutra/tts';
 
@@ -22,9 +22,11 @@ const rightPos = (id: string, count: number) => E.optionOrder(id, count).indexOf
 const wrongPos = (id: string, count: number) => (rightPos(id, count) + 1) % count;
 const get = async (id: string) => (await (await progressStore()).get(id))!;
 
+/** own-words answers: anything honest of a few characters is enough */
+const own = (n: number) => Array.from({ length: n }, (_, i) => `मेरे अपने शब्दों में उत्तर ${i + 1}`);
 async function passStage(id: string, stage: string) {
   await handleAction(id, 'main-viewed', { stage });
-  for (const it of itemsForGrading('stage', stage)) await handleAction(id, 'check', { stage, itemId: it.id, answer: rightPos(it.id, it.options.length) });
+  await handleAction(id, 'written', { stage, answers: own(3) });
   await handleAction(id, 'complete-stage', { stage });
 }
 const allRight = (kind: 'checkpoint' | 'final', cp?: string) => Object.fromEntries(itemsForGrading(kind, cp).map((it) => [it.id, rightPos(it.id, it.options.length)]));
@@ -61,7 +63,7 @@ test('changing the language never loses progress', async () => {
   assert.equal(after.locale, 'bn');
   assert.deepEqual(after.stagesCompleted, before.stagesCompleted);
   assert.deepEqual(after.questionsViewed, before.questionsViewed);
-  assert.deepEqual(after.stageChecks, before.stageChecks);
+  assert.deepEqual(after.written, before.written);
 });
 
 test('stage unlock order, and a locked stage refuses every action', async () => {
@@ -71,7 +73,7 @@ test('stage unlock order, and a locked stage refuses every action', async () => 
   assert.equal(E.stageState(p, 'S01'), 'current');
   assert.equal(E.stageState(p, 'S02'), 'locked');
   await assert.rejects(() => handleAction(id, 'main-viewed', { stage: 'S02' }), /locked/);
-  await assert.rejects(() => handleAction(id, 'check', { stage: 'S02', itemId: 'S02-C1', answer: 0 }), /locked/);
+  await assert.rejects(() => handleAction(id, 'written', { stage: 'S02', answers: own(3) }), /locked/);
   await assert.rejects(() => handleAction(id, 'question-viewed', { id: 'NS-S02-Q01' }), /locked/);
   await passStage(id, 'S01');
   const q = await get(id);
@@ -79,45 +81,50 @@ test('stage unlock order, and a locked stage refuses every action', async () => 
   assert.equal(E.stageState(q, 'S02'), 'current');
 });
 
-test('a stage completes only after its main film and all three check items', async () => {
+test('a stage completes only after its main film and the seeker’s own words for all three check questions', async () => {
   const id = learner();
   await handleAction(id, 'enroll', { locale: 'hi' });
   await assert.rejects(() => handleAction(id, 'complete-stage', { stage: 'S01' }), /requirements/);
   await handleAction(id, 'main-viewed', { stage: 'S01' });
   await assert.rejects(() => handleAction(id, 'complete-stage', { stage: 'S01' }), /requirements/);
-  const items = itemsForGrading('stage', 'S01');
-  for (const it of items.slice(0, 2)) await handleAction(id, 'check', { stage: 'S01', itemId: it.id, answer: rightPos(it.id, it.options.length) });
+  // every question needs an answer of at least a few characters; there is no right or wrong
+  await assert.rejects(() => handleAction(id, 'written', { stage: 'S01', answers: own(2) }), /every question/);
+  await assert.rejects(() => handleAction(id, 'written', { stage: 'S01', answers: ['हाँ', 'ठीक', 'नहीं'] }), /every question/);
   await assert.rejects(() => handleAction(id, 'complete-stage', { stage: 'S01' }), /requirements/);
-  const last = items[2];
-  const r = await handleAction(id, 'check', { stage: 'S01', itemId: last.id, answer: rightPos(last.id, last.options.length) }) as { passed: boolean };
-  assert.equal(r.passed, true);
+  await handleAction(id, 'written', { stage: 'S01', answers: own(3) });
   assert.deepEqual(await handleAction(id, 'complete-stage', { stage: 'S01' }), { ok: true, next: 'S02' });
 });
 
-test('a wrong answer gets the gentle explanation, the part to revisit, and unlimited retries; the score is the server’s', async () => {
+test('own-words answers are saved with the questions in the seeker’s language and sent on once per submission; never graded', async () => {
   const id = learner();
-  await handleAction(id, 'enroll', { locale: 'hi' });
-  const it = itemsForGrading('stage', 'S01')[0];
-  for (let k = 0; k < 3; k++) {
-    const r = await handleAction(id, 'check', { stage: 'S01', itemId: it.id, answer: wrongPos(it.id, it.options.length) }) as { correct: boolean; explanation: string; revisit: string; rightPosition: null };
-    assert.equal(r.correct, false);
-    assert.ok(r.explanation.length > 20 && r.revisit.length > 5);
-    assert.equal(r.rightPosition, null);   // the right option is not given away on a miss
-  }
-  const ok = await handleAction(id, 'check', { stage: 'S01', itemId: it.id, answer: rightPos(it.id, it.options.length) }) as { correct: boolean };
-  assert.equal(ok.correct, true);
+  await handleAction(id, 'enroll', { locale: 'ta', name: 'Meera' });
+  const sent: { part: string; prompts: string[]; answers: string[]; locale: string; learner: { name: string | null }; objective?: unknown }[] = [];
+  const notify = async (n: (typeof sent)[number]) => { sent.push(n); return true; };
+  const r = await handleAction(id, 'written', { stage: 'S01', answers: own(3) }, { notify }) as { ok: boolean; sent: boolean };
+  assert.deepEqual(r, { ok: true, sent: true });
   const p = await get(id);
-  assert.equal(p.stageChecks.S01.tries, 4);
+  const w = p.written[writtenKey('stage', 'S01')];
+  assert.deepEqual(w.answers, own(3));
+  assert.equal(w.locale, 'ta');
+  assert.deepEqual(w.prompts, writtenPrompts('ta', 'stage', 'S01').prompts);
+  assert.equal(sent.length, 1);
+  assert.match(sent[0].part, /^Stage S01 — /);
+  assert.equal(sent[0].learner.name, 'Meera');
+  assert.equal(sent[0].objective, undefined);
+  // sending again replaces the answers (and sends once more)
+  await handleAction(id, 'written', { stage: 'S01', answers: own(3).reverse() }, { notify });
+  assert.deepEqual((await get(id)).written[writtenKey('stage', 'S01')].answers, own(3).reverse());
+  assert.equal(sent.length, 2);
   // a client cannot send a score: the assessment action only takes answers
-  await assert.rejects(() => handleAction(id, 'assessment', { kind: 'final', answers: {}, score: 40 }), /locked/);
+  await assert.rejects(() => handleAction(id, 'assessment', { kind: 'final', answers: {}, written: own(3), score: 40 }), /locked/);
 });
 
 test('the options are shown in a stable shuffled order, the same for every language, and never reveal the answer', () => {
-  const hi = stageView('hi', 'S03').checkItems[0], en = stageView('en', 'S03').checkItems[0];
+  const hi = checkpointView('hi', 'CP2').items[0], en = checkpointView('en', 'CP2').items[0];
   assert.equal(hi.id, en.id);
-  assert.deepEqual(E.optionOrder('S03-C1', 4), E.optionOrder('S03-C1', 4));
+  assert.deepEqual(E.optionOrder(hi.id, 4), E.optionOrder(hi.id, 4));
   assert.ok(!('explanation' in hi) && !('answer' in hi));
-  const positions = new Set(STAGE_IDS.flatMap((s) => itemsForGrading('stage', s)).map((it) => rightPos(it.id, it.options.length)));
+  const positions = new Set(itemsForGrading('final').map((it) => rightPos(it.id, it.options.length)));
   assert.ok(positions.size >= 3, 'the right answer is not always in the same place');
 });
 
@@ -126,10 +133,13 @@ test('section checkpoints open after their movement; the final assessment after 
   await handleAction(id, 'enroll', { locale: 'hi' });
   await assert.rejects(() => handleAction(id, 'assessment', { kind: 'checkpoint', id: 'CP1', answers: {} }), /locked/);
   for (const s of ['S01', 'S02', 'S03', 'S04']) await passStage(id, s);
-  const r = await handleAction(id, 'assessment', { kind: 'checkpoint', id: 'CP1', answers: allRight('checkpoint', 'CP1') }) as { score: number; total: number; weakest: unknown[] };
+  // a checkpoint has both parts: its objective questions and two questions in the seeker's own words
+  await assert.rejects(() => handleAction(id, 'assessment', { kind: 'checkpoint', id: 'CP1', answers: allRight('checkpoint', 'CP1') }), /every question/);
+  const r = await handleAction(id, 'assessment', { kind: 'checkpoint', id: 'CP1', answers: allRight('checkpoint', 'CP1'), written: own(2) }) as { score: number; total: number; weakest: unknown[] };
   assert.equal(r.score, r.total);
   assert.equal(r.weakest.length, 0);
   assert.ok(E.checkpointDone(await get(id), 'CP1'));
+  assert.deepEqual((await get(id)).written[writtenKey('checkpoint', 'CP1')].answers, own(2));
   await assert.rejects(() => handleAction(id, 'assessment', { kind: 'final', answers: {} }), /locked/);
   assert.equal(E.finalUnlocked(await get(id)), false);
 });
@@ -141,13 +151,13 @@ test('below the threshold: no fail screen, the weakest stages and concepts to re
   const answers = allRight('final');
   const weak = ['S09', 'S12', 'S14', 'S17'];
   for (const it of items.filter((x) => weak.includes(x.stage!))) answers[it.id] = wrongPos(it.id, it.options.length);
-  const r = await handleAction(id, 'assessment', { kind: 'final', answers }) as { passed: boolean; weakest: { stage: string; concepts: string[] }[]; score: number; total: number };
+  const r = await handleAction(id, 'assessment', { kind: 'final', answers, written: own(3) }) as { passed: boolean; weakest: { stage: string; concepts: string[] }[]; score: number; total: number };
   assert.equal(r.passed, false);
   assert.ok(r.score / r.total < 0.8);
   assert.deepEqual(r.weakest.map((w) => w.stage).sort(), weak);
   assert.ok(r.weakest[0].concepts.length > 0);
   assert.equal(E.phase1Complete(await get(id)), false);
-  const again = await handleAction(id, 'assessment', { kind: 'final', answers: allRight('final') }) as { passed: boolean; phase1Complete: boolean };
+  const again = await handleAction(id, 'assessment', { kind: 'final', answers: allRight('final'), written: own(3) }) as { passed: boolean; phase1Complete: boolean };
   assert.equal(again.passed, true);
   assert.equal(again.phase1Complete, true);
 });
@@ -156,7 +166,7 @@ test('Phase I → Nididhyasana: only after the whole Phase I; weeks open one by 
   const id = learner();
   await (await progressStore()).save({ ...demoProgress(id, 'final-ready', 'hi'), learnerId: id });
   await assert.rejects(() => handleAction(id, 'nididhyasana', { op: 'start' }), /after Phase I/);
-  await handleAction(id, 'assessment', { kind: 'final', answers: allRight('final') });
+  await handleAction(id, 'assessment', { kind: 'final', answers: allRight('final'), written: own(3) });
   const t0 = new Date('2026-11-01T10:00:00Z');
   await handleAction(id, 'nididhyasana', { op: 'start' }, { at: t0 });
   // progress saved by the store uses the real clock for startedAt? the action uses opts.at
@@ -178,7 +188,7 @@ test('the final reflection and the certificate: every requirement, in order', as
   const p = { ...demoProgress(id, 'nididhyasana', 'hi', at), learnerId: id };
   await (await progressStore()).save(p);
   await assert.rejects(() => handleAction(id, 'final-reflection', { answers: ['x'.repeat(30)] }, { at }), /opens after/);
-  assert.equal(E.certificateEligible(await get(id), stageItemIds, at), false);
+  assert.equal(E.certificateEligible(await get(id), at), false);
   // the twelve weeks pass with enough participation
   const done = { ...demoProgress(id, 'completed', 'hi', at), learnerId: id, finalReflection: null };
   await (await progressStore()).save(done);
@@ -186,9 +196,9 @@ test('the final reflection and the certificate: every requirement, in order', as
   await assert.rejects(() => handleAction(id, 'final-reflection', { answers: ['short'] }, { at: late }), /every prompt/);
   await handleAction(id, 'final-reflection', { answers: Array.from({ length: 9 }, () => 'अब “मैं” को एक विचार की तरह आते-जाते देखता हूँ।') }, { at: late });
   const q = await get(id);
-  const list = E.certificateChecklist(q, stageItemIds, late);
+  const list = E.certificateChecklist(q, late);
   assert.deepEqual(list.map((c) => c.done), [true, true, true, true, true, true]);
-  assert.equal(E.certificateEligible(q, stageItemIds, late), true);
+  assert.equal(E.certificateEligible(q, late), true);
 });
 
 test('certificate and pass texts never certify an attainment', () => {
@@ -218,6 +228,11 @@ test('every language resolves every stage, question and assessment (its own text
     assert.ok(questionView(l.code, 'NS-S17-Q10').text.length > 10);
     for (const c of CHECKPOINTS) assert.ok(checkpointView(l.code, c.id).items.length >= 6);
     assert.ok(finalView(l.code).items.length >= 40);
+    // the own-words questions: three per stage, two per checkpoint, three in the final
+    for (const s of STAGE_IDS) assert.equal(writtenPrompts(l.code, 'stage', s).prompts.length, 3, `${l.code} ${s}`);
+    for (const c of CHECKPOINTS) assert.equal(writtenPrompts(l.code, 'checkpoint', c.id).prompts.length, 2, `${l.code} ${c.id}`);
+    assert.equal(writtenPrompts(l.code, 'final').prompts.length, 3);
+    assert.equal(writtenPrompts(l.code, 'final').fallback, false);
   }
 });
 
@@ -233,7 +248,7 @@ test('demo states cover the whole product', () => {
   assert.equal(E.currentStage(demoProgress('demo-mid-0001', 'mid', 'hi', at)), 'S08');
   assert.equal(E.finalUnlocked(demoProgress('demo-fin-0001', 'final-ready', 'hi', at)), true);
   assert.equal(E.nididhyasanaWeek(demoProgress('demo-nid-0001', 'nididhyasana', 'hi', at), at), 5);
-  assert.equal(E.certificateEligible(demoProgress('demo-done-001', 'completed', 'hi', at), stageItemIds, at), true);
+  assert.equal(E.certificateEligible(demoProgress('demo-done-001', 'completed', 'hi', at), at), true);
   assert.equal(stageId(17), 'S17');
 });
 

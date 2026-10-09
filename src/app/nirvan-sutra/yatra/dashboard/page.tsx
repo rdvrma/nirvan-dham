@@ -36,7 +36,7 @@ export default async function Dashboard() {
     if (p.nididhyasana.startedAt && nidWeek && nidWeek <= 12) return t('suggestionNid', { pointer: prog.nididhyasana.weeks[nidWeek - 1]?.pointer ?? '' });
     if (!cur) return t('suggestionFinal');
     if (!p.mainViewed.includes(cur)) return t('suggestionWatch', { n: stageNumber(cur) });
-    if (!E.checkPassed(p, cur, curView!.checkItems.map((i) => i.id))) return t('suggestionCheck');
+    if (!E.stageWritten(p, cur)) return t('suggestionCheck');
     return t('suggestionQuestions');
   })();
 

@@ -45,7 +45,9 @@ export async function progressStore(): Promise<ProgressStore> {
 }
 
 export async function loadOrCreate(learnerId: string): Promise<Progress> {
-  return (await (await progressStore()).get(learnerId)) ?? newProgress(learnerId);
+  const stored = await (await progressStore()).get(learnerId);
+  // rows saved before a field existed get its empty default
+  return stored ? { ...newProgress(learnerId), ...stored, written: stored.written ?? {} } : newProgress(learnerId);
 }
 /** Load, change and save in one step. */
 export async function update(learnerId: string, fn: (p: Progress) => Progress | void): Promise<Progress> {

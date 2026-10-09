@@ -23,7 +23,7 @@ interface SourceLesson { id: string; filmId: string; kind: 'main' | 'question'; 
 interface Source { provenance: { repo: string; branch: string; commit: string | null; importedAt: string }; stages: { n: number; id: string; topicId: string; title: { hi: string; en: string }; questions: { id: string; n: number; text: { hi: string } }[] }[]; lessons: Record<string, SourceLesson>; verses: { ref: string; text: string; quoted: string; checkedAgainst: string }[] }
 export const source = () => readJson<Source>('content/source.json')!;
 type StagesFile = { stages: Record<string, Partial<StageText> & { approvedFields?: string[] }> };
-type AssessFile = { status: ContentStatus; checkpoints: Record<string, { title: string; items: CheckItem[] }>; final: { items: CheckItem[] } };
+type AssessFile = { status: ContentStatus; checkpoints: Record<string, { title: string; written?: string[]; items: CheckItem[] }>; final: { written?: string[]; items: CheckItem[] } };
 type ProgramFile = { status: ContentStatus; movements: Record<MovementId, { title: string; subtitle: string }>; nididhyasana: { status: ContentStatus; weeks: { n: number; theme: string; pointer: string; reflectionPrompt: string }[] }; finalReflection: { status: ContentStatus; prompts: string[] }; glossary: { status: ContentStatus; terms: { term: string; gloss: string }[] } };
 type QuestionsFile = { status: ContentStatus; questions: Record<string, string> };
 type UiFile = { status: ContentStatus; strings: Record<string, string> };
@@ -95,6 +95,15 @@ export function stageView(locale: LocaleCode, stage: string): StageView {
 }
 export const allStages = (locale: LocaleCode) => STAGE_IDS.map((s) => stageView(locale, s));
 export const stageItemIds = (stage: string) => (stagesOf(SOURCE_LOCALE)!.stages[stage].check ?? []).map((c) => c.id);
+
+// ── own-words questions (no grading) ─────────────────────────────────────────
+/** The questions a seeker answers in their own words: a stage's three check questions, or a checkpoint's / the final's written prompts. */
+export function writtenPrompts(locale: LocaleCode, kind: 'stage' | 'checkpoint' | 'final', id?: string): { prompts: string[]; fallback: boolean } {
+  const r = kind === 'stage'
+    ? resolve(locale, (l) => { const c = stagesOf(l)?.stages?.[id!]?.check; return c?.length ? c.map((x) => x.prompt) : undefined; })
+    : resolve(locale, (l) => (kind === 'checkpoint' ? assessOf(l)?.checkpoints?.[id!]?.written : assessOf(l)?.final?.written));
+  return { prompts: r?.value ?? [], fallback: !!r?.fallback };
+}
 
 /** The full item (with explanation and revisit hint) in the learner's language — only after an answer was graded. */
 export function checkItemFull(locale: LocaleCode, itemId: string): CheckItem | null {

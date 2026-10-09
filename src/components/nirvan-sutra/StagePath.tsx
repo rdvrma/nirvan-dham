@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { CompleteStage } from './Bits';
 import { BASE, type T } from '@/course/nirvan-sutra/server/context';
 
-export interface StepState { mainViewed: boolean; checkPassed: boolean; completed: boolean }
+export interface StepState { mainViewed: boolean; written: boolean; completed: boolean }
 export type NextAction =
   | { kind: 'anchor'; text: string; href: string; label: string }
   | { kind: 'complete'; text: string; stage: string }
@@ -13,7 +13,7 @@ export type NextAction =
 /** The one next thing to do on a stage page. */
 export function nextAction(t: T, stage: string, s: StepState, after: { checkpoint: { id: string; n: number; done: boolean } | null; next: { id: string; title: string } | null }): NextAction {
   if (!s.mainViewed) return { kind: 'anchor', text: t('nextDoFilm', { button: `“${t('markWatched')}”` }), href: '#film', label: t('goThere') };
-  if (!s.checkPassed) return { kind: 'anchor', text: t('nextDoCheck'), href: '#check', label: t('goThere') };
+  if (!s.written) return { kind: 'anchor', text: t('nextDoCheck'), href: '#check', label: t('goThere') };
   if (!s.completed) return { kind: 'complete', text: t('nextDoComplete'), stage };
   if (after.checkpoint && !after.checkpoint.done) return { kind: 'link', text: t('nextDoCheckpoint'), href: `${BASE}/checkpoint/${after.checkpoint.id}`, label: t('checkpointN', { n: after.checkpoint.n }) };
   if (after.next) return { kind: 'link', text: t('nextDoNext'), href: `${BASE}/stage/${after.next.id}`, label: t('nextStage', { title: after.next.title }) };
@@ -23,7 +23,7 @@ export function nextAction(t: T, stage: string, s: StepState, after: { checkpoin
 export function StageStepper({ t, s }: { t: T; s: StepState }) {
   const steps = [
     { href: '#film', label: t('mainFilm'), done: s.mainViewed },
-    { href: '#check', label: t('checkLabel'), done: s.checkPassed },
+    { href: '#check', label: t('checkLabel'), done: s.written },
     { href: '#complete', label: t('completeStage'), done: s.completed },
   ];
   const current = steps.findIndex((x) => !x.done);

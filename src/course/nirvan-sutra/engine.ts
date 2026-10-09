@@ -1,7 +1,7 @@
 // The progression rules of Nirvan Sutra, as pure functions of the learner's progress (tested in tests/nirvan-sutra-engine.test.ts).
 // Completing a stage means the curriculum of that stage is done — never an attainment.
 import type { Progress, LocaleCode, AssessmentAttempt } from './types';
-import { PROGRAM, STAGE_IDS, CHECKPOINTS, stageNumber, stageId, questionIdsOf, MOVEMENTS } from './structure';
+import { PROGRAM, STAGE_IDS, CHECKPOINTS, stageNumber, stageId, questionIdsOf, MOVEMENTS, writtenKey } from './structure';
 
 export type StageState = 'locked' | 'current' | 'available' | 'completed';
 
@@ -9,7 +9,7 @@ export function newProgress(learnerId: string, now = new Date()): Progress {
   const at = now.toISOString();
   return {
     learnerId, name: null, locale: null, enrolledAt: at, updatedAt: at, lastVisited: null,
-    mainViewed: [], stageChecks: {}, stagesCompleted: [], questionsViewed: [], reflections: {},
+    mainViewed: [], stageChecks: {}, written: {}, stagesCompleted: [], questionsViewed: [], reflections: {},
     checkpoints: {}, final: [], nididhyasana: { startedAt: null, weeks: {} }, finalReflection: null,
   };
 }
@@ -25,27 +25,32 @@ export function stageState(p: Progress, stage: string): StageState {
   return currentStage(p) === stage ? 'current' : 'available';
 }
 
-export const checkPassed = (p: Progress, stage: string, itemIds: string[]) => itemIds.every((id) => p.stageChecks[stage]?.correct.includes(id));
+/** Own-words answers were given (there is no right or wrong in them; giving them is the requirement). */
+export const writtenDone = (p: Progress, key: string) => (p.written?.[key]?.answers.length ?? 0) > 0;
+/** The stage check is the three own-words answers of the stage. */
+export const stageWritten = (p: Progress, stage: string) => writtenDone(p, writtenKey('stage', stage));
 
 /** What a stage still needs before it can be completed. */
-export function stageRequirements(p: Progress, stage: string, itemIds: string[]) {
-  return { mainViewed: p.mainViewed.includes(stage), checkPassed: checkPassed(p, stage, itemIds) };
+export function stageRequirements(p: Progress, stage: string) {
+  return { mainViewed: p.mainViewed.includes(stage), written: stageWritten(p, stage) };
 }
-export const canCompleteStage = (p: Progress, stage: string, itemIds: string[]) => {
-  const r = stageRequirements(p, stage, itemIds);
-  return isStageUnlocked(p, stage) && r.mainViewed && r.checkPassed;
+export const canCompleteStage = (p: Progress, stage: string) => {
+  const r = stageRequirements(p, stage);
+  return isStageUnlocked(p, stage) && r.mainViewed && r.written;
 };
 
 export const questionsViewedIn = (p: Progress, stage: string) => questionIdsOf(stage).filter((q) => p.questionsViewed.includes(q)).length;
 
 // ── checkpoints and the final assessment ─────────────────────────────────────
 export const checkpointUnlocked = (p: Progress, id: string) => { const c = CHECKPOINTS.find((x) => x.id === id); return !!c && isStageCompleted(p, stageId(c.afterStage)); };
-export const checkpointDone = (p: Progress, id: string) => (p.checkpoints[id]?.length ?? 0) > 0;
+/** A checkpoint is done when it was taken: its questions answered and its own-words answers given (no pass mark). */
+export const checkpointDone = (p: Progress, id: string) => (p.checkpoints[id]?.length ?? 0) > 0 && writtenDone(p, writtenKey('checkpoint', id));
 export const allStagesCompleted = (p: Progress) => STAGE_IDS.every((s) => isStageCompleted(p, s));
 export const allCheckpointsDone = (p: Progress) => CHECKPOINTS.every((c) => checkpointDone(p, c.id));
 export const finalUnlocked = (p: Progress) => allStagesCompleted(p);
 export const bestFinal = (p: Progress): AssessmentAttempt | null => p.final.reduce<AssessmentAttempt | null>((b, a) => (!b || a.score / a.total > b.score / b.total ? a : b), null);
-export const finalPassed = (p: Progress) => { const b = bestFinal(p); return !!b && b.score / b.total >= PROGRAM.finalThreshold; };
+/** The final: the objective part at the threshold and the own-words answers given. */
+export const finalPassed = (p: Progress) => { const b = bestFinal(p); return !!b && b.score / b.total >= PROGRAM.finalThreshold && writtenDone(p, writtenKey('final')); };
 
 // ── the two phases ───────────────────────────────────────────────────────────
 /** Phase I (ज्ञान-यात्रा) is complete: 17 stages, every stage check, the four checkpoints and the final assessment at the threshold. */
@@ -71,17 +76,17 @@ export function nididhyasanaComplete(p: Progress, now = new Date()) {
 export const finalReflectionUnlocked = (p: Progress, now = new Date()) => nididhyasanaUnlocked(p) && nididhyasanaComplete(p, now);
 
 /** The certificate rules, each one named so the learner sees exactly what is left. */
-export function certificateChecklist(p: Progress, stageItemIds: (stage: string) => string[], now = new Date()) {
+export function certificateChecklist(p: Progress, now = new Date()) {
   return [
     { key: 'stages', done: allStagesCompleted(p) },
-    { key: 'stageChecks', done: STAGE_IDS.every((s) => checkPassed(p, s, stageItemIds(s))) },
+    { key: 'stageChecks', done: STAGE_IDS.every((s) => stageWritten(p, s)) },
     { key: 'checkpoints', done: allCheckpointsDone(p) },
     { key: 'final', done: finalPassed(p) },
     { key: 'nididhyasana', done: nididhyasanaComplete(p, now) },
     { key: 'finalReflection', done: !!p.finalReflection },
   ];
 }
-export const certificateEligible = (p: Progress, stageItemIds: (stage: string) => string[], now = new Date()) => certificateChecklist(p, stageItemIds, now).every((c) => c.done);
+export const certificateEligible = (p: Progress, now = new Date()) => certificateChecklist(p, now).every((c) => c.done);
 
 /** Changing the language never touches progress. */
 export const withLocale = (p: Progress, locale: LocaleCode): Progress => ({ ...p, locale, updatedAt: new Date().toISOString() });

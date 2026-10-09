@@ -57,6 +57,8 @@ export interface VideoAsset {
 }
 
 export interface AssessmentAttempt { at: string; score: number; total: number; wrong: string[] }
+/** Answers a seeker wrote in their own words (no grading): the prompts as they were shown, in the seeker's language. */
+export interface WrittenEntry { prompts: string[]; answers: string[]; locale: LocaleCode; at: string }
 
 export interface Progress {
   learnerId: string;
@@ -66,7 +68,8 @@ export interface Progress {
   updatedAt: string;
   lastVisited: { kind: 'stage' | 'question' | 'checkpoint' | 'final' | 'nididhyasana'; id: string; at: string } | null;
   mainViewed: string[];          // stage ids whose main film was watched (or marked watched)
-  stageChecks: Record<string, { correct: string[]; tries: number }>;   // stage id -> the check items answered right (unlimited retries) and how many answers were given
+  stageChecks: Record<string, { correct: string[]; tries: number }>;   // legacy: the multiple-choice stage check that the written answers replaced (kept so older rows still load)
+  written: Record<string, WrittenEntry>; // 'stage:S01' | 'checkpoint:CP1' | 'final' -> the seeker's own-words answers
   stagesCompleted: string[];
   questionsViewed: string[];     // NS-Sxx-Qyy
   reflections: Record<string, { text: string; at: string }>;

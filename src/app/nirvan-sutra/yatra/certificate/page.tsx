@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
-import { stageItemIds } from '@/course/nirvan-sutra/server/content';
 import * as E from '@/course/nirvan-sutra/engine';
 import BrandMark from '@/components/nirvan-sutra/BrandMark';
 
@@ -9,7 +8,7 @@ const LABEL: Record<string, string> = { stages: 'certStages', stageChecks: 'cert
 
 export default async function CertificatePage() {
   const { progress: p, locale, t } = await enrolledContext();
-  const list = E.certificateChecklist(p, stageItemIds);
+  const list = E.certificateChecklist(p);
   const eligible = list.every((c) => c.done);
   const date = new Intl.DateTimeFormat(`${locale === 'or' ? 'or' : locale}-IN`, { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(p.finalReflection?.submittedAt ?? p.updatedAt));
   return (

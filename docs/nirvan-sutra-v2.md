@@ -97,6 +97,21 @@ In dev, a "DEV" panel (bottom right) switches the learner between demo states: n
 - The way in: signed out → `/signup?next=/nirvan-sutra/yatra/onboarding?lang=xx` (or log in); the onboarding then skips the language step and asks only for the name. Enrolled seekers see "Continue your journey" → dashboard. On phones the call to enter stays docked at the bottom.
 - Its strings are the `l*` keys in each `locales/<code>/ui.json` (machine transcreations, like the rest).
 
+## Own-words answers (stage check, checkpoints, final)
+
+- **Stage check** = the stage's three check questions, answered in the seeker's own words. No options, no right or wrong. Each answer needs at least 10 characters (`PROGRAM.writtenMinChars`). A stage completes after the main film and these answers.
+- **Checkpoints and the final** have both parts: the objective questions (graded as before; the final still needs 80 %), then own-words questions (2 per checkpoint, 3 in the final). Both parts are sent together. A checkpoint counts as done once taken; the final passes at 80 % with its own-words answers given.
+- **Where the answers go:**
+  1. Saved first in the seeker's progress (`progress.written`, keys `stage:S01`, `checkpoint:CP1`, `final`). Each entry stores the questions as shown, in the seeker's language, so the owner can read them in Supabase (`ns_progress`).
+  2. Then sent by the server to Formspree as one email per submission. The email carries the seeker's name and email (as the reply-to), the language, the part, every question with its answer, and the objective score where there is one. A failed send never blocks the seeker.
+- **Formspree switch** (`src/course/nirvan-sutra/server/notify.ts`):
+  - Production sends to `https://formspree.io/f/xbgdowwz` by default.
+  - Development sends nothing unless `NIRVAN_SUTRA_FORMSPREE_URL` is set.
+  - `NIRVAN_SUTRA_FORMSPREE_URL=off` stops the emails everywhere.
+  - `scripts/nirvan-sutra/formspree-test.ts` sends one marked test submission.
+- **Formspree plan limit:** check it. Each seeker can produce up to 22 submissions (17 stages, 4 checkpoints, the final). The answers stay in Supabase either way.
+- The own-words questions of the checkpoints and the final are `written` in each `locales/<code>/assessments.json`. They are draft (Hindi) and machine (other languages).
+
 ## Guide desk (Nididhyasana)
 
 `/nirvan-sutra/yatra/guide` is for guides only. In supabase mode, a guide is a user listed in `ns_guides`; locally in file mode, the desk is open in development.

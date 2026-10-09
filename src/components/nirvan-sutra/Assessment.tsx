@@ -8,16 +8,18 @@ import { act, BASE, fmt } from './api';
 import { useCourse } from './CourseShell';
 import { Tick } from './VideoPlayer';
 import type { PublicItem } from '@/course/nirvan-sutra/server/content';
+import { OwnWordsFields, ownWordsReady } from './OwnWords';
 
 type Result = { score: number; total: number; passed: boolean; phase1Complete: boolean; results: { id: string; correct: boolean; rightPosition: number; explanation: string }[]; weakest: { stage: string; misses: number; concepts: string[] }[]; clarity: string[] };
 
-export default function Assessment({ kind, id, title, items, stageTitles, previous }: {
-  kind: 'checkpoint' | 'final'; id: string; title: string; items: PublicItem[]; stageTitles: Record<string, string>;
+export default function Assessment({ kind, id, title, items, written, stageTitles, previous }: {
+  kind: 'checkpoint' | 'final'; id: string; title: string; items: PublicItem[]; written: string[]; stageTitles: Record<string, string>;
   previous: { score: number; total: number } | null;
 }) {
   const { ui } = useCourse();
   const router = useRouter();
-  const [phase, setPhase] = useState<'intro' | 'items' | 'result'>('intro');
+  const [phase, setPhase] = useState<'intro' | 'items' | 'written' | 'result'>('intro');
+  const [own, setOwn] = useState<string[]>(written.map(() => ''));
   const [i, setI] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [res, setRes] = useState<Result | null>(null);
@@ -26,10 +28,10 @@ export default function Assessment({ kind, id, title, items, stageTitles, previo
 
   const finish = async () => {
     setBusy(true);
-    try { const r = await act<Result>('assessment', { kind, id, answers }); setRes(r); setPhase('result'); router.refresh(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    try { const r = await act<Result>('assessment', { kind, id, answers, written: own.map((a) => a.trim()) }); setRes(r); setPhase('result'); router.refresh(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
     finally { setBusy(false); }
   };
-  const restart = () => { setAnswers({}); setI(0); setRes(null); setPhase('items'); };
+  const restart = () => { setAnswers({}); setI(0); setRes(null); setPhase('items'); };   // the own-words answers stay, to be kept or changed
 
   if (phase === 'intro') {
     return (
@@ -66,7 +68,21 @@ export default function Assessment({ kind, id, title, items, stageTitles, previo
           <button className="ns-btn ns-btn-quiet" onClick={() => setI((x) => Math.max(0, x - 1))} disabled={i === 0}>← {ui.previous}</button>
           {i < items.length - 1
             ? <button className="ns-btn" onClick={() => setI((x) => x + 1)} disabled={answers[it.id] === undefined}>{ui.next} →</button>
-            : <button className="ns-btn" onClick={finish} disabled={busy || Object.keys(answers).length < items.length}>{ui.assessmentFinish}</button>}
+            : <button className="ns-btn" onClick={() => { setPhase('written'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} disabled={Object.keys(answers).length < items.length}>{ui.next} →</button>}
+        </div>
+      </div>
+    );
+  }
+
+  if (phase === 'written') {
+    const ready = ownWordsReady(own, written.length);
+    return (
+      <div className="ns-narrow ns-stack">
+        <h2 className="ns-h2">{ui.writtenTitle}</h2>
+        <OwnWordsFields id={`own-${id}`} prompts={written} value={own} onChange={setOwn} />
+        <div className="ns-row" style={{ justifyContent: 'space-between' }}>
+          <button className="ns-btn ns-btn-quiet" onClick={() => setPhase('items')}>← {ui.previous}</button>
+          <span className="ns-row">{!ready && <span className="ns-small ns-muted">{ui.writtenNeed}</span>}<button className="ns-btn" onClick={finish} disabled={busy || !ready}>{ui.assessmentFinish}</button></span>
         </div>
       </div>
     );

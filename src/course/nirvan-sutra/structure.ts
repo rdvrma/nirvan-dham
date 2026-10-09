@@ -16,6 +16,9 @@ export const PROGRAM = {
     minWeeklyReflections: 8,
   },
   finalReflectionMinChars: 20,
+  /** own-words answers (stage check, checkpoints, final): anything honest is enough, so only a small floor */
+  writtenMinChars: 10,
+  writtenMaxChars: 4000,
 } as const;
 
 export const MOVEMENTS: { id: MovementId; stages: number[] }[] = [
@@ -42,4 +45,6 @@ export const questionIdsOf = (stage: string) => Array.from({ length: PROGRAM.que
 export const movementOf = (stage: string) => MOVEMENTS.find((m) => m.stages.includes(stageNumber(stage)))!.id;
 export const isStageId = (v: string) => /^S(0[1-9]|1[0-7])$/.test(v);
 export const isQuestionId = (v: string) => /^NS-S(0[1-9]|1[0-7])-Q(0[1-9]|10)$/.test(v);
+/** The key of a set of own-words answers in Progress.written. */
+export const writtenKey = (kind: 'stage' | 'checkpoint' | 'final', id?: string) => (kind === 'final' ? 'final' : `${kind}:${id}`);
 export const isCheckpointId = (v: string) => CHECKPOINTS.some((c) => c.id === v);

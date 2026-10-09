@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
-import { stageView, programView, questionView, videoAsset, transcript } from '@/course/nirvan-sutra/server/content';
+import { stageView, programView, questionView, videoAsset, transcript, writtenPrompts } from '@/course/nirvan-sutra/server/content';
 import * as E from '@/course/nirvan-sutra/engine';
-import { isStageId, stageId, CHECKPOINTS } from '@/course/nirvan-sutra/structure';
+import { isStageId, stageId, CHECKPOINTS, writtenKey } from '@/course/nirvan-sutra/structure';
 import { localeInfo } from '@/course/nirvan-sutra/locales';
 import VideoPlayer from '@/components/nirvan-sutra/VideoPlayer';
-import StageCheck from '@/components/nirvan-sutra/StageCheck';
+import StageOwnWords from '@/components/nirvan-sutra/OwnWords';
 import { Reflection, CompleteStage, Visit, MoreText } from '@/components/nirvan-sutra/Bits';
 import { StageOrb, ConceptGraphic } from '@/components/nirvan-sutra/Graphics';
 import { StageStepper, NextStepBar, nextAction } from '@/components/nirvan-sutra/StagePath';
@@ -40,13 +40,13 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
 
   const asset = videoAsset(s.mainLessonId);
   const tr = transcript(locale, s.mainLessonId);
-  const req = E.stageRequirements(p, sid, s.checkItems.map((i) => i.id));
+  const req = E.stageRequirements(p, sid);
   const completed = E.isStageCompleted(p, sid);
   const fbLang = s.fallbackFields.length ? localeInfo(locale === 'en' ? 'hi' : 'en').native : null;
   const approved = (f: string) => s.approvedFields.includes(f);
   const next = s.n < 17 ? stageView(locale, stageId(s.n + 1)) : null;
   const cpIndex = CHECKPOINTS.findIndex((c) => c.afterStage === s.n);
-  const steps = { mainViewed: req.mainViewed, checkPassed: req.checkPassed, completed };
+  const steps = { mainViewed: req.mainViewed, written: req.written, completed };
   const action = nextAction(t, sid, steps, {
     checkpoint: cpIndex >= 0 ? { id: CHECKPOINTS[cpIndex].id, n: cpIndex + 1, done: E.checkpointDone(p, CHECKPOINTS[cpIndex].id) } : null,
     next: next ? { id: next.id, title: next.text.title } : null,
@@ -130,7 +130,7 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
         {/* I: the 3-question check */}
         <section className="ns-section ns-anchor" id="check">
           <div className="ns-section-head"><h2 className="ns-h2">{t('checkLabel')}</h2><span className="ns-chip">{t('draftBadge')}</span></div>
-          <StageCheck stage={sid} items={s.checkItems} cleared={p.stageChecks[sid]?.correct ?? []} />
+          <StageOwnWords stage={sid} prompts={writtenPrompts(locale, 'stage', sid).prompts} initial={p.written[writtenKey('stage', sid)]?.answers ?? null} />
         </section>
 
         {/* J: the ten deep-inquiry lessons (optional) */}
@@ -155,11 +155,11 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
           <h2 className="ns-h3">{t('requirementsTitle')}</h2>
           <div className="ns-req" style={{ margin: '16px 0 22px' }}>
             <a href="#film" className="ns-req-item" data-done={req.mainViewed}><span className="ns-req-dot" aria-hidden="true">{req.mainViewed ? '✓' : ''}</span>{t('reqWatch')}<span className="ns-sr">{req.mainViewed ? t('completed') : ''}</span></a>
-            <a href="#check" className="ns-req-item" data-done={req.checkPassed}><span className="ns-req-dot" aria-hidden="true">{req.checkPassed ? '✓' : ''}</span>{t('reqCheck')}<span className="ns-sr">{req.checkPassed ? t('completed') : ''}</span></a>
+            <a href="#check" className="ns-req-item" data-done={req.written}><span className="ns-req-dot" aria-hidden="true">{req.written ? '✓' : ''}</span>{t('reqCheck')}<span className="ns-sr">{req.written ? t('completed') : ''}</span></a>
           </div>
           {completed
             ? <div className="ns-row"><span className="ns-chip ns-chip-sage">{t('completed')}</span>{action.kind === 'link' && <Link className="ns-btn" href={action.href}>{action.label} <span aria-hidden="true">→</span></Link>}</div>
-            : <><CompleteStage stage={sid} ready={req.mainViewed && req.checkPassed} />{!(req.mainViewed && req.checkPassed) && <p className="ns-small ns-muted" style={{ marginTop: 12 }}>{action.text}</p>}</>}
+            : <><CompleteStage stage={sid} ready={req.mainViewed && req.written} />{!(req.mainViewed && req.written) && <p className="ns-small ns-muted" style={{ marginTop: 12 }}>{action.text}</p>}</>}
         </section>
 
         <p className="ns-notice ns-section">{t('draftNote')}</p>

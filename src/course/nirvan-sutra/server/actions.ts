@@ -2,17 +2,27 @@
 // The server decides: scores come from grading here, unlocks from the engine — a client can only send answers and texts.
 import type { LocaleCode, Progress } from '../types';
 import { isLocale } from '../locales';
-import { PROGRAM, CHECKPOINTS, isStageId, isQuestionId, isCheckpointId, stageNumber } from '../structure';
+import { PROGRAM, CHECKPOINTS, isStageId, isQuestionId, isCheckpointId, stageNumber, writtenKey } from '../structure';
 import * as E from '../engine';
 import { update, loadOrCreate } from './store';
-import { answerKeys, itemsForGrading, checkItemFull, stageItemIds, checkpointView, finalView } from './content';
+import { answerKeys, itemsForGrading, checkItemFull, checkpointView, finalView, writtenPrompts, stageView } from './content';
+import type { WrittenNotice } from './notify';
 import { demoProgress, DEMO_STATES, type DemoState } from './demo';
 
 export class ActionError extends Error { constructor(msg: string, public status = 400) { super(msg); } }
 const text = (v: unknown, max = 8000) => { if (typeof v !== 'string') throw new ActionError('text expected'); const s = v.trim(); if (s.length > max) throw new ActionError('text too long'); return s; };
 const now = () => new Date().toISOString();
+/** Own-words answers: one per question, each at least a few characters (anything honest is enough; there is no grading). */
+const ownWords = (v: unknown, n: number) => {
+  if (!Array.isArray(v) || v.length !== n || n === 0) throw new ActionError('every question needs an answer', 422);
+  const a = v.map((x) => text(x, PROGRAM.writtenMaxChars));
+  if (a.some((x) => [...x].length < PROGRAM.writtenMinChars)) throw new ActionError('every question needs an answer', 422);
+  return a;
+};
+/** Where own-words answers go after they are saved (the route sends them on to the owner's inbox; tests can listen). */
+export type Notify = (n: Omit<WrittenNotice, 'learner'> & { learner: { id: string; name: string | null } }) => Promise<unknown>;
 
-export async function handleAction(learnerId: string, action: string, body: Record<string, unknown>, opts: { dev?: boolean; at?: Date } = {}) {
+export async function handleAction(learnerId: string, action: string, body: Record<string, unknown>, opts: { dev?: boolean; at?: Date; notify?: Notify } = {}) {
   const at = opts.at ?? new Date();
   switch (action) {
     case 'enroll': {
@@ -40,29 +50,23 @@ export async function handleAction(learnerId: string, action: string, body: Reco
       await update(learnerId, (p) => { if (!p.mainViewed.includes(stage)) p.mainViewed.push(stage); });
       return { ok: true };
     }
-    case 'check': {
-      // one answer of a stage check, graded here; unlimited retries
-      const stage = String(body.stage), itemId = String(body.itemId), answer = Number(body.answer);
+    case 'written': {
+      // a stage's understanding check: the seeker's own words for its three questions (no right or wrong; giving them completes the check)
+      const stage = String(body.stage);
       const p0 = await loadOrCreate(learnerId);
       if (!isStageId(stage) || !E.isStageUnlocked(p0, stage)) throw new ActionError('stage locked', 403);
-      const item = itemsForGrading('stage', stage).find((i) => i.id === itemId);
-      if (!item || !Number.isInteger(answer) || answer < 0 || answer >= item.options.length) throw new ActionError('bad answer');
-      const g = E.grade([item], { [itemId]: answer }, answerKeys());
-      const correct = g.result[0].correct;
-      const p = await update(learnerId, (p) => {
-        const c = p.stageChecks[stage] ?? { correct: [], tries: 0 };
-        c.tries++;
-        if (correct && !c.correct.includes(itemId)) c.correct.push(itemId);
-        p.stageChecks[stage] = c;
-      });
-      const full = checkItemFull(p.locale ?? 'hi', itemId)!;
-      return { correct, rightPosition: correct ? g.result[0].rightPosition : null, explanation: full.explanation, revisit: full.revisit ?? null, passed: E.checkPassed(p, stage, stageItemIds(stage)) };
+      const locale = p0.locale ?? 'hi';
+      const { prompts } = writtenPrompts(locale, 'stage', stage);
+      const answers = ownWords(body.answers, prompts.length);
+      await update(learnerId, (p) => { (p.written ??= {})[writtenKey('stage', stage)] = { prompts, answers, locale, at: now() }; });
+      const sent = await opts.notify?.({ part: `Stage ${stage} — ${stageView('hi', stage).text.title}`, learner: { id: learnerId, name: p0.name }, locale, prompts, answers });
+      return { ok: true, sent: sent === true };
     }
     case 'complete-stage': {
       const stage = String(body.stage);
       const p0 = await loadOrCreate(learnerId);
       if (!isStageId(stage)) throw new ActionError('bad stage');
-      if (!E.canCompleteStage(p0, stage, stageItemIds(stage))) throw new ActionError('the stage still has requirements', 409);
+      if (!E.canCompleteStage(p0, stage)) throw new ActionError('the stage still has requirements', 409);
       await update(learnerId, (p) => { if (!p.stagesCompleted.includes(stage)) p.stagesCompleted.push(stage); });
       return { ok: true, next: stageNumber(stage) < PROGRAM.stageCount ? `S${String(stageNumber(stage) + 1).padStart(2, '0')}` : null };
     }
@@ -87,10 +91,18 @@ export async function handleAction(learnerId: string, action: string, body: Reco
       if (kind === 'checkpoint' && (!isCheckpointId(id) || !E.checkpointUnlocked(p0, id))) throw new ActionError('checkpoint locked', 403);
       if (kind === 'final' && !E.finalUnlocked(p0)) throw new ActionError('final assessment locked', 403);
       if (kind !== 'checkpoint' && kind !== 'final') throw new ActionError('bad assessment');
+      // both parts: the objective questions (graded here) and the own-words answers (saved and sent on, not graded)
+      const wLocale = p0.locale ?? 'hi';
+      const { prompts } = writtenPrompts(wLocale, kind, id);
+      const written = ownWords(body.written, prompts.length);
       const items = itemsForGrading(kind, id);
       const g = E.grade(items, answers, answerKeys());
       const attempt = { at: now(), score: g.score, total: g.total, wrong: g.wrong };
-      const p = await update(learnerId, (p) => { if (kind === 'checkpoint') (p.checkpoints[id] ??= []).push(attempt); else p.final.push(attempt); });
+      const p = await update(learnerId, (p) => {
+        if (kind === 'checkpoint') (p.checkpoints[id] ??= []).push(attempt); else p.final.push(attempt);
+        (p.written ??= {})[writtenKey(kind, id)] = { prompts, answers: written, locale: wLocale, at: now() };
+      });
+      await opts.notify?.({ part: kind === 'final' ? 'Final assessment' : `Checkpoint ${id} — ${checkpointView('hi', id).title}`, learner: { id: learnerId, name: p0.name }, locale: wLocale, prompts, answers: written, objective: { score: g.score, total: g.total } });
       const locale = p.locale ?? 'hi';
       const view = kind === 'checkpoint' ? checkpointView(locale, id) : finalView(locale);
       const results = g.result.map((r) => ({ ...r, explanation: checkItemFull(locale, r.id)?.explanation ?? '' }));

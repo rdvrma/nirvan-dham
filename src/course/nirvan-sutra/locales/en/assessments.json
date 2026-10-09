@@ -5,6 +5,7 @@
  "checkpoints": {
   "CP1": {
    "title": "First checkpoint — Preparing for the search",
+   "written": ["After this movement, how do you understand “ignorance” (ajñāna) in your own words? Give one example from your life.", "Which is hardest for you right now — discernment (viveka) or dispassion (vairāgya) — and why?"],
    "items": [
     {"id": "CP1-01", "stage": "S01", "concept": "mistaken identity", "prompt": "If ignorance is taken to be a ‘lack of information’, which way can a seeker go astray?", "options": ["He will keep adding information instead of looking at himself", "He will reach self-knowledge quickly", "He will stay away from the teacher", "There will be no straying"], "explanation": "If ignorance were only a lack of information, the remedy would be more information. The ignorance of Jñāna Mārga is a mistaken identity, whose remedy is to look at oneself directly."},
     {"id": "CP1-02", "stage": "S01", "concept": "the root of ignorance", "prompt": "Desire, fear, comparison and sorrow — what do these four share?", "options": ["All four come from outer circumstances", "All four rest on a belief about oneself", "All four are only childhood conditioning", "They share nothing"], "explanation": "All four have one root — taking oneself to be a limited ‘I’."},
@@ -18,6 +19,7 @@
   },
   "CP2": {
    "title": "Second checkpoint — Understanding and self-examination",
+   "written": ["What difference do you see between Śravaṇa, Manana and Nididhyāsana? Write it in your own words.", "Describe one recent moment when you simply watched a thought or a feeling without being carried away by it."],
    "items": [
     {"id": "CP2-01", "stage": "S05", "concept": "listening", "prompt": "In śravaṇa, what does ‘letting the teaching look at you’ mean?", "options": ["Hearing the teaching as a mirror about oneself", "Memorising the teaching", "Debating the teaching", "Reciting the teaching to others"], "explanation": "Śravaṇa lets the words return to one's own identity."},
     {"id": "CP2-02", "stage": "S05", "concept": "a prepared mind", "prompt": "What does preparing the mind to listen include?", "options": ["A sharp memory", "Quiet and honesty", "Preparing as many questions as possible", "Deciding the answers in advance"], "explanation": "A prepared mind is quiet and honest, so the teaching reaches directly."},
@@ -33,6 +35,7 @@
   },
   "CP3": {
    "title": "Third checkpoint — From experience to the experiencer",
+   "written": ["How did you test, in your own experience, the distinction between “experience” and “the one who experiences”? What did you see?", "When you asked “Who am I?”, which answers arose, and how did you look at them?"],
    "items": [
     {"id": "CP3-01", "stage": "S10", "concept": "experience comes and goes", "prompt": "What is always true of every experience?", "options": ["It comes and it goes", "It is always pleasant", "It is proof of the Self", "It can be repeated"], "explanation": "Every experience comes and goes."},
     {"id": "CP3-02", "stage": "S10", "concept": "a special experience is not proof", "prompt": "After a spiritual experience, which view is most mature?", "options": ["Now I have arrived", "This too came and will go; let me recognise that in which it came", "It must be repeated every day", "It was false"], "explanation": "A special experience is not proof; knowing alone is steady."},
@@ -48,6 +51,7 @@
   },
   "CP4": {
    "title": "Fourth checkpoint — From silence to natural living",
+   "written": ["How do you understand silence now — only the absence of sound, or something more? Write it in your own words.", "In one situation of everyday life, how does this understanding show itself — or where does it not show yet?"],
    "items": [
     {"id": "CP4-01", "stage": "S15", "concept": "the knower is not an object", "prompt": "Why is the knower not known like an object?", "options": ["Because it is the knower itself, by which every object is known", "Because it is very small", "Because it does not exist", "Because our intellect is weak"], "explanation": "The knower, not an object — and this is not ignorance."},
     {"id": "CP4-02", "stage": "S15", "concept": "a quiet intellect", "prompt": "What is the intellect falling silent before the mystery?", "options": ["Defeat", "Maturity", "Laziness", "Ignorance"], "explanation": "The intellect falling silent = maturity."},
@@ -59,6 +63,7 @@
   }
  },
  "final": {
+  "written": ["Across the seventeen stages, which distinction mattered most to you, and why?", "What did you believe about yourself before the journey that you are now looking at again?", "Which question would you like to carry with you into the twelve weeks of Nididhyāsana?"],
   "items": [
    {"id": "F-01", "stage": "S01", "concept": "conceptual", "prompt": "What is taken to be the root problem in Jñāna Mārga?", "options": ["The existence of the world", "Not knowing one's own nature", "Having thoughts", "Having feelings"], "explanation": "Ajñāna = not knowing one's own nature."},
    {"id": "F-02", "stage": "S01", "concept": "life", "prompt": "An insult stings someone deeply. From the view of Jñāna Mārga, what is useful to look at first?", "options": ["Revenge on the one who insulted", "Which image, taken as ‘I’, was hurt", "Forgetting the insult", "Changing others' opinion"], "explanation": "The deepest hurt lands on the image we take to be ourselves."},

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
-import { checkpointView, allStages, programView } from '@/course/nirvan-sutra/server/content';
+import { checkpointView, allStages, programView, writtenPrompts } from '@/course/nirvan-sutra/server/content';
 import * as E from '@/course/nirvan-sutra/engine';
 import { isCheckpointId, CHECKPOINTS } from '@/course/nirvan-sutra/structure';
 import Assessment from '@/components/nirvan-sutra/Assessment';
@@ -31,7 +31,7 @@ export default async function CheckpointPage({ params }: { params: Promise<{ id:
       <Visit kind="checkpoint" id={id} />
       {head}
       {v.fallback && <p className="ns-notice ns-narrow">{t('notInYourLanguage', { lang: 'English' })}</p>}
-      <Assessment kind="checkpoint" id={id} title={`${t('checkpointN', { n })} · ${v.title}`} items={v.items} stageTitles={titles} previous={last ? { score: last.score, total: last.total } : null} />
+      <Assessment kind="checkpoint" id={id} title={`${t('checkpointN', { n })} · ${v.title}`} items={v.items} written={writtenPrompts(locale, 'checkpoint', id).prompts} stageTitles={titles} previous={last ? { score: last.score, total: last.total } : null} />
     </section>
   );
 }

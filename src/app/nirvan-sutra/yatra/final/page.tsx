@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
-import { finalView, allStages } from '@/course/nirvan-sutra/server/content';
+import { finalView, allStages, writtenPrompts } from '@/course/nirvan-sutra/server/content';
 import * as E from '@/course/nirvan-sutra/engine';
 import Assessment from '@/components/nirvan-sutra/Assessment';
 import { Visit } from '@/components/nirvan-sutra/Bits';
@@ -27,7 +27,7 @@ export default async function FinalPage() {
       {head}
       {v.fallback && <p className="ns-notice ns-narrow">{t('notInYourLanguage', { lang: 'English' })}</p>}
       {E.finalPassed(p) && <div className="ns-narrow ns-panel" style={{ marginBottom: 24 }}><p>{t('finalPassed')}</p><p className="ns-small ns-muted" style={{ marginTop: 6 }}>{t('finalPassedNote')}</p>{E.phase1Complete(p) && <Link className="ns-btn" style={{ marginTop: 14 }} href={`${BASE}/phase-one-complete`}>{t('phase1DoneCta')}</Link>}</div>}
-      <Assessment kind="final" id="final" title={t('finalTitle')} items={v.items} stageTitles={titles} previous={best ? { score: best.score, total: best.total } : null} />
+      <Assessment kind="final" id="final" title={t('finalTitle')} items={v.items} written={writtenPrompts(locale, 'final').prompts} stageTitles={titles} previous={best ? { score: best.score, total: best.total } : null} />
     </section>
   );
 }

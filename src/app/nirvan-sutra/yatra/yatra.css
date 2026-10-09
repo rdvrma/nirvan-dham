@@ -379,3 +379,8 @@ a.ns-req-item[data-done="false"] { text-decoration: underline; text-decoration-c
   .ns-path-label { font-size: 0.76rem; }
 }
 @media (prefers-reduced-motion: reduce) { .ns-path li[data-state="current"] .ns-path-dot { animation: none; } }
+
+/* ── own-words answers ── */
+.ns-own .ns-textarea { min-height: 120px; }
+.ns-own-meta { margin-top: 8px; font-size: 0.8rem; color: var(--ns-muted); display: flex; justify-content: flex-end; }
+.ns-own-meta[data-ok="true"] { color: var(--ns-sage); }
