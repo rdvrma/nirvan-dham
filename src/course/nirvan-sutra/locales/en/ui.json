@@ -41,7 +41,6 @@
   "draftBadge": "Draft",
   "draftNote": "This written part is a draft for review; the teaching film is the final source.",
   "approvedBadge": "Approved teaching",
-
   "chooseLanguageTitle": "In which language would you like to make this journey?",
   "chooseLanguageNote": "The whole course — lessons, questions and the voice of the films — will be in your language. You can change it later; no progress is lost.",
   "introEyebrow": "From Nirvan Dham",
@@ -51,7 +50,6 @@
   "introBody3": "There is no competition here and no hurry. Take as much time as you need.",
   "introNamePrompt": "What name may we call you? (optional)",
   "introCta": "Enter the journey",
-
   "welcomeNamed": "Welcome back, {name}",
   "welcome": "Welcome back",
   "welcomeFirst": "The journey begins",
@@ -74,7 +72,6 @@
   "nidStatus": "Nididhyāsana Saṅga",
   "nidLockedNote": "When the knowledge journey is complete, three months of guided nididhyāsana will open.",
   "nidWeekOf": "Week {n} / 12",
-
   "centralInquiry": "Central inquiry",
   "objectiveLabel": "What to look at today",
   "pointersLabel": "Key pointers",
@@ -119,7 +116,6 @@
   "previousQuestion": "Previous question",
   "nextQuestion": "Next question",
   "backToStage": "Back to the stage",
-
   "checkCorrect": "Clear.",
   "checkWrong": "The difference between two things is not clear here yet.",
   "checkRevisit": "Look at this part again",
@@ -143,7 +139,6 @@
   "finalPassed": "The understanding is sufficiently clear.",
   "finalPassedNote": "This means only that you have shown an understanding of the Nirvan Sutra curriculum, so you can go on into nididhyāsana. It is not proof of any spiritual attainment.",
   "weakestConcepts": "Distinctions to attend to again",
-
   "phase1DoneTitle": "The first cycle of understanding is complete.",
   "phase1DoneBody": "Now what has been understood is to be seen again and again in life.",
   "phase1DoneCta": "Enter the Nididhyāsana Saṅga",
@@ -168,7 +163,6 @@
   "nidParticipation": "Attendance {a} / {b} · reflections {c} / {d}",
   "nidComplete": "The twelve weeks are complete",
   "nidTeacherNote": "The guide's note",
-
   "finalReflectionTitle": "Final reflection",
   "finalReflectionIntro": "These questions have no right or wrong. Write only what is truly seen today. Your answers stay private and will not be read as any achievement.",
   "finalReflectionLocked": "The final reflection opens when the twelve weeks of nididhyāsana are complete.",
@@ -176,7 +170,6 @@
   "finalReflectionShort": "Write at least a few lines for every question.",
   "journeyEndTitle": "The journey has not ended —",
   "journeyEndBody": "it simply no longer needs a course.",
-
   "certificateTitle": "Certificate",
   "certificateHeading": "Nirvan Sutra",
   "certificatePresented": "This certifies that",
@@ -193,13 +186,11 @@
   "certNididhyasana": "Three months of nididhyāsana",
   "certFinalReflection": "The final reflection",
   "certificateAnonymous": "Seeker",
-
   "settingsTitle": "Settings",
   "settingsName": "Name",
   "settingsLanguageNote": "Changing the language never loses any progress.",
   "glossaryTitle": "Glossary",
   "glossaryNote": "These Sanskrit terms are kept in their original form in every language, with their meaning.",
-
   "devPanel": "Development controls",
   "devPanelNote": "Local development only. Hidden in production.",
   "devStateNew": "New seeker",
@@ -208,7 +199,6 @@
   "devStateNid": "Nididhyāsana (Week 5)",
   "devStateDone": "Program complete",
   "adminTitle": "Content (local)",
-
   "movementsTitle": "Four movements",
   "progressStages": "Stage {a} / {b}",
   "journeyDescription": "From inquiry toward direct seeing",
@@ -229,6 +219,33 @@
   "gInquiry": "inquiry",
   "gSilence": "silence",
   "gSubject": "seer",
-  "gSeen": "seen"
+  "gSeen": "seen",
+  "lSeeJourney": "See the seventeen stages",
+  "lStatStages": "stages",
+  "lStatQuestions": "deep questions",
+  "lStatCheckpoints": "checkpoints",
+  "lStatWeeks": "weeks of Nididhyāsana",
+  "lStatLanguages": "languages",
+  "lPhasesTitle": "The journey has two parts",
+  "lPhase1Body": "Seventeen stages of teaching films, written essence, experiments in seeing for yourself and checks of understanding — at your own pace, without hurry.",
+  "lPhase2Body": "Once the knowledge journey is complete, twelve weeks of guided Nididhyāsana: a pointer each week, private reflection and sessions with a guide.",
+  "lInsideTitle": "Inside every stage",
+  "lFilmDesc": "A main teaching film that opens the subject simply and directly.",
+  "lEssenceDesc": "The written essence of the film and its key distinctions, to read again and again.",
+  "lObserveDesc": "A short experiment in which the point is checked in your own experience.",
+  "lCheckDesc": "Three questions that show which distinction is clear and which is not yet.",
+  "lDeeperDesc": "Ten deep questions with short films that take the inquiry further inward.",
+  "lMapSub": "Four movements, seventeen stages. Each stage carries one central inquiry.",
+  "lStepsTitle": "How to begin",
+  "lStep1": "Create your Nirvan Dham account, or log in.",
+  "lStep2": "Tell us your name. Your language is already chosen.",
+  "lStep3": "Begin the journey with the teaching film of the first stage.",
+  "lHonest": "This course promises no attainment of any state. It is a quiet, disciplined opportunity to look carefully at yourself.",
+  "lHaveAccount": "Already have an account? Log in",
+  "lOldCourse": "On the earlier eight-chapter course? Continue there",
+  "lFilmsSoon": "The teaching films are being added stage by stage; until then the full narration of each stage can be read.",
+  "lMovementN": "Movement {n}",
+  "lContinueJourney": "Continue your journey",
+  "lChooseTitle": "Choose your language"
  }
 }

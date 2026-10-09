@@ -1,6 +1,6 @@
 # Nirvan Sutra v2 — the 17-stage course (local build)
 
-Route: `/nirvan-sutra/yatra` (the existing `/course` and `/nirvan-sutra` pages are untouched).
+Routes: `/course` is the introduction (language first, then the whole introduction in that language, then the way in); the course itself is `/nirvan-sutra/yatra`. The old eight-chapter course stays reachable at `/course/<hi|en|hl>/…` and is linked from the bottom of the introduction for existing learners.
 Status: **local only** — not deployed, not pushed. Placeholder films, except one public CC0 test clip that proves the replacement path.
 
 ## What is where
@@ -90,6 +90,13 @@ bash scripts/nirvan-sutra/local-supabase.sh
 
 In dev, a "DEV" panel (bottom right) switches the learner between demo states: new seeker, mid-journey, ready for the final, Nididhyasana week 5, and completed. `/nirvan-sutra/yatra/admin` (dev only) lists every lesson's content and video status.
 
+## The introduction (`/course`)
+
+- First visit: a full-screen language gate with the eleven languages; the question "choose your language" turns through all of them. The choice goes into the URL (`/course?lang=ta`, shareable) and the `ns_lang` cookie (the next visit opens in it). `/course?choose=1` reopens the gate.
+- The introduction is server-rendered in that language: hero, the numbers, the first stage's central inquiry, the two parts, what is inside a stage, all seventeen stages with their central inquiries by movement, how to begin, an honest note (no promise of any attainment), and the call to enter.
+- The way in: signed out → `/signup?next=/nirvan-sutra/yatra/onboarding?lang=xx` (or log in); the onboarding then skips the language step and asks only for the name. Enrolled seekers see "Continue your journey" → dashboard. On phones the call to enter stays docked at the bottom.
+- Its strings are the `l*` keys in each `locales/<code>/ui.json` (machine transcreations, like the rest).
+
 ## Guide desk (Nididhyasana)
 
 `/nirvan-sutra/yatra/guide` is for guides only. In supabase mode, a guide is a user listed in `ns_guides`; locally in file mode, the desk is open in development.
@@ -113,7 +120,7 @@ node scripts/nirvan-sutra/qa-locales.mjs
 ## Going live (owner steps)
 
 1. ~~Run `supabase/nirvan-sutra-v2.sql` in the production Supabase SQL Editor.~~ **Done on 2026-10-09** (4 tables with RLS, 8 policies, 2 functions, the admin view; verified). It only adds `ns_*` objects and can be re-run safely after any change.
-2. Add the guides:
+2. ~~Add the guides~~ **Done on 2026-10-09:** `nishantsinha1702@gmail.com`. More guides later:
 
    ```sql
    insert into public.ns_guides (user_id) select id from auth.users where email = '…';

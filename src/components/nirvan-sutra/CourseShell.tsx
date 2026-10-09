@@ -22,7 +22,7 @@ export default function CourseShell({ ui, locale, enrolled, dev, children }: { u
     <UiCtx.Provider value={{ ui, locale, toast }}>
       <a className="ns-skip" href="#ns-main">{ui.skipToContent}</a>
       <header className="ns-top">
-        <Link href={enrolled ? `${BASE}/dashboard` : `${BASE}/onboarding`} className="ns-brand" aria-label={ui.brand}>
+        <Link href={enrolled ? `${BASE}/dashboard` : '/course'} className="ns-brand" aria-label={ui.brand}>
           <BrandMark />
           <span>
             <span className="ns-brand-name">{ui.brand}</span>

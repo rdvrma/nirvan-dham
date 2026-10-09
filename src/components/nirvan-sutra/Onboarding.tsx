@@ -7,9 +7,9 @@ import type { LocaleCode } from '@/course/nirvan-sutra/types';
 
 type L = { code: LocaleCode; native: string; english: string; script: string };
 
-export default function Onboarding({ locales, strings, initial, name: initialName }: { locales: L[]; strings: Record<string, Record<string, string>>; initial: LocaleCode | null; name: string }) {
+export default function Onboarding({ locales, strings, initial, name: initialName, skipLanguage = false }: { locales: L[]; strings: Record<string, Record<string, string>>; initial: LocaleCode | null; name: string; skipLanguage?: boolean }) {
   const router = useRouter();
-  const [step, setStep] = useState<'language' | 'intro'>('language');
+  const [step, setStep] = useState<'language' | 'intro'>(skipLanguage && initial ? 'intro' : 'language');
   const [locale, setLocale] = useState<LocaleCode | null>(initial);
   const [name, setName] = useState(initialName);
   const [busy, setBusy] = useState(false);
