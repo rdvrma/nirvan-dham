@@ -3,12 +3,13 @@ import { notFound } from 'next/navigation';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
 import { stageView, programView, questionView, videoAsset, transcript } from '@/course/nirvan-sutra/server/content';
 import * as E from '@/course/nirvan-sutra/engine';
-import { isStageId, stageId } from '@/course/nirvan-sutra/structure';
+import { isStageId, stageId, CHECKPOINTS } from '@/course/nirvan-sutra/structure';
 import { localeInfo } from '@/course/nirvan-sutra/locales';
 import VideoPlayer from '@/components/nirvan-sutra/VideoPlayer';
 import StageCheck from '@/components/nirvan-sutra/StageCheck';
 import { Reflection, CompleteStage, Visit, MoreText } from '@/components/nirvan-sutra/Bits';
 import { StageOrb, ConceptGraphic } from '@/components/nirvan-sutra/Graphics';
+import { StageStepper, NextStepBar, nextAction } from '@/components/nirvan-sutra/StagePath';
 
 export default async function StagePage({ params }: { params: Promise<{ stageId: string }> }) {
   const { stageId: sid } = await params;
@@ -43,6 +44,13 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
   const completed = E.isStageCompleted(p, sid);
   const fbLang = s.fallbackFields.length ? localeInfo(locale === 'en' ? 'hi' : 'en').native : null;
   const approved = (f: string) => s.approvedFields.includes(f);
+  const next = s.n < 17 ? stageView(locale, stageId(s.n + 1)) : null;
+  const cpIndex = CHECKPOINTS.findIndex((c) => c.afterStage === s.n);
+  const steps = { mainViewed: req.mainViewed, checkPassed: req.checkPassed, completed };
+  const action = nextAction(t, sid, steps, {
+    checkpoint: cpIndex >= 0 ? { id: CHECKPOINTS[cpIndex].id, n: cpIndex + 1, done: E.checkpointDone(p, CHECKPOINTS[cpIndex].id) } : null,
+    next: next ? { id: next.id, title: next.text.title } : null,
+  });
   const badge = (f: string) => approved(f) ? <span className="ns-chip ns-chip-sage">{t('approvedBadge')}</span> : <span className="ns-chip">{t('draftBadge')}</span>;
 
   return (
@@ -60,10 +68,11 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
         </div>
         {completed && <div style={{ marginTop: 18 }}><span className="ns-chip ns-chip-sage">{t('completed')}</span></div>}
       </header>
+      <StageStepper t={t} s={steps} />
       {fbLang && <p className="ns-notice ns-narrow">{t('notInYourLanguage', { lang: fbLang })}</p>}
 
       {/* E: the main film */}
-      <section className="ns-section" style={{ marginTop: 24 }} aria-label={t('mainFilm')}>
+      <section id="film" className="ns-section ns-anchor" style={{ marginTop: 24 }} aria-label={t('mainFilm')}>
         <VideoPlayer asset={asset} title={s.text.title} eyebrow={`${t('mainFilm')} · ${t('stageN', { n: s.n })}`} stageN={s.n} watchKey={{ kind: 'main', stage: sid }} watched={req.mainViewed} transcript={tr ? { blocks: tr.blocks, fallback: tr.fallback } : null} />
       </section>
 
@@ -119,21 +128,9 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
         </details>
 
         {/* I: the 3-question check */}
-        <section className="ns-section" id="check">
+        <section className="ns-section ns-anchor" id="check">
           <div className="ns-section-head"><h2 className="ns-h2">{t('checkLabel')}</h2><span className="ns-chip">{t('draftBadge')}</span></div>
           <StageCheck stage={sid} items={s.checkItems} cleared={p.stageChecks[sid]?.correct ?? []} />
-        </section>
-
-        {/* L: completion */}
-        <section className="ns-section ns-panel ns-panel-glow">
-          <h2 className="ns-h3">{t('requirementsTitle')}</h2>
-          <div className="ns-req" style={{ margin: '16px 0 22px' }}>
-            <div className="ns-req-item" data-done={req.mainViewed}><span className="ns-req-dot" aria-hidden="true">{req.mainViewed ? '✓' : ''}</span>{t('reqWatch')}<span className="ns-sr">{req.mainViewed ? t('completed') : ''}</span></div>
-            <div className="ns-req-item" data-done={req.checkPassed}><span className="ns-req-dot" aria-hidden="true">{req.checkPassed ? '✓' : ''}</span>{t('reqCheck')}<span className="ns-sr">{req.checkPassed ? t('completed') : ''}</span></div>
-          </div>
-          {completed
-            ? <div className="ns-row"><span className="ns-chip ns-chip-sage">{t('completed')}</span>{s.n < 17 && <Link className="ns-btn" href={`${BASE}/stage/${stageId(s.n + 1)}`}>{t('nextStage', { title: stageView(locale, stageId(s.n + 1)).text.title })}</Link>}</div>
-            : <CompleteStage stage={sid} ready={req.mainViewed && req.checkPassed} />}
         </section>
 
         {/* J: the ten deep-inquiry lessons (optional) */}
@@ -153,8 +150,21 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
           <Reflection k={sid} initial={p.reflections[sid]?.text ?? ''} prompt={s.text.reflectionPrompt} />
         </section>
 
+        {/* L: completion */}
+        <section id="complete" className="ns-section ns-anchor ns-panel ns-panel-glow">
+          <h2 className="ns-h3">{t('requirementsTitle')}</h2>
+          <div className="ns-req" style={{ margin: '16px 0 22px' }}>
+            <a href="#film" className="ns-req-item" data-done={req.mainViewed}><span className="ns-req-dot" aria-hidden="true">{req.mainViewed ? '✓' : ''}</span>{t('reqWatch')}<span className="ns-sr">{req.mainViewed ? t('completed') : ''}</span></a>
+            <a href="#check" className="ns-req-item" data-done={req.checkPassed}><span className="ns-req-dot" aria-hidden="true">{req.checkPassed ? '✓' : ''}</span>{t('reqCheck')}<span className="ns-sr">{req.checkPassed ? t('completed') : ''}</span></a>
+          </div>
+          {completed
+            ? <div className="ns-row"><span className="ns-chip ns-chip-sage">{t('completed')}</span>{action.kind === 'link' && <Link className="ns-btn" href={action.href}>{action.label} <span aria-hidden="true">→</span></Link>}</div>
+            : <><CompleteStage stage={sid} ready={req.mainViewed && req.checkPassed} />{!(req.mainViewed && req.checkPassed) && <p className="ns-small ns-muted" style={{ marginTop: 12 }}>{action.text}</p>}</>}
+        </section>
+
         <p className="ns-notice ns-section">{t('draftNote')}</p>
       </div>
+      <NextStepBar t={t} a={action} />
     </article>
   );
 }

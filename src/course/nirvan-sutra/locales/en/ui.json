@@ -246,6 +246,14 @@
   "lFilmsSoon": "The teaching films are being added stage by stage; until then the full narration of each stage can be read.",
   "lMovementN": "Movement {n}",
   "lContinueJourney": "Continue your journey",
-  "lChooseTitle": "Choose your language"
+  "lChooseTitle": "Choose your language",
+  "pathTitle": "The path of this stage",
+  "nextStepLabel": "Next step",
+  "nextDoFilm": "Watch the main film or read its full narration, then press {button}.",
+  "nextDoCheck": "Now answer the three questions of the understanding check.",
+  "nextDoComplete": "Everything is ready. Complete the stage and the next one opens.",
+  "nextDoNext": "This stage is complete. On to the next stage.",
+  "goThere": "Go there",
+  "nextDoCheckpoint": "This stage is complete. Now take the checkpoint of this movement."
  }
 }

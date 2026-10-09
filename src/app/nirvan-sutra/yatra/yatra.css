@@ -349,3 +349,33 @@
   .ns-map-path-done { stroke-dashoffset: 0 !important; }
   .ns-node-halo, .ns-vstage[data-state="current"] .ns-vdot::after { animation: none !important; opacity: 0.3; }
 }
+
+/* ── the way through a stage: path at the top, next step docked at the bottom ── */
+.ns-anchor { scroll-margin-top: 90px; }
+.ns-path { margin-top: 28px; }
+.ns-path ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; position: relative; }
+.ns-path ol::before { content: ""; position: absolute; left: 16.6%; right: 16.6%; top: 19px; height: 1px; background: var(--ns-line); }
+.ns-path li { position: relative; display: flex; justify-content: center; }
+.ns-path a { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; padding: 0 6px; border-radius: 12px; }
+.ns-path-dot { position: relative; z-index: 1; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; font-size: 0.92rem; font-family: var(--font-inter); color: var(--ns-muted); background: var(--ns-bg); border: 1px solid var(--ns-line); transition: background 400ms var(--ns-ease), color 400ms var(--ns-ease), box-shadow 400ms var(--ns-ease); }
+.ns-path-label { font-size: 0.86rem; color: var(--ns-muted); line-height: 1.35; }
+.ns-path li[data-state="done"] .ns-path-dot { color: #1a1406; background: linear-gradient(135deg, #f3d98f, #d4a843); border-color: transparent; }
+.ns-path li[data-state="done"] .ns-path-label { color: var(--ns-ink-2); }
+.ns-path li[data-state="current"] .ns-path-dot { color: var(--ns-gold-2); border-color: var(--ns-gold); box-shadow: 0 0 0 5px rgba(212, 168, 67, 0.12); animation: ns-pulse 2.6s ease-in-out infinite; }
+.ns-path li[data-state="current"] .ns-path-label { color: var(--ns-gold-2); }
+@keyframes ns-pulse { 0%, 100% { box-shadow: 0 0 0 5px rgba(212, 168, 67, 0.12); } 50% { box-shadow: 0 0 0 9px rgba(212, 168, 67, 0.04); } }
+a.ns-req-item { border-radius: 10px; padding: 4px 6px; margin: -4px -6px; transition: background 300ms; }
+a.ns-req-item:hover { background: var(--ns-gold-soft); }
+a.ns-req-item[data-done="false"] { text-decoration: underline; text-decoration-color: var(--ns-line); text-underline-offset: 4px; }
+
+.ns-nextbar { position: sticky; bottom: 0; z-index: 35; margin-top: 56px; padding: 12px clamp(12px, 4vw, 40px) calc(12px + env(safe-area-inset-bottom)); background: linear-gradient(180deg, rgba(6, 12, 8, 0), rgba(6, 12, 8, 0.94) 30%); }
+.ns-nextbar-inner { width: min(860px, 100%); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px 12px 20px; border-radius: 18px; border: 1px solid rgba(212, 168, 67, 0.35); background: rgba(14, 26, 17, 0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 20px 60px -24px #000; }
+.ns-nextbar-text { display: flex; flex-direction: column; gap: 2px; font-size: 0.92rem; color: var(--ns-ink-2); line-height: 1.45; min-width: 0; }
+.ns-nextbar-eyebrow { font-size: 0.74rem; color: var(--ns-gold); letter-spacing: 0.08em; }
+.ns-nextbar .ns-btn { flex: none; white-space: nowrap; }
+@media (max-width: 640px) {
+  .ns-nextbar-inner { flex-direction: column; align-items: stretch; gap: 10px; padding: 12px 14px; }
+  .ns-nextbar .ns-btn { white-space: normal; }
+  .ns-path-label { font-size: 0.76rem; }
+}
+@media (prefers-reduced-motion: reduce) { .ns-path li[data-state="current"] .ns-path-dot { animation: none; } }
