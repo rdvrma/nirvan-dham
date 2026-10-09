@@ -112,7 +112,7 @@ node scripts/nirvan-sutra/qa-locales.mjs
 
 ## Going live (owner steps)
 
-1. Run `supabase/nirvan-sutra-v2.sql` in the production Supabase SQL Editor. It only adds `ns_*` objects and can be run more than once.
+1. ~~Run `supabase/nirvan-sutra-v2.sql` in the production Supabase SQL Editor.~~ **Done on 2026-10-09** (4 tables with RLS, 8 policies, 2 functions, the admin view; verified). It only adds `ns_*` objects and can be re-run safely after any change.
 2. Add the guides:
 
    ```sql

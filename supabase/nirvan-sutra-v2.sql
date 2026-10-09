@@ -66,7 +66,7 @@ drop policy if exists "ns notes guide write" on public.ns_guide_notes;
 create policy "ns notes guide write" on public.ns_guide_notes for all to authenticated using (public.ns_is_guide()) with check (public.ns_is_guide());
 
 create or replace function public.ns_touch_updated_at()
-returns trigger language plpgsql as $$ begin new.updated_at = now(); return new; end; $$;
+returns trigger language plpgsql set search_path = public as $$ begin new.updated_at = now(); return new; end; $$;
 drop trigger if exists ns_progress_touch on public.ns_progress;
 create trigger ns_progress_touch before update on public.ns_progress for each row execute procedure public.ns_touch_updated_at();
 drop trigger if exists ns_weeks_touch on public.ns_guide_weeks;
@@ -79,3 +79,5 @@ create or replace view public.ns_admin_progress with (security_invoker = true) a
 select p.user_id, u.email, p.locale, p.stages_completed, p.progress -> 'nididhyasana' ->> 'startedAt' as nididhyasana_started,
        p.progress -> 'finalReflection' ->> 'submittedAt' as final_reflection_at, p.updated_at
 from public.ns_progress p join auth.users u on u.id = p.user_id;
+-- Only the owner (dashboard / service role) reads the admin view; it is not exposed to app users.
+revoke all on public.ns_admin_progress from anon, authenticated;
