@@ -98,7 +98,7 @@ test('a stage completes only after its main film and the seeker’s own words fo
 test('own-words answers are saved with the questions in the seeker’s language and sent on once per submission; never graded', async () => {
   const id = learner();
   await handleAction(id, 'enroll', { locale: 'ta', name: 'Meera' });
-  const sent: { part: string; prompts: string[]; answers: string[]; locale: string; learner: { name: string | null }; objective?: unknown }[] = [];
+  const sent: { part: string; prompts: string[]; promptsHi?: string[]; answers: string[]; locale: string; learner: { name: string | null }; objective?: unknown }[] = [];
   const notify = async (n: (typeof sent)[number]) => { sent.push(n); return true; };
   const r = await handleAction(id, 'written', { stage: 'S01', answers: own(3) }, { notify }) as { ok: boolean; sent: boolean };
   assert.deepEqual(r, { ok: true, sent: true });
@@ -111,6 +111,17 @@ test('own-words answers are saved with the questions in the seeker’s language 
   assert.match(sent[0].part, /^Stage S01 — /);
   assert.equal(sent[0].learner.name, 'Meera');
   assert.equal(sent[0].objective, undefined);
+  // the email carries each Tamil question with its Hindi beside it, then the answer
+  const { formspreeBody } = await import('../src/course/nirvan-sutra/server/notify');
+  const body = formspreeBody({ ...sent[0], objective: undefined, locale: 'ta', learner: { id, name: 'Meera', email: 'meera@example.test' } });
+  const hi = writtenPrompts('hi', 'stage', 'S01').prompts;
+  assert.deepEqual(Object.keys(body).filter((k) => k.startsWith('Q') || k.startsWith('A')), ['Q1', 'Q1 (हिन्दी)', 'A1', 'Q2', 'Q2 (हिन्दी)', 'A2', 'Q3', 'Q3 (हिन्दी)', 'A3']);
+  assert.equal(body['Q1'], writtenPrompts('ta', 'stage', 'S01').prompts[0]);
+  assert.equal(body['Q1 (हिन्दी)'], hi[0]);
+  assert.equal(body.email, 'meera@example.test');
+  // a Hindi seeker's email has no duplicate Hindi line
+  const hiBody = formspreeBody({ part: 'x', learner: { id, name: null, email: null }, locale: 'hi', prompts: hi, promptsHi: hi, answers: own(3) });
+  assert.equal(Object.keys(hiBody).some((k) => k.includes('हिन्दी')), false);
   // sending again replaces the answers (and sends once more)
   await handleAction(id, 'written', { stage: 'S01', answers: own(3).reverse() }, { notify });
   assert.deepEqual((await get(id)).written[writtenKey('stage', 'S01')].answers, own(3).reverse());

@@ -103,7 +103,7 @@ In dev, a "DEV" panel (bottom right) switches the learner between demo states: n
 - **Checkpoints and the final** have both parts: the objective questions (graded as before; the final still needs 80 %), then own-words questions (2 per checkpoint, 3 in the final). Both parts are sent together. A checkpoint counts as done once taken; the final passes at 80 % with its own-words answers given.
 - **Where the answers go:**
   1. Saved first in the seeker's progress (`progress.written`, keys `stage:S01`, `checkpoint:CP1`, `final`). Each entry stores the questions as shown, in the seeker's language, so the owner can read them in Supabase (`ns_progress`).
-  2. Then sent by the server to Formspree as one email per submission. The email carries the seeker's name and email (as the reply-to), the language, the part, every question with its answer, and the objective score where there is one. A failed send never blocks the seeker.
+  2. Then sent by the server to Formspree as one email per submission. The email carries the seeker's name and email (as the reply-to), the language, the part, every question with its answer, and the objective score where there is one. When the seeker wrote in another language, each question also comes in Hindi (`Q1 (हिन्दी)`), between the question and the answer. A failed send never blocks the seeker.
 - **Formspree switch** (`src/course/nirvan-sutra/server/notify.ts`):
   - Production sends to `https://formspree.io/f/xbgdowwz` by default.
   - Development sends nothing unless `NIRVAN_SUTRA_FORMSPREE_URL` is set.

@@ -12,6 +12,8 @@ export interface WrittenNotice {
   learner: { id: string; name: string | null; email: string | null };
   locale: LocaleCode;
   prompts: string[];
+  /** the same questions in Hindi, shown beside them in the email when the seeker wrote in another language */
+  promptsHi?: string[];
   answers: string[];
   objective?: { score: number; total: number };
 }
@@ -23,10 +25,8 @@ export function formspreeUrl(): string | null {
   return url && /^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(url) ? url : null;
 }
 
-/** One email per submission: who, which part, every question with its answer. Returns whether Formspree accepted it. */
-export async function sendWritten(n: WrittenNotice): Promise<boolean> {
-  const url = formspreeUrl();
-  if (!url) return false;
+/** The email's fields: who, which part, then per question the question (and its Hindi when the seeker wrote in another language) and the answer. */
+export function formspreeBody(n: WrittenNotice): Record<string, string> {
   const body: Record<string, string> = {
     _subject: `Nirvan Sutra · ${n.part} · ${n.learner.name ?? n.learner.email ?? 'साधक'}`,
     seeker: n.learner.name ?? '',
@@ -37,7 +37,19 @@ export async function sendWritten(n: WrittenNotice): Promise<boolean> {
   };
   if (n.learner.email) body.email = n.learner.email;   // Formspree uses it as the reply-to
   if (n.objective) body.objective = `${n.objective.score} / ${n.objective.total}`;
-  n.prompts.forEach((q, i) => { body[`Q${i + 1}`] = q; body[`A${i + 1}`] = n.answers[i] ?? ''; });
+  n.prompts.forEach((q, i) => {
+    body[`Q${i + 1}`] = q;
+    if (n.locale !== 'hi' && n.promptsHi?.[i]) body[`Q${i + 1} (हिन्दी)`] = n.promptsHi[i];
+    body[`A${i + 1}`] = n.answers[i] ?? '';
+  });
+  return body;
+}
+
+/** One email per submission. Returns whether Formspree accepted it. */
+export async function sendWritten(n: WrittenNotice): Promise<boolean> {
+  const url = formspreeUrl();
+  if (!url) return false;
+  const body = formspreeBody(n);
   try {
     const r = await fetch(url, { method: 'POST', headers: { 'content-type': 'application/json', accept: 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(8000) });
     if (!r.ok) console.error('nirvan-sutra: formspree refused the answers', r.status);

@@ -59,7 +59,7 @@ export async function handleAction(learnerId: string, action: string, body: Reco
       const { prompts } = writtenPrompts(locale, 'stage', stage);
       const answers = ownWords(body.answers, prompts.length);
       await update(learnerId, (p) => { (p.written ??= {})[writtenKey('stage', stage)] = { prompts, answers, locale, at: now() }; });
-      const sent = await opts.notify?.({ part: `Stage ${stage} — ${stageView('hi', stage).text.title}`, learner: { id: learnerId, name: p0.name }, locale, prompts, answers });
+      const sent = await opts.notify?.({ part: `Stage ${stage} — ${stageView('hi', stage).text.title}`, learner: { id: learnerId, name: p0.name }, locale, prompts, promptsHi: writtenPrompts('hi', 'stage', stage).prompts, answers });
       return { ok: true, sent: sent === true };
     }
     case 'complete-stage': {
@@ -102,7 +102,7 @@ export async function handleAction(learnerId: string, action: string, body: Reco
         if (kind === 'checkpoint') (p.checkpoints[id] ??= []).push(attempt); else p.final.push(attempt);
         (p.written ??= {})[writtenKey(kind, id)] = { prompts, answers: written, locale: wLocale, at: now() };
       });
-      await opts.notify?.({ part: kind === 'final' ? 'Final assessment' : `Checkpoint ${id} — ${checkpointView('hi', id).title}`, learner: { id: learnerId, name: p0.name }, locale: wLocale, prompts, answers: written, objective: { score: g.score, total: g.total } });
+      await opts.notify?.({ part: kind === 'final' ? 'Final assessment' : `Checkpoint ${id} — ${checkpointView('hi', id).title}`, learner: { id: learnerId, name: p0.name }, locale: wLocale, prompts, promptsHi: writtenPrompts('hi', kind, id).prompts, answers: written, objective: { score: g.score, total: g.total } });
       const locale = p.locale ?? 'hi';
       const view = kind === 'checkpoint' ? checkpointView(locale, id) : finalView(locale);
       const results = g.result.map((r) => ({ ...r, explanation: checkItemFull(locale, r.id)?.explanation ?? '' }));
