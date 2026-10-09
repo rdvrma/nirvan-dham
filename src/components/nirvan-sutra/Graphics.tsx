@@ -23,7 +23,7 @@ export function StageOrb({ n }: { n: number }) {
     <svg className="ns-opening-orb" viewBox="0 0 520 520" aria-hidden="true">
       {rings.map((r, i) => <circle key={r} cx="260" cy="260" r={r} fill="none" stroke={i === 0 ? 'rgba(212,168,67,0.3)' : 'rgba(212,168,67,0.08)'} strokeWidth="1" strokeDasharray={i % 2 ? '2 8' : undefined} />)}
       <g style={{ transformOrigin: '260px 260px', animation: 'ns-spin 160s linear infinite' }}>
-        {Array.from({ length: n }, (_, i) => { const a = (i / 17) * Math.PI * 2 - Math.PI / 2; return <circle key={i} cx={r2()} cy={r2()} r={i === n - 1 ? 4 : 2.2} fill={i === n - 1 ? GOLD : 'rgba(233,200,117,0.45)'} />; })}
+        {Array.from({ length: n }, (_, i) => { const a = (i / 17) * Math.PI * 2 - Math.PI / 2; return <circle key={i} cx={r2(260 + Math.cos(a) * 192)} cy={r2(260 + Math.sin(a) * 192)} r={i === n - 1 ? 4 : 2.2} fill={i === n - 1 ? GOLD : 'rgba(233,200,117,0.45)'} />; })}
       </g>
     </svg>
   );
@@ -38,7 +38,7 @@ function SeerSeen({ g }: { g: G }) {
       <circle cx="200" cy="200" r="150" fill="none" stroke={FAINT} />
       <circle cx="200" cy="200" r="96" fill="none" stroke={FAINT} strokeDasharray="2 6" />
       <g className="ns-orbit">{things.map((t, i) => { const a = (i / things.length) * Math.PI * 2; const x = r2(200 + Math.cos(a) * 150), y = r2(200 + Math.sin(a) * 150); return <g key={t}><circle cx={x} cy={y} r="7" fill={SOFT} /><text x={x} y={y - 16} fill={SOFT} fontSize="14" textAnchor="middle">{t}</text></g>; })}</g>
-      <g className="ns-orbit-2">{[0, 1, 2].map((i) => { const a = (i / 3) * Math.PI * 2 + 0.5; return <circle key={i} cx={r2()} cy={r2()} r="4" fill={FAINT} />; })}</g>
+      <g className="ns-orbit-2">{[0, 1, 2].map((i) => { const a = (i / 3) * Math.PI * 2 + 0.5; return <circle key={i} cx={r2(200 + Math.cos(a) * 96)} cy={r2(200 + Math.sin(a) * 96)} r="4" fill={FAINT} />; })}</g>
       <circle cx="200" cy="200" r="30" fill="rgba(233,200,117,0.1)" style={{ transformOrigin: '200px 200px', animation: 'ns-breathe 6s ease-in-out infinite' }} />
       <circle cx="200" cy="200" r="6" fill={GOLD} />
       <text x="200" y="236" fill={GOLD} fontSize="14" textAnchor="middle">{g.gAwareness}</text>
@@ -87,7 +87,7 @@ function Experiencer({ g }: { g: G }) {
   return (
     <svg className="ns-graphic" viewBox="0 0 400 400" role="img" aria-label={`${g.gExperience} → ${g.gExperiencer} → ${g.gAwareness}`}>
       <circle cx="200" cy="200" r="160" fill="none" stroke={FAINT} />
-      <g className="ns-orbit">{[0, 1, 2, 3, 4].map((i) => { const a = (i / 5) * Math.PI * 2; return <circle key={i} cx={r2()} cy={r2()} r="5" fill={SOFT} />; })}</g>
+      <g className="ns-orbit">{[0, 1, 2, 3, 4].map((i) => { const a = (i / 5) * Math.PI * 2; return <circle key={i} cx={r2(200 + Math.cos(a) * 160)} cy={r2(200 + Math.sin(a) * 160)} r="5" fill={SOFT} />; })}</g>
       <circle cx="200" cy="200" r="52" fill="none" stroke={LINE} strokeDasharray="3 5" className="ns-float" />
       <text x="200" y="160" fill={SOFT} fontSize="13" textAnchor="middle">{g.gExperiencer}</text>
       <path d="M200 120 V 186" stroke={LINE} strokeDasharray="2 4" />
@@ -148,7 +148,7 @@ export function FilmGeometry({ n }: { n: number }) {
       </defs>
       <rect width="1600" height="900" fill="url(#ns-ph-glow)" />
       <g className="ns-spin-slow">{[140, 220, 300, 380].map((r, i) => <circle key={r} cx="800" cy="450" r={r} fill="none" stroke={i % 2 ? 'rgba(212,168,67,0.08)' : 'rgba(212,168,67,0.16)'} strokeDasharray={i % 2 ? '2 10' : undefined} />)}</g>
-      <g className="ns-spin-rev">{Array.from({ length: 17 }, (_, i) => { const a = (i / 17) * Math.PI * 2; return <circle key={i} cx={r2()} cy={r2()} r={i === n - 1 ? 5 : 2} fill={i === n - 1 ? GOLD : 'rgba(233,200,117,0.35)'} />; })}</g>
+      <g className="ns-spin-rev">{Array.from({ length: 17 }, (_, i) => { const a = (i / 17) * Math.PI * 2; return <circle key={i} cx={r2(800 + Math.cos(a) * 300)} cy={r2(450 + Math.sin(a) * 300)} r={i === n - 1 ? 5 : 2} fill={i === n - 1 ? GOLD : 'rgba(233,200,117,0.35)'} />; })}</g>
       <path d="M0 640 H1600" stroke="rgba(243,234,212,0.06)" />
       <g className="ns-drift"><circle cx="800" cy="450" r="5" fill={GOLD} /></g>
     </svg>
