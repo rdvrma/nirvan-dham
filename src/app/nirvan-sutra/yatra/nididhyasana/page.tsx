@@ -6,9 +6,10 @@ import * as E from '@/course/nirvan-sutra/engine';
 import { PROGRAM } from '@/course/nirvan-sutra/structure';
 import NididhyasanaBoard, { type WeekView } from '@/components/nirvan-sutra/Nididhyasana';
 import { Visit } from '@/components/nirvan-sutra/Bits';
+import { guideStore } from '@/course/nirvan-sutra/server/guide';
 
-// Phase II, निदिध्यासन संग. Sessions are mocked locally: one per week, seven days apart from the start (live link and recording come from a
-// scheduling backend later; the fields already exist).
+// Phase II, निदिध्यासन संग. One guided session per week, seven days apart from the start; the live link, recording and session note come from
+// the guide's desk (/nirvan-sutra/yatra/guide), and so does the guide's note to this learner for each week.
 export default async function NididhyasanaPage() {
   const { progress: p, locale, t } = await enrolledContext();
   if (!E.nididhyasanaUnlocked(p)) redirect(`${BASE}/dashboard`);
@@ -16,6 +17,8 @@ export default async function NididhyasanaPage() {
   const prog = programView(locale);
   const current = E.nididhyasanaWeek(p)!;
   const start = new Date(p.nididhyasana.startedAt);
+  const g = await guideStore();
+  const [gw, notes] = await Promise.all([g.weeks(), g.notesFor(p.learnerId)]);
   const dateFmt = new Intl.DateTimeFormat(locale === 'or' ? 'or-IN' : `${locale}-IN`, { weekday: 'long', day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
   const weeks: WeekView[] = prog.nididhyasana.weeks.map((w) => {
     const d = new Date(start.getTime() + (w.n - 1) * 7 * 86400000 + 5 * 86400000);
@@ -23,7 +26,8 @@ export default async function NididhyasanaPage() {
     const pw = p.nididhyasana.weeks[w.n];
     return {
       ...w, sessionDate: dateFmt.format(d), sessionStatus: w.n < current ? 'past' : w.n === current ? 'now' : 'upcoming',
-      liveSessionUrl: null, recordingUrl: null, teacherNote: null,
+      liveSessionUrl: gw[w.n]?.liveSessionUrl ?? null, recordingUrl: gw[w.n]?.recordingUrl ?? null,
+      teacherNote: [notes[w.n], gw[w.n]?.sessionNote].filter(Boolean).join(' · ') || null,
       attended: !!pw?.attended, reflection: pw?.reflection ?? '', doubts: pw?.doubts ?? [],
     };
   });

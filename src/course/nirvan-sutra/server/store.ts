@@ -1,5 +1,6 @@
-// SERVER ONLY: where learner progress is kept. Locally a JSON file per learner under .data/nirvan-sutra/ (git-ignored); the interface is the seam for the
-// Supabase table later (same shape, one row per learner). Scores are written only by the server's grading routes, never taken from the client.
+// SERVER ONLY: where learner progress is kept. NIRVAN_SUTRA_STORE=supabase -> the ns_progress table (one row per signed-in learner, RLS: own row);
+// otherwise a JSON file per learner under .data/nirvan-sutra/ (git-ignored, anonymous cookie learners, local only).
+// Scores are written only by the server's grading routes, never taken from the client.
 import fs from 'node:fs';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
@@ -29,19 +30,28 @@ export class MemoryProgressStore implements ProgressStore {
   async save(p: Progress) { this.m.set(p.learnerId, structuredClone({ ...p, updatedAt: new Date().toISOString() })); }
 }
 
-let store: ProgressStore = new FileProgressStore();
-export const progressStore = () => store;
+export type StoreMode = 'file' | 'supabase';
+export const storeMode = (): StoreMode => (process.env.NIRVAN_SUTRA_STORE === 'supabase' ? 'supabase' : 'file');
+
+const fileStore = new FileProgressStore();
+let override: ProgressStore | null = null;
 /** Tests swap the store. */
-export const setProgressStore = (s: ProgressStore) => { store = s; };
+export const setProgressStore = (s: ProgressStore | null) => { override = s; };
+/** The store for this request (the Supabase one is bound to the signed-in user's session). */
+export async function progressStore(): Promise<ProgressStore> {
+  if (override) return override;
+  if (storeMode() === 'supabase') return (await import('./supabase-store')).supabaseProgressStore();
+  return fileStore;
+}
 
 export async function loadOrCreate(learnerId: string): Promise<Progress> {
-  return (await store.get(learnerId)) ?? newProgress(learnerId);
+  return (await (await progressStore()).get(learnerId)) ?? newProgress(learnerId);
 }
 /** Load, change and save in one step. */
 export async function update(learnerId: string, fn: (p: Progress) => Progress | void): Promise<Progress> {
   const p = await loadOrCreate(learnerId);
   const next = fn(p) ?? p;
-  await store.save(next);
+  await (await progressStore()).save(next);
   return next;
 }
 export const newLearnerId = () => randomUUID();

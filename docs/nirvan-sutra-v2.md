@@ -55,26 +55,72 @@ No code change and no database change are needed for this.
 
 ## Running it locally
 
+Two modes, chosen by `NIRVAN_SUTRA_STORE`:
+
+| Mode | Who the learner is | Where progress lives |
+|---|---|---|
+| file (default) | an anonymous httpOnly cookie `ns_learner` | `.data/nirvan-sutra/progress/*.json` (git-ignored) |
+| `supabase` | the site's own account (`/login`, `/signup`, Google); no account → sent to `/login?next=…` | `ns_progress` (one row per account, RLS: own row; guides read all) |
+
+Quick try without accounts:
+
 ```bash
 npx next dev -p 3100
 ```
 
-Open `http://localhost:3100/nirvan-sutra/yatra`. In dev, a "DEV" panel (bottom right) switches between demo states: new seeker, mid-journey, ready for the final, Nididhyasana week 5, and completed. Progress is stored in `.data/nirvan-sutra/progress/` (git-ignored), and the learner is identified by an httpOnly cookie `ns_learner`. `/nirvan-sutra/yatra/admin` (dev only) lists every lesson's content and video status.
+Full local stack with accounts (Docker Desktop must be running). This starts a local Supabase in Docker, applies `supabase/nirvan-sutra-v2.sql` and runs the dev server against it. Production Supabase is not touched: the env vars are overridden for that process only.
 
-Checks:
+```bash
+bash scripts/nirvan-sutra/local-supabase.sh
+```
+
+- Course: `http://localhost:3100/nirvan-sutra/yatra`. Create a test account at `/signup`; local email confirmation is off.
+- Make an account a guide:
+
+  ```bash
+  bash scripts/nirvan-sutra/local-supabase.sh guide you@example.test
+  ```
+
+- Local Studio: `http://127.0.0.1:54323`. Test mailbox: `http://127.0.0.1:54324`.
+- Stop the Docker stack:
+
+  ```bash
+  bash scripts/nirvan-sutra/local-supabase.sh stop
+  ```
+
+In dev, a "DEV" panel (bottom right) switches the learner between demo states: new seeker, mid-journey, ready for the final, Nididhyasana week 5, and completed. `/nirvan-sutra/yatra/admin` (dev only) lists every lesson's content and video status.
+
+## Guide desk (Nididhyasana)
+
+`/nirvan-sutra/yatra/guide` is for guides only. In supabase mode, a guide is a user listed in `ns_guides`; locally in file mode, the desk is open in development.
+
+- **Weekly sessions:** for each of the 12 weeks the guide sets a live session link, a recording link (https only) and a short note. These are the same for every learner in that week.
+- **Learners:** the guide sees each learner's week, attendance, how many reflections they wrote, and their doubts. The guide can write a note to one learner for one week. That note shows up on the learner's Nididhyasana page.
+- **Privacy:** a learner's reflections and final reflection stay private. The guide only sees whether they were written.
+
+## Checks
 
 ```bash
 npx tsx --test tests/nirvan-sutra-yatra.test.ts
 node scripts/nirvan-sutra/check-locales.mjs
+node scripts/nirvan-sutra/qa-locales.mjs
 ```
 
-## Before production (not done here)
+1. `npx tsx --test tests/nirvan-sutra-yatra.test.ts`: the unit tests.
+2. `node scripts/nirvan-sutra/check-locales.mjs`: completeness. Every language has every id, option count and placeholder.
+3. `node scripts/nirvan-sutra/qa-locales.mjs`: mechanical translation QA. It checks for the right script, no stray text, matching placeholders and sane lengths.
 
-1. Get the draft long-form Hindi texts and the 10 machine translations reviewed.
-2. Move progress from the file store to Supabase. `store.ts` has a `ProgressStore` interface; add a Supabase implementation and a migration. This needs the owner's go-ahead.
-3. Connect real login in place of the anonymous cookie.
-4. Fill in `videos.json` from the Gyanmarg delivery (17 main films + 170 question films, plus dub tracks).
-5. Set up the Nididhyasana session links/recordings and the teacher notes (currently placeholders).
-6. Remove the test clip, then deploy.
+## Going live (owner steps)
+
+1. Run `supabase/nirvan-sutra-v2.sql` in the production Supabase SQL Editor. It only adds `ns_*` objects and can be run more than once.
+2. Add the guides:
+
+   ```sql
+   insert into public.ns_guides (user_id) select id from auth.users where email = '…';
+   ```
+
+3. In Vercel, add `NIRVAN_SUTRA_STORE=supabase` (Production and Preview), then deploy. Without it, the course would run in file mode, which does not persist on Vercel.
+4. Fill in `videos.json` from the Gyanmarg delivery (17 main films, 170 question films, and the dub tracks). Remove the test clip on `NS-S01-Q01`.
+5. Review the translations and the draft Hindi long-form texts. The UI shows their status.
 
 `SarvamTTSProvider` refuses to run unless it is enabled explicitly. The course itself never calls Sarvam: dubbed audio comes from the video pipeline.

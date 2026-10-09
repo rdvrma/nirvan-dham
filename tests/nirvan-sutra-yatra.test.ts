@@ -20,7 +20,7 @@ const keys = answerKeys();
 /** the displayed position of the right option of an item */
 const rightPos = (id: string, count: number) => E.optionOrder(id, count).indexOf(keys[id]);
 const wrongPos = (id: string, count: number) => (rightPos(id, count) + 1) % count;
-const get = async (id: string) => (await progressStore().get(id))!;
+const get = async (id: string) => (await (await progressStore()).get(id))!;
 
 async function passStage(id: string, stage: string) {
   await handleAction(id, 'main-viewed', { stage });
@@ -42,7 +42,7 @@ test('the approved source is complete: 17 stages, 170 questions, 187 lessons wit
 
 test('first-time language selection is stored in the enrollment', async () => {
   const id = learner();
-  assert.equal((await progressStore().get(id)), null);
+  assert.equal((await (await progressStore()).get(id)), null);
   await handleAction(id, 'enroll', { locale: 'ta', name: 'Meera' });
   const p = await get(id);
   assert.equal(p.locale, 'ta');
@@ -136,7 +136,7 @@ test('section checkpoints open after their movement; the final assessment after 
 
 test('below the threshold: no fail screen, the weakest stages and concepts to revisit, and a retry', async () => {
   const id = learner();
-  await progressStore().save({ ...demoProgress(id, 'final-ready', 'hi'), learnerId: id });
+  await (await progressStore()).save({ ...demoProgress(id, 'final-ready', 'hi'), learnerId: id });
   const items = itemsForGrading('final');
   const answers = allRight('final');
   const weak = ['S09', 'S12', 'S14', 'S17'];
@@ -154,7 +154,7 @@ test('below the threshold: no fail screen, the weakest stages and concepts to re
 
 test('Phase I → Nididhyasana: only after the whole Phase I; weeks open one by one', async () => {
   const id = learner();
-  await progressStore().save({ ...demoProgress(id, 'final-ready', 'hi'), learnerId: id });
+  await (await progressStore()).save({ ...demoProgress(id, 'final-ready', 'hi'), learnerId: id });
   await assert.rejects(() => handleAction(id, 'nididhyasana', { op: 'start' }), /after Phase I/);
   await handleAction(id, 'assessment', { kind: 'final', answers: allRight('final') });
   const t0 = new Date('2026-11-01T10:00:00Z');
@@ -176,12 +176,12 @@ test('the final reflection and the certificate: every requirement, in order', as
   const id = learner();
   const at = new Date();
   const p = { ...demoProgress(id, 'nididhyasana', 'hi', at), learnerId: id };
-  await progressStore().save(p);
+  await (await progressStore()).save(p);
   await assert.rejects(() => handleAction(id, 'final-reflection', { answers: ['x'.repeat(30)] }, { at }), /opens after/);
   assert.equal(E.certificateEligible(await get(id), stageItemIds, at), false);
   // the twelve weeks pass with enough participation
   const done = { ...demoProgress(id, 'completed', 'hi', at), learnerId: id, finalReflection: null };
-  await progressStore().save(done);
+  await (await progressStore()).save(done);
   const late = new Date(at.getTime() + 60_000);
   await assert.rejects(() => handleAction(id, 'final-reflection', { answers: ['short'] }, { at: late }), /every prompt/);
   await handleAction(id, 'final-reflection', { answers: Array.from({ length: 9 }, () => 'अब “मैं” को एक विचार की तरह आते-जाते देखता हूँ।') }, { at: late });
@@ -235,4 +235,30 @@ test('demo states cover the whole product', () => {
   assert.equal(E.nididhyasanaWeek(demoProgress('demo-nid-0001', 'nididhyasana', 'hi', at), at), 5);
   assert.equal(E.certificateEligible(demoProgress('demo-done-001', 'completed', 'hi', at), stageItemIds, at), true);
   assert.equal(stageId(17), 'S17');
+});
+
+test('guide desk: weekly session links (https only), a note per learner per week, doubts visible, reflections stay private', async () => {
+  const { MemoryGuideStore, setGuideStore } = await import('../src/course/nirvan-sutra/server/guide');
+  const { handleGuideAction, guideView } = await import('../src/course/nirvan-sutra/server/guide-actions');
+  const g = new MemoryGuideStore();
+  setGuideStore(g);
+  const at = new Date();
+  const p = demoProgress('guide-learner-01', 'nididhyasana', 'ta', at);
+  g.l = [p];
+  await handleGuideAction('guide-0001', 'week', { week: 2, liveSessionUrl: 'https://meet.example.org/ns', recordingUrl: '', sessionNote: 'सत्र शाम 7 बजे' });
+  await assert.rejects(() => handleGuideAction('guide-0001', 'week', { week: 3, liveSessionUrl: 'http://insecure.example.org' }), /https/);
+  await assert.rejects(() => handleGuideAction('guide-0001', 'week', { week: 13 }), /1–12/);
+  await handleGuideAction('guide-0001', 'note', { learnerId: p.learnerId, week: 2, note: 'साक्षी को खोजना नहीं है — देखिए कि खोज किसमें उठती है।' });
+  assert.equal((await g.weeks())[2].liveSessionUrl, 'https://meet.example.org/ns');
+  assert.equal((await g.notesFor(p.learnerId))[2].startsWith('साक्षी'), true);
+  const v = await guideView(at);
+  const l = v.learners[0];
+  assert.equal(l.currentWeek, 5);
+  assert.equal(l.weeks[1].doubts.length, 1);
+  assert.equal(l.weeks[1].note.startsWith('साक्षी'), true);
+  // the guide sees whether a reflection was written, never its text
+  assert.equal(JSON.stringify(v).includes(p.nididhyasana.weeks[1].reflection!), false);
+  await handleGuideAction('guide-0001', 'note', { learnerId: p.learnerId, week: 2, note: '' });
+  assert.equal((await g.notesFor(p.learnerId))[2], undefined);
+  setGuideStore(null);
 });

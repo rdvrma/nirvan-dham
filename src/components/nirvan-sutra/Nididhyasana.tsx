@@ -54,7 +54,7 @@ export default function NididhyasanaBoard({ weeks, current, participation }: { w
           {w.sessionStatus === 'past'
             ? <p className="ns-muted ns-small" style={{ marginTop: 8 }}>{w.recordingUrl ? <a className="ns-gold" href={w.recordingUrl}>{ui.open}</a> : ui.nidRecordingSoon}</p>
             : w.liveSessionUrl ? <a className="ns-btn" style={{ marginTop: 14 }} href={w.liveSessionUrl}>{ui.nidJoin}</a> : <p className="ns-muted ns-small" style={{ marginTop: 8 }}>{ui.nidSessionPending}</p>}
-          {w.teacherNote && <div style={{ marginTop: 14 }}><div className="ns-small ns-muted">{ui.nidTeacherNote}</div><p>{w.teacherNote}</p></div>}
+          {w.teacherNote && <div style={{ marginTop: 14 }}><div className="ns-small ns-muted">{ui.nidTeacherNote}</div><p style={{ whiteSpace: 'pre-line' }}>{w.teacherNote}</p></div>}
           {open && (w.attended
             ? <p className="ns-small" style={{ marginTop: 14, display: 'flex', gap: 8, alignItems: 'center' }}><Tick /> {ui.nidAttendedDone}</p>
             : <button className="ns-btn ns-btn-quiet" style={{ marginTop: 14 }} disabled={busy} onClick={() => run('attend', {}, ui.nidAttendedDone)}>{ui.nidAttended}</button>)}

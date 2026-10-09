@@ -2,7 +2,8 @@
 import { redirect } from 'next/navigation';
 import type { LocaleCode, Progress } from '../types';
 import { SOURCE_LOCALE, localeInfo } from '../locales';
-import { currentProgress } from './session';
+import { currentProgress, currentAccount } from './session';
+import { storeMode } from './store';
 import { uiStrings } from './content';
 
 export const BASE = '/nirvan-sutra/yatra';
@@ -19,8 +20,17 @@ export async function courseContext() {
   return { progress, locale, info: localeInfo(locale), ui, t: makeT(ui) };
 }
 
+/** With accounts (supabase mode) the course needs a signed-in learner; sends to the site's /login and back. */
+export async function requireSignedIn(next: string = BASE) {
+  if (storeMode() !== 'supabase') return null;
+  const account = await currentAccount();
+  if (!account) redirect(`/login?next=${encodeURIComponent(next)}`);
+  return account;
+}
+
 /** Pages behind the language choice: a learner without a language goes to the onboarding first. */
 export async function enrolledContext() {
+  await requireSignedIn();
   const ctx = await courseContext();
   if (!ctx.progress?.locale) redirect(`${BASE}/onboarding`);
   return ctx as typeof ctx & { progress: Progress };

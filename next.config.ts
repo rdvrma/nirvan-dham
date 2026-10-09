@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 
+// Local development against a Docker Supabase (scripts/nirvan-sutra/local-supabase.sh): allow that http origin. Production is unchanged.
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? '';
+const localSupabase = process.env.NODE_ENV !== 'production' && /^http:\/\/(127\.0\.0\.1|localhost)(:\d+)?\/?$/.test(supabaseUrl) ? new URL(supabaseUrl).origin : null;
+
 const securityHeaders = [
   { key: 'X-DNS-Prefetch-Control', value: 'on' },
   { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
@@ -17,11 +21,11 @@ const securityHeaders = [
       "img-src 'self' data: blob: https:",
       "media-src 'self' blob: https:",
       "frame-src https://www.youtube.com https://www.youtube-nocookie.com",
-      "connect-src 'self' https://*.supabase.co https://generativelanguage.googleapis.com https://formspree.io https://*.clarity.ms https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com",
+      `connect-src 'self'${localSupabase ? ` ${localSupabase}` : ''} https://*.supabase.co https://generativelanguage.googleapis.com https://formspree.io https://*.clarity.ms https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com`,
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
-      "upgrade-insecure-requests",
+      ...(localSupabase ? [] : ["upgrade-insecure-requests"]),
     ].join('; '),
   },
 ];

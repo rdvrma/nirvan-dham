@@ -132,7 +132,7 @@ export async function handleAction(learnerId: string, action: string, body: Reco
       const state = String(body.state) as DemoState;
       if (!DEMO_STATES.includes(state)) throw new ActionError('bad state');
       const p0 = await loadOrCreate(learnerId);
-      await update(learnerId, () => demoProgress(learnerId, state, p0.locale, at));
+      await update(learnerId, () => ({ ...demoProgress(learnerId, state, p0.locale, at), name: p0.name ?? 'साधक' }));
       return { ok: true };
     }
     default: throw new ActionError('unknown action', 404);
