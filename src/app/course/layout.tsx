@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Nirvan Sutra Course | Self-Inquiry & Advaita Vedanta | Nirvan Dham',
   description:
-    'निर्वाण सूत्र — एक पूर्ण आध्यात्मिक पाठ्यक्रम। 8 अध्याय, 3 चरण (श्रवण, मनन, निदिध्यासन), 3 भाषाएँ। आत्म-जिज्ञासा और अद्वैत वेदान्त की प्रत्यक्ष यात्रा — आदिसत्व के साथ।',
+    'निर्वाण सूत्र — 17 चरणों, 170 प्रश्नों और तीन माह के निदिध्यासन का आध्यात्मिक पाठ्यक्रम। 11 भाषाओं में आत्म-जिज्ञासा की यात्रा।',
   keywords: [
     'Nirvan Sutra course', 'Advaita Vedanta', 'self-inquiry course', 'spiritual course Hindi',
     'Aadisatv teachings', 'Nirvan Dham course', 'Shravana Manana Nididhyasana',
@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: 'Nirvan Sutra Course | Nirvan Dham',
-    description: 'A complete spiritual journey — 8 chapters, 3 stages, 3 languages. Direct self-inquiry with Aadisatv.',
+    description: 'A seventeen-stage journey of self-inquiry with guided practice in eleven languages.',
     url: 'https://nirvandham.in/course',
     type: 'website',
   },
   twitter: {
     card: 'summary',
     title: 'Nirvan Sutra Course | Nirvan Dham',
-    description: 'A complete spiritual journey — 8 chapters, 3 stages, 3 languages.',
+    description: 'Seventeen stages of self-inquiry with guided practice in eleven languages.',
   },
   alternates: { canonical: 'https://nirvandham.in/course' },
 };

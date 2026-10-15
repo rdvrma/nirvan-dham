@@ -1,0 +1,66 @@
+{
+ "$comment": "English program texts, transcreated from locales/hi/program.json. Sanskrit terms stay as they are, with their meaning.",
+ "locale": "en",
+ "status": "machine",
+ "movements": {
+  "M1": {"title": "Preparing for the search", "subtitle": "Recognising ignorance, waking inquiry, preparing the mind with discernment and dispassion"},
+  "M2": {"title": "Understanding and self-examination", "subtitle": "Listening, examining, abiding — and turning from the seen toward the witness"},
+  "M3": {"title": "From experience to the experiencer", "subtitle": "Experience, the one who experiences, ‘Who am I?’ — and the one reality of all"},
+  "M4": {"title": "From silence to natural living", "subtitle": "The limit of knowing, silence, and an ordinary life settled in understanding"}
+ },
+ "nididhyasana": {
+  "status": "machine",
+  "weeks": [
+   {"n": 1, "theme": "The difference between the seen and the seer", "pointer": "This week, pause three times a day and look: what is being seen, and to whom.", "reflectionPrompt": "At which moment was this distinction clearest, and when was it most blurred?"},
+   {"n": 2, "theme": "Thought and knowing the thought", "pointer": "Thoughts are not to be stopped. Each thought is to be known as it comes and goes.", "reflectionPrompt": "Was there a thought that felt like ‘I’? How did you see it?"},
+   {"n": 3, "theme": "Feeling and identity", "pointer": "Feel the feeling fully, and see where the ‘I’ joins in ‘I am sad’.", "reflectionPrompt": "What was the strongest feeling this week? How did ‘I’ attach to it?"},
+   {"n": 4, "theme": "Doership", "pointer": "While working, see: is the sense ‘I am doing’ there every moment, or does it come and go as well?", "reflectionPrompt": "In which task was the burden of doership heaviest, and in which lightest?"},
+   {"n": 5, "theme": "Experience", "pointer": "Watch every experience come and go — and also that which does not go.", "reflectionPrompt": "Did you try to hold on to or repeat an experience?"},
+   {"n": 6, "theme": "The experiencer", "pointer": "See the very sense ‘it is happening to me’ as an experience.", "reflectionPrompt": "What happened when you looked at the experiencer?"},
+   {"n": 7, "theme": "The witness", "pointer": "The witness is not to be searched for; see in what everything is appearing. Keep an eye on the pride of ‘I am the witness’ too.", "reflectionPrompt": "Did ‘the witness’ ever start becoming a new identity?"},
+   {"n": 8, "theme": "The ‘I’-thought", "pointer": "Notice the ‘I’ behind each thought — when it rises, and when it does not.", "reflectionPrompt": "What was there in the moments without the ‘I’-thought?"},
+   {"n": 9, "theme": "Self-inquiry", "pointer": "A few minutes daily: to whom? — to me. — who am I? Without making an answer.", "reflectionPrompt": "What changed this week with ‘Who am I?’"},
+   {"n": 10, "theme": "Relationships and reaction", "pointer": "Take the reactions that rise in relationships as the laboratory of understanding.", "reflectionPrompt": "Write one reaction in full: what happened, what rose, what was seen."},
+   {"n": 11, "theme": "Silence", "pointer": "Recognise, between sounds and thoughts, the background in which they appear.", "reflectionPrompt": "Was silence seen even while sound was there?"},
+   {"n": 12, "theme": "Natural living", "pointer": "Drop the effort to do anything special. Live an ordinary day with understanding.", "reflectionPrompt": "How has the way you see life changed in these twelve weeks?"}
+  ]
+ },
+ "finalReflection": {
+  "status": "machine",
+  "prompts": [
+   "How do you see experience and the experiencer now?",
+   "When a strong reaction arises, where do you find the ‘I’?",
+   "How has the question ‘Who am I?’ changed for you compared with the beginning?",
+   "What do you see now about your deepest identity, the one you used to take as ‘I’?",
+   "Where do you recognise witnessing in your daily life — and where does it become a new belief?",
+   "What is silence for you now?",
+   "Which doubt still remains? Write it honestly.",
+   "How does understanding show in relationships and work — and where does it not?",
+   "What did you gain on this journey — or did the very idea of ‘gaining’ change?"
+  ]
+ },
+ "glossary": {
+  "status": "machine",
+  "terms": [
+   {"term": "अज्ञान", "gloss": "Ajñāna — not knowing one's own nature; not a lack of information, a mistaken identity."},
+   {"term": "जिज्ञासा", "gloss": "Jijñāsā — a true longing to know the truth, which turns back on the one who asks."},
+   {"term": "विवेक", "gloss": "Viveka — the clarity that distinguishes the lasting from the passing, and the seer from the seen."},
+   {"term": "वैराग्य", "gloss": "Vairāgya — inner freedom from clinging; not escape or suppression."},
+   {"term": "श्रवण", "gloss": "Śravaṇa — listening to the teaching attentively, again and again, as being about oneself."},
+   {"term": "मनन", "gloss": "Manana — reflecting on the teaching heard, until doubt ends."},
+   {"term": "निदिध्यासन", "gloss": "Nididhyāsana — abiding deeply in the understood truth, so that it becomes natural."},
+   {"term": "नेति-नेति", "gloss": "Neti-neti — ‘not this, not this’: the method of removing mistaken identities."},
+   {"term": "साक्षीभाव", "gloss": "Sākṣībhāva — the awareness in which everything appears; not a thought, not coldness."},
+   {"term": "अनुभव", "gloss": "Anubhava — experience: what appears, and goes."},
+   {"term": "अनुभवकर्ता", "gloss": "Anubhavakartā — the experiencer: the sense that calls every experience ‘mine’, which is itself known."},
+   {"term": "आत्मविचार", "gloss": "Ātma-vicāra — self-inquiry: turning attention back to the source of ‘I’ — ‘Who am I?’"},
+   {"term": "आत्मज्ञान", "gloss": "Ātma-jñāna — recognising one's own ever-present nature; not a new experience or an achievement."},
+   {"term": "ब्रह्मज्ञान", "gloss": "Brahma-jñāna — knowing the one reality of all names and forms as one's own nature."},
+   {"term": "अज्ञेयता", "gloss": "Ajñeyatā — the knower cannot become an object of knowledge; not ignorance."},
+   {"term": "शून्यता", "gloss": "Śūnyatā — empty of objects, not of awareness."},
+   {"term": "मौन", "gloss": "Mauna — silence: the background of sound and thought; not mere quiet."},
+   {"term": "स्थितप्रज्ञ", "gloss": "Sthitaprajña — one whose understanding is steady; who lives in equanimity."},
+   {"term": "सहज अवस्था", "gloss": "Sahaja — an ordinary, natural life settled in understanding — nothing to gain, become or drop."}
+  ]
+ }
+}

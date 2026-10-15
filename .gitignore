@@ -45,3 +45,9 @@ next-env.d.ts
 *.zip
 
 .vercel
+
+# Nirvan Sutra local learner progress
+/.data/
+
+# Local-only Sarvam course previews; never bundle dubbed media into Vercel.
+/public/local-course-audio/

@@ -1,0 +1,783 @@
+{
+  "$comment": "S01–S17 main films and three published question films are linked to Public YouTube videos. Hindi uses the original audio; published Sarvam dubs for the other ten course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "lessons": {
+    "NS-S01-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "E0U-Toeq5lY",
+      "durationSec": 752,
+      "youtubeAudioLocales": [
+        "hi",
+        "en",
+        "bn"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S02-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "yOtIMzqFbpM",
+      "durationSec": 782,
+      "youtubeAudioLocales": [
+        "hi",
+        "en",
+        "bn"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S03-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "gzE7_ZQ9JXw",
+      "durationSec": 748,
+      "youtubeAudioLocales": [
+        "hi",
+        "en",
+        "bn"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S04-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "xfxwSKibL_I",
+      "durationSec": 749,
+      "youtubeAudioLocales": [
+        "hi",
+        "en"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S05-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "blJtCHw2tZA",
+      "durationSec": 749,
+      "youtubeAudioLocales": [
+        "hi",
+        "en",
+        "bn"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S07-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "RzQ0onRtnAs",
+      "durationSec": 776.286,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "समझा हुआ सत्य स्वाभाविक कैसे बने?"
+        },
+        {
+          "atSec": 69.87,
+          "title": "ज्ञानमार्ग · 07 · निदिध्यासन"
+        },
+        {
+          "atSec": 80.46,
+          "title": "निदिध्यासन — दस प्रश्न"
+        },
+        {
+          "atSec": 123.54,
+          "title": "निदिध्यासन = सत्य में गहराई से ठहरना"
+        },
+        {
+          "atSec": 221.1,
+          "title": "निदिध्यासन को समझने के लिए वेदांत, यानी…"
+        },
+        {
+          "atSec": 370.55,
+          "title": "ठहरना, दोहराना नहीं"
+        },
+        {
+          "atSec": 433.16,
+          "title": "पुरानी पहचान लौटेगी — फिर देखी जाएगी"
+        },
+        {
+          "atSec": 498.75,
+          "title": "आसन पर भी, रसोई में भी"
+        },
+        {
+          "atSec": 580.89,
+          "title": "यह निदिध्यासन नहीं है —"
+        },
+        {
+          "atSec": 652.95,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 704.39,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S08-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "H8KjGHT2Ib4",
+      "durationSec": 768.731063,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "अपने को जानना — जोड़ना, या हटाना?"
+        },
+        {
+          "atSec": 75.48,
+          "title": "ज्ञानमार्ग · 08 · नेति-नेति"
+        },
+        {
+          "atSec": 133.04,
+          "title": "न + इति = यह नहीं"
+        },
+        {
+          "atSec": 232.56,
+          "title": "इस खोज को समझने के लिए तैत्तिरीय…"
+        },
+        {
+          "atSec": 380.38,
+          "title": "पहचान नकारना, अस्तित्व नहीं"
+        },
+        {
+          "atSec": 436.24,
+          "title": "जानने वाला नकारा नहीं जा सकता"
+        },
+        {
+          "atSec": 497.88,
+          "title": "शून्य नहीं, जानने वाला बचता है"
+        },
+        {
+          "atSec": 574.42,
+          "title": "तीन भ्रम"
+        },
+        {
+          "atSec": 644.28,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 700.84,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S09-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "g_mvaIlNucg",
+      "durationSec": 763.975396,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "क्या आपके भीतर भी कोई चुपचाप देख रहा है?"
+        },
+        {
+          "atSec": 82.54,
+          "title": "ज्ञानमार्ग · 09 · साक्षीभाव"
+        },
+        {
+          "atSec": 93.08,
+          "title": "साक्षीभाव — दस प्रश्न"
+        },
+        {
+          "atSec": 139.32,
+          "title": "साक्षी = गवाह"
+        },
+        {
+          "atSec": 261.48,
+          "title": "साक्षी को समझने के लिए, वेदांत, यानी…"
+        },
+        {
+          "atSec": 395.3,
+          "title": "साक्षी विचार नहीं"
+        },
+        {
+          "atSec": 450.53,
+          "title": "साक्षी तीनों अवस्थाओं में"
+        },
+        {
+          "atSec": 502.68,
+          "title": "\"मैं साक्षी हूँ\" — सूक्ष्म अहंकार?"
+        },
+        {
+          "atSec": 570.4,
+          "title": "यह साक्षीभाव नहीं है —"
+        },
+        {
+          "atSec": 651.61,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 695.4,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S10-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "oUiIDpJWVss",
+      "durationSec": 799.577417,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "अनुभव आते-जाते हैं — जानने वाला?"
+        },
+        {
+          "atSec": 76.67,
+          "title": "ज्ञानमार्ग · 10 · अनुभव"
+        },
+        {
+          "atSec": 86.75,
+          "title": "अनुभव — दस प्रश्न"
+        },
+        {
+          "atSec": 132.78,
+          "title": "अनुभव = सीधे महसूस करना, जानना"
+        },
+        {
+          "atSec": 231.94,
+          "title": "अनुभव को समझने के लिए, एक सिनेमा…"
+        },
+        {
+          "atSec": 344.6,
+          "title": "हर अनुभव आता-जाता है"
+        },
+        {
+          "atSec": 414.43,
+          "title": "ख़ास अनुभव = प्रमाण नहीं"
+        },
+        {
+          "atSec": 510.22,
+          "title": "जो कभी नहीं जाता"
+        },
+        {
+          "atSec": 593.34,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 680.77,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 733.92,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S11-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "RYFunvu9zBo",
+      "durationSec": 764.361917,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "अनुभव किसे होता है?"
+        },
+        {
+          "atSec": 65.27,
+          "title": "ज्ञानमार्ग · 11 · अनुभवकर्ता"
+        },
+        {
+          "atSec": 76.67,
+          "title": "अनुभवकर्ता — दस प्रश्न"
+        },
+        {
+          "atSec": 119.55,
+          "title": "अनुभवकर्ता = \"मुझे हो रहा है\" वाला"
+        },
+        {
+          "atSec": 239.96,
+          "title": "अनुभवकर्ता को समझने के लिए, एक लोहार…"
+        },
+        {
+          "atSec": 353.77,
+          "title": "अनुभवकर्ता भी जाना जाता है"
+        },
+        {
+          "atSec": 420.02,
+          "title": "गहरी नींद में अनुभवकर्ता नहीं"
+        },
+        {
+          "atSec": 497.73,
+          "title": "खोज → \"मैं कौन हूँ?\""
+        },
+        {
+          "atSec": 568.62,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 645.63,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 687.53,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S06-MAIN": {
+      "durationSec": 747.422479,
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "सुनी हुई बात अपनी समझ कैसे बनती है?"
+        },
+        {
+          "atSec": 76.87,
+          "title": "ज्ञानमार्ग · 06 · मनन"
+        },
+        {
+          "atSec": 86.89,
+          "title": "मनन — दस प्रश्न"
+        },
+        {
+          "atSec": 130.75,
+          "title": "मन् = सोचना · मनन = विचार करना"
+        },
+        {
+          "atSec": 237.94,
+          "title": "मनन को समझने के लिए वेदांत, यानी…"
+        },
+        {
+          "atSec": 357.63,
+          "title": "मनन संदेह सुलझाता है, दबाता नहीं"
+        },
+        {
+          "atSec": 430.77,
+          "title": "तर्क जानने वाले तक आकर रुकता है"
+        },
+        {
+          "atSec": 520.46,
+          "title": "अनुभव पर परखी समझ = दृष्टि"
+        },
+        {
+          "atSec": 573.62,
+          "title": "मनन के बारे में कुछ भ्रम"
+        },
+        {
+          "atSec": 635.15,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 681.85,
+          "title": "सार"
+        }
+      ],
+      "videoProvider": "youtube",
+      "videoId": "i4TqoHT487w",
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S12-MAIN": {
+      "durationSec": 754.926146,
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "मैं कौन हूँ?"
+        },
+        {
+          "atSec": 67.99,
+          "title": "ज्ञानमार्ग · 12 · आत्मविचार"
+        },
+        {
+          "atSec": 78.52,
+          "title": "आत्मविचार — दस प्रश्न"
+        },
+        {
+          "atSec": 126.81,
+          "title": "आत्मविचार = अपने असली स्वरूप की जाँच"
+        },
+        {
+          "atSec": 225.36,
+          "title": "आत्मविचार को समझने के लिए, एक आँगन…"
+        },
+        {
+          "atSec": 319.71,
+          "title": "तरीका है, परीक्षा नहीं"
+        },
+        {
+          "atSec": 390.09,
+          "title": "हर विचार से — \"किसे?\""
+        },
+        {
+          "atSec": 468.81,
+          "title": "खोजने वाला = खोज का विषय"
+        },
+        {
+          "atSec": 545.16,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 629.33,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 678.39,
+          "title": "सार"
+        }
+      ],
+      "videoProvider": "youtube",
+      "videoId": "zLRGWwiFnNA",
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S13-MAIN": {
+      "durationSec": 773.7245,
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "जो कभी खोया नहीं — उसे पाना क्या?"
+        },
+        {
+          "atSec": 74.3,
+          "title": "ज्ञानमार्ग · 13 · आत्मज्ञान"
+        },
+        {
+          "atSec": 84.39,
+          "title": "आत्मज्ञान — दस प्रश्न"
+        },
+        {
+          "atSec": 128.14,
+          "title": "आत्मज्ञान = अपने असली स्वरूप का ज्ञान"
+        },
+        {
+          "atSec": 238,
+          "title": "उषा जी के हार की कहानी को…"
+        },
+        {
+          "atSec": 341.86,
+          "title": "पहचान, नया अनुभव नहीं"
+        },
+        {
+          "atSec": 412.3,
+          "title": "व्यक्ति चलता रहता है · बंधन टूटता है"
+        },
+        {
+          "atSec": 487.99,
+          "title": "निजी उपलब्धि नहीं"
+        },
+        {
+          "atSec": 552.36,
+          "title": "कुछ आम भ्रम"
+        },
+        {
+          "atSec": 647.83,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 696.64,
+          "title": "सार"
+        }
+      ],
+      "videoProvider": "youtube",
+      "videoId": "zI4WVUQfkTU",
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S14-MAIN": {
+      "durationSec": 791.901521,
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "सब कुछ — एक ही से बना?"
+        },
+        {
+          "atSec": 73.36,
+          "title": "ज्ञानमार्ग · 14 · ब्रह्मज्ञान"
+        },
+        {
+          "atSec": 83.95,
+          "title": "ब्रह्मज्ञान — दस प्रश्न"
+        },
+        {
+          "atSec": 130.4,
+          "title": "ब्रह्म = असीम, सबका आधार"
+        },
+        {
+          "atSec": 243.78,
+          "title": "ब्रह्म को समझने के लिए, एक सुनार…"
+        },
+        {
+          "atSec": 364.26,
+          "title": "सब नाम-रूपों की एक सच्चाई"
+        },
+        {
+          "atSec": 431.79,
+          "title": "आत्मा और ब्रह्म एक"
+        },
+        {
+          "atSec": 503.99,
+          "title": "सत्य · मिथ्या · असत्य"
+        },
+        {
+          "atSec": 583.64,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 668.93,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 714.36,
+          "title": "सार"
+        }
+      ],
+      "videoProvider": "youtube",
+      "videoId": "DHCkFx3ZDZA",
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S15-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "jw-QQm0ohxg",
+      "durationSec": 782.568438,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "देखने वाला — देखा नहीं जाता, फिर भी अनजाना?"
+        },
+        {
+          "atSec": 62.02,
+          "title": "ज्ञानमार्ग · 15 · अज्ञेयता"
+        },
+        {
+          "atSec": 72.59,
+          "title": "अज्ञेयता — दस प्रश्न"
+        },
+        {
+          "atSec": 116.34,
+          "title": "अज्ञेयता = जो जाना न जा सके · पर…"
+        },
+        {
+          "atSec": 240.2,
+          "title": "पूजा के प्रश्न पर, फिर से लौटते…"
+        },
+        {
+          "atSec": 352.86,
+          "title": "जानने वाला, वस्तु नहीं"
+        },
+        {
+          "atSec": 416.62,
+          "title": "विचार और भाषा की सीमा"
+        },
+        {
+          "atSec": 499.02,
+          "title": "बुद्धि का शांत होना = परिपक्वता"
+        },
+        {
+          "atSec": 558.75,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 653.1,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 702.85,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S16-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "ZhsgChccC_g",
+      "durationSec": 833.807292,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "मौन — आवाज़ का न होना, या जिसमें आवाज़…"
+        },
+        {
+          "atSec": 78.34,
+          "title": "ज्ञानमार्ग · 16 · शून्यता और मौन"
+        },
+        {
+          "atSec": 89.03,
+          "title": "शून्यता और मौन — दस प्रश्न"
+        },
+        {
+          "atSec": 136.79,
+          "title": "शून्यता = ख़ालीपन · मौन = शांति"
+        },
+        {
+          "atSec": 267.24,
+          "title": "मौन को समझने के लिए, बस, आसमान…"
+        },
+        {
+          "atSec": 385.11,
+          "title": "मौन = पृष्ठभूमि"
+        },
+        {
+          "atSec": 456.91,
+          "title": "बीच का ख़ालीपन = इशारा, आत्मा नहीं"
+        },
+        {
+          "atSec": 539.54,
+          "title": "ख़ालीपन को कौन जानता है?"
+        },
+        {
+          "atSec": 612.18,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 693.2,
+          "title": "अब एक छोटा-सा अभ्यास करते हैं। आराम…"
+        },
+        {
+          "atSec": 748.94,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S17-MAIN": {
+      "videoProvider": "youtube",
+      "videoId": "2zG13d8rErQ",
+      "durationSec": 845.048729,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "ज्ञान के बाद — जीवन कैसा?"
+        },
+        {
+          "atSec": 72.4,
+          "title": "ज्ञानमार्ग · 17 · स्थितप्रज्ञ जीवन"
+        },
+        {
+          "atSec": 84.39,
+          "title": "स्थितप्रज्ञ जीवन — दस प्रश्न"
+        },
+        {
+          "atSec": 143.14,
+          "title": "स्थितप्रज्ञ = जिसकी समझ स्थिर है"
+        },
+        {
+          "atSec": 256.65,
+          "title": "लिप्यते न स पापेन पद्मपत्रमिवाम्भसा"
+        },
+        {
+          "atSec": 387.77,
+          "title": "स्थिरता = समता, भावनाहीनता नहीं"
+        },
+        {
+          "atSec": 457.28,
+          "title": "कर्म चलता है, बोझ नहीं"
+        },
+        {
+          "atSec": 524.63,
+          "title": "पाना, बनना, छोड़ना — कुछ नहीं"
+        },
+        {
+          "atSec": 607.45,
+          "title": "यह नहीं है —"
+        },
+        {
+          "atSec": 700.9,
+          "title": "अब एक छोटा-सा अभ्यास। आज, एक बिल्कुल…"
+        },
+        {
+          "atSec": 755.2,
+          "title": "सार"
+        }
+      ]
+    },
+    "NS-S01-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "ksmxFMQrPus",
+      "durationSec": 348.178,
+      "youtubeAudioLocales": ["hi"],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        { "atSec": 0, "title": "एक टीवी क्विज़ शो चल रहा है…" },
+        { "atSec": 47.38, "title": "अज्ञान क्या है — क्या केवल जानकारी न होना…" },
+        { "atSec": 58.13, "title": "यह प्रश्न इसलिए ज़रूरी है, क्योंकि अगर…" },
+        { "atSec": 91.57, "title": "अज्ञान — दो तरह का" },
+        { "atSec": 117.96, "title": "1. वस्तु का अज्ञान" },
+        { "atSec": 263.46, "title": "अब एक छोटा-सा प्रयोग कीजिए। अपने आप…" },
+        { "atSec": 310.52, "title": "सार" }
+      ]
+    },
+    "NS-S01-Q03": {
+      "videoProvider": "youtube",
+      "videoId": "BlyFDzJpmnY",
+      "durationSec": 324.196,
+      "youtubeAudioLocales": ["hi"],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        { "atSec": 0, "title": "एक दो साल का बच्चा पहली बार…" },
+        { "atSec": 35.56, "title": "मैं शरीर हूँ, मैं मन हूँ — ये धारणाएँ…" },
+        { "atSec": 46.33, "title": "अगर हमें पता चल जाए कि कोई…" },
+        { "atSec": 73.36, "title": "ये धारणाएँ देखी नहीं गईं, सीखी गईं" },
+        { "atSec": 88.53, "title": "1. नाम और शरीर एक साथ" },
+        { "atSec": 251.8, "title": "अब एक छोटा अभ्यास कीजिए। अपने बारे…" },
+        { "atSec": 289.13, "title": "सार" }
+      ]
+    },
+    "NS-S01-Q06": {
+      "videoProvider": "youtube",
+      "videoId": "deFJlduE83E",
+      "durationSec": 353.19,
+      "youtubeAudioLocales": ["hi"],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        { "atSec": 0, "title": "रात के ग्यारह बजे हैं। एक नौजवान…" },
+        { "atSec": 34.72, "title": "इच्छा, भय, आसक्ति, तुलना, दुःख — कहाँ से?" },
+        { "atSec": 44.92, "title": "हम इन पाँचों से अलग-अलग लड़ते रहते…" },
+        { "atSec": 66.63, "title": "अज्ञान → \"मैं अधूरा हूँ\" → पूरापन बाहर खोजा" },
+        { "atSec": 84.91, "title": "इसे एक चित्र से समझिए। बीच में…" },
+        { "atSec": 276.54, "title": "अब एक छोटा अभ्यास। आज की कोई…" },
+        { "atSec": 312.56, "title": "सार" }
+      ]
+    }
+  }
+}
