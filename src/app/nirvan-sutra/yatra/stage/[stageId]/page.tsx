@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { enrolledContext, BASE } from '@/course/nirvan-sutra/server/context';
 import { stageView, programView, questionView, videoAsset, transcript, writtenPrompts } from '@/course/nirvan-sutra/server/content';
@@ -8,8 +9,17 @@ import { localeInfo } from '@/course/nirvan-sutra/locales';
 import VideoPlayer from '@/components/nirvan-sutra/VideoPlayer';
 import StageOwnWords from '@/components/nirvan-sutra/OwnWords';
 import { Reflection, CompleteStage, Visit, MoreText } from '@/components/nirvan-sutra/Bits';
-import { StageOrb, ConceptGraphic } from '@/components/nirvan-sutra/Graphics';
+import { ConceptGraphic } from '@/components/nirvan-sutra/Graphics';
 import { StageStepper, NextStepBar, nextAction } from '@/components/nirvan-sutra/StagePath';
+
+function StageArtwork({ n }: { n: number }) {
+  return (
+    <div className="ns-stage-art" aria-hidden="true">
+      {n <= 15 ? <Image src={`/nirvan-sutra/stages/${String(n).padStart(2, '0')}.webp`} alt="" fill priority sizes="(max-width: 720px) 100vw, 440px" />
+        : <div className="ns-stage-art-abstract"><span>{String(n).padStart(2, '0')}</span></div>}
+    </div>
+  );
+}
 
 export default async function StagePage({ params }: { params: Promise<{ stageId: string }> }) {
   const { stageId: sid } = await params;
@@ -22,7 +32,7 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
   if (!E.isStageUnlocked(p, sid)) {
     return (
       <section className="ns-opening ns-narrow" aria-labelledby="locked-h">
-        <StageOrb n={s.n} />
+        <StageArtwork n={s.n} />
         <div className="ns-eyebrow">{t('stageN', { n: s.n })} · {movementTitle}</div>
         <h1 id="locked-h" className="ns-h1" style={{ marginTop: 10 }}>{s.text.title}</h1>
         <p className="ns-inquiry" style={{ marginTop: 14 }}>{s.text.centralInquiry}</p>
@@ -57,16 +67,18 @@ export default async function StagePage({ params }: { params: Promise<{ stageId:
     <article aria-labelledby="stage-h">
       <Visit kind="stage" id={sid} />
       {/* A–C: opening, title, central inquiry */}
-      <header className="ns-opening">
-        <StageOrb n={s.n} />
-        <div className="ns-eyebrow ns-rise">{t('stageN', { n: s.n })} · {movementTitle}</div>
-        <h1 id="stage-h" className="ns-h1 ns-rise ns-rise-1" style={{ marginTop: 10 }}>{s.text.title}</h1>
-        <p className="ns-muted ns-rise ns-rise-2" style={{ marginTop: 6 }}>{s.text.subtitle}</p>
-        <div className="ns-rise ns-rise-3" style={{ marginTop: 28 }}>
-          <div className="ns-small ns-muted">{t('centralInquiry')}</div>
-          <p className="ns-inquiry" style={{ marginTop: 6 }}>{s.text.centralInquiry}</p>
+      <header className="ns-opening ns-stage-opening">
+        <div className="ns-stage-copy">
+          <div className="ns-eyebrow ns-rise">{t('stageN', { n: s.n })} · {movementTitle}</div>
+          <h1 id="stage-h" className="ns-h1 ns-rise ns-rise-1" style={{ marginTop: 10 }}>{s.text.title}</h1>
+          <p className="ns-muted ns-rise ns-rise-2" style={{ marginTop: 6 }}>{s.text.subtitle}</p>
+          <div className="ns-rise ns-rise-3" style={{ marginTop: 28 }}>
+            <div className="ns-small ns-muted">{t('centralInquiry')}</div>
+            <p className="ns-inquiry" style={{ marginTop: 6 }}>{s.text.centralInquiry}</p>
+          </div>
+          {completed && <div style={{ marginTop: 18 }}><span className="ns-chip ns-chip-sage">{t('completed')}</span></div>}
         </div>
-        {completed && <div style={{ marginTop: 18 }}><span className="ns-chip ns-chip-sage">{t('completed')}</span></div>}
+        <StageArtwork n={s.n} />
       </header>
       <StageStepper t={t} s={steps} />
       {fbLang && <p className="ns-notice ns-narrow">{t('notInYourLanguage', { lang: fbLang })}</p>}

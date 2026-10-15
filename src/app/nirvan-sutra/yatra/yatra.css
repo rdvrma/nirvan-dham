@@ -213,6 +213,19 @@
 .ns-opening { position: relative; text-align: center; padding: clamp(28px, 6vw, 72px) 0 clamp(20px, 4vw, 40px); }
 .ns-opening-orb { position: absolute; inset: 0; margin: auto; width: min(560px, 90vw); height: min(560px, 90vw); top: -40px; pointer-events: none; opacity: 0.55; z-index: 0; }
 .ns-opening > * { position: relative; z-index: 1; }
+.ns-stage-opening { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr); align-items: center; gap: clamp(24px, 5vw, 64px); text-align: left; padding: clamp(12px, 3vw, 32px) 0; min-height: 360px; }
+.ns-stage-copy { max-width: 600px; }
+.ns-stage-opening .ns-inquiry { max-width: 32ch; }
+.ns-stage-art { position: relative; height: clamp(280px, 29vw, 390px); border-radius: 24px; overflow: hidden; border: 1px solid rgba(212,168,67,.28); box-shadow: 0 26px 100px -48px rgba(212,168,67,.35); background: radial-gradient(circle at 50% 55%, #263626, #09140e 70%); }
+.ns-stage-art::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 58%, rgba(6,12,8,.35)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.08); }
+.ns-stage-art img { object-fit: cover; object-position: center 73%; transform: scale(1.12); }
+.ns-stage-art-abstract { width: 100%; height: 100%; display: grid; place-items: center; background: radial-gradient(circle at 50% 45%, rgba(212,168,67,.16), transparent 25%), repeating-radial-gradient(circle at 50% 50%, transparent 0 30px, rgba(212,168,67,.08) 31px 32px, transparent 33px 75px), linear-gradient(145deg,#0f2419,#08100b); }
+.ns-stage-art-abstract span { font-family: var(--font-cormorant), serif; font-size: clamp(7rem, 18vw, 12rem); line-height: 1; color: rgba(233,200,117,.45); text-shadow: 0 0 70px rgba(212,168,67,.3); }
+.ns-opening.ns-narrow .ns-stage-art { max-width: 470px; margin: 0 auto 28px; }
+@media (max-width: 720px) { .ns-stage-opening { display: flex; flex-direction: column-reverse; align-items: stretch; gap: 24px; min-height: 0; } .ns-stage-opening .ns-stage-art { height: min(55vw, 300px); } .ns-stage-copy { text-align: left; } }
+.ns-route-loading { min-height: 52vh; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 18px; color: var(--ns-gold-2); text-align: center; }
+.ns-route-loading-mark { width: 48px; height: 48px; border: 1px solid var(--ns-gold); border-radius: 50%; box-shadow: 0 0 45px rgba(212,168,67,.25); animation: ns-breathe 2.5s ease-in-out infinite; }
+.ns-route-loading p { font-size: .9rem; color: var(--ns-ink-2); }
 .ns-pointers { list-style: none; counter-reset: p; display: grid; gap: 12px; }
 .ns-pointers li { counter-increment: p; display: flex; gap: 14px; align-items: baseline; padding: 14px 18px; border-radius: var(--ns-radius-s); background: rgba(14, 26, 17, 0.5); border: 1px solid var(--ns-line-2); }
 .ns-pointers li::before { content: counter(p); font-family: var(--font-cormorant); color: var(--ns-gold); font-size: 1.3rem; min-width: 18px; }
