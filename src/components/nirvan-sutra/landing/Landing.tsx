@@ -125,7 +125,6 @@ export default function Landing({ d }: { d: LandingData }) {
                 </li>
               ))}
             </ol>
-            <p className="nsl-note">{ui.lFilmsSoon}</p>
           </section>
 
           {/* ── the seventeen stages ───────────────────────── */}
