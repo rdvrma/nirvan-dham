@@ -100,6 +100,7 @@ function YouTubeFilm({ videoId, locale, dubUrl, playLabel, control, onTime, onWa
               if (dubUrl) {
                 player.mute();
                 if (audio.current) {
+                  audio.current.volume = 1;
                   audio.current.currentTime = player.getCurrentTime();
                   audio.current.playbackRate = player.getPlaybackRate();
                   void audio.current.play().then(() => { setStarted(true); setAudioBlocked(false); }).catch(() => {
@@ -110,6 +111,13 @@ function YouTubeFilm({ videoId, locale, dubUrl, playLabel, control, onTime, onWa
               pauseWatchProgress(progress);
               sample();
               if (!interval) interval = setInterval(sample, 1000);
+            } else if (data === 3) {
+              // Keep the click-initiated audio play request alive while YouTube buffers.
+              // Pausing it here aborts play() on the first tap in some browsers.
+              if (audio.current) audio.current.volume = 0;
+              if (interval) clearInterval(interval);
+              interval = null;
+              pauseWatchProgress(progress);
             } else {
               if (data === 0) sample();
               stop();
