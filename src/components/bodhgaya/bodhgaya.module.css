@@ -292,4 +292,4 @@
   .lightbox { padding: 12px; }
 }
 @media (max-width: 370px) { .heroActions { align-items: stretch; flex-direction: column; } .secondary { justify-content: center; } .formGrid { grid-template-columns: 1fr; } .storyVisual { height: 220px; } .hero h1 { font-size: 50px; } }
-@media (prefers-reduced-motion: reduce) { :global(html) { scroll-behavior: auto!important; } .page *, .page *:before,.page *:after { animation: none!important; transition: none!important; scroll-behavior: auto!important; } .storyVisual { position: relative; top: 0; } }
+@media (prefers-reduced-motion: reduce) { .page { scroll-behavior: auto!important; } .page *, .page *:before,.page *:after { animation: none!important; transition: none!important; scroll-behavior: auto!important; } .storyVisual { position: relative; top: 0; } }
