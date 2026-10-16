@@ -10,7 +10,10 @@ if (!accessKeyId || !secretAccessKey || !Bucket) throw new Error('Runpod credent
 const s3 = new S3Client({ endpoint: process.env.RUNPOD_S3_ENDPOINT || 'https://s3api-eu-ro-1.runpod.io',
   region: process.env.RUNPOD_S3_REGION || 'eu-ro-1', forcePathStyle: true,
   credentials: { accessKeyId, secretAccessKey } });
-const Key = 'nirvan-sutra/course-audio/v1/gm-t01-main/en.m4a';
+const film = process.argv[2] || 'gm-t01-main';
+const locale = process.argv[3] || 'en';
+if (!/^gm-t\d{2}-(?:main|q\d{2})$/.test(film) || !/^[a-z]{2}$/.test(locale)) throw new Error('Invalid film or locale');
+const Key = `nirvan-sutra/course-audio/v1/${film}/${locale}.m4a`;
 const head = await s3.send(new HeadObjectCommand({ Bucket, Key }));
 const range = await s3.send(new GetObjectCommand({ Bucket, Key, Range: 'bytes=0-1023' }));
 const bytes = await range.Body?.transformToByteArray();

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { videoAsset } from '../src/course/nirvan-sutra/server/content';
+import { source, videoAsset } from '../src/course/nirvan-sutra/server/content';
 import { courseAudioKey, runpodAudioReady } from '../src/course/nirvan-sutra/server/runpod-audio';
 
 test('each published film selects its matching language track; pending films stay unavailable', () => {
@@ -17,10 +17,8 @@ test('each published film selects its matching language track; pending films sta
     process.env.RUNPOD_S3_VOLUME_ID = 'test-volume';
     assert.equal(runpodAudioReady(), true);
 
-    const ids = [
-      ...Array.from({ length: 17 }, (_, i) => `NS-S${String(i + 1).padStart(2, '0')}-MAIN`),
-      'NS-S01-Q01', 'NS-S01-Q03', 'NS-S01-Q06',
-    ];
+    const ids = Object.keys(source().lessons).filter((id) => videoAsset(id).publishStatus === 'published');
+    assert.ok(ids.length >= 34, 'the 17 main and 17 question films remain published');
     const locales = ['en', 'bn', 'ta', 'te', 'gu', 'kn', 'ml', 'mr', 'pa', 'or'] as const;
     for (const id of ids) {
       const film = videoAsset(id);

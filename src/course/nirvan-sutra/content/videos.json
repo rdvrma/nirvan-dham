@@ -1,5 +1,5 @@
 {
-  "$comment": "S01–S17 main films and three published question films are linked to Public YouTube videos. Hindi uses the original audio; published Sarvam dubs for the other ten course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "$comment": "S01–S17 main films and 17 published question films are linked to Public YouTube videos. Hindi uses the original audio; published Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
   "lessons": {
     "NS-S01-MAIN": {
       "videoProvider": "youtube",
@@ -732,52 +732,261 @@
       "videoProvider": "youtube",
       "videoId": "ksmxFMQrPus",
       "durationSec": 348.178,
-      "youtubeAudioLocales": ["hi"],
+      "youtubeAudioLocales": [
+        "hi"
+      ],
       "revision": 1,
       "publishStatus": "published",
       "chapters": [
-        { "atSec": 0, "title": "एक टीवी क्विज़ शो चल रहा है…" },
-        { "atSec": 47.38, "title": "अज्ञान क्या है — क्या केवल जानकारी न होना…" },
-        { "atSec": 58.13, "title": "यह प्रश्न इसलिए ज़रूरी है, क्योंकि अगर…" },
-        { "atSec": 91.57, "title": "अज्ञान — दो तरह का" },
-        { "atSec": 117.96, "title": "1. वस्तु का अज्ञान" },
-        { "atSec": 263.46, "title": "अब एक छोटा-सा प्रयोग कीजिए। अपने आप…" },
-        { "atSec": 310.52, "title": "सार" }
+        {
+          "atSec": 0,
+          "title": "एक टीवी क्विज़ शो चल रहा है…"
+        },
+        {
+          "atSec": 47.38,
+          "title": "अज्ञान क्या है — क्या केवल जानकारी न होना…"
+        },
+        {
+          "atSec": 58.13,
+          "title": "यह प्रश्न इसलिए ज़रूरी है, क्योंकि अगर…"
+        },
+        {
+          "atSec": 91.57,
+          "title": "अज्ञान — दो तरह का"
+        },
+        {
+          "atSec": 117.96,
+          "title": "1. वस्तु का अज्ञान"
+        },
+        {
+          "atSec": 263.46,
+          "title": "अब एक छोटा-सा प्रयोग कीजिए। अपने आप…"
+        },
+        {
+          "atSec": 310.52,
+          "title": "सार"
+        }
       ]
     },
     "NS-S01-Q03": {
       "videoProvider": "youtube",
       "videoId": "BlyFDzJpmnY",
       "durationSec": 324.196,
-      "youtubeAudioLocales": ["hi"],
+      "youtubeAudioLocales": [
+        "hi"
+      ],
       "revision": 1,
       "publishStatus": "published",
       "chapters": [
-        { "atSec": 0, "title": "एक दो साल का बच्चा पहली बार…" },
-        { "atSec": 35.56, "title": "मैं शरीर हूँ, मैं मन हूँ — ये धारणाएँ…" },
-        { "atSec": 46.33, "title": "अगर हमें पता चल जाए कि कोई…" },
-        { "atSec": 73.36, "title": "ये धारणाएँ देखी नहीं गईं, सीखी गईं" },
-        { "atSec": 88.53, "title": "1. नाम और शरीर एक साथ" },
-        { "atSec": 251.8, "title": "अब एक छोटा अभ्यास कीजिए। अपने बारे…" },
-        { "atSec": 289.13, "title": "सार" }
+        {
+          "atSec": 0,
+          "title": "एक दो साल का बच्चा पहली बार…"
+        },
+        {
+          "atSec": 35.56,
+          "title": "मैं शरीर हूँ, मैं मन हूँ — ये धारणाएँ…"
+        },
+        {
+          "atSec": 46.33,
+          "title": "अगर हमें पता चल जाए कि कोई…"
+        },
+        {
+          "atSec": 73.36,
+          "title": "ये धारणाएँ देखी नहीं गईं, सीखी गईं"
+        },
+        {
+          "atSec": 88.53,
+          "title": "1. नाम और शरीर एक साथ"
+        },
+        {
+          "atSec": 251.8,
+          "title": "अब एक छोटा अभ्यास कीजिए। अपने बारे…"
+        },
+        {
+          "atSec": 289.13,
+          "title": "सार"
+        }
       ]
     },
     "NS-S01-Q06": {
       "videoProvider": "youtube",
       "videoId": "deFJlduE83E",
       "durationSec": 353.19,
-      "youtubeAudioLocales": ["hi"],
+      "youtubeAudioLocales": [
+        "hi"
+      ],
       "revision": 1,
       "publishStatus": "published",
       "chapters": [
-        { "atSec": 0, "title": "रात के ग्यारह बजे हैं। एक नौजवान…" },
-        { "atSec": 34.72, "title": "इच्छा, भय, आसक्ति, तुलना, दुःख — कहाँ से?" },
-        { "atSec": 44.92, "title": "हम इन पाँचों से अलग-अलग लड़ते रहते…" },
-        { "atSec": 66.63, "title": "अज्ञान → \"मैं अधूरा हूँ\" → पूरापन बाहर खोजा" },
-        { "atSec": 84.91, "title": "इसे एक चित्र से समझिए। बीच में…" },
-        { "atSec": 276.54, "title": "अब एक छोटा अभ्यास। आज की कोई…" },
-        { "atSec": 312.56, "title": "सार" }
+        {
+          "atSec": 0,
+          "title": "रात के ग्यारह बजे हैं। एक नौजवान…"
+        },
+        {
+          "atSec": 34.72,
+          "title": "इच्छा, भय, आसक्ति, तुलना, दुःख — कहाँ से?"
+        },
+        {
+          "atSec": 44.92,
+          "title": "हम इन पाँचों से अलग-अलग लड़ते रहते…"
+        },
+        {
+          "atSec": 66.63,
+          "title": "अज्ञान → \"मैं अधूरा हूँ\" → पूरापन बाहर खोजा"
+        },
+        {
+          "atSec": 84.91,
+          "title": "इसे एक चित्र से समझिए। बीच में…"
+        },
+        {
+          "atSec": 276.54,
+          "title": "अब एक छोटा अभ्यास। आज की कोई…"
+        },
+        {
+          "atSec": 312.56,
+          "title": "सार"
+        }
       ]
+    },
+    "NS-S01-Q09": {
+      "videoProvider": "youtube",
+      "videoId": "LckX0xYHbEI",
+      "durationSec": 340.133,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S01-Q10": {
+      "videoProvider": "youtube",
+      "videoId": "ypqn_aEiNFA",
+      "durationSec": 322.8,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S02-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "_7fmzGJx-EQ",
+      "durationSec": 344.737,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S02-Q04": {
+      "videoProvider": "youtube",
+      "videoId": "qZi-Q-DNC8M",
+      "durationSec": 319.8,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S02-Q07": {
+      "videoProvider": "youtube",
+      "videoId": "xSVeXMTABeM",
+      "durationSec": 347.6,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S03-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "b2Y4ACBd8Y8",
+      "durationSec": 334.033,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S04-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "8J6lwXZcuGw",
+      "durationSec": 337.933,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S05-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "N1nXlTZPJCc",
+      "durationSec": 348.167,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S06-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "2Blc-IkQZ1o",
+      "durationSec": 331.5,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S07-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "Alm1GD6Ryl4",
+      "durationSec": 387.367,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S08-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "oU6K5r7tW2Q",
+      "durationSec": 343.5,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S09-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "R2oYprDvWak",
+      "durationSec": 334.4,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S10-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "5ELZ70YxpTo",
+      "durationSec": 349.333,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
+    },
+    "NS-S11-Q01": {
+      "videoProvider": "youtube",
+      "videoId": "H2ZViLiG-nM",
+      "durationSec": 346.533,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published"
     }
   }
 }

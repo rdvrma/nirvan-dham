@@ -15,8 +15,7 @@ import { StageStepper, NextStepBar, nextAction } from '@/components/nirvan-sutra
 function StageArtwork({ n }: { n: number }) {
   return (
     <div className="ns-stage-art" aria-hidden="true">
-      {n <= 15 ? <Image src={`/nirvan-sutra/stages/${String(n).padStart(2, '0')}.webp`} alt="" fill priority sizes="(max-width: 720px) 100vw, 440px" />
-        : <div className="ns-stage-art-abstract"><span>{String(n).padStart(2, '0')}</span></div>}
+      <Image src={`/nirvan-sutra/stages/${String(n).padStart(2, '0')}.webp`} alt="" fill priority sizes="(max-width: 720px) 100vw, 440px" />
     </div>
   );
 }
