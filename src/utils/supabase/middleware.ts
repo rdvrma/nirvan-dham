@@ -22,8 +22,12 @@ export async function updateSession(request: NextRequest) {
       },
     );
 
-    const { data: { user } } = await supabase.auth.getUser();
-    return { response, user };
+    // getClaims verifies the JWT and uses the JWKS cache for asymmetric keys.
+    // getUser made a network round trip on every course click, even when the
+    // session was unchanged. Keep refresh handling in the cookie adapter.
+    const { data } = await supabase.auth.getClaims();
+    const claims = data?.claims;
+    return { response, user: claims ? { id: claims.sub } : null };
   } catch (err) {
     console.error('Supabase middleware initialization failed:', err);
     return { response, user: null };

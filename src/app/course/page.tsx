@@ -3,8 +3,6 @@ import { cookies } from 'next/headers';
 import { LOCALES, isLocale, localeInfo } from '@/course/nirvan-sutra/locales';
 import type { LocaleCode } from '@/course/nirvan-sutra/types';
 import { allStages, programView, uiStrings } from '@/course/nirvan-sutra/server/content';
-import { currentAccount, currentProgress } from '@/course/nirvan-sutra/server/session';
-import { storeMode } from '@/course/nirvan-sutra/server/store';
 import { BASE } from '@/course/nirvan-sutra/server/context';
 import { MOVEMENTS, PROGRAM, CHECKPOINTS } from '@/course/nirvan-sutra/structure';
 import { nsFontVars } from '@/components/nirvan-sutra/fonts';
@@ -34,9 +32,9 @@ export default async function CourseIntro({ searchParams }: { searchParams: Prom
   const sp = await searchParams;
   const asked = typeof sp.lang === 'string' && isLocale(sp.lang) ? sp.lang : null;
   const remembered = (await cookies()).get(LANG_COOKIE)?.value;
-  const [progress, account] = await Promise.all([currentProgress().catch(() => null), currentAccount().catch(() => null)]);
-  const enrolled = !!progress?.locale;
-  const locale: LocaleCode | null = sp.choose === '1' ? null : asked ?? (isLocale(remembered) ? remembered : null) ?? progress?.locale ?? null;
+  // The public introduction must never wait on auth or a progress database.
+  // The journey entry checks the learner and routes to their saved place.
+  const locale: LocaleCode | null = sp.choose === '1' ? null : asked ?? (isLocale(remembered) ? remembered : null);
 
   if (!locale) {
     const titles = Object.fromEntries(LOCALES.map((l) => [l.code, uiStrings(l.code).lChooseTitle]));
@@ -51,8 +49,6 @@ export default async function CourseIntro({ searchParams }: { searchParams: Prom
   const ui = uiStrings(locale);
   const stages = allStages(locale);
   const { movements } = programView(locale);
-  const needsAccount = storeMode() === 'supabase' && !account;
-  const onboarding = `${BASE}/onboarding?lang=${locale}`;
   const data: LandingData = {
     locale,
     native: localeInfo(locale).native,
@@ -64,10 +60,8 @@ export default async function CourseIntro({ searchParams }: { searchParams: Prom
       subtitle: movements[m.id]?.subtitle ?? '',
       stages: m.stages.map((n) => { const s = stages[n - 1]; return { n, title: s.text.title ?? '', subtitle: s.text.subtitle ?? '', inquiry: s.text.centralInquiry ?? '' }; }),
     })),
-    cta: enrolled
-      ? { href: `${BASE}/dashboard`, label: ui.lContinueJourney }
-      : { href: needsAccount ? `/signup?next=${encodeURIComponent(onboarding)}` : onboarding, label: ui.introCta },
-    login: needsAccount ? `/login?next=${encodeURIComponent(onboarding)}` : null,
+    cta: { href: BASE, label: ui.introCta },
+    login: `/login?next=${encodeURIComponent(BASE)}`,
   };
   return (
     <div className={`ns-root ns-landing ${nsFontVars}`} lang={locale} data-script={localeInfo(locale).script} data-locale={locale}>

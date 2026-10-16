@@ -15,8 +15,12 @@ export interface Account { id: string; email: string | null; name: string | null
 export const currentAccount = cache(async (): Promise<Account | null> => {
   if (storeMode() !== 'supabase') return null;
   const { supabaseClient } = await import('./supabase-store');
-  const { data: { user } } = await (await supabaseClient()).auth.getUser();
-  return user ? { id: user.id, email: user.email ?? null, name: typeof user.user_metadata?.name === 'string' && user.user_metadata.name.trim() ? user.user_metadata.name.trim() : null } : null;
+  const { data } = await (await supabaseClient()).auth.getClaims();
+  const claims = data?.claims;
+  if (!claims?.sub) return null;
+  const metadata = claims.user_metadata as Record<string, unknown> | undefined;
+  const name = typeof metadata?.name === 'string' && metadata.name.trim() ? metadata.name.trim() : null;
+  return { id: claims.sub, email: typeof claims.email === 'string' ? claims.email : null, name };
 });
 
 /** The learner id, or null (server components may not set cookies; the first API call does). */

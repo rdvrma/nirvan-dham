@@ -91,7 +91,13 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(destination, 308);
   }
 
-  // Supabase session refresh (existing auth logic — unchanged)
+  // Public editorial pages and the course introduction never read a server
+  // session. Avoid a remote auth check on every anonymous page navigation.
+  if (pathname === '/course' || pathname === '/blog' || pathname.startsWith('/blog/')) {
+    return NextResponse.next({ request });
+  }
+
+  // Refresh and verify sessions on protected routes.
   const { response } = await updateSession(request);
 
   return response;

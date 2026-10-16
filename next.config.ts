@@ -67,15 +67,9 @@ const nextConfig: NextConfig = {
       { source: '/app', destination: '/course', permanent: true },
       // Old /lw → home
       { source: '/lw', destination: '/', permanent: true },
-      // Old blog slugs from previous site → blog index
-      { source: '/blog/01-the-illusion-of-maya-five-deep-truths-that-can-change-the-way-you-see-the-world', destination: '/blog', permanent: true },
-      { source: '/blog/02-the-compassion-of-the-guru-selfless-love-or-a-beautiful-bondage', destination: '/blog', permanent: true },
-      { source: '/blog/03-atman-jiva-or-both-what-is-our-real-identity', destination: '/blog', permanent: true },
-      { source: '/blog/04-is-this-life-also-a-dream-five-revolutionary-sutras-from-janaka-and-ashtavakra', destination: '/blog', permanent: true },
-      { source: '/blog/05-god-is-love-disease-if-advaita-alone-is-truth-why-do-we-seek-medicine-in-duality', destination: '/blog', permanent: true },
-      { source: '/blog/06-the-end-of-ignorance-effort-or-natural-recognition', destination: '/blog', permanent: true },
-      { source: '/blog/07-your-nature-is-silence-then-who-takes-the-noise-of-the-world-to-be-real', destination: '/blog', permanent: true },
-      { source: '/blog/08-self-guidance-and-the-search-for-truth-five-revolutionary-ideas', destination: '/blog', permanent: true },
+      // Only renamed old URLs redirect. Current article slugs must reach their post pages.
+      { source: '/blog/05-god-is-love-disease-if-advaita-alone-is-truth-why-do-we-seek-medicine-in-duality', destination: '/blog/05-god-s-love-disease-if-advaita-alone-is-truth-why-do-we-seek-medicine-in-duality', permanent: true },
+      { source: '/blog/08-self-guidance-and-the-search-for-truth-five-revolutionary-ideas', destination: '/blog/08-self-abidance-and-the-search-for-truth-five-revolutionary-ideas', permanent: true },
 
       // Library book slug renamed — Google had old URL indexed
       { source: '/library/tantra-a-confluence-of-paths', destination: '/library/tantra-confluence-of-paths', permanent: true },

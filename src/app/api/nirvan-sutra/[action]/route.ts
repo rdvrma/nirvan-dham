@@ -12,7 +12,12 @@ export async function POST(request: NextRequest, { params }: { params: Promise<{
     const learnerId = await ensureLearnerId();
     // own-words answers go on to the owner's inbox, with the account's email as the reply-to
     const notify: Notify = async (n) => sendWritten({ ...n, learner: { ...n.learner, email: (await currentAccount().catch(() => null))?.email ?? null } });
-    return NextResponse.json(await handleAction(learnerId, action, body, { dev: process.env.NODE_ENV !== 'production', notify }));
+    const result = await handleAction(learnerId, action, body, { dev: process.env.NODE_ENV !== 'production', notify });
+    const response = NextResponse.json(result);
+    if ((action === 'enroll' || action === 'locale') && 'locale' in result && typeof result.locale === 'string') {
+      response.cookies.set('ns_lang', result.locale, { path: '/', sameSite: 'lax', maxAge: 60 * 60 * 24 * 365, secure: process.env.NODE_ENV === 'production' });
+    }
+    return response;
   } catch (e) {
     if (e instanceof NotSignedIn) return NextResponse.json({ error: e.message }, { status: 401 });
     if (e instanceof ActionError) return NextResponse.json({ error: e.message }, { status: e.status });
