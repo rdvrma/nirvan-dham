@@ -94,6 +94,15 @@ export async function middleware(request: NextRequest) {
   // Public editorial pages and the course introduction never read a server
   // session. Avoid a remote auth check on every anonymous page navigation.
   if (pathname === '/course' || pathname === '/blog' || pathname.startsWith('/blog/')) {
+    if (pathname === '/course') {
+      const locale = request.nextUrl.searchParams.get('lang');
+      if (isLocale(locale)) {
+        request.cookies.set('ns_lang', locale);
+        const response = NextResponse.next({ request });
+        response.cookies.set('ns_lang', locale, { path: '/', sameSite: 'lax', maxAge: 60 * 60 * 24 * 365, secure: process.env.NODE_ENV === 'production' });
+        return response;
+      }
+    }
     return NextResponse.next({ request });
   }
 

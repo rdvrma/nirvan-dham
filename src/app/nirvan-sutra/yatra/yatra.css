@@ -213,7 +213,7 @@
 .ns-opening { position: relative; text-align: center; padding: clamp(28px, 6vw, 72px) 0 clamp(20px, 4vw, 40px); }
 .ns-opening-orb { position: absolute; inset: 0; margin: auto; width: min(560px, 90vw); height: min(560px, 90vw); top: -40px; pointer-events: none; opacity: 0.55; z-index: 0; }
 .ns-opening > * { position: relative; z-index: 1; }
-.ns-stage-opening { width: 100vw; min-height: clamp(500px, 62vw, 720px); margin-left: calc(50% - 50vw); margin-top: calc(-1 * clamp(20px, 5vw, 56px)); display: flex; align-items: flex-end; text-align: left; overflow: hidden; padding: clamp(68px, 10vw, 128px) max(clamp(16px, 4vw, 40px), calc((100vw - 1040px) / 2)) clamp(58px, 8vw, 108px); background: #0b130d; }
+.ns-stage-opening { width: 100vw; min-height: clamp(500px, 62vw, 720px); margin-left: calc(50% - 50vw); margin-top: calc(-1 * clamp(20px, 5vw, 56px)); display: flex; align-items: center; text-align: left; overflow: hidden; padding: clamp(68px, 10vw, 128px) max(clamp(16px, 4vw, 40px), calc((100vw - 1040px) / 2)); background: #0b130d; }
 .ns-stage-copy { position: relative; z-index: 2; max-width: min(800px, 100%); }
 .ns-stage-opening .ns-h1 { font-size: clamp(3.2rem, 8vw, 7rem); line-height: 1.12; color: #fff8e7; text-shadow: 0 7px 38px rgba(0,0,0,.65); }
 .ns-stage-opening .ns-inquiry { max-width: 52ch; color: #f4ead3; text-shadow: 0 3px 18px rgba(0,0,0,.75); }
