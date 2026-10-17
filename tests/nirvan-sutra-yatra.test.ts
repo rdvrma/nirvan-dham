@@ -223,7 +223,7 @@ test('certificate and pass texts never certify an attainment', () => {
   }
 });
 
-test('all 17 main films and 40 public question films resolve; pending questions stay placeholders', () => {
+test('all 17 main films and 50 public question films resolve; pending questions stay placeholders', () => {
   for (let n = 1; n <= 17; n++) {
     const main = videoAsset(`NS-S${String(n).padStart(2, '0')}-MAIN`);
     assert.equal(main.videoProvider, 'youtube');
@@ -241,7 +241,8 @@ test('all 17 main films and 40 public question films resolve; pending questions 
   assert.equal(videoAsset('NS-S07-Q02').videoId, 'IJMrhi3Q5Ws');
   assert.equal(videoAsset('NS-S17-Q01').videoId, 'u0Zyvrw4_wk');
   assert.equal(videoAsset('NS-S04-Q04').videoId, 'M3vWXGPqLUs');
-  assert.equal(Object.keys(source().lessons).filter((id) => id.includes('-Q') && videoAsset(id).publishStatus === 'published').length, 40);
+  assert.equal(videoAsset('NS-S14-Q04').videoId, 'SKGeHVblji0');
+  assert.equal(Object.keys(source().lessons).filter((id) => id.includes('-Q') && videoAsset(id).publishStatus === 'published').length, 50);
   assert.equal(videoAsset('NS-S01-Q02').videoProvider, 'placeholder');
 });
 
