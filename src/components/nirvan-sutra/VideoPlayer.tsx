@@ -118,7 +118,10 @@ function YouTubeFilm({ videoId, locale, dubUrl, playLabel, control, onTime, onWa
               if (interval) clearInterval(interval);
               interval = null;
               pauseWatchProgress(progress);
-            } else {
+            } else if (data === 0 || data === 2) {
+              // YouTube may emit UNSTARTED (-1) or CUED (5) while the first
+              // playVideo() call takes effect. Pausing the audio for those
+              // transient states aborts the browser's click-initiated play().
               if (data === 0) sample();
               stop();
             }
