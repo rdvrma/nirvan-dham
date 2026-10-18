@@ -223,7 +223,7 @@ test('certificate and pass texts never certify an attainment', () => {
   }
 });
 
-test('all 17 main films and 78 public question films resolve; pending questions stay placeholders', () => {
+test('all 17 main films and 82 public question films resolve; pending questions stay placeholders', () => {
   for (let n = 1; n <= 17; n++) {
     const main = videoAsset(`NS-S${String(n).padStart(2, '0')}-MAIN`);
     assert.equal(main.videoProvider, 'youtube');
@@ -249,7 +249,11 @@ test('all 17 main films and 78 public question films resolve; pending questions 
   assert.equal(videoAsset('NS-S08-Q09').videoId, 'rdpwXHW47-U');
   assert.equal(videoAsset('NS-S09-Q10').videoId, 'm_D6dQggzFw');
   assert.equal(videoAsset('NS-S10-Q10').videoId, 'q9vyVMKAel4');
-  assert.equal(Object.keys(source().lessons).filter((id) => id.includes('-Q') && videoAsset(id).publishStatus === 'published').length, 78);
+  assert.equal(videoAsset('NS-S11-Q10').videoId, '-QUPka0c41k');
+  assert.equal(videoAsset('NS-S12-Q10').videoId, 'harZNN9UVzE');
+  assert.equal(videoAsset('NS-S13-Q10').videoId, '4UBYI18O-sA');
+  assert.equal(videoAsset('NS-S14-Q09').videoId, 'DVkYVgsNtxY');
+  assert.equal(Object.keys(source().lessons).filter((id) => id.includes('-Q') && videoAsset(id).publishStatus === 'published').length, 82);
   assert.equal(videoAsset('NS-S01-Q02').videoProvider, 'placeholder');
 });
 
