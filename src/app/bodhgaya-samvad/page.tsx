@@ -7,14 +7,14 @@ import { isLanguage, LANGUAGE_COOKIE_KEY } from '@/lib/i18n';
 export const metadata: Metadata = {
   title: 'Bodhgaya Samvad | Spiritual Guidance in Bodhgaya',
   description:
-    'Sit in presence with Aadisatv in the sacred land of Bodhgaya. A deep, one-on-one session for self-inquiry and direct seeing of the truth.',
+    'Meet Aadisatv in Bodhgaya for free, in-person spiritual dialogue and self-inquiry. Explore his books, bring your questions, and request a meeting in advance.',
   alternates: {
     canonical: '/bodhgaya-samvad',
   },
   openGraph: {
     title: 'Bodhgaya Samvad | Spiritual Guidance in Bodhgaya',
     description:
-      'Sit in presence with Aadisatv in the sacred land of Bodhgaya for a deep, one-on-one session.',
+      'Explore Aadisatv’s books, bring your spiritual questions, and request a free, in-person meeting in Bodhgaya.',
     url: '/bodhgaya-samvad',
     type: 'website',
     images: [{ url: '/images/bodhgaya-samvad/aadisatv-bodhgaya-hero-01.webp', width: 1122, height: 1402, alt: 'Bodhgaya Samvad with Aadisatv' }],
@@ -37,8 +37,9 @@ export default async function BodhgayaSamvadRoute({ searchParams }: { searchPara
       '@type': 'City',
       name: 'Bodhgaya',
     },
-    description: 'In-person spiritual guidance session in Bodhgaya.',
+    description: 'Free in-person spiritual dialogue and self-inquiry with Aadisatv in Bodhgaya, by prior arrangement.',
     serviceType: 'In-Person Spiritual Session',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
   };
 
   return (

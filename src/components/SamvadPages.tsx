@@ -10,6 +10,7 @@ import { getSavedLanguage, saveLanguage } from '@/lib/i18n';
 type SamvadMode = 'online' | 'bodhgaya';
 
 const PAYPAL_URL = 'https://www.paypal.com/ncp/payment/7PSEDKULTWFVC';
+const RAZORPAY_URL = 'https://rzp.io/rzp/aadisatv';
 const UPI_ID = 'montysahursp-2@okicici';
 const LANG_KEY = 'nirvan-dham-language';
 
@@ -93,6 +94,8 @@ const copy = {
       homeCta: 'सहयोग विवरण देखें',
       copied: '✓ कॉपी हो गया',
       paypal: 'PayPal से सहयोग करें →',
+      razorpay: 'Razorpay से सहयोग करें ↗',
+      razorpayNote: 'QR या UPI के साथ एक और भुगतान विकल्प',
       indiaTab: 'भारत',
       intlTab: 'International',
       quote: 'सहयोग वह है जो बिना अपेक्षा के दिया जाए — ठीक वैसे जैसे सूर्य प्रकाश देता है।',
@@ -169,6 +172,8 @@ const copy = {
       homeCta: 'View Support Details',
       copied: '✓ Copied',
       paypal: 'Support via PayPal →',
+      razorpay: 'Support via Razorpay ↗',
+      razorpayNote: 'Another payment option alongside QR and UPI',
       indiaTab: 'India',
       intlTab: 'International',
       quote: 'Support is that which is given without expectation — just as the sun gives light.',
@@ -957,6 +962,16 @@ function DanaPanel({ lang, accent, accentGlow, isFullPage = false }: {
             {copied && (
               <p style={{ color: accent, fontSize: '0.78rem', marginTop: '0.5rem' }}>{c.copied}</p>
             )}
+            <div style={{ margin: '1.75rem auto 0', maxWidth: '400px', borderTop: `1px solid ${accent}30`, paddingTop: '1.5rem' }}>
+              <p style={{ color: 'var(--c-ivdim)', fontSize: '0.78rem', marginBottom: '0.85rem' }}>{c.razorpayNote}</p>
+              <a href={RAZORPAY_URL} target="_blank" rel="noopener noreferrer" style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                width: '100%', minHeight: '50px', padding: '0.8rem 1.2rem',
+                border: `1px solid ${accent}80`, borderRadius: '8px',
+                color: 'var(--c-ivory)', background: `${accent}18`, textDecoration: 'none',
+                fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.02em',
+              }}>{c.razorpay}</a>
+            </div>
           </div>
         ) : (
           <div style={{ textAlign: 'center' }}>

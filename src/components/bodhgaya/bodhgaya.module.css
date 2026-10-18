@@ -42,6 +42,11 @@
 .primary:disabled { cursor: wait; opacity: .7; transform: none; }
 .secondary { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; min-height: 54px; padding: 10px 5px; }
 .secondary:hover { color: var(--gold); }
+.heroPhone { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 8px 14px; margin-top: 18px; padding: 11px 16px; border: 1px solid var(--gold); background: rgba(199,171,114,.1); color: var(--cream)!important; }
+.heroPhone span { font-size: 10px; color: var(--muted); }
+.heroPhone strong { font-size: 17px; font-weight: 600; letter-spacing: .03em; color: var(--gold); }
+.heroPhone svg { width: 17px; color: var(--gold); }
+.heroPhone:hover { background: rgba(199,171,114,.2); }
 .heroNote { font-size: 10px; line-height: 1.8; color: #aab1a3; margin-top: 19px; }
 .scrollLink { display: inline-flex; gap: 13px; align-items: center; margin-top: 47px; font-size: 10px; text-transform: uppercase; letter-spacing: .13em; color: var(--muted)!important; }
 .scrollLink span { border: 1px solid var(--line); border-radius: 50%; width: 32px; height: 32px; display: grid; place-items: center; font-size: 16px; }
@@ -105,6 +110,37 @@
 .videoButton small { display: block; font-size: 9px; color: var(--gold); margin-bottom: 6px; }
 .play { border: 1px solid var(--line); border-radius: 50%; width: 43px; height: 43px; display: grid; place-items: center; font-size: 24px; color: var(--gold); }
 .video { width: 100%; max-height: 380px; background: #000; margin: 10px 0; }
+.proof { width: min(1240px,90%); margin: 0 auto 125px; border: 1px solid var(--line); background: radial-gradient(circle at 8% 0%,rgba(199,171,114,.08),transparent 48%),linear-gradient(135deg,#12241b,#0c1812 65%); display: grid; grid-template-columns: .9fr 1.1fr; overflow: hidden; }
+.proofIntro { padding: clamp(32px,5vw,70px); border-right: 1px solid var(--line); }
+.proofIntro h2 { margin: 22px 0; max-width: 550px; }
+.proofIntro>p:not(.eyebrow) { color: var(--muted); font-size: 13px; line-height: 1.95; max-width: 480px; }
+.lamp { display: flex; gap: 18px; margin: 35px 0 28px; border-top: 1px solid var(--line); padding-top: 25px; }
+.lamp>span { color: var(--gold); font-size: 30px; line-height: 1; }
+.lamp h3 { color: var(--cream); font: italic 32px/1.2 var(--font-cormorant),serif; }
+.page[lang=hi] .lamp h3 { font: 400 27px/1.45 var(--font-hind),sans-serif; }
+.lamp p { color: var(--muted); font-size: 12px; line-height: 1.85; max-width: 400px; margin-top: 8px; }
+.proofIntro .freePromise { color: var(--cream)!important; border-left: 2px solid var(--gold); padding-left: 16px; margin-bottom: 25px; }
+.proofCta { display: inline-flex; align-items: center; gap: 20px; color: var(--gold)!important; border-bottom: 1px solid var(--gold); padding: 10px 0; font-size: 12px; }
+.proofCta:hover { color: var(--cream)!important; }
+.proofEvidence { padding: clamp(32px,4vw,56px); display: flex; flex-direction: column; justify-content: center; min-width: 0; }
+.proofHeading { display: flex; justify-content: space-between; align-items: center; gap: 15px; margin-bottom: 20px; }
+.proofHeading>span { color: var(--gold); font-size: 10px; text-transform: uppercase; letter-spacing: .14em; }
+.proofHeading a { color: var(--cream); display: inline-flex; align-items: center; gap: 6px; font-size: 11px; }
+.proofHeading a svg { width: 16px; }
+.bookShelf { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 13px; }
+.book { min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.bookCover { display: block; position: relative; aspect-ratio: .68; overflow: hidden; border: 1px solid var(--line); background: #16261c; box-shadow: 0 15px 25px #0005; transition: transform .25s,border-color .25s; }
+.book:hover .bookCover { transform: translateY(-5px); border-color: var(--gold); }
+.bookCover img { object-fit: cover; }
+.bookTitle { color: var(--cream); font-size: 12px; line-height: 1.5; }
+.searchCard { margin-top: 34px; padding: 23px; border: 1px solid var(--line); display: flex; align-items: center; gap: 20px; background: #091810; transition: border-color .2s,background .2s; }
+.searchCard:hover { border-color: var(--gold); background: #102018; }
+.searchCard>.searchGlyph { flex: 0 0 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; color: var(--gold); font-size: 23px; }
+.searchCard>span:nth-child(2) { display: grid; gap: 5px; min-width: 0; flex: 1; }
+.searchCard small { text-transform: uppercase; letter-spacing: .13em; color: var(--gold); font-size: 9px; }
+.searchCard strong { color: var(--cream); font-size: 14px; font-weight: 500; }
+.searchCard>span:nth-child(2)>span { color: var(--muted); font-size: 11px; line-height: 1.6; }
+.searchCard>svg { color: var(--gold); flex-shrink: 0; }
 .gallery { padding: 90px 0 100px; background: #122018; border-block: 1px solid var(--line); }
 .galleryHeader { width: min(1240px,90%); margin: 0 auto 40px; display: grid; grid-template-columns: 1fr .7fr; align-items: end; gap: 100px; }
 .galleryHeader h2 { margin-top: 22px; }
@@ -224,6 +260,7 @@
   .heroActions { margin-top: 23px; gap: 12px; }
   .primary { font-size: 11px!important; min-height: 51px; }
   .secondary { font-size: 11px; }
+  .heroPhone { margin-top: 14px; }
   .heroNote { font-size: 9px; margin-top: 13px; }
   .scrollLink { display: none; }
   .heroVisual { padding: 0 10px; }
@@ -261,6 +298,15 @@
   .portrait { width: min(340px,85%); margin: auto; }
   .aboutCopy h2 { margin-top: 20px; }
   .aboutCopy>p:not(.eyebrow) { font-size: 14px; }
+  .proof { width: calc(100% - 44px); grid-template-columns: 1fr; margin-bottom: 70px; }
+  .proofIntro { border-right: 0; border-bottom: 1px solid var(--line); padding: 30px 24px; }
+  .proofIntro>p:not(.eyebrow) { font-size: 14px; }
+  .proofEvidence { padding: 30px 20px; }
+  .bookShelf { gap: 8px; }
+  .bookTitle { font-size: 10px; }
+  .searchCard { padding: 18px 14px; gap: 10px; }
+  .searchCard>.searchGlyph { flex-basis: 34px; height: 34px; font-size: 18px; }
+  .searchCard>svg { width: 16px; }
   .gallery { padding-block: 65px 80px; }
   .galleryHeader { width: calc(100% - 44px); display: block; margin-bottom: 30px; }
   .galleryHeader>div:last-child { margin-top: 25px; }

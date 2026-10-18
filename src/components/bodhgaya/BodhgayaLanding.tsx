@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent, type MouseEvent } from 'react';
 import { LANGUAGE_STORAGE_KEY, isLanguage, saveLanguage, type Language } from '@/lib/i18n';
 import { copy, photos, photoUrl } from './content';
 import { sendMeetingRequest } from './meeting-request';
@@ -35,6 +35,19 @@ function Arrow({ diagonal = false }: { diagonal?: boolean }) {
 function WhatsAppIcon() {
   return <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 11.5a9 9 0 0 1-13.3 8L3 21l1.5-4.7A9 9 0 1 1 21 11.5Z" /><path d="M8 7.5c.5 4 3 6.5 7 7l1-2-2-1-1 1c-1.5-.6-2.4-1.5-3-3l1-1-1-2Z" /></svg>;
 }
+
+const featuredBooks = {
+  en: [
+    { slug: 'the-seeker-is-the-illusion', title: 'The Seeker Is the Illusion', cover: '/library/covers/the-seeker-is-the-illusion.png' },
+    { slug: 'maya-and-mind', title: 'Maya and Mind', cover: '/library/covers/maya-and-mind.png' },
+    { slug: 'who-is-god', title: 'Who Is God?', cover: '/library/covers/who-is-god.png' },
+  ],
+  hi: [
+    { slug: 'main-kaun-hoon', title: 'मैं कौन हूँ', cover: '/library/covers/main-kaun-hoon.png' },
+    { slug: 'maya-aur-man', title: 'माया और मन', cover: '/library/covers/maya-aur-man.png' },
+    { slug: 'ishwar-kaun-hai', title: 'ईश्वर कौन है', cover: '/library/covers/ishwar-kaun-hai.png' },
+  ],
+} as const;
 
 function MeetingForm({ lang, whatsappUrl }: { lang: Language; whatsappUrl: string }) {
   const c = copy[lang];
@@ -135,13 +148,20 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
     setGalleryIndex(index); galleryTrigger.current = trigger; dialogRef.current?.showModal();
   }
   function closeGallery() { dialogRef.current?.close(); }
+  function jumpTo(event: MouseEvent<HTMLAnchorElement>, id: string) {
+    const target = document.getElementById(id);
+    if (!target) return;
+    event.preventDefault();
+    window.history.pushState(null, '', `#${id}`);
+    window.scrollTo({ top: target.getBoundingClientRect().top + window.scrollY - 92, behavior: 'instant' });
+  }
 
   return <div ref={rootRef} className={s.page} lang={lang}>
     <a className={s.skip} href="#main-content">{c.skip}</a>
     <header className={s.header}>
       <Link className={s.brand} href="/" aria-label={`${c.brand} — ${c.home}`}><Image src="/brand/nirvan-dham-logo.png" width={46} height={46} alt="" /><span>{c.brand}<small>NIRVANDHAM.IN</small></span></Link>
-      <nav aria-label={lang === 'hi' ? 'पृष्ठ के भाग' : 'Page sections'}>{c.nav.map((label, i) => <a key={label} href={['#the-meeting', '#meet-aadisatv', '#plan-your-visit'][i]}>{label}</a>)}</nav>
-      <div className={s.headerActions}><div className={s.language} aria-label="Language / भाषा"><button type="button" aria-pressed={lang === 'en'} onClick={() => selectLanguage('en')}>EN</button><span aria-hidden="true">/</span><button type="button" aria-pressed={lang === 'hi'} onClick={() => selectLanguage('hi')}>हिंदी</button></div><a href="#request-meeting" className={s.headerCta}>{c.request}<Arrow diagonal /></a></div>
+      <nav aria-label={lang === 'hi' ? 'पृष्ठ के भाग' : 'Page sections'}>{c.nav.map((label, i) => { const id = ['the-meeting', 'meet-aadisatv', 'plan-your-visit'][i]; return <a key={label} href={`#${id}`} onClick={(event) => jumpTo(event, id)}>{label}</a>; })}</nav>
+      <div className={s.headerActions}><div className={s.language} aria-label="Language / भाषा"><button type="button" aria-pressed={lang === 'en'} onClick={() => selectLanguage('en')}>EN</button><span aria-hidden="true">/</span><button type="button" aria-pressed={lang === 'hi'} onClick={() => selectLanguage('hi')}>हिंदी</button></div><a href="#request-meeting" onClick={(event) => jumpTo(event, 'request-meeting')} className={s.headerCta}>{c.request}<Arrow diagonal /></a></div>
     </header>
 
     <main id="main-content">
@@ -150,9 +170,10 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
           <h1 id="hero-title">{c.title[0]}<em>{c.title[1]}</em></h1>
           <div className={s.heroRule} aria-hidden="true"><span>✧</span></div>
           <p className={s.heroIntro}>{c.intro}</p>
-          <div className={s.heroActions}><a href="#request-meeting" className={s.primary}>{c.request}<Arrow diagonal /></a><a href={whatsappUrl} className={s.secondary} target="_blank" rel="noopener noreferrer"><WhatsAppIcon />{c.whatsapp}</a></div>
+          <div className={s.heroActions}><a href="#request-meeting" onClick={(event) => jumpTo(event, 'request-meeting')} className={s.primary}>{c.request}<Arrow diagonal /></a><a href={whatsappUrl} className={s.secondary} target="_blank" rel="noopener noreferrer"><WhatsAppIcon />{c.whatsapp}</a></div>
+          <a className={s.heroPhone} href="tel:+919334325558" aria-label={`${c.callNow}: +91 93343 25558`}><span>{c.callNow}</span><strong>+91-9334325558</strong><Arrow diagonal /></a>
           <p className={s.heroNote}>{c.heroNote}</p>
-          <a className={s.scrollLink} href="#the-meeting"><span aria-hidden="true">↓</span>{c.scroll}</a>
+          <a className={s.scrollLink} href="#the-meeting" onClick={(event) => jumpTo(event, 'the-meeting')}><span aria-hidden="true">↓</span>{c.scroll}</a>
         </div>
         <div className={s.heroVisual}><div className={s.orbit} aria-hidden="true" /><div className={s.heroPhoto}><Image src={photoUrl(0)} alt={c.galleryAlt} fill sizes="(max-width: 760px) 100vw, 52vw" loading="eager" fetchPriority="high" /><div className={s.photoGradient} /><span className={s.photoCaption}>{c.imageNote}<small>24.6951° N · 84.9913° E</small></span></div><span className={s.verticalNote} aria-hidden="true">PRESENCE · INQUIRY · SILENCE</span></div>
       </section>
@@ -181,6 +202,27 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
         </div>
       </section>
 
+      <section className={s.proof} aria-labelledby="proof-heading" data-reveal>
+        <div className={s.proofIntro}>
+          <p className={s.eyebrow}>{c.proofLabel}</p>
+          <h2 id="proof-heading">{c.proofTitle}</h2>
+          <p>{c.proofText}</p>
+          <div className={s.lamp}><span aria-hidden="true">✧</span><div><h3>{c.lampTitle}</h3><p>{c.lampText}</p></div></div>
+          <p className={s.freePromise}>{c.freeNote}</p>
+          <a href="#request-meeting" className={s.proofCta} onClick={(event) => jumpTo(event, 'request-meeting')}>{c.request}<Arrow diagonal /></a>
+        </div>
+        <div className={s.proofEvidence}>
+          <div className={s.proofHeading}><span>{c.bookLabel}</span><Link href="/library" prefetch>{c.bookAction}<Arrow diagonal /></Link></div>
+          <div className={s.bookShelf}>{featuredBooks[lang].map((book) => <Link key={book.slug} href={`/library/${book.slug}`} prefetch className={s.book} aria-label={book.title}>
+            <span className={s.bookCover}><Image src={book.cover} alt={book.title} fill sizes="(max-width: 760px) 29vw, 160px" /></span>
+            <span className={s.bookTitle}>{book.title}</span>
+          </Link>)}</div>
+          <a className={s.searchCard} href="https://www.google.com/search?q=Aadisatv" target="_blank" rel="noopener noreferrer">
+            <span className={s.searchGlyph} aria-hidden="true">↗</span><span><small>{c.searchLabel}</small><strong>{c.searchTitle}</strong><span>{c.searchNote}</span></span><Arrow diagonal />
+          </a>
+        </div>
+      </section>
+
       <section className={s.gallery} data-reveal>
         <div className={s.galleryHeader}><div><p className={s.eyebrow}>{c.galleryLabel}</p><h2>{c.galleryTitle}</h2></div><div><p>{c.galleryNote}</p><button type="button" className={s.textButton} onClick={(e) => openGallery(0, e.currentTarget)}>{c.galleryOpen}<Arrow diagonal /></button></div></div>
         <div className={s.galleryStrip}>{[2, 5, 7, 9].map((index, position) => <button type="button" key={index} onClick={(e) => openGallery(index, e.currentTarget)} aria-label={`${c.galleryAlt} ${index + 1}`}><Image src={photoUrl(index)} alt="" fill sizes="(max-width: 760px) 67vw, 28vw" /><span aria-hidden="true">0{position + 1}<Arrow diagonal /></span></button>)}</div>
@@ -200,7 +242,7 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
     </main>
 
     <footer className={s.footer}><div><Link href="/">{c.brand}</Link><p>{c.footer}</p></div><nav aria-label={lang === 'hi' ? 'अन्य पृष्ठ' : 'More pages'}><Link href="/">{c.home}</Link><Link href="/online-samvad">{c.online}</Link><Link href="/donation">{c.support}</Link></nav><span>© {new Date().getFullYear()} Nirvan Dham</span></footer>
-    <div className={s.mobileBar}><a href={whatsappUrl} target="_blank" rel="noopener noreferrer"><WhatsAppIcon />WhatsApp</a><a href="#request-meeting">{c.request}<Arrow diagonal /></a></div>
+    <div className={s.mobileBar}><a href={whatsappUrl} target="_blank" rel="noopener noreferrer"><WhatsAppIcon />WhatsApp</a><a href="#request-meeting" onClick={(event) => jumpTo(event, 'request-meeting')}>{c.request}<Arrow diagonal /></a></div>
 
     <dialog ref={dialogRef} className={s.lightbox} aria-label={c.galleryLabel} onClose={() => galleryTrigger.current?.focus()} onClick={(event) => { if (event.target === event.currentTarget) closeGallery(); }} onKeyDown={(event) => { if (event.key === 'ArrowRight') setGalleryIndex((i) => (i + 1) % photos.length); if (event.key === 'ArrowLeft') setGalleryIndex((i) => (i + photos.length - 1) % photos.length); }}>
       <div className={s.lightboxBody}><button type="button" className={s.close} onClick={closeGallery} aria-label={c.close}>×</button><div className={s.lightboxPhoto}><Image src={photoUrl(galleryIndex)} alt={`${c.galleryAlt} ${galleryIndex + 1}`} fill sizes="(max-width: 760px) 90vw, 650px" /></div><div className={s.lightboxControls}><button type="button" onClick={() => setGalleryIndex((i) => (i + photos.length - 1) % photos.length)} aria-label={c.previous}>←</button><span aria-live="polite">{galleryIndex + 1} / {photos.length}</span><button type="button" onClick={() => setGalleryIndex((i) => (i + 1) % photos.length)} aria-label={c.next}>→</button></div></div>
