@@ -4,6 +4,7 @@ import { allStages, programView, questionView } from '@/course/nirvan-sutra/serv
 import * as E from '@/course/nirvan-sutra/engine';
 import { CHECKPOINTS, PROGRAM, MOVEMENTS, stageNumber } from '@/course/nirvan-sutra/structure';
 import JourneyMap from '@/components/nirvan-sutra/JourneyMap';
+import LanguagePreferenceSync from '@/components/nirvan-sutra/LanguagePreferenceSync';
 import { Orb } from '@/components/nirvan-sutra/Graphics';
 
 export default async function Dashboard() {
@@ -49,6 +50,7 @@ export default async function Dashboard() {
 
   return (
     <div>
+      <LanguagePreferenceSync chosen={locale} saved={p.locale} />
       {/* 1. warm entry */}
       <section className="ns-hero">
         <div className="ns-stack">

@@ -1,7 +1,8 @@
 // SERVER ONLY: what every course page needs — the learner's progress, their language and the interface strings for it.
 import { redirect } from 'next/navigation';
+import { cookies } from 'next/headers';
 import type { LocaleCode, Progress } from '../types';
-import { SOURCE_LOCALE, localeInfo } from '../locales';
+import { SOURCE_LOCALE, isLocale, localeInfo } from '../locales';
 import { currentProgress, currentAccount } from './session';
 import { storeMode } from './store';
 import { uiStrings } from './content';
@@ -15,7 +16,10 @@ export type T = ReturnType<typeof makeT>;
 
 export async function courseContext() {
   const progress = await currentProgress();
-  const locale: LocaleCode = progress?.locale ?? SOURCE_LOCALE;
+  // A language chosen on /course applies to the lesson and its audio immediately,
+  // including when a returning learner previously studied in another language.
+  const chosen = (await cookies()).get('ns_lang')?.value;
+  const locale: LocaleCode = isLocale(chosen) ? chosen : progress?.locale ?? SOURCE_LOCALE;
   const ui = uiStrings(locale);
   return { progress, locale, info: localeInfo(locale), ui, t: makeT(ui) };
 }
