@@ -114,7 +114,6 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
   const c = copy[lang];
   const rootRef = useRef<HTMLDivElement>(null);
   const [activeChapter, setActiveChapter] = useState(0);
-  const [playingVideo, setPlayingVideo] = useState<number | null>(null);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const dialogRef = useRef<HTMLDialogElement>(null);
   const galleryTrigger = useRef<HTMLButtonElement | null>(null);
@@ -198,7 +197,11 @@ export default function BodhgayaLanding({ initialLanguage }: { initialLanguage: 
       <section id="meet-aadisatv" className={`${s.section} ${s.about}`} data-reveal>
         <div className={s.portrait}><Image src="/aadisatv/portrait.jpg" alt={lang === 'hi' ? 'आदिसत्व' : 'Aadisatv'} fill sizes="(max-width: 760px) 75vw, 32vw" /><div className={s.portraitLabel}>AADISATV<span>{lang === 'hi' ? 'आदिसत्व' : 'Spiritual dialogue & self-inquiry'}</span></div></div>
         <div className={s.aboutCopy}><p className={s.eyebrow}>{c.aboutLabel}</p><h2>{c.aboutTitle}</h2><p>{c.aboutText}</p><p>{c.aboutSecond}</p>
-          <div className={s.videos}>{c.introductions.map((title, i) => <div key={i}>{playingVideo === i ? <video controls autoPlay playsInline preload="none" className={s.video} src={`/tatv/aadisatv_${i + 1}.mp4`} aria-label={title} /> : <button className={s.videoButton} type="button" onClick={() => setPlayingVideo(i)}><span className={s.play} aria-hidden="true">▷</span><span><small>{c.watch} · 0{i + 1}</small>{title}</span><Arrow diagonal /></button>}</div>)}</div>
+          <p className={s.credibilityLine}>{c.credibilityLine}</p>
+          <div className={s.credibilityLinks}>
+            <a href="https://www.google.com/search?q=Aadisatv" target="_blank" rel="noopener noreferrer"><span>{c.googleLink}</span><Arrow /></a>
+            <Link href="/library" prefetch><span>{c.booksLink}</span><Arrow /></Link>
+          </div>
         </div>
       </section>
 
