@@ -1,5 +1,5 @@
 {
-  "$comment": "S01–S17 main films and 109 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "$comment": "S01–S17 main films and 110 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
   "lessons": {
     "NS-S01-MAIN": {
       "videoProvider": "youtube",
@@ -1079,6 +1079,7 @@
     "NS-S05-Q04": { "videoProvider": "youtube", "videoId": "kytvEOP8dVw", "durationSec": 331.229729, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
     "NS-S06-Q04": { "videoProvider": "youtube", "videoId": "anaM0NKAhZU", "durationSec": 313.270875, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
     "NS-S07-Q04": { "videoProvider": "youtube", "videoId": "cADG0Nj1ImY", "durationSec": 334.675938, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
-    "NS-S08-Q04": { "videoProvider": "youtube", "videoId": "6tykS2y1j_Q", "durationSec": 340.076958, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
+    "NS-S08-Q04": { "videoProvider": "youtube", "videoId": "6tykS2y1j_Q", "durationSec": 340.076958, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S09-Q05": { "videoProvider": "youtube", "videoId": "u4ah4AEYuGU", "durationSec": 336.81275, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
   }
 }
