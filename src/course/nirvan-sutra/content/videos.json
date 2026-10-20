@@ -1,5 +1,5 @@
 {
-  "$comment": "S01–S17 main films and 103 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "$comment": "S01–S17 main films and 109 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
   "lessons": {
     "NS-S01-MAIN": {
       "videoProvider": "youtube",
@@ -1073,6 +1073,12 @@
     "NS-S16-Q03": { "videoProvider": "youtube", "videoId": "LIV5YFzRuO0", "durationSec": 376.268, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
     "NS-S16-Q10": { "videoProvider": "youtube", "videoId": "4gp3fffRBgU", "durationSec": 403.32, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
     "NS-S17-Q02": { "videoProvider": "youtube", "videoId": "6_O3OdYgpd0", "durationSec": 380.061, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
-    "NS-S17-Q10": { "videoProvider": "youtube", "videoId": "0bxtiBcllF4", "durationSec": 386.826, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
+    "NS-S17-Q10": { "videoProvider": "youtube", "videoId": "0bxtiBcllF4", "durationSec": 386.826, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S03-Q04": { "videoProvider": "youtube", "videoId": "2ITxHI-6rWM", "durationSec": 360.545333, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S04-Q05": { "videoProvider": "youtube", "videoId": "ag0r5xeMTGg", "durationSec": 337.840125, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S05-Q04": { "videoProvider": "youtube", "videoId": "kytvEOP8dVw", "durationSec": 331.229729, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S06-Q04": { "videoProvider": "youtube", "videoId": "anaM0NKAhZU", "durationSec": 313.270875, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S07-Q04": { "videoProvider": "youtube", "videoId": "cADG0Nj1ImY", "durationSec": 334.675938, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S08-Q04": { "videoProvider": "youtube", "videoId": "6tykS2y1j_Q", "durationSec": 340.076958, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
   }
 }
