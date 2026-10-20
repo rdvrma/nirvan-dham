@@ -1,5 +1,5 @@
 {
-  "$comment": "S01–S17 main films and 82 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "$comment": "S01–S17 main films and 103 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
   "lessons": {
     "NS-S01-MAIN": {
       "videoProvider": "youtube",
@@ -1052,6 +1052,27 @@
     "NS-S11-Q10": { "videoProvider": "youtube", "videoId": "-QUPka0c41k", "durationSec": 355.834, "youtubeAudioLocales": ["hi", "en", "bn"], "revision": 1, "publishStatus": "published" },
     "NS-S12-Q10": { "videoProvider": "youtube", "videoId": "harZNN9UVzE", "durationSec": 340.411229, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
     "NS-S13-Q10": { "videoProvider": "youtube", "videoId": "4UBYI18O-sA", "durationSec": 366.368563, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
-    "NS-S14-Q09": { "videoProvider": "youtube", "videoId": "DVkYVgsNtxY", "durationSec": 359.3385, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
+    "NS-S14-Q09": { "videoProvider": "youtube", "videoId": "DVkYVgsNtxY", "durationSec": 359.3385, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S01-Q04": { "videoProvider": "youtube", "videoId": "oxmMKrPgHEk", "durationSec": 339.625, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S02-Q02": { "videoProvider": "youtube", "videoId": "afrDuclZe1M", "durationSec": 315.752, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S02-Q03": { "videoProvider": "youtube", "videoId": "n53p9tS0H6I", "durationSec": 324.293, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S03-Q02": { "videoProvider": "youtube", "videoId": "7qctLH8PLCU", "durationSec": 336.764, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S04-Q02": { "videoProvider": "youtube", "videoId": "2jpqZUSeoXs", "durationSec": 327.48, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S05-Q03": { "videoProvider": "youtube", "videoId": "v-uhpV4DAEs", "durationSec": 363.109, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S06-Q02": { "videoProvider": "youtube", "videoId": "x8bGmlPXV_0", "durationSec": 328.325, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S07-Q03": { "videoProvider": "youtube", "videoId": "Tb3hMRVb5oA", "durationSec": 352.377, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S08-Q03": { "videoProvider": "youtube", "videoId": "HvCQ3yxax9Y", "durationSec": 325.713, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S09-Q02": { "videoProvider": "youtube", "videoId": "mjpk66I66Fw", "durationSec": 328.024, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S10-Q02": { "videoProvider": "youtube", "videoId": "iaBS7UD2RCw", "durationSec": 338.463, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S11-Q02": { "videoProvider": "youtube", "videoId": "IpQS4-uSUSQ", "durationSec": 350.866, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S12-Q03": { "videoProvider": "youtube", "videoId": "OSnWoeuF6D8", "durationSec": 342.913, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S13-Q03": { "videoProvider": "youtube", "videoId": "Vh3mk754iB4", "durationSec": 361.849, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S14-Q02": { "videoProvider": "youtube", "videoId": "UPIQZ_Mxk38", "durationSec": 357.44, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S15-Q02": { "videoProvider": "youtube", "videoId": "huOS0S3rB3M", "durationSec": 369.402, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S15-Q10": { "videoProvider": "youtube", "videoId": "Nfg54LuHz-A", "durationSec": 377.439, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S16-Q03": { "videoProvider": "youtube", "videoId": "LIV5YFzRuO0", "durationSec": 376.268, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S16-Q10": { "videoProvider": "youtube", "videoId": "4gp3fffRBgU", "durationSec": 403.32, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S17-Q02": { "videoProvider": "youtube", "videoId": "6_O3OdYgpd0", "durationSec": 380.061, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S17-Q10": { "videoProvider": "youtube", "videoId": "0bxtiBcllF4", "durationSec": 386.826, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
   }
 }
