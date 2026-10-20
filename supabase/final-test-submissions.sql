@@ -17,6 +17,8 @@ create table if not exists public.course_final_submissions (
   submitted_at timestamptz not null default now()
 );
 
+grant select, insert on public.course_final_submissions to authenticated;
+
 alter table public.course_final_submissions enable row level security;
 
 create policy "Learners can view their own final submission"
@@ -44,6 +46,8 @@ begin
   where id = target_submission_id and user_id = auth.uid();
 end;
 $$;
+
+grant execute on function public.update_final_submission_delivery_status(uuid, text, text) to authenticated;
 
 create or replace view public.course_admin_progress as
 select

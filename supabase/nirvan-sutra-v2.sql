@@ -36,9 +36,18 @@ create table if not exists public.ns_guide_notes (
   primary key (learner_id, week)
 );
 
+-- Data API grants must be explicit for tables created after 2026-10-30.
+-- RLS below still limits each learner and guide to permitted rows.
+grant select, insert, update on public.ns_progress to authenticated;
+grant select on public.ns_guides to authenticated;
+grant select, insert, update on public.ns_guide_weeks to authenticated;
+grant select, insert, update, delete on public.ns_guide_notes to authenticated;
+
 create or replace function public.ns_is_guide()
 returns boolean language sql stable security definer set search_path = public
 as $$ select exists (select 1 from public.ns_guides where user_id = auth.uid()); $$;
+
+grant execute on function public.ns_is_guide() to authenticated;
 
 alter table public.ns_progress enable row level security;
 alter table public.ns_guides enable row level security;

@@ -15,6 +15,9 @@ create table if not exists public.shakti_snan_applications (
   reviewed_at timestamptz
 );
 
+-- The public form may submit only; it cannot read or change applications.
+grant insert on public.shakti_snan_applications to anon, authenticated;
+
 alter table public.shakti_snan_applications enable row level security;
 
 -- The public application form may create a record, but cannot read, edit or

@@ -10,6 +10,11 @@ create table if not exists public.user_progress (
   updated_at timestamptz not null default now()
 );
 
+-- Explicit Data API access for schemas recreated after 2026-10-30.
+-- The auth trigger creates learner rows; learners only read/update their own.
+grant select, update on public.user_progress to authenticated;
+grant select on public.user_progress to service_role;
+
 alter table public.user_progress enable row level security;
 
 create policy "Learners can view their own progress"
@@ -79,6 +84,8 @@ create table if not exists public.course_final_submissions (
   submitted_at timestamptz not null default now()
 );
 
+grant select, insert on public.course_final_submissions to authenticated;
+
 alter table public.course_final_submissions enable row level security;
 
 create policy "Learners can view their own final submission"
@@ -109,6 +116,8 @@ begin
     and user_id = auth.uid();
 end;
 $$;
+
+grant execute on function public.update_final_submission_delivery_status(uuid, text, text) to authenticated;
 
 create or replace view public.course_admin_progress as
 select
