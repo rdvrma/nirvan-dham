@@ -1,5 +1,5 @@
 {
-  "$comment": "S01–S17 main films and 123 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
+  "$comment": "S01–S17 main films and 169 published question films are linked to Public YouTube videos. Hindi uses the original audio; Sarvam dubs for ten other course languages stream from the authenticated course audio endpoint backed by Runpod.",
   "lessons": {
     "NS-S01-MAIN": {
       "videoProvider": "youtube",
@@ -1113,6 +1113,32 @@
     "NS-S14-Q07": {"videoProvider": "youtube", "videoId": "UC3_QywcIGw", "durationSec": 368.967, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published"},
     "NS-S15-Q06": {"videoProvider": "youtube", "videoId": "Y7eesjdy0es", "durationSec": 387.633, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published"},
     "NS-S16-Q07": {"videoProvider": "youtube", "videoId": "fGr6faaixxk", "durationSec": 373.9, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published"},
-    "NS-S17-Q07": {"videoProvider": "youtube", "videoId": "um_HWv_SGc0", "durationSec": 371.067, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published"}
+    "NS-S17-Q07": {"videoProvider": "youtube", "videoId": "um_HWv_SGc0", "durationSec": 371.067, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published"},
+    "NS-S01-Q08": { "videoProvider": "youtube", "videoId": "LVMzDx1V7gI", "durationSec": 322.396625, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S02-Q09": { "videoProvider": "youtube", "videoId": "Wxt890xmayw", "durationSec": 355.033125, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S03-Q09": { "videoProvider": "youtube", "videoId": "mB6_JIRqRl4", "durationSec": 320.575083, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S04-Q09": { "videoProvider": "youtube", "videoId": "dOWa1Hw7lKM", "durationSec": 334.441938, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S05-Q10": { "videoProvider": "youtube", "videoId": "qj_H3sdhXMg", "durationSec": 327.759354, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S06-Q09": { "videoProvider": "youtube", "videoId": "Be69_obBOUk", "durationSec": 337.847333, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S07-Q09": { "videoProvider": "youtube", "videoId": "xkdqhT8VoeQ", "durationSec": 346.872354, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S08-Q10": { "videoProvider": "youtube", "videoId": "ynYotnqNUkw", "durationSec": 347.356438, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S09-Q07": { "videoProvider": "youtube", "videoId": "i9zd_qIk7bU", "durationSec": 349.637958, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S09-Q09": { "videoProvider": "youtube", "videoId": "2jl_OgEdEow", "durationSec": 336.907604, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S10-Q07": { "videoProvider": "youtube", "videoId": "TSyrFFrgaWo", "durationSec": 326.857083, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S10-Q08": { "videoProvider": "youtube", "videoId": "nAEDmfquOIg", "durationSec": 347.854083, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S11-Q07": { "videoProvider": "youtube", "videoId": "xPcz-_8P9-w", "durationSec": 345.982688, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S12-Q07": { "videoProvider": "youtube", "videoId": "RQdy4P-JRGs", "durationSec": 364.343021, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S13-Q07": { "videoProvider": "youtube", "videoId": "RDAa-9sgDWE", "durationSec": 353.396396, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S14-Q08": { "videoProvider": "youtube", "videoId": "uHbSaev1eh0", "durationSec": 391.053833, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S15-Q08": { "videoProvider": "youtube", "videoId": "1ol8_Cap5ag", "durationSec": 374.6725, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S16-Q08": { "videoProvider": "youtube", "videoId": "32knoglK9_c", "durationSec": 386.236813, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S17-Q08": { "videoProvider": "youtube", "videoId": "dXlPBDVysJA", "durationSec": 379.564896, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S12-Q09": { "videoProvider": "youtube", "videoId": "qztuftoWzb0", "durationSec": 342.296188, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S13-Q09": { "videoProvider": "youtube", "videoId": "WDGF_dDuhX8", "durationSec": 370.420417, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S14-Q10": { "videoProvider": "youtube", "videoId": "5R1PZn7nDFw", "durationSec": 362.332229, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S15-Q09": { "videoProvider": "youtube", "videoId": "vaJwSpt68vw", "durationSec": 371.867208, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S16-Q09": { "videoProvider": "youtube", "videoId": "r9VNxrxJdCs", "durationSec": 370.770458, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S17-Q09": { "videoProvider": "youtube", "videoId": "QvRWmPueIgE", "durationSec": 408.458458, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" },
+    "NS-S11-Q09": { "videoProvider": "youtube", "videoId": "qbwJV282S1g", "durationSec": 344.588458, "youtubeAudioLocales": ["hi"], "revision": 1, "publishStatus": "published" }
   }
 }
