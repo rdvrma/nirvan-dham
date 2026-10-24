@@ -33,6 +33,12 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   output: 'standalone',
   poweredByHeader: false,
+  // Course content is loaded through fs at runtime; the dynamic paths are not
+  // discovered by Next's file tracer in Vercel Functions.
+  outputFileTracingIncludes: {
+    '/api/nirvan-sutra/**': ['./src/course/nirvan-sutra/content/**/*', './src/course/nirvan-sutra/locales/**/*'],
+    '/nirvan-sutra/**': ['./src/course/nirvan-sutra/content/**/*', './src/course/nirvan-sutra/locales/**/*'],
+  },
 
   async headers() {
     return [
