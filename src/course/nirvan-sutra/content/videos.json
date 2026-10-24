@@ -768,6 +768,46 @@
         }
       ]
     },
+    "NS-S01-Q02": {
+      "videoProvider": "youtube",
+      "videoId": "j67ybgmrFV8",
+      "durationSec": 314.9285,
+      "youtubeAudioLocales": [
+        "hi"
+      ],
+      "revision": 1,
+      "publishStatus": "published",
+      "chapters": [
+        {
+          "atSec": 0,
+          "title": "एक पुरानी कहानी है। जंगल में एक…"
+        },
+        {
+          "atSec": 44.69,
+          "title": "स्वरूप को न जानना — अज्ञान क्यों?"
+        },
+        {
+          "atSec": 55.12,
+          "title": "कोई कह सकता है — मैं सच…"
+        },
+        {
+          "atSec": 87.75,
+          "title": "जीवन की हर भूल की जड़ — अपने बारे…"
+        },
+        {
+          "atSec": 105.71,
+          "title": "1. पहचान जीवन को दिशा देती है"
+        },
+        {
+          "atSec": 243.58,
+          "title": "अब एक छोटा अभ्यास कीजिए। अपने किसी…"
+        },
+        {
+          "atSec": 275.64,
+          "title": "सार"
+        }
+      ]
+    },
     "NS-S01-Q03": {
       "videoProvider": "youtube",
       "videoId": "BlyFDzJpmnY",

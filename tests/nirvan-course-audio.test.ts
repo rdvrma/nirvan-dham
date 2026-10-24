@@ -30,7 +30,7 @@ test('each published film selects its matching language track; pending films sta
         assert.equal(film.audio[locale]?.status, 'published');
       }
     }
-    assert.equal(videoAsset('NS-S01-Q02').audio.en, undefined);
+    assert.equal(videoAsset('NS-S01-Q02').audio.en?.url, '/api/nirvan-sutra/audio/gm-t01-q02/en');
     assert.equal(courseAudioKey('gm-t17-main', 'or'), 'nirvan-sutra/course-audio/v1/gm-t17-main/or.m4a');
     assert.throws(() => courseAudioKey('../secret', 'en'), /Invalid/);
   } finally {
