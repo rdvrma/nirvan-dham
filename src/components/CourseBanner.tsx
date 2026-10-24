@@ -182,16 +182,16 @@ function FullBanner({ hi }: { hi: boolean }) {
             fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)',
           }}>
             {hi
-              ? 'पुस्तकें पढ़ी, ध्यान किया — अब सीधे जागरूकता में प्रवेश करें। निर्वाण सूत्र पाठ्यक्रम 8 अध्यायों में अद्वैत, आत्म-जांच और मुक्ति की यात्रा है।'
-              : 'You\'ve read the books. Now enter the living teaching. The Nirvan Sutra Course is an 8-chapter journey through Advaita, self-inquiry and direct seeing of truth.'}
+              ? 'पुस्तकें पढ़ी, ध्यान किया—अब निर्वाण सूत्र के 17 चरणों में आत्म-विचार को अपने अनुभव में जाँचें। 170 प्रश्न, फ़िल्में और अपनी भाषा में सुनने की सुविधा।'
+              : 'You’ve read the books. Now explore self-inquiry through 17 stages, 170 questions and films you can hear in your language.'}
           </p>
 
           {/* Stats */}
           <div style={{ display: 'flex', gap: '2.5rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
             {[
-              { num: '8', label: hi ? 'अध्याय' : 'Chapters' },
-              { num: '3', label: hi ? 'भाषाएं' : 'Languages' },
-              { num: '∞', label: hi ? 'निःशुल्क' : 'Free Access' },
+              { num: '17', label: hi ? 'चरण' : 'Stages' },
+              { num: '170', label: hi ? 'प्रश्न' : 'Questions' },
+              { num: '11', label: hi ? 'भाषाएँ' : 'Languages' },
             ].map(s => (
               <div key={s.num}>
                 <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.8rem', fontWeight: 300, color: '#d4a843', lineHeight: 1 }}>{s.num}</div>
@@ -202,7 +202,7 @@ function FullBanner({ hi }: { hi: boolean }) {
 
           {/* CTA */}
           <Link
-            href="/course"
+            href="/nirvan-sutra"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
               padding: '1.1rem 2.75rem', borderRadius: '6px',
@@ -222,7 +222,7 @@ function FullBanner({ hi }: { hi: boolean }) {
               (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 48px rgba(212,168,67,0.38)';
             }}
           >
-            {hi ? 'पाठ्यक्रम शुरू करें' : 'Begin the Course'} →
+            {hi ? 'पाठ्यक्रम जानें' : 'Explore the Course'} →
           </Link>
         </div>
 
@@ -236,7 +236,7 @@ function FullBanner({ hi }: { hi: boolean }) {
             fontSize: '0.62rem', letterSpacing: '0.22em', color: 'rgba(212,168,67,0.6)',
             textTransform: 'uppercase', fontFamily: 'var(--font-inter)', textAlign: 'center',
           }}>
-            {hi ? '८ अध्याय · ३ भाषाएं · एक यात्रा' : '8 Chapters · 3 Languages · One Journey'}
+            {hi ? '१७ चरण · १७० प्रश्न · ११ भाषाएँ' : '17 Stages · 170 Questions · 11 Languages'}
           </p>
         </div>
       </div>
@@ -308,12 +308,12 @@ function StripBanner({ hi }: { hi: boolean }) {
             maxWidth: '460px',
           }}>
             {hi
-              ? 'इस ग्रंथ की अनुभूति को जीवंत अनुभव में बदलें। निर्वाण सूत्र पाठ्यक्रम में 8 अध्यायों की सीधी आत्म-जांच शुरू करें।'
-              : 'Take this book\'s insight into lived experience. Begin 8 chapters of direct self-inquiry in the Nirvan Sutra Course.'}
+              ? 'इस ग्रंथ की अनुभूति को जीवन में जाँचें। निर्वाण सूत्र के 17 चरणों और 170 प्रश्नों से आत्म-विचार को गहरा करें।'
+              : 'Bring this book’s insight into life. Deepen self-inquiry through 17 stages and 170 questions in the Nirvan Sutra Course.'}
           </p>
 
           <Link
-            href="/course"
+            href="/nirvan-sutra"
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.6rem',
               padding: '0.85rem 2rem', borderRadius: '6px',
@@ -327,7 +327,7 @@ function StripBanner({ hi }: { hi: boolean }) {
             onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 12px 48px rgba(212,168,67,0.48)'; }}
             onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 6px 32px rgba(212,168,67,0.3)'; }}
           >
-            {hi ? 'पाठ्यक्रम में प्रवेश करें' : 'Enter the Course'} →
+            {hi ? 'पाठ्यक्रम जानें' : 'Explore the Course'} →
           </Link>
         </div>
 

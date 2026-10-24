@@ -675,33 +675,29 @@ export default function SadhanaPage() {
                 {isHi ? 'आप कौन हैं?' : 'Who are you?'}
               </h2>
               <p style={{ color: 'rgba(245,237,216,0.58)', lineHeight: 1.95, fontSize: 'clamp(0.92rem,1.5vw,1.02rem)', marginBottom: '2.25rem', maxWidth: '460px', fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)' }}>
-                {isHi ? 'साधना के बाद अगला कदम है श्रवण। निर्वाण सूत्र पाठ्यक्रम में 8 अध्यायों में अद्वैत, आत्म-जांच और मुक्ति की गहरी यात्रा शुरू करें।' : 'After Sadhana comes Shravana. Begin a deep journey through 8 chapters of Advaita, self-inquiry and liberation in the Nirvan Sutra Course.'}
+                {isHi ? 'साधना के बाद अगला कदम है श्रवण। निर्वाण सूत्र के 17 चरण, 170 प्रश्न और 11 भाषाएँ आपको आत्म-विचार को अपने अनुभव में जाँचने का मार्ग देते हैं।' : 'After Sadhana comes Shravana. Explore self-inquiry through 17 stages, 170 questions and films available in 11 languages.'}
               </p>
               <div style={{ display: 'flex', gap: '2.5rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-                {[{ num: '8', label: isHi ? 'अध्याय' : 'Chapters' }, { num: '3', label: isHi ? 'भाषाएं' : 'Languages' }, { num: '∞', label: isHi ? 'स्वतंत्र पहुंच' : 'Free Access' }].map(s => (
+                {[{ num: '17', label: isHi ? 'चरण' : 'Stages' }, { num: '170', label: isHi ? 'प्रश्न' : 'Questions' }, { num: '11', label: isHi ? 'भाषाएँ' : 'Languages' }].map(s => (
                   <div key={s.num}>
                     <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.6rem', fontWeight: 300, color: GOLD, lineHeight: 1 }}>{s.num}</div>
                     <div style={{ fontSize: '0.68rem', color: 'rgba(245,237,216,0.4)', letterSpacing: '0.08em', fontFamily: 'var(--font-inter)', marginTop: '0.2rem' }}>{s.label}</div>
                   </div>
                 ))}
               </div>
-              <Link href="/course" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.7rem', padding: '1.1rem 2.6rem', borderRadius: '6px', background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`, color: '#061008', textDecoration: 'none', fontWeight: 800, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', letterSpacing: '0.04em', boxShadow: `0 8px 48px rgba(212,168,67,0.36)`, transition: 'all 0.3s' }}
+              <Link href="/nirvan-sutra" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.7rem', padding: '1.1rem 2.6rem', borderRadius: '6px', background: `linear-gradient(135deg, ${GOLD} 0%, #ffe89a 50%, #c49832 100%)`, color: '#061008', textDecoration: 'none', fontWeight: 800, fontFamily: isHi ? 'var(--font-hind)' : 'var(--font-inter)', fontSize: '1rem', letterSpacing: '0.04em', boxShadow: `0 8px 48px rgba(212,168,67,0.36)`, transition: 'all 0.3s' }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(-3px)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 18px 64px rgba(212,168,67,0.54)'; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.transform = 'translateY(0)'; (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 48px rgba(212,168,67,0.36)'; }}>
-                {isHi ? 'पाठ्यक्रम शुरू करें' : 'Begin the Course'} →
+                {isHi ? 'पाठ्यक्रम जानें' : 'Explore the Course'} →
               </Link>
             </div>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.45rem' }}>
               {[
-                { n: '01', hi: 'स्वयं की खोज',       en: 'The Discovery of Self'  },
-                { n: '02', hi: 'मन का स्वभाव',       en: 'The Nature of Mind'     },
-                { n: '03', hi: 'द्रष्टा और दृश्य',   en: 'The Seer and the Seen'  },
-                { n: '04', hi: 'माया का जाल',         en: 'The Web of Maya'        },
-                { n: '05', hi: 'नेति नेति',           en: 'Neti Neti'              },
-                { n: '06', hi: 'तुरीय अवस्था',       en: 'The Turiya State'       },
-                { n: '07', hi: 'महावाक्य',            en: 'The Mahavakyas'         },
-                { n: '08', hi: 'मोक्ष की देहरी',     en: 'The Threshold of Moksha'},
+                { n: '01—04', hi: 'खोज की तैयारी', en: 'Preparing the inquiry' },
+                { n: '05—09', hi: 'समझ और आत्मपरीक्षण', en: 'Listening and looking within' },
+                { n: '10—14', hi: 'अनुभव से अनुभवकर्ता की ओर', en: 'From experience to the experiencer' },
+                { n: '15—17', hi: 'मौन से सहज जीवन', en: 'From silence to natural living' },
               ].map((ch, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.75rem 1rem', borderRadius: '8px', border: `1px solid ${GOLD}0d`, background: 'rgba(212,168,67,0.03)', transition: 'all 0.2s' }}
                   onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(212,168,67,0.07)'; (e.currentTarget as HTMLElement).style.borderColor = `${GOLD}22`; }}

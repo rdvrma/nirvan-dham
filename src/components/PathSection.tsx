@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Language } from '@/lib/i18n';
 
 interface PathSectionProps {
@@ -12,13 +13,12 @@ export default function PathSection({ lang }: PathSectionProps) {
 
   return (
     <section id="sadhana" style={{ position: 'relative', overflow: 'hidden', padding: 0 }}>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        src="/course-videos/hero.mp4"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.3 }}
+      <Image
+        src="/aadisatv/meditation-dawn.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.3 }}
       />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(4,10,6,0.97) 0%, rgba(6,16,8,0.78) 40%, rgba(12,28,14,0.88) 100%)' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 70% 60% at 80% 50%, rgba(212,168,67,0.08) 0%, transparent 70%)' }} />
@@ -56,15 +56,15 @@ export default function PathSection({ lang }: PathSectionProps) {
 
             <p style={{ color: 'rgba(245,237,216,0.6)', lineHeight: 1.95, fontSize: 'clamp(0.95rem,1.6vw,1.05rem)', marginBottom: '2.5rem', maxWidth: '480px', fontFamily: hi ? 'var(--font-hind)' : 'var(--font-inter)' }}>
               {hi
-                ? 'निर्वाण सूत्र पाठ्यक्रम साधक को जागरूकता, आत्म-जांच, अद्वैत और सत्य के प्रत्यक्ष दर्शन की ओर ले जाता है। 8 अध्याय। 3 भाषाएं। एक यात्रा।'
-                : 'The Nirvan Sutra Course guides the seeker through awareness, self-inquiry, non-duality and direct seeing of truth. 8 Chapters. 3 Languages. One Journey.'}
+                ? '17 चरण, 17 मुख्य फ़िल्में और 170 गहन प्रश्न—श्रवण से आत्म-विचार तक। अपनी भाषा में सुनें, अपनी गति से आगे बढ़ें और हर बार वहीं से यात्रा जारी रखें जहाँ रुके थे।'
+                : 'Seventeen stages, seventeen main films and 170 deep questions—from listening to self-inquiry. Listen in your language, move at your own pace and resume where you left off.'}
             </p>
 
             <div style={{ display: 'flex', gap: '2rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
               {[
-                { num: '8', label: hi ? 'अध्याय' : 'Chapters' },
-                { num: '3', label: hi ? 'भाषाएं' : 'Languages' },
-                { num: '40%', label: hi ? 'उत्तीर्ण मानदंड' : 'Pass Criteria' },
+                { num: '17', label: hi ? 'चरण' : 'Stages' },
+                { num: '170', label: hi ? 'गहन प्रश्न' : 'Deep questions' },
+                { num: '11', label: hi ? 'भाषाएँ' : 'Languages' },
               ].map((stat) => (
                 <div key={stat.num}>
                   <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '2.8rem', fontWeight: 300, color: '#d4a843', lineHeight: 1 }}>{stat.num}</div>
@@ -74,7 +74,7 @@ export default function PathSection({ lang }: PathSectionProps) {
             </div>
 
             <Link
-              href="/course"
+              href="/nirvan-sutra"
               style={{
                 display: 'inline-flex', alignItems: 'center', gap: '0.75rem', padding: '1.1rem 2.5rem', borderRadius: '6px',
                 background: 'linear-gradient(135deg, #d4a843 0%, #ffe89a 50%, #c49832 100%)', color: '#061008', textDecoration: 'none',
@@ -90,7 +90,7 @@ export default function PathSection({ lang }: PathSectionProps) {
                 event.currentTarget.style.boxShadow = '0 8px 40px rgba(212,168,67,0.35)';
               }}
             >
-              {hi ? 'पाठ्यक्रम शुरू करें' : 'Start the Course'} →
+              {hi ? 'पाठ्यक्रम जानें' : 'Explore the Course'} →
             </Link>
           </div>
 
@@ -130,7 +130,7 @@ export default function PathSection({ lang }: PathSectionProps) {
             </div>
             <div style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '0.62rem', letterSpacing: '0.25em', color: 'rgba(212,168,67,0.7)', textTransform: 'uppercase', fontFamily: 'var(--font-inter)', marginBottom: '0.5rem' }}>
-                {hi ? '८ अध्याय · ३ भाषाएं · एक यात्रा' : '8 Chapters · 3 Languages · One Journey'}
+                {hi ? '१७ चरण · १७० प्रश्न · ११ भाषाएँ' : '17 Stages · 170 Questions · 11 Languages'}
               </p>
               <p style={{ fontSize: '0.82rem', color: 'rgba(245,237,216,0.38)', fontFamily: hi ? 'var(--font-hind)' : 'var(--font-cormorant)', fontStyle: hi ? 'normal' : 'italic', letterSpacing: '0.04em' }}>
                 {hi ? 'सत्य की खोज में एक पूर्ण यात्रा' : 'A complete journey into truth'}
