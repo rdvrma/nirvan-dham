@@ -94,8 +94,8 @@ const copy = {
       homeCta: 'सहयोग विवरण देखें',
       copied: '✓ कॉपी हो गया',
       paypal: 'PayPal से सहयोग करें →',
-      razorpay: 'Razorpay से सहयोग करें ↗',
-      razorpayNote: 'QR या UPI के साथ एक और भुगतान विकल्प',
+      razorpay: 'Razorpay पर भुगतान विकल्प देखें',
+      razorpayNote: 'कार्ड और अन्य उपलब्ध विकल्प देखें',
       indiaTab: 'भारत',
       intlTab: 'International',
       quote: 'सहयोग वह है जो बिना अपेक्षा के दिया जाए — ठीक वैसे जैसे सूर्य प्रकाश देता है।',
@@ -172,8 +172,8 @@ const copy = {
       homeCta: 'View Support Details',
       copied: '✓ Copied',
       paypal: 'Support via PayPal →',
-      razorpay: 'Support via Razorpay ↗',
-      razorpayNote: 'Another payment option alongside QR and UPI',
+      razorpay: 'Explore payment options on Razorpay',
+      razorpayNote: 'Cards and other available methods',
       indiaTab: 'India',
       intlTab: 'International',
       quote: 'Support is that which is given without expectation — just as the sun gives light.',
@@ -910,8 +910,8 @@ function DanaPanel({ lang, accent, accentGlow, isFullPage = false }: {
       {/* Tabs */}
       <div style={{ display: 'flex', borderTop: `1px solid ${accent}15`, borderBottom: `1px solid ${accent}15` }}>
         {[
-          { id: 'india' as const, label: c.indiaTab, sub: 'UPI · QR', icon: '🇮🇳' },
-          { id: 'intl' as const, label: c.intlTab, sub: 'PayPal · Card', icon: '🌍' },
+          { id: 'india' as const, label: c.indiaTab, sub: 'UPI · QR · Card', icon: '🇮🇳' },
+          { id: 'intl' as const, label: c.intlTab, sub: 'PayPal · Razorpay', icon: '🌍' },
         ].map(t => (
           <button key={t.id} type="button" onClick={() => setTab(t.id)} style={{
             flex: 1, border: 0, padding: '1rem',
@@ -962,15 +962,8 @@ function DanaPanel({ lang, accent, accentGlow, isFullPage = false }: {
             {copied && (
               <p style={{ color: accent, fontSize: '0.78rem', marginTop: '0.5rem' }}>{c.copied}</p>
             )}
-            <div style={{ margin: '1.75rem auto 0', maxWidth: '400px', borderTop: `1px solid ${accent}30`, paddingTop: '1.5rem' }}>
-              <p style={{ color: 'var(--c-ivdim)', fontSize: '0.78rem', marginBottom: '0.85rem' }}>{c.razorpayNote}</p>
-              <a href={RAZORPAY_URL} target="_blank" rel="noopener noreferrer" style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                width: '100%', minHeight: '50px', padding: '0.8rem 1.2rem',
-                border: `1px solid ${accent}80`, borderRadius: '8px',
-                color: 'var(--c-ivory)', background: `${accent}18`, textDecoration: 'none',
-                fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.02em',
-              }}>{c.razorpay}</a>
+            <div style={{ margin: '1.75rem auto 0', maxWidth: '460px', borderTop: `1px solid ${accent}30`, paddingTop: '1.5rem' }}>
+              <RazorpayOption lang={lang} accent={accent} />
             </div>
           </div>
         ) : (
@@ -1014,10 +1007,36 @@ function DanaPanel({ lang, accent, accentGlow, isFullPage = false }: {
             }}>
               <span>🔗</span> {c.paypal}
             </a>
+            <div style={{ maxWidth: '460px', margin: '1.4rem auto 0' }}>
+              <RazorpayOption lang={lang} accent={accent} />
+            </div>
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+function RazorpayOption({ lang, accent }: { lang: Language; accent: string }) {
+  const c = copy[lang].dana;
+  return (
+    <a href={RAZORPAY_URL} target="_blank" rel="noopener noreferrer" aria-label={c.razorpay} style={{
+      display: 'flex', alignItems: 'center', gap: '1rem', width: '100%', minHeight: '94px',
+      padding: '1rem 1.2rem', border: `1px solid ${accent}75`, borderRadius: '14px',
+      color: 'var(--c-ivory)', textDecoration: 'none', textAlign: 'left',
+      background: 'linear-gradient(120deg, rgba(212,168,67,0.16), rgba(8,22,12,0.84))',
+      boxShadow: '0 12px 30px rgba(0,0,0,0.16)',
+    }}>
+      <span aria-hidden="true" style={{ display: 'grid', placeItems: 'center', width: 52, height: 52, flex: '0 0 52px', borderRadius: 11, background: `${accent}24`, color: accent }}>
+        <svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2.5" y="5" width="19" height="14" rx="2" /><path d="M2.5 9h19M6 15h5" /></svg>
+      </span>
+      <span style={{ flex: 1, minWidth: 0 }}>
+        <span style={{ display: 'block', color: accent, fontSize: '.68rem', letterSpacing: '.13em', textTransform: 'uppercase', marginBottom: '.3rem' }}>Razorpay · {lang === 'hi' ? 'कार्ड भुगतान' : 'Card payment'}</span>
+        <span style={{ display: 'block', fontSize: '.9rem', fontWeight: 650 }}>{c.razorpay}</span>
+        <span style={{ display: 'block', fontSize: '.73rem', color: 'var(--c-ivdim)', marginTop: '.25rem' }}>{c.razorpayNote}</span>
+      </span>
+      <span aria-hidden="true" style={{ color: accent, fontSize: '1.3rem' }}>↗</span>
+    </a>
   );
 }
 

@@ -32,7 +32,7 @@ export default function CourseShell({ ui, locale, enrolled, dev, children }: { u
         {enrolled && (
           <nav className="ns-nav" aria-label={ui.dashboard}>
             <Link href={`${BASE}/dashboard`} aria-current={here(`${BASE}/dashboard`)} className="ns-hide-s">{ui.dashboard}</Link>
-            <Link href={`${BASE}/glossary`} aria-current={here(`${BASE}/glossary`)} className="ns-hide-s">{ui.glossaryTitle}</Link>
+            <Link href={`/course/glossary?lang=${locale}`} className="ns-hide-s">{ui.glossaryTitle}</Link>
             <Link href={`${BASE}/settings`} aria-current={here(`${BASE}/settings`)} className="ns-langpill" aria-label={`${ui.language}: ${native}`}>
               <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.4"><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" /></svg>
               {native}

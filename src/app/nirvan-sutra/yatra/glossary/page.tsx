@@ -1,21 +1,9 @@
-import { enrolledContext } from '@/course/nirvan-sutra/server/context';
-import { programView } from '@/course/nirvan-sutra/server/content';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
+import { isLocale } from '@/course/nirvan-sutra/locales';
 
-// The Sanskrit terms stay as they are in every language, each with its meaning in the learner's language.
+// Existing links lead to the complete reader, which seekers can open before enrolling.
 export default async function GlossaryPage() {
-  const { locale, t } = await enrolledContext();
-  const g = programView(locale).glossary;
-  return (
-    <section className="ns-narrow ns-stack-l">
-      <header><h1 className="ns-h1">{t('glossaryTitle')}</h1><p className="ns-muted" style={{ marginTop: 10 }}>{t('glossaryNote')}</p></header>
-      <dl className="ns-stack">
-        {g.terms.map((x) => (
-          <div key={x.term} className="ns-panel" style={{ padding: '18px 22px' }}>
-            <dt className="ns-h3" lang="hi">{x.term}</dt>
-            <dd className="ns-muted" style={{ marginTop: 6 }}>{x.gloss}</dd>
-          </div>
-        ))}
-      </dl>
-    </section>
-  );
+  const saved = (await cookies()).get('ns_lang')?.value;
+  redirect(`/course/glossary?lang=${isLocale(saved) ? saved : 'hi'}`);
 }

@@ -86,6 +86,13 @@ export default function Landing({ d }: { d: LandingData }) {
         )}
 
         <div className="nsl-wrap">
+          <section className="nsl-section nsl-reveal" aria-labelledby="nsl-glossary">
+            <h2 id="nsl-glossary" className="nsl-h2">{ui.glossaryTitle}</h2>
+            <p className="nsl-sub">{stats.stages} {ui.lStatStages} · PDF</p>
+            <p style={{ textAlign: 'center', marginTop: 24 }}>
+              <Link href={`/course/glossary?lang=${d.locale}`} className="nsl-ghost">{ui.glossaryTitle} →</Link>
+            </p>
+          </section>
           {/* ── two parts ──────────────────────────────────── */}
           <section className="nsl-section nsl-reveal" aria-labelledby="nsl-phases">
             <h2 id="nsl-phases" className="nsl-h2">{ui.lPhasesTitle}</h2>
