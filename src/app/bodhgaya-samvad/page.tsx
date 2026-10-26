@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 import { cookies } from 'next/headers';
-import BodhgayaLanding from '@/components/bodhgaya/BodhgayaLanding';
+import SamvadExperience from '@/components/bodhgaya/SamvadExperience';
 import SchemaOrg from '@/components/SchemaOrg';
 import { isLanguage, LANGUAGE_COOKIE_KEY } from '@/lib/i18n';
 
 export const metadata: Metadata = {
-  title: 'Bodhgaya Samvad | Spiritual Guidance in Bodhgaya',
+  title: 'Meet Aadisatv in Bodhgaya | Bodhgaya Samvad | Nirvan Dham',
   description:
-    'Meet Aadisatv in Bodhgaya for free, in-person spiritual dialogue and self-inquiry. Explore his books, bring your questions, and request a meeting in advance.',
+    'Request a private in-person dialogue with Aadisatv in Bodhgaya. Explore his books and teachings, and bring the question that truly matters to you.',
   alternates: {
     canonical: '/bodhgaya-samvad',
   },
   openGraph: {
-    title: 'Bodhgaya Samvad | Spiritual Guidance in Bodhgaya',
+    title: 'Meet Aadisatv in Bodhgaya | Bodhgaya Samvad',
     description:
-      'Explore Aadisatv’s books, bring your spiritual questions, and request a free, in-person meeting in Bodhgaya.',
+      'Explore Aadisatv’s work and request a private in-person dialogue in Bodhgaya.',
     url: '/bodhgaya-samvad',
     type: 'website',
     images: [{ url: '/images/bodhgaya-samvad/aadisatv-bodhgaya-hero-01.webp', width: 1122, height: 1402, alt: 'Bodhgaya Samvad with Aadisatv' }],
@@ -37,15 +37,14 @@ export default async function BodhgayaSamvadRoute({ searchParams }: { searchPara
       '@type': 'City',
       name: 'Bodhgaya',
     },
-    description: 'Free in-person spiritual dialogue and self-inquiry with Aadisatv in Bodhgaya, by prior arrangement.',
+    description: 'Application-based in-person dialogue and self-inquiry with Aadisatv in Bodhgaya, by prior arrangement.',
     serviceType: 'In-Person Spiritual Session',
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'INR' },
   };
 
   return (
     <>
       <SchemaOrg schema={serviceSchema} />
-      <BodhgayaLanding initialLanguage={initialLanguage} />
+      <SamvadExperience initialLanguage={initialLanguage} />
     </>
   );
 }
