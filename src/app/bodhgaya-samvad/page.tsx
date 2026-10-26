@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       'Explore Aadisatv’s work and request a private in-person dialogue in Bodhgaya.',
     url: '/bodhgaya-samvad',
     type: 'website',
-    images: [{ url: '/images/bodhgaya-samvad/aadisatv-bodhgaya-hero-01.webp', width: 1122, height: 1402, alt: 'Bodhgaya Samvad with Aadisatv' }],
+    images: [{ url: '/images/bodhgaya-samvad/aadisatv-real-portrait.webp', width: 1200, height: 1200, alt: 'Portrait of Aadisatv' }],
   },
 };
 

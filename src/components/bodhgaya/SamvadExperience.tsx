@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { saveLanguage, type Language } from '@/lib/i18n';
-import { photoUrl } from './content';
 import styles from './samvad-experience.module.css';
 
 const words = {
@@ -193,7 +192,7 @@ export default function SamvadExperience({ initialLanguage }: { initialLanguage:
     <main id="main">
       <section className={styles.hero}>
         <div className={styles.heroCopy}><p className={styles.eyebrow}>{c.eyebrow}</p><h1>{c.title}</h1><p className={styles.heroIntro}>{c.intro}</p><div className={styles.actions}><a className={styles.primary} href="#request">{c.request} <span>↗</span></a><a className={styles.textLink} href="#explore">{c.explore} <span>↗</span></a></div><p className={styles.heroFoot}>{c.facts.join(' · ')}</p></div>
-        <div className={styles.heroImage}><Image src={photoUrl(0)} alt={lang === 'hi' ? 'बोधगया में संवाद का चित्रात्मक दृश्य' : 'Illustrative Bodhgaya dialogue scene'} fill priority sizes="(max-width: 800px) 100vw, 50vw" /><span>BODHGAYA · 24.6951° N</span></div>
+        <div className={styles.heroImage}><Image src="/images/bodhgaya-samvad/aadisatv-real-portrait.webp" alt={lang === 'hi' ? 'आदिसत्व का वास्तविक चित्र' : 'Portrait of Aadisatv'} fill priority sizes="(max-width: 800px) 100vw, 50vw" /><span>AADISATV · BODHGAYA SAMVAD</span></div>
       </section>
       <section id="the-samvad" className={styles.introSection}><div><p className={styles.eyebrow}>{c.whatEyebrow}</p><h2>{c.whatTitle}</h2></div><div><p>{c.whatText}</p><div className={styles.fit}><span>{c.fitEyebrow}</span><h3>{c.fitTitle}</h3><p>{c.fitText}</p></div></div></section>
       <section id="explore" className={styles.work}><div className={styles.sectionHead}><p className={styles.eyebrow}>{c.workEyebrow}</p><h2>{c.workTitle}</h2><p>{c.workText}</p></div><div className={styles.workLayout}><div><div className={styles.smallHead}><span>{c.books}</span><Link href="/library">{c.library} ↗</Link></div><div className={styles.books}>{books.map((book) => <Link key={book.slug} href={`/library/${book.slug}`} className={styles.book}><span><Image src={book.cover} alt={book[lang]} fill sizes="(max-width: 600px) 26vw, 150px" /></span><strong>{book[lang]}</strong></Link>)}</div></div><div className={styles.channels}><span className={styles.smallLabel}>{c.teaching}</span>{c.channels.map(([name, description, url]) => <a href={url} key={url} target="_blank" rel="noopener noreferrer"><span><strong>{name}</strong><small>{description}</small></span><b>↗</b></a>)}<a href="https://www.google.com/search?q=Aadisatv" target="_blank" rel="noopener noreferrer"><span><strong>{c.public}</strong><small>{c.google}</small></span><b>↗</b></a></div></div></section>
