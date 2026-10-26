@@ -3,11 +3,11 @@ import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { createClient as createSessionClient } from '@/utils/supabase/server';
 
 export const TABLE = 'bodhgaya_samvad_requests';
-export const PAYMENT_URL = 'https://pages.razorpay.com/samvad-reservation';
+export const PAYMENT_URL = 'https://rzp.io/rzp/samvad-reservation';
 
 export function samvadStore() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://ihibxtyfhlhddxoeffjy.supabase.co';
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_SECRET_KEY;
   if (!url || !key) throw new Error('Samvad storage is not configured');
   return createSupabaseClient(url, key, { auth: { persistSession: false, autoRefreshToken: false } });
 }

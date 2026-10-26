@@ -14,8 +14,8 @@ create table if not exists public.bodhgaya_samvad_requests (
   page_language text not null check (page_language in ('en','hi')),
   travel_dates text not null,
   meeting_type text not null check (meeting_type in ('individual','couple','small_group')),
-  primary_question text not null check (char_length(primary_question) between 30 and 2000),
-  why_in_person text not null check (char_length(why_in_person) between 20 and 2000),
+  primary_question text check (char_length(primary_question) between 30 and 2000),
+  why_in_person text check (char_length(why_in_person) between 20 and 2000),
   note text,
   contact_consent boolean not null check (contact_consent),
   request_consent boolean not null check (request_consent),
@@ -27,6 +27,9 @@ create table if not exists public.bodhgaya_samvad_requests (
   booking_token uuid not null default gen_random_uuid() unique,
   payment_status text not null default 'NOT_STARTED' check (payment_status in ('NOT_STARTED','PENDING','PAID','FAILED','REFUNDED')),
   payment_reference text unique,
+  payment_link_id text unique,
+  payment_url text,
+  formspree_notified_at timestamptz,
   payment_amount_paise integer,
   payment_verified_at timestamptz,
   confirmed_at timestamptz
@@ -34,6 +37,22 @@ create table if not exists public.bodhgaya_samvad_requests (
 
 alter table public.bodhgaya_samvad_requests
   add column if not exists requested_slot_text text;
+alter table public.bodhgaya_samvad_requests
+  add column if not exists payment_link_id text;
+alter table public.bodhgaya_samvad_requests
+  add column if not exists payment_url text;
+alter table public.bodhgaya_samvad_requests
+  add column if not exists formspree_notified_at timestamptz;
+alter table public.bodhgaya_samvad_requests
+  alter column primary_question drop not null,
+  alter column why_in_person drop not null;
+create unique index if not exists bodhgaya_samvad_payment_link_unique
+  on public.bodhgaya_samvad_requests (payment_link_id) where payment_link_id is not null;
+-- A submitted request reserves its two-hour start immediately, even while unpaid.
+-- Declined/cancelled requests release it. This index is the concurrency boundary.
+create unique index if not exists bodhgaya_samvad_reserved_slot_unique
+  on public.bodhgaya_samvad_requests (agreed_slot)
+  where agreed_slot is not null and status not in ('DECLINED', 'CANCELLED');
 
 create index if not exists bodhgaya_samvad_requests_created_idx
   on public.bodhgaya_samvad_requests (created_at desc);

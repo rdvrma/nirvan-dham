@@ -1,0 +1,17 @@
+.slotField{grid-column:1/-1;border:0;padding:0;margin:2px 0 8px;min-width:0}
+.slotField legend{color:#eee8d5;font-size:.8rem;font-weight:600}
+.slotField>p{color:#aaa994;font-size:.78rem;margin:7px 0 16px}
+.slotGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.slotGrid label{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:64px;padding:13px 17px;border:1px solid #897a4a;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.slotGrid label:has(input:checked){border-color:#e8ca7f;background:#2b2b19;box-shadow:0 0 0 1px #e8ca7f}
+.slotGrid label:has(input:focus-visible){outline:2px solid #e8ca7f;outline-offset:2px}
+.slotGrid input{position:absolute;opacity:0;width:1px;height:1px}
+.slotGrid strong{font-size:1rem;font-weight:500;font-variant-numeric:tabular-nums;color:#efe6c5}
+.slotGrid span{font-size:.68rem;letter-spacing:.05em}
+.slotAvailable{background:#10271a;color:#bfe3bd}
+.slotAvailable:hover{transform:translateY(-2px);background:#183722}
+.slotBooked{background:#37211f;color:#e1b1a6;border-color:#784a44!important;cursor:not-allowed!important}
+.slotBooked strong{color:#d5aaa0}
+.formNotice{margin:26px 0;color:#c9c2a7;font-size:.78rem;line-height:1.6;border-top:1px solid #4b503b;padding-top:20px}
+@media(max-width:700px){.slotGrid{grid-template-columns:1fr 1fr}.slotGrid label{min-height:58px;padding:10px}.slotGrid strong{font-size:.85rem}.slotGrid span{font-size:.6rem}}
+@media(max-width:380px){.slotGrid{grid-template-columns:1fr}}
