@@ -13,7 +13,7 @@ const words = {
     nav: ['The Samvad', 'Explore the work', 'How it works'],
     eyebrow: 'BODHGAYA SAMVAD · PRIVATE IN-PERSON DIALOGUE',
     title: <>Meet Aadisatv.<br /><em>In Bodhgaya.</em></>,
-    intro: 'Meet Aadisatv where the Buddha awakened, and let the grace of a teacher guide you beyond ignorance.',
+    intro: 'In Bodhgaya, a land of enlightenment blessed by the Buddha, meet Aadisatv and take another step on your spiritual journey.',
     request: 'Request a private meeting', explore: 'Explore Aadisatv’s work', discover: 'Discover the meeting',
     facts: ['Bodhgaya, India', 'English & Hindi', 'By prior request'],
     whatEyebrow: '01 / THE MEETING', whatTitle: 'A conversation rooted in your question.',
@@ -126,31 +126,68 @@ const books = [
 type SubmitState = 'idle' | 'sending' | 'success' | 'error';
 type AvailableSlot = { time: string; label: string; available: boolean };
 
+function changeMonth(month: string, offset: number): string {
+  const [year, monthNumber] = month.split('-').map(Number);
+  return new Date(Date.UTC(year, monthNumber - 1 + offset, 1)).toISOString().slice(0, 7);
+}
+
+function calendarDates(month: string): (number | null)[] {
+  const [year, monthNumber] = month.split('-').map(Number);
+  const firstWeekday = new Date(Date.UTC(year, monthNumber - 1, 1)).getUTCDay();
+  const days = new Date(Date.UTC(year, monthNumber, 0)).getUTCDate();
+  return [...Array<null>(firstWeekday).fill(null), ...Array.from({ length: days }, (_, index) => index + 1)];
+}
+
 export default function SamvadExperience({ initialLanguage }: { initialLanguage: Language }) {
   const [lang, setLang] = useState<Language>(initialLanguage);
   const [state, setState] = useState<SubmitState>('idle');
   const [reference, setReference] = useState('');
   const [bookingDate, setBookingDate] = useState('');
+  const [calendarMonth, setCalendarMonth] = useState(() => indiaDateToday().slice(0, 7));
   const [bookingTime, setBookingTime] = useState('');
   const [slots, setSlots] = useState<AvailableSlot[]>([]);
   const [slotLoading, setSlotLoading] = useState(false);
   const [slotError, setSlotError] = useState(false);
+  const [slotAttempt, setSlotAttempt] = useState(0);
+  const monthAvailability = useRef<Record<string, Record<string, AvailableSlot[]>>>({});
+  const selectedDate = useRef('');
   const [requestUrl, setRequestUrl] = useState('');
   const inFlight = useRef(false);
   const submissionId = useRef<string | null>(null);
   const c = words[lang];
+  const firstBookableDate = indiaDateToday();
+  const lastBookableDate = new Date(Date.parse(`${firstBookableDate}T00:00:00Z`) + 90 * 86400000).toISOString().slice(0, 10);
+  const calendarHeading = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${calendarMonth}-01T00:00:00Z`));
+  const weekdays = lang === 'hi' ? ['रवि', 'सोम', 'मंगल', 'बुध', 'गुरु', 'शुक्र', 'शनि'] : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   useEffect(() => { document.documentElement.lang = lang; }, [lang]);
+  useEffect(() => {
+    if (monthAvailability.current[calendarMonth]) return;
+    const abort = new AbortController();
+    fetch(`/api/bodhgaya-samvad/slots?month=${encodeURIComponent(calendarMonth)}`, { signal: abort.signal, cache: 'no-store' })
+      .then(async (response) => { if (!response.ok) throw new Error('availability'); return response.json(); })
+      .then((result: { dates: Record<string, AvailableSlot[]> }) => {
+        monthAvailability.current[calendarMonth] = result.dates;
+        const date = selectedDate.current;
+        if (date.startsWith(`${calendarMonth}-`) && result.dates[date]) {
+          setSlots(result.dates[date]);
+          setSlotError(false);
+          setSlotLoading(false);
+        }
+      })
+      .catch(() => { /* The selected date request remains available as a fallback. */ });
+    return () => abort.abort();
+  }, [calendarMonth]);
   useEffect(() => {
     if (!bookingDate) return;
     const abort = new AbortController();
     fetch(`/api/bodhgaya-samvad/slots?date=${encodeURIComponent(bookingDate)}`, { signal: abort.signal, cache: 'no-store' })
       .then(async (response) => { if (!response.ok) throw new Error('availability'); return response.json(); })
-      .then((result) => setSlots(result.slots))
-      .catch(() => { if (!abort.signal.aborted) setSlotError(true); })
+      .then((result) => { if (!abort.signal.aborted) { setSlots(result.slots); setSlotError(false); } })
+      .catch(() => { if (!abort.signal.aborted && !monthAvailability.current[bookingDate.slice(0, 7)]?.[bookingDate]) setSlotError(true); })
       .finally(() => { if (!abort.signal.aborted) setSlotLoading(false); });
     return () => abort.abort();
-  }, [bookingDate]);
+  }, [bookingDate, slotAttempt]);
 
   function changeLanguage(next: Language) {
     setLang(next);
@@ -161,11 +198,13 @@ export default function SamvadExperience({ initialLanguage }: { initialLanguage:
   }
 
   function changeBookingDate(date: string) {
+    selectedDate.current = date;
     setBookingDate(date);
     setBookingTime('');
-    setSlots([]);
+    const cached = monthAvailability.current[date.slice(0, 7)]?.[date];
+    setSlots(cached ?? []);
     setSlotError(false);
-    setSlotLoading(Boolean(date));
+    setSlotLoading(Boolean(date && !cached));
   }
 
   async function submit(event: FormEvent<HTMLFormElement>) {
@@ -224,13 +263,35 @@ export default function SamvadExperience({ initialLanguage }: { initialLanguage:
             <label>{c.fields[2]} <input name="phone" type="tel" required maxLength={40} autoComplete="tel" /></label>
             <label>{c.fields[3]} <input name="country" required maxLength={100} autoComplete="country-name" /></label>
             <label>{c.fields[4]} <select name="preferredLanguage" required defaultValue=""><option value="" disabled>—</option><option value="English">English</option><option value="Hindi">हिंदी</option></select></label>
-            <label>{c.fields[5]} <input name="bookingDate" type="date" required min={indiaDateToday()} value={bookingDate} onChange={(event) => changeBookingDate(event.target.value)} /></label>
+            <div className={slotStyles.calendarField}>
+              <span className={slotStyles.calendarLabel}>{c.fields[5]}</span>
+              <input className={slotStyles.calendarInput} type="hidden" name="bookingDate" value={bookingDate} />
+              <div className={slotStyles.calendar} aria-label={c.fields[5]}>
+                <div className={slotStyles.calendarTop}>
+                  <div><span className={slotStyles.calendarOverline}>{lang === 'hi' ? 'मुलाकात के लिए दिन चुनें' : 'SELECT YOUR MEETING DAY'}</span><strong>{calendarHeading}</strong></div>
+                  <div className={slotStyles.calendarNav}>
+                    <button type="button" aria-label={lang === 'hi' ? 'पिछला महीना' : 'Previous month'} disabled={calendarMonth <= firstBookableDate.slice(0, 7)} onClick={() => setCalendarMonth(changeMonth(calendarMonth, -1))}>‹</button>
+                    <button type="button" aria-label={lang === 'hi' ? 'अगला महीना' : 'Next month'} disabled={calendarMonth >= lastBookableDate.slice(0, 7)} onClick={() => setCalendarMonth(changeMonth(calendarMonth, 1))}>›</button>
+                  </div>
+                </div>
+                <div className={slotStyles.calendarDays}>
+                  {weekdays.map((day) => <span key={day} className={slotStyles.weekday}>{day}</span>)}
+                  {calendarDates(calendarMonth).map((day, index) => {
+                    if (day === null) return <span key={`empty-${index}`} aria-hidden="true" />;
+                    const date = `${calendarMonth}-${String(day).padStart(2, '0')}`;
+                    const unavailable = date < firstBookableDate || date > lastBookableDate;
+                    const fullDate = new Intl.DateTimeFormat(lang === 'hi' ? 'hi-IN' : 'en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${date}T00:00:00Z`));
+                    return <button key={date} type="button" className={date === bookingDate ? slotStyles.selectedDay : slotStyles.day} disabled={unavailable} aria-label={fullDate} aria-pressed={date === bookingDate} onClick={() => changeBookingDate(date)}>{day}</button>;
+                  })}
+                </div>
+                <p className={slotStyles.calendarPrompt} role="status">{bookingDate ? (lang === 'hi' ? `चुनी हुई तिथि: ${new Intl.DateTimeFormat('hi-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${bookingDate}T00:00:00Z`))}` : `Selected: ${new Intl.DateTimeFormat('en-US', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${bookingDate}T00:00:00Z`))}`) : (lang === 'hi' ? 'तिथि चुनते ही नीचे उपलब्ध समय दिखाई देंगे।' : 'Select a date to see available times below.')}</p>
+              </div>
+            </div>
             <fieldset className={slotStyles.slotField}>
               <legend>{lang === 'hi' ? 'उपलब्ध समय चुनें · भारतीय समय' : 'Choose an available time · India time'}</legend>
-              <p>{lang === 'hi' ? 'हर मुलाकात 2 घंटे की है; अगली मुलाकात से पहले 15 मिनट का अंतर है।' : 'Each meeting lasts 2 hours, with 15 minutes between meetings.'}</p>
               {slotLoading && <p role="status">{lang === 'hi' ? 'उपलब्धता देख रहे हैं…' : 'Checking availability…'}</p>}
-              {slotError && <p className={styles.error} role="alert">{lang === 'hi' ? 'समय नहीं मिल पाए। फिर प्रयास करें।' : 'Availability could not load. Please retry.'}</p>}
-              {bookingDate && !slotLoading && !slotError && <div className={slotStyles.slotGrid}>{slots.map((slot) => <label key={slot.time} className={slot.available ? slotStyles.slotAvailable : slotStyles.slotBooked}>
+              {slotError && <div className={slotStyles.retry}><p className={styles.error} role="alert">{lang === 'hi' ? 'समय नहीं मिल पाए।' : 'Availability could not load.'}</p><button type="button" onClick={() => { setSlotError(false); setSlotLoading(true); setSlotAttempt((attempt) => attempt + 1); }}>{lang === 'hi' ? 'दोबारा जाँचें ↗' : 'Check again ↗'}</button></div>}
+              {bookingDate && slots.length > 0 && !slotError && <div className={slotStyles.slotGrid}>{slots.map((slot) => <label key={slot.time} className={slot.available ? slotStyles.slotAvailable : slotStyles.slotBooked}>
                 <input type="radio" name="bookingTime" value={slot.time} checked={bookingTime === slot.time} onChange={() => setBookingTime(slot.time)} disabled={!slot.available} required />
                 <strong>{slot.label}</strong><span>{slot.available ? (lang === 'hi' ? 'उपलब्ध' : 'Available') : (lang === 'hi' ? 'बुक हो चुका' : 'Booked')}</span>
               </label>)}</div>}

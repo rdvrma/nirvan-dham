@@ -1,17 +1,40 @@
+.calendarField{grid-column:1/-1;min-width:0}
+.calendarLabel{display:block;color:#eee8d5;font-size:.76rem;margin-bottom:10px}
+.calendarInput{display:none!important}
+.calendar{padding:clamp(18px,3vw,30px);border:1px solid #736440;background:radial-gradient(circle at 85% 0%,rgba(190,157,86,.13),transparent 48%),#0d1b14}
+.calendarTop{display:flex;align-items:end;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid rgba(191,160,91,.3)}
+.calendarTop strong{display:block;margin-top:5px;color:#f4ead4;font:400 clamp(1.5rem,2.5vw,2rem) Georgia,'Times New Roman',serif}
+.calendarOverline{color:#c8a960;font-size:.62rem;letter-spacing:.16em;font-weight:700}
+.calendarNav{display:flex;gap:8px}
+.calendarNav button{display:grid;place-items:center;width:38px;height:38px;border:1px solid #806d43;background:#15251a;color:#e3c376;font-size:1.65rem;line-height:1;cursor:pointer}
+.calendarNav button:hover:not(:disabled){background:#28331e;border-color:#d2b269}
+.calendarNav button:disabled{opacity:.3;cursor:not-allowed}
+.calendarDays{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;margin-top:16px;text-align:center}
+.weekday{color:#b8aa88;font-size:.7rem;padding:5px 0 9px}
+.day,.selectedDay{display:grid;place-items:center;min-width:0;min-height:46px;border:1px solid transparent;background:transparent;color:#ede7d7;font-size:.88rem;font-variant-numeric:tabular-nums;cursor:pointer}
+.day:hover:not(:disabled){border-color:#bda565;background:#1d2e20}
+.day:disabled{color:#636a5e;cursor:not-allowed}
+.selectedDay{border-color:#d9bd78;background:#d8b96e;color:#10190f;font-weight:700;box-shadow:0 0 0 1px #d8b96e}
+.day:focus-visible,.selectedDay:focus-visible,.calendarNav button:focus-visible{outline:2px solid #f5daa0;outline-offset:2px}
+.calendarPrompt{min-height:1.5em;margin:18px 0 0!important;color:#c9ba96!important;font-size:.76rem!important;line-height:1.5!important}
 .slotField{grid-column:1/-1;border:0;padding:0;margin:2px 0 8px;min-width:0}
 .slotField legend{color:#eee8d5;font-size:.8rem;font-weight:600}
 .slotField>p{color:#aaa994;font-size:.78rem;margin:7px 0 16px}
+.retry{display:flex;align-items:center;justify-content:space-between;gap:15px;border:1px solid #a45d54;padding:8px 14px;margin-bottom:12px}
+.retry p{margin:0;font-size:.78rem}
+.retry button{border:0;border-bottom:1px solid #d8b96e;background:transparent;color:#e8cc88;padding:7px 0;font-size:.78rem;cursor:pointer;white-space:nowrap}
+.retry button:focus-visible{outline:2px solid #f5daa0;outline-offset:2px}
 .slotGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.slotGrid label{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:64px;padding:13px 17px;border:1px solid #897a4a;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.slotGrid label{position:relative;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:64px;padding:13px 17px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
 .slotGrid label:has(input:checked){border-color:#e8ca7f;background:#2b2b19;box-shadow:0 0 0 1px #e8ca7f}
 .slotGrid label:has(input:focus-visible){outline:2px solid #e8ca7f;outline-offset:2px}
 .slotGrid input{position:absolute;opacity:0;width:1px;height:1px}
 .slotGrid strong{font-size:1rem;font-weight:500;font-variant-numeric:tabular-nums;color:#efe6c5}
-.slotGrid span{font-size:.68rem;letter-spacing:.05em}
-.slotAvailable{background:#10271a;color:#bfe3bd}
-.slotAvailable:hover{transform:translateY(-2px);background:#183722}
-.slotBooked{background:#37211f;color:#e1b1a6;border-color:#784a44!important;cursor:not-allowed!important}
-.slotBooked strong{color:#d5aaa0}
+.slotGrid span{font-size:.7rem;letter-spacing:.05em;font-weight:700}
+.slotGrid label.slotAvailable{border:1px solid #3e9b65;background:#102b1c;color:#a7edbd}
+.slotGrid label.slotAvailable:hover{transform:translateY(-2px);background:#193d28}
+.slotGrid label.slotBooked{border:1px solid #a45d54;background:#381d1d;color:#ffc1b6;cursor:not-allowed}
+.slotBooked strong{color:#f4c2b9}
 .formNotice{margin:26px 0;color:#c9c2a7;font-size:.78rem;line-height:1.6;border-top:1px solid #4b503b;padding-top:20px}
-@media(max-width:700px){.slotGrid{grid-template-columns:1fr 1fr}.slotGrid label{min-height:58px;padding:10px}.slotGrid strong{font-size:.85rem}.slotGrid span{font-size:.6rem}}
-@media(max-width:380px){.slotGrid{grid-template-columns:1fr}}
+@media(max-width:700px){.calendarDays{gap:3px}.day,.selectedDay{min-height:42px}.slotGrid{grid-template-columns:1fr 1fr}.slotGrid label{min-height:58px;padding:10px}.slotGrid strong{font-size:.85rem}.slotGrid span{font-size:.62rem}}
+@media(max-width:380px){.day,.selectedDay{min-height:36px}.slotGrid{grid-template-columns:1fr}}
