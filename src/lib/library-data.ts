@@ -475,14 +475,42 @@ export const MAGAZINES: Magazine[] = [
     launchDate: '2026-06-21',
     releaseDate: '2026-06-21',
     nextIssueDate: '2026-07-21',
-    status: 'current',
+    status: 'archive',
     pdf: '/library/magazines/muktibodh-june-2026-issue-02.pdf',
     pageImages: Array.from({ length: 69 }, (_, index) => `/library/magazines/muktibodh-june-2026-issue-02/pages/page_${String(index + 1).padStart(2, '0')}.jpg`),
     teaser: 'The next Muktibodh issue continues the monthly journal of consciousness, direct inquiry and living sadhana.',
     teaserHindi: 'मुक्तिबोध का अगला अंक चेतना, प्रत्यक्ष आत्म-विचार और जीवंत साधना की मासिक यात्रा को आगे बढ़ाएगा।',
     isPlaceholder: false,
-    description: 'Issue 02 of Muktibodh is scheduled for 21 June 2026. Read and download actions will appear when the issue is released.',
+    description: 'Issue 02 of Muktibodh — a continuation of the monthly journal of consciousness, direct inquiry and living sadhana.',
     descriptionHindi: 'मुक्तिबोध का दूसरा अंक 21 जून 2026 के लिए निर्धारित है। अंक प्रकाशित होने पर पढ़ने और डाउनलोड करने के विकल्प उपलब्ध होंगे।',
+  },
+  {
+    slug: 'muktibodh-nov-2026',
+    name: 'Muktibodh',
+    nameHindi: 'मुक्तिबोध',
+    issue: 'November 2026 - Issue 03',
+    issueNumber: 3,
+    monthLabel: 'November 2026',
+    launchDate: '2026-11-01',
+    releaseDate: '2026-11-01',
+    nextIssueDate: '2026-12-01',
+    status: 'archive',
+    pdf: '/library/magazines/muktibodh-nov-2026.pdf',
+    highlights: [
+      'Consciousness and self-inquiry in everyday life',
+      'Living sadhana — from effort to effortlessness',
+      'Seeker reflections and monthly contemplations',
+    ],
+    highlightsHindi: [
+      'दैनिक जीवन में चेतना और आत्म-विचार',
+      'जीवंत साधना — प्रयास से प्रयासहीनता तक',
+      'साधक चिंतन और मासिक अनुभव',
+    ],
+    teaser: "The November issue of Muktibodh is now available. Download the PDF to read this month’s journal of consciousness, direct inquiry and living teachings.",
+    teaserHindi: 'मुक्तिबोध का नवंबर अंक अब उपलब्ध है। इस माह की चेतना, आत्म-विचार और जीवंत शिक्षाओं की पत्रिका पढ़ने के लिए PDF डाउनलोड करें।',
+    isPlaceholder: true,
+    description: "Issue 03 of Muktibodh is now available. Download the PDF to explore this month’s journal of consciousness, non-duality and the living teachings of Nirvan Dham.",
+    descriptionHindi: 'मुक्तिबोध का तीसरा अंक अब उपलब्ध है। चेतना, अद्वैत और निर्वाण धाम की जीवंत शिक्षाओं की इस माह की पत्रिका पढ़ने के लिए PDF डाउनलोड करें।',
   },
 ];
 
@@ -506,3 +534,7 @@ export function isMagazineReadable(magazine: Magazine, now: Date = new Date()) {
   return !magazine.isPlaceholder && hasMagazineAssets(magazine) && isMagazineReleased(magazine, now);
 }
 
+/** Viewable = fully readable (page images) OR pdf-only issue with a pdf link */
+export function isMagazineViewable(magazine: Magazine, now: Date = new Date()) {
+  return isMagazineReadable(magazine, now) || (Boolean(magazine.pdf) && isMagazineReleased(magazine, now));
+}
