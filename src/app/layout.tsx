@@ -1,30 +1,10 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Hind, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import ScrollReset from "@/components/ScrollReset";
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
 
-const hind = Hind({
-  subsets: ["latin", "devanagari"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-hind",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nirvandham.in"),
@@ -87,9 +67,13 @@ export default function RootLayout({
       lang="hi"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={`${inter.variable} ${cormorant.variable} ${hind.variable}`}
+      
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
         <link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
